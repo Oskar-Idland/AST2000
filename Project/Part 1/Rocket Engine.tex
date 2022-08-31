@@ -1,22 +1,20 @@
 \documentclass[reprint,english,notitlepage]{revtex4-1}  % defines the basic parameters of the document
 \usepackage{amsmath}
 \usepackage[mathletters]{ucs}
-\usepackage[utf8x]{inputenc}
+%\usepackage[utf8x]{inputenc} %Not necessary
 \usepackage[margin=1.5in]{geometry}
 \usepackage{enumerate}
 \newtheorem{theorem}{Theorem}
 \usepackage[dvipsnames]{xcolor}
-\usepackage{color}
 \usepackage{pgfplots}
 \setlength{\parindent}{0cm}
-\usepackage{graphics}
 \usepackage{subcaption}
 \usepackage{bigintcalc}
 \usepackage{pythonhighlight} %for pythonkode \begin{python}   \end{python}
 \usepackage{appendix}
 \usepackage{arydshln}
 \usepackage{physics}
-\usepackage{subfigure}
+%\usepackage{subfigure}
 \usepackage{tikz-cd}
 \usepackage{booktabs} 
 \usepackage{adjustbox}
@@ -34,6 +32,7 @@
 \usepackage{graphicx,wrapfig,lipsum,caption} %for wrapping av bilder
 \usepackage{mathtools} %for \abs{x}
 \usepackage[english]{babel}
+\usepackage{color}
 \definecolor{codegreen}{rgb}{0,0.6,0}
 \definecolor{codegray}{rgb}{0.5,0.5,0.5}
 \definecolor{codepurple}{rgb}{0.58,0,0.82}
@@ -46,7 +45,7 @@
     numberstyle=\tiny\color{codegray},
     stringstyle=\color{codepurple},
     basicstyle=\ttfamily\footnotesize,
-    language=Python
+    language=Python,
     breakatwhitespace=false,         
     breaklines=true,                 
     captionpos=b,                    
@@ -60,14 +59,14 @@
 }
 
 \lstset{style=mystyle}
-\author{Oskar Idland & Jannik Eschler}
+\begin{document}
+\author{Oskar Idland \& Jannik Eschler}
 \title{FYS-1120 Project Part 1}
 \date{\today}
 \noaffiliation
 \begin{abstract}
     This abstract is abstract.
 \end{abstract}
-\begin{document}
 \maketitle
 \newpage
 
