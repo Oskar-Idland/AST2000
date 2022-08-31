@@ -1,4 +1,4 @@
-\documentclass{article}
+\documentclass[reprint,english,notitlepage]{revtex4-1}  % defines the basic parameters of the document
 \usepackage{amsmath}
 \usepackage[mathletters]{ucs}
 \usepackage[utf8x]{inputenc}
@@ -9,19 +9,18 @@
 \usepackage{pgfplots}
 \setlength{\parindent}{0cm}
 \usepackage{graphics}
-\usepackage{graphicx} % Required for including images
 \usepackage{subcaption}
 \usepackage{bigintcalc}
 \usepackage{pythonhighlight} %for pythonkode \begin{python}   \end{python}
 \usepackage{appendix}
 \usepackage{arydshln}
 \usepackage{physics}
+\usepackage{subfigure}
 \usepackage{tikz-cd}
 \usepackage{booktabs} 
 \usepackage{adjustbox}
 \usepackage{mdframed}
 \usepackage{relsize}
-\usepackage{physics}
 \usepackage[thinc]{esdiff}
 \usepackage{fixltx2e}
 \usepackage{esint}  %for lukket-linje-integral
@@ -33,7 +32,7 @@
 \usepackage{verbatim}
 \usepackage{graphicx,wrapfig,lipsum,caption} %for wrapping av bilder
 \usepackage{mathtools} %for \abs{x}
-\usepackage[norsk]{babel}
+\usepackage[english]{babel}
 \definecolor{codegreen}{rgb}{0,0.6,0}
 \definecolor{codegray}{rgb}{0.5,0.5,0.5}
 \definecolor{codepurple}{rgb}{0.58,0,0.82}
@@ -46,6 +45,7 @@
     numberstyle=\tiny\color{codegray},
     stringstyle=\color{codepurple},
     basicstyle=\ttfamily\footnotesize,
+    language=Python
     breakatwhitespace=false,         
     breaklines=true,                 
     captionpos=b,                    
@@ -55,17 +55,34 @@
     showspaces=false,                
     showstringspaces=false,
     showtabs=false,                  
-    tabsize=2
+    tabsize=4
 }
 
 \lstset{style=mystyle}
 \author{Oskar Idland & Jannik Eschler}
 \title{FYS-1120 Project Part 1}
-\date{}
+\date{\today}
+\noaffiliation
+\begin{abstract}
+    This abstract is abstract.
+\end{abstract}
 \begin{document}
 \maketitle
 \newpage
 Hei Jannik
+
+% the fundamental components of scientific reports:
+\section{Introduction}
+\section{Theory}   % (optional)
+\section{Method}
+\section{Results}
+\section{Discussion}
+\section{Conclusion}
+% acknowledgements (optional)
+\begin{acknowledgments}  % if you disagree with the spelling, blame Americans
+I would like thank myself for writing this beautiful document.
+\end{acknowledgments}
+
 
 
 \end{document}
