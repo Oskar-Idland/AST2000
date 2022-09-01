@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2022.2.21)  1 SEP 2022 12:11
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2022.2.21)  1 SEP 2022 13:34
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -8,35 +8,33 @@ entering extended mode
 (/Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 1/Rocket Engine.tex
 LaTeX2e <2020-10-01> patch level 4
 L3 programming layer <2021-02-18>
-(/usr/local/texlive/2021/texmf-dist/tex/latex/revtex/revtex4-2.cls
-Document Class: revtex4-2 2020/10/03 4.2e (https://journals.aps.org/revtex/ for
- documentation)
- Copyright (c) 2019 American Physical Society.
+(/usr/local/texlive/2021/texmf-dist/tex/latex/revtex4-1/revtex4-1.cls
+Document Class: revtex4-1 2020/09/30 4.1s (http://publish.aps.org/revtex4/ for 
+documentation)
+ Copyright (c) 2009 The American Physical Society.
  mailto:revtex@aps.org
  Licensed under the LPPL:
 http://www.ctan.org/tex-archive/macros/latex/base/lppl.txt
  Arthur Ogawa <arthur_ogawa at sbcglobal dot net>
- Based on work by David Carlisle <david at dcarlisle.demon.co.uk>
- Version (4.2d,4.2e): Modified by Mark Doyle and Phelype Oleinik
- .
-ltxutil[2020/10/03 4.2e utilities package (portions licensed from W. E. Baxter 
+ Based on work by David Carlisle <david at dcarlisle.demon.co.uk>.
+ltxutil[2020/09/30 4.1s utilities package (portions licensed from W. E. Baxter 
 web at superscript.com)]
-LaTeX Info: Redefining \@centercr on input line 356.
-Class revtex4-2 Info: Repairing broken LaTeX eqnarray on input line 406.
+LaTeX Info: Redefining \@centercr on input line 346.
+Class revtex4-1 Info: Repairing broken LaTeX eqnarray on input line 396.
 \eqncolsep=\skip47
-Class revtex4-2 Info: Repairing hyperref-unfriendly LaTeX definition of \mpfoot
-note on input line 481.
-Class revtex4-2 Info: Repairing broken LateX \@sect on input line 803.
+Class revtex4-1 Info: Repairing hyperref-unfriendly LaTeX definition of \mpfoot
+note on input line 471.
+Class revtex4-1 Info: Repairing broken LateX \@sect on input line 793.
 \intertabularlinepenalty=\count179
 \@tbpen=\count180
 \@arstrutbox@hline=\box47
-Class revtex4-2 Info: Repairing broken LaTeX \@xbitor on input line 1834.
-Class revtex4-2 Info: Making \typeout \long on input line 2099.
-ltxfront[2020/10/03 4.2e frontmatter package (AO,DPC,MD)]
+Class revtex4-1 Info: Repairing broken LaTeX \@xbitor on input line 1824.
+Class revtex4-1 Info: Making \typeout \long on input line 2089.
+ltxfront[2020/09/30 4.1s frontmatter package (AO,DPC)]
 \c@affil=\count181
 \c@collab=\count182
 \absbox=\box48
-ltxgrid[2020/10/03 4.2e page grid package (portions licensed from W. E. Baxter 
+ltxgrid[2020/09/30 4.1s page grid package (portions licensed from W. E. Baxter 
 web at superscript.com)]
 \c@linecount=\count183
 \output@latex=\toks15
@@ -50,8 +48,8 @@ web at superscript.com)]
 \pagesofar=\box55
 \footsofar=\box56
 \pagegrid@col=\count184
-Class revtex4-2 Info: Overriding \@vspace, \@vspacer, \@no@pgbk, \@newline, and
- \\  on input line 5665.
+Class revtex4-1 Info: Overriding \@vspace, \@vspacer, \@no@pgbk, \@newline, and
+ \\  on input line 5655.
 \c@part=\count185
 \c@section=\count186
 \c@subsection=\count187
@@ -70,21 +68,21 @@ Class revtex4-2 Info: Overriding \@vspace, \@vspacer, \@no@pgbk, \@newline, and
 \widetext@top=\box60
 \widetext@bot=\box61
 
-Class revtex4-2 Warning: No Society specified, using default society aps.
+Class revtex4-1 Warning: No Society specified, using default society aps.
 
-(/usr/local/texlive/2021/texmf-dist/tex/latex/revtex/aps4-2.rtx
-File: aps4-2 2020/10/03 4.2e (https://journals.aps.org/revtex/ for documentatio
-n)
-Class revtex4-2 Info: RevTeX society APS selected on input line 40.
+(/usr/local/texlive/2021/texmf-dist/tex/latex/revtex4-1/aps4-1.rtx
+File: aps4-1 2020/09/30 4.1s (http://publish.aps.org/revtex4/ for documentation
+)
+Class revtex4-1 Info: RevTeX society APS selected on input line 31.
 )
 
-Class revtex4-2 Warning: No journal specified, using default pra.
+Class revtex4-1 Warning: No journal specified, using default pra.
 
-Class revtex4-2 Info: APS journal PRA selected on input line 7661.
-(/usr/local/texlive/2021/texmf-dist/tex/latex/revtex/aps10pt4-2.rtx
-File: aps10pt4-2 2020/10/03 4.2e (https://journals.aps.org/revtex/ for document
-ation)
-Class revtex4-2 Info: RevTeX pointsize 10pt selected on input line 39.
+Class revtex4-1 Info: APS journal PRA selected on input line 7619.
+(/usr/local/texlive/2021/texmf-dist/tex/latex/revtex4-1/aps10pt4-1.rtx
+File: aps10pt4-1 2020/09/30 4.1s (http://publish.aps.org/revtex4/ for documenta
+tion)
+Class revtex4-1 Info: RevTeX pointsize 10pt selected on input line 30.
 )
 (/usr/local/texlive/2021/texmf-dist/tex/latex/textcase/textcase.sty
 Package: textcase 2019/09/14 v1.00 Text only upper/lower case changing (DPC)
@@ -100,12 +98,12 @@ Package: natbib 2010/09/13 8.31b (PWD, AO)
 LaTeX Info: Redefining \cite on input line 694.
 \c@NAT@ctr=\count194
 )
-Class revtex4-2 Info: Repairing natbib's \BibitemShut on input line 7665.
+Class revtex4-1 Info: Repairing natbib's \BibitemShut on input line 7623.
 
-(/usr/local/texlive/2021/texmf-dist/tex/latex/revtex/revsymb4-2.sty
-Package: revsymb4-2 2020/10/03 4.2e (https://journals.aps.org/revtex/ for docum
-entation)
-LaTeX Info: Redefining \REV@mathfrak on input line 128.
+(/usr/local/texlive/2021/texmf-dist/tex/latex/revtex4-1/revsymb4-1.sty
+Package: revsymb4-1 2020/09/30 4.1s (http://publish.aps.org/revtex4/ for docume
+ntation)
+LaTeX Info: Redefining \REV@mathfrak on input line 119.
 ))
 (/usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2020/09/23 v2.17i AMS math features
@@ -178,12 +176,20 @@ File: uni-global.def 2013/05/13 UCS: Unicode global data
 \uc@combtoksb=\toks23
 \uc@temptokena=\toks24
 )
+(/usr/local/texlive/2021/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2020/08/01 v1.3d Input encoding file
+\inpenc@prehook=\toks25
+\inpenc@posthook=\toks26
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/ucs/utf8x.def
+File: utf8x.def 2004/10/17 UCS: Input encoding UTF-8
+))
 (/usr/local/texlive/2021/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
 
 (/usr/local/texlive/2021/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
-\KV@toks@=\toks25
+\KV@toks@=\toks27
 )
 (/usr/local/texlive/2021/texmf-dist/tex/generic/iftex/ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
@@ -202,11 +208,11 @@ Package: iftex 2020/03/06 v1.0d TeX engine tests
 \Gm@layoutheight=\dimen152
 \Gm@layouthoffset=\dimen153
 \Gm@layoutvoffset=\dimen154
-\Gm@dimlist=\toks26
+\Gm@dimlist=\toks28
 )
 (/usr/local/texlive/2021/texmf-dist/tex/latex/tools/enumerate.sty
 Package: enumerate 2015/07/23 v3.00 enumerate extensions (DPC)
-\@enLab=\toks27
+\@enLab=\toks29
 )
 \c@theorem=\count277
 
@@ -259,7 +265,7 @@ Package graphics Info: Driver file: pdftex.def on input line 105.
 (/usr/local/texlive/2021/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
 (/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.te
 x
-\pgfutil@everybye=\toks28
+\pgfutil@everybye=\toks30
 \pgfutil@tempdima=\dimen157
 \pgfutil@tempdimb=\dimen158
 
@@ -278,12 +284,12 @@ Package: pgf 2020/12/27 v3.1.8b (3.1.8b)
 (/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
 Package: pgfsys 2020/12/27 v3.1.8b (3.1.8b)
 (/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
-\pgfkeys@pathtoks=\toks29
-\pgfkeys@temptoks=\toks30
+\pgfkeys@pathtoks=\toks31
+\pgfkeys@temptoks=\toks32
 
 (/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.c
 ode.tex
-\pgfkeys@tmptoks=\toks31
+\pgfkeys@tmptoks=\toks33
 ))
 \pgf@x=\dimen159
 \pgf@y=\dimen160
@@ -301,9 +307,9 @@ ode.tex
 \c@pgf@countb=\count279
 \c@pgf@countc=\count280
 \c@pgf@countd=\count281
-\t@pgf@toka=\toks32
-\t@pgf@tokb=\toks33
-\t@pgf@tokc=\toks34
+\t@pgf@toka=\toks34
+\t@pgf@tokb=\toks35
+\t@pgf@tokc=\toks36
 \pgf@sys@id@count=\count282
 
 (/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
@@ -338,9 +344,9 @@ Package: pgfcore 2020/12/27 v3.1.8b (3.1.8b)
 \pgfmath@dimen=\dimen169
 \pgfmath@count=\count285
 \pgfmath@box=\box65
-\pgfmath@toks=\toks35
-\pgfmath@stack@operand=\toks36
-\pgfmath@stack@operation=\toks37
+\pgfmath@toks=\toks37
+\pgfmath@stack@operand=\toks38
+\pgfmath@stack@operation=\toks39
 )
 (/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.
 tex
@@ -492,8 +498,8 @@ Package: pgffor 2020/12/27 v3.1.8b (3.1.8b)
 (/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
 \pgffor@iter=\dimen196
 \pgffor@skip=\dimen197
-\pgffor@stack=\toks38
-\pgffor@toks=\toks39
+\pgffor@stack=\toks40
+\pgffor@toks=\toks41
 ))
 (/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.cod
 e.tex
@@ -537,9 +543,9 @@ File: tikzlibrarytopaths.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 )))
 (/usr/local/texlive/2021/texmf-dist/tex/generic/pgfplots/pgfplots.code.tex
 (/usr/local/texlive/2021/texmf-dist/tex/generic/pgfplots/pgfplotscore.code.tex
-\t@pgfplots@toka=\toks40
-\t@pgfplots@tokb=\toks41
-\t@pgfplots@tokc=\toks42
+\t@pgfplots@toka=\toks42
+\t@pgfplots@tokb=\toks43
+\t@pgfplots@tokc=\toks44
 \pgfplots@tmpa=\dimen263
 \c@pgfplots@coordindex=\count299
 \c@pgfplots@scanlineindex=\count300
@@ -567,7 +573,7 @@ matrix.code.tex)
 (/usr/local/texlive/2021/texmf-dist/tex/generic/pgfplots/numtable/pgfplotstable
 shared.code.tex
 \c@pgfplotstable@counta=\count302
-\t@pgfplotstable@a=\toks43
+\t@pgfplotstable@a=\toks45
 )
 (/usr/local/texlive/2021/texmf-dist/tex/generic/pgfplots/liststructure/pgfplots
 deque.code.tex)
@@ -705,7 +711,7 @@ er Verdier <olivier.verdier@gmail.com>
  (/usr/local/texlive/2021/texmf-dist/tex/latex/listings/listings.sty
 \lst@mode=\count310
 \lst@gtempboxa=\box76
-\lst@token=\toks44
+\lst@token=\toks46
 \lst@length=\count311
 \lst@currlwidth=\dimen284
 \lst@column=\count312
@@ -753,7 +759,7 @@ Package: arydshln 2019/02/21 v1.76
 \adl@gap=\count328
 \adl@cla=\count329
 \adl@clb=\count330
-\adl@everyvbox=\toks45
+\adl@everyvbox=\toks47
 \adl@LTpagetotal=\dimen295
 )
 (/usr/local/texlive/2021/texmf-dist/tex/latex/physics/physics.sty
@@ -819,8 +825,8 @@ Package: xkeyval 2020/11/20 v2.8 package option processing (HA)
 
 (/usr/local/texlive/2021/texmf-dist/tex/generic/xkeyval/xkeyval.tex
 (/usr/local/texlive/2021/texmf-dist/tex/generic/xkeyval/xkvutils.tex
-\XKV@toks=\toks46
-\XKV@tempa@toks=\toks47
+\XKV@toks=\toks48
+\XKV@tempa@toks=\toks49
 )
 \XKV@depth=\count336
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
@@ -1063,8 +1069,6 @@ Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
 
 (/usr/local/texlive/2021/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2021-02-27 v7.00k Hyperref: PDFDocEncoding definition (HO)
-Now handling font encoding PD1 ...
-... no UTF-8 mapping file for font encoding PD1
 )
 (/usr/local/texlive/2021/texmf-dist/tex/latex/hyperref/hyperref-langpatches.def
 File: hyperref-langpatches.def 2021-02-27 v7.00k Hyperref: patches for babel la
@@ -1076,8 +1080,6 @@ Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 
 (/usr/local/texlive/2021/texmf-dist/tex/latex/hyperref/puenc.def
 File: puenc.def 2021-02-27 v7.00k Hyperref: PDF Unicode definition (HO)
-Now handling font encoding PU ...
-... no UTF-8 mapping file for font encoding PU
 )
 Package hyperref Info: Hyper figures OFF on input line 4192.
 Package hyperref Info: Link nesting OFF on input line 4197.
@@ -1169,8 +1171,8 @@ LaTeX Info: Redefining \Bbb on input line 113.
 ))
 (/usr/local/texlive/2021/texmf-dist/tex/latex/tools/verbatim.sty
 Package: verbatim 2020-07-07 v1.5u LaTeX2e package for verbatim enhancements
-\every@verbatim=\toks48
-\verbatim@line=\toks49
+\every@verbatim=\toks50
+\verbatim@line=\toks51
 \verbatim@in@stream=\read3
 )
 (/usr/local/texlive/2021/texmf-dist/tex/latex/wrapfig/wrapfig.sty
@@ -1178,7 +1180,7 @@ Package: verbatim 2020-07-07 v1.5u LaTeX2e package for verbatim enhancements
 \WF@size=\dimen338
 \c@WF@wrappedlines=\count359
 \WF@box=\box89
-\WF@everypar=\toks50
+\WF@everypar=\toks52
 Package: wrapfig 2003/01/31  v 3.6
 )
 (/usr/local/texlive/2021/texmf-dist/tex/latex/lipsum/lipsum.sty
@@ -1248,11 +1250,11 @@ Package babel Info: \l@newzealand = using hyphenrules for ukenglish
 (/usr/local/texlive/2021/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2020/03/24 1.8d listings language file
 )
-Class revtex4-2 Info: Unrecognized LaTeX tabular. Please update this document c
+Class revtex4-1 Info: Unrecognized LaTeX tabular. Please update this document c
 lass! (Proceeding with fingers crossed.) on input line 62.
-Class revtex4-2 Info: cite was not loaded (OK!) on input line 62.
-Class revtex4-2 Info: mcite was not loaded (OK!) on input line 62.
-Class revtex4-2 Info: multicol was not loaded (OK!) on input line 62.
+Class revtex4-1 Info: cite was not loaded (OK!) on input line 62.
+Class revtex4-1 Info: mcite was not loaded (OK!) on input line 62.
+Class revtex4-1 Info: multicol was not loaded (OK!) on input line 62.
 
 (/Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 1/Rocket Engine.aux
 )
@@ -1320,12 +1322,12 @@ File: ucsencs.def 2011/01/21 Fixes to fontencodings LGR, T3
 \scratchbox=\box91
 \nofMPsegments=\count367
 \nofMParguments=\count368
-\everyMPshowfont=\toks51
+\everyMPshowfont=\toks53
 \MPscratchCnt=\count369
 \MPscratchDim=\dimen351
 \MPnumerator=\count370
 \makeMPintoPDFobject=\count371
-\everyMPtoPDFconversion=\toks52
+\everyMPtoPDFconversion=\toks54
 ) (/usr/local/texlive/2021/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 
@@ -1379,7 +1381,7 @@ LaTeX Info: Redefining \nameref on input line 62.
 \@outlinefile=\write5
 \openout5 = `"Rocket Engine.out"'.
 
-Class revtex4-2 Info: Taking \maketitle back from hyperref on input line 62.
+Class revtex4-1 Info: Taking \maketitle back from hyperref on input line 62.
 \openout3 = `"Rocket EngineNotes.bib"'.
 
 
@@ -1399,10 +1401,10 @@ Package rerunfilecheck Info: File `"Rocket Engine".out' has not changed.
 (rerunfilecheck)             Checksum: 6F64A56509915F74ABA528749A3682F9;1216.
  ) 
 Here is how much of TeX's memory you used:
- 42010 strings out of 478994
- 921864 string characters out of 5858184
- 1615578 words of memory out of 5000000
- 58801 multiletter control sequences out of 15000+600000
+ 42013 strings out of 478994
+ 922342 string characters out of 5858184
+ 1621678 words of memory out of 5000000
+ 58798 multiletter control sequences out of 15000+600000
  405294 words of font info for 33 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  102i,5n,102p,738b,609s stack positions out of 5000i,500n,10000p,200000b,80000s

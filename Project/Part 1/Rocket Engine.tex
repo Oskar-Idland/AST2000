@@ -1,90 +1,51 @@
-\documentclass[reprint,english,notitlepage]{revtex4-1}  % defines the basic parameters of the document
-\usepackage{amsmath}
-\usepackage[mathletters]{ucs}
-\usepackage[utf8x]{inputenc} %Not necessary
-\usepackage[margin=1.5in]{geometry}
-\usepackage{enumerate}
-\newtheorem{theorem}{Theorem}
-\usepackage[dvipsnames]{xcolor}
-\usepackage{pgfplots}
-\setlength{\parindent}{0cm}
-\usepackage{subcaption}
-\usepackage{bigintcalc}
-\usepackage{pythonhighlight} %for pythonkode \begin{python}   \end{python}
-\usepackage{appendix}
-\usepackage{arydshln}
-\usepackage{physics}
-%\usepackage{subfigure}
-\usepackage{tikz-cd}
-\usepackage{booktabs} 
-\usepackage{adjustbox}
-\usepackage{mdframed}
-\usepackage{relsize}
-\usepackage[thinc]{esdiff}
-\usepackage{fixltx2e}
-\usepackage{esint}  %for lukket-linje-integral
-\usepackage{xfrac} %for sfrac
-\usepackage{hyperref} %for linker, må ha med hypersetup
-\usepackage[noabbrev, nameinlink]{cleveref} % to be loaded after hyperref
-\usepackage{amssymb} %\mathbb{R} for reelle tall, \mathcal{B} for "matte"-font
-\usepackage{listings} %for kode/lstlisting
-\usepackage{verbatim}
-\usepackage{graphicx,wrapfig,lipsum,caption} %for wrapping av bilder
-\usepackage{mathtools} %for \abs{x}
+\documentclass[reprint,english,notitlepage]{revtex4-2}
+\usepackage[utf8x]{inputenc}
 \usepackage[english]{babel}
-\usepackage{color}
-\definecolor{codegreen}{rgb}{0,0.6,0}
-\definecolor{codegray}{rgb}{0.5,0.5,0.5}
-\definecolor{codepurple}{rgb}{0.58,0,0.82}
-\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+\includepackage{amsmath}
+\usepackage[mathletters]{ucs}
+\usepackage{physics,amssymb}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{listings}
+\usepackage{subfigure}
+\hypersetup{
+    colorlinks,
+    linkcolor={red!50!black},
+    citecolor={blue!50!black},
+    urlcolor={blue!80!black}}
 
-\lstdefinestyle{mystyle}{
-    backgroundcolor=\color{backcolour},   
-    commentstyle=\color{codegreen},
-    keywordstyle=\color{magenta},
-    numberstyle=\tiny\color{codegray},
-    stringstyle=\color{codepurple},
-    basicstyle=\ttfamily\footnotesize,
-    language=Python,
-    breakatwhitespace=false,         
-    breaklines=true,                 
-    captionpos=b,                    
-    keepspaces=true,                 
-    numbers=left,                    
-    numbersep=5pt,                  
-    showspaces=false,                
-    showstringspaces=false,
-    showtabs=false,                  
-    tabsize=4
-}
+\lstset{inputpath=,
+	backgroundcolor=\color{white!88!black},
+	basicstyle={\ttfamily\scriptsize},
+	commentstyle=\color{magenta},
+	language=Python,
+	morekeywords={True,False},
+	tabsize=4,
+	stringstyle=\color{green!55!black},
+	frame=single,
+	keywordstyle=\color{blue},
+	showstringspaces=false,
+	columns=fullflexible,
+	keepspaces=true}
 
-\lstset{style=mystyle}
 \begin{document}
+\title{Simulation of a gas-driven rocket engine}
 \author{Oskar Idland \& Jannik Eschler}
-\title{%
-    \LARGE Simulation of a gas-driven rocket engine\\
-    \vspace{1ex}
-    \large FYS-1120 Project Part 1}
 \date{\today}
-\noaffiliation
+\affiliation{Institute of Theoretical Astrophysics, University of Oslo,
+\\P.O. Box 1029 Blindern, 0315 Oslo}
+
 \begin{abstract}
-    This abstract is abstract.
+This is an abstract
 \end{abstract}
 \maketitle
-\newpage
 
-% the fundamental components of scientific reports:
 \section{Introduction}
-\section{Theory}   % (optional)
+\section{Theory}
 \section{Method}
 \section{Results}
 \section{Discussion}
 \section{Conclusion}
-% acknowledgements (optional)
-\begin{acknowledgments}  % if you disagree with the spelling, blame Americans
-I would like thank myself for writing this beautiful document.
-\end{acknowledgments}
-
-
-
+\section{References}
 \end{document}
