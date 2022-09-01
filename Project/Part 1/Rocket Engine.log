@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2022.2.21)  1 SEP 2022 11:56
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2022.2.21)  1 SEP 2022 12:11
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -8,33 +8,35 @@ entering extended mode
 (/Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 1/Rocket Engine.tex
 LaTeX2e <2020-10-01> patch level 4
 L3 programming layer <2021-02-18>
-(/usr/local/texlive/2021/texmf-dist/tex/latex/revtex4-1/revtex4-1.cls
-Document Class: revtex4-1 2020/09/30 4.1s (http://publish.aps.org/revtex4/ for 
-documentation)
- Copyright (c) 2009 The American Physical Society.
+(/usr/local/texlive/2021/texmf-dist/tex/latex/revtex/revtex4-2.cls
+Document Class: revtex4-2 2020/10/03 4.2e (https://journals.aps.org/revtex/ for
+ documentation)
+ Copyright (c) 2019 American Physical Society.
  mailto:revtex@aps.org
  Licensed under the LPPL:
 http://www.ctan.org/tex-archive/macros/latex/base/lppl.txt
  Arthur Ogawa <arthur_ogawa at sbcglobal dot net>
- Based on work by David Carlisle <david at dcarlisle.demon.co.uk>.
-ltxutil[2020/09/30 4.1s utilities package (portions licensed from W. E. Baxter 
+ Based on work by David Carlisle <david at dcarlisle.demon.co.uk>
+ Version (4.2d,4.2e): Modified by Mark Doyle and Phelype Oleinik
+ .
+ltxutil[2020/10/03 4.2e utilities package (portions licensed from W. E. Baxter 
 web at superscript.com)]
-LaTeX Info: Redefining \@centercr on input line 346.
-Class revtex4-1 Info: Repairing broken LaTeX eqnarray on input line 396.
+LaTeX Info: Redefining \@centercr on input line 356.
+Class revtex4-2 Info: Repairing broken LaTeX eqnarray on input line 406.
 \eqncolsep=\skip47
-Class revtex4-1 Info: Repairing hyperref-unfriendly LaTeX definition of \mpfoot
-note on input line 471.
-Class revtex4-1 Info: Repairing broken LateX \@sect on input line 793.
+Class revtex4-2 Info: Repairing hyperref-unfriendly LaTeX definition of \mpfoot
+note on input line 481.
+Class revtex4-2 Info: Repairing broken LateX \@sect on input line 803.
 \intertabularlinepenalty=\count179
 \@tbpen=\count180
 \@arstrutbox@hline=\box47
-Class revtex4-1 Info: Repairing broken LaTeX \@xbitor on input line 1824.
-Class revtex4-1 Info: Making \typeout \long on input line 2089.
-ltxfront[2020/09/30 4.1s frontmatter package (AO,DPC)]
+Class revtex4-2 Info: Repairing broken LaTeX \@xbitor on input line 1834.
+Class revtex4-2 Info: Making \typeout \long on input line 2099.
+ltxfront[2020/10/03 4.2e frontmatter package (AO,DPC,MD)]
 \c@affil=\count181
 \c@collab=\count182
 \absbox=\box48
-ltxgrid[2020/09/30 4.1s page grid package (portions licensed from W. E. Baxter 
+ltxgrid[2020/10/03 4.2e page grid package (portions licensed from W. E. Baxter 
 web at superscript.com)]
 \c@linecount=\count183
 \output@latex=\toks15
@@ -48,8 +50,8 @@ web at superscript.com)]
 \pagesofar=\box55
 \footsofar=\box56
 \pagegrid@col=\count184
-Class revtex4-1 Info: Overriding \@vspace, \@vspacer, \@no@pgbk, \@newline, and
- \\  on input line 5655.
+Class revtex4-2 Info: Overriding \@vspace, \@vspacer, \@no@pgbk, \@newline, and
+ \\  on input line 5665.
 \c@part=\count185
 \c@section=\count186
 \c@subsection=\count187
@@ -68,21 +70,21 @@ Class revtex4-1 Info: Overriding \@vspace, \@vspacer, \@no@pgbk, \@newline, and
 \widetext@top=\box60
 \widetext@bot=\box61
 
-Class revtex4-1 Warning: No Society specified, using default society aps.
+Class revtex4-2 Warning: No Society specified, using default society aps.
 
-(/usr/local/texlive/2021/texmf-dist/tex/latex/revtex4-1/aps4-1.rtx
-File: aps4-1 2020/09/30 4.1s (http://publish.aps.org/revtex4/ for documentation
+(/usr/local/texlive/2021/texmf-dist/tex/latex/revtex/aps4-2.rtx
+File: aps4-2 2020/10/03 4.2e (https://journals.aps.org/revtex/ for documentatio
+n)
+Class revtex4-2 Info: RevTeX society APS selected on input line 40.
 )
-Class revtex4-1 Info: RevTeX society APS selected on input line 31.
-)
 
-Class revtex4-1 Warning: No journal specified, using default pra.
+Class revtex4-2 Warning: No journal specified, using default pra.
 
-Class revtex4-1 Info: APS journal PRA selected on input line 7619.
-(/usr/local/texlive/2021/texmf-dist/tex/latex/revtex4-1/aps10pt4-1.rtx
-File: aps10pt4-1 2020/09/30 4.1s (http://publish.aps.org/revtex4/ for documenta
-tion)
-Class revtex4-1 Info: RevTeX pointsize 10pt selected on input line 30.
+Class revtex4-2 Info: APS journal PRA selected on input line 7661.
+(/usr/local/texlive/2021/texmf-dist/tex/latex/revtex/aps10pt4-2.rtx
+File: aps10pt4-2 2020/10/03 4.2e (https://journals.aps.org/revtex/ for document
+ation)
+Class revtex4-2 Info: RevTeX pointsize 10pt selected on input line 39.
 )
 (/usr/local/texlive/2021/texmf-dist/tex/latex/textcase/textcase.sty
 Package: textcase 2019/09/14 v1.00 Text only upper/lower case changing (DPC)
@@ -98,12 +100,12 @@ Package: natbib 2010/09/13 8.31b (PWD, AO)
 LaTeX Info: Redefining \cite on input line 694.
 \c@NAT@ctr=\count194
 )
-Class revtex4-1 Info: Repairing natbib's \BibitemShut on input line 7623.
+Class revtex4-2 Info: Repairing natbib's \BibitemShut on input line 7665.
 
-(/usr/local/texlive/2021/texmf-dist/tex/latex/revtex4-1/revsymb4-1.sty
-Package: revsymb4-1 2020/09/30 4.1s (http://publish.aps.org/revtex4/ for docume
-ntation)
-LaTeX Info: Redefining \REV@mathfrak on input line 119.
+(/usr/local/texlive/2021/texmf-dist/tex/latex/revtex/revsymb4-2.sty
+Package: revsymb4-2 2020/10/03 4.2e (https://journals.aps.org/revtex/ for docum
+entation)
+LaTeX Info: Redefining \REV@mathfrak on input line 128.
 ))
 (/usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2020/09/23 v2.17i AMS math features
@@ -1246,11 +1248,11 @@ Package babel Info: \l@newzealand = using hyphenrules for ukenglish
 (/usr/local/texlive/2021/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2020/03/24 1.8d listings language file
 )
-Class revtex4-1 Info: Unrecognized LaTeX tabular. Please update this document c
+Class revtex4-2 Info: Unrecognized LaTeX tabular. Please update this document c
 lass! (Proceeding with fingers crossed.) on input line 62.
-Class revtex4-1 Info: cite was not loaded (OK!) on input line 62.
-Class revtex4-1 Info: mcite was not loaded (OK!) on input line 62.
-Class revtex4-1 Info: multicol was not loaded (OK!) on input line 62.
+Class revtex4-2 Info: cite was not loaded (OK!) on input line 62.
+Class revtex4-2 Info: mcite was not loaded (OK!) on input line 62.
+Class revtex4-2 Info: multicol was not loaded (OK!) on input line 62.
 
 (/Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 1/Rocket Engine.aux
 )
@@ -1377,7 +1379,7 @@ LaTeX Info: Redefining \nameref on input line 62.
 \@outlinefile=\write5
 \openout5 = `"Rocket Engine.out"'.
 
-Class revtex4-1 Info: Taking \maketitle back from hyperref on input line 62.
+Class revtex4-2 Info: Taking \maketitle back from hyperref on input line 62.
 \openout3 = `"Rocket EngineNotes.bib"'.
 
 
@@ -1397,10 +1399,10 @@ Package rerunfilecheck Info: File `"Rocket Engine".out' has not changed.
 (rerunfilecheck)             Checksum: 6F64A56509915F74ABA528749A3682F9;1216.
  ) 
 Here is how much of TeX's memory you used:
- 41983 strings out of 478994
- 921711 string characters out of 5858184
- 1616147 words of memory out of 5000000
- 58774 multiletter control sequences out of 15000+600000
+ 42010 strings out of 478994
+ 921864 string characters out of 5858184
+ 1615578 words of memory out of 5000000
+ 58801 multiletter control sequences out of 15000+600000
  405294 words of font info for 33 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  102i,5n,102p,738b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
