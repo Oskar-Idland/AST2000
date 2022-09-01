@@ -2,7 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import ast2000tools as ast
 import random
-from cls_func import *
+from header import *
 
 """
 Simplifications and Assumptions:
