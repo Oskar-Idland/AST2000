@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2022.2.21)  31 AUG 2022 12:54
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2022.2.21)  1 SEP 2022 11:37
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1401,7 +1401,7 @@ Here is how much of TeX's memory you used:
 /usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></u
 sr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb>
 Output written on "/Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 1
-/Rocket Engine.pdf" (1 page, 50207 bytes).
+/Rocket Engine.pdf" (1 page, 50088 bytes).
 PDF statistics:
  70 PDF objects out of 1000 (max. 8388607)
  62 compressed objects within 1 object stream
