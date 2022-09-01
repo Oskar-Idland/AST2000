@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2022.2.21)  1 SEP 2022 11:37
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2022.2.21)  1 SEP 2022 11:56
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1381,19 +1381,27 @@ Class revtex4-1 Info: Taking \maketitle back from hyperref on input line 62.
 \openout3 = `"Rocket EngineNotes.bib"'.
 
 
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\\' on input line 73.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\new@ifnextchar' on input line 73.
+
 No file "Rocket Engine".bbl.
 [1{/usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 (/Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 1/Rocket Engine.aux
 )
 Package rerunfilecheck Info: File `"Rocket Engine".out' has not changed.
-(rerunfilecheck)             Checksum: B40F516725CC38ACA945EDBDF6B3C0BA;970.
+(rerunfilecheck)             Checksum: 6F64A56509915F74ABA528749A3682F9;1216.
  ) 
 Here is how much of TeX's memory you used:
- 41980 strings out of 478994
- 921670 string characters out of 5858184
- 1615147 words of memory out of 5000000
- 58771 multiletter control sequences out of 15000+600000
- 404987 words of font info for 32 fonts, out of 8000000 for 9000
+ 41983 strings out of 478994
+ 921711 string characters out of 5858184
+ 1616147 words of memory out of 5000000
+ 58774 multiletter control sequences out of 15000+600000
+ 405294 words of font info for 33 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  102i,5n,102p,738b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
@@ -1401,7 +1409,7 @@ Here is how much of TeX's memory you used:
 /usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></u
 sr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb>
 Output written on "/Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 1
-/Rocket Engine.pdf" (1 page, 50088 bytes).
+/Rocket Engine.pdf" (1 page, 52340 bytes).
 PDF statistics:
  70 PDF objects out of 1000 (max. 8388607)
  62 compressed objects within 1 object stream
