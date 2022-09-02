@@ -13,4 +13,4 @@ def P(a, b, dt = .0001):
     x = np.linspace(a,b,1/dt + 1)
     return sum( f(mu, sigma, x)*dt )
 
-P
+
