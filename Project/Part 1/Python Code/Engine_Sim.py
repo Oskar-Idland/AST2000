@@ -2,7 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import ast2000tools as ast
 import random
-from header import *
+from C_Particle import *
 
 """
 Simplifications and Assumptions:
