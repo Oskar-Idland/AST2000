@@ -24,6 +24,13 @@ plt.title("Maxwell-Boltzmann distribution of H2 molecule")
 plt.grid()
 plt.show()
 
+# Challenge A_2_3
+a = 0
+b = 3*1E4
+x = np.linspace(a,b,n)
+plt.plot(x,abs(P))
+plt.show()
+
 
 
 
