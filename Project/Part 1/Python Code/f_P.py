@@ -3,17 +3,14 @@ import numpy as np
 from scipy.integrate import quad
 from scipy.stats import norm
 
-
-def P(a, b, dt = .0001):
+def P(a, b, mu, sigma, dt = .0001):
     '''
     Function which computes the normal probability of a particle to have a value in an interval a to b, with stepsize = 0.0001 as default
     '''
-    sigma; #Sigma og mu må defineres, men ellers er dette hvordan jeg tenker ting kan gjøres
-    mu; 
     def f(mu, sigma,x):
         return 1/(np.sqrt(2*np.pi)*sigma) * np.exp(-1/2 * ((x-mu)/sigma)**2)
 
-    x = np.linspace(a,b,1/dt + 1)
+    x = np.linspace(a,b,int(1/dt + 1))
     return sum( f(mu, sigma, x)*dt )
 
 
