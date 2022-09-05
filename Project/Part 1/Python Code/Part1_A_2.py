@@ -29,12 +29,12 @@ plt.show()
 # Challenge A_2_2 --------------------
 a2 = 5*10**3  # Lower limit for integration
 b2 = 30*10**3  # Upper limit for integration
-P2 = quad(max_boltz_dist1D, a2, b2, args=(T, m))[0]  # Integration using scipy
-print(f"The probability of a particle being in the velocity-interval [5, 30]*10^3 is {P2:.4f}")
+P_abs = quad(max_boltz_dist1D, a2, b2, args=(T, m))[0]  # Integration using scipy
+print(f"The probability of a particle being in the velocity-interval [5, 30]*10^3 is {P_abs:.4f}")
 
 # By multiplying the result by the number of Particles, we get the number density.
 # In other words, the amount of particles per volume, per velocity-interval
-print(f"The number density for this velocity-interval is {(P2*N):.2f}")
+print(f"The number density for this velocity-interval is {(P_abs*N):.2f}")
 
 
 # Challenge A_2_3 --------------------

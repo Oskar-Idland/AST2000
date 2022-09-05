@@ -23,3 +23,7 @@ def max_boltz_dist1D(vx, T, m):
     """
     return np.sqrt(m/(2*np.pi*k*T))*np.exp(-(m*vx**2)/(2*k*T))
 
+
+def m_b_dist1D(vx, T, m):
+    sigma = np.sqrt(m/k*T)
+
