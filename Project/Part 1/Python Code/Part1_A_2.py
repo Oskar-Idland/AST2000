@@ -18,11 +18,13 @@ n = 20000
 x = np.linspace(a, b, n)
 P = max_boltz_dist1D(x, T, m)
 plt.plot(x, P)
-plt.xlabel("1D-Velocity of particle")
-plt.ylabel("Probability")
+plt.xlabel("1D-Velocity of particle [m/s]")
+plt.ylabel("Probability [%]")
 plt.title("Maxwell-Boltzmann distribution of H2 molecule")
 plt.grid()
 plt.show()
+
+
 
 
 

@@ -3,6 +3,7 @@ import numpy as np
 from scipy.integrate import quad
 from scipy.stats import norm
 
+
 def P(a, b, dt = .0001):
     '''
     Function which computes the normal probability of a particle to have a value in an interval a to b, with stepsize = 0.0001 as default

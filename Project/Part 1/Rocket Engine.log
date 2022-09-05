@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.8.28) (preloaded format=pdflatex 2022.9.1)  2 SEP 2022 09:08
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.8.28) (preloaded format=pdflatex 2022.9.1)  5 SEP 2022 10:16
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -914,13 +914,13 @@ Package rerunfilecheck Info: File `"Rocket Engine".out' has not changed.
 Here is how much of TeX's memory you used:
  15223 strings out of 477843
  234928 string characters out of 2823600
- 755143 words of memory out of 3000000
+ 757143 words of memory out of 3000000
  33924 multiletter control sequences out of 15000+600000
  472515 words of font info for 41 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  72i,5n,77p,610b,529s stack positions out of 10000i,1000n,20000p,200000b,80000s
 <C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti9.pfb>
-Output written on "Rocket Engine.pdf" (1 page, 95272 bytes).
+Output written on "Rocket Engine.pdf" (1 page, 96973 bytes).
 PDF statistics:
  84 PDF objects out of 1000 (max. 8388607)
  10 named destinations out of 1000 (max. 500000)
