@@ -39,4 +39,3 @@ print(f"The number density for this velocity-interval is {(P2*N):.2f}")
 
 # Challenge A_2_3 --------------------
 
-
