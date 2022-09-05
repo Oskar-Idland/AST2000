@@ -1,6 +1,6 @@
 import numpy as np
 from scipy.integrate import quad
-from f_P import P2
+from f_P import *
 
 
 # Challenge A_1_1 --------------------
@@ -25,10 +25,10 @@ b2 = mu + (2*sigma)
 a3 = mu - (3*sigma)
 b3 = mu + (3*sigma)
 
-p1 = P2(a1, b1, mu, sigma)  # Probability for -1*sigma ≤ x-mu ≤ 1*sigma
-p2 = P2(a2, b2, mu, sigma)  # Probability for -2*sigma ≤ x-mu ≤ 2*sigma
-p3 = P2(a3, b3, mu, sigma)  # Probability for -3*sigma ≤ x-mu ≤ 3*sigma
-
+p1 = P(a1, b1, mu, sigma)  # Probability for -1*sigma ≤ x-mu ≤ 1*sigma
+p2 = P(a2, b2, mu, sigma)  # Probability for -2*sigma ≤ x-mu ≤ 2*sigma
+p3 = P(a3, b3, mu, sigma)  # Probability for -3*sigma ≤ x-mu ≤ 3*sigma
+print(p1, p2, p3)
 """
 p1 = 0.682689492137086
 p2 = 0.9544997361036417
