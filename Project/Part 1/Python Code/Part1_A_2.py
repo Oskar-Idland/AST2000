@@ -17,9 +17,9 @@ a = -2.5*(10**4)
 b = 2.5*(10**4)
 n = 20000
 vx = np.linspace(a, b, n)
-P = max_boltz_dist1D(vx, T, m)
-plt.plot(vx, P)
-plt.xlabel("1D-Velocity of particle")
+Px = max_boltz_dist1D(vx, T, m)
+plt.plot(vx, Px)
+plt.xlabel("1D-Velocity of particle [m/s]")
 plt.ylabel("Probability")
 plt.title("Maxwell-Boltzmann distribution of H2 molecule")
 plt.grid()
@@ -38,4 +38,18 @@ print(f"The number density for this velocity-interval is {(P2*N):.2f}")
 
 
 # Challenge A_2_3 --------------------
+a3 = 0
+b3 = 3*10**4
+v = np.linspace(a3, b3, n)
+P_abs = max_boltz_dist3D(v, T, m)
+plt.plot(v, P_abs)
+plt.xlabel("Absolute Velocity of particle [m/s]")
+plt.ylabel("Probability")
+plt.title("Maxwell-Boltzmann distribution of H2 molecule")
+plt.grid()
+plt.show()
 
+"""
+There is no conflict between these two plots since these are different plots. One is for a one-dimensional velocity
+only, whereas the other is for the absolute velocity in all dimensions. 
+"""
