@@ -2,9 +2,8 @@
 import numpy as np
 import random
 from scipy.constants import Boltzmann as k
-
 # FUNCTIONS -------------------
-
+from C_Box import Box
 
 # CLASSES ---------------------
 
@@ -51,9 +50,4 @@ class Particle:
             return True
         else:
             return False
-
-
-
-
-
 

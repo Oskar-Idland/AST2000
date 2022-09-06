@@ -13,4 +13,6 @@ Simplifications and Assumptions:
 * When particles collide with a wall, the collision is perfectly elastic
 """
 
-print("Hello World")
+L = 1E-7 
+T = 3*1E3
+N = 100 
