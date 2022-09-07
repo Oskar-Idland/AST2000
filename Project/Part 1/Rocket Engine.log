@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.8.28) (preloaded format=pdflatex 2022.9.1)  5 SEP 2022 17:07
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.8.28) (preloaded format=pdflatex 2022.9.1)  7 SEP 2022 17:28
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -892,7 +892,6 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
 Package hyperref Info: Link coloring ON on input line 32.
- (Rocket Engine.out) (Rocket Engine.out)
 \@outlinefile=\write4
 \openout4 = `"Rocket Engine.out"'.
 
@@ -907,22 +906,98 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 LaTeX Font Info:    Trying to load font information for U+msb on input line 46.
  (C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) (Rocket Engine.bbl) [1{C:/Users/oskar/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] (Rocket Engine.aux)
-Package rerunfilecheck Info: File `"Rocket Engine".out' has not changed.
-(rerunfilecheck)             Checksum: 996C2E251D80A35E27108E2D97126BDD;1036.
+)
+
+c:/Users/oskar/OneDrive/Dokumenter/GitHub/Privat/AST2000/Project/Part 1/Rocket Engine.tex:53: LaTeX Error: Unicode character ∫ (U+222B)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.53 		\left< v \right> = ∫
+                              _{0}^{\infty} vP(v) \ \mathrm{d}v
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+c:/Users/oskar/OneDrive/Dokumenter/GitHub/Privat/AST2000/Project/Part 1/Rocket Engine.tex:56: LaTeX Error: Unicode character π (U+03C0)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.56 ...3}{2}} e^{-x} \mathrm{d}x = \frac{3}{4} π
+                                                  
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+c:/Users/oskar/OneDrive/Dokumenter/GitHub/Privat/AST2000/Project/Part 1/Rocket Engine.tex:60: LaTeX Error: Unicode character ∫ (U+222B)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.60 		∫
+           _{0}^{\infty} vP(v) \ \mathrm{d}v = \int _{0}^{\infty} \left( \fr...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+c:/Users/oskar/OneDrive/Dokumenter/GitHub/Privat/AST2000/Project/Part 1/Rocket Engine.tex:60: LaTeX Error: Unicode character π (U+03C0)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.60 ... e ^{-\frac{1}{2} \frac{mv^{2}}{k T}} 4 π
+                                                   v^{3}
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+c:/Users/oskar/OneDrive/Dokumenter/GitHub/Privat/AST2000/Project/Part 1/Rocket Engine.tex:63: LaTeX Error: Unicode character ∫ (U+222B)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.63 		\frac{4}{\sqrt{\pi}} ∫
+                                _{0}^{\infty} \left( \frac{mv^{2}}{2 \pi k T...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+No file "Rocket Engine".bbl.
+[1{C:/Users/oskar/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] (Rocket Engine.aux)
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+
+Package rerunfilecheck Warning: File `"Rocket Engine".out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `"Rocket Engine".out':
+(rerunfilecheck)             Before: <no file>
+(rerunfilecheck)             After:  87A58CF03730C63EE1241422CB3E7ED2;1165.
  ) 
 Here is how much of TeX's memory you used:
- 15223 strings out of 477843
- 234928 string characters out of 2823600
- 757143 words of memory out of 3000000
- 33924 multiletter control sequences out of 15000+600000
+ 15202 strings out of 477843
+ 234409 string characters out of 2823600
+ 765143 words of memory out of 3000000
+ 33908 multiletter control sequences out of 15000+600000
  472515 words of font info for 41 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  72i,5n,77p,415b,529s stack positions out of 10000i,1000n,20000p,200000b,80000s
-<C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti9.pfb>
-Output written on "Rocket Engine.pdf" (1 page, 96973 bytes).
+<C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti9.pfb>
+Output written on "Rocket Engine.pdf" (1 page, 154759 bytes).
 PDF statistics:
- 84 PDF objects out of 1000 (max. 8388607)
- 10 named destinations out of 1000 (max. 500000)
- 73 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 87 PDF objects out of 1000 (max. 8388607)
+ 11 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
