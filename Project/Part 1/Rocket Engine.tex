@@ -1,7 +1,8 @@
 \documentclass[reprint,english,notitlepage]{revtex4-2}
+\usepackage{amsmath}
+\usepackage[mathletters]{ucs}
 \usepackage[utf8x]{inputenc}
 \usepackage[english]{babel}
-\usepackage{amsmath}
 \usepackage[mathletters]{ucs}
 \usepackage{physics,amssymb}
 \usepackage{graphicx}
@@ -50,17 +51,17 @@ To complete the calculations for the engine we are going to use a lot of statist
 
 	\subsection*{Challenge: 3.1}
 		\[
-		\left< v \right> = ∫ _{0}^{\infty} vP(v) \ \mathrm{d}v
+		\left< v \right> = ∫  _{0}^{\infty} vP(v) \ \mathrm{d}v
 		\]
 		\[
-		\int_{0}^{\infty} x^{\frac{3}{2}} e^{-x} \mathrm{d}x = \frac{3}{4} π 
+		\int_{0}^{\infty} x^{\frac{3}{2}} e^{-x} \mathrm{d}x = \frac{3}{4} \pi 
 		\]
 		We try to rewrite the first integral to fit the form of the second 
 		\[
-		∫ _{0}^{\infty} vP(v) \ \mathrm{d}v = \int _{0}^{\infty} \left( \frac{m}{2 \pi k T} \right) ^{\frac{3}{2}} e ^{-\frac{1}{2} \frac{mv^{2}}{k T}} 4 π v^{3}
+		\int _{0}^{\infty} vP(v) \ \mathrm{d}v = \int _{0}^{\infty} \left( \frac{m}{2 \pi k T} \right) ^{\frac{3}{2}} e ^{-\frac{1}{2} \frac{mv^{2}}{k T}} 4 \pi v^{3}
 		\]
 		\[
-		\frac{4}{\sqrt{\pi}} ∫ _{0}^{\infty} \left( \frac{mv^{2}}{2 \pi k T} \right) ^{\frac{3}{2}} e ^{-\frac{1}{2} \frac{mv^{2}}{k T}} 
+		\frac{4}{\sqrt{\pi}} \int _{0}^{\infty} \left( \frac{mv^{2}}{2 \pi k T} \right) ^{\frac{3}{2}} e ^{-\frac{1}{2} \frac{mv^{2}}{k T}} 
 		\]
 		We use substitution to get the aforementioned integral
 		\[

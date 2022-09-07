@@ -1,11 +1,11 @@
 # Fdb version 3
-["bibtex Rocket Engine"] 0 "Rocket Engine.aux" "Rocket Engine.bbl" "Rocket Engine" 0
+["bibtex Rocket Engine"] 1662565316 "Rocket Engine.aux" "Rocket Engine.bbl" "Rocket Engine" 1662565328
   "C:/Users/oskar/AppData/Local/Programs/MiKTeX/bibtex/bst/revtex/apsrev4-2.bst" 1601735216 69609 e9dea59f0e753ccda3ddc8f5806d846d ""
-  "Rocket Engine.aux" 0 -1 0 "pdflatex"
+  "Rocket Engine.aux" 1662565327 1877 5b4b1473cb23f68389b2d3517146365e "pdflatex"
   (generated)
   "Rocket Engine.bbl"
   "Rocket Engine.blg"
-["pdflatex"] 1662564528 "c:/Users/oskar/OneDrive/Dokumenter/GitHub/Privat/AST2000/Project/Part 1/Rocket Engine.tex" "Rocket Engine.pdf" "Rocket Engine" 1662564528
+["pdflatex"] 1662565325 "c:/Users/oskar/OneDrive/Dokumenter/GitHub/Privat/AST2000/Project/Part 1/Rocket Engine.tex" "Rocket Engine.pdf" "Rocket Engine" 1662565328
   "C:/Users/oskar/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1662032559 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/oskar/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1662031172 10374549 ab9957c64f9e665f244136ccccd1caef ""
   "C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1233955448 1004 54797486969f23fa377b128694d548df ""
@@ -70,11 +70,6 @@
   "C:/Users/oskar/AppData/Local/Programs/MiKTeX/tex/latex/base/atbegshi-ltx.sty" 1657041432 3122 8df402c6591ccc8ed35ce64c1c49c50b ""
   "C:/Users/oskar/AppData/Local/Programs/MiKTeX/tex/latex/base/atveryend-ltx.sty" 1657041432 2462 2ab3964e30f8e7a2977395016edcbbc6 ""
   "C:/Users/oskar/AppData/Local/Programs/MiKTeX/tex/latex/base/inputenc.sty" 1657041432 5048 84b05796b49b69e2d4257d537721c960 ""
-  "C:/Users/oskar/AppData/Local/Programs/MiKTeX/tex/latex/base/omsenc.dfu" 1657041432 1990 846f138013b8f9b1eb25530aca1cb8a2 ""
-  "C:/Users/oskar/AppData/Local/Programs/MiKTeX/tex/latex/base/ot1enc.dfu" 1657041432 3534 9e491fb32e35bfff6b9ba316480f2ffc ""
-  "C:/Users/oskar/AppData/Local/Programs/MiKTeX/tex/latex/base/t1enc.dfu" 1657041432 12786 1d31c639b01407e8ed545252503231bc ""
-  "C:/Users/oskar/AppData/Local/Programs/MiKTeX/tex/latex/base/ts1enc.dfu" 1657041432 5133 2b6b3086fbdf70953c13e087cbcffa1a ""
-  "C:/Users/oskar/AppData/Local/Programs/MiKTeX/tex/latex/base/utf8.def" 1657041432 11506 48e87c4d4c8b8f9871b6f60996d0a635 ""
   "C:/Users/oskar/AppData/Local/Programs/MiKTeX/tex/latex/epstopdf-pkg/epstopdf-base.sty" 1623003186 13886 d1306dcf79a944f6988e688c1785f9ce ""
   "C:/Users/oskar/AppData/Local/Programs/MiKTeX/tex/latex/graphics-cfg/color.cfg" 1465894292 1213 620bba36b25224fa9b7e1ccb4ecb76fd ""
   "C:/Users/oskar/AppData/Local/Programs/MiKTeX/tex/latex/graphics-cfg/graphics.cfg" 1465894292 1224 978390e9c2234eab29404bc21b268d1e ""
@@ -110,17 +105,18 @@
   "C:/Users/oskar/AppData/Local/Programs/MiKTeX/tex/latex/subfigure/subfigure.cfg" 1114282570 2114 42ba738bf6f1cec796106a69840777a4 ""
   "C:/Users/oskar/AppData/Local/Programs/MiKTeX/tex/latex/subfigure/subfigure.sty" 1114282570 14815 1d3da78e0f66f3c62133fbabffd13cf5 ""
   "C:/Users/oskar/AppData/Local/Programs/MiKTeX/tex/latex/textcase/textcase.sty" 1657800947 2405 93dca770d0598d835703b5d004a641b7 ""
+  "C:/Users/oskar/AppData/Local/Programs/MiKTeX/tex/latex/ucs/data/uni-34.def" 1660335216 10889 4789a61c771c4cbc86f9aeb9c2a86b8c ""
   "C:/Users/oskar/AppData/Local/Programs/MiKTeX/tex/latex/ucs/data/uni-global.def" 1660335216 1375 a9cd26ed13adef608374493c3ba873e5 ""
   "C:/Users/oskar/AppData/Local/Programs/MiKTeX/tex/latex/ucs/ucs.sty" 1660469668 28759 986636dc25ad305c9a399f8a66ea2cd8 ""
   "C:/Users/oskar/AppData/Local/Programs/MiKTeX/tex/latex/ucs/ucsencs.def" 1660469668 22451 4813aebd39d52954775dc133caf20eeb ""
   "C:/Users/oskar/AppData/Local/Programs/MiKTeX/tex/latex/ucs/utf8x.def" 1660469668 8944 1cf5de165d8b3a9de8975b4e3f40e814 ""
   "C:/Users/oskar/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388494052 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "C:/Users/oskar/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1656236890 56148 51a9a8571c07b9921892ae11063ae853 ""
-  "Rocket Engine.aux" 1662564528 34 3985256e7290058c681f74d7a3565a19 "pdflatex"
-  "Rocket Engine.bbl" 0 -1 0 "bibtex Rocket Engine"
-  "Rocket Engine.out" 0 -1 0 "pdflatex"
-  "Rocket Engine.tex" 1662564525 2610 3d34110441b967690654f8e183f9d8e2 ""
-  "c:/Users/oskar/OneDrive/Dokumenter/GitHub/Privat/AST2000/Project/Part 1/Rocket Engine.tex" 1662564525 2610 3d34110441b967690654f8e183f9d8e2 ""
+  "Rocket Engine.aux" 1662565327 1877 5b4b1473cb23f68389b2d3517146365e "pdflatex"
+  "Rocket Engine.bbl" 1662565317 2038 e03f3577820c2bf6c60bfe4d5a284fda "bibtex Rocket Engine"
+  "Rocket Engine.out" 1662565327 1165 87a58cf03730c63ee1241422cb3e7ed2 "pdflatex"
+  "Rocket Engine.tex" 1662565306 2646 75aab80328b09f31bc1d1ff47a9d263d ""
+  "c:/Users/oskar/OneDrive/Dokumenter/GitHub/Privat/AST2000/Project/Part 1/Rocket Engine.tex" 1662565306 2646 75aab80328b09f31bc1d1ff47a9d263d ""
   (generated)
   "Rocket Engine.aux"
   "Rocket Engine.log"
