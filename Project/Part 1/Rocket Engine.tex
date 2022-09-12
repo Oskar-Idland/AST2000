@@ -3,6 +3,7 @@
 \usepackage[mathletters]{ucs}
 \usepackage[utf8x]{inputenc}
 \usepackage[english]{babel}
+\usepackage{esint}
 \usepackage[mathletters]{ucs}
 \usepackage{physics,amssymb}
 \usepackage{graphicx}
@@ -34,8 +35,7 @@
 \title{Simulation of a gas-driven rocket engine}
 \author{Oskar Idland \& Jannik Eschler}
 \date{\today}
-\affiliation{Institute of Theoretical Astrophysics, University of Oslo,
-\\P.O. Box 1029 Blindern, 0315 Oslo}
+\affiliation{Institute of Theoretical Astrophysics, University of Oslo}
 
 \begin{abstract}
 This is an abstract \colorbox{red}{Complete this summary at the end of the paper}
@@ -49,31 +49,30 @@ This is an abstract \colorbox{red}{Complete this summary at the end of the paper
 To complete the calculations for the engine we are going to use a lot of statistics to simplify the behavior of the gas particles. 
 \section{Method}
 
-	\subsection*{Challenge: 3.1}
-		\[
-		\left< v \right> = ∫  _{0}^{\infty} vP(v) \ \mathrm{d}v
-		\]
-		\[
-		\int_{0}^{\infty} x^{\frac{3}{2}} e^{-x} \mathrm{d}x = \frac{3}{4} \sqrt{\pi}  
-		\]
-		We try to rewrite the first integral to fit the form of the second 
-		\[
-		\int _{0}^{\infty} vP(v) \ \mathrm{d}v = \int _{0}^{\infty} \left( \frac{m}{2 \pi k T} \right) ^{\frac{3}{2}} e ^{-\frac{1}{2} \frac{mv^{2}}{k T}} 4 \pi v^{3}
-		\]
-		\[
-		\frac{4}{\sqrt{\pi}} \int _{0}^{\infty} \left( \frac{mv^{2}}{2 \pi k T} \right) ^{\frac{3}{2}} e ^{-\frac{1}{2} \frac{mv^{2}}{k T}} 
-		\]
-		We use substitution to get the aforementioned integral
-		\[
-		\frac{4}{\sqrt{\pi}} \frac{3}{4} \sqrt{\pi} = 3
-		\]
-	  
 
 \section{Results}
 \section{Discussion}
 \section{Conclusion}
 \section{References}
-
+\section{Appendix: Mathematical Derivations}
+	\subsection*{Challenge A.3.1}
+	\[
+	\left< v \right> = ∫  _{0}^{\infty} vP(v) \ \mathrm{d}v
+	\]
+	\[
+	\int_{0}^{\infty} x^{\frac{3}{2}} e^{-x} \mathrm{d}x = \frac{3}{4} \sqrt{\pi}  
+	\]
+	We try to rewrite the first integral to fit the form of the second 
+	\[
+	\int _{0}^{\infty} vP(v) \ \mathrm{d}v = \int _{0}^{\infty} \left( \frac{m}{2 \pi k T} \right) ^{\frac{3}{2}} e ^{-\frac{1}{2} \frac{mv^{2}}{k T}} 4 \pi v^{3}
+	\]\newline 
+	\[
+	\frac{4}{\sqrt{\pi}} \int _{0}^{\infty} \left( \frac{mv^{2}}{2 \pi k T} \right) ^{\frac{3}{2}} e ^{-\frac{1}{2} \frac{mv^{2}}{k T}} 
+	\]
+	We use substitution to get the aforementioned integral
+	\[
+	\frac{4}{\sqrt{\pi}} \frac{3}{4} \sqrt{\pi} = 3
+	\]
 
 
 \end{document}

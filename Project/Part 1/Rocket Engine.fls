@@ -180,6 +180,17 @@ INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex\generic\babel\locale\en\b
 INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex\generic\babel\locale\en\babel-english.tex
 INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex\generic\babel\locale\en\babel-english.tex
 INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex\generic\babel\locale\en\babel-en.ini
+INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex\latex\esint\esint.sty
+INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex\latex\esint\esint.sty
+INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex\latex\esint\esint.sty
+INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex\latex\esint\esint.sty
+INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex\latex\esint\esint.sty
+INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex\latex\esint\esint.sty
+INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex\latex\esint\esint.sty
+INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex\latex\esint\esint.sty
+INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex\latex\esint\esint.sty
+INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex\latex\esint\esint.sty
+INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex\latex\esint\esint.sty
 INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex\latex\ucs\ucs.sty
 INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex\latex\physics\physics.sty
 INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex\latex\physics\physics.sty
@@ -705,6 +716,13 @@ INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmti9.tfm
 INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx9.tfm
 INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
 INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
+INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex\latex\esint\uesint.fd
+INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex\latex\esint\uesint.fd
+INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex\latex\esint\uesint.fd
+INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex\latex\esint\uesint.fd
+INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\fonts\tfm\public\esint\esint10.tfm
+INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\fonts\tfm\public\esint\esint10.tfm
+INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\fonts\tfm\public\esint\esint10.tfm
 INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex\latex\amsfonts\umsa.fd
 INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex\latex\amsfonts\umsa.fd
 INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex\latex\amsfonts\umsa.fd
@@ -731,6 +749,8 @@ INPUT C:\Users\oskar\AppData\Local\MiKTeX\fonts\map\pdftex\pdftex.map
 INPUT Rocket Engine.aux
 INPUT .\Rocket Engine.out
 INPUT .\Rocket Engine.out
+INPUT C:\Users\oskar\AppData\Local\MiKTeX\fonts\pk\ljfour\public\esint\dpi600\esint10.pk
+INPUT C:\Users\oskar\AppData\Local\MiKTeX\fonts\pk\ljfour\public\esint\dpi600\esint10.pk
 INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx12.pfb
 INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx12.pfb
 INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx9.pfb
