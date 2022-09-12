@@ -1,12 +1,12 @@
 # Fdb version 3
-["bibtex Rocket Engine"] 1662102519 "Rocket Engine.aux" "Rocket Engine.bbl" "Rocket Engine" 1662102525
+["bibtex Rocket Engine"] 1662983936 "Rocket Engine.aux" "Rocket Engine.bbl" "Rocket Engine" 1662983936
   "C:/Users/oskar/AppData/Local/Programs/MiKTeX/bibtex/bst/revtex/apsrev4-2.bst" 1601735216 69609 e9dea59f0e753ccda3ddc8f5806d846d ""
-  "Rocket Engine.aux" 1662102523 1762 b7a5b55984fd3d78db67e6f2b4ae8226 "pdflatex"
+  "Rocket Engine.aux" 1662983934 1762 b7a5b55984fd3d78db67e6f2b4ae8226 "pdflatex"
   (generated)
   "Rocket Engine.bbl"
   "Rocket Engine.blg"
-["pdflatex"] 1662102521 "c:/Users/oskar/OneDrive/Dokumenter/GitHub/Privat/AST2000/Project/Part 1/Rocket Engine.tex" "Rocket Engine.pdf" "Rocket Engine" 1662102525
-  "C:/Users/oskar/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1662032559 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
+["pdflatex"] 1662983932 "c:/Users/oskar/OneDrive/Dokumenter/GitHub/Privat/AST2000/Project/Part 1/Rocket Engine.tex" "Rocket Engine.pdf" "Rocket Engine" 1662983932
+  "C:/Users/oskar/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1662826137 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/oskar/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1662031172 10374549 ab9957c64f9e665f244136ccccd1caef ""
   "C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1233955448 1004 54797486969f23fa377b128694d548df ""
   "C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/tfm/public/amsfonts/symbols/msam10.tfm" 1233955454 916 f87d7c45f9c908e672703b83b72241a3 ""
@@ -110,11 +110,11 @@
   "C:/Users/oskar/AppData/Local/Programs/MiKTeX/tex/latex/ucs/utf8x.def" 1660469668 8944 1cf5de165d8b3a9de8975b4e3f40e814 ""
   "C:/Users/oskar/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388494052 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "C:/Users/oskar/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1656236890 56148 51a9a8571c07b9921892ae11063ae853 ""
-  "Rocket Engine.aux" 1662102523 1762 b7a5b55984fd3d78db67e6f2b4ae8226 "pdflatex"
-  "Rocket Engine.bbl" 1662102520 2038 e03f3577820c2bf6c60bfe4d5a284fda "bibtex Rocket Engine"
-  "Rocket Engine.out" 1662102523 1036 996c2e251d80a35e27108e2d97126bdd "pdflatex"
-  "Rocket Engine.tex" 1662102520 1699 a88af52d87ea8f55a1793d2f62da3291 ""
-  "c:/Users/oskar/OneDrive/Dokumenter/GitHub/Privat/AST2000/Project/Part 1/Rocket Engine.tex" 1662102520 1699 a88af52d87ea8f55a1793d2f62da3291 ""
+  "Rocket Engine.aux" 1662983932 34 3985256e7290058c681f74d7a3565a19 "pdflatex"
+  "Rocket Engine.bbl" 0 -1 0 "bibtex Rocket Engine"
+  "Rocket Engine.out" 0 -1 0 "pdflatex"
+  "Rocket Engine.tex" 1662983929 1700 808c380c113786c089ea4d1f50e5480a ""
+  "c:/Users/oskar/OneDrive/Dokumenter/GitHub/Privat/AST2000/Project/Part 1/Rocket Engine.tex" 1662983929 1700 808c380c113786c089ea4d1f50e5480a ""
   (generated)
   "Rocket Engine.aux"
   "Rocket Engine.log"
