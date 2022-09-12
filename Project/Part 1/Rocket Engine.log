@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.8.28) (preloaded format=pdflatex 2022.9.1)  12 SEP 2022 09:49
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.8.28) (preloaded format=pdflatex 2022.9.1)  12 SEP 2022 14:00
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -450,7 +450,6 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
 Package hyperref Info: Link coloring ON on input line 34.
- (Rocket Engine.out) (Rocket Engine.out)
 \@outlinefile=\write4
 \openout4 = `"Rocket Engine.out"'.
 
@@ -476,22 +475,32 @@ Underfull \hbox (badness 10000) in paragraph at lines 68--69
 
  []
 
-(Rocket Engine.bbl) [1{C:/Users/oskar/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] (Rocket Engine.aux)
-Package rerunfilecheck Info: File `"Rocket Engine".out' has not changed.
-(rerunfilecheck)             Checksum: 515640A08AE6C1F4B9D9B358EC62CAD9;1403.
+No file "Rocket Engine".bbl.
+[1{C:/Users/oskar/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] (Rocket Engine.aux)
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+
+Package rerunfilecheck Warning: File `"Rocket Engine".out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `"Rocket Engine".out':
+(rerunfilecheck)             Before: <no file>
+(rerunfilecheck)             After:  515640A08AE6C1F4B9D9B358EC62CAD9;1403.
  ) 
 Here is how much of TeX's memory you used:
- 15852 strings out of 477843
- 241931 string characters out of 2823600
+ 15825 strings out of 477843
+ 241353 string characters out of 2823600
  770447 words of memory out of 3000000
- 34550 multiletter control sequences out of 15000+600000
+ 34529 multiletter control sequences out of 15000+600000
  472716 words of font info for 44 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  72i,5n,77p,415b,530s stack positions out of 10000i,1000n,20000p,200000b,80000s
  <C:\Users\oskar\AppData\Local\MiKTeX\fonts/pk/ljfour/public/esint/dpi600\esint10.pk><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti9.pfb>
-Output written on "Rocket Engine.pdf" (1 page, 157040 bytes).
+Output written on "Rocket Engine.pdf" (1 page, 153625 bytes).
 PDF statistics:
- 127 PDF objects out of 1000 (max. 8388607)
+ 93 PDF objects out of 1000 (max. 8388607)
  12 named destinations out of 1000 (max. 500000)
- 89 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -696,18 +696,8 @@ INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex\latex\00miktex\epstopdf-s
 INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex\latex\00miktex\epstopdf-sys.cfg
 INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex\latex\00miktex\epstopdf-sys.cfg
 INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex\latex\graphics\color.sty
-INPUT .\Rocket Engine.out
-INPUT Rocket Engine.out
-INPUT .\Rocket Engine.out
-INPUT Rocket Engine.out
-INPUT .\Rocket Engine.out
-INPUT Rocket Engine.out
-INPUT .\Rocket Engine.out
-INPUT Rocket Engine.out
-OUTPUT Rocket Engine.pdf
-INPUT .\Rocket Engine.out
-INPUT .\Rocket Engine.out
 OUTPUT Rocket Engine.out
+OUTPUT Rocket Engine.pdf
 OUTPUT Rocket EngineNotes.bib
 INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr9.tfm
 INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr12.tfm
@@ -741,10 +731,6 @@ INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex\latex\ucs\data\uni-34.def
 INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex\latex\ucs\data\uni-34.def
 INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex\latex\ucs\data\uni-34.def
 INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex\latex\ucs\data\uni-34.def
-INPUT .\Rocket Engine.bbl
-INPUT Rocket Engine.bbl
-INPUT .\Rocket Engine.bbl
-INPUT Rocket Engine.bbl
 INPUT C:\Users\oskar\AppData\Local\MiKTeX\fonts\map\pdftex\pdftex.map
 INPUT Rocket Engine.aux
 INPUT .\Rocket Engine.out
