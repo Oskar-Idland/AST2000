@@ -16,21 +16,21 @@ class Particle:
 
         self.m = m
         self.inside_box = True  # UNNECESSARY?
-        self.v_sigma = np.sqrt(m / k * T)
+        self.v_sigma = np.sqrt((k * T)/m)
         self.v_mu = 0
         self.seed = seed
         self.box = box
         self.rand_pos_vel()
-        self.p_exit = np.array([])  # Array to store momentum when exiting the nozzle
+        self.p_exit = 0  # Store total momentum when exiting the nozzle
 
     def rand_pos_vel(self):
         random.seed(a=self.seed, version=2)
         self.position = np.array([random.uniform(-self.box.length / 2, self.box.length / 2) for _ in range(3)])
         self.velocity = np.array([random.gauss(self.v_mu, self.v_sigma) for _ in range(3)])
 
-    def advance(self, timestep=1e-13):
-        np.append(self.velocity, self.velocity[-1])  # Appending same velocity
-        np.append(self.position, self.position[-1] + self.velocity[-1] * timestep)  # Continuing movement in same direction
+    def advance(self, timestep=1e-12):
+        self.velocity = np.append(self.velocity, self.velocity[-1])  # Appending same velocity
+        self.position = np.append(self.position, self.position[-1] + self.velocity[-1] * timestep)  # Continuing movement in same direction
 
         collision_axis = np.nonzero(abs(self.position[-2]) >= self.box.length/2)  # Checking for each dimension whether the position is outside the length of the box
         if collision_axis[0].size > 0:
@@ -41,7 +41,7 @@ class Particle:
 
         if self.exiting_nozzle(axis):  # Checking if the particle is going through the nozzle
             self.inside_box = False  # UNNECESSARY?
-            np.append(self.p_exit, self.m*self.velocity[-1])  # Storing the momentum of the particle when exiting
+            self.p_exit += self.m*self.velocity[-1][-1]  # Storing the momentum of the particle when exiting
             self.rand_pos_vel()  # Creating new random position and velocity inside the box
             self.inside_box = True  # UNNECESSARY?
         else:

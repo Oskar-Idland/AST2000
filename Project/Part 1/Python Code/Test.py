@@ -1,4 +1,13 @@
 import numpy as np
-L = 1
-x = np.array([[0, 1, 2], [2, 1, 0]])
-print(x[np.nonzero(x >= 1)[0][0]][np.nonzero(x >= 1)[1]])
+from C_Particle import Particle
+from C_Box import Box
+def pname(p):
+    return p.velocity
+x = np.array([Particle(1,3000,2,Box(1e-6,np.array([0,0,-1e-6/2]))),Particle(1,3000,4,Box(1e-6,np.array([0,0,-1e-6/2])))])
+
+print(list(map(lambda p: p.name, x)))
+
+p = Particle(1,3000,2,Box(1e-6,np.array([0,0,-1e-6/2])))
+print(p.name)
+x = [Particle(1,3000,2,Box(1e-6,np.array([0,0,-1e-6/2]))),Particle(1,3000,4,Box(1e-6,np.array([0,0,-1e-6/2])))]
+
