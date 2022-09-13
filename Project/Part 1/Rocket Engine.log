@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2022.2.21)  13 SEP 2022 23:45
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2022.2.21)  14 SEP 2022 00:31
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -463,7 +463,7 @@ Class revtex4-2 Info: cite was not loaded (OK!) on input line 33.
 Class revtex4-2 Info: mcite was not loaded (OK!) on input line 33.
 Class revtex4-2 Info: multicol was not loaded (OK!) on input line 33.
 
-(./Rocket Engine.aux)
+(/Users/jannikeschler/Documents/GitHub/AST2000/out/Rocket Engine.aux)
 \openout1 = `"Rocket Engine.aux"'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 33.
@@ -527,7 +527,8 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 33.
 LaTeX Info: Redefining \pageref on input line 33.
 LaTeX Info: Redefining \nameref on input line 33.
- (./Rocket Engine.out) (./Rocket Engine.out)
+ (/Users/jannikeschler/Documents/GitHub/AST2000/out/Rocket Engine.out)
+(/Users/jannikeschler/Documents/GitHub/AST2000/out/Rocket Engine.out)
 \@outlinefile=\write4
 \openout4 = `"Rocket Engine.out"'.
 
@@ -560,12 +561,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 104--109
 (/usr/local/texlive/2021/texmf-dist/tex/latex/ucs/data/uni-34.def
 File: uni-34.def 2013/05/13 UCS: Unicode data U+2200..U+22FF
 )
-<./Figures/Max-Boltz1.png, id=67, 650.43pt x 578.16pt>
+<./Figures/Max-Boltz1.png, id=83, 650.43pt x 578.16pt>
 File: ./Figures/Max-Boltz1.png Graphic file (type png)
 <use ./Figures/Max-Boltz1.png>
 Package pdftex.def Info: ./Figures/Max-Boltz1.png  used on input line 138.
 (pdftex.def)             Requested size: 195.1305pt x 173.44933pt.
-<./Figures/Max-Boltz3.png, id=69, 650.43pt x 578.16pt>
+<./Figures/Max-Boltz3.png, id=85, 650.43pt x 578.16pt>
 File: ./Figures/Max-Boltz3.png Graphic file (type png)
 <use ./Figures/Max-Boltz3.png>
 Package pdftex.def Info: ./Figures/Max-Boltz3.png  used on input line 144.
@@ -593,20 +594,25 @@ Underfull \hbox (badness 10000) in paragraph at lines 207--212
  []
 
 [3]
-Underfull \hbox (badness 10000) in paragraph at lines 234--235
+Underfull \hbox (badness 10000) in paragraph at lines 223--229
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 250--251
 
  []
 
 (./Rocket Engine.bbl) [4]
 (/Users/jannikeschler/Documents/GitHub/AST2000/out/Rocket Engine.aux)
 Package rerunfilecheck Info: File `"Rocket Engine".out' has not changed.
-(rerunfilecheck)             Checksum: 515640A08AE6C1F4B9D9B358EC62CAD9;1403.
+(rerunfilecheck)             Checksum: 31439EDEA30144342A6A18187DCA92B2;1927.
  ) 
 Here is how much of TeX's memory you used:
- 15020 strings out of 478994
- 210801 string characters out of 5858184
+ 15028 strings out of 478994
+ 211191 string characters out of 5858184
  749399 words of memory out of 5000000
- 32264 multiletter control sequences out of 15000+600000
+ 32268 multiletter control sequences out of 15000+600000
  409824 words of font info for 56 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  81i,11n,89p,343b,583s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -627,10 +633,10 @@ ve/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/
 exmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/2021/tex
 mf-dist/fonts/type1/public/esint-type1/esint10.pfb>
 Output written on "/Users/jannikeschler/Documents/GitHub/AST2000/out/Rocket Eng
-ine.pdf" (4 pages, 260509 bytes).
+ine.pdf" (4 pages, 266692 bytes).
 PDF statistics:
- 152 PDF objects out of 1000 (max. 8388607)
- 124 compressed objects within 2 object streams
- 21 named destinations out of 1000 (max. 500000)
- 99 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 169 PDF objects out of 1000 (max. 8388607)
+ 141 compressed objects within 2 object streams
+ 25 named destinations out of 1000 (max. 500000)
+ 131 words of extra memory for PDF output out of 10000 (max. 10000000)
 
