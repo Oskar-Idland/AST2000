@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2022.2.21)  13 SEP 2022 11:35
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2022.2.21)  13 SEP 2022 14:44
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -553,25 +553,47 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 54.
 
 (/usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
+) [1{/usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+Underfull \hbox (badness 10000) in paragraph at lines 104--109
+[][][][][][]
+ []
+
 (/usr/local/texlive/2021/texmf-dist/tex/latex/ucs/data/uni-34.def
 File: uni-34.def 2013/05/13 UCS: Unicode data U+2200..U+22FF
-) [1{/usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Underfull \hbox (badness 10000) in paragraph at lines 126--127
+)
+<./Figures/Max-Boltz1.png, id=67, 650.43pt x 578.16pt>
+File: ./Figures/Max-Boltz1.png Graphic file (type png)
+<use ./Figures/Max-Boltz1.png>
+Package pdftex.def Info: ./Figures/Max-Boltz1.png  used on input line 138.
+(pdftex.def)             Requested size: 195.1305pt x 173.44933pt.
+<./Figures/Max-Boltz3.png, id=69, 650.43pt x 578.16pt>
+File: ./Figures/Max-Boltz3.png Graphic file (type png)
+<use ./Figures/Max-Boltz3.png>
+Package pdftex.def Info: ./Figures/Max-Boltz3.png  used on input line 144.
+(pdftex.def)             Requested size: 195.1305pt x 173.44933pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[2 <./Figures/Max-Boltz1.png> <./Figures/Max-Boltz3.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 169--170
 
  []
 
-(./Rocket Engine.bbl) [2]
+(./Rocket Engine.bbl) [3]
 (/Users/jannikeschler/Documents/GitHub/AST2000/out/Rocket Engine.aux)
 Package rerunfilecheck Info: File `"Rocket Engine".out' has not changed.
 (rerunfilecheck)             Checksum: 515640A08AE6C1F4B9D9B358EC62CAD9;1403.
  ) 
 Here is how much of TeX's memory you used:
- 14958 strings out of 478994
- 210199 string characters out of 5858184
- 748399 words of memory out of 5000000
- 32219 multiletter control sequences out of 15000+600000
- 406887 words of font info for 43 fonts, out of 8000000 for 9000
+ 15018 strings out of 478994
+ 211079 string characters out of 5858184
+ 749399 words of memory out of 5000000
+ 32263 multiletter control sequences out of 15000+600000
+ 409824 words of font info for 56 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  81i,10n,89p,343b,583s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
@@ -580,19 +602,21 @@ Here is how much of TeX's memory you used:
 usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></u
 sr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr
 /local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/l
-ocal/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/loc
-al/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/
-texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/tex
-live/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texliv
-e/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive
-/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2
-021/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/202
-1/texmf-dist/fonts/type1/public/esint-type1/esint10.pfb>
+ocal/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/loc
+al/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local
+/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/te
+xlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texli
+ve/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/
+2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/202
+1/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2021
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2021/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/2021/tex
+mf-dist/fonts/type1/public/esint-type1/esint10.pfb>
 Output written on "/Users/jannikeschler/Documents/GitHub/AST2000/out/Rocket Eng
-ine.pdf" (2 pages, 153147 bytes).
+ine.pdf" (3 pages, 249859 bytes).
 PDF statistics:
- 122 PDF objects out of 1000 (max. 8388607)
- 102 compressed objects within 2 object streams
- 14 named destinations out of 1000 (max. 500000)
- 89 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 148 PDF objects out of 1000 (max. 8388607)
+ 121 compressed objects within 2 object streams
+ 20 named destinations out of 1000 (max. 500000)
+ 99 words of extra memory for PDF output out of 10000 (max. 10000000)
 
