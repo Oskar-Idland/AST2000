@@ -52,11 +52,17 @@ for i in range(N-1):
         print(f"Final position: x: {int(pos[i][0])} m, y: {int(pos[i][1])} m, z: {int(pos[i][2])} m")
         print(f"Final velocity: v_x: {int(vel[i][0])} m/s, v_y: {int(vel[i][1])} m/s, v_z: {int(vel[i][2])} m/s")
         print(f"Time elapsed: {(dt * i / 60):.2f} min")
+        print(f"Final mass of spacecraft: {wet_mass:.2f} Kg")
         print(f"Remaining fuel: {wet_mass-dry_mass} Kg")
         end_i = i
+        print(end_i)
         break
 
-plt.plot(pos[:end_i, 0], pos[:end_i, 1])
+plt.plot(pos[:end_i, 0], pos[:end_i, 1], color="k")
+plt.xlabel("x-position")
+plt.ylabel("y-position")
+plt.grid()
+plt.savefig("../Figures/Launch_plot.png")
 plt.show()
 
 
