@@ -50,7 +50,7 @@ More specifically the third law, which states "For every action, there is an equ
 When wanting to propel our rocket engine as fast as possible upwards into space and being able to maneuver, we are therefore required
 to be able to expel the right amount of matter at the right time to create the force needed to propel the rocket as wanted.\\
 The first step to creating such an engine is simulating both its inner workings and the engine as part of a rocket during a launch to determine engine-, rocket- and launch-parameters
-as well as gaining a better understanding of the complex system, which makes up a functional rocket.
+as well as gaining a better understanding of the complex system, which makes up a functional rocket. This will happen in a simulated solar system created by the ast2000tools package
 The rocket in this paper will be using hot $ H_2 $ gas under high pressure which will be expelled out the end of the rocket engine to create a force.
 This is due to $H_2$ being an ideal gas, which simplifies calculations. \colorbox{red}{???(Write more on the simulation and theory)???}
 
@@ -59,13 +59,59 @@ To complete the calculations for the engine we are going to use a lot of statist
 
 \section{Method}
 As we are trying to simulate a rocket engine, using gas being expelled at high speed, it is important to be able to simulate and understand the gas.
-Gases are comprised of many individual elementary particles, or in the case of Hydrogen gas molecules.
+A gas is defined as "a fluid (such as air) that has neither independent shape nor volume but tends to expand indefinitely"
+and can be comprised of one or multiple individual atoms, or in the case of Hydrogen gas molecules.
+Hence, if we want to simulate a gas, we need to be able to simulate individual molecules for themselves.
+To not make calculations excessively difficult we assume to have an ideal gas.
+This means it's particles can be looked at as point particles without any spatial extension and it's density and temperature being uniform throughout the gas.
+The particles will therefore be distributed at random positions.
+However, on the molecular scale some particles will have more energy than others, and since a molecules speed is tightly correlated to its energy, statistical physics need to be used to find their velocity.
+The most important function we will need is the gaussian probability distribution function, also called normal distribution function and given by
+
+\begin{align}
+    f(\mu, \sigma; x) = \frac{1}{\sqrt{2\pi}\sigma} exp \left[-\frac{1}{2}\left(\frac{x-\mu}{\sigma}\right)^2 \right] \label{Normal_Distribution}
+\end{align}
+
+The mean value $\mu$ and standard deviation $\sigma$ are parameters which help defining the distribution, and $x$ is a free variable.
+The shape of the gaussian distribution is a very distinct bell curve. The position of the curve is given by the mean value $\mu$, whereas the width of the curve is controlled by the standard deviation $\sigma$ given by
+
+\begin{align*}
+    \sigma = \sqrt{\frac{1}{N}\sum_{i = 1}^{N} \left(x_i-\mu \right)^2}
+\end{align*}
+
+This value can be very hard to visualise, as it is given by such an abstract formula.
+To make visualisation easier, the width of the curve can also be given by another unit called "Full width at half maximum" or in short FWHM.
+The definition of this unit is already in the name. The width of the curve at half of the maximum value.
+Since the maximum value is attained at the mean value where $x=\mu$ and therefore equal to $f(\mu, \sigma; x=\mu)$, are we looking for values for which
+
+\begin{align*}
+    f(\mu, \sigma; x1) = \frac{1}{2} f(\mu, \sigma; \mu)
+\end{align*}
+
+
+However, this distribution alone does not help very much as it would not make much sense to calculate the probability for every single possible value.
+To calculate the probability of the value $x$ being in a certain interval, we therefore integrate over certain intervals to calculate the probability $P$ of $x$ being in the given interval.
+
+\begin{align*}
+    P(a ≤ x ≤ b) = \int_{a}^{b} f(\mu, \sigma; x) \, dx
+\end{align*}
+
+
+
+This distribution is based on the gaussian probability distribution, and uses a particles absolute temperature (T) and it's mass (m) as arguments.
+When integrating the Maxwell-Boltzmann distribution over a given interval, it can be used to calculate the probability of a particle's speed being in the given interval.
+
+
+\begin{align*}
+	\int_{a}^{b} \left(\frac{m}{2\pi kT}\right)^{\frac{3}{2}}e^{-\frac{1}{2}\frac{mv^2}{kT}} 4\pi v^2
+\end{align*}
 
 
 \section{Results}
 \section{Discussion}
 \section{Conclusion}
 \section{References}
+1: https://www.merriam-webster.com/dictionary/gas
 \section{Appendix: Mathematical Derivations}
 	\subsection*{Challenge A.3.1}
 	\[
