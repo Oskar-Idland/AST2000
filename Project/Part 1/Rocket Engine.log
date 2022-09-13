@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2022.2.21)  13 SEP 2022 21:36
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2022.2.21)  13 SEP 2022 23:45
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -463,7 +463,7 @@ Class revtex4-2 Info: cite was not loaded (OK!) on input line 33.
 Class revtex4-2 Info: mcite was not loaded (OK!) on input line 33.
 Class revtex4-2 Info: multicol was not loaded (OK!) on input line 33.
 
-(/Users/jannikeschler/Documents/GitHub/AST2000/out/Rocket Engine.aux)
+(./Rocket Engine.aux)
 \openout1 = `"Rocket Engine.aux"'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 33.
@@ -527,8 +527,7 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 33.
 LaTeX Info: Redefining \pageref on input line 33.
 LaTeX Info: Redefining \nameref on input line 33.
- (/Users/jannikeschler/Documents/GitHub/AST2000/out/Rocket Engine.out)
-(/Users/jannikeschler/Documents/GitHub/AST2000/out/Rocket Engine.out)
+ (./Rocket Engine.out) (./Rocket Engine.out)
 \@outlinefile=\write4
 \openout4 = `"Rocket Engine.out"'.
 
@@ -605,7 +604,7 @@ Package rerunfilecheck Info: File `"Rocket Engine".out' has not changed.
  ) 
 Here is how much of TeX's memory you used:
  15020 strings out of 478994
- 211095 string characters out of 5858184
+ 210801 string characters out of 5858184
  749399 words of memory out of 5000000
  32264 multiletter control sequences out of 15000+600000
  409824 words of font info for 56 fonts, out of 8000000 for 9000
