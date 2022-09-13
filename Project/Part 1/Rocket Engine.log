@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2022.2.21)  13 SEP 2022 14:44
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2022.2.21)  13 SEP 2022 19:49
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -578,8 +578,13 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 158--160
+
+ []
+
 [2 <./Figures/Max-Boltz1.png> <./Figures/Max-Boltz3.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 169--170
+Underfull \hbox (badness 10000) in paragraph at lines 203--204
 
  []
 
@@ -591,11 +596,11 @@ Package rerunfilecheck Info: File `"Rocket Engine".out' has not changed.
 Here is how much of TeX's memory you used:
  15018 strings out of 478994
  211079 string characters out of 5858184
- 749399 words of memory out of 5000000
+ 753399 words of memory out of 5000000
  32263 multiletter control sequences out of 15000+600000
  409824 words of font info for 56 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 81i,10n,89p,343b,583s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 81i,11n,89p,343b,583s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
 ></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb><
 /usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></
@@ -613,7 +618,7 @@ ve/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/
 exmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/2021/tex
 mf-dist/fonts/type1/public/esint-type1/esint10.pfb>
 Output written on "/Users/jannikeschler/Documents/GitHub/AST2000/out/Rocket Eng
-ine.pdf" (3 pages, 249859 bytes).
+ine.pdf" (3 pages, 256328 bytes).
 PDF statistics:
  148 PDF objects out of 1000 (max. 8388607)
  121 compressed objects within 2 object streams

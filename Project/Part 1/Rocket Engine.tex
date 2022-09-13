@@ -82,7 +82,7 @@ The shape of the gaussian distribution is a very distinct bell curve. The positi
 This value can be very hard to visualise, as it is given by such an abstract formula.
 To make visualisation easier, the width of the curve can also be given by another unit called "Full width at half maximum" or in short FWHM.
 The definition of this unit is already in the name. The width of the curve at half of the maximum value.
-Since the maximum value is attained at the mean value where $x=\mu$ and therefore equal to $f(\mu, \sigma; x=\mu)$, are we looking for values for which
+Since the maximum value of $f(\mu, \sigma; x)$ is attained at the mean value where $x=\mu$ and therefore equal to $f(\mu, \sigma; x=\mu)$, are we looking for values for which
 
 \begin{align}
     f(\mu, \sigma; x_1) = \frac{1}{2} f(\mu, \sigma; \mu) \label{FWHM_EQ1}
@@ -96,7 +96,7 @@ More specifically
     FWHM = 2\sqrt{(\mu - x_1)^2}
 \end{align*}
 
-Where x1 satisfies~\ref{FWHM_EQ1}. This unit for the shape of the curve is much easier to visulatize for a given curve.
+Where $x_1$ satisfies~\ref{FWHM_EQ1}. This unit for the shape of the curve is much easier to visulatize for a curve with a given $FWHM$.
 Since both $\sigma$ and $FWHM$ are controlling the width of the curve, they can be put in relation to one another.
 The relationship between $\sigma$ and $FWHM$ is equal to
 \begin{align*}
@@ -144,9 +144,43 @@ Using $10^5\,H_2$ molecules with a temperature of $T=3000\,K$ each of the distri
 	\includegraphics[scale=0.3]{./Figures/Max-Boltz3}
 	\caption{Maxwell-Boltzmann probability distribution for absolute velocity of $H_{2}$ particles}\label{fig:Max_Boltz3D_Plot}
 \end{figure}
+From here, the Maxwell-Boltzmann distribution function can be used to derive some important formulae such as the average speed of a particle as well as the average kinetic energy of a particle in the gas.
+Note that these apply for ideal gases without intermolecular forces.
+\begin{align*}
+    &\langle v \rangle = \int_{0}^{\infty} vP(v)\,dv\\
+	&\colorbox{red}{FIND EXPRESSION FOR AVERAGE SPEED}\\
+	&\langle E \rangle = \frac{3}{2}kT
+\end{align*}
+Theses can be useful as a reference to compare the exit speed of the particles in our rocket engine.
+Furthermore, we are able to derive the ideal gas law, which is a fundamental result of thermodynamics and statistical physics.
+\begin{align*}
+    P = nkT
+\end{align*}
+With P being pressure, n being the number of particles, k the Boltzmann constant and T the temperature.\\
 
+Using this information we are able to simulate the particles of a gas inside a box.
+To do this, a box is created with each side being of length L. The sides of the box in our simulation will be $10^{-6}$ meters.
+Since the box will have to act as a rocket engine, a circular nozzle has to be included.
+The nozzle in this simulation will simply be a hole in one of the walls with an area of $0.25L^{2}$.
+In the beginning the simulation will include 5000 particles with an absolute temperature of 3000 degrees Kelvin.
+Each particle will be assigned two three-dimensional arrays. One array to store the position, and one to store the velocity.
+Using the $random$ python package and the seed \colorbox{red}{SEED}, each particle will then be assigned a random position inside the box.
+Furthermore, an initial velocity is assigned to each particle. The initial velocity is normally distributed using the one-dimensional Maxwell-Boltzmann distribution.\\
+The simulation is then run for a total time of $\tau = 10^{-9}$ seconds with 1000 timesteps of $10^{-12}$ seconds each.
+In our simulation, we are neglecting the gravitational force, as well as assuming that the particles do not have any spatial dimension.
+This means, there are no particle-particle collisions. The only collisions happening are particle-wall collisions.
+We assume that these particle-wall collisions are fully elastic, which means the total kinetic energy is conserved.
+Hence, the angle of incidence must be equal to the angle of reflection.
+This can be achieved by keeping all velocities the same, but making the velocity along the axis perpendicular to the wall the particle is colliding with, negative.
 
-
+As the simulation will be running, particles will escape through the nozzle and take their momentum with them.
+According to Newtons third law, this results in an equally large, but opposite force acting on the box (or rocket engine).
+An important thing to note is that, given the assumption that the temperature and pressure are equal in the box (or chamber) at all times, the number of particles inside the chamber needs to be constant.
+Hence, we will have to create a new particle for each particle escaping through the nozzle.
+Both the momentum and the number of escaped particles need to be accounted for to derive the thrust force our rocket engine produces as well as the fuel consumption.
+Our final rocket engine will be a superposition of many individual chambers. The exact number has to be determined imperically, according to the required thrust.
+Since the chambers are identical, the relation between number of chambers and the thrust force is linear.
+So, doubling the amount of chambers means doubling the thrust.
 
 
 
@@ -158,7 +192,7 @@ Using $10^5\,H_2$ molecules with a temperature of $T=3000\,K$ each of the distri
 \section{Appendix: Mathematical Derivations}
 	\subsection*{Challenge A.3.1}
 	\[
-	\left< v \right> = ∫  _{0}^{\infty} vP(v) \ \mathrm{d}v
+	\left< v \right> =  \int_{0}^{\infty} vP(v) \ \mathrm{d}v
 	\]
 	\[
 	\int_{0}^{\infty} x^{\frac{3}{2}} e^{-x} \mathrm{d}x = \frac{3}{4} \sqrt{\pi}  
