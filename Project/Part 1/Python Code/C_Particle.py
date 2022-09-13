@@ -21,32 +21,32 @@ class Particle:
         self.seed = seed
         self.box = box
         self.rand_pos_vel()
-        self.p_exit = 0  # Store total momentum when exiting the nozzle
+        self.v_exit = 0  # Value to store velocity in the direction of the nozzle when exiting the nozzle
 
     def rand_pos_vel(self):
         random.seed(a=self.seed, version=2)
-        self.position = np.array([random.uniform(-self.box.length / 2, self.box.length / 2) for _ in range(3)])
-        self.velocity = np.array([random.gauss(self.v_mu, self.v_sigma) for _ in range(3)])
+        self.position = np.array([[random.uniform(-self.box.length / 2, self.box.length / 2) for _ in range(3)]])
+        self.velocity = np.array([[random.gauss(self.v_mu, self.v_sigma) for _ in range(3)]]) #Added a factor of 10^4 for velocity to make sense
 
     def advance(self, timestep=1e-12):
-        self.velocity = np.append(self.velocity, self.velocity[-1])  # Appending same velocity
-        self.position = np.append(self.position, self.position[-1] + self.velocity[-1] * timestep)  # Continuing movement in same direction
+        self.velocity = np.append(self.velocity, np.array([self.velocity[-1]]), axis = 0)  # Appending same velocity
+        self.position = np.append(self.position, np.array([self.position[-1] + self.velocity[-1] * timestep]), axis = 0)  # Continuing movement in same direction
 
         collision_axis = np.nonzero(abs(self.position[-2]) >= self.box.length/2)  # Checking for each dimension whether the position is outside the length of the box
         if collision_axis[0].size > 0:
             self.wall_collision(collision_axis[0][0])  # Initiating a collision with a wall
 
     def wall_collision(self, axis):
-        side = np.sign(self.position[4-axis])  # Checking which side of the box we are on (positive or negative)
+        side = np.sign(self.position[-1][axis])  # Checking which side of the box we are on (positive or negative)
 
         if self.exiting_nozzle(axis):  # Checking if the particle is going through the nozzle
+            print('Exiting!')
             self.inside_box = False  # UNNECESSARY?
-            self.p_exit += self.m*self.velocity[-1][-1]  # Storing the momentum of the particle when exiting
-            self.rand_pos_vel()  # Creating new random position and velocity inside the box
+            self.v_exit += -self.velocity[-1]  # Storing the speed of the particle when exiting in the z-direction
             self.inside_box = True  # UNNECESSARY?
-        else:
-            self.velocity[-1][axis] = -self.velocity[-1][axis]  # Changing direction of velocity in correct dimension
-            self.position[-1][axis] = side * self.box.length - self.position[-2][axis]  # Changing position to position after collision
+
+        self.velocity[-1][axis] = -self.velocity[-1][axis]  # Changing direction of velocity in correct dimension
+        self.position[-1][axis] = side * self.box.length - self.position[-2][axis]  # Changing position to position after collision
 
     def exiting_nozzle(self, axis):
         dist_from_nozzle = self.position[-2] - self.box.nozzle_pos
