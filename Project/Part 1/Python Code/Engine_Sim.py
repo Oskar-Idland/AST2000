@@ -28,4 +28,13 @@ particles = np.array([Particle(m,T,seed*_,Box) for _ in range(N)])
 [map(lambda p: p.advance(), particles) for _ in range(1000)]
 print(particles[0].p_exit, particles[1].p_exit)
 print(list(map(lambda p: p.p_exit, particles)))
-
+box_cordx = [-L/2, L/2, L/2, -L/2, -L/2]
+box_cordy = [-L/2, -L/2, L/2, L/2, -L/2]
+plt.plot(box_cordx,box_cordy)
+[particles[0].advance() for _ in range(100)]
+print(particles[0].position)
+px = particles[0].position[0::3]
+py = particles[0].position[1::3]
+# plt.plot(([-Box.nozzle_rad, Box.nozzle_pos[-1]], [Box.nozzle_rad, Box.nozzle_pos[-1]]), color = 'red')
+plt.plot(px,py)
+plt.show()

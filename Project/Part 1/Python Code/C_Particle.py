@@ -37,7 +37,7 @@ class Particle:
             self.wall_collision(collision_axis[0][0])  # Initiating a collision with a wall
 
     def wall_collision(self, axis):
-        side = np.sign(self.position[-1][axis])  # Checking which side of the box we are on (positive or negative)
+        side = np.sign(self.position[4-axis])  # Checking which side of the box we are on (positive or negative)
 
         if self.exiting_nozzle(axis):  # Checking if the particle is going through the nozzle
             self.inside_box = False  # UNNECESSARY?
