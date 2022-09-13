@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2022.2.21)  13 SEP 2022 14:44
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2022.2.21)  13 SEP 2022 21:21
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -578,24 +578,39 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[2 <./Figures/Max-Boltz1.png> <./Figures/Max-Boltz3.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 169--170
+
+Underfull \hbox (badness 10000) in paragraph at lines 158--160
 
  []
 
-(./Rocket Engine.bbl) [3]
+[2 <./Figures/Max-Boltz1.png> <./Figures/Max-Boltz3.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 207--212
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 207--212
+
+ []
+
+[3]
+Underfull \hbox (badness 10000) in paragraph at lines 234--235
+
+ []
+
+(./Rocket Engine.bbl) [4]
 (/Users/jannikeschler/Documents/GitHub/AST2000/out/Rocket Engine.aux)
 Package rerunfilecheck Info: File `"Rocket Engine".out' has not changed.
 (rerunfilecheck)             Checksum: 515640A08AE6C1F4B9D9B358EC62CAD9;1403.
  ) 
 Here is how much of TeX's memory you used:
- 15018 strings out of 478994
- 211079 string characters out of 5858184
+ 15020 strings out of 478994
+ 211095 string characters out of 5858184
  749399 words of memory out of 5000000
- 32263 multiletter control sequences out of 15000+600000
+ 32264 multiletter control sequences out of 15000+600000
  409824 words of font info for 56 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 81i,10n,89p,343b,583s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 81i,11n,89p,343b,583s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
 ></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb><
 /usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></
@@ -613,10 +628,10 @@ ve/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/
 exmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/2021/tex
 mf-dist/fonts/type1/public/esint-type1/esint10.pfb>
 Output written on "/Users/jannikeschler/Documents/GitHub/AST2000/out/Rocket Eng
-ine.pdf" (3 pages, 249859 bytes).
+ine.pdf" (4 pages, 260717 bytes).
 PDF statistics:
- 148 PDF objects out of 1000 (max. 8388607)
- 121 compressed objects within 2 object streams
- 20 named destinations out of 1000 (max. 500000)
+ 152 PDF objects out of 1000 (max. 8388607)
+ 124 compressed objects within 2 object streams
+ 21 named destinations out of 1000 (max. 500000)
  99 words of extra memory for PDF output out of 10000 (max. 10000000)
 
