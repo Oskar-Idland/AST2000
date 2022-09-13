@@ -2,6 +2,7 @@
 import numpy as np
 import random
 from scipy.constants import Boltzmann as k
+import matplotlib.pyplot as plt
 # FUNCTIONS -------------------
 from C_Box import Box
 
@@ -15,7 +16,6 @@ class Particle:
         Particle.particle_num += 1
 
         self.m = m
-        self.inside_box = True  # UNNECESSARY?
         self.v_sigma = np.sqrt((k * T)/m)
         self.v_mu = 0
         self.seed = seed
@@ -40,19 +40,20 @@ class Particle:
         side = np.sign(self.position[-1][axis])  # Checking which side of the box we are on (positive or negative)
 
         if self.exiting_nozzle(axis):  # Checking if the particle is going through the nozzle
-            print('Exiting!')
-            self.inside_box = False  # UNNECESSARY?
-            self.v_exit += -self.velocity[-1]  # Storing the speed of the particle when exiting in the z-direction
-            self.inside_box = True  # UNNECESSARY?
+            self.v_exit += abs(self.velocity[-1][2])  # Storing the speed of the particle when exiting in the z-direction
+
+
+  
 
         self.velocity[-1][axis] = -self.velocity[-1][axis]  # Changing direction of velocity in correct dimension
         self.position[-1][axis] = side * self.box.length - self.position[-2][axis]  # Changing position to position after collision
 
     def exiting_nozzle(self, axis):
         dist_from_nozzle = self.position[-2] - self.box.nozzle_pos
-        in_nozzle_rad = (np.sqrt(np.linalg.norm(self.position[-2])**2 - (self.position[-2][axis])**2) < self.box.nozzle_rad)  # Checking if the particle is inside the radius of the nozzle before exiting
-        moving_to_nozzle = (np.sign(self.velocity[-1][axis]) == np.sign(self.box.nozzle_pos[axis]))  # Checking if the particle is moving towards the nozzle in x
-        if moving_to_nozzle and in_nozzle_rad:  # Checking if the particle is moving towards, and hitting the correct wall as well as being inside the nozzle diameter before and after exiting the nozzle
+        in_nozzle_rad = np.linalg.norm(dist_from_nozzle[:2]) < self.box.nozzle_rad
+        # in_nozzle_rad = (np.sqrt(np.linalg.norm(self.position[-2])**2 - (self.position[-2][axis])**2) < self.box.nozzle_rad)  # Checking if the particle is inside the radius of the nozzle before exiting
+        # moving_to_nozzle = (np.sign(self.velocity[-1][axis]) == np.sign(self.box.nozzle_pos[axis]))  # Checking if the particle is moving towards the nozzle in x
+        if in_nozzle_rad:  # Checking if the particle is moving towards, and hitting the correct wall as well as being inside the nozzle diameter before and after exiting the nozzle
             return True
         else:
             return False
