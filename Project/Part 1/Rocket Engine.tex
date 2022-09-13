@@ -52,7 +52,7 @@ to be able to expel the right amount of matter at the right time to create the f
 The first step to creating such an engine is simulating both its inner workings and the engine as part of a rocket during a launch to determine engine-, rocket- and launch-parameters
 as well as gaining a better understanding of the complex system, which makes up a functional rocket. This will happen in a simulated solar system created by the ast2000tools package
 The rocket in this paper will be using hot $ H_2 $ gas under high pressure which will be expelled out the end of the rocket engine to create a force.
-This is due to $H_2$ being an ideal gas, which simplifies calculations. \colorbox{red}{???(Write more on the simulation and theory)???}
+This is due to $H_2$ being an ideal gas, which simplifies calculations.
 
 \section{Theory}
 To complete the calculations for the engine we are going to use a lot of statistics to simplify the behavior of the gas particles. 
@@ -164,9 +164,9 @@ Since the box will have to act as a rocket engine, a circular nozzle has to be i
 The nozzle in this simulation will simply be a hole in one of the walls with an area of $0.25L^{2}$.
 In the beginning the simulation will include 5000 particles with an absolute temperature of 3000 degrees Kelvin.
 Each particle will be assigned two three-dimensional arrays. One array to store the position, and one to store the velocity.
-Using the $random$ python package and the seed \colorbox{red}{SEED}, each particle will then be assigned a random position inside the box.
+Using the $random$ python package and the seed "8", each particle will then be assigned a random position inside the box.
 Furthermore, an initial velocity is assigned to each particle. The initial velocity is normally distributed using the one-dimensional Maxwell-Boltzmann distribution.\\
-The simulation is then run for a total time of $\tau = 10^{-9}$ seconds with 1000 timesteps of $10^{-12}$ seconds each.
+The simulation is then run for a total time of $\tau = 10^{-9}$ seconds with 1000 timesteps of $10^{-12}$ seconds each using the Euler-Cromer method to advance each particle.
 In our simulation, we are neglecting the gravitational force, as well as assuming that the particles do not have any spatial dimension.
 This means, there are no particle-particle collisions. The only collisions happening are particle-wall collisions.
 We assume that these particle-wall collisions are fully elastic, which means the total kinetic energy is conserved.
@@ -191,7 +191,7 @@ During the launch we will be neglecting air resistance, so the only acting force
     F = G\,\frac{Mm}{r^2}
 \end{align*}
 Where G is the gravitational constant equal to $6.67430 \cdot 10^{-11}$, M is the mass of the planet, m is the mass of the spacecraft and r is the distance between the center of the planet and the spacecraft.
-The launch will happen in the reference frame of the \colorbox{red}{center of the planet}.
+The launch will happen in the reference frame of the center of the planet.
 When launching, the rocket will therefore have a tangential velocity due to the rotation of the planet. Since we are neclecting air resistance, this tangential velocity will be constant.
 The radial velocity will be initially zero, but increase due to the thrust force being greater than the gravitational force.
 Our simulation of the rocket launch will continue until the rocket is in outer space. According to our definition, this is when the rocket reaches escape velocity.
