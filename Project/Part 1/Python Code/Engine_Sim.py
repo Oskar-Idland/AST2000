@@ -20,7 +20,7 @@ seed = 8
 m = Formula('H2').mass/(A*500) # Mass of one H2 molecule In Kg
 L = 1E-6 
 T = 3*1E3
-N = int(1e3)
+N = int(1e4)
 timesteps = 1000
 nozzle_pos = np.array([0,0,-L/2]) # Nozzle positioned directly under the box 
 error_factor = 1/2
@@ -33,4 +33,4 @@ particles = np.array([Particle(m,T,seed*i,Box) for i in range(N)])
 [[list(map(lambda p: p.advance(), particles))] for _ in range(timesteps)]
 
 
-print('Momentum: ' + str(error_factor*m*np.sum(np.array(list(map(lambda p: p.v_exit, particles)))))) # Multiplying by error factor to correct for the momentum being counted twice as much as it should
+print('Momentum: ' + str(10*error_factor*m*np.sum(np.array(list(map(lambda p: p.v_exit, particles)))))) # Multiplying by error factor to correct for the momentum being counted twice as much as it should
