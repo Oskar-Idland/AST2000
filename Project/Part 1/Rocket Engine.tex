@@ -84,27 +84,70 @@ To make visualisation easier, the width of the curve can also be given by anothe
 The definition of this unit is already in the name. The width of the curve at half of the maximum value.
 Since the maximum value is attained at the mean value where $x=\mu$ and therefore equal to $f(\mu, \sigma; x=\mu)$, are we looking for values for which
 
+\begin{align}
+    f(\mu, \sigma; x_1) = \frac{1}{2} f(\mu, \sigma; \mu) \label{FWHM_EQ1}
+\end{align}
+
+Half the width of the curve at half maximum will then be given by $W_{Half} = \sqrt{(\mu - x_1)^2}$.
+Due to the symmetry of the curve around $x =\mu$, the full width of the curve can be calculated by multiplying $W_{Half}$ by $2$.
+More specifically
+
 \begin{align*}
-    f(\mu, \sigma; x1) = \frac{1}{2} f(\mu, \sigma; \mu)
+    FWHM = 2\sqrt{(\mu - x_1)^2}
 \end{align*}
 
-
-However, this distribution alone does not help very much as it would not make much sense to calculate the probability for every single possible value.
-To calculate the probability of the value $x$ being in a certain interval, we therefore integrate over certain intervals to calculate the probability $P$ of $x$ being in the given interval.
+Where x1 satisfies~\ref{FWHM_EQ1}. This unit for the shape of the curve is much easier to visulatize for a given curve.
+Since both $\sigma$ and $FWHM$ are controlling the width of the curve, they can be put in relation to one another.
+The relationship between $\sigma$ and $FWHM$ is equal to
+\begin{align*}
+    FWHM = 2\sqrt{2\ln2}\sigma
+\end{align*}
+\colorbox{red}{The mathematical derivation of this can be found in}
+\colorbox{red}{the appendix}
+However, the gaussian probability distribution function alone is not sufficient to calculate the probability of a value as it only returns the probability density.
+To calculate the probability of the value $x$ being in the interval $[a, b]$, we need to integrate the probability distribution function over the given interval.
 
 \begin{align*}
     P(a ≤ x ≤ b) = \int_{a}^{b} f(\mu, \sigma; x) \, dx
 \end{align*}
 
-
-
-This distribution is based on the gaussian probability distribution, and uses a particles absolute temperature (T) and it's mass (m) as arguments.
-When integrating the Maxwell-Boltzmann distribution over a given interval, it can be used to calculate the probability of a particle's speed being in the given interval.
-
-
+A handy rule of thumb for a value being inside an interval expressed by $\sigma$ is
 \begin{align*}
-	\int_{a}^{b} \left(\frac{m}{2\pi kT}\right)^{\frac{3}{2}}e^{-\frac{1}{2}\frac{mv^2}{kT}} 4\pi v^2
+    &P(-1\sigma ≤ x-\mu ≤ 1\sigma) ≈ 0.68\\
+	&P(-2\sigma ≤ x-\mu ≤ 2\sigma) ≈ 0.95\\
+	&P(-3\sigma ≤ x-\mu ≤ 3\sigma) ≈ 0.997
 \end{align*}
+
+To simulate our gas later used in the rocket engine, we will use the Maxwell-Boltzmann probability distribution.
+This distribution is based on the gaussian probability distribution, and uses a particles absolute temperature (T) and it's mass (m) as arguments as well as the Boltzmann constant
+$k = 1.380649 \cdot 10^{-23}\,J/K$.
+\\When integrating the Maxwell-Boltzmann distribution over a given interval, it can be used to calculate the probability of a particle's speed being in the given interval.
+
+\begin{align}
+	P(v) = \int_{a}^{b} \left(\frac{m}{2\pi kT}\right)^{\frac{3}{2}} e^{-\frac{1}{2}\frac{mv^2}{kT}} 4\pi v^2 \label{MB_ThreeDim}\\
+	\nonumber \\
+    P(v_x) = \int_{a}^{b} \sqrt{\frac{m}{2\pi kT}} e^{-\frac{1}{2}\frac{mv_{x}^2}{kT}} \label{MB_1Dim}
+\end{align}
+The Maxwell-Boltzmann distribution for the absolute speed in three dimensions~\ref{MB_ThreeDim} and for one dimension~\ref{MB_1Dim}.
+
+It is important to not confuse these two distributions as one is only for one-dimensional velocities, whereas the other is for the absolute velocity calculated from the velocity in all three spatial dimensions and will yield different results.
+Using $10^5\,H_2$ molecules with a temperature of $T=3000\,K$ each of the distributions can now be plotted to verify the formula and determine approximate values for both the absolute velocity and one-dimensional velocity.
+\begin{figure}[h]
+	%% h(here), t(top of page), b(bottom of page)
+	\centering
+	\includegraphics[scale=0.3]{./Figures/Max-Boltz1}
+	\caption{Maxwell-Boltzmann probability distribution for one-dimensional velocities of $H_{2}$ particles}\label{fig:Max_Boltz1D_Plot}
+\end{figure}
+\begin{figure}[h]
+	%% h(here), t(top of page), b(bottom of page)
+	\centering
+	\includegraphics[scale=0.3]{./Figures/Max-Boltz3}
+	\caption{Maxwell-Boltzmann probability distribution for absolute velocity of $H_{2}$ particles}\label{fig:Max_Boltz3D_Plot}
+\end{figure}
+
+
+
+
 
 
 \section{Results}
