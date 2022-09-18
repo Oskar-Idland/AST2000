@@ -6,6 +6,7 @@ from ast2000tools.space_mission import SpaceMission
 from scipy.constants import G
 
 
+
 username = "janniesc"
 seed = utils.get_seed(username)
 N = 200000
@@ -13,6 +14,7 @@ dt = 0.02
 
 system = SolarSystem(seed)
 mission = SpaceMission(seed)
+planet_idx = 0
 dry_mass = mission.spacecraft_mass
 fuel_mass = 20000  # Guess!
 fuel_consumption = 50  # Kg/s
@@ -22,6 +24,7 @@ mass_home_planet = system.masses[0]*1.989e30
 rotational_period = system.rotational_periods[0]  # In days
 radius_home_planet = system.radii[0]*1000
 end_i = 0
+
 
 tang_vel_planet = 2*np.pi*(radius_home_planet)/(rotational_period*24*3600)
 pos = np.zeros([N, 3])
@@ -48,14 +51,17 @@ for i in range(N-1):
         end_i = i
         break
     if np.linalg.norm(vel[i]) >= np.sqrt(2*G*mass_home_planet/r):
+        exit_coords = np.array([pos[i][0], pos[i][1], pos[i][2]])
+        exit_vel = np.array([vel[i][0], vel[i][1], vel[i][2]])
+        elapsed_time = dt * i
         print("SPACE!!!")
-        print(f"Final position: x: {int(pos[i][0])} m, y: {int(pos[i][1])} m, z: {int(pos[i][2])} m")
-        print(f"Final velocity: v_x: {int(vel[i][0])} m/s, v_y: {int(vel[i][1])} m/s, v_z: {int(vel[i][2])} m/s")
-        print(f"Time elapsed: {(dt * i / 60):.2f} min")
+        print(f"Final position: x: {int(exit_coords[0])} m, y: {int(exit_coords[1])} m, z: {int(exit_coords[2])} m")
+        print(f"Final velocity: v_x: {int(exit_vel[0])} m/s, v_y: {int(exit_vel[1])} m/s, v_z: {int(exit_vel[2])} m/s")
+        print(f"Time elapsed: {(elapsed_time/60):.2f} min")
         print(f"Final mass of spacecraft: {wet_mass:.2f} Kg")
         print(f"Remaining fuel: {wet_mass-dry_mass} Kg")
         end_i = i
-        print(end_i)
+        # print(end_i)
         break
 
 plt.plot(pos[:end_i, 0], pos[:end_i, 1], color="k")
@@ -66,4 +72,29 @@ plt.savefig("../Figures/Launch_plot.png")
 plt.show()
 
 
+# Changing coordinates to solar coordinate system
+def chg_coords(planet_idx, coord_in, vel_in, elapsed_time_in):
+    """
+    Changes coordinates from home planet system to solar system coordinate system and units
+    :param planet_idx: Index of Home planet
+    :param coord_in: Coordinates from launch simulation in meters
+    :param vel_in: Velocity from launch simulation in meters/second
+    :param elapsed_time_in: Elapsed time in seconds
+    :return: Tuple with Position, Velocity and time in the Solar system coordinates and units
+    """
+    planet_coords = np.array([system.semi_major_axes[planet_idx], 0, 0])
+    meters_per_au = 1.495978707*10**11
+    sec_per_yr = 365*24*3600
+    coord_out = planet_coords + (coord_in/meters_per_au)
+    vel_out = vel_in*(sec_per_yr/meters_per_au)
+    elapsed_time_out = elapsed_time_in/sec_per_yr
+    return coord_out, vel_out, elapsed_time_out
+
+
+sol_sys_coords, sol_sys_vel, sol_sys_time = chg_coords(planet_idx, exit_coords, exit_vel, elapsed_time)
+
+print("\nIn solar system coordinate system:")
+print(f"Position: ({sol_sys_coords[0]:E}, {sol_sys_coords[1]:E}, {sol_sys_coords[2]:E}) AU")
+print(f"Position: ({sol_sys_vel[0]:E}, {sol_sys_vel[1]:E}, {sol_sys_vel[2]:E}) AU/Year")
+print(f"Elapsed Time: {sol_sys_time:E} Years")
 
