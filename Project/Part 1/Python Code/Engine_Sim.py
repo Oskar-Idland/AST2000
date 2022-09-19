@@ -27,13 +27,18 @@ error_factor = 1/2
 Box = Box(L, nozzle_pos)
 # Initialize the array storing all particle objects
 
+def adv_p(p):
+    return p.advance()
+
+adv_p = np.vectorize(adv_p)
+
 a = time.time()
 particles = np.array([Particle(m,T,seed*i,Box) for i in range(N)])
 b = time.time()
 print(f'Particle creation took {b - a} s')
 # Advancing all particles 1000 times 
 a = time.time()
-[[list(map(lambda p: p.advance(), particles))] for _ in range(timesteps)]
+[[list(map(adv_p, particles))] for _ in range(timesteps)]
 b = time.time()
 print(f'Advancing particles took {b - a} s')
 
