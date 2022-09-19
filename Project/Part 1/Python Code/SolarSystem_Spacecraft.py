@@ -32,3 +32,4 @@ for planet_idx in range(system.number_of_planets):
     print(f"Planets radius is {system.radii[planet_idx]}\n")
 
 system.print_info()
+print(system.initial_positions)
