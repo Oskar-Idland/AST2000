@@ -66,8 +66,6 @@ def find_analytical_orbit(N_points, system, planet_index): ### find which input 
 
 
 # RUNNING THE SIMULATION
-# Maybe include loop over planet here when it works for one planet?:
-# for planet_idx in range(8):
 num_planet_orbits = []
 an_planet_orbits = []
 position_function = []
@@ -81,23 +79,13 @@ for planet_idx in range(8):
     vy0 = system.initial_velocities[1, planet_idx]      # y-velocity at t = 0
     sun_mass = system.star_mass                         # Mass of your sun
     # note: the above values may be imported directly from ast2000tools.SolarSystem
-    # print(list(integrate(T, dt, N, x0, y0, vx0, vy0, G, sun_mass)))  # numerical orbit
     t, x, v = list(integrate(T, dt, N, x0, y0, vx0, vy0, G, sun_mass))  # numerical orbit
-    num_planet_orbits += [t, x, v]
-    x_analytic, y_analytic = find_analytical_orbit(N, system, planet_idx) # find analytic orbit first to check your numerical calculation
-    an_planet_orbits += [x_analytic, y_analytic]
+    num_planet_orbits.append([t, x, v])
+    x_analytic, y_analytic = find_analytical_orbit(N, system, planet_idx)  # Find analytic orbit first to check your numerical calculation
+    an_planet_orbits.append([x_analytic, y_analytic])
 
 
     #INTERPOLATION
-
-    '''
-    Interpolating our orbit allows us to calculate our planet's position at any
-    time, even those we didn't specifically integrate over in our loop.
-    
-    SciPy allows you to accomplish this easily with the "interpolate" module, which
-    contains the "interp1d" function:
-    '''
-
     position_function = interpolate.interp1d(t, x, axis=0, bounds_error=False,
     fill_value='extrapolate')
 
@@ -131,3 +119,7 @@ plt.xlabel("x-position [AU]")
 plt.ylabel("y-position [AU]")
 plt.savefig("../Figures/Orbit_plots.png")
 plt.show()
+
+
+print(an_planet_orbits[0])
+
