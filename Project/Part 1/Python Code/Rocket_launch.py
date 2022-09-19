@@ -27,19 +27,19 @@ end_i = 0
 
 
 tang_vel_planet = 2*np.pi*(radius_home_planet)/(rotational_period*24*3600)
-pos = np.zeros([N, 3])
-vel = np.zeros([N, 3])
-acc = np.zeros([N, 3])
+pos = np.zeros([N, 2])
+vel = np.zeros([N, 2])
+acc = np.zeros([N, 2])
 
-pos[0] = [0, radius_home_planet, 0]
-vel[0] = [-tang_vel_planet, 0, 0]
+pos[0] = [radius_home_planet, 0]
+vel[0] = [0, tang_vel_planet]
 
 
 for i in range(N-1):
     r = np.linalg.norm(pos[i])
-    theta = np.arccos(pos[i][1]/r)
-    thrust = np.array([-thrust_force*np.sin(theta), thrust_force*np.cos(theta), 0])
-    g = G*mass_home_planet*wet_mass/r**2 * np.array([np.sin(theta), -np.cos(theta), 0])
+    theta = np.arccos(pos[i][0]/r)
+    thrust = np.array([thrust_force*np.cos(theta), thrust_force*np.sin(theta)])
+    g = -G*mass_home_planet*wet_mass/r**2 * np.array([np.cos(theta), np.sin(theta)])
     acc[i] = (g+thrust)/wet_mass
     vel[i+1] = vel[i] + acc[i]*dt
     pos[i+1] = pos[i] + vel[i]*dt
@@ -51,12 +51,12 @@ for i in range(N-1):
         end_i = i
         break
     if np.linalg.norm(vel[i]) >= np.sqrt(2*G*mass_home_planet/r):
-        exit_coords = np.array([pos[i][0], pos[i][1], pos[i][2]])
-        exit_vel = np.array([vel[i][0], vel[i][1], vel[i][2]])
+        exit_coords = np.array([pos[i][0], pos[i][1]])
+        exit_vel = np.array([vel[i][0], vel[i][1]])
         elapsed_time = dt * i
         print("SPACE!!!")
-        print(f"Final position: x: {int(exit_coords[0])} m, y: {int(exit_coords[1])} m, z: {int(exit_coords[2])} m")
-        print(f"Final velocity: v_x: {int(exit_vel[0])} m/s, v_y: {int(exit_vel[1])} m/s, v_z: {int(exit_vel[2])} m/s")
+        print(f"Final position: x: {int(exit_coords[0])} m, y: {int(exit_coords[1])} m")
+        print(f"Final velocity: v_x: {int(exit_vel[0])} m/s, v_y: {int(exit_vel[1])} m/s")
         print(f"Time elapsed: {(elapsed_time/60):.2f} min")
         print(f"Final mass of spacecraft: {wet_mass:.2f} Kg")
         print(f"Remaining fuel: {wet_mass-dry_mass} Kg")
@@ -82,11 +82,12 @@ def chg_coords(planet_idx, coord_in, vel_in, elapsed_time_in):
     :param elapsed_time_in: Elapsed time in seconds
     :return: Tuple with Position, Velocity and time in the Solar system coordinates and units
     """
-    planet_coords = np.array([system.semi_major_axes[planet_idx], 0, 0])
+    planet_coords = system.initial_positions[:, planet_idx]
+    planet_vel = system.initial_velocities[:, planet_idx]
     meters_per_au = 1.495978707*10**11
     sec_per_yr = 365*24*3600
     coord_out = planet_coords + (coord_in/meters_per_au)
-    vel_out = vel_in*(sec_per_yr/meters_per_au)
+    vel_out = planet_vel + (vel_in*(sec_per_yr/meters_per_au))
     elapsed_time_out = elapsed_time_in/sec_per_yr
     return coord_out, vel_out, elapsed_time_out
 
@@ -94,7 +95,7 @@ def chg_coords(planet_idx, coord_in, vel_in, elapsed_time_in):
 sol_sys_coords, sol_sys_vel, sol_sys_time = chg_coords(planet_idx, exit_coords, exit_vel, elapsed_time)
 
 print("\nIn solar system coordinate system:")
-print(f"Position: ({sol_sys_coords[0]:E}, {sol_sys_coords[1]:E}, {sol_sys_coords[2]:E}) AU")
-print(f"Position: ({sol_sys_vel[0]:E}, {sol_sys_vel[1]:E}, {sol_sys_vel[2]:E}) AU/Year")
+print(f"Position: ({sol_sys_coords[0]:E}, {sol_sys_coords[1]:E}) AU")
+print(f"Position: ({sol_sys_vel[0]:E}, {sol_sys_vel[1]:E}) AU/Year")
 print(f"Elapsed Time: {sol_sys_time:E} Years")
 

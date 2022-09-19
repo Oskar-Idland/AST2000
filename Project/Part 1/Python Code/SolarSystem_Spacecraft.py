@@ -18,7 +18,7 @@ for planet_idx in range(system.number_of_planets):
 
 # Spacecraft
 mission = SpaceMission(seed)
-home_planet_idx = 0 # The home planet always has index 0
+home_planet_idx = 0  # The home planet always has index 0
 print('My mission starts on planet {:d}, which has a radius of {:g} kilometers.'
       .format(home_planet_idx, mission.system.radii[home_planet_idx]))
 print('My spacecraft has a mass of {:g} kg and a cross-sectional area of {:g} m^2.'
@@ -30,3 +30,5 @@ for planet_idx in range(system.number_of_planets):
     print(f"Planet mass is {system.masses[planet_idx]*1.989e30} kg")
     print(f"Planets rotational period is {system.rotational_periods[planet_idx]}")
     print(f"Planets radius is {system.radii[planet_idx]}\n")
+
+system.print_info()
