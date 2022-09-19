@@ -97,5 +97,8 @@ sol_sys_coords, sol_sys_vel, sol_sys_time = chg_coords(planet_idx, exit_coords, 
 print("\nIn solar system coordinate system:")
 print(f"Position: ({sol_sys_coords[0]:E}, {sol_sys_coords[1]:E}) AU")
 print(f"Position: ({sol_sys_vel[0]:E}, {sol_sys_vel[1]:E}) AU/Year")
-print(f"Elapsed Time: {sol_sys_time:E} Years")
+print(f"Elapsed Time: {sol_sys_time:E} Years\n")
 
+mission.set_launch_parameters(600000, 50, 20000, 360, [system.initial_positions[0, 0] + (radius_home_planet/(1.495978707*10**11)), 0], 0)
+mission.launch_rocket()
+mission.verify_launch_result(sol_sys_coords)
