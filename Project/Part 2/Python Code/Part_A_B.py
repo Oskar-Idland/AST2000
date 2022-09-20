@@ -151,7 +151,7 @@ for planet_idx in range(8):
 plt.axis("equal")
 plt.xlabel("x-position [AU]")
 plt.ylabel("y-position [AU]")
-plt.savefig("../Figures/Orbit_plots.png")
+plt.savefig("Part 2/Figures/Orbit_plots.png")
 plt.show()
 
 A1, S1 = A_kepler(an_planet_orbits, 0, 1, 0)
