@@ -21,7 +21,7 @@ T = 13*20  #You want to find the planetary position from t=0 to t=T. How could y
 
 
 #SIMULATION PARAMETERS
-N = 1_000_000  #Number of time steps
+N = 3_000_000  #Number of time steps
 dt = T/N  #calculate time step from T and N
 
 @jit(nopython = True)                       #Optional, but recommended for speed, check the numerical compendium
@@ -132,6 +132,10 @@ for planet_idx in range(8):
     # print(f"Starting Position: {position_function(0)}")
     x = np.array(x)
 
+    """
+    # Uncomment to get Numeric period. Pretty much the same as Newtons. 
+    # Increases computing time from ~30s to ~225s
+    
     # Determining Period Numerically
     start_pos = position_function(0)
     for i in range(int(1/dt), N):
@@ -139,7 +143,7 @@ for planet_idx in range(8):
         if np.linalg.norm(a-start_pos) < 0.01:
             print(f"Numeric Period: {i*dt:.4f} Yrs\n\n")
             break
-
+    """
 
 # PLOTTING THE ORBIT
     plt.plot(x[:, 0], x[:, 1], "--", linewidth=1.5)  # Numeric orbit
