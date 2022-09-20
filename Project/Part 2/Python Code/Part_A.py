@@ -21,7 +21,7 @@ T = 13*20  #You want to find the planetary position from t=0 to t=T. How could y
 
 
 #SIMULATION PARAMETERS
-N = 400_000  #Number of time steps
+N = 1_000_000  #Number of time steps
 dt = T/N  #calculate time step from T and N
 
 @jit(nopython = True)                       #Optional, but recommended for speed, check the numerical compendium
@@ -62,6 +62,18 @@ def find_analytical_orbit(N_points, system, planet_index): ### find which input 
     y_analytic = r*np.sin(angles-init_angle)                #convert to y-coordinates
     return x_analytic, y_analytic
 
+
+def A_kepler(planet_orbits, start_idx, stop_idx, planet_idx):
+    A = 0
+    S = 0
+    orbits_arr = np.array(planet_orbits)
+    for i in range(start_idx, stop_idx):
+        r = np.linalg.norm((orbits_arr[planet_idx, :, i]+orbits_arr[planet_idx, :, i+1])/2)
+        h = np.linalg.norm(orbits_arr[planet_idx, :, i+1]-orbits_arr[planet_idx, :, i])
+        d_theta = np.arcsin(h/r)
+        A += 0.5 * r**2 *d_theta
+        S += h
+    return A, S
 
 
 
@@ -110,16 +122,40 @@ for planet_idx in range(8):
     searching for times after T) you may want to consider a solution involving
     the modulo operator – you may find it handy!
     '''
+
+
+    P_Newton = np.sqrt((4*(np.pi**2)*(system.semi_major_axes[planet_idx]**3))/(G*(system.star_mass + system.masses[planet_idx])))
+    P_Kepler = np.sqrt(system.semi_major_axes[planet_idx]**3)
+    print(f"Planet {planet_idx} -------------------")
+    print(f"Newton: {P_Newton:.4f} Yrs, Kepler: {P_Kepler:.4f} Yrs")
+    print(f"Difference: {abs(P_Kepler-P_Newton):.4f} Yrs")
+    # print(f"Starting Position: {position_function(0)}")
     x = np.array(x)
-#PLOTTING THE ORBIT
-    plt.plot(x[:, 0], x[:, 1], "--", linewidth=1.5) #analytic orbit first to check your numerical calculation
-    plt.plot(x_analytic, y_analytic, linewidth=1.5)
+
+    # Determining Period Numerically
+    start_pos = position_function(0)
+    for i in range(int(1/dt), N):
+        a = position_function(i*dt)
+        if np.linalg.norm(a-start_pos) < 0.01:
+            print(f"Numeric Period: {i*dt:.4f} Yrs\n\n")
+            break
+
+
+# PLOTTING THE ORBIT
+    plt.plot(x[:, 0], x[:, 1], "--", linewidth=1.5)  # Numeric orbit
+    plt.plot(x_analytic, y_analytic, linewidth=1.5)  # Analytic Orbit
 plt.axis("equal")
 plt.xlabel("x-position [AU]")
 plt.ylabel("y-position [AU]")
 plt.savefig("../Figures/Orbit_plots.png")
 plt.show()
 
-
-print(an_planet_orbits[0])
+A1, S1 = A_kepler(an_planet_orbits, 0, 1, 0)
+A2, S2 = A_kepler(an_planet_orbits, 100_000, 100_001, 0)
+V1 = S1 / (1 * dt)
+V2 = S2 / (1 * dt)
+print(f"Planet {0}")
+print(f"Area Aphelion: {A1:.8f} AU^2, Distance Aphelion: {S1:E} AU, Speed Aphelion: {V1:.8f} AU/Year")
+print(f"Area Perihelion: {A2:.8f} AU^2, Distance Perihelion: {S2:E} AU, Speed Perihelion: {V2:.8f} AU/Year")
+print(f"Diff Area: {(A2 - A1):E} AU^2, Diff Distance: {(S2 - S1):E} AU, Diff Speed: {(V2 - V1):.8f} AU/Year\n")
 
