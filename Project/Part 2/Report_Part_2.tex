@@ -94,9 +94,9 @@ Therefore the total force exerted on the planet can be calculated using Newtons 
 \begin{align*}
     &\sum\bold{F} = G\,\frac{m_1 m_2}{r^2} \label{Newton_Grav_law}\\
 	&\sum\bold{F} = m_1 \bold{a}\\
-	&\bold{a} = G\,\frac{m_2}{r^2}
+	&\bold{a} = G\,\frac{m_1}{r^2}
 \end{align*}
-With $G$ being the gravitational constant, $m_1$ being the mass of the planet,  $m_1$ being the mass of the star, and $r$ being the distance between the star and the planet.\\\\
+With $G$ being the gravitational constant, $m_1$ being the mass of the star, $m_2$ being the mass of the planet, and $r$ being the distance between the star and the planet.\\\\
 Using the initial velocity of the object at the position we are calculating the acceleration for, as well as the acceleration, we can find the velocity after a small time interval $\Delta t$.
 Correspondingly, using the initial position and velocity, the position after the time step $\Delta t$ can be calculated.
 The process is then repeated using the new position and velocity to calculate the acceleration in the point and velocity and position after another time interval $\Delta t$.
@@ -118,7 +118,27 @@ The process can be described using three equations:
 	\textbf{x}_{i} &= \textbf{x}_i + \textbf{v}_{i+1/2}\,\Delta t
 \end{align*}
 After simulating the orbits of the planets, the results can be used to find a function of time approximating the orbit of each planet.
-This will be done by interpolating the results into a function.
+This will be done by interpolating the results into a function.\\\\
+
+To describe the orbits further, we can make use of Johannes Kepler's laws of planetary motion.
+The three laws state:
+\begin{enumerate}
+    \item The orbit of a planet is an ellipse with the
+		Sun in one of the foci.
+	\item A line connecting the Sun and the planet
+		sweeps out equal areas in equal time inter-
+		vals.
+	\item The orbital period around the Sun and the
+		semimajor axis of the ellipse are related through:
+		\begin{align*}
+		    P^2 = a^3
+		\end{align*}
+		\colorbox{red}{where P is the period in years and a is the
+		semimajor axis in Astronomic Units}
+\end{enumerate}
+
+To find out whether our results agree with Kepler's laws, a formula for calculating the area swept out by the vector $ \textbf{r}$ during a given time interval has to be found first.
+
 
 
 \section{Results}
@@ -127,9 +147,9 @@ This section is for results only
     Subsection?
 
 \section{Discussion}
-To get an accurate simulation, the time steps dt need to be sufficiently small.
-An adequate number is approximately 10'000 steps per year of simulation, which corresponds to a timestep of $dt = 52$ min $33.6$ sec.
-Using smaller timesteps will result in a more precise simulation, but will increase computing time.
+To get an accurate simulation, the time interval dt need to be sufficiently small.
+An adequate number is approximately 10'000 steps per year of simulation, which corresponds to a time interval of $\Delta t = 52$ min $33.6$ sec.
+Using smaller time intervals will result in a more precise simulation, but will increase computing time.
 	\subsection{Subsection}
 
 \section{Conclusion}
@@ -138,10 +158,14 @@ And the conclusion
 
 \section{References}
 References are important!\\
-1: https://www.merriam-webster.com/dictionary/ellipse
-2: https://cvarin.github.io/CSci-Survival-Guide/leapfrog.html
+1:\:https://www.merriam-webster.com/dictionary/ellipse\\
+2:\:https://cvarin.github.io/CSci-Survival-Guide/leapfrog.html\\
+3:\:https://www.uio.no/studier/emner/matnat/astro/AST2000/h22/undervisningsmateriell/lecture_notes/part1b.pdf
 
 \section{Appendix: Mathematical Derivations}
-This is the appendix
+	\subsection{Section 1}
+	\begin{align*}
+
+	\end{align*}
 
 \end{document}
