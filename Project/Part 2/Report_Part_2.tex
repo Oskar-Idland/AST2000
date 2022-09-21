@@ -120,14 +120,13 @@ The process can be described using three equations:
 After simulating the orbits of the planets, the results can be used to find a function of time approximating the orbit of each planet.
 This will be done by interpolating the results into a function.\\\\
 
-To describe the orbits further, we can make use of Johannes Kepler's laws of planetary motion.
+To examine and test the orbits for inaccuracies, we can make use of Johannes Kepler's laws of planetary motion.
 The three laws state:
 \begin{enumerate}
     \item The orbit of a planet is an ellipse with the
 		Sun in one of the foci.
 	\item A line connecting the Sun and the planet
-		sweeps out equal areas in equal time inter-
-		vals.
+		sweeps out equal areas in equal time intervals.
 	\item The orbital period around the Sun and the
 		semimajor axis of the ellipse are related through:
 		\begin{align*}
@@ -137,7 +136,31 @@ The three laws state:
 		semimajor axis in Astronomic Units}
 \end{enumerate}
 
-To find out whether our results agree with Kepler's laws, a formula for calculating the area swept out by the vector $ \textbf{r}$ during a given time interval has to be found first.
+First, we will check whether our results agree with Kepler's second law.
+To do this, two areas on different sides of the orbit of our home planet,which have been swept out in the same time interval will be compared.\\
+To calculate the areas, each area will be divided into smaller areas $dA$, which can be determined by using formula~\eqref{Kepler_dArea}.
+\begin{align}
+    dA = \frac{1}{2}r^2 d\theta \label{Kepler_dArea}
+\end{align}
+\colorbox{red}{The derivation of this formula can be found in the Appendix}
+When running the simulation, a small area $dA$ which is equal to the area swept out by the position vector $\bold{r}$ during the time interval $\Delta t$, will be calculated using formula~\eqref{Kepler_dArea}.
+To find the total area swept out during a time interval $[a, b]$, all smaller areas $dA$ in the interval $[a, b]$ need to be added together.
+This will give an approximation of the total swept out area.
+The simulation will calculate the area at two different places in the orbit.
+One around the point where the planet is closest to the start, called perihelion, and one around the point the furthest away from the star, called aphelion.\\
+The areas should look different, as the planet will have the highest angular velocity at the perihelion and lowest angular velocity at the perihelion.
+This is due to the spin of the planet around the star being conserved.
+The covered distance and mean velocity of the planet during the interval $[a, b]$, are therefore also interesting measurements, which will be calculated in the simulation.
+To do this, the small distances $\Delta \textbf{r}$ which are covered by the planet in the small time intervals $\Delta t$ in the interval $[a, b]$ will therefore be added together.
+This will yield in the total distance traveled by the planet in the time interval $[a, b]$.
+The mean velocity is found by dividing the total distance by the time $t = b-a$.\\
+
+Furthermore we will check if the orbits are consistent with Kepler's third law~\eqref{Kepler3} as well as Newtons revised version of Kepler's third law~\eqref{KeplerNewton3}.
+Since we have found the rotational period of each planet around the sun using the simulation, we will only have to calculate the rotational period of each planet using Kepler's third law and Newtons revised version and compare them to find out how well they agree.
+\begin{align}
+    P^2 &= a^3 \label{Kepler3}\\
+	P^2 &= \frac{4 \pi^2}{G \left( m_1 + m_2 \right)} a^3 \label{KeplerNewton3}
+\end{align}
 
 
 
@@ -147,7 +170,7 @@ This section is for results only
     Subsection?
 
 \section{Discussion}
-To get an accurate simulation, the time interval dt need to be sufficiently small.
+To get an accurate simulation, the time interval dt needs to be sufficiently small.
 An adequate number is approximately 10'000 steps per year of simulation, which corresponds to a time interval of $\Delta t = 52$ min $33.6$ sec.
 Using smaller time intervals will result in a more precise simulation, but will increase computing time.
 	\subsection{Subsection}
