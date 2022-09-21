@@ -1,6 +1,6 @@
 import matplotlib.pyplot as plt
 from scipy import interpolate
-from numba import jit
+from numba import jit, njit
 import numpy as np
 import ast2000tools.utils as utils
 from ast2000tools.solar_system import SolarSystem
@@ -21,7 +21,7 @@ T = 13*20  #You want to find the planetary position from t=0 to t=T. How could y
 
 
 #SIMULATION PARAMETERS
-N = 3_000_000  #Number of time steps
+N = 10_000_000  #Number of time steps
 dt = T/N  #calculate time step from T and N
 
 @jit(nopython = True)                       #Optional, but recommended for speed, check the numerical compendium
@@ -144,6 +144,15 @@ for planet_idx in range(8):
             print(f"Numeric Period: {i*dt:.4f} Yrs\n\n")
             break
     """
+    # Finding period analytically
+    e = system.eccentricities[planet_idx]
+    a = system.semi_major_axes[planet_idx]
+    b = a*np.sqrt((1-e**2))
+    h = np.cross(x[0], v[0])
+    period = 2*np.pi*a*b/h
+    print(f"Analytic Period: {period:.4f} Yrs\n\n")
+
+
 
 # PLOTTING THE ORBIT
     plt.plot(x[:, 0], x[:, 1], "--", linewidth=1.5)  # Numeric orbit
