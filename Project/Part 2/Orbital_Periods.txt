@@ -1,53 +1,54 @@
 Planet 0 -------------------
-Newton: 12.8150 Yrs, Kepler: 27.0053 Yrs
-Difference: 14.1904 Yrs
-Numeric Period: 12.8127 Yrs
+Newton: 12.81498066 Yrs, Kepler: 27.00534139 Yrs
+Difference: 14.19036073 Yrs
+Analytic Period: 12.81499260 Yrs
 
 
 Planet 1 -------------------
-Newton: 16.9343 Yrs, Kepler: 35.6861 Yrs
-Difference: 18.7518 Yrs
-Numeric Period: 16.9319 Yrs
+Newton: 16.93431967 Yrs, Kepler: 35.68609962 Yrs
+Difference: 18.75177995 Yrs
+Analytic Period: 16.93432036 Yrs
 
 
 Planet 2 -------------------
-Newton: 34.8386 Yrs, Kepler: 73.4163 Yrs
-Difference: 38.5777 Yrs
-Numeric Period: 34.8352 Yrs
+Newton: 34.83862938 Yrs, Kepler: 73.41629114 Yrs
+Difference: 38.57766176 Yrs
+Analytic Period: 34.83863486 Yrs
 
 
 Planet 3 -------------------
-Newton: 252.3250 Yrs, Kepler: 531.7359 Yrs
-Difference: 279.4109 Yrs
-Numeric Period: 252.3216 Yrs
+Newton: 252.32499126 Yrs, Kepler: 531.73585833 Yrs
+Difference: 279.41086707 Yrs
+Analytic Period: 252.32753004 Yrs
 
 
 Planet 4 -------------------
-Newton: 116.6109 Yrs, Kepler: 245.7369 Yrs
-Difference: 129.1260 Yrs
-Numeric Period: 116.6062 Yrs
+Newton: 116.61089161 Yrs, Kepler: 245.73693055 Yrs
+Difference: 129.12603895 Yrs
+Analytic Period: 116.61089196 Yrs
 
 
 Planet 5 -------------------
-Newton: 69.4711 Yrs, Kepler: 146.3982 Yrs
-Difference: 76.9271 Yrs
-Numeric Period: 69.4673 Yrs
+Newton: 69.47113744 Yrs, Kepler: 146.39819784 Yrs
+Difference: 76.92706040 Yrs
+Analytic Period: 69.47113888 Yrs
 
 
 Planet 6 -------------------
-Newton: 171.6680 Yrs, Kepler: 361.7605 Yrs
-Difference: 190.0925 Yrs
-Numeric Period: 171.6628 Yrs
+Newton: 171.66798059 Yrs, Kepler: 361.76050404 Yrs
+Difference: 190.09252344 Yrs
+Analytic Period: 171.66819394 Yrs
 
 
 Planet 7 -------------------
-Newton: 7.2560 Yrs, Kepler: 15.2908 Yrs
-Difference: 8.0348 Yrs
-Numeric Period: 7.2542 Yrs
+Newton: 7.25601497 Yrs, Kepler: 15.29077459 Yrs
+Difference: 8.03475962 Yrs
+Analytic Period: 7.25601504 Yrs
 
 
 Planet 0
-Area Aphelion: 0.00008190 AU^2, Distance Aphelion: 1.819685E-05 AU, Speed Aphelion: 0.20996362 AU/Year
-Area Perihelion: 0.00008196 AU^2, Distance Perihelion: 1.821066E-05 AU, Speed Perihelion: 0.21012297 AU/Year
-Diff Area: 6.015668E-08 AU^2, Diff Distance: 1.381054E-08 AU, Diff Speed: 0.00015935 AU/Year
+Area Aphelion: 0.00000307 AU^2, Distance Aphelion: 6.823815E-07 AU, Speed Aphelion: 0.20996355 AU/Year
+Area Perihelion: 0.00000307 AU^2, Distance Perihelion: 6.823823E-07 AU, Speed Perihelion: 0.20996378 AU/Year
+Diff Area: 3.181500E-12 AU^2, Diff Distance: 7.306208E-13 AU, Diff Speed: 0.00000022 AU/Year
 
+The simulation took 939.9313 seconds
