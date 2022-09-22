@@ -46,7 +46,7 @@ def integrate(T, dt, N, S_x0, S_y0, S_vx0, S_vy0, P_x0, P_y0, P_vx0, P_vy0, G, s
         r_norm_Star = np.linalg.norm(x_Star[i])
 
         a_Planet = -G * sun_mass * x_Planet[i] / (r_norm_Planet ** 3)
-        a_Star = -G * planet_mass * x_Star[i] / (r_norm_Planet ** 3)
+        a_Star = -G * planet_mass * x_Star[i] / (r_norm_Star ** 3)
 
         vh_Planet = v_Planet[i] + a_Planet[i]*dt/2
         vh_Star = v_Star[i] + a_Star[i]*dt/2
@@ -82,8 +82,8 @@ com = 1/(star_mass + planet_mass) * (planet_mass*np.array([P_x0,P_y0]))  # Calcu
 # Shifting the planet and star position such that the center of mass is in origin
 P_x0 -= com[0]
 P_y0 -= com[1]
-S_x0 = com[0]
-S_y0 = com[1]
+S_x0 = -com[0]
+S_y0 = -com[1]
 S_vx0 = 0
 S_vy0 = 0
 print('System initialized and initial values defined')

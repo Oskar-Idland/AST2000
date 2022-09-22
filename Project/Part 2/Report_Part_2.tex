@@ -61,7 +61,7 @@ The analytical expression for an ellipse in cartesian coordinates with the origi
     \frac{x^2}{a^2} + \frac{y^2}{b^2} = 1 \label{ellipse_analytic_cart}
 \end{align}
 For the calculations in this report, it is however advantageous to be able to use this expression in polar coordinates.
-When switching to polar coordinates, we will be using the distance $r = |\textbf{r}|$ from the star in one focus point to the point on the ellipse and the angle $f$ at the star from the semi-major axis to the vector $\bold{r}$ as seen in figure \ref{fig:Ellipse_fig}.
+When switching to polar coordinates, we will be using the distance $r = \left\vert \mathbf{r} \right\vert $ from the star in one focus point to the point on the ellipse and the angle $f$ at the star from the semi-major axis to the vector $\mathbf{r}$ as seen in figure \ref{fig:Ellipse_fig}.
 In orbital mechanics, the angle $f$ is also often called the true anomaly.
 \begin{figure}[h]
 	%% h(here), t(top of page), b(bottom of page)
@@ -71,7 +71,9 @@ In orbital mechanics, the angle $f$ is also often called the true anomaly.
 \end{figure}
 Based on figure~\ref{fig:Ellipse_fig} we are now able to see that
 \begin{align}
-    &x = ae + r\,cos(f) \label{x_ellipse}\\
+    &x = ae + r\,cos(f) \label{x_ellipse}
+\end{align}
+\begin{align}
 	&y = r\,sin(f) \label{y_ellipse}
 \end{align}
 Using equations~\ref{x_ellipse} and~\ref{y_ellipse} we wre now able to find an equation for the distance $r$
@@ -92,9 +94,9 @@ The general idea of the simulation is to use newtons second law $\sum\bold{F} = 
 In this simulation, all forces except gravitational forces from the star will be neglected.
 Therefore the total force exerted on the planet can be calculated using Newtons law of universal gravitation.
 \begin{align*}
-    &\sum\bold{F} = G\,\frac{m_1 m_2}{r^2} \label{Newton_Grav_law}\\
-	&\sum\bold{F} = m_1 \bold{a}\\
-	&\bold{a} = G\,\frac{m_1}{r^2}
+    &\sum \mathbf{F} = G\,\frac{m_1 m_2}{r^2} \label{Newton_Grav_law}\\
+	&\sum \mathbf{F}= m_1 \mathbf{a}\\
+	& \mathbf{a} = G\,\frac{m_1}{r^2}
 \end{align*}
 With $G$ being the gravitational constant, $m_1$ being the mass of the star, $m_2$ being the mass of the planet, and $r$ being the distance between the star and the planet.\\\\
 Using the initial velocity of the object at the position we are calculating the acceleration for, as well as the acceleration, we can find the velocity after a small time interval $\Delta t$.
@@ -139,9 +141,11 @@ The three laws state:
 First, we will check whether our results agree with Kepler's second law.
 To do this, two areas on different sides of the orbit of our home planet,which have been swept out in the same time interval will be compared.\\
 To calculate the areas, each area will be divided into smaller areas $dA$, which can be determined by using formula~\eqref{Kepler_dArea}.
-\begin{align}
-    dA = \frac{1}{2}r^2 d\theta \label{Kepler_dArea}
+
+\begin{align} \label{Kepler_dArea}
+    dA = \frac{1}{2}r^2 d\theta 
 \end{align}
+
 \colorbox{red}{The derivation of this formula can be found in the Appendix}
 When running the simulation, a small area $dA$ which is equal to the area swept out by the position vector $\bold{r}$ during the time interval $\Delta t$, will be calculated using formula~\eqref{Kepler_dArea}.
 To find the total area swept out during a time interval $[a, b]$, all smaller areas $dA$ in the interval $[a, b]$ need to be added together.
@@ -158,10 +162,16 @@ The mean velocity is found by dividing the total distance by the time $t = b-a$.
 Furthermore we will check if the orbits are consistent with Kepler's third law~\eqref{Kepler3} as well as Newtons revised version of Kepler's third law~\eqref{KeplerNewton3}.
 Since we have found the rotational period of each planet around the sun using the simulation, we will only have to calculate the rotational period of each planet using Kepler's third law and Newtons revised version and compare them to find out how well they agree.
 \begin{align}
-    P^2 &= a^3 \label{Kepler3}\\
+    P^2 = a^3 \label{Kepler3}
+\end{align}
+\begin{align}
 	P^2 &= \frac{4 \pi^2}{G \left( m_1 + m_2 \right)} a^3 \label{KeplerNewton3}
 \end{align}
 
+To simulate the solar system with the center of mass in origin, we can view this as a N-body system. The simplest example of this is a two-body system where each body has mass $ m_1 , m_2 $ and velocity $ v_1, v_2 $ at position $ r_1, r_2 $. As gravitation is a conservative force the system will have potential energy. The total energy can be written as follows. 
+\[
+E = \frac{1}{2}m_1 \mathbf{\dot{r}}_{1}^{2} + \frac{1}{2}m_2 \mathbf{\dot{r}}_{2}^{2} + U(\mathbf{r})
+\]
 
 
 \section{Results}
@@ -187,8 +197,6 @@ References are important!\\
 
 \section{Appendix: Mathematical Derivations}
 	\subsection{Section 1}
-	\begin{align*}
 
-	\end{align*}
 
 \end{document}
