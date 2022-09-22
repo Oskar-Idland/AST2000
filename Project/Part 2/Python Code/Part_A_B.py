@@ -152,7 +152,11 @@ for planet_idx in range(8):
     b = a*np.sqrt((1-e**2))
     h = np.cross(x[0], v[0])
     period = 2*np.pi*a*b/h
-    print(f"Analytic Period: {period:.8f} Yrs\n\n")
+    print(f"Analytic Period: {period:.8f} Yrs")
+    diff1 = abs(period-P_Kepler)
+    diff2 = abs(period-P_Newton)
+    print(f"Difference Kepler: {100/period*diff1} %")
+    print(f"Difference Newton: {100 / period * diff2} %\n\n")
 
 
 
