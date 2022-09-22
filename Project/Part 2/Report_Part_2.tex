@@ -248,62 +248,39 @@ E = \frac{1}{2}M \mathbf{\dot{R}}^{2} + \frac{1}{2}μ \dot{r}^{2} + U(\mathbf{r}
 	To check whether the calculated orbits agree with Kepler's third law and Newton's revised version of Kepler's third law, the orbital period has been calculated analytically and using each of the two laws~\eqref{Kepler3} and~\eqref{KeplerNewton3} for each planet.
 	This yields in the following results.\\
 
+\begin{table}[h]
+    \begin{tabular}{ |c|c|c| }
+        %% l (Left aligned), c (Centered), r (Right aligned)
         \hline
-		Planet 0 \tab\tab\tab\tab hello\\
-        Analytic	12.81499 Yrs\\
-		Kepler		27.00534 Yrs\\
-		Newton		12.81498 Yrs\\
-		Difference	14.19036 Yrs\\
-        \hline
+		Method & \textbf{Planet 0} & \textbf{Planet 1}\\
+		\hline
+        Analytic	& 12.81499 Yrs & 16.93432 Yrs\\
+		Kepler		& 27.00534 Yrs & 35.68609 Yrs\\
+		Newton		& 12.81498 Yrs & 16.93431 Yrs\\
+		\hline\hline
+		Method & \textbf{Planet 2} & \textbf{Planet 3}\\
+		\hline
+        Analytic	& 34.83863 Yrs & 252.32753 Yrs\\
+		Kepler		& 73.41629 Yrs & 531.73585 Yrs\\
+		Newton		& 34.83862 Yrs & 252.32499 Yrs\\
+		\hline\hline
+		Method & \textbf{Planet 4} & \textbf{Planet 5}\\
+		\hline
+        Analytic	& 116.61089 Yrs & 69.47113 Yrs\\
+		Kepler		& 245.73693 Yrs & 146.39819 Yrs\\
+		Newton		& 116.61089 Yrs & 69.47113 Yrs\\
+		\hline\hline
+		Method & \textbf{Planet 6} & \textbf{Planet 7}\\
+		\hline
+        Analytic	& 171.66819 Yrs & 7.25601 Yrs\\
+		Kepler		& 361.76050 Yrs & 15.29077 Yrs\\
+		Newton		& 171.66798 Yrs & 7.25601 Yrs\\
+		\hline
+	\end{tabular}
+    \caption{Orbital Periods of all planets calculated using three different methods}
+    \label{tab:Kepler3_Table}
+\end{table}
 
-		Planet 1\\
-        Analytic	16.93432 Yrs\\
-		Kepler		35.68609 Yrs\\
-		Newton		16.93431 Yrs\\
-		Difference	18.75177 Yrs\\
-        \hline
-
-		Planet 2\\
-        Analytic	34.83863 Yrs\\
-		Kepler		73.41629 Yrs\\
-		Newton		34.83862 Yrs\\
-		Difference	38.57766 Yrs\\
-        \hline
-
-		Planet 3\\
-        Analytic	252.32753 Yrs\\
-		Kepler		531.73585 Yrs\\
-		Newton		252.32499 Yrs\\
-		Difference	279.41086 Yrs\\
-        \hline
-
-		Planet 4\\
-        Analytic	116.61089 Yrs\\
-		Kepler		245.73693 Yrs\\
-		Newton		116.61089 Yrs\\
-		Difference 	129.12603 Yrs\\
-        \hline
-
-		Planet 5\\
-        Analytic	69.47113 Yrs\\
-		Kepler		146.39819 Yrs\\
-		Newton		69.47113 Yrs\\
-		Difference 	76.92706 Yrs\\
-        \hline
-
-		Planet 6\\
-        Analytic	171.66819 Yrs\\
-		Kepler		361.76050 Yrs\\
-		Newton		171.66798 Yrs\\
-		Difference	190.09252 Yrs\\
-        \hline
-
-		Planet 7\\
-        Analytic	7.25601 Yrs\\
-		Kepler		15.29077 Yrs\\
-		Newton		7.25601 Yrs\\
-		Difference	8.03475 Yrs\\
-        \hline
 
 \\It can be seen that the orbits are not entirely consistent with Kepler's third law.
 The relative difference is approximately $110.733 \pm 0.001\%$ for all planets.
