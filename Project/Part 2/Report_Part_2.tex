@@ -165,8 +165,26 @@ Since we have found the rotational period of each planet around the sun using th
 
 
 \section{Results}
-	\subsection{Planetary Orbits}
-    The simulation of the orbits yielded in
+\subsection{Planetary Orbits}
+    The simulation of the orbits yielded in both numeric and analytic orbits for all planets.
+	For both the analytic and the numeric orbits, arrays containing the velocity and position of each planet at \colorbox{red}{N} equally spaced positions along the orbit are returned.
+	The simulation then created figure~\ref{fig:Orbit_Plot} from these arrays.
+\begin{figure}[h]
+	%% h(here), t(top of page), b(bottom of page)
+	\centering
+	\includegraphics[scale=0.4]{Figures/Orbit_plots}
+	\caption{Plot of the simulated orbits of our solar system}\label{fig:Orbit_Plot}
+\end{figure}\\
+	The star is denoted by the black dot in the middle of the solar system.
+	Around the star, there are 8 sets of orbits, one set for each planet.
+	The numeric orbit for each planet is represented by a dashed line, whereas the analytic orbis is represented by a solid line.\\
+	The numeric and analytic orbits are slightly elliptic, and line up quite well for all planets, with only some deviance.
+	As seen in Figure~\ref{fig:Orbit_Plot}, they have the same shapes but appear not to be entirely concentric.
+
+\subsection{Comparison to Kepler's Laws}
+
+
+
 
 \section{Discussion}
 To get an accurate simulation, the time interval dt needs to be sufficiently small.

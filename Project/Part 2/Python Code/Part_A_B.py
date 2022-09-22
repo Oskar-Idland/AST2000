@@ -159,6 +159,7 @@ for planet_idx in range(8):
 # PLOTTING THE ORBIT
     plt.plot(x[:, 0], x[:, 1], "--", linewidth=1.5)  # Numeric orbit
     plt.plot(x_analytic, y_analytic, linewidth=1.5)  # Analytic Orbit
+plt.scatter(0, 0, c="k")
 plt.axis("equal")
 plt.xlabel("x-position [AU]")
 plt.ylabel("y-position [AU]")
