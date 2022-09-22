@@ -168,9 +168,26 @@ Since we have found the rotational period of each planet around the sun using th
 	P^2 &= \frac{4 \pi^2}{G \left( m_1 + m_2 \right)} a^3 \label{KeplerNewton3}
 \end{align}
 
-To simulate the solar system with the center of mass in origin, we can view this as a N-body system. The simplest example of this is a two-body system where each body has mass $ m_1 , m_2 $ and velocity $ v_1, v_2 $ at position $ r_1, r_2 $. As gravitation is a conservative force the system will have potential energy. The total energy can be written as follows. 
+To simulate the solar system with the center of mass in origin, we can view this as a N-body system. The simplest example of this is a two-body system where each body has mass $ m_1 , m_2 $ and velocity $ v_1, v_2 $ at position $ r_1, r_2 $. The new system introduces some other new variables. Reduced mass $ \mu $, sum of masses $ M $, the vector $ \mathbf{r} $ from one of the masses, to another and center of mass $ \mathbf{R} $
+\begin{align*}
+	M = m_1 + m_2 \\ \\
+	\mathbf{R} = \frac{m_1 \mathbf{r}_1 + m_2  \mathbf{r}_2}{m_1 + m_2} \\ \\
+	\mu = \frac{m_1 m_2}{M} \\
+	\mathbf{r} = \mathbf{r}_2 - \mathbf{r}_1
+\end{align*}
+
+The kinetic energy $ E_k $ can be written
 \[
-E = \frac{1}{2}m_1 \mathbf{\dot{r}}_{1}^{2} + \frac{1}{2}m_2 \mathbf{\dot{r}}_{2}^{2} + U(\mathbf{r})
+E_k = \frac{1}{2}m_1 \mathbf{\dot{r}}_{1}^{2} + \frac{1}{2}m_2 \mathbf{\dot{r}}_{2}^{2}
+\]
+Using the definition of the center of mass $ \mathbf{R} $ we can redefine the vectors $ r_1 $ and $ r_2 $ to get a new expression for the kinetic energy
+\[
+E_k = \frac{1}{2}M \mathbf{\dot{R}}^{2} + \frac{1}{2}μ \dot{r}^{2}
+\]
+
+As gravitation is a conservative force the system will have potential energy. The total energy can be written as follows. 
+\[
+E = \frac{1}{2}M \mathbf{\dot{R}}^{2} + \frac{1}{2}μ \dot{r}^{2} + U(\mathbf{r})
 \]
 
 

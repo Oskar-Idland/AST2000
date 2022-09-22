@@ -16,7 +16,7 @@ T = 13*20  #You want to find the planetary position from t=0 to t=T. How could y
 
 
 #SIMULATION PARAMETERS
-N = 300  #Number of time steps
+N = 30000  #Number of time steps
 dt = T/N  #calculate time step from T and N
 
 @jit(nopython = True)                       #Optional, but recommended for speed, check the numerical compendium
@@ -77,6 +77,9 @@ P_x0 = system.initial_positions[0,0]
 P_y0 = system.initial_positions[1,0]
 P_vx0 = system.initial_velocities[0,0] 
 P_vy0 = system.initial_velocities[1,0]
+S_vx0 = (P_vx0*planet_mass) / star_mass
+S_vy0 = (P_vy0*planet_mass) / star_mass
+
 com = 1/(star_mass + planet_mass) * (planet_mass*np.array([P_x0,P_y0]))  # Calculating the center of mass assuming star is in origin
 
 # Shifting the planet and star position such that the center of mass is in origin
@@ -84,8 +87,7 @@ P_x0 -= com[0]
 P_y0 -= com[1]
 S_x0 = -com[0]
 S_y0 = -com[1]
-S_vx0 = 0
-S_vy0 = 0
+
 print('System initialized and initial values defined')
 t, x_Planet, v_Planet, x_Star, v_Star  = integrate(T, dt, N, S_x0, S_y0, S_vx0, S_vy0, P_x0, P_y0, P_vx0, P_vy0, G, star_mass, planet_mass)
 print('Integration complete')

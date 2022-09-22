@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.8.28) (preloaded format=pdflatex 2022.9.1)  22 SEP 2022 13:37
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.8.28) (preloaded format=pdflatex 2022.9.1)  22 SEP 2022 15:35
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -496,9 +496,6 @@ LaTeX Warning: Reference `x_ellipse' on page 1 undefined on input line 88.
 LaTeX Warning: Reference `y_ellipse' on page 1 undefined on input line 88.
 
 
-Package amsfonts Warning: Obsolete command \bold; \mathbf should be used instead on input line 93.
-
-
 Underfull \hbox (badness 1033) in paragraph at lines 86--96
 \OT1/cmr/m/n/10 the co-or-di-nates back to carte-sian co-or-di-nates us-ing
  []
@@ -507,6 +504,9 @@ Underfull \hbox (badness 1033) in paragraph at lines 86--96
 Underfull \hbox (badness 10000) in paragraph at lines 86--96
 
  []
+
+
+Package amsfonts Warning: Obsolete command \bold; \mathbf should be used instead on input line 100.
 
 <Figures/leapfrog1.png, id=5, 440.64626pt x 170.6375pt>
 File: Figures/leapfrog1.png Graphic file (type png)
@@ -544,96 +544,4 @@ LaTeX Warning: Reference `Kepler_dArea' on page 2 undefined on input line 143.
 
 c:/Users/oskar/OneDrive/Dokumenter/GitHub/Privat/AST2000/Project/Part 2/Report_Part_2.tex:147: Package amsmath Error: Multiple \label's: label 'Newton_Grav_law' will be lost.
 
-See the amsmath package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.147 \end{align}
-                 
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-LaTeX Warning: Reference `Kepler_dArea' on page 2 undefined on input line 150.
-
-
-Overfull \hbox (36.50056pt too wide) in paragraph at lines 149--161
-[][][][][][][]
- []
-
-
-Underfull \hbox (badness 1052) in paragraph at lines 149--161
-\OT1/cmr/m/n/10 have the high-est an-gu-lar ve-loc-ity at the per-i-he-lion
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 149--161
-
- []
-
-
-LaTeX Warning: Reference `Kepler3' on page 2 undefined on input line 162.
-
-
-LaTeX Warning: Reference `KeplerNewton3' on page 2 undefined on input line 162.
-
-[2 <./Figures/leapfrog1.png>]
-c:/Users/oskar/OneDrive/Dokumenter/GitHub/Privat/AST2000/Project/Part 2/Report_Part_2.tex:196: Missing $ inserted.
-<inserted text> 
-                $
-l.196 ...T2000/h22/undervisningsmateriell/lecture_
-                                                  notes/part1b.pdf
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-c:/Users/oskar/OneDrive/Dokumenter/GitHub/Privat/AST2000/Project/Part 2/Report_Part_2.tex:197: Missing $ inserted.
-<inserted text> 
-                $
-l.197 
-      
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 193--197
-\OT1/cmr/m/n/10 2:https://cvarin.github.io/CSci-Survival-
- []
-
-
-Overfull \hbox (257.74165pt too wide) in paragraph at lines 193--197
-\OT1/cmr/m/n/10 3:https://www.uio.no/studier/emner/matnat/astro/AST2000/h22/undervisningsmateriell/lecture$[]\OML/cmm/m/it/10 otes=part\OT1/cmr/m/n/10 1\OML/cmm/m/it/10 b:pdf$ 
- []
-
-No file Report_Part_2.bbl.
-[3] (Report_Part_2.aux)
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-
-Package rerunfilecheck Warning: File `Report_Part_2.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `Report_Part_2.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  2ACE04B21BE5DB411588AB49CC9F1A40;1527.
- ) 
-Here is how much of TeX's memory you used:
- 15324 strings out of 477843
- 235921 string characters out of 2823600
- 781443 words of memory out of 3000000
- 34010 multiletter control sequences out of 15000+600000
- 473643 words of font info for 47 fonts, out of 8000000 for 9000
- 1141 hyphenation exceptions out of 8191
- 72i,10n,77p,476b,530s stack positions out of 10000i,1000n,20000p,200000b,80000s
-<C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti9.pfb>
-Output written on Report_Part_2.pdf (3 pages, 257558 bytes).
-PDF statistics:
- 111 PDF objects out of 1000 (max. 8388607)
- 26 named destinations out of 1000 (max. 500000)
- 11 words of extra memory for PDF output out of 10000 (max. 10000000)
-
+See the amsmath package docu
