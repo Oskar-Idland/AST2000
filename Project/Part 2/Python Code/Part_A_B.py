@@ -5,6 +5,8 @@ import numpy as np
 import ast2000tools.utils as utils
 from ast2000tools.solar_system import SolarSystem
 from ast2000tools.space_mission import SpaceMission
+import time
+start = time.time()
 
 username = "janniesc"
 seed = utils.get_seed(username)
@@ -21,7 +23,7 @@ T = 13*20  #You want to find the planetary position from t=0 to t=T. How could y
 
 
 #SIMULATION PARAMETERS
-N = 10_000_000  #Number of time steps
+N = 3_000_000  #Number of time steps
 dt = T/N  #calculate time step from T and N
 
 @jit(nopython = True)                       #Optional, but recommended for speed, check the numerical compendium
@@ -127,8 +129,8 @@ for planet_idx in range(8):
     P_Newton = np.sqrt((4*(np.pi**2)*(system.semi_major_axes[planet_idx]**3))/(G*(system.star_mass + system.masses[planet_idx])))
     P_Kepler = np.sqrt(system.semi_major_axes[planet_idx]**3)
     print(f"Planet {planet_idx} -------------------")
-    print(f"Newton: {P_Newton:.4f} Yrs, Kepler: {P_Kepler:.4f} Yrs")
-    print(f"Difference: {abs(P_Kepler-P_Newton):.4f} Yrs")
+    print(f"Newton: {P_Newton:.8f} Yrs, Kepler: {P_Kepler:.8f} Yrs")
+    print(f"Difference: {abs(P_Kepler-P_Newton):.8f} Yrs")
     # print(f"Starting Position: {position_function(0)}")
     x = np.array(x)
 
@@ -150,7 +152,7 @@ for planet_idx in range(8):
     b = a*np.sqrt((1-e**2))
     h = np.cross(x[0], v[0])
     period = 2*np.pi*a*b/h
-    print(f"Analytic Period: {period:.4f} Yrs\n\n")
+    print(f"Analytic Period: {period:.8f} Yrs\n\n")
 
 
 
@@ -171,4 +173,5 @@ print(f"Planet {0}")
 print(f"Area Aphelion: {A1:.8f} AU^2, Distance Aphelion: {S1:E} AU, Speed Aphelion: {V1:.8f} AU/Year")
 print(f"Area Perihelion: {A2:.8f} AU^2, Distance Perihelion: {S2:E} AU, Speed Perihelion: {V2:.8f} AU/Year")
 print(f"Diff Area: {(A2 - A1):E} AU^2, Diff Distance: {(S2 - S1):E} AU, Diff Speed: {(V2 - V1):.8f} AU/Year\n")
-
+end = time.time()
+print(f"The simulation took {end-start:.4f} seconds")
