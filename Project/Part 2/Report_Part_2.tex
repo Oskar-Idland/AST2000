@@ -61,7 +61,7 @@ The analytical expression for an ellipse in cartesian coordinates with the origi
     \frac{x^2}{a^2} + \frac{y^2}{b^2} = 1 \label{ellipse_analytic_cart}
 \end{align}
 For the calculations in this report, it is however advantageous to be able to use this expression in polar coordinates.
-When switching to polar coordinates, we will be using the distance $r = \left\vert \mathbf{r} \right\vert $ from the star in one focus point to the point on the ellipse and the angle $f$ at the star from the semi-major axis to the vector $\mathbf{r}$ as seen in figure \ref{fig:Ellipse_fig}.
+When switching to polar coordinates, we will be using the distance $r = |\textbf{r}|$ from the star in one focus point to the point on the ellipse and the angle $f$ at the star from the semi-major axis to the vector $\textbf{r}$ as seen in figure \ref{fig:Ellipse_fig}.
 In orbital mechanics, the angle $f$ is also often called the true anomaly.
 \begin{figure}[h]
 	%% h(here), t(top of page), b(bottom of page)
@@ -143,7 +143,7 @@ To do this, two areas on different sides of the orbit of our home planet,which h
 To calculate the areas, each area will be divided into smaller areas $dA$, which can be determined by using formula~\eqref{Kepler_dArea}.
 
 \begin{align} \label{Kepler_dArea}
-    dA = \frac{1}{2}r^2 d\theta 
+    dA = \frac{1}{2}r^2 d\theta
 \end{align}
 
 \colorbox{red}{The derivation of this formula can be found in the Appendix}
@@ -185,16 +185,130 @@ Using the definition of the center of mass $ \mathbf{R} $ we can redefine the ve
 E_k = \frac{1}{2}M \mathbf{\dot{R}}^{2} + \frac{1}{2}μ \dot{r}^{2}
 \]
 
-As gravitation is a conservative force the system will have potential energy. The total energy can be written as follows. 
+As gravitation is a conservative force the system will have potential energy. The total energy can be written as follows.
 \[
 E = \frac{1}{2}M \mathbf{\dot{R}}^{2} + \frac{1}{2}μ \dot{r}^{2} + U(\mathbf{r})
 \]
 
 
 \section{Results}
-	\subsection{Planetary Orbits}
-    The simulation of the orbits yielded in
+\subsection{Planetary Orbits}
+    The simulation of the orbits yielded in both numeric and analytic orbits for all planets.
+	For both the analytic and the numeric orbits, arrays containing the velocity and position of each planet at \colorbox{red}{N} equally spaced positions along the orbit are returned.
+	The simulation then created figure~\ref{fig:Orbit_Plot} from these arrays.
+\begin{figure}[h]
+	%% h(here), t(top of page), b(bottom of page)
+	\centering
+	\includegraphics[scale=0.4]{Figures/Orbit_plots}
+	\caption{Plot of the simulated orbits of our solar system}\label{fig:Orbit_Plot}
+\end{figure}\\
+	The star is denoted by the black dot in the middle of the solar system.
+	Around the star, there are 8 sets of orbits, one set for each planet.
+	The numeric orbit for each planet is represented by a dashed line, whereas the analytic orbis is represented by a solid line.\\
+	The numeric and analytic orbits are slightly elliptic, and line up quite well for all planets, with only some deviance.
+	As seen in Figure~\ref{fig:Orbit_Plot}, they have the same shapes, but appear not to be entirely concentric.
 
+\subsection{Comparison to Kepler's Laws}
+	To compare the orbit of our home planet to Kepler's second law, two different areas $A$ swept out by the position vector $ \textbf{r}$ during the same time interval have been calculated.
+	Furthermore, the covered distance and mean velocity during each time interval have been calculated and are shown in table~\ref{tab:Kepler2_table1}.
+	The differences between the values of each area are presented in table~\ref{tab:Kepler2_table2}. Areas are given in AU$^2$, Distances in AU and Velocities in AU/Yr.
+\begin{table}[h]
+	%% l (Left aligned), c (Centered), r (Right aligned)
+    \begin{tabular}{ |c|c|c| }
+		\hline
+        Planet 0 & Aphelion & Perihelion\\
+        \hline
+        Area & 0.00000307 & 0.00000307\\
+        \hline
+		Distance & 6.823815E-07 & 6.823823E-07\\
+		\hline
+		Velocity & 0.20996355 & 0.20996378\\
+		\hline
+    \end{tabular}
+	\caption{Area, Distance and Velocity results for calculated areas at Aphelion and Perihelion}
+	\label{tab:Kepler2_table1}
+\end{table}
+
+\begin{table}[h]
+    \begin{tabular}{ |c|c| }
+		\hline
+		 & Difference\\
+		\hline
+		Area & 3.181500E-12 AU^2\\
+		\hline
+		Distance & 7.306208E-13 AU\\
+		\hline
+		Velocity & 0.00000022 AU/Yr\\
+		\hline
+	\end{tabular}
+    \caption{Differences between results of the two areas}
+    \label{tab:Kepler2_table2}
+\end{table}\\
+
+	To check whether the calculated orbits agree with Kepler's third law and Newton's revised version of Kepler's third law, the orbital period has been calculated analytically and using each of the two laws~\eqref{Kepler3} and~\eqref{KeplerNewton3} for each planet.
+	This yields in the following results.\\
+
+        \hline
+		Planet 0 \tab\tab\tab\tab hello\\
+        Analytic	12.81499 Yrs\\
+		Kepler		27.00534 Yrs\\
+		Newton		12.81498 Yrs\\
+		Difference	14.19036 Yrs\\
+        \hline
+
+		Planet 1\\
+        Analytic	16.93432 Yrs\\
+		Kepler		35.68609 Yrs\\
+		Newton		16.93431 Yrs\\
+		Difference	18.75177 Yrs\\
+        \hline
+
+		Planet 2\\
+        Analytic	34.83863 Yrs\\
+		Kepler		73.41629 Yrs\\
+		Newton		34.83862 Yrs\\
+		Difference	38.57766 Yrs\\
+        \hline
+
+		Planet 3\\
+        Analytic	252.32753 Yrs\\
+		Kepler		531.73585 Yrs\\
+		Newton		252.32499 Yrs\\
+		Difference	279.41086 Yrs\\
+        \hline
+
+		Planet 4\\
+        Analytic	116.61089 Yrs\\
+		Kepler		245.73693 Yrs\\
+		Newton		116.61089 Yrs\\
+		Difference 	129.12603 Yrs\\
+        \hline
+
+		Planet 5\\
+        Analytic	69.47113 Yrs\\
+		Kepler		146.39819 Yrs\\
+		Newton		69.47113 Yrs\\
+		Difference 	76.92706 Yrs\\
+        \hline
+
+		Planet 6\\
+        Analytic	171.66819 Yrs\\
+		Kepler		361.76050 Yrs\\
+		Newton		171.66798 Yrs\\
+		Difference	190.09252 Yrs\\
+        \hline
+
+		Planet 7\\
+        Analytic	7.25601 Yrs\\
+		Kepler		15.29077 Yrs\\
+		Newton		7.25601 Yrs\\
+		Difference	8.03475 Yrs\\
+        \hline
+
+\\It can be seen that the orbits are not entirely consistent with Kepler's third law.
+The relative difference is approximately $110.733 \pm 0.001\%$ for all planets.
+They are however very consistent with Newton's revised version of Kepler's third law as they deviate less than $0.0015\%$ from each other.
+The relative difference here is approximately $0.0005 \pm 0.001\%$ for all planets, which is very accurate.
 \section{Discussion}
 To get an accurate simulation, the time interval dt needs to be sufficiently small.
 An adequate number is approximately 10'000 steps per year of simulation, which corresponds to a time interval of $\Delta t = 52$ min $33.6$ sec.
