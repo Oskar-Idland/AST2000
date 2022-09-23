@@ -105,13 +105,13 @@ The process is then repeated using the new position and velocity to calculate th
 There are different variations of this process, with different advantages and disadvantages.\\
 In this simulation the Leapfrog method will be used.
 This method calculates the acceleration in a point and uses it to find the velocity $\textbf{v}_h$ after $ \frac{dt}{2}$.
-Velocity $\textbf{v}_h$ and the initial position of the planet will then be used to calculate the new position after a time interval $\Delta t$.\\
+Velocity $\textbf{v}_h$ and the initial position of the planet will then be used to calculate the new position after a time interval $\Delta t$.\newline
 \begin{figure}[h]
 	%% h(here), t(top of page), b(bottom of page)
 	\centering
 	\includegraphics[scale=0.4]{Figures/leapfrog1}
 	\caption{\colorbox{red}{Visualisation of the Leapfrog integration algorithm}}\label{fig:Leapfrog_vis}
-\end{figure}\\
+\end{figure}\newline
 As $\textbf{v}_h$ is somewhere between the velocity of the object in the initial position and the position after a time interval $\Delta t$, the calculation of the new position will be more exact.
 The process can be described using three equations:
 \begin{align*}
@@ -120,7 +120,7 @@ The process can be described using three equations:
 	\textbf{x}_{i} &= \textbf{x}_i + \textbf{v}_{i+1/2}\,\Delta t
 \end{align*}
 After simulating the orbits of the planets, the results can be used to find a function of time approximating the orbit of each planet.
-This will be done by interpolating the results into a function.\\\\
+This will be done by interpolating the results into a function.\newline \newline
 
 To examine and test the orbits for inaccuracies, we can make use of Johannes Kepler's laws of planetary motion.
 The three laws state:
@@ -142,9 +142,9 @@ First, we will check whether our results agree with Kepler's second law.
 To do this, two areas on different sides of the orbit of our home planet,which have been swept out in the same time interval will be compared.\\
 To calculate the areas, each area will be divided into smaller areas $dA$, which can be determined by using formula~\eqref{Kepler_dArea}.
 
-\begin{align} \label{Kepler_dArea}
+\begin{equation} \label{Kepler_dArea}
     dA = \frac{1}{2}r^2 d\theta 
-\end{align}
+\end{equation}
 
 \colorbox{red}{The derivation of this formula can be found in the Appendix}
 When running the simulation, a small area $dA$ which is equal to the area swept out by the position vector $\textbf{r}$ during the time interval $\Delta t$, will be calculated using formula~\eqref{Kepler_dArea}.
@@ -157,7 +157,7 @@ This is due to the spin of the planet around the star being conserved.
 The covered distance and mean velocity of the planet during the interval $[a, b]$, are therefore also interesting measurements, which will be calculated in the simulation.
 To do this, the small distances $\Delta \textbf{r}$ which are covered by the planet in the small time intervals $\Delta t$ in the interval $[a, b]$ will therefore be added together.
 This will yield in the total distance traveled by the planet in the time interval $[a, b]$.
-The mean velocity is found by dividing the total distance by the time $t = b-a$.\\
+The mean velocity is found by dividing the total distance by the time $t = b-a$.\newline
 
 Furthermore we will check if the orbits are consistent with Kepler's third law~\eqref{Kepler3} as well as Newtons revised version of Kepler's third law~\eqref{KeplerNewton3}.
 Since we have found the rotational period of each planet around the sun using the simulation, we will only have to calculate the rotational period of each planet using Kepler's third law and Newtons revised version and compare them to find out how well they agree.
@@ -168,26 +168,48 @@ Since we have found the rotational period of each planet around the sun using th
 	P^2 &= \frac{4 \pi^2}{G \left( m_1 + m_2 \right)} a^3 \label{KeplerNewton3}
 \end{align}
 
-To simulate the solar system with the center of mass in origin, we can view this as a N-body system. The simplest example of this is a two-body system where each body has mass $ m_1 , m_2 $ and velocity $ v_1, v_2 $ at position $ r_1, r_2 $. The new system introduces some other new variables. Reduced mass $ \mu $, sum of masses $ M $, the vector $ \mathbf{r} $ from one of the masses, to another and center of mass $ \mathbf{R} $
+To simulate the solar system with the center of mass in origin, we can view this as a N-body system. The simplest example of this is a two-body system where each body has mass $ m_1 , m_2 $ and velocity $ v_1, v_2 $ at position $ r_1, r_2 $. The new system introduces some other new variables. Reduced mass $ \mu $, sum of masses $ M $, the vector $ \mathbf{r} $ from one of the masses, to the other and center of mass $ \mathbf{R} $.
 \begin{align*}
 	M = m_1 + m_2 \\ \\
 	\mathbf{R} = \frac{m_1 \mathbf{r}_1 + m_2  \mathbf{r}_2}{m_1 + m_2} \\ \\
-	\mu = \frac{m_1 m_2}{M} \\
+	μ = \frac{m_1 m_2}{M} \\ 
 	\mathbf{r} = \mathbf{r}_2 - \mathbf{r}_1
 \end{align*}
 
-The kinetic energy $ E_k $ can be written
+The kinetic energy $ E_k $ can be written as a sum of the kinetic energy of both bodies.
 \[
-E_k = \frac{1}{2}m_1 \mathbf{\dot{r}}_{1}^{2} + \frac{1}{2}m_2 \mathbf{\dot{r}}_{2}^{2}
+\mathbf{E_k} = \frac{1}{2}m_1 \mathbf{\dot{r}}_{1}^{2} + \frac{1}{2}m_2 \mathbf{\dot{r}}_{2}^{2}
 \]
-Using the definition of the center of mass $ \mathbf{R} $ we can redefine the vectors $ r_1 $ and $ r_2 $ to get a new expression for the kinetic energy
+Using the definition of the center of mass $ \mathbf{R} $ we can redefine the vectors $ \mathbf{r_1} $ and $ \mathbf{r_2} $ to get a new expression for the kinetic energy. For the complete calculations see Appendix \ref{r1r2 calc} and \ref{E_k calc}
+\begin{align}
+	\mathbf{r}_1 = \mathbf{R} - \frac{m_2}{M}\mathbf{r} \label{r_1 redef} \\
+	\mathbf{r}_2 = \mathbf{R} + \frac{m_1}{M}\mathbf{r} \label{r_2 redef}
+\end{align}
 \[
-E_k = \frac{1}{2}M \mathbf{\dot{R}}^{2} + \frac{1}{2}μ \dot{r}^{2}
+\mathbf{E_k} = \frac{1}{2}M \mathbf{\dot{R}}^{2} + \frac{1}{2}μ \mathbf{\dot{r}}^{2} 
+\]
+When putting the center of mass in the origin $ \mathbf{R} = 0 $ and we can simplify further. 
+\[
+E_k = \frac{1}{2} μ v^{2}
 \]
 
-As gravitation is a conservative force the system will have potential energy. The total energy can be written as follows. 
+As gravitation is a conservative force the system will have potential energy $ U $. 
 \[
-E = \frac{1}{2}M \mathbf{\dot{R}}^{2} + \frac{1}{2}μ \dot{r}^{2} + U(\mathbf{r})
+U = ∫ _{\infty} ^{r} \frac{Gm_1 m_2}{r^{2}}\mathbf{\hat{r}} ⋅ \mathrm{d}\mathbf{r} = - \frac{GM \mu}{r}
+\] 
+
+The total energy can be written as follows. 
+\[
+E = \frac{1}{2}μ v^{2}  - \frac{GM\mu}{r}
+\]
+
+The angular momentum $ \mathbf{P} $ can be expressed as a sum of the angular momentum of the two bodies. 
+\[
+\mathbf{P} = \mathbf{r}_1 × \mathbf{\dot{r}}_1 + \mathbf{r}_2 × \mathbf{\dot{r}}_2
+\]
+Using the redefined vectors from \ref{r_1 redef} and \ref{r_2 redef}  we get the following equation. For the full calculation see Appendix \ref{AM calc}
+\[
+\mathbf{P} = \mathbf{r} × μ \mathbf{\dot{r}}
 \]
 
 
@@ -204,15 +226,67 @@ Using smaller time intervals will result in a more precise simulation, but will 
 \section{Conclusion}
 And the conclusion
 
-
 \section{References}
-References are important!\\
-1:\:https://www.merriam-webster.com/dictionary/ellipse\\
-2:\:https://cvarin.github.io/CSci-Survival-Guide/leapfrog.html\\
-3:\:https://www.uio.no/studier/emner/matnat/astro/AST2000/h22/undervisningsmateriell/lecture_notes/part1b.pdf
+References are important!
+\begin{enumerate}
+	\item \url{https://www.merriam-webster.com/dictionary/ellipse}
+	\item \url{https://cvarin.github.io/CSci-Survival-Guide/leapfrog.html}
+	\item \url{https://www.uio.no/studier/emner/matnat/astro/AST2000/h22/undervisningsmateriell/lecture_notes/part1b.pdf}
+\end{enumerate}
 
 \section{Appendix: Mathematical Derivations}
-	\subsection{Section 1}
+	\subsection{Calculations}
+		\subsubsection{Redefining $ \mathbf{r_1} $ and $ \mathbf{r_2} $}\label{r1r2 calc}
+			\[
+			\mathbf{R} = \frac{m_1 \mathbf{r_1} + m_2 \mathbf{r_2}}{M}, \qquad \mathbf{r} = \mathbf{r_2} - \mathbf{r_1}
+			\]
+			\[
+			\mathbf{R} = \frac{m_1}{M}\mathbf{r_1} + \frac{m_2}{M} \left( \mathbf{r} + \mathbf{r_1} \right) = \mathbf{r_1} \left( \frac{m_1 + m_2}{M} \right) + \frac{m_2}{M} \mathbf{r} = \mathbf{r_1} + \frac{m_2}{M} \mathbf{r}
+			\]
+			\[
+			r_1 = \mathbf{R} - \frac{m_2}{M}\mathbf{r}
+			\]
+			Repeating the same calculations for $ r_2 $ yields the following: 
+			\[
+			r_2 = \mathbf{R} + \frac{m_1}{M} \mathbf{r}
+			\]
+
+		\subsubsection{Calculating Kinetic Energy}\label{E_k calc}
+			\[
+				\mathbf{E_k} = \frac{1}{2}m_1 \mathbf{\dot{r}}_{1}^{2} + \frac{1}{2}m_2 \mathbf{\dot{r}}_{2}^{2}
+			\]
+			Substituting the new definitions of $ \mathbf{r}_1 $ and $ \mathbf{r}_2 $ from \ref{r_1 redef} and  \ref{r_2 redef}.
+			\[
+			\mathbf{E_k} = \frac{1}{2} m_1 \left(\mathbf{\dot{R}} - \frac{m_2}{M}\mathbf{\dot{r}}\right)_{}^{2} + \frac{1}{2} m_2 \left(\mathbf{\dot{R}} + \frac{m_1}{M} \mathbf{\dot{r}}\right)_{}^{2}
+			\]
+			\[
+			\mathbf{E_k} = \frac{1}{2} \left(m_1 \mathbf{\dot{R}}^{2} - \frac{2m_1 m_2}{M}\mathbf{\dot{r}}^{2} + \frac{m_1m_2^{2}}{M^{2}}\mathbf{\dot{r}}^{2} + \frac{2m_1m_2}{M}\mathbf{\dot{r}}^{2} + \frac{m_2m_1^{2}}{M^{2}}\right)_{}^{}
+			\]
+			\[
+			\mathbf{E_k} = \frac{1}{2}\left( m_1 + m_2 \right) \mathbf{\dot{R}} + \frac{1}{2} \frac{m_1m_2}{M^{2}} \left( m_1+ m_2  \right) \mathbf{\dot{r}}^{2}
+			\]
+			\[
+			\mathbf{E_k} = \frac{1}{2} M \mathbf{\dot{R}}^{2} + \frac{1}{2} μ \mathbf{\dot{r}}^{2}
+			\]
+			When the center of mass is put in the origin $ \mathbf{R} = 0 $.
+			\[
+			E_k = \frac{1}{2} μ v^{2}
+			\]
+
+
+		\subsubsection{Calculating Angular Momentum}\label{AM calc}
+			\[
+			\mathbf{P} = m_1 \left(- \frac{m_2}{M}\right)_{}^{2}\mathbf{r_1} × \mathbf{\dot{r}} + m_2 \left(\frac{m_1}{M}\right)_{}^{2} \mathbf{r_2} × \mathbf{\dot{r}}
+			\]
+			\[
+			\mathbf{P} = \frac{m_1m_2}{M^{2}} \left(m_1 + m_2\right)_{}^{} \mathbf{r} × \mathbf{\dot{r}} 
+			\]
+			\[
+			\mathbf{P} = μ \mathbf{r} = \mathbf{\dot{r}}
+			\]
+			\[
+			\mathbf{P} = \mathbf{r} × μ \mathbf{\dot{r}}
+			\]
 
 
 \end{document}
