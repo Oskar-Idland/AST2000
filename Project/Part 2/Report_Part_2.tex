@@ -168,13 +168,17 @@ Since we have found the rotational period of each planet around the sun using th
 	P^2 &= \frac{4 \pi^2}{G \left( m_1 + m_2 \right)} a^3 \label{KeplerNewton3}
 \end{align}
 
-To simulate the solar system with the center of mass in origin, we can view this as a N-body system. The simplest example of this is a two-body system where each body has mass $ m_1 , m_2 $ and velocity $ v_1, v_2 $ at position $ r_1, r_2 $. The new system introduces some other new variables. Reduced mass $ \mu $, sum of masses $ M $, the vector $ \mathbf{r} $ from one of the masses, to the other and center of mass $ \mathbf{R} $.
+\subsection{Calculating Orbits Around Center of Mass}\label{Method orbit calc}
+
+To simulate the solar system with the center of mass in origin, we can view this as a N-body system. To view this system in its most extreme case we chose to use planet number three as it has the best combination of initial velocity and gravitational pull.The simplest example of this is a two-body system where each body has mass $ m_1 , m_2 $ and velocity $ v_1, v_2 $ at position $ r_1, r_2 $. The new system introduces some other new variables. Reduced mass $ \mu $, sum of masses $ M $, the vector $ \mathbf{r} $ from one of the masses, to the other and center of mass $ \mathbf{R} $.
 \begin{align*}
 	M = m_1 + m_2 \\ \\
 	\mathbf{R} = \frac{m_1 \mathbf{r}_1 + m_2  \mathbf{r}_2}{m_1 + m_2} \\ \\
 	μ = \frac{m_1 m_2}{M} \\ 
 	\mathbf{r} = \mathbf{r}_2 - \mathbf{r}_1
 \end{align*}
+
+
 
 The kinetic energy $ E_k $ can be written as a sum of the kinetic energy of both bodies.
 \[
@@ -211,7 +215,7 @@ Using the redefined vectors from \ref{r_1 redef} and \ref{r_2 redef}  we get the
 \[
 \mathbf{P} = \mathbf{r} × μ \mathbf{\dot{r}}
 \]
-
+These results equations will be used to check if the energy and angular momentum remains constant in the solar system. 
 
 \section{Results}
 \subsection{Planetary Orbits}
@@ -251,21 +255,24 @@ Using the redefined vectors from \ref{r_1 redef} and \ref{r_2 redef}  we get the
 	\label{tab:Kepler2_table1}
 \end{table}
 
+
+
+
 \begin{table}[h]
     \begin{tabular}{ |c|c| }
 		\hline
 		 & Difference\\
 		\hline
-		Area & 3.181500E-12 AU^2\\
+		Area & $ 3.181500E-12 AU^2 $\\
 		\hline
-		Distance & 7.306208E-13 AU\\
+		Distance & $ 7.306208E-13 AU $\\
 		\hline
-		Velocity & 0.00000022 AU/Yr\\
+		Velocity & $  0.00000022 AU/Yr $\\
 		\hline
 	\end{tabular}
     \caption{Differences between results of the two areas}
     \label{tab:Kepler2_table2}
-\end{table}\\
+\end{table}
 
 	To check whether the calculated orbits agree with Kepler's third law and Newton's revised version of Kepler's third law, the orbital period has been calculated analytically and using each of the two laws~\eqref{Kepler3} and~\eqref{KeplerNewton3} for each planet.
 	This yields in the following results.\\
@@ -304,10 +311,34 @@ Using the redefined vectors from \ref{r_1 redef} and \ref{r_2 redef}  we get the
 \end{table}
 
 
-\\It can be seen that the orbits are not entirely consistent with Kepler's third law.
+It can be seen that the orbits are not entirely consistent with Kepler's third law.
 They are however very consistent with Newton's revised version of Kepler's third law as they deviate less than $0.0015\%$ from each other.
 
-
+\subsection{Orbits Around Center of Mass}
+	The simulation of planet number 3 and solar orbits respectively yielded the following results. The plots include a perfect circle to emphasize the elliptical orbit. The small orange dot in the center of figure \ref{fig: P_orbit_cm} is the orbit of the star. 
+	\begin{figure}[h!]
+	  \centering
+	  \includegraphics[scale = .15]{Figures/Solar_Orbit_CM.pdf}
+	  \caption{Plot of the simulated orbit of the planet around the center of mass}
+	  \label{fig: P_orbit_cm}
+	\end{figure}
+	
+	\begin{figure}[h!]
+	  \centering
+	  \includegraphics[scale = .15]{Figures/Solar_Orbit_CM_2.pdf}
+	  \caption{Plot of the simulated orbit of the star around the center of mass}
+	  \label{fig: S_orbit_cm}
+	\end{figure}
+	
+	The total angular momentum and energy of the two-body system calculated by the analytical solution show in \ref{Method orbit calc}. The total energy changes cyclicly with the highest value being 23 \% over the smallest. The Angular momentum stays at around 0 for the entire simulation. 
+	
+	\begin{figure}[h!]
+	  \centering
+	  \includegraphics[scale = .15]{Figures/Energy_AngularMomentum_plot.pdf}
+	  \caption{Plot of the total energy and angular momentum of the two body system}
+	  \label{fig: tot_Energy_AM}
+	\end{figure}
+	
 
 \section{Discussion}
 To get an accurate simulation, it is important to choose a sufficiently small time interval dt.
@@ -343,6 +374,7 @@ References are important!
 	\item \url{https://www.uio.no/studier/emner/matnat/astro/AST2000/h22/undervisningsmateriell/lecture_notes/part1b.pdf}
 \end{enumerate}
 
+\newpage
 \section{Appendix: Mathematical Derivations}
 	\subsection{Calculations}
 		\subsubsection{Redefining $ \mathbf{r_1} $ and $ \mathbf{r_2} $}\label{r1r2 calc}
