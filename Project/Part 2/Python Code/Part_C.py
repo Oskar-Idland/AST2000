@@ -155,25 +155,26 @@ for i in range(N):
     if i % (N/resolution) == 0:
         angular_momentum.append(P(r[i], v[i],mu))
         
-print(max(energy)/min(energy), max(energy), min(energy))
-        
-# fig, ax1 = plt.subplots()
+print(f'The greatest value is {max(energy)/min(energy): .2f} times greater than the smallest')
 
-# P_plot = ax1.plot(t,angular_momentum, label="Angular Momentum", c = 'blue')
-# ax1.tick_params(axis='y')
-# ax1.set_ylabel('Angular Momentum')
+# Plotting the angular momentum and energy 
+fig, ax1 = plt.subplots()
 
-# ax2 = ax1.twinx()
-# E_plot = ax2.plot(t,energy, label = 'Energy', c = 'red')
-# ax2.tick_params(axis='y')
-# ax2.set_ylabel('Energy')
+P_plot = ax1.plot(t,angular_momentum, label="Angular Momentum", c = 'blue')
+ax1.tick_params(axis='y')
+ax1.set_ylabel('Angular Momentum')
 
-# plt.grid()
-# plt.tight_layout()
-# lns = P_plot + E_plot
-# labels = [l.get_label() for l in lns]
-# plt.legend(lns, labels)
-# plt.show()
+ax2 = ax1.twinx()
+E_plot = ax2.plot(t,energy, label = 'Energy', c = 'red')
+ax2.tick_params(axis='y')
+ax2.set_ylabel('Energy')
+
+plt.grid()
+plt.tight_layout()
+lns = P_plot + E_plot
+labels = [l.get_label() for l in lns]
+plt.legend(lns, labels)
+plt.show()
 
 
 

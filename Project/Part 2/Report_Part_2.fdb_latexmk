@@ -1,12 +1,12 @@
 # Fdb version 3
-["bibtex Report_Part_2"] 1664048204 "Report_Part_2.aux" "Report_Part_2.bbl" "Report_Part_2" 1664048213
+["bibtex Report_Part_2"] 1664048204 "Report_Part_2.aux" "Report_Part_2.bbl" "Report_Part_2" 1664048758
   "C:/Users/oskar/AppData/Local/Programs/MiKTeX/bibtex/bst/revtex/apsrev4-2.bst" 1601735216 69609 e9dea59f0e753ccda3ddc8f5806d846d ""
-  "Report_Part_2.aux" 1664048212 6136 c131b02f5b6aeb8d1d3813c0b7ac94f9 "pdflatex"
-  "Report_Part_2Notes.bib" 1664048212 104 4d8bb863c86f3d7b03a471e9d4707f34 "pdflatex"
+  "Report_Part_2.aux" 1664048757 6136 c131b02f5b6aeb8d1d3813c0b7ac94f9 "pdflatex"
+  "Report_Part_2Notes.bib" 1664048757 104 4d8bb863c86f3d7b03a471e9d4707f34 "pdflatex"
   (generated)
   "Report_Part_2.bbl"
   "Report_Part_2.blg"
-["pdflatex"] 1664048210 "c:/Users/oskar/OneDrive/Dokumenter/GitHub/Privat/AST2000/Project/Part 2/Report_Part_2.tex" "Report_Part_2.pdf" "Report_Part_2" 1664048213
+["pdflatex"] 1664048755 "c:/Users/oskar/OneDrive/Dokumenter/GitHub/Privat/AST2000/Project/Part 2/Report_Part_2.tex" "Report_Part_2.pdf" "Report_Part_2" 1664048758
   "C:/Users/oskar/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1663853332 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/oskar/AppData/Local/MiKTeX/fonts/pk/ljfour/public/esint/dpi600/esint10.pk" 1645525588 10544 0811bdf2222d179dac2158081c8a8d3f ""
   "C:/Users/oskar/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1662031172 10374549 ab9957c64f9e665f244136ccccd1caef ""
@@ -141,11 +141,11 @@
   "Figures/Solar_Orbit_CM.pdf" 1664047104 35331 9b002923e080ea70786e52b34dd242d4 ""
   "Figures/Solar_Orbit_CM_2.pdf" 1664047151 33374 c4157b4830a6da503bacbd2074429b90 ""
   "Figures/leapfrog1.png" 1663689559 5078 399f32e8e2f85c2aeb86cb64c09608e3 ""
-  "Report_Part_2.aux" 1664048212 6136 c131b02f5b6aeb8d1d3813c0b7ac94f9 "pdflatex"
+  "Report_Part_2.aux" 1664048757 6136 c131b02f5b6aeb8d1d3813c0b7ac94f9 "pdflatex"
   "Report_Part_2.bbl" 1664048204 2035 35453d3875d823f0ec9445e740a573d9 "bibtex Report_Part_2"
-  "Report_Part_2.out" 1664048212 2846 72693b964e9c9a45e4b313e1e19ff8a9 "pdflatex"
-  "Report_Part_2.tex" 1664048208 23608 5edd7066a872cbb0b6e705b5c8168e5f ""
-  "c:/Users/oskar/OneDrive/Dokumenter/GitHub/Privat/AST2000/Project/Part 2/Report_Part_2.tex" 1664048208 23608 5edd7066a872cbb0b6e705b5c8168e5f ""
+  "Report_Part_2.out" 1664048757 2846 72693b964e9c9a45e4b313e1e19ff8a9 "pdflatex"
+  "Report_Part_2.tex" 1664048753 23617 d1fdbcbd505fbca901197d881b366400 ""
+  "c:/Users/oskar/OneDrive/Dokumenter/GitHub/Privat/AST2000/Project/Part 2/Report_Part_2.tex" 1664048753 23617 d1fdbcbd505fbca901197d881b366400 ""
   (generated)
   "Report_Part_2.aux"
   "Report_Part_2.log"
