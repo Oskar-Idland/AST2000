@@ -84,6 +84,7 @@ num_planet_orbits = []
 an_planet_orbits = []
 position_function = []
 velocity_function = []
+verification_positions = np.zeros([2, 8, N])
 
 for planet_idx in range(8):
     # ORBITAL DATA
@@ -97,6 +98,9 @@ for planet_idx in range(8):
     num_planet_orbits.append([t, x, v])
     x_analytic, y_analytic = find_analytical_orbit(N, system, planet_idx)  # Find analytic orbit first to check your numerical calculation
     an_planet_orbits.append([x_analytic, y_analytic])
+
+    verification_positions[0, planet_idx] = x[:, 0]
+    verification_positions[1, planet_idx] = x[:, 1]
 
 
     #INTERPOLATION
@@ -180,3 +184,8 @@ print(f"Area Perihelion: {A2:.8f} AU^2, Distance Perihelion: {S2:E} AU, Speed Pe
 print(f"Diff Area: {(A2 - A1):E} AU^2, Diff Distance: {(S2 - S1):E} AU, Diff Speed: {(V2 - V1):.8f} AU/Year\n")
 end = time.time()
 print(f"The simulation took {end-start:.4f} seconds")
+
+
+# Verifying the Orbits
+mission.verify_planet_positions(T, verification_positions)
+mission.generate_orbit_video(np.linspace(0, T, N), verification_positions)
