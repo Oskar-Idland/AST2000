@@ -6,6 +6,7 @@ import ast2000tools.utils as utils
 from ast2000tools.solar_system import SolarSystem
 from ast2000tools.space_mission import SpaceMission
 import time
+import pandas as pd
 start = time.time()
 
 username = "janniesc"
@@ -76,7 +77,6 @@ def A_kepler(planet_orbits, start_idx, stop_idx, planet_idx):
         A += 0.5 * r**2 *d_theta
         S += h
     return A, S
-
 
 
 # RUNNING THE SIMULATION
@@ -162,6 +162,8 @@ for planet_idx in range(8):
     print(f"Difference Kepler: {100/period*diff1} %")
     print(f"Difference Newton: {100 / period * diff2} %\n\n")
 
+    np.savez(f"Orbits/Planet_{planet_idx}", time=t, position=x, velocity=v)
+
 
 
 # PLOTTING THE ORBIT
@@ -171,7 +173,7 @@ plt.scatter(0, 0, c="k")
 plt.axis("equal")
 plt.xlabel("x-position [AU]")
 plt.ylabel("y-position [AU]")
-plt.savefig("Part 2/Figures/Orbit_plots.png")
+plt.savefig("../Figures/Orbit_plots.png")
 plt.show()
 
 A1, S1 = A_kepler(an_planet_orbits, 0, 1, 0)

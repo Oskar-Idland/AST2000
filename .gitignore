@@ -1,5 +1,5 @@
 
-.idea/*
+.idea
 .idea/inspectionProfiles/Project_Default.xml
 .idea/vcs.xml
 .idea/workspace.xml
@@ -8,6 +8,7 @@
 .idea/other.xml
 .DS_Store
 Project/Skeleton.tex
+out
 out/Report_Part_2.aux
 out/Report_Part_2.log
 out/Report_Part_2.out
@@ -17,3 +18,5 @@ out/Report_Part_2Notes.bib
 out/Figures
 Project/Part 2/Python Code/Test2.py
 Project/Part 2/Python Code/planet_trajectories.npz
+/Project/Part 2/Python Code/Planet_Orbits.txt
+Project/.idea
