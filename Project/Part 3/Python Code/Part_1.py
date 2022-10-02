@@ -47,3 +47,11 @@ for i in range(len(temps_areas)):
         print(f"Planet {i} has a temperature of {temps_areas[i][0]-273.15:.2f} deg C")
     print(f"We need a solar panel which is {temps_areas[i][1]:.2f} m^2 large\n")
 
+for i in np.linspace(12.532, 12.5320125, 21):
+    temp = find_planet_temp(flux_star, utils.AU_to_m(i))
+    print(i, temp, (260 < temp < 390))
+
+for i in np.linspace(28.197, 28.197025, 21):
+    temp = find_planet_temp(flux_star, utils.AU_to_m(i))
+    print(i, temp, (260 < temp < 390))
+

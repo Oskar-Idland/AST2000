@@ -44,26 +44,108 @@ This is an abstract \colorbox{red}{Complete this summary at the end of the paper
 \end{abstract}
 \maketitle
 
-\section{Introduction}
-This is the introduction
+\section{Introduction} \label{sec:introduction}
+When launching a rocket into the solar system, we need to know where to go.
+To be able to decide ourselves for a destination planet, a little more information is needed about what to expect on each of the planets.
+Since such a mission is extremely expensive, every possible detail has to be known to make sure the mission succeeds.
+These details are everything from the type of planet to orbits, gravitational forces and conditions such as temperature and solar intensity.
+Most of these can - and need to - be calculated or simulated before launching the mission as they play an important role in the design process of the spacecraft and lander.
 
-\section{Method}
-Method of our part goes here
+\section{Method} \label{sec:method}
+As the orbits already have been calculated in \colorbox{red}{Report 2}, the main focus will be the solar intensity and temperatures of the planets to see what conditions our spacecraft and rover need to be prepared for when being sent into space.
+When arriving to the destination, our lander will require electric power to sustain the electric instruments and communication elements.
+Therefore, solar panels will be implemented into the rover to create electric energy from solar energy, which is sent out from the sun as electromagnetic radiation.\\
+To make these calculations, we will assume that both the star and the planets in our solar systems are black bodies.
+This means, that the body absorbs all radiation that hits the black body, and no radiation is reflected or can pass through.
+Every black body that has an absolute temperature above 0 degrees kelvin, emits some thermal radiation, which is called black body radiation.
+The intensity and wavelength depend on the temperature of the black body.\\
+When using some quantum physics, a formula for the intensity $B(\nu)$ of this radiation for a given frequency $\nu$ can be calculated.
+This formula is called Planck's law of radiation
+\begin{align*}
+    B(\nu) = \frac{2h\nu^3}{c^2}\frac{1}{e^{h\nu/(kT)}-1}
+\end{align*}
+With $\nu$ being the frequency, $T$ being the temperature of the black body, $k$ being the Boltzmann constant and $h$ being Planck's constant.
+The amount of energy within a given frequency range $\nu$ from a small area $dA$ passing through a small steradian $d\Omega$ in a time interval $dt$ can then be expressed using the intensity $B(\nu)$.
+\begin{align*}
+    \Delta E = B(\nu) \cos\left(\theta\right) \Delta A \Delta\nu \Delta\Omega \Delta t
+\end{align*}
+Since Planck's law of radiation can be written as a function of frequency or wavelength, we can find the frequency with the highest intensity by deriving Planck's law and setting it equal to zero.
+\begin{align*}
+	\frac{dB(\lambda)}{d\lambda} = 0
+\end{align*}\\
+Using this, Wien's displacement law can be derived:
+\begin{align*}
+    T\lambda_{max} = 2.9 \times 10^{-3} \, Km
+\end{align*}\\
+But this is only one way to find the temperature of a black body.
+It can also be found using by integrating Planck's law, as this area is distinct for each temperature.
+When taking this a step further and integrating over both the frequencies and solid angles, an expression for the flux can be derived.
+Flux is defined as energy per area per time interval.
+\begin{align*}
+    F = \frac{dE}{dA dt}
+\end{align*}
+\begin{align*}
+    F = \int_{0}^{\infty} d\nu \int_{}^{} d\Omega B(\nu) \cos\left(\theta\right)
+\end{align*}
+When solving the integral described above, it results in a relation between the temperature and the Flux of a \colorbox{red}{black body}.
+This expression is also called Stefan-Boltzmanns law.
+\begin{align*}
+    F = \sigma T^4
+\end{align*}
+Where $\sigma$ is a constant.\\
+Note that these two temperatures are not exactly the same, even though they both describe the temperature of the same black body.
+From Wien's displacement law we obtain the color temperature, whereas from Stefan-Boltzmanns law we obtain the effective temperature.\\
+For a perfect black body both the color temperature and effective temperature would be exactly the same.
+However, since stars are not perfect black bodies, these two temperatures differ to a certain degree.\\
+Using telescopes, Planck's law and Wien's displacement law, we can now determine the temperature of the star in the middle of our solar system.\\
+After obtaining the temperature of the planet, Stefan-Boltzmanns law can be used to find the flux of the star.
+When integrating this over the entire surface of the star, we obtain the total luminosity of the star, or in other words the total energy radiated out by the star per time interval $dt$.
+\begin{align*}
+    L = 4 \pi \sigma R_{Star}^2 T_{Star}^4
+\end{align*}
+To determine both the temperature of the planets and find an approximation of the required size for the solar panels of the rover, we need to find an expression for the flux of radiation as a function of the distance to the star.
+Here, we assume that the radiation from the star is equally distributed over the entire surface of the sphere with radius $r$ surrounding the star.\\
+Assuming no planets are in the way, the luminosity of this sphere will always be the same as the luminosity $L$ of the star.
+This is due to the total energy radiated out by the star having to be equal to the energy received by the surface of the sphere surrounding the entire star.\\
+The surface area of this sphere with radius $r$ is given by $4 \pi r^2$.
+Since the radiation of the sun is equally distributed over the entire surface area, and the total energy per time is given by the luminosity $L$, the flux at a given radius $r$ from the star is given by:
+\begin{align*}
+    &F = \frac{dE}{dA \, dt} = \frac{L}{dA}\\
+	&F = \frac{L}{4 \pi r^2}\\
+	&F = \frac{\sigma R_{Star}^2 T_{Star}^4}{r^2}
+\end{align*}
+When assuming that the planets in our solar system are black bodies, this expression in combination with Stefan-Boltzmanns law can be used to determine the temperature of a planet based on their distance from the star.
+This way we can ultimately determine the inner and outer boundaries of the habitable zone.
+\begin{align*}
+    &T_{Planet} = \sqrt[4]{\frac{F}{\sigma}}\\
+	&T_{Planet} = \sqrt[4]{\frac{R_{Star}^2 T_{Star}^4}{r^2}}
+\end{align*}\\\\
+After finding the boundaries of the habitable zone in our solar system and determining which planets are located inside said zone, we have to determine the size of the solar panels for our rover.
+This is important to be able to sustain communications and to run different electric instruments.
+The instruments require us to supply the rover with an average of 40 watts using solar power.
+The day-night cycle has been accounted for in the 40 watts of required power.
+Due to the manufacturing processes and nature of solar cells, our solar cells for the rover are only able to achieve a 12\% efficiency.
+Therefore, the flux reaching the rover has to be considerably higher than the required power for the instruments.
 
-\section{Results}
+
+
+
+
+
+\section{Results} \label{sec:results}
 This section is for results only
 	\subsection{Subsection}
     Subsection?
 
-\section{Discussion}
+\section{Discussion} \label{sec:discussion}
 Here comes the discussion :)
 	\subsection{Subsection}
 
-\section{Conclusion}
+\section{Conclusion} \label{sec:conclusion}
 And the conclusion
 
 
-\section{References}
+\section{References} \label{sec:references}
 References are important!
 
 \section{Appendix: Mathematical Derivations}

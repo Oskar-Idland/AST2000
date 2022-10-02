@@ -53,7 +53,7 @@ mass_home_planet = system.masses[0]*1.989e30
 rotational_period = system.rotational_periods[0]  # In days
 radius_home_planet = system.radii[0]*1000
 end_i = 0
-t_orbit_launch = 5  # In Years
+t_orbit_launch = 0  # In Years
 planet_theta = 2*np.pi*t_orbit_launch/utils.s_to_yr(rotational_period*24*3600)
 tang_vel_planet = 2*np.pi*radius_home_planet/(rotational_period*24*3600)
 
@@ -118,7 +118,7 @@ print(f"Position: ({sol_sys_vel[0]:E}, {sol_sys_vel[1]:E}) AU/Year")
 print(f"Elapsed Time: {sol_sys_time:E} Years\n")
 
 # Verifying results
-launch_position = create_orbit_func(planet_idx)[0](t_orbit_launch) + utils.m_to_AU(radius_home_planet)*np.array([np.cos(planet_theta), np.sin(planet_theta)])
-mission.set_launch_parameters(600000, 50, 20000, 360, launch_position, t_orbit_launch)
-mission.launch_rocket()
-mission.verify_launch_result(sol_sys_coords)
+# launch_position = create_orbit_func(planet_idx)[0](t_orbit_launch) + utils.m_to_AU(radius_home_planet)*np.array([np.cos(planet_theta), np.sin(planet_theta)])
+# mission.set_launch_parameters(600000, 50, 20000, 360, launch_position, t_orbit_launch)
+# mission.launch_rocket()
+# mission.verify_launch_result(sol_sys_coords)
