@@ -49,9 +49,17 @@ When launching a rocket into the solar system, we need to know where to go.
 To be able to decide ourselves for a destination planet, a little more information is needed about what to expect on each of the planets.
 Since such a mission is extremely expensive, every possible detail has to be known to make sure the mission succeeds.
 These details are everything from the type of planet to orbits, gravitational forces and conditions such as temperature and solar intensity.
-Most of these can - and need to - be calculated or simulated before launching the mission as they play an important role in the design process of the spacecraft and lander.
+Most of these can - and need to - be calculated or simulated before launching the mission as they play an important role in the design process of the spacecraft and lander.\\
+The main focus of this report will be on the electromagnetic radiation sent out by the star.
+By combining Planck's law and Stefan-Boltzmanns law, the total energy dissipated by the star per time interval can be found.
+The total energy dissipated by the star per time unit, called Luminosity, determines the temperature of a planet at a given distance from the star will be, which then determines the boundaries of the habitable zone.\\
+Furthermore, the received flux by the solar cells on the rover can be determined to approximate the required size of the panels.\\
+When having determined the destination planet, the entry into the planetary orbit has to be planned.
+We therefore have to understand at which point the gravitational force from the planet is multiple times stronger than the influence of the star to successfully perform an orbital injection maneuver.
+
 
 \section{Method} \label{sec:method}
+\subsection{An Expression for Flux}\label{subsec:an-expression-for-flux}
 As the orbits already have been calculated in \colorbox{red}{Report 2}, the main focus will be the solar intensity and temperatures of the planets to see what conditions our spacecraft and rover need to be prepared for when being sent into space.
 When arriving to the destination, our lander will require electric power to sustain the electric instruments and communication elements.
 Therefore, solar panels will be implemented into the rover to create electric energy from solar energy, which is sent out from the sun as electromagnetic radiation.\\
@@ -109,25 +117,80 @@ Assuming no planets are in the way, the luminosity of this sphere will always be
 This is due to the total energy radiated out by the star having to be equal to the energy received by the surface of the sphere surrounding the entire star.\\
 The surface area of this sphere with radius $r$ is given by $4 \pi r^2$.
 Since the radiation of the sun is equally distributed over the entire surface area, and the total energy per time is given by the luminosity $L$, the flux at a given radius $r$ from the star is given by:
-\begin{align*}
+\begin{align}
     &F = \frac{dE}{dA \, dt} = \frac{L}{dA}\\
 	&F = \frac{L}{4 \pi r^2}\\
-	&F = \frac{\sigma R_{Star}^2 T_{Star}^4}{r^2}
-\end{align*}
+	&F = \frac{\sigma R_{Star}^2 T_{Star}^4}{r^2} \label{Flux_Distance}
+\end{align}
+
+\subsection{The Habitable zone}\label{subsec:temperature-of-planets}
+The habitable zone is defined to be the zone around a star where the temperatures are between 260 and 390 degrees kelvin so that liquid water can exist.
+The existence of liquid water is a requirement for the existence of life forms as we know them, which is why this zone is called habitable zone.
 When assuming that the planets in our solar system are black bodies, this expression in combination with Stefan-Boltzmanns law can be used to determine the temperature of a planet based on their distance from the star.
 This way we can ultimately determine the inner and outer boundaries of the habitable zone.
 \begin{align*}
     &T_{Planet} = \sqrt[4]{\frac{F}{\sigma}}\\
 	&T_{Planet} = \sqrt[4]{\frac{R_{Star}^2 T_{Star}^4}{r^2}}
-\end{align*}\\\\
+\end{align*}
+
+\subsection{Powering the Rover}\label{subsec:powering-the-rover}
 After finding the boundaries of the habitable zone in our solar system and determining which planets are located inside said zone, we have to determine the size of the solar panels for our rover.
 This is important to be able to sustain communications and to run different electric instruments.
 The instruments require us to supply the rover with an average of 40 watts using solar power.
 The day-night cycle has been accounted for in the 40 watts of required power.
 Due to the manufacturing processes and nature of solar cells, our solar cells for the rover are only able to achieve a 12\% efficiency.
-Therefore, the flux reaching the rover has to be considerably higher than the required power for the instruments.
+Therefore, the flux reaching the rover has to be considerably higher than the required power for the instruments.\\
+Since flux is given by 
+\begin{align*}
+    F = \frac{dE}{dA\,dt}
+\end{align*}
+The total energy per time interval received by the solar panels can be expressed by
+\begin{align}
+    \frac{dE}{dt} = F\,dA \\
+	P_{received} = F\,dA \label{Power_received}
+\end{align}
+Since our rover requires 40 watts of power $P$, the needed power received by the solar panels $P_{sp}$ is equal to
+\begin{align}
+    P_{rover} = 0.12 \cdot {sp} \\
+	P_{sp} = \frac{P_{rover}}{0.12} \label{Power_req}
+\end{align}
+Due to the large distances from the star, we make the approximation that all inbound radiation is equally distributed across the solar panels and all light rays are parallel to each other.
+Furthermore, we assume that the solar units of the rover can be rotated and are always perpendicular to the incoming light rays.
+Therefore, we are able to simplify $dA$ to $A$.
+When combining equations~\eqref{Power_received} and~\eqref{Power_req} by setting $P_{received} = P_{sp}$, an expression for the required area of the solar panels can be derived.
+\begin{align*}
+    F A = \frac{P_{rover}}{0.12}\\
+	A = \frac{P_{rover}}{0.12\,F}
+\end{align*}
+The flux F reaching the solar panels can be calculated by using equation~\eqref{Flux_Distance}, resulting in an expression for the required solar panel size $A$ as a function of the distance from the star $r$.
+\begin{align*}
+    A = \frac{1}{0.12}\frac{P_{rover}\,r^2}{\sigma R_{Star}^2 T_{Star}^4}
+\end{align*}
 
+To determine the final destination, the temperature, mass, radius, distance from the star and amount of electromagnetic radiation have to be determined as they are the main contributors to determining the conditions on the planets.
+With these results, we are able to compare the different planets and decide a final location.\\
 
+After selecting the destination, we will have to prepare and plan the injection of the spacecraft into the planetary orbit.
+Therefore, we have to determine the ratio between the gravitational force of the star and the planet.
+The larger the gravitational force of the planet is compared to the force of the star, the easier an injection maneuver will be, as the force of the planet will be stronger.
+We will therefore be deriving an expression to calculate the distance for a given ratio $k$.
+The gravitational forces are given by
+\begin{align}
+    G_{Planet} &= \gamma \, \frac{M_{SC}M_{Planet}}{l^2} \label{G_Planet}\\
+	G_{Star} &= \gamma \, \frac{M_{SC}M_{Star}}{|\textbf{r}|^2} \label{G_Star}
+\end{align}
+With $M_{SC}$ being the mass of the spacecraft, $M_{Planet}$ being the mass of the planet, $M_{Star}$ being the mass of the star, $\gamma$ the universal gravitational constant, $l$ the distance between the spacecraft and the planet and $\textbf{r}$ the vector pointing from the star to the spacecraft.\\
+A ratio between these two forces of $k$, can be expressed as
+\begin{align*}
+    G_{Planet} = k\, G_{Star}
+\end{align*}
+By inserting equations~\eqref{G_Planet} and~\eqref{G_Star}, we find
+\begin{align*}
+    \gamma \, \frac{M_{SC}M_{Planet}}{l^2} &= k\, \gamma \, \frac{M_{SC}M_{Star}}{|\textbf{r}|^2}\\
+	\frac{M_{Planet}}{l^2} &= k\, \frac{M_{Star}}{|\textbf{r}|^2}\\
+	l^2 =& \frac{M_{Planet}|\textbf{r}|^2}{k\,M_{Star}}\\
+	l =& |\textbf{r}|\sqrt{\frac{M_{Planet}}{k\,M_{Star}}}
+\end{align*}\\
 
 
 

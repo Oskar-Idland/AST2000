@@ -33,3 +33,7 @@ for planet_idx in range(system.number_of_planets):
 
 system.print_info()
 print(system.initial_positions)
+
+for i in range(8):
+    r = system.initial_positions[:, i]
+    print(i, np.linalg.norm(r))

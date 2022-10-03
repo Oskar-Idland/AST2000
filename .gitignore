@@ -8,7 +8,6 @@
 .idea/other.xml
 .DS_Store
 Project/Skeleton.tex
-out
 out/Report_Part_2.aux
 out/Report_Part_2.log
 out/Report_Part_2.out
@@ -19,7 +18,6 @@ out/Figures
 Project/Part 2/Python Code/Test2.py
 Project/Part 2/Python Code/planet_trajectories.npz
 /Project/Part 2/Python Code/Planet_Orbits.txt
-Project/.idea
 Project/Part 2/Python Code/Orbits/Planet_0.npz
 Project/Part 2/Python Code/Orbits/Planet_1.npz
 Project/Part 2/Python Code/Orbits/Planet_2.npz
@@ -29,3 +27,9 @@ Project/Part 2/Python Code/Orbits/Planet_5.npz
 Project/Part 2/Python Code/Orbits/Planet_6.npz
 Project/Part 2/Python Code/Orbits/Planet_7.npz
 Project/Part 2/Python Code/XMLs/orbit_video.xml
+/out/
+/Project/.idea/
+out/Report_Part_3.aux
+out/Report_Part_3.log
+out/Report_Part_3.pdf
+out/Report_Part_3.synctex.gz
