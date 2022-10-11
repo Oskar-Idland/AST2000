@@ -51,9 +51,13 @@ Since such a mission is extremely expensive, every possible detail has to be kno
 These details are everything from the type of planet to orbits, gravitational forces and conditions such as temperature and solar intensity.
 Most of these can - and need to - be calculated or simulated before launching the mission as they play an important role in the design process of the spacecraft and lander.\\
 The main focus of this report will be on the electromagnetic radiation sent out by the star.
+Therefore, we will assume that both the star and all the planets in the solar system are stable black bodies.
+Per definition, all radiation that hits the black body will be absorbed, and no radiation is reflected or can pass through.\\
 By combining Planck's law and Stefan-Boltzmanns law, the total energy dissipated by the star per time interval can be found.
 The total energy dissipated by the star per time unit, called Luminosity, determines the temperature of a planet at a given distance from the star will be, which then determines the boundaries of the habitable zone.\\
-Furthermore, the received flux by the solar cells on the rover can be determined to approximate the required size of the panels.\\
+Furthermore, the received flux by the solar cells on the rover can be determined to approximate the required size of the panels.
+Due to the large distances from the star, we make the approximation that all inbound radiation is equally distributed across the solar panels and all light rays are parallel to each other.
+To receive as much solar power as possible, our rover has built in an advanced system, which allows the solar panels to be positioned perpendicular to the incoming electromagnetic radiation from the sun.\\
 When having determined the destination planet, the entry into the planetary orbit has to be planned.
 We therefore have to understand at which point the gravitational force from the planet is multiple times stronger than the influence of the star to successfully perform an orbital injection maneuver.
 
@@ -63,8 +67,6 @@ We therefore have to understand at which point the gravitational force from the 
 As the orbits already have been calculated in \colorbox{red}{Report 2}, the main focus will be the solar intensity and temperatures of the planets to see what conditions our spacecraft and rover need to be prepared for when being sent into space.
 When arriving to the destination, our lander will require electric power to sustain the electric instruments and communication elements.
 Therefore, solar panels will be implemented into the rover to create electric energy from solar energy, which is sent out from the sun as electromagnetic radiation.\\
-To make these calculations, we will assume that both the star and the planets in our solar systems are black bodies.
-This means, that the body absorbs all radiation that hits the black body, and no radiation is reflected or can pass through.
 Every black body that has an absolute temperature above 0 degrees kelvin, emits some thermal radiation, which is called black body radiation.
 The intensity and wavelength depend on the temperature of the black body.\\
 When using some quantum physics, a formula for the intensity $B(\nu)$ of this radiation for a given frequency $\nu$ can be calculated.
@@ -81,7 +83,7 @@ Since Planck's law of radiation can be written as a function of frequency or wav
 \begin{align*}
 	\frac{dB(\lambda)}{d\lambda} = 0
 \end{align*}\\
-Using this, Wien's displacement law can be derived:
+Using these insights, Wien's displacement law can be derived:
 \begin{align*}
     T\lambda_{max} = 2.9 \times 10^{-3} \, Km
 \end{align*}\\
@@ -108,9 +110,9 @@ However, since stars are not perfect black bodies, these two temperatures differ
 Using telescopes, Planck's law and Wien's displacement law, we can now determine the temperature of the star in the middle of our solar system.\\
 After obtaining the temperature of the planet, Stefan-Boltzmanns law can be used to find the flux of the star.
 When integrating this over the entire surface of the star, we obtain the total luminosity of the star, or in other words the total energy radiated out by the star per time interval $dt$.
-\begin{align*}
-    L = 4 \pi \sigma R_{Star}^2 T_{Star}^4
-\end{align*}
+\begin{align}
+    L = 4 \pi \sigma R_{Star}^2 T_{Star}^4 \label{Luminosity}
+\end{align}
 To determine both the temperature of the planets and find an approximation of the required size for the solar panels of the rover, we need to find an expression for the flux of radiation as a function of the distance to the star.
 Here, we assume that the radiation from the star is equally distributed over the entire surface of the sphere with radius $r$ surrounding the star.\\
 Assuming no planets are in the way, the luminosity of this sphere will always be the same as the luminosity $L$ of the star.
@@ -154,7 +156,6 @@ Since our rover requires 40 watts of power $P$, the needed power received by the
     P_{rover} = 0.12 \cdot {sp} \\
 	P_{sp} = \frac{P_{rover}}{0.12} \label{Power_req}
 \end{align}
-Due to the large distances from the star, we make the approximation that all inbound radiation is equally distributed across the solar panels and all light rays are parallel to each other.
 Furthermore, we assume that the solar units of the rover can be rotated and are always perpendicular to the incoming light rays.
 Therefore, we are able to simplify $dA$ to $A$.
 When combining equations~\eqref{Power_received} and~\eqref{Power_req} by setting $P_{received} = P_{sp}$, an expression for the required area of the solar panels can be derived.
@@ -180,7 +181,7 @@ The gravitational forces are given by
 	G_{Star} &= \gamma \, \frac{M_{SC}M_{Star}}{|\textbf{r}|^2} \label{G_Star}
 \end{align}
 With $M_{SC}$ being the mass of the spacecraft, $M_{Planet}$ being the mass of the planet, $M_{Star}$ being the mass of the star, $\gamma$ the universal gravitational constant, $l$ the distance between the spacecraft and the planet and $\textbf{r}$ the vector pointing from the star to the spacecraft.\\
-A ratio between these two forces of $k$, can be expressed as
+The ratio $k$ between these two forces, can be expressed as
 \begin{align*}
     G_{Planet} = k\, G_{Star}
 \end{align*}
@@ -193,12 +194,24 @@ By inserting equations~\eqref{G_Planet} and~\eqref{G_Star}, we find
 \end{align*}\\
 
 
-
-
 \section{Results} \label{sec:results}
-This section is for results only
-	\subsection{Subsection}
-    Subsection?
+	\subsection{Electromagnetic radiation} \label{subsec:res_elmag_radiation}
+	Using formula~\eqref{Luminosity}
+
+	The flux for each planet was then calculated based on the Luminosity of the star using formula~\eqref{Flux_Distance} and is shown in the following table
+	\begin{table}[]
+	    \begin{tabular}{||}
+	        %% l (Left aligned), c (Centered), r (Right aligned)
+	        \hline
+	         & \\
+	        \hline
+	         &
+	        \hline
+	    \end{tabular}
+	    \caption{}
+	    \label{tab:}
+	\end{table}
+
 
 \section{Discussion} \label{sec:discussion}
 Here comes the discussion :)
