@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2022.2.21)  25 SEP 2022 11:23
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2022.2.21)  11 OCT 2022 13:57
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -536,31 +536,105 @@ LaTeX Info: Redefining \nameref on input line 36.
 Class revtex4-2 Info: Taking \maketitle back from hyperref on input line 36.
 \openout3 = `Report_Part_3Notes.bib'.
 
+LaTeX Font Info:    Trying to load font information for U+esint on input line 7
+2.
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/esint/uesint.fd
+File: uesint.fd 
+)
+LaTeX Font Info:    Trying to load font information for U+msa on input line 72.
+
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 72.
+
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+Underfull \hbox (badness 3460) in paragraph at lines 67--74
+[]\OT1/cmr/m/n/10 As the or-bits al-ready have been cal-cu-lated in
+ []
+
+[1{/usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+[2]
+Underfull \hbox (badness 10000) in paragraph at lines 171--173
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 194--195
+
+ []
+
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 202.
+
+./Report_Part_3.tex:203: Missing # inserted in alignment preamble.
+<to be read again> 
+                   \cr 
+l.203 	    \begin{tabular}{||}
+                              
+There should be exactly one # between &'s, when an
+\halign or \valign is being set up. In this case you had
+none, so I've put one in; maybe that will work.
+
+./Report_Part_3.tex:206: Extra alignment tab has been changed to \cr.
+<recently read> \endtemplate 
+                             
+l.206 	         &
+                  \\
+You have given more \span or & marks than there were
+in the preamble to the \halign or \valign now in progress.
+So I'll assume that you meant to type \cr instead.
+
+./Report_Part_3.tex:208: Extra alignment tab has been changed to \cr.
+<recently read> \endtemplate 
+                             
+l.208 	         &
+                 
+You have given more \span or & marks than there were
+in the preamble to the \halign or \valign now in progress.
+So I'll assume that you meant to type \cr instead.
 
 No file Report_Part_3.bbl.
-[1{/usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-(/Users/jannikeschler/Documents/GitHub/AST2000/out/Report_Part_3.aux)
+[3] (/Users/jannikeschler/Documents/GitHub/AST2000/out/Report_Part_3.aux)
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package rerunfilecheck Info: File `Report_Part_3.out' has not changed.
-(rerunfilecheck)             Checksum: EC19C467A9C8875A508B70319B3A85D8;1313.
+(rerunfilecheck)             Checksum: D00733450FCCDF1E301EA19244D63480;1871.
  ) 
 Here is how much of TeX's memory you used:
- 14345 strings out of 478994
- 203058 string characters out of 5858184
- 732395 words of memory out of 5000000
- 31630 multiletter control sequences out of 15000+600000
- 404987 words of font info for 32 fonts, out of 8000000 for 9000
+ 14461 strings out of 478994
+ 204683 string characters out of 5858184
+ 763395 words of memory out of 5000000
+ 31704 multiletter control sequences out of 15000+600000
+ 410751 words of font info for 59 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 81i,5n,89p,341b,419s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
-></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb><
-/usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></u
-sr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/
-local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb>
+ 81i,14n,89p,351b,419s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
+></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
+</usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></
+usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></u
+sr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></us
+r/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/
+local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/lo
+cal/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local
+/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/te
+xlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texli
+ve/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texliv
+e/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/
+2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/20
+21/texmf-dist/fonts/type1/public/esint-type1/esint10.pfb>
 Output written on /Users/jannikeschler/Documents/GitHub/AST2000/out/Report_Part
-_3.pdf (1 page, 66749 bytes).
+_3.pdf (3 pages, 168021 bytes).
 PDF statistics:
- 79 PDF objects out of 1000 (max. 8388607)
- 70 compressed objects within 1 object stream
- 12 named destinations out of 1000 (max. 500000)
- 89 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 157 PDF objects out of 1000 (max. 8388607)
+ 136 compressed objects within 2 object streams
+ 28 named destinations out of 1000 (max. 500000)
+ 113 words of extra memory for PDF output out of 10000 (max. 10000000)
 
