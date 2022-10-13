@@ -1,10 +1,11 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2022.2.21)  11 OCT 2022 13:57
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2022.2.21)  13 OCT 2022 17:35
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
 **Report_Part_3.tex
-(./Report_Part_3.tex
+
+(/Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 3/Report_Part_3.tex
 LaTeX2e <2020-10-01> patch level 4
 L3 programming layer <2021-02-18>
 (/usr/local/texlive/2021/texmf-dist/tex/latex/revtex/revtex4-2.cls
@@ -463,7 +464,7 @@ Class revtex4-2 Info: cite was not loaded (OK!) on input line 36.
 Class revtex4-2 Info: mcite was not loaded (OK!) on input line 36.
 Class revtex4-2 Info: multicol was not loaded (OK!) on input line 36.
 
-(/Users/jannikeschler/Documents/GitHub/AST2000/out/Report_Part_3.aux)
+No file Report_Part_3.aux.
 \openout1 = `Report_Part_3.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 36.
@@ -484,7 +485,6 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 36.
 LaTeX Font Info:    ... okay on input line 36.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 36.
 LaTeX Font Info:    ... okay on input line 36.
-
 (/usr/local/texlive/2021/texmf-dist/tex/latex/ucs/ucsencs.def
 File: ucsencs.def 2011/01/21 Fixes to fontencodings LGR, T3
 )
@@ -527,8 +527,6 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 36.
 LaTeX Info: Redefining \pageref on input line 36.
 LaTeX Info: Redefining \nameref on input line 36.
- (/Users/jannikeschler/Documents/GitHub/AST2000/out/Report_Part_3.out)
-(/Users/jannikeschler/Documents/GitHub/AST2000/out/Report_Part_3.out)
 \@outlinefile=\write4
 \openout4 = `Report_Part_3.out'.
 
@@ -538,8 +536,7 @@ Class revtex4-2 Info: Taking \maketitle back from hyperref on input line 36.
 
 LaTeX Font Info:    Trying to load font information for U+esint on input line 7
 2.
-
-(/usr/local/texlive/2021/texmf-dist/tex/latex/esint/uesint.fd
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/esint/uesint.fd
 File: uesint.fd 
 )
 LaTeX Font Info:    Trying to load font information for U+msa on input line 72.
@@ -560,59 +557,162 @@ Underfull \hbox (badness 3460) in paragraph at lines 67--74
 
 [1{/usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 [2]
-Underfull \hbox (badness 10000) in paragraph at lines 171--173
+
+LaTeX Warning: Reference `Power_received' on page 3 undefined on input line 165
+.
+
+
+LaTeX Warning: Reference `Power_req' on page 3 undefined on input line 165.
+
+
+LaTeX Warning: Reference `Flux_Distance' on page 3 undefined on input line 170.
+
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 175--177
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 194--195
+LaTeX Warning: Reference `G_Planet' on page 3 undefined on input line 192.
+
+
+LaTeX Warning: Reference `G_Star' on page 3 undefined on input line 192.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 198--199
 
  []
 
 
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 202.
+LaTeX Warning: Reference `Luminosity' on page 3 undefined on input line 203.
 
-./Report_Part_3.tex:203: Missing # inserted in alignment preamble.
-<to be read again> 
-                   \cr 
-l.203 	    \begin{tabular}{||}
-                              
-There should be exactly one # between &'s, when an
-\halign or \valign is being set up. In this case you had
-none, so I've put one in; maybe that will work.
 
-./Report_Part_3.tex:206: Extra alignment tab has been changed to \cr.
-<recently read> \endtemplate 
-                             
-l.206 	         &
-                  \\
-You have given more \span or & marks than there were
-in the preamble to the \halign or \valign now in progress.
-So I'll assume that you meant to type \cr instead.
+LaTeX Warning: Reference `Flux_Distance' on page 3 undefined on input line 205.
 
-./Report_Part_3.tex:208: Extra alignment tab has been changed to \cr.
-<recently read> \endtemplate 
-                             
-l.208 	         &
-                 
-You have given more \span or & marks than there were
-in the preamble to the \halign or \valign now in progress.
-So I'll assume that you meant to type \cr instead.
 
+
+LaTeX Warning: Reference `fig:Radius_Flux' on page 3 undefined on input line 20
+7.
+
+
+LaTeX Warning: Reference `tab:planet_flux' on page 3 undefined on input line 20
+8.
+
+<Figures/Radius_flux.png, id=40, 462.528pt x 346.896pt>
+File: Figures/Radius_flux.png Graphic file (type png)
+<use Figures/Radius_flux.png>
+Package pdftex.def Info: Figures/Radius_flux.png  used on input line 214.
+(pdftex.def)             Requested size: 185.0079pt x 138.75594pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: Reference `Planet_temp' on page 3 undefined on input line 239.
+
+
+LaTeX Warning: Reference `fig:Radius_Temp' on page 3 undefined on input line 24
+0.
+
+[3]
+
+LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
+ on input line 241.
+
+<Figures/Radius_temp.png, id=58, 462.528pt x 346.896pt>
+File: Figures/Radius_temp.png Graphic file (type png)
+<use Figures/Radius_temp.png>
+Package pdftex.def Info: Figures/Radius_temp.png  used on input line 245.
+(pdftex.def)             Requested size: 185.0079pt x 138.75594pt.
+
+LaTeX Warning: Reference `Planet_temp' on page 4 undefined on input line 250.
+
+
+LaTeX Warning: Reference `sec:method' on page 4 undefined on input line 250.
+
+
+LaTeX Warning: Reference `fig:Radius_Temp' on page 4 undefined on input line 26
+9.
+
+
+LaTeX Warning: Reference `fig:Radius_Temp' on page 4 undefined on input line 27
+2.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 269--274
+
+ []
+
+
+LaTeX Warning: Reference `Radius_temp' on page 4 undefined on input line 276.
+
+
+LaTeX Warning: Reference `Planet_temp' on page 4 undefined on input line 276.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 275--280
+
+ []
+
+
+LaTeX Warning: Reference `fig:Radius_area' on page 4 undefined on input line 28
+4.
+
+<Figures/Radius_area.png, id=59, 462.528pt x 346.896pt>
+File: Figures/Radius_area.png Graphic file (type png)
+<use Figures/Radius_area.png>
+Package pdftex.def Info: Figures/Radius_area.png  used on input line 292.
+(pdftex.def)             Requested size: 185.0079pt x 138.75594pt.
+
+LaTeX Warning: Reference `tab:panel_sizes' on page 4 undefined on input line 29
+7.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 316--319
+
+ []
+
+[4 </Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 3/Figures/Radius
+_flux.png> </Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 3/Figure
+s/Radius_temp.png> </Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 
+3/Figures/Radius_area.png>]
+
+LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
+ on input line 320.
+
+<Figures/Grav_ratio_k.png, id=71, 462.528pt x 346.896pt>
+File: Figures/Grav_ratio_k.png Graphic file (type png)
+<use Figures/Grav_ratio_k.png>
+Package pdftex.def Info: Figures/Grav_ratio_k.png  used on input line 326.
+(pdftex.def)             Requested size: 185.0079pt x 138.75594pt.
 No file Report_Part_3.bbl.
-[3] (/Users/jannikeschler/Documents/GitHub/AST2000/out/Report_Part_3.aux)
+[5 </Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 3/Figures/Grav_r
+atio_k.png>]
+(/Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 3/Report_Part_3.aux
+)
+
+LaTeX Warning: There were undefined references.
+
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
-Package rerunfilecheck Info: File `Report_Part_3.out' has not changed.
-(rerunfilecheck)             Checksum: D00733450FCCDF1E301EA19244D63480;1871.
+
+Package rerunfilecheck Warning: File `Report_Part_3.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `Report_Part_3.out':
+(rerunfilecheck)             Before: <no file>
+(rerunfilecheck)             After:  D00733450FCCDF1E301EA19244D63480;1871.
  ) 
 Here is how much of TeX's memory you used:
- 14461 strings out of 478994
- 204683 string characters out of 5858184
- 763395 words of memory out of 5000000
- 31704 multiletter control sequences out of 15000+600000
+ 14492 strings out of 478994
+ 205284 string characters out of 5858184
+ 757395 words of memory out of 5000000
+ 31723 multiletter control sequences out of 15000+600000
  410751 words of font info for 59 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  81i,14n,89p,351b,419s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -622,19 +722,21 @@ Here is how much of TeX's memory you used:
 usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></u
 sr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></us
 r/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/
-local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/lo
-cal/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local
-/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/te
-xlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texli
-ve/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texliv
-e/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/
-2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/20
-21/texmf-dist/fonts/type1/public/esint-type1/esint10.pfb>
-Output written on /Users/jannikeschler/Documents/GitHub/AST2000/out/Report_Part
-_3.pdf (3 pages, 168021 bytes).
+local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/lo
+cal/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/loca
+l/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/t
+exlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texl
+ive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive
+/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/20
+21/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/202
+1/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2021/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/2021/te
+xmf-dist/fonts/type1/public/esint-type1/esint10.pfb>
+Output written on "/Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 3
+/Report_Part_3.pdf" (5 pages, 267457 bytes).
 PDF statistics:
- 157 PDF objects out of 1000 (max. 8388607)
- 136 compressed objects within 2 object streams
- 28 named destinations out of 1000 (max. 500000)
- 113 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 146 PDF objects out of 1000 (max. 8388607)
+ 113 compressed objects within 2 object streams
+ 40 named destinations out of 1000 (max. 500000)
+ 21 words of extra memory for PDF output out of 10000 (max. 10000000)
 
