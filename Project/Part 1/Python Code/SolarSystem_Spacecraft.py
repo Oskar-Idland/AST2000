@@ -37,3 +37,6 @@ print(system.initial_positions)
 for i in range(8):
     r = system.initial_positions[:, i]
     print(i, np.linalg.norm(r))
+
+print(system.star_mass)
+print(system.star_radius)

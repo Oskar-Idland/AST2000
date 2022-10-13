@@ -130,10 +130,14 @@ The habitable zone is defined to be the zone around a star where the temperature
 The existence of liquid water is a requirement for the existence of life forms as we know them, which is why this zone is called habitable zone.
 When assuming that the planets in our solar system are black bodies, this expression in combination with Stefan-Boltzmanns law can be used to determine the temperature of a planet based on their distance from the star.
 This way we can ultimately determine the inner and outer boundaries of the habitable zone.
-\begin{align*}
+\begin{align}
     &T_{Planet} = \sqrt[4]{\frac{F}{\sigma}}\\
-	&T_{Planet} = \sqrt[4]{\frac{R_{Star}^2 T_{Star}^4}{r^2}}
-\end{align*}
+	&T_{Planet} = \sqrt[4]{\frac{R_{Star}^2 T_{Star}^4}{r^2}} \label{Planet_temp}
+\end{align}
+\begin{align}
+	&r^2 = \frac{R_{Star}^2 T_{Star}^4}{T_{Planet}^4}\\
+	&r = \frac{R_{Star} T_{Star}^2}{T_{Planet}^2} \label{Radius_temp}
+\end{align}
 
 \subsection{Powering the Rover}\label{subsec:powering-the-rover}
 After finding the boundaries of the habitable zone in our solar system and determining which planets are located inside said zone, we have to determine the size of the solar panels for our rover.
@@ -196,21 +200,135 @@ By inserting equations~\eqref{G_Planet} and~\eqref{G_Star}, we find
 
 \section{Results} \label{sec:results}
 	\subsection{Electromagnetic radiation} \label{subsec:res_elmag_radiation}
-	Using formula~\eqref{Luminosity}
+	Using formula~\eqref{Luminosity} we find the luminosity to be $5.794 \times 10^{28}$ Watt.
+	The star mass and radius for these calculations were provided by the SolarSystem instance from the ast2000tools package and are equal to $M_{Star} = 4.441$ Solar masses and $R_{Star} = 2.07 \times 10^9$ Km.
+	By using the above described process we can find the flux for a given distance from the star and therefore for each planet based on the Luminosity of the star using formula~\eqref{Flux_Distance}.
+	As earlier stated, these results are for a solar system consisting of perfect black bodies and assuming no other planets are blocking radiation coming from the star.
+	In Figure~\ref{fig:Radius_Flux} the electromagnetic flux is graphed as a function of the distance from the star in the center of the solar system.
+	Table~\ref{tab:planet_flux} shows the values for the flux at each planet's surface.
+	More precisely, at the distance which corresponds to the semi-major axis of the orbit of each planet.
 
-	The flux for each planet was then calculated based on the Luminosity of the star using formula~\eqref{Flux_Distance} and is shown in the following table
-	\begin{table}[]
-	    \begin{tabular}{||}
+	\begin{figure}[h]
+		%% H(Here), h(here approx), t(top of page), b(bottom of page)
+		\centering
+		\includegraphics[scale=0.4]{Figures/Radius_flux}
+		\caption{The electromagnetic flux as a function of distance from the star in our solar system.}\label{fig:Radius_Flux}
+	\end{figure}
+
+	\begin{table}[h]
+	    \begin{tabular}{|c|c|c|c|c|}
 	        %% l (Left aligned), c (Centered), r (Right aligned)
 	        \hline
-	         & \\
+			Planet 0 & Planet 1 & Planet 2 & Planet 3\\
 	        \hline
-	         &
+			2375 & 1765 & 560.9 & 48.86\\
+			\hline\hline
+			Planet 4 & Planet 5 & Planet 6 & Planet 7\\
 	        \hline
+			130.1 & 284.0 & 76.74 & 5140\\
+			\hline
 	    \end{tabular}
-	    \caption{}
-	    \label{tab:}
+	    \caption{Electromagnetic flux at each planets surface when it is at the semi-major axis of it's orbit. All values are in W/$m^2$.}
+	    \label{tab:planet_flux}
 	\end{table}
+
+	We can clearly see a correspondence between the radius from the star increasing and the flux decreasing.
+	The flux is decreasing rapidly until approximately 4 AU, and is then flattening and decreasing a lot less at a distance greater than approximately 8 AU.
+	The amount of radiation will therefore be quite high for the inner planets and a lot less and relatively equal for the outer planets.
+
+	Based on the flux and formula~\eqref{Planet_temp}, the temperature was calculated as described in the previous section.
+	Figure~\ref{fig:Radius_Temp} visualizes the temperature as a function of the distance from the star in our solar system.
+
+	\begin{figure}[h]
+		%% H(Here), h(here approx), t(top of page), b(bottom of page)
+		\centering
+		\includegraphics[scale=0.4]{Figures/Radius_temp}
+		\caption{The temperature of a black body as a function of the distance between the body and the star.}\label{fig:Radius_Temp}
+	\end{figure}
+
+	Just like the flux, the temperature is most interesting at the surface of the planets.
+	Therefore, the temperature on the surface of each planet has been calculated using formula~\eqref{Planet_temp} and the method described in section~\ref{sec:method} .
+
+	\begin{table}[h]
+			\begin{tabular}{|c|c|c|c|c|}
+				%% l (Left aligned), c (Centered), r (Right aligned)
+				\hline
+				Planet 0 & Planet 1 & Planet 2 & Planet 3\\
+				\hline
+				452.4 & 420.0 & 315.4 & 171.3\\
+				\hline\hline
+				Planet 4 & Planet 5 & Planet 6 & Planet 7\\
+				\hline
+				218.8 & 266.0 & 191.8 & 548.7\\
+				\hline
+			\end{tabular}
+			\caption{Temperature at each planets surface when it is at the semi-major axis of it's orbit. All values are in degrees Kelvin.}
+			\label{tab:planet_temp}
+		\end{table}
+
+	The graph in figure~\ref{fig:Radius_Temp} shows the temperature decreasing as the radius decreases.
+	The same applies for the calculated values for the surface temperature of the planets.
+	The temperatures range between $171.3^{\circ}$ K on the surface of planet 3 and $548.7^{\circ}$ K on the surface of planet 7 with semi-major axes of respectively $65.6343$ AU and $6.16055$ AU
+	As seen in Figure~\ref{fig:Radius_Temp} the temperature decreases similarly to the flux.
+	However, the temperature does not decrease as rapidly in the innermost part of the solar system and has a smoother transition to the temperature gradient in the outer part of the solar system.\\
+
+	The habitable zone has been defined as the zone around the star where the temperature on a planet is between $260$ and $390$ degrees Kelvin.
+	Using formula~\eqref{Radius_temp}, which is a rearrangement of formula~\ref{Planet_temp}, the inner and outer boundaries of the habitable zone can be determined.
+	The inner boundary is found to be $12.532$ AU and the outer boundary is found to be $28.197$ AU.
+	All planets at a distance greater than the inner boundary and less than the outer boundary lie within the habitable zone of our solar system.
+	This includes Planet 2 and Planet 5\\
+
+	To design our rover, we were also trying to find the correct size of solar panels.
+	This was calculated based on the flux reaching the solar panels of the rover at a given distance, the efficiency of the solar panels and the required power for the rover.
+	The rover requires 40 Watts of electric power to keep its electric systems running.
+	It can be seen in figure~\ref{fig:Radius_area} that is increasing as the distance to the star increases.
+	This means if the rover is going further out in the solar system, it needs to be equipped with larger solar panels to provide enough power.
+	This makes sense as the flux, and therefore power reaching the solar panels per square meter decreases with increasing distance.
+	The size of the solar panels therefore needs to increase to capture the same amount of solar power.
+
+	\begin{figure}[h]
+		%% H(Here), h(here approx), t(top of page), b(bottom of page)
+		\centering
+		\includegraphics[scale=0.4]{Figures/Radius_area}
+		\caption{The required area of the solar panels on the rover to provide 40 W with 12\% efficiency.}\label{fig:Radius_area}
+	\end{figure}
+
+	As we will be going to land on a planet, we need to know the required size when we are on a planet.
+	Therefore, the required solar panel size has been calculated for each planet and is listed in table~\ref{tab:panel_sizes}.
+
+	\begin{table}[h]
+			\begin{tabular}{|c|c|c|c|c|}
+				%% l (Left aligned), c (Centered), r (Right aligned)
+				\hline
+				Planet 0 & Planet 1 & Planet 2 & Planet 3\\
+				\hline
+				0.140 & 0.189 & 0.594 & 6.823\\
+				\hline\hline
+				Planet 4 & Planet 5 & Planet 6 & Planet 7\\
+				\hline
+				2.563 & 1.174 & 4.344 & 0.065\\
+				\hline
+			\end{tabular}
+			\caption{Solar panel size required when the rover is on each planets surface when they are on their semi-major axis of their orbits. All values are in $m^2$.}
+			\label{tab:panel_sizes}
+		\end{table}
+
+	The most suitable planet for our mission seems to be Planet 5.
+	This planet is a rock planet with a semi-major axis of 27.7773 AU.
+	It's temperature is $266.0^{\circ}$ K or $-7.13^{\circ}$ C, which means it lies within the habitable zone.\\
+
+	To perform an orbit injection maneuver into the orbit of Planet 5 we want to find the distance from the planet at which the gravitational force from the planet is a certain amount larger than the gravitational force from the star.
+	In figure the ratio $k$ between the gravitational force form the planet and star is graphed as a function of the distance from the planet.
+
+	\begin{figure}[h]
+		%% H(Here), h(here approx), t(top of page), b(bottom of page)
+		\centering
+		\includegraphics[scale=0.4]{Figures/Grav_ratio_k}
+		\caption{The ratio between the gravitational force from the planet and star as a function of the distance from the planet.}\label{fig:k_ratio_dist}
+	\end{figure}
+
+	The ratio is decreasing with the distance increasing.
+	This means if we want to start the injection maneuver at a position with a higher k-value to make it easier, we need to decrease the distance to the planet.
 
 
 \section{Discussion} \label{sec:discussion}
