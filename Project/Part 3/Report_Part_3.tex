@@ -60,6 +60,12 @@ Due to the large distances from the star, we make the approximation that all inb
 To receive as much solar power as possible, our rover has built in an advanced system, which allows the solar panels to be positioned perpendicular to the incoming electromagnetic radiation from the sun.\\
 When having determined the destination planet, the entry into the planetary orbit has to be planned.
 We therefore have to understand at which point the gravitational force from the planet is multiple times stronger than the influence of the star to successfully perform an orbital injection maneuver.
+To get an even better understanding of our planet and have a target to aim for when the spacecraft is on its journey from our home planet to its destination, we also want to take a picture with the on-board camera.
+What we aim for is a resolved picture of the destination planet.
+Resolved means that the object - in this case the destination planet - appears in more than one single pixel on the picture.
+The distance at which the destination planet will be resolved can be calculated based on the specifications of the camera and the radius of the planet.
+To use the right camera in our spacecraft, and get an idea at which point we are able to take a resolved image of the planet, we have to calculate this threshold distance at which the planet appears resolved.
+
 
 
 \section{Method} \label{sec:method}
@@ -198,6 +204,44 @@ By inserting equations~\eqref{G_Planet} and~\eqref{G_Star}, we find
 \end{align*}\\
 
 
+\subsection{Taking an image of the planet}\label{subsec:taking-an-image-of-the-planet}
+    To aid the guidance system of the rover and get more details about the planet we want to take a resolved image of the planet.
+	We will therefore have to calculate the maximum distance we can have from the planet to take such an image.
+	Since all pixels in our camera are square shaped and the planet is approximately spherical, it is enough to find the distance at which the width of the planet exceeds the width of one pixel on the image.
+	First, we need to find an expression for how large the planet appears in the field of view as a function of distance.
+	This can be done by creating a right triangle between the spacecraft and the edges of the planet.
+	Since the distance $L$ to the planet will be a lot larger than the diameter of the planet, we can approximate both angles in the triangle which are located at the edges of the planet to be $90^{\circ}$.
+	The section $\theta_{Pl}$ of the field of view taken up by the planet will then be
+	\begin{align}
+	    \sin\left(\theta_{Pl}\right) = \frac{2R}{L} \label{Planet_fov_1}\\
+	\end{align}
+	The angle $\theta_{Pl}$ here will be quite small due since $L \gg R$.
+	For such small angles, we can approximate $\sin\left(\theta\right)$ as
+	\begin{align*}
+	    \sin\left(\theta\right) = \theta
+	\end{align*}
+	Inserting this into equation~\eqref{Planet_fov_1}, we get an expression for $\theta_{Pl}$.
+	\begin{align*}
+	    \theta_{Pl} = \frac{2R}{L}
+	\end{align*}
+
+	Furthermore, we need to find out how much of the field of view one single pixel is taking up.
+	The angle taken up by one pixel can then be calculated by dividing the field of view in one dimension $F$ by the number of pixels in one dimension $P$.
+	\begin{align*}
+	    \theta_{Px} = \frac{F}{P}
+	\end{align*}
+	To get a resolved image, the angle taken up by the planet $\theta_{Pl}$ has to be larger than the angle taken up by one single pixel $\theta_{Px}$.
+	\begin{align*}
+	    \theta_{Pl} > \theta_{Px}\\
+		\frac{2R}{L} > \frac{F}{P}
+	\end{align*}
+	By solving this inequality, we can find an expression for the maximum distance $L$ for a resolved image.
+	\begin{align}
+	    L < \frac{2RP}{F} \label{Image_Dist}
+	\end{align}
+
+
+
 \section{Results} \label{sec:results}
 	\subsection{Electromagnetic radiation} \label{subsec:res_elmag_radiation}
 	Using formula~\eqref{Luminosity} we find the luminosity to be $5.794 \times 10^{28}$ Watt.
@@ -246,6 +290,8 @@ By inserting equations~\eqref{G_Planet} and~\eqref{G_Star}, we find
 		\caption{The temperature of a black body as a function of the distance between the body and the star.}\label{fig:Radius_Temp}
 	\end{figure}
 
+
+\subsection{Temperature}\label{subsec:temperature-results}
 	Just like the flux, the temperature is most interesting at the surface of the planets.
 	Therefore, the temperature on the surface of each planet has been calculated using formula~\eqref{Planet_temp} and the method described in section~\ref{sec:method} .
 
@@ -272,6 +318,8 @@ By inserting equations~\eqref{G_Planet} and~\eqref{G_Star}, we find
 	As seen in Figure~\ref{fig:Radius_Temp} the temperature decreases similarly to the flux.
 	However, the temperature does not decrease as rapidly in the innermost part of the solar system and has a smoother transition to the temperature gradient in the outer part of the solar system.\\
 
+
+\subsection{The Habitable zone}\label{subsec:the-habitable-zone-results}
 	The habitable zone has been defined as the zone around the star where the temperature on a planet is between $260$ and $390$ degrees Kelvin.
 	Using formula~\eqref{Radius_temp}, which is a rearrangement of formula~\ref{Planet_temp}, the inner and outer boundaries of the habitable zone can be determined.
 	The inner boundary is found to be $12.532$ AU and the outer boundary is found to be $28.197$ AU.
@@ -329,6 +377,23 @@ By inserting equations~\eqref{G_Planet} and~\eqref{G_Star}, we find
 
 	The ratio is decreasing with the distance increasing.
 	This means if we want to start the injection maneuver at a position with a higher k-value to make it easier, we need to decrease the distance to the planet.
+
+
+\subsection{Image of the Planet}\label{subsec:image-of-the-planet}
+	Our rover is equipped with a camera with a focal length of 800 mm and a 35 mm full format image sensor.
+	The field of view is therefore approximately 2.6 degrees.
+	Using these specifications as well as the radius of Planet 5, formula~\eqref{Image_Dist} has been used to determine the maximum distance for a resolved image of the Planet 5.
+	To get an overview over the necessary resolution fo the camera, the required number of pixels in the image sensor in one dimension has been graphed as a function of the distance in figure~\ref{fig:Res_pixels}.
+
+	\begin{figure}[h]
+		%% H(Here), h(here approx), t(top of page), b(bottom of page)
+		\centering
+		\includegraphics[scale=0.4]{Figures/Res_pixels}
+		\caption{The necessary number of pixels in the image sensor in one dimension as function of the distance from the planet.}\label{fig:Res_pixels}
+	\end{figure}
+
+	In figure~\ref{fig:Res_pixels} it can be seen that the number of required pixels in one dimension of the image sensor is linearly dependent of the maximum distance.
+	This means the better the resolution of the camera, the further away the image of the planet will appear resolved.
 
 
 \section{Discussion} \label{sec:discussion}

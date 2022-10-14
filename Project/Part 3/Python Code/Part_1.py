@@ -32,6 +32,7 @@ def find_panel_area(req_power, efficiency, planet_flux):
     return total_dE/planet_flux
 
 
+# Calculating temperatures and required solar panel sizes for all planets
 flux_star = find_star_luminosity(system.star_temperature, system.star_radius)
 print(f"Star Luminosity: {flux_star}")
 temps_areas = np.zeros([8, 2])
@@ -41,7 +42,8 @@ for i in range(8):
     temps_areas[i][1] = find_panel_area(40, 0.12, find_dist_flux(flux_star, r_orbit))
     print(i, f"{find_dist_flux(flux_star, r_orbit):.3f}")
 
-print(temps_areas)
+
+# Calculating and printing temperatures of all planets and whether they are inside the habitable zone
 for i in range(len(temps_areas)):
     if 260 < temps_areas[i][0] < 390:
         print(f"Planet {i} has a temperature of {temps_areas[i][0]-273.15:.2f} deg C ({temps_areas[i][0]:.2f} deg Kelvin) and is in the habitable zone")
@@ -57,6 +59,8 @@ for i in np.linspace(28.197, 28.197025, 5):
     temp = find_dist_temp(flux_star, utils.AU_to_m(i))
     print(i, temp, (260 < temp < 390))
 
+
+# Plotting Flux as function of distance from star
 r = np.linspace(1, 66, 100000)
 flux_r = find_dist_flux(flux_star, r)
 temp_r = find_dist_temp(flux_star, r)
@@ -68,6 +72,7 @@ plt.grid()
 plt.savefig("../Figures/Radius_flux.png")
 plt.clf()
 
+# Plotting Temperature as function of distance from star
 plt.plot(r, temp_r)
 plt.xlabel("Distance from Star [AU]")
 plt.ylabel("Temperature [K]$")
@@ -75,6 +80,7 @@ plt.grid()
 plt.savefig("../Figures/Radius_temp.png")
 plt.clf()
 
+# Plotting Solar panel area as function of distance from star
 plt.plot(r, area_r)
 plt.xlabel("Distance from Star [AU]")
 plt.ylabel("Size of Solar Panels [$m^2]$")
@@ -82,14 +88,29 @@ plt.grid()
 plt.savefig("../Figures/Radius_area.png")
 plt.clf()
 
+# Plotting k-ratio of gravitational forces as function of distance from planet
 orbit5_r = utils.AU_to_m(system.semi_major_axes[5])
 planet5_m = system.masses[5]
 star_m = system.star_mass
 g_r = np.linspace(0.18e9, 0.5e9, 100000)
 k = planet5_m*orbit5_r**2/(star_m*g_r**2)
-
 plt.plot(g_r, k)
 plt.xlabel("Distance from Planet [m]")
 plt.ylabel("Ratio k")
 plt.grid()
 plt.savefig("../Figures/Grav_ratio_k.png")
+plt.clf()
+
+# Plotting distance required to resolve planet on photo
+planet5_rad = system.radii[5]*1000
+fov = utils.deg_to_rad(2.6)  # Field of view of 800 mm lens
+pixels = np.linspace(1024, 12096, 100000)
+dist = planet5_rad*pixels/fov
+plt.plot(dist, pixels)
+plt.xlabel("Distance from Planet [m]")
+plt.ylabel("Required Pixels")
+plt.grid()
+plt.savefig("../Figures/Res_pixels.png")
+plt.show()
+
+
