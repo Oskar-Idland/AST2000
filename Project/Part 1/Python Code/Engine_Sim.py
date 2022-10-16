@@ -58,6 +58,7 @@ print(f'Momentum calculation took {b - a} s')
 thrust = momentum/1e-9
 print(thrust)
 num_of_boxes = 600000/thrust
+print(f"Number of boxes: {num_of_boxes:e}")
 print(f"Total Mass Flow rate: {m_dot * num_of_boxes}")
 end = time.time()
 print(f'The program used {end - start} s')
