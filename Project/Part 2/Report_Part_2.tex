@@ -209,13 +209,13 @@ E = \frac{1}{2}μ v^{2}  - \frac{GM\mu}{r}
 
 The angular momentum $ \mathbf{P} $ can be expressed as a sum of the angular momentum of the two bodies. 
 \[
-\mathbf{P} = \mathbf{r}_1 × \mathbf{\dot{r}}_1 + \mathbf{r}_2 × \mathbf{\dot{r}}_2
+\mathbf{P} = \mathbf{r}_1 × m_1 \mathbf{\dot{r}}_1 + \mathbf{r}_2 × m_2 \mathbf{\dot{r}}_2
 \]
 Using the redefined vectors from \ref{r_1 redef} and \ref{r_2 redef}  we get the following equation. For the full calculation see Appendix \ref{AM calc}
 \[
 \mathbf{P} = \mathbf{r} × μ \mathbf{\dot{r}}
 \]
-These results equations will be used to check if the energy and angular momentum remains constant in the solar system. 
+These equations will be used to check if the energy and angular momentum remains constant in the solar system. 
 
 \section{Results}
 \subsection{Planetary Orbits}
@@ -318,19 +318,19 @@ They are however very consistent with Newton's revised version of Kepler's third
 	The simulation of planet number 3 and solar orbits respectively yielded the following results. The plots include a perfect circle to emphasize the elliptical orbit. The small orange dot in the center of figure \ref{fig: P_orbit_cm} is the orbit of the star. 
 	\begin{figure}[h!]
 	  \centering
-	  \includegraphics[scale = .15]{Figures/Solar_Orbit_CM.pdf}
+	  \includegraphics[scale = .15]{Figures/Planet_Orbit_CM.pdf}
 	  \caption{Plot of the simulated orbit of the planet around the center of mass}
 	  \label{fig: P_orbit_cm}
 	\end{figure}
 	
 	\begin{figure}[h!]
 	  \centering
-	  \includegraphics[scale = .15]{Figures/Solar_Orbit_CM_2.pdf}
+	  \includegraphics[scale = .15]{Figures/Solar_Orbit_CM.pdf}
 	  \caption{Plot of the simulated orbit of the star around the center of mass}
 	  \label{fig: S_orbit_cm}
 	\end{figure}
 	
-	The total angular momentum and energy of the two-body system calculated by the analytical solution shown in \ref{Method orbit calc}. The total energy changes cyclicly with the highest value being 23 \% greater than the smallest. The Angular momentum stays at around 0 for the entire simulation. 
+	The total angular momentum and energy of the two-body system calculated by the analytical solution shown in \ref{Method orbit calc}. The total energy changes cyclicly approximately  99.9999997591\% to  100.0000004921 \%  from the mean value. The Angular momentum stays at approximately  0 for the entire simulation. 
 	
 	\begin{figure}[h!]
 	  \centering
@@ -361,10 +361,11 @@ So the relative difference is almost the same for all planets.
 Newton's revised version, gives a better result and results in the relative difference being approximately $0.0005 \pm 0.001\%$ for all planets, which is very accurate.
 This makes sense since we are not working with earth, but rather another home planet, which requires a more general formula.
 
-	\subsection{Subsection}
+	\subsection{Orbits Around Center of Mass}
+	To judge the accuracy of the orbits we look at the total energy in the system to see if it is conserved. As seen in figure \ref{fig: tot_Energy_AM} we observed some fluctuations in the total energy, while angular momentum was constant. The magnitude of the energy was $ 10^{-13} $. At this scale the its most likely just calculation errors from the computer. The orbits of the star and the planet mirror each other which point to an accurate simulation. The forces acting on both bodies should have opposite direction and a difference in magnitude, which the graph portrays perfectly. 
 
 \section{Conclusion}
-And the conclusion
+The orbits around the two-body system was simulated accurately while conserving both energy and angular momentum. 
 
 \section{References}
 References are important!
@@ -375,8 +376,10 @@ References are important!
 \end{enumerate}
 
 \newpage
-\section{Appendix: Mathematical Derivations}
-	\subsection{Calculations}
+
+\section{Appendix}
+
+	\subsection{Calculations and Mathematical Derivations}
 		\subsubsection{Redefining $ \mathbf{r_1} $ and $ \mathbf{r_2} $}\label{r1r2 calc}
 			\[
 			\mathbf{R} = \frac{m_1 \mathbf{r_1} + m_2 \mathbf{r_2}}{M}, \qquad \mathbf{r} = \mathbf{r_2} - \mathbf{r_1}
@@ -385,11 +388,15 @@ References are important!
 			\mathbf{R} = \frac{m_1}{M}\mathbf{r_1} + \frac{m_2}{M} \left( \mathbf{r} + \mathbf{r_1} \right) = \mathbf{r_1} \left( \frac{m_1 + m_2}{M} \right) + \frac{m_2}{M} \mathbf{r} = \mathbf{r_1} + \frac{m_2}{M} \mathbf{r}
 			\]
 			\[
-			r_1 = \mathbf{R} - \frac{m_2}{M}\mathbf{r}
+			\mathbf{r_1} = \mathbf{R} - \frac{m_2}{M}\mathbf{r}
 			\]
 			Repeating the same calculations for $ r_2 $ yields the following: 
 			\[
-			r_2 = \mathbf{R} + \frac{m_1}{M} \mathbf{r}
+			\mathbf{r_2} = \mathbf{R} + \frac{m_1}{M} \mathbf{r}
+			\]
+			If the center of mass is put in origin $ \mathbf{R} = 0 $ and we get the simplified
+			\[
+			\mathbf{r_1} = - \frac{m_2}{M}\mathbf{r} \quad , \quad \mathbf{r_2} = \frac{m_1}{M}\mathbf{r}
 			\]
 
 		\subsubsection{Calculating Kinetic Energy}\label{E_k calc}
@@ -417,7 +424,10 @@ References are important!
 
 		\subsubsection{Calculating Angular Momentum}\label{AM calc}
 			\[
-			\mathbf{P} = m_1 \left(- \frac{m_2}{M}\right)_{}^{2}\mathbf{r_1} × \mathbf{\dot{r}} + m_2 \left(\frac{m_1}{M}\right)_{}^{2} \mathbf{r_2} × \mathbf{\dot{r}}
+			\mathbf{P} = \mathbf{r}_1 × m_1 \mathbf{\dot{r}}_1 + \mathbf{r}_2 × m_2 \mathbf{\dot{r}}_2 
+			\]
+			\[
+			\mathbf{P} = m_1 \left(- \frac{m_2}{M}\right)_{}^{2}\mathbf{r} × \mathbf{\dot{r}} + m_2 \left(\frac{m_1}{M}\right)_{}^{2} \mathbf{r} × \mathbf{\dot{r}}
 			\]
 			\[
 			\mathbf{P} = \frac{m_1m_2}{M^{2}} \left(m_1 + m_2\right)_{}^{} \mathbf{r} × \mathbf{\dot{r}} 
@@ -428,6 +438,22 @@ References are important!
 			\[
 			\mathbf{P} = \mathbf{r} × μ \mathbf{\dot{r}}
 			\]
+	\newpage
+	\subsection{Radial Velocity Curve}
+		For this challenge we used our own method for finding the velocity curve. If one can assume the mean value of the noise is zero one can create a new data point by averaging out the sum of a collection of points. 
+		\colorbox{red}{Legg til kalkulasjoner for massen til sjernen}
 
+		\subsubsection{Method}
+			The simples way to do this would be to take every second point from the array starting at index 1, and sum the surrounding points (index 0-2) to create a new data point to plot together with the time arrays index 1. We can define this as the resolution $ k $, where for each point in the radial velocity array $ v_r $ the sum of the points $ \frac{k}{2} $ indexes to the right and left of that point becomes a single data point. When finished we divide by $ k $ to get the average value. As $ k $ gets bigger we get fewer data point, but a smoother curve. This method is dependant on the initial amount of data points. We got 20 000 data points by the other group and used a resolution $ k = 500 $. We plot this against the time array at every $ k $ time index starting at index $ k $
+
+		\subsubsection{Results}	
+			The radial velocity curve was quite accurate and gave a good estimation of the actual curve 
+
+			\begin{figure}[h!]
+			  \centering
+			  \includegraphics[scale = .25]{Figures/Other_Group_Radial_Velocity.png}
+			  \caption{Radial Velocity Curve of Different Group}
+			  \label{fig: Radial Velocity}
+			\end{figure}
 
 \end{document}

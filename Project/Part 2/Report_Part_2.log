@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.8.28) (preloaded format=pdflatex 2022.9.1)  24 SEP 2022 21:45
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.8.28) (preloaded format=pdflatex 2022.9.1)  2 OCT 2022 15:12
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -470,7 +470,7 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 60.
  (C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-<Figures/Ellipse.png, id=76, 709.65125pt x 305.64188pt>
+<Figures/Ellipse.png, id=88, 709.65125pt x 305.64188pt>
 File: Figures/Ellipse.png Graphic file (type png)
 <use Figures/Ellipse.png>
 Package pdftex.def Info: Figures/Ellipse.png  used on input line 69.
@@ -492,7 +492,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 86--96
 
 Package amsfonts Warning: Obsolete command \bold; \mathbf should be used instead on input line 100.
 
-<Figures/leapfrog1.png, id=83, 440.64626pt x 170.6375pt>
+<Figures/leapfrog1.png, id=95, 440.64626pt x 170.6375pt>
 File: Figures/leapfrog1.png Graphic file (type png)
 <use Figures/leapfrog1.png>
 Package pdftex.def Info: Figures/leapfrog1.png  used on input line 112.
@@ -544,7 +544,7 @@ File: uni-34.def 2022/08/07 UCS: Unicode data U+2200..U+22FF
 ) (C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex/latex/ucs/data\uni-0.def
 File: uni-0.def 2022/08/07 UCS: Unicode data U+0000..U+00FF
 )
-<Figures/Orbit_plots.png, id=127, 462.528pt x 346.896pt>
+<Figures/Orbit_plots.png, id=139, 462.528pt x 346.896pt>
 File: Figures/Orbit_plots.png Graphic file (type png)
 <use Figures/Orbit_plots.png>
 Package pdftex.def Info: Figures/Orbit_plots.png  used on input line 228.
@@ -562,27 +562,27 @@ Underfull \hbox (badness 10000) in paragraph at lines 277--279
 
 LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix] on input line 279.
 
-<Figures/Solar_Orbit_CM.pdf, id=146, 1387.58403pt x 704.6325pt>
+<Figures/Planet_Orbit_CM.pdf, id=158, 1387.58403pt x 687.28767pt>
+File: Figures/Planet_Orbit_CM.pdf Graphic file (type pdf)
+<use Figures/Planet_Orbit_CM.pdf>
+Package pdftex.def Info: Figures/Planet_Orbit_CM.pdf  used on input line 321.
+(pdftex.def)             Requested size: 208.12862pt x 103.0887pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<Figures/Solar_Orbit_CM.pdf, id=159, 1387.58403pt x 687.28767pt>
 File: Figures/Solar_Orbit_CM.pdf Graphic file (type pdf)
 <use Figures/Solar_Orbit_CM.pdf>
-Package pdftex.def Info: Figures/Solar_Orbit_CM.pdf  used on input line 321.
-(pdftex.def)             Requested size: 208.12862pt x 105.6903pt.
+Package pdftex.def Info: Figures/Solar_Orbit_CM.pdf  used on input line 328.
+(pdftex.def)             Requested size: 208.12862pt x 103.0887pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<Figures/Solar_Orbit_CM_2.pdf, id=147, 1387.58403pt x 704.6325pt>
-File: Figures/Solar_Orbit_CM_2.pdf Graphic file (type pdf)
-<use Figures/Solar_Orbit_CM_2.pdf>
-Package pdftex.def Info: Figures/Solar_Orbit_CM_2.pdf  used on input line 328.
-(pdftex.def)             Requested size: 208.12862pt x 105.6903pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<Figures/Energy_AngularMomentum_plot.pdf, id=149, 1387.58403pt x 704.6325pt>
+<Figures/Energy_AngularMomentum_plot.pdf, id=161, 1387.58403pt x 687.28767pt>
 File: Figures/Energy_AngularMomentum_plot.pdf Graphic file (type pdf)
 <use Figures/Energy_AngularMomentum_plot.pdf>
 Package pdftex.def Info: Figures/Energy_AngularMomentum_plot.pdf  used on input line 337.
-(pdftex.def)             Requested size: 208.12862pt x 105.6903pt.
+(pdftex.def)             Requested size: 208.12862pt x 103.0887pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
@@ -591,76 +591,83 @@ Underfull \hbox (badness 10000) in paragraph at lines 344--357
 
  []
 
-[4 <./Figures/Solar_Orbit_CM.pdf> <./Figures/Solar_Orbit_CM_2.pdf> <./Figures/Energy_AngularMomentum_plot.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 372--373
+[4 <./Figures/Planet_Orbit_CM.pdf> <./Figures/Solar_Orbit_CM.pdf> <./Figures/Energy_AngularMomentum_plot.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 373--374
  [][][]$\OT1/cmtt/m/n/10 https : / / www . merriam-[]webster . com /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 373--374
+Underfull \hbox (badness 10000) in paragraph at lines 374--375
  [][][]$\OT1/cmtt/m/n/10 https : / / cvarin . github . io /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 374--375
+Underfull \hbox (badness 10000) in paragraph at lines 375--376
  [][][]$\OT1/cmtt/m/n/10 https : / / www . uio . no / studier / emner / matnat /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 374--375
+Underfull \hbox (badness 10000) in paragraph at lines 375--376
  \OT1/cmtt/m/n/10 astro / AST2000 / h22 / undervisningsmateriell /
  []
 
+[5]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 380.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 380.
+(hyperref)                removing `math shift' on input line 383.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 380.
+(hyperref)                removing `subscript' on input line 383.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 380.
+(hyperref)                removing `math shift' on input line 383.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 380.
+(hyperref)                removing `math shift' on input line 383.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 380.
+(hyperref)                removing `subscript' on input line 383.
 
 
-Overfull \hbox (21.1081pt too wide) detected at line 386
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 383.
+
+
+Overfull \hbox (21.1081pt too wide) detected at line 389
 \OT1/cmr/bx/n/10 R \OT1/cmr/m/n/10 = [][] + [] [] = [] [] + []\OT1/cmr/bx/n/10 r \OT1/cmr/m/n/10 = [] + []\OT1/cmr/bx/n/10 r
  []
 
 
-Overfull \hbox (33.11954pt too wide) detected at line 405
+Overfull \hbox (33.11954pt too wide) detected at line 412
 [] \OT1/cmr/m/n/10 = [] [][]
  []
 
-(Report_Part_2.bbl) [5] (Report_Part_2.aux)
+[6]
+<Figures/Other_Group_Radial_Velocity.png, id=310, 462.528pt x 346.896pt>
+File: Figures/Other_Group_Radial_Velocity.png Graphic file (type png)
+<use Figures/Other_Group_Radial_Velocity.png>
+Package pdftex.def Info: Figures/Other_Group_Radial_Velocity.png  used on input line 454.
+(pdftex.def)             Requested size: 115.63171pt x 86.72379pt.
+ (Report_Part_2.bbl) [7 <./Figures/Other_Group_Radial_Velocity.png>] (Report_Part_2.aux)
 Package rerunfilecheck Info: File `Report_Part_2.out' has not changed.
-(rerunfilecheck)             Checksum: 72693B964E9C9A45E4B313E1E19FF8A9;2846.
+(rerunfilecheck)             Checksum: A7D08165A9F9D5CEBA73D5028932849D;3313.
  ) 
 Here is how much of TeX's memory you used:
- 16947 strings out of 477843
- 254798 string characters out of 2823600
- 790443 words of memory out of 3000000
- 35586 multiletter control sequences out of 15000+600000
+ 16965 strings out of 477843
+ 255211 string characters out of 2823600
+ 781443 words of memory out of 3000000
+ 35597 multiletter control sequences out of 15000+600000
  477060 words of font info for 62 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 72i,10n,77p,702b,534s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ 72i,10n,77p,900b,534s stack positions out of 10000i,1000n,20000p,200000b,80000s
  <C:\Users\oskar\AppData\Local\MiKTeX\fonts/pk/ljfour/public/esint/dpi600\esint10.pk><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx6.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx7.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi9.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy9.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti9.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on Report_Part_2.pdf (5 pages, 505459 bytes).
+Output written on Report_Part_2.pdf (7 pages, 510053 bytes).
 PDF statistics:
- 382 PDF objects out of 1000 (max. 8388607)
- 46 named destinations out of 1000 (max. 500000)
- 175 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 410 PDF objects out of 1000 (max. 8388607)
+ 52 named destinations out of 1000 (max. 500000)
+ 204 words of extra memory for PDF output out of 10000 (max. 10000000)
 
