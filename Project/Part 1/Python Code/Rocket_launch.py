@@ -44,7 +44,7 @@ dt = 0.01
 system = SolarSystem(seed)
 mission = SpaceMission(seed)
 planet_idx = 0
-dry_mass = mission.spacecraft_mass
+dry_mass = mission.spacecraft_mass  # 1100 Kg
 fuel_mass = 1_000_000  # Guess! Need at least 198'472 Kg of fuel to reach space (with no fuel left)
 fuel_consumption = 200.7780345334636  # Kg/s
 thrust_force = 600_000  # Newton
@@ -56,6 +56,7 @@ end_i = 0
 t_orbit_launch = 0  # In Years
 planet_theta = 2*np.pi*t_orbit_launch/utils.s_to_yr(rotational_period*24*3600)
 tang_vel_planet = 2*np.pi*radius_home_planet/(rotational_period*24*3600)
+print(dry_mass)
 
 
 # Creating and initialising arrays

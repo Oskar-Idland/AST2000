@@ -1,10 +1,11 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2022.2.21)  14 SEP 2022 00:31
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2022.2.21)  16 OCT 2022 18:15
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
 **"Rocket Engine.tex"
-(./Rocket Engine.tex
+
+(/Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 1/Rocket Engine.tex
 LaTeX2e <2020-10-01> patch level 4
 L3 programming layer <2021-02-18>
 (/usr/local/texlive/2021/texmf-dist/tex/latex/revtex/revtex4-2.cls
@@ -463,7 +464,8 @@ Class revtex4-2 Info: cite was not loaded (OK!) on input line 33.
 Class revtex4-2 Info: mcite was not loaded (OK!) on input line 33.
 Class revtex4-2 Info: multicol was not loaded (OK!) on input line 33.
 
-(/Users/jannikeschler/Documents/GitHub/AST2000/out/Rocket Engine.aux)
+(/Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 1/Rocket Engine.aux
+)
 \openout1 = `"Rocket Engine.aux"'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 33.
@@ -484,8 +486,7 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 33.
 LaTeX Font Info:    ... okay on input line 33.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 33.
 LaTeX Font Info:    ... okay on input line 33.
-
-(/usr/local/texlive/2021/texmf-dist/tex/latex/ucs/ucsencs.def
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/ucs/ucsencs.def
 File: ucsencs.def 2011/01/21 Fixes to fontencodings LGR, T3
 )
 (/usr/local/texlive/2021/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
@@ -527,8 +528,11 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 33.
 LaTeX Info: Redefining \pageref on input line 33.
 LaTeX Info: Redefining \nameref on input line 33.
- (/Users/jannikeschler/Documents/GitHub/AST2000/out/Rocket Engine.out)
-(/Users/jannikeschler/Documents/GitHub/AST2000/out/Rocket Engine.out)
+
+(/Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 1/Rocket Engine.out
+)
+(/Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 1/Rocket Engine.out
+)
 \@outlinefile=\write4
 \openout4 = `"Rocket Engine.out"'.
 
@@ -538,8 +542,7 @@ Class revtex4-2 Info: Taking \maketitle back from hyperref on input line 33.
 
 LaTeX Font Info:    Trying to load font information for U+esint on input line 5
 4.
-
-(/usr/local/texlive/2021/texmf-dist/tex/latex/esint/uesint.fd
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/esint/uesint.fd
 File: uesint.fd 
 )
 LaTeX Font Info:    Trying to load font information for U+msa on input line 54.
@@ -583,7 +586,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 158--160
 
  []
 
-[2 <./Figures/Max-Boltz1.png> <./Figures/Max-Boltz3.png>]
+[2 </Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 1/./Figures/Max-
+Boltz1.png> </Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 1/./Fig
+ures/Max-Boltz3.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 207--212
 
  []
@@ -594,23 +599,31 @@ Underfull \hbox (badness 10000) in paragraph at lines 207--212
  []
 
 [3]
-Underfull \hbox (badness 10000) in paragraph at lines 223--229
+Underfull \hbox (badness 1127) in paragraph at lines 225--232
+\OT1/cmr/m/n/10 mass of the space-craft was 1'001'100 Kg with the
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 225--232
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 250--251
+Underfull \hbox (badness 10000) in paragraph at lines 254--255
 
  []
 
-(./Rocket Engine.bbl) [4]
-(/Users/jannikeschler/Documents/GitHub/AST2000/out/Rocket Engine.aux)
+
+(/Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 1/Rocket Engine.bbl
+) [4]
+(/Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 1/Rocket Engine.aux
+)
 Package rerunfilecheck Info: File `"Rocket Engine".out' has not changed.
 (rerunfilecheck)             Checksum: 31439EDEA30144342A6A18187DCA92B2;1927.
  ) 
 Here is how much of TeX's memory you used:
  15028 strings out of 478994
- 211191 string characters out of 5858184
+ 211554 string characters out of 5858184
  749399 words of memory out of 5000000
  32268 multiletter control sequences out of 15000+600000
  409824 words of font info for 56 fonts, out of 8000000 for 9000
@@ -632,8 +645,8 @@ ve/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2021/t
 exmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/2021/tex
 mf-dist/fonts/type1/public/esint-type1/esint10.pfb>
-Output written on "/Users/jannikeschler/Documents/GitHub/AST2000/out/Rocket Eng
-ine.pdf" (4 pages, 266692 bytes).
+Output written on "/Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 1
+/Rocket Engine.pdf" (4 pages, 266507 bytes).
 PDF statistics:
  169 PDF objects out of 1000 (max. 8388607)
  141 compressed objects within 2 object streams
