@@ -21,6 +21,7 @@ class Particle:
         self.box = box
         self.rand_pos_vel()
         self.v_exit = 0  # Value to store velocity in the direction of the nozzle when exiting the nozzle
+        self.num_exited = 0
 
     def rand_pos_vel(self):
         random.seed(a=self.seed, version=2)
@@ -34,6 +35,7 @@ class Particle:
         collision_axis = np.nonzero(abs(self.position) >= self.box.length/2)  # Checking for each dimension whether the position is outside the length of the box
         if collision_axis[0].size > 0:
             self.wall_collision(collision_axis[0][0])  # Initiating a collision with a wall
+            self.num_exited += 1
 
     def wall_collision(self, axis):
         side = np.sign(self.position[axis])  # Checking which side of the box we are on (positive or negative)

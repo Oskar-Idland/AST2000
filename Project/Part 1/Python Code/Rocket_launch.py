@@ -38,16 +38,16 @@ def chg_coords(planet_idx, coord_in, vel_in, elapsed_time_s, orbit_launch_time):
 # Defining variables
 username = "janniesc"
 seed = utils.get_seed(username)
-N = 200000
+N = 200_000
 dt = 0.01
 
 system = SolarSystem(seed)
 mission = SpaceMission(seed)
 planet_idx = 0
 dry_mass = mission.spacecraft_mass
-fuel_mass = 20000  # Guess!
-fuel_consumption = 50  # Kg/s
-thrust_force = 600000  # Newton
+fuel_mass = 1_000_000  # Guess! Need at least 198'472 Kg of fuel to reach space (with no fuel left)
+fuel_consumption = 200.7780345334636  # Kg/s
+thrust_force = 600_000  # Newton
 wet_mass = dry_mass + fuel_mass
 mass_home_planet = system.masses[0]*1.989e30
 rotational_period = system.rotational_periods[0]  # In days
@@ -96,6 +96,7 @@ for i in range(N-1):
         print(f"Time elapsed: {(elapsed_time/60):.2f} min")
         print(f"Final mass of spacecraft: {wet_mass:.2f} Kg")
         print(f"Remaining fuel: {wet_mass-dry_mass} Kg")
+        print(f"Remaining Burn Time: {(wet_mass-dry_mass)/(fuel_consumption*60):.2f} min")
         break
 
 
