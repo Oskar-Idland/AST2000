@@ -4,6 +4,7 @@ from scipy.constants import Avogadro as A
 from molmass import Formula
 from C_Box import Box
 import time
+import ast2000tools.constants as constants
 start = time.time()
 
 """
@@ -17,12 +18,12 @@ Simplifications and Assumptions:
 
 
 seed = 8
-m = Formula('H2').mass/(A*500) # Mass of one H2 molecule In Kg
+m_h2 = constants.m_H2  # Mass of one H2 molecule In Kg
 L = 1E-6 
 T = 3*1E4
 N = int(1e3)
 timesteps = 1000
-nozzle_pos = np.array([0,0,-L/2]) # Nozzle positioned directly under the box 
+nozzle_pos = np.array([0, 0, -L/2])  # Nozzle positioned directly under the box
 error_factor = 1/2
 Box = Box(L, nozzle_pos)
 # Initialize the array storing all particle objects
@@ -33,7 +34,7 @@ def adv_p(p):
 adv_p = np.vectorize(adv_p)
 
 a = time.time()
-particles = np.array([Particle(m,T,seed*i,Box) for i in range(N)])
+particles = np.array([Particle(m_h2, T, seed*i, Box) for i in range(N)])
 b = time.time()
 print(f'Particle creation took {b - a} s')
 # Advancing all particles 1000 times 
@@ -42,9 +43,21 @@ a = time.time()
 b = time.time()
 print(f'Advancing particles took {b - a} s')
 
+exited_particles = 0
+for particle in particles:
+    exited_particles += particle.num_exited
+m_dot = exited_particles * constants.m_H2/1e-9
+print(f"Mass flow rate: {m_dot}")
+
+
 a = time.time()
-print('Momentum: ' + str(10*error_factor*m*np.sum(np.array(list(map(lambda p: p.v_exit, particles)))))) # Multiplying by error factor to correct for the momentum being counted twice as much as it should
+momentum = 10*error_factor*m_h2*np.sum(np.array(list(map(lambda p: p.v_exit, particles))))
+print('Momentum: ' + str(momentum)) # Multiplying by error factor to correct for the momentum being counted twice as much as it should
 b = time.time()
 print(f'Momentum calculation took {b - a} s')
+thrust = momentum/1e-9
+print(thrust)
+num_of_boxes = 600000/thrust
+print(f"Total Mass Flow rate: {m_dot * num_of_boxes}")
 end = time.time()
 print(f'The program used {end - start} s')
