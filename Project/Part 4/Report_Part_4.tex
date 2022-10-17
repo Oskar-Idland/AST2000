@@ -138,7 +138,8 @@ This, in turn, also creates limitations on the coordinates $ (X,Y) $ of the ster
 \end{subequations}
 This is the key to generating a grid of x and y values which we will base our position from later. 
 
-To help us check that our calculations are correct we have been given a sample picture we will recreate using equation \ref{Spherical to X} \& \ref{Spherical to Y}. The picture is centered around $ \phi = 0^{o} $ and $ \theta = 90^{o} $. The camera used has a FOV of $ α_{\theta} = α_{\phi} = 70^{o} $. To get the full range of the coordinates $ (X,Y) $ we simply find the height and width of the array containing the data. With this information we are able to recreate the same picture~\ref{fig: ref picture}
+To help us check that our calculations are correct we have been given a sample picture we will recreate using equation \ref{Spherical to X} \& \ref{Spherical to Y}.
+The picture is centered around $ \phi = 0^{o} $ and $ \theta = 90^{o} $. The camera used has a FOV of $ \alpha_{\theta} = \alpha_{\phi} = 70^{o} $. To get the full range of the coordinates $ (X,Y) $ we simply find the height and width of the array containing the data. With this information we are able to recreate the same picture~\ref{fig: ref picture}
 
 
 \subsection{Image Analysis} \label{ssec: image analysis}
@@ -216,18 +217,39 @@ The position of the spacecraft will be determined using the trilateration proces
 This process is much used for locating purposes, which includes the global positioning system (GPS).\\
 Using the onboard radar array we will be able to determine distances to the star in our solar system and other planets at a specific point in time $T_m$.
 The position of the other objects has already been found as a function of time and can therefore be determined for the time $T_m$.\\
+\begin{align*}
+    S\left(T \right) &= \left(x_S, y_S \right)\\
+	P_1\left(T \right) &= \left(x_{P1}, y_{P1} \right)\\
+	P_2\left(T \right) &= \left(x_{P2}, y_{P2} \right)
+\end{align*}
 The radar will be used to find the distance to two planets as well as the distance to the star in our solar system.
 The distance to the star in our solar system $r_S$ and the distance to the two planets $r_{P1}$ and $r_{P2}$ can be described using Pythagoras theorem.
-\begin{align*}
-    r_S^2 &= (x_{SC} - x_S)^2 + (y_{SC} - y_S)^2\\
-	r_{P1}^2 &= (x_{SC} - x_{P1})^2 + (y_{SC} - y_{P1})^2\\
-	r_{P2}^2 &= (x_{SC} - x_{P2})^2 + (y_{SC} - y_{P2})^2
-\end{align*}
+\begin{align}
+    r_S^2 &= (x_{SC} - x_S)^2 + (y_{SC} - y_S)^2 \label{r_s}\\
+	r_{P1}^2 &= (x_{SC} - x_{P1})^2 + (y_{SC} - y_{P1})^2 \label{r_p1}\\
+	r_{P2}^2 &= (x_{SC} - x_{P2})^2 + (y_{SC} - y_{P2})^2  \label{r_p2}
+\end{align}
 Since the star will always be in the origin of the coordinate system, $r_S$ can be simplified to
 \begin{align*}
     r_S^2 &= x_{SC}^2 + y_{SC}^2
 \end{align*}
-Solving these for $x_{SC}$ and $y_{SC}$ yields
+Solving the equation set consisting of equations~\eqref{r_s},~\eqref{r_p1} and~\eqref{r_p2} for $x_{SC}$ and $y_{SC}$ yields
+\begin{align*}
+    A& = \left(-2x_S + 2x_{P1}\right)\\
+	B& = \left(-2y_S + 2y_{P1}\right)\\
+	C& = r_S^2 - r_{P1}^2 - x_S^2 + x_{P1}^2 - y_S^2 + y_{P1}^2\\
+	D& = \left(-2x_{P1} + 2x_{P2}\right)\\
+	E& = \left(-2y_{P1} + 2y_{P2}\right)\\
+	F& = r_{P1}^2 - r_{P2}^2 - x_{P1}^2 + x_{P2}^2 - y_{P1}^2 + y_{P2}^2
+\end{align*}
+\begin{align*}
+    x_{SC}& = \frac{CE - FB}{EA - BD}\\
+	y_{SC}& = \frac{CD - AF}{BD - AE}
+\end{align*}
+The position of the spacecraft $SC$ is then given by
+\begin{align*}
+    SC = \left(x_{SC}, y_{SC} \right)
+\end{align*}
 
 
 
@@ -235,7 +257,7 @@ Solving these for $x_{SC}$ and $y_{SC}$ yields
 
 \begin{figure}[h!]
 	\centering
-	\includegraphics[scale = .2]{Figures/sample0000.png}
+	\includegraphics[scale = 0.2]{Figures/sample0000}
 	\caption{Recreated reference picture}
 	\label{fig: ref picture}
   \end{figure}
@@ -255,6 +277,6 @@ Solving these for $x_{SC}$ and $y_{SC}$ yields
 \newpage
 \newpage
 %\printbibliography 
-TODO: % Ta bort kommentar
+%TODO: % Ta bort kommentar
 
 \end{document}
