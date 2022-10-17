@@ -1,9 +1,17 @@
 [0] Config.pm:311> INFO - This is Biber 2.16
 [0] Config.pm:314> INFO - Logfile is 'Report_Part_4.blg'
-[51] biber-darwin:340> INFO - === Mon Oct 17, 2022, 22:15:43
-[63] Biber.pm:415> INFO - Reading '/Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 4/Report_Part_4.bcf'
-[129] Biber.pm:952> INFO - Found 0 citekeys in bib section 0
-[134] Utils.pm:395> WARN - The file '/Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 4/Report_Part_4.bcf' does not contain any citations!
-[141] bbl.pm:654> INFO - Writing 'Report_Part_4.bbl' with encoding 'UTF-8'
-[141] bbl.pm:757> INFO - Output to Report_Part_4.bbl
-[141] Biber.pm:128> INFO - WARNINGS: 1
+[51] biber-darwin:340> INFO - === Mon Oct 17, 2022, 22:44:11
+[62] Biber.pm:415> INFO - Reading '/Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 4/Report_Part_4.bcf'
+[129] Biber.pm:952> INFO - Found 3 citekeys in bib section 0
+[141] Biber.pm:4340> INFO - Processing section 0
+[149] Biber.pm:4531> INFO - Looking for bibtex format file 'References_Part_4.bib' for section 0
+[150] bibtex.pm:1689> INFO - LaTeX decoding ...
+[153] bibtex.pm:1494> INFO - Found BibTeX data source '/Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 4/References_Part_4.bib'
+[178] Utils.pm:395> WARN - Entry 'trilateration' (/Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 4/References_Part_4.bib): Invalid format '29.03.2019' of date field 'date' - ignoring
+[185] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[186] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[186] Biber.pm:4168> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
+[186] Biber.pm:4174> INFO - No sort tailoring available for locale 'en-US'
+[190] bbl.pm:654> INFO - Writing 'Report_Part_4.bbl' with encoding 'UTF-8'
+[191] bbl.pm:757> INFO - Output to Report_Part_4.bbl
+[191] Biber.pm:128> INFO - WARNINGS: 1
