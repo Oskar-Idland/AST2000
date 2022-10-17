@@ -35,5 +35,6 @@
         "xtr1common": "cpp",
         "xutility": "cpp"
     },
-    "editor.suggest.snippetsPreventQuickSuggestions": false
+    "editor.suggest.snippetsPreventQuickSuggestions": false,
+    "latex-utilities.liveReformat.enabled": true,
 }
