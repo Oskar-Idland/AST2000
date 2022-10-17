@@ -45,9 +45,13 @@ system = SolarSystem(seed)
 mission = SpaceMission(seed)
 planet_idx = 0
 dry_mass = mission.spacecraft_mass  # 1100 Kg
-fuel_mass = 1_000_000  # Guess! Need at least 198'472 Kg of fuel to reach space (with no fuel left)
-fuel_consumption = 200.7780345334636  # Kg/s
-thrust_force = 600_000  # Newton
+fuel_mass = 10_000_000  # Guess! Need at least 198'472 Kg of fuel to reach space (with no fuel left)
+thrust_force = 50_000_000  # Newton # Needs to be at least wet_mass*9.81
+thrust_per_box = 5.444265341378116e-10
+mass_flow_rate_per_box = 1.8218148245342572e-13
+num_of_boxes = thrust_force/thrust_per_box
+fuel_consumption = mass_flow_rate_per_box*num_of_boxes  # Kg/s
+
 wet_mass = dry_mass + fuel_mass
 mass_home_planet = system.masses[0]*1.989e30
 rotational_period = system.rotational_periods[0]  # In days
@@ -74,6 +78,9 @@ for i in range(N-1):
     theta = np.arccos(pos[i][0]/r)
     thrust = np.array(thrust_force*pos_unit)
     g = -G*mass_home_planet*wet_mass/r**2 * pos_unit
+    if i == 0:
+        print(g)
+        print(thrust)
     acc[i] = (g+thrust)/wet_mass
     vel[i+1] = vel[i] + acc[i]*dt
     pos[i+1] = pos[i] + vel[i]*dt
@@ -109,7 +116,7 @@ plt.ylabel("y-position")
 plt.axis("equal")
 plt.grid()
 plt.savefig("../Figures/Launch_plot.png")
-plt.show()
+# plt.show()
 
 # Changing coordinates to solar coordinate system
 sol_sys_coords, sol_sys_vel, sol_sys_time = chg_coords(planet_idx, exit_coords, exit_vel, elapsed_time, t_orbit_launch)
@@ -120,7 +127,7 @@ print(f"Position: ({sol_sys_vel[0]:E}, {sol_sys_vel[1]:E}) AU/Year")
 print(f"Elapsed Time: {sol_sys_time:E} Years\n")
 
 # Verifying results
-# launch_position = create_orbit_func(planet_idx)[0](t_orbit_launch) + utils.m_to_AU(radius_home_planet)*np.array([np.cos(planet_theta), np.sin(planet_theta)])
-# mission.set_launch_parameters(600000, 50, 20000, 360, launch_position, t_orbit_launch)
-# mission.launch_rocket()
-# mission.verify_launch_result(sol_sys_coords)
+launch_position = create_orbit_func(planet_idx)[0](t_orbit_launch) + utils.m_to_AU(radius_home_planet)*np.array([np.cos(planet_theta), np.sin(planet_theta)])
+mission.set_launch_parameters(thrust_force, fuel_consumption, fuel_mass, 1500, launch_position, t_orbit_launch)
+mission.launch_rocket()
+mission.verify_launch_result(sol_sys_coords)

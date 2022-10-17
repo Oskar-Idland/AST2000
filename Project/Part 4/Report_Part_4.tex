@@ -9,7 +9,9 @@
 \usepackage{xcolor}
 \usepackage{hyperref}
 \usepackage{listings}
-\usepackage{subfigure} 
+\usepackage{subfigure}
+\usepackage[style=science, backend=biber]{biblatex}
+\addbibresource{References_Part_4.bib}
 \hypersetup{
     colorlinks,
     linkcolor={red!50!black},
@@ -45,20 +47,48 @@
 \end{abstract}
 \maketitle
 
-\section{Theory} \label{sec:theory}
-For theory, see section \textbf{Relevant Mathematics} \colorbox{red}{Jannik legger in kilde} 
-  
-
-
 \section{Introduction} \label{sec:introduction}
-As there is no up or down in space we will have to create our own way of navigating the cosmos. For this purpose we have made software capable of orientation in space. It will be able to calculate the angular orientation, find the velocity and get the position of the spacecraft. 
+As there is no up or down in space we will have to create our own way of navigating the cosmos.
+For this purpose, software capable of orientation in space needs to be created.
+Without it, we wouldn't be able to steer our spacecraft and reach our destination.
+To orient ourselves, three things will be required.\\
+To know where our spacecraft is located in the solar system, we need to know our position.
+The position can be found using a process called trilateration.\\
+Trilateration is the process by which one determines the position of a body using measured distances to known positions.~\parencite[][]{Relevant_theory}\\
+This means we can use measure distances from the spacecraft to object for which we know the position and calculate our own position from there.
+These measurements will be done by our onboard radar array.\\
+The software for the array includes an index of all known objects in our solar system and can therefore include the radius of the object in it's calculations.
+The measured distance will therefore always be from the spacecraft to the center of the object.\\
+As most objects in space - including the spacecraft itself - are moving, we need to specify the point in time when the measurements were taken.
+Otherwise, we could not know the exact location of the object we are measuring the distance to.\\
+Furthermore, we need to know in which direction we are moving.
+This consists of two parts.
+\colorbox{red}{We need to know which way the spacecraft is pointing.} \colorbox{red}{OSKAR}\\
+We also need to know the velocity of the spacecraft relative to the star in our solar system.
+To find the velocity relative to a star, we can use a phenomenon called Doppler shift.
+Electromagnetic radiation consist of waves which have an amplitude and a frequency.
+The amplitude determines the intensity of the light, whereas the frequency determines the energy of the wave, or in other words the colour.
+If two objects move at high velocities relative to each other and one receives light sent out by the other, the electromagnetic wave appears to be compressed if the objects are moving towards each other and stretched out if they are moving away from each other.
+Therefore, the frequency will appear to be higher or lower respectively.
+However, we cannot apply this directly to find our velocity as this only determines the radial velocity relative to the star and the spacecraft also has a tangential velocity to relative to the star.
+We will therefore use reference stars which are outside our solar system.
+The Doppler shift and therefore the velocity of the reference relative to the star in our solar system is known.
+We can then measure the Doppler shift of the reference stars from our spacecraft and determine the velocity of the stars relative to the spacecraft.
+These velocities can then be used to find the velocity of the spacecraft relative to the star in our solar system.
+Since we are only able to find the radial velocity to the reference star, we will need at least two stars to be able to determine our velocity in two dimensions.
+As stars mainly consist of hydrogen, most electromagnetic radiation sent out from stars will be from hydrogen atoms sending out radiation.
+This spike in the amount of radiation at a specific wavelength is called the $H_{\alpha}$ Spectral Line, which has a wavelength of 656.3 nanometers.
+
+
+\section{Theory} \label{sec:theory}
+For theory, see section Relevant Mathematics in the project description~\parencite[][]{Relevant_theory}
 
 
 \section{Method} \label{sec:method}
-A satellite is orbiting our home planet and has taken a $ 360 ^{o} × 360 ^{o} $ picture of the entire sky where all positions are described using spherical coordinates. As the stars and galaxies as very far away we are going to assume the pictures looks the same from the perspective of our shuttle. Using this picture we can create a stereographic projection as a means to convert from spherical coordinates to planar coordinates. Comparing the picture taken from a camera at on the shuttle we can find our orientation.   
+A satellite is orbiting our home planet and has taken a $ 360 ^{o} \times 360 ^{o} $ picture of the entire sky where all positions are described using spherical coordinates. As the stars and galaxies as very far away we are going to assume the pictures looks the same from the perspective of our shuttle. Using this picture we can create a stereographic projection as a means to convert from spherical coordinates to planar coordinates. Comparing the picture taken from a camera at on the shuttle we can find our orientation.
 \begin{figure}[h!]
   \centering
-  \includegraphics[scale = .2]{Figures/Stereographic_projection.png}
+  \includegraphics[scale = .2]{Figures/Stereographic_projection}
   \caption{Illustration of stereographic projection}
   \label{fig: Stereographic Projection}
 \end{figure}\\
@@ -117,11 +147,12 @@ The FOV of the camera on our shuttle has a maximum angular width $ α _{\theta} 
 
 
 
-
-
-
 \section{Appendix: Mathematical Derivations}
 
-\newpage 
+
+\newpage
+\newpage
+\printbibliography
+
 
 \end{document}
