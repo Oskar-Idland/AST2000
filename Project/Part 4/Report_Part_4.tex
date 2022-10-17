@@ -88,6 +88,9 @@ For theory, see section Relevant Mathematics in the project description%~\parenc
 TODO: % Ta bort kommentar
 
 \section{Method} \label{sec:method}
+\subsection{Generating Pictures} \label{subsec: generating pictures}
+
+
 A satellite is orbiting our home planet and has taken a $ 180 ^{o} \times 360 ^{o} $ picture of the entire sky where all positions are described using spherical coordinates. As the stars and galaxies as very far away we are going to assume the pictures looks the same from the perspective of our shuttle. Using this picture we can create a stereographic projection as a means to convert from spherical coordinates to planar coordinates. Comparing the picture taken from a camera at on the shuttle we can find our orientation.
 \begin{figure}[h!]
   \centering
@@ -103,6 +106,11 @@ To relate the spherical coordinates $ (\theta, \phi) $ to the planar coordinates
 \begin{equation}\label{Spherical to Y}
 	Y = κ (\sin θ _0 \cos  θ - \cos θ _0 \sin θ \cos (ϕ - ϕ _0))  
 \end{equation}
+
+\begin{equation}
+  \kappa = \frac{2}{1 + \cos \theta _{0}\cos \theta + \sin \theta _{0} \sin \theta \cos (\phi - \phi _{0})}
+\end{equation}
+
 
 Using equation \ref{Spherical to X} \& \ref{Spherical to Y} we can convert the data taken from the satellite containing values for $ \theta $ , $ \phi  $ and the color of the pixel in the RGB format, into a stereographic projection in the $ XY $ -plane. This gives us a complete reference picture!
 
@@ -133,11 +141,19 @@ This is the key to generating a grid of x and y values which we will base our po
 To help us check that our calculations are correct we have been given a sample picture we will recreate using equation \ref{Spherical to X} \& \ref{Spherical to Y}. The picture is centered around $ \phi = 0^{o} $ and $ \theta = 90^{o} $. The camera used has a FOV of $ α_{\theta} = α_{\phi} = 70^{o} $. To get the full range of the coordinates $ (X,Y) $ we simply find the height and width of the array containing the data. With this information we are able to recreate the same picture~\ref{fig: ref picture}
 
 
+\subsection{Image Analysis} \label{ssec: image analysis}
+We have assumed that $ \theta_{0} = \frac{\pi}{2} $ for the entire trip which means there is only one variable, the angle which the picture is centered around $ ϕ _{new} $. A simple solution can be implemented assuming the space shuttle only turns at integer angle values. First, we analyze the picture taken on the shuttle and convert it to spherical coordinates. For this purpose we will use the following equations to create a grid of $ \phi $ and $ \theta $ values stored in a matrix.
 
-\colorbox{red}{Explain how we are gonna generate the picture}
+\begin{subequations} \label{eq: planar to spherical coordinates}
+  \begin{equation}
+	\theta = \theta_0 - \arcsin \left[ \cos β \cos θ _{0} + \frac{Y}{\rho} \sin β \sin θ _{0}\right] 
+  \end{equation}
+  \begin{equation}
+	\phi = \phi _{0} + \arctan \left[ \frac{X \sin \beta}{\rho \sin \theta _{0} \cos \beta - Y \cos  \theta _{0} \sin  \beta} \right] 
+  \end{equation}
+\end{subequations}
 
-
-
+All there is left to do is to iterate over all angles $ \phi \in  \left\{ 0^{o}, 1^{o}, 2^{o} \dots 359 ^{o} \right\}  $ and compare the matrix of values with our own. Once we get a match we know our $ \phi _{0} $
 
 
 \subsection{Determining the velocity}\label{subsec:determining-the-velocity}
@@ -170,29 +186,29 @@ The new unit vectors of our coordinate system will be given by
 \end{align}
 Now, we are able to determine to calculate the velocity of the spacecraft, and the velocity of the star in our solar system relative to the two reference stars in our new coordinate system.\\
 To find the velocity of the spacecraft relative to the star in our solar system, we can simply subtract the velocity of the star in our system from the velocity of the spacecraft.
-\begin{align*}
-    v_u = v_{SC}-v_{Star}
-\end{align*}
+\[
+v_u = v_{SC}-v_{Star}
+\]
 However, our orientation system works in cartesian coordinates, so will have to change our coordinate system back to the initial coordinate system.
 To change back to the initial system, we invert the operations used in~\eqref{Coord_chg1} and use them on the velocity vector
 $v_u = \begin{pmatrix}
     v_{u1}\\ v_{u2}
 \end{pmatrix}$.
 
-\begin{align*}
+\[
     \begin{pmatrix}
         v_x\\
 		v_y
     \end{pmatrix}
 	 = \frac{1}{\sin\left(\phi_1 - \phi_2 \right)}
 	\begin{pmatrix}
-	    \sin\phi_2 & -\sin\phi_1\\
-		-\cos\phi_2 & \cos\phi_1
+	    \sin \phi_2 & -\sin \phi_1\\
+		-\cos \phi_2 & \cos \phi_1
 	\end{pmatrix}
 	\begin{pmatrix}
 		v_{u1}\\ v_{u2}
 	\end{pmatrix}
-\end{align*}
+\]
 
 
 \subsection{The position of the Spacecraft}\label{subsec:the-position-of-the-spacecraft}

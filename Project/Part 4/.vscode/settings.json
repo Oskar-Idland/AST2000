@@ -36,5 +36,5 @@
         "xutility": "cpp"
     },
     "editor.suggest.snippetsPreventQuickSuggestions": false,
-    "latex-utilities.liveReformat.enabled": true,
+    "latex-utilities.liveReformat.enabled": false,
 }
