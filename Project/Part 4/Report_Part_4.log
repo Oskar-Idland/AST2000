@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.8.28) (preloaded format=pdflatex 2022.9.1)  16 OCT 2022 16:08
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.8.28) (preloaded format=pdflatex 2022.9.1)  17 OCT 2022 15:47
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -489,17 +489,17 @@ Package rerunfilecheck Info: File `Report_Part_4.out' has not changed.
 (rerunfilecheck)             Checksum: C257CA6766B4A94E4EA698F324160906;1093.
  ) 
 Here is how much of TeX's memory you used:
- 16257 strings out of 477843
- 246281 string characters out of 2823600
- 763443 words of memory out of 3000000
- 34947 multiletter control sequences out of 15000+600000
+ 16265 strings out of 477843
+ 246431 string characters out of 2823600
+ 774443 words of memory out of 3000000
+ 34950 multiletter control sequences out of 15000+600000
  473024 words of font info for 45 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  72i,8n,77p,725b,530s stack positions out of 10000i,1000n,20000p,200000b,80000s
 <C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti9.pfb>
-Output written on Report_Part_4.pdf (1 page, 212289 bytes).
+Output written on Report_Part_4.pdf (1 page, 218208 bytes).
 PDF statistics:
- 106 PDF objects out of 1000 (max. 8388607)
- 13 named destinations out of 1000 (max. 500000)
+ 111 PDF objects out of 1000 (max. 8388607)
+ 18 named destinations out of 1000 (max. 500000)
  78 words of extra memory for PDF output out of 10000 (max. 10000000)
 

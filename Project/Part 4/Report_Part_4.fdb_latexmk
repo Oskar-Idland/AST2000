@@ -1,12 +1,12 @@
 # Fdb version 3
-["bibtex Report_Part_4"] 1665929231 "Report_Part_4.aux" "Report_Part_4.bbl" "Report_Part_4" 1665929312
+["bibtex Report_Part_4"] 1666014443 "Report_Part_4.aux" "Report_Part_4.bbl" "Report_Part_4" 1666014455
   "C:/Users/oskar/AppData/Local/Programs/MiKTeX/bibtex/bst/revtex/apsrev4-2.bst" 1601735216 69609 e9dea59f0e753ccda3ddc8f5806d846d ""
-  "Report_Part_4.aux" 1665929312 2426 bb0bf53a45b5647d47a0a6980beebbad "pdflatex"
-  "Report_Part_4Notes.bib" 1665929312 104 4d8bb863c86f3d7b03a471e9d4707f34 "pdflatex"
+  "Report_Part_4.aux" 1666014455 2617 04ae03f4d1ed5cca9dc9d870ca4d332e "pdflatex"
+  "Report_Part_4Notes.bib" 1666014455 104 4d8bb863c86f3d7b03a471e9d4707f34 "pdflatex"
   (generated)
   "Report_Part_4.bbl"
   "Report_Part_4.blg"
-["pdflatex"] 1665929310 "c:/Users/oskar/OneDrive/Dokumenter/GitHub/Privat/AST2000/Project/Part 4/Report_Part_4.tex" "Report_Part_4.pdf" "Report_Part_4" 1665929312
+["pdflatex"] 1666014453 "c:/Users/oskar/OneDrive/Dokumenter/GitHub/Privat/AST2000/Project/Part 4/Report_Part_4.tex" "Report_Part_4.pdf" "Report_Part_4" 1666014455
   "C:/Users/oskar/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1665926845 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/oskar/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1662031172 10374549 ab9957c64f9e665f244136ccccd1caef ""
   "C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1233955448 1004 54797486969f23fa377b128694d548df ""
@@ -116,11 +116,11 @@
   "C:/Users/oskar/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388494052 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "C:/Users/oskar/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1656236890 56148 51a9a8571c07b9921892ae11063ae853 ""
   "Figures/Stereographic_projection.png" 1665660689 101918 fa46439af0cd1572713c27c5fc6a4e75 ""
-  "Report_Part_4.aux" 1665929312 2426 bb0bf53a45b5647d47a0a6980beebbad "pdflatex"
-  "Report_Part_4.bbl" 1665929231 2035 35453d3875d823f0ec9445e740a573d9 "bibtex Report_Part_4"
-  "Report_Part_4.out" 1665929312 1093 c257ca6766b4a94e4ea698f324160906 "pdflatex"
-  "Report_Part_4.tex" 1665929309 3006 9a169a94008bbbbb50f232d2c9ddcbd8 ""
-  "c:/Users/oskar/OneDrive/Dokumenter/GitHub/Privat/AST2000/Project/Part 4/Report_Part_4.tex" 1665929309 3006 9a169a94008bbbbb50f232d2c9ddcbd8 ""
+  "Report_Part_4.aux" 1666014455 2617 04ae03f4d1ed5cca9dc9d870ca4d332e "pdflatex"
+  "Report_Part_4.bbl" 1666014443 2035 35453d3875d823f0ec9445e740a573d9 "bibtex Report_Part_4"
+  "Report_Part_4.out" 1666014455 1093 c257ca6766b4a94e4ea698f324160906 "pdflatex"
+  "Report_Part_4.tex" 1666014452 4239 7b3eaf08c9c1a0c576e3f5d1b4e5adf3 ""
+  "c:/Users/oskar/OneDrive/Dokumenter/GitHub/Privat/AST2000/Project/Part 4/Report_Part_4.tex" 1666014452 4239 7b3eaf08c9c1a0c576e3f5d1b4e5adf3 ""
   (generated)
   "Report_Part_4.aux"
   "Report_Part_4.log"

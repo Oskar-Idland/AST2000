@@ -61,7 +61,7 @@ A satellite is orbiting our home planet and has taken a $ 360 ^{o} × 360 ^{o} $
   \includegraphics[scale = .2]{Figures/Stereographic_projection.png}
   \caption{Illustration of stereographic projection}
   \label{fig: Stereographic Projection}
-\end{figure}
+\end{figure}\\
 To relate the spherical coordinates $ \theta, \phi $ to the planar coordinates $ X, Y $ we use the following equations \colorbox{red}{Husk å ta med utledning} :
 \begin{equation} \label{Spherical to X}
 	X = κ  \sin θ \sin (ϕ - ϕ _0)
@@ -69,6 +69,37 @@ To relate the spherical coordinates $ \theta, \phi $ to the planar coordinates $
 \begin{equation}\label{Spherical to Y}
 	Y = κ (\sin θ _0 \cos  θ - \cos θ _0 \sin θ \cos (ϕ - ϕ _0))  
 \end{equation}
+
+When the camera onboard takes a pictures it will be limited by its field of view (FOV). The FOV will be described as the maximum angular width $ \alpha $ of the photo. We use the following equations to define it. 
+\begin{equation} \label{eq: max angular width}
+	α _{\theta} = θ _{max} - \theta _{min}, \quad α _{\phi} = ϕ _{max} - ϕ _{min}
+\end{equation}
+
+This creates ranges of coordinates for $ θ  $ and $ ϕ $:
+\begin{equation}\label{eq: limitations phi and theta}
+  - \frac{\alpha _{\theta}}{2} \le θ - θ _{0} \le \frac{\alpha _{\theta }}{2}, \quad - \frac{\alpha _{\theta}}{2} \le ϕ  - ϕ _{0} \le \frac{\alpha _{\theta }}{2}
+\end{equation}
+
+This, in turn, also creates limitations on the coordinates $ (X,Y) $ of the stereographic projection: 
+\begin{subequations} \label{eq: limitations X and Y lim}
+	\begin{equation}
+		X _{max / min} = ± \frac{2 \sin (α _{\phi} / 2)}{1 + \cos (\alpha _{\phi})}
+	  \end{equation}
+	  
+	  
+	\begin{equation}
+		Y _{max / min} ± \frac{2 \sin (\alpha _{\theta}  / 2)}{1 + \cos (α _{\theta}/2)}
+	\end{equation}
+	
+\end{subequations}
+
+
+
+
+\colorbox{red}{Explain how we made the pixel grid}
+
+\colorbox{red}{Explain how we are gonna generate the picture}
+
 
 
 
