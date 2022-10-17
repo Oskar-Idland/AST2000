@@ -10,8 +10,9 @@
 \usepackage{hyperref}
 \usepackage{listings}
 \usepackage{subfigure}
-\usepackage[style=science, backend=biber]{biblatex}
-\addbibresource{References_Part_4.bib}
+%\usepackage[style=science, backend=biber]{biblatex}
+%\addbibresource{References_Part_4.bib}
+%TODO: % Ta bort kommentar
 \hypersetup{
     colorlinks,
     linkcolor={red!50!black},
@@ -54,7 +55,8 @@ Without it, we wouldn't be able to steer our spacecraft and reach our destinatio
 To orient ourselves, three things will be required.\\
 To know where our spacecraft is located in the solar system, we need to know our position.
 The position can be found using a process called trilateration.\\
-Trilateration is the process by which one determines the position of a body using measured distances to known positions.~\parencite[][]{Relevant_theory}\\
+Trilateration is the process by which one determines the position of a body using measured distances to known positions.%~\parencite[][]{Relevant_theory}\\ 
+TODO: % Ta bort kommentar 
 This means we can use measure distances from the spacecraft to object for which we know the position and calculate our own position from there.
 These measurements will be done by our onboard radar array.\\
 The software for the array includes an index of all known objects in our solar system and can therefore include the radius of the object in it's calculations.
@@ -62,8 +64,7 @@ The measured distance will therefore always be from the spacecraft to the center
 As most objects in space - including the spacecraft itself - are moving, we need to specify the point in time when the measurements were taken.
 Otherwise, we could not know the exact location of the object we are measuring the distance to.\\
 Furthermore, we need to know in which direction we are moving.
-This consists of two parts.
-\colorbox{red}{We need to know which way the spacecraft is pointing.} \colorbox{red}{OSKAR}\\
+This consists of two parts. First, we create a reference picture of the universe in all directions with the earth in the center. Second, we take a picture on our shuttle and compare that picture with the reference picture to calculate which direction we are looking.\\
 We also need to know the velocity of the spacecraft relative to the star in our solar system.
 To find the velocity relative to a star, we can use a phenomenon called Doppler shift.
 Electromagnetic radiation consist of waves which have an amplitude and a frequency.
@@ -81,17 +82,18 @@ This spike in the amount of radiation at a specific wavelength is called the $H_
 
 
 \section{Theory} \label{sec:theory}
-For theory, see section Relevant Mathematics in the project description~\parencite[][]{Relevant_theory}
-
+For theory, see section Relevant Mathematics in the project description%~\parencite[][]{Relevant_theory}
+TODO: % Ta bort kommentar
 
 \section{Method} \label{sec:method}
-A satellite is orbiting our home planet and has taken a $ 360 ^{o} \times 360 ^{o} $ picture of the entire sky where all positions are described using spherical coordinates. As the stars and galaxies as very far away we are going to assume the pictures looks the same from the perspective of our shuttle. Using this picture we can create a stereographic projection as a means to convert from spherical coordinates to planar coordinates. Comparing the picture taken from a camera at on the shuttle we can find our orientation.
+A satellite is orbiting our home planet and has taken a $ 180 ^{o} \times 360 ^{o} $ picture of the entire sky where all positions are described using spherical coordinates. As the stars and galaxies as very far away we are going to assume the pictures looks the same from the perspective of our shuttle. Using this picture we can create a stereographic projection as a means to convert from spherical coordinates to planar coordinates. Comparing the picture taken from a camera at on the shuttle we can find our orientation.
 \begin{figure}[h!]
   \centering
   \includegraphics[scale = .2]{Figures/Stereographic_projection}
   \caption{Illustration of stereographic projection}
   \label{fig: Stereographic Projection}
 \end{figure}\\
+
 To relate the spherical coordinates $ (\theta, \phi) $ to the planar coordinates $ (X, Y) $ we use the following equations \colorbox{red}{Husk å ta med utledning}:
 \begin{equation} \label{Spherical to X}
 	X = κ  \sin θ \sin (ϕ - ϕ _0)
@@ -99,6 +101,8 @@ To relate the spherical coordinates $ (\theta, \phi) $ to the planar coordinates
 \begin{equation}\label{Spherical to Y}
 	Y = κ (\sin θ _0 \cos  θ - \cos θ _0 \sin θ \cos (ϕ - ϕ _0))  
 \end{equation}
+
+Using equation \ref{Spherical to X} \& \ref{Spherical to Y} we can convert the data taken from the satellite containing values for $ \theta $ , $ \phi  $ and the color of the pixel in the RGB format, into a stereographic projection in the $ XY $ -plane. This gives us a complete reference picture!
 
 When the camera onboard takes a pictures it will be limited by its field of view (FOV). The FOV will be described as the maximum angular width $ \alpha $ of the photo. We use the following equations to define it. 
 \begin{equation} \label{eq: max angular width}
@@ -122,13 +126,11 @@ This, in turn, also creates limitations on the coordinates $ (X,Y) $ of the ster
 	\end{equation}
 	
 \end{subequations}
+This is the key to generating a grid of x and y values which we will base our position from later. 
 
-The FOV of the camera on our shuttle has a maximum angular width $ α _{\theta} = α _{\phi } = 70 ^{o} $
+To help us check that our calculations are correct we have been given a sample picture we will recreate using equation \ref{Spherical to X} \& \ref{Spherical to Y}. The picture is centered around $ \phi = 0^{o} $ and $ \theta = 90^{o} $. The camera used has a FOV of $ α_{\theta} = α_{\phi} = 70^{o} $. To get the full range of the coordinates $ (X,Y) $ we simply find the height and width of the array containing the data. With this information we are able to recreate the same picture~\ref{fig: ref picture}
 
 
-
-
-\colorbox{red}{Explain how we made the pixel grid}
 
 \colorbox{red}{Explain how we are gonna generate the picture}
 
@@ -137,7 +139,13 @@ The FOV of the camera on our shuttle has a maximum angular width $ α _{\theta} 
 
 \section{Results} \label{sec:results}
 
-
+\begin{figure}[h!]
+	\centering
+	\includegraphics[scale = .2]{Figures/sample0000.png}
+	\caption{Recreated reference picture}
+	\label{fig: ref picture}
+  \end{figure}
+  
 
 \section{Discussion} \label{sec:discussion}
 
@@ -152,7 +160,7 @@ The FOV of the camera on our shuttle has a maximum angular width $ α _{\theta} 
 
 \newpage
 \newpage
-\printbibliography
-
+%\printbibliography 
+TODO: % Ta bort kommentar
 
 \end{document}
