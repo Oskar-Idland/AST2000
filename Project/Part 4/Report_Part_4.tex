@@ -71,15 +71,17 @@ Electromagnetic radiation consist of waves which have an amplitude and a frequen
 The amplitude determines the intensity of the light, whereas the frequency determines the energy of the wave, or in other words the colour.
 If two objects move at high velocities relative to each other and one receives light sent out by the other, the electromagnetic wave appears to be compressed if the objects are moving towards each other and stretched out if they are moving away from each other.
 Therefore, the frequency will appear to be higher or lower respectively.
-However, we cannot apply this directly to find our velocity as this only determines the radial velocity relative to the star and the spacecraft also has a tangential velocity to relative to the star.
-We will therefore use reference stars which are outside our solar system.
+Additionally, relativistic effects distort the wave further due to the relatively high speeds.\\
+However, we cannot apply this directly to find our velocity relative to the star in our solar system as this only determines the radial velocity relative to the star and the spacecraft also has a tangential velocity to relative to the star.
+We will therefore use reference stars which are outside our solar system.\\
 The Doppler shift and therefore the velocity of the reference relative to the star in our solar system is known.
 We can then measure the Doppler shift of the reference stars from our spacecraft and determine the velocity of the stars relative to the spacecraft.
+Here, we assume the lines from the spacecraft to the reference stars and the lines from the star in our solar system to the reference stars to be parallel due to the reference stars being very far away.\\
 These velocities can then be used to find the velocity of the spacecraft relative to the star in our solar system.
-Since we are only able to find the radial velocity to the reference star, we will need at least two stars to be able to determine our velocity in two dimensions.
+Since we are only able to find the radial velocity to the reference star, we will need at least two stars to be able to determine our velocity in two dimensions.\\
 As stars mainly consist of hydrogen, most electromagnetic radiation sent out from stars will be from hydrogen atoms sending out radiation.
-This spike in the amount of radiation at a specific wavelength is called the $H_{\alpha}$ Spectral Line, which has a wavelength of 656.3 nanometers.
-
+This spike in the amount of radiation at a specific wavelength is called the $H_{\alpha}$ Spectral Line, which has a wavelength of 656.3 nanometers.\\
+To be able to do all calculations, a cartesian coordinate system will be used with the star in our solar system being in the origin and the x-axis pointing at the position of planet 0 at $T = 0$.
 
 \section{Theory} \label{sec:theory}
 For theory, see section Relevant Mathematics in the project description%~\parencite[][]{Relevant_theory}
@@ -109,7 +111,7 @@ When the camera onboard takes a pictures it will be limited by its field of view
 	α _{\theta} = θ _{max} - \theta _{min}, \quad α _{\phi} = ϕ _{max} - ϕ _{min}
 \end{equation}
 
-This creates ranges of coordinates for $ θ  $ and $ ϕ $:
+This creates ranges of coordinates for $\theta$ and $\phi$:
 \begin{equation}\label{eq: limitations phi and theta}
   - \frac{\alpha _{\theta}}{2} \le θ - θ _{0} \le \frac{\alpha _{\theta }}{2}, \quad - \frac{\alpha _{\theta}}{2} \le ϕ  - ϕ _{0} \le \frac{\alpha _{\theta }}{2}
 \end{equation}
@@ -133,6 +135,67 @@ To help us check that our calculations are correct we have been given a sample p
 
 
 \colorbox{red}{Explain how we are gonna generate the picture}
+
+
+
+
+
+\subsection{Determining the velocity}\label{subsec:determining-the-velocity}
+As explained in section~\ref{sec:introduction}, the velocity relative to the star will be determining using an effect called the Doppler shift.
+When tasked to do so, the onboard equipment of the spacecraft can now determine the Doppler shift $\Delta \lambda$ of the $H_{\alpha}$ Spectral line.\\
+It must be noted that all these measurements will be done at the time $T_M$.\\
+The angles from the x-axis at which the reference stars $Star_{R1}$ and $Star_{R2}$ lie are known as $\phi_1 = \colorbox{red}{XXXXXX}$ and $\phi_2 = \colorbox{red}{XXXXXX}$.
+These have been obtained beforehand by our astronomers.
+Now the velocities $v_{phi1}$ and $v_{phi2}$ in the direction of these angles can be determined by measuring the Doppler shift $\Delta \lambda$ and using the relationship between the Doppler shift and the velocity~\eqref{Dopplershift}
+\begin{align}
+    \Delta \lambda &= \gamma \left(1 + \frac{v_{rad}}{c}\right) - 1 \label{Dopplershift1}\\
+	\Delta \lambda &= \sqrt{\frac{1+\frac{v_{rad}}{c}}{1-\frac{v_{rad}}{c}}} \label{Dopplershift2}
+\end{align}
+With $\gamma$ being the Lorentz factor, $c$ being the speed of light and $v_{rad}$ being the velocity of the two objects relative to each other.
+When rearranging formula~\eqref{Dopplershift2} we obtain a formula for the velocity given a value for the Doppler shift~\eqref{Dopplershift3}.
+\begin{align}
+    v_{rad} = \frac{-2c}{\left(1+\Delta\lambda \right)^2 +1} + c \label{Dopplershift3}
+\end{align}
+Given the velocity in the direction of the two stars, we will need to change our coordinate system to calculate the velocity of the spacecraft.
+The new unit vectors of our coordinate system will be given by
+\begin{align}\label{Coord_chg1}
+\begin{pmatrix}
+    \hat{u}_1 \\
+	\hat{u}_2
+\end{pmatrix} =
+\begin{pmatrix}
+    \cos \phi_1 & \sin \phi_1\\
+	\cos \phi_2 & \sin \phi_2
+\end{pmatrix}
+\end{align}
+Now, we are able to determine to calculate the velocity of the spacecraft, and the velocity of the star in our solar system relative to the two reference stars in our new coordinate system.\\
+To find the velocity of the spacecraft relative to the star in our solar system, we can simply subtract the velocity of the star in our system from the velocity of the spacecraft.
+\begin{align*}
+    v_u = v_{SC}-v_{Star}
+\end{align*}
+However, our orientation system works in cartesian coordinates, so will have to change our coordinate system back to the initial coordinate system.
+To change back to the initial system, we invert the operations used in~\eqref{Coord_chg1} and use them on the velocity vector
+$v_u = \begin{pmatrix}
+    v_{u1}\\ v_{u2}
+\end{pmatrix}$.
+
+\begin{align*}
+    \begin{pmatrix}
+        v_x\\
+		v_y
+    \end{pmatrix}
+	 = \frac{1}{\sin\left(\phi_1 - \phi_2 \right)}
+	\begin{pmatrix}
+	    \sin\phi_2 & -\sin\phi_1\\
+		-\cos\phi_2 & \cos\phi_1
+	\end{pmatrix}
+	\begin{pmatrix}
+		v_{u1}\\ v_{u2}
+	\end{pmatrix}
+\end{align*}
+
+
+\subsection{The position of the Spacecraft}\label{subsec:the-position-of-the-spacecraft}
 
 
 
