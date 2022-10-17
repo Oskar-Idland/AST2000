@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2022.2.21)  17 OCT 2022 16:33
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2022.2.21)  17 OCT 2022 20:00
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -801,16 +801,36 @@ Package biblatex Info: ... file 'biblatex.cfg' found.
 (/usr/local/texlive/2021/texmf-dist/tex/latex/biblatex/biblatex.cfg
 File: biblatex.cfg 
 ))
-Package hyperref Info: Option `colorlinks' set `true' on input line 19.
+(/usr/local/texlive/2021/texmf-dist/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
+\heavyrulewidth=\dimen160
+\lightrulewidth=\dimen161
+\cmidrulewidth=\dimen162
+\belowrulesep=\dimen163
+\belowbottomsep=\dimen164
+\aboverulesep=\dimen165
+\abovetopsep=\dimen166
+\cmidrulesep=\dimen167
+\cmidrulekern=\dimen168
+\defaultaddspace=\dimen169
+\@cmidla=\count429
+\@cmidlb=\count430
+\@aboverulesep=\dimen170
+\@belowrulesep=\dimen171
+\@thisruleclass=\count431
+\@lastruleclass=\count432
+\@thisrulewidth=\dimen172
+)
+Package hyperref Info: Option `colorlinks' set `true' on input line 20.
 
 (/usr/local/texlive/2021/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2020/03/24 1.8d listings language file
 )
 Class revtex4-2 Info: Unrecognized LaTeX tabular. Please update this document c
-lass! (Proceeding with fingers crossed.) on input line 36.
-Class revtex4-2 Info: cite was not loaded (OK!) on input line 36.
-Class revtex4-2 Info: mcite was not loaded (OK!) on input line 36.
-Class revtex4-2 Info: multicol was not loaded (OK!) on input line 36.
+lass! (Proceeding with fingers crossed.) on input line 37.
+Class revtex4-2 Info: cite was not loaded (OK!) on input line 37.
+Class revtex4-2 Info: mcite was not loaded (OK!) on input line 37.
+Class revtex4-2 Info: multicol was not loaded (OK!) on input line 37.
 
 
 Package biblatex Warning: Patching footnotes failed.
@@ -820,65 +840,57 @@ Package biblatex Warning: Patching footnotes failed.
 Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
 (biblatex)                Loading 'csquotes' recommended.
 
-\@quotelevel=\count429
-\@quotereset=\count430
+\@quotelevel=\count433
+\@quotereset=\count434
 
 (/Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 4/Report_Part_4.aux
 )
 \openout1 = `Report_Part_4.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
  (/usr/local/texlive/2021/texmf-dist/tex/latex/ucs/ucsencs.def
 File: ucsencs.def 2011/01/21 Fixes to fontencodings LGR, T3
 )
 (/usr/local/texlive/2021/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count431
-\scratchdimen=\dimen160
+\scratchcounter=\count435
+\scratchdimen=\dimen173
 \scratchbox=\box67
-\nofMPsegments=\count432
-\nofMParguments=\count433
+\nofMPsegments=\count436
+\nofMParguments=\count437
 \everyMPshowfont=\toks29
-\MPscratchCnt=\count434
-\MPscratchDim=\dimen161
-\MPnumerator=\count435
-\makeMPintoPDFobject=\count436
+\MPscratchCnt=\count438
+\MPscratchDim=\dimen174
+\MPnumerator=\count439
+\makeMPintoPDFobject=\count440
 \everyMPtoPDFconversion=\toks30
 ) (/usr/local/texlive/2021/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
-
-(/usr/local/texlive/2021/texmf-dist/tex/latex/grfext/grfext.sty
-Package: grfext 2019/12/03 v1.3 Manage graphics extensions (HO)
-)
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 85.
-Package grfext Info: Graphics extension search list:
-(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
-G,.JBIG2,.JB2,.eps]
-(grfext)             \AppendGraphicsExtensions on input line 504.
 
 (/usr/local/texlive/2021/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-Package hyperref Info: Link coloring ON on input line 36.
+Package hyperref Info: Link coloring ON on input line 37.
 
 (/usr/local/texlive/2021/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
@@ -890,11 +902,11 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 ty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count437
+\c@section@level=\count441
 )
-LaTeX Info: Redefining \ref on input line 36.
-LaTeX Info: Redefining \pageref on input line 36.
-LaTeX Info: Redefining \nameref on input line 36.
+LaTeX Info: Redefining \ref on input line 37.
+LaTeX Info: Redefining \pageref on input line 37.
+LaTeX Info: Redefining \nameref on input line 37.
 
 (/Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 4/Report_Part_4.out
 )
@@ -903,7 +915,7 @@ LaTeX Info: Redefining \nameref on input line 36.
 \@outlinefile=\write5
 \openout5 = `Report_Part_4.out'.
 
-\c@lstlisting=\count438
+\c@lstlisting=\count442
 Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
  (/usr/local/texlive/2021/texmf-dist/tex/latex/biblatex/lbx/english.lbx
@@ -928,65 +940,73 @@ Package biblatex Info: ... file 'Report_Part_4.bbl' found.
 
 (/Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 4/Report_Part_4.bbl
 )
-Package biblatex Info: Reference section=0 on input line 36.
-Package biblatex Info: Reference segment=0 on input line 36.
-Class revtex4-2 Info: Taking \maketitle back from hyperref on input line 36.
+Package biblatex Info: Reference section=0 on input line 37.
+Package biblatex Info: Reference segment=0 on input line 37.
+Class revtex4-2 Info: Taking \maketitle back from hyperref on input line 37.
 \openout3 = `Report_Part_4Notes.bib'.
 
 LaTeX Font Info:    Trying to load font information for U+esint on input line 8
-0.
+3.
  (/usr/local/texlive/2021/texmf-dist/tex/latex/esint/uesint.fd
 File: uesint.fd 
 )
-LaTeX Font Info:    Trying to load font information for U+msa on input line 80.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 83.
 
 
 (/usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 80.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 83.
 
 
 (/usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Underfull \hbox (badness 4846) in paragraph at lines 51--81
+Underfull \hbox (badness 4846) in paragraph at lines 52--85
 \OT1/cmr/m/n/10 Furthermore, we need to know in which di-rec-
  []
 
 
-Underfull \hbox (badness 1389) in paragraph at lines 51--81
+Underfull \hbox (badness 1389) in paragraph at lines 52--85
 \OT1/cmr/m/n/10 tion we are mov-ing. This con-sists of two parts.
  []
 
 
-Overfull \hbox (0.9726pt too wide) in paragraph at lines 51--81
+Overfull \hbox (0.9726pt too wide) in paragraph at lines 52--85
 [][][][][][]
  []
 
-<Figures/Stereographic_projection.png, id=46, 1123.7985pt x 460.72125pt>
+
+Underfull \hbox (badness 1107) in paragraph at lines 52--85
+\OT1/cmr/m/n/10 As stars mainly con-sist of hy-dro-gen, most elec-tro-
+ []
+
+<Figures/Stereographic_projection.png, id=54, 1123.7985pt x 460.72125pt>
 File: Figures/Stereographic_projection.png Graphic file (type png)
 <use Figures/Stereographic_projection.png>
 Package pdftex.def Info: Figures/Stereographic_projection.png  used on input li
-ne 91.
+ne 95.
 (pdftex.def)             Requested size: 224.75572pt x 92.14261pt.
 (/usr/local/texlive/2021/texmf-dist/tex/latex/ucs/data/uni-0.def
 File: uni-0.def 2013/05/13 UCS: Unicode data U+0000..U+00FF
-)
+) [1{/usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 (/usr/local/texlive/2021/texmf-dist/tex/latex/ucs/data/uni-3.def
 File: uni-3.def 2013/05/13 UCS: Unicode data U+0300..U+03FF
-) [1{/usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map} </Us
-ers/jannikeschler/Documents/GitHub/AST2000/Project/Part 4/Figures/Stereographic
-_projection.png>]
+)
+
+LaTeX Warning: Reference `Dopplershift' on page 2 undefined on input line 149.
+
+[2 </Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 4/Figures/Stereo
+graphic_projection.png>]
 
 /Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 4/Report_Part_4.tex:
-125: LaTeX Error: Can be used only in preamble.
+223: LaTeX Error: Can be used only in preamble.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.125 \end{document}
+l.223 \end{document}
                     
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -995,59 +1015,58 @@ or  <return>  to continue without it.
 Package logreq Info: Writing requests to 'Report_Part_4.run.xml'.
 \openout1 = `Report_Part_4.run.xml'.
 
-[2
-\newlabel{Spherical to X}{{1}{2}{}{equation.3.1}{}}
-\newlabel{Spherical to Y}{{2}{2}{}{equation.3.2}{}}
+[3
 \@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsl
-ine {section}{\numberline {IV}Results}{2}{section*.6}\protected@file@percent }
-\newlabel{sec:results}{{IV}{2}{}{section*.6}{}}
-\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsl
-ine {section}{\numberline {V}Discussion}{2}{section*.7}\protected@file@percent 
-}
-\newlabel{sec:discussion}{{V}{2}{}{section*.7}{}}
-\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsl
-ine {section}{\numberline {VI}Conclusion}{2}{section*.8}\protected@file@percent
- }
-\newlabel{sec:conclusion}{{VI}{2}{}{section*.8}{}}
-\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsl
-ine {section}{\numberline {VII}Appendix: Mathematical Derivations}{2}{section*.
-9}\protected@file@percent }
-\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsl
-ine {section}{\numberline {}References}{2}{section*.10}\protected@file@percent 
+ine {section}{\numberline {}References}{3}{section*.13}\protected@file@percent 
 }
 ]
-\newlabel{LastPage}{{}{2}{}{}{}}
-\gdef \@abspage@last{2}
+\newlabel{LastPage}{{}{3}{}{}{}}
+\gdef \@abspage@last{3}
 
 (/Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 4/Report_Part_4.aux
 )
-Package rerunfilecheck Info: File `Report_Part_4.out' has not changed.
-(rerunfilecheck)             Checksum: 1CB5F4AFAD2470CEE789060D76FBA4DC;1199.
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+
+Package rerunfilecheck Warning: File `Report_Part_4.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `Report_Part_4.out':
+(rerunfilecheck)             Before: 588877E0E3912CA16522E0AEC5598F15;1533
+(rerunfilecheck)             After:  4071E3550ECE64E5697152B767ED5B12;1751.
  ) 
 Here is how much of TeX's memory you used:
- 22691 strings out of 478994
- 359510 string characters out of 5858184
- 1125952 words of memory out of 5000000
- 39872 multiletter control sequences out of 15000+600000
- 410337 words of font info for 58 fonts, out of 8000000 for 9000
+ 22752 strings out of 478994
+ 360225 string characters out of 5858184
+ 1140407 words of memory out of 5000000
+ 39919 multiletter control sequences out of 15000+600000
+ 410645 words of font info for 59 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 81i,8n,89p,746b,1308s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
-></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb><
-/usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></
-usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></us
-r/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/
-local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/loc
-al/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/
-texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/t
-exlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/te
-xlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texl
-ive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
+ 81i,15n,89p,746b,1308s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
+></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
+</usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></
+usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></u
+sr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></us
+r/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/
+local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/lo
+cal/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/loca
+l/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/t
+exlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texl
+ive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texli
+ve/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texliv
+e/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/
+2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
 Output written on "/Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 4
-/Report_Part_4.pdf" (2 pages, 211641 bytes).
+/Report_Part_4.pdf" (3 pages, 255380 bytes).
 PDF statistics:
- 116 PDF objects out of 1000 (max. 8388607)
- 98 compressed objects within 1 object stream
- 16 named destinations out of 1000 (max. 500000)
- 86 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 157 PDF objects out of 1000 (max. 8388607)
+ 134 compressed objects within 2 object streams
+ 29 named destinations out of 1000 (max. 500000)
+ 102 words of extra memory for PDF output out of 10000 (max. 10000000)
 
