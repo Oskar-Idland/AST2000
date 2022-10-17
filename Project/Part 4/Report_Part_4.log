@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2022.2.21)  17 OCT 2022 20:00
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2022.2.21)  17 OCT 2022 21:11
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -981,7 +981,7 @@ Underfull \hbox (badness 1107) in paragraph at lines 52--85
 \OT1/cmr/m/n/10 As stars mainly con-sist of hy-dro-gen, most elec-tro-
  []
 
-<Figures/Stereographic_projection.png, id=54, 1123.7985pt x 460.72125pt>
+<Figures/Stereographic_projection.png, id=58, 1123.7985pt x 460.72125pt>
 File: Figures/Stereographic_projection.png Graphic file (type png)
 <use Figures/Stereographic_projection.png>
 Package pdftex.def Info: Figures/Stereographic_projection.png  used on input li
@@ -992,21 +992,17 @@ File: uni-0.def 2013/05/13 UCS: Unicode data U+0000..U+00FF
 ) [1{/usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 (/usr/local/texlive/2021/texmf-dist/tex/latex/ucs/data/uni-3.def
 File: uni-3.def 2013/05/13 UCS: Unicode data U+0300..U+03FF
-)
-
-LaTeX Warning: Reference `Dopplershift' on page 2 undefined on input line 149.
-
-[2 </Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 4/Figures/Stereo
-graphic_projection.png>]
+) [2 </Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 4/Figures/Ster
+eographic_projection.png>]
 
 /Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 4/Report_Part_4.tex:
-223: LaTeX Error: Can be used only in preamble.
+238: LaTeX Error: Can be used only in preamble.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.223 \end{document}
+l.238 \end{document}
                     
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1017,6 +1013,20 @@ Package logreq Info: Writing requests to 'Report_Part_4.run.xml'.
 
 [3
 \@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsl
+ine {section}{\numberline {IV}Results}{3}{section*.9}\protected@file@percent }
+\newlabel{sec:results}{{IV}{3}{}{section*.9}{}}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsl
+ine {section}{\numberline {V}Discussion}{3}{section*.10}\protected@file@percent
+ }
+\newlabel{sec:discussion}{{V}{3}{}{section*.10}{}}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsl
+ine {section}{\numberline {VI}Conclusion}{3}{section*.11}\protected@file@percen
+t }
+\newlabel{sec:conclusion}{{VI}{3}{}{section*.11}{}}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsl
+ine {section}{\numberline {VII}Appendix: Mathematical Derivations}{3}{section*.
+12}\protected@file@percent }
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsl
 ine {section}{\numberline {}References}{3}{section*.13}\protected@file@percent 
 }
 ]
@@ -1025,48 +1035,35 @@ ine {section}{\numberline {}References}{3}{section*.13}\protected@file@percent
 
 (/Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 4/Report_Part_4.aux
 )
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-
-Package rerunfilecheck Warning: File `Report_Part_4.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `Report_Part_4.out':
-(rerunfilecheck)             Before: 588877E0E3912CA16522E0AEC5598F15;1533
-(rerunfilecheck)             After:  4071E3550ECE64E5697152B767ED5B12;1751.
+Package rerunfilecheck Info: File `Report_Part_4.out' has not changed.
+(rerunfilecheck)             Checksum: 4071E3550ECE64E5697152B767ED5B12;1751.
  ) 
 Here is how much of TeX's memory you used:
- 22752 strings out of 478994
- 360225 string characters out of 5858184
- 1140407 words of memory out of 5000000
- 39919 multiletter control sequences out of 15000+600000
- 410645 words of font info for 59 fonts, out of 8000000 for 9000
+ 22747 strings out of 478994
+ 360158 string characters out of 5858184
+ 1141360 words of memory out of 5000000
+ 39915 multiletter control sequences out of 15000+600000
+ 410337 words of font info for 58 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  81i,15n,89p,746b,1308s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
-></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
-</usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></
-usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></u
-sr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></us
-r/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/
-local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/lo
-cal/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/loca
-l/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/t
-exlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texl
-ive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texli
-ve/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texliv
-e/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/
-2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
+</usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
+></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb><
+/usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></
+usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></u
+sr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr
+/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/l
+ocal/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/loc
+al/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/
+texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/tex
+live/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texl
+ive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texli
+ve/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive
+/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
 Output written on "/Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 4
-/Report_Part_4.pdf" (3 pages, 255380 bytes).
+/Report_Part_4.pdf" (3 pages, 248758 bytes).
 PDF statistics:
  157 PDF objects out of 1000 (max. 8388607)
- 134 compressed objects within 2 object streams
+ 135 compressed objects within 2 object streams
  29 named destinations out of 1000 (max. 500000)
- 102 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 110 words of extra memory for PDF output out of 10000 (max. 10000000)
 

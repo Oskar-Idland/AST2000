@@ -146,7 +146,7 @@ When tasked to do so, the onboard equipment of the spacecraft can now determine 
 It must be noted that all these measurements will be done at the time $T_M$.\\
 The angles from the x-axis at which the reference stars $Star_{R1}$ and $Star_{R2}$ lie are known as $\phi_1 = \colorbox{red}{XXXXXX}$ and $\phi_2 = \colorbox{red}{XXXXXX}$.
 These have been obtained beforehand by our astronomers.
-Now the velocities $v_{phi1}$ and $v_{phi2}$ in the direction of these angles can be determined by measuring the Doppler shift $\Delta \lambda$ and using the relationship between the Doppler shift and the velocity~\eqref{Dopplershift}
+Now the velocities $v_{phi1}$ and $v_{phi2}$ in the direction of these angles can be determined by measuring the Doppler shift $\Delta \lambda$ and using the relationship between the Doppler shift and the velocity~\eqref{Dopplershift1}
 \begin{align}
     \Delta \lambda &= \gamma \left(1 + \frac{v_{rad}}{c}\right) - 1 \label{Dopplershift1}\\
 	\Delta \lambda &= \sqrt{\frac{1+\frac{v_{rad}}{c}}{1-\frac{v_{rad}}{c}}} \label{Dopplershift2}
@@ -196,7 +196,22 @@ $v_u = \begin{pmatrix}
 
 
 \subsection{The position of the Spacecraft}\label{subsec:the-position-of-the-spacecraft}
-
+The position of the spacecraft will be determined using the trilateration process.
+This process is much used for locating purposes, which includes the global positioning system (GPS).\\
+Using the onboard radar array we will be able to determine distances to the star in our solar system and other planets at a specific point in time $T_m$.
+The position of the other objects has already been found as a function of time and can therefore be determined for the time $T_m$.\\
+The radar will be used to find the distance to two planets as well as the distance to the star in our solar system.
+The distance to the star in our solar system $r_S$ and the distance to the two planets $r_{P1}$ and $r_{P2}$ can be described using Pythagoras theorem.
+\begin{align*}
+    r_S^2 &= (x_{SC} - x_S)^2 + (y_{SC} - y_S)^2\\
+	r_{P1}^2 &= (x_{SC} - x_{P1})^2 + (y_{SC} - y_{P1})^2\\
+	r_{P2}^2 &= (x_{SC} - x_{P2})^2 + (y_{SC} - y_{P2})^2
+\end{align*}
+Since the star will always be in the origin of the coordinate system, $r_S$ can be simplified to
+\begin{align*}
+    r_S^2 &= x_{SC}^2 + y_{SC}^2
+\end{align*}
+Solving these for $x_{SC}$ and $y_{SC}$ yields
 
 
 
