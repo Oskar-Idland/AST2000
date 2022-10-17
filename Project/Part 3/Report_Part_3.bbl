@@ -1,0 +1,48 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.1 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global}
+    \entry{lecture_notes_part1d}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=ed268c6ff074655858006ef4fb9139b6}{%
+           family={Hansen},
+           familyi={H\bibinitperiod},
+           given={Frode\bibnamedelima K.},
+           giveni={F\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+      }
+      \strng{namehash}{ed268c6ff074655858006ef4fb9139b6}
+      \strng{fullhash}{ed268c6ff074655858006ef4fb9139b6}
+      \strng{bibnamehash}{ed268c6ff074655858006ef4fb9139b6}
+      \strng{authorbibnamehash}{ed268c6ff074655858006ef4fb9139b6}
+      \strng{authornamehash}{ed268c6ff074655858006ef4fb9139b6}
+      \strng{authorfullhash}{ed268c6ff074655858006ef4fb9139b6}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{"\url{https://www.uio.no/studier/emner/matnat/astro/AST2000/h22/undervisningsmateriell/lecture_notes/part1d.pdf}"}
+      \field{note}{Accessed on 14.10.2022}
+      \field{title}{AST2000 Lecture Notes - Part 1D Electromagnetic Radiation}
+      \field{year}{2022}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
