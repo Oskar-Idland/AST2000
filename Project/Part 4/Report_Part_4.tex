@@ -107,7 +107,7 @@ To relate the spherical coordinates $ (\theta, \phi) $ to the planar coordinates
 	Y = κ (\sin θ _0 \cos  θ - \cos θ _0 \sin θ \cos (ϕ - ϕ _0))  
 \end{equation}
 
-\begin{equation}
+\begin{equation} \label{eq: kappa}
   \kappa = \frac{2}{1 + \cos \theta _{0}\cos \theta + \sin \theta _{0} \sin \theta \cos (\phi - \phi _{0})}
 \end{equation}
 
@@ -153,7 +153,8 @@ We have assumed that $ \theta_{0} = \frac{\pi}{2} $ for the entire trip which me
   \end{equation}
 \end{subequations}
 
-All there is left to do is to iterate over all angles $ \phi \in  \left\{ 0^{o}, 1^{o}, 2^{o} \dots 359 ^{o} \right\}  $ and compare the matrix of values with our own. Once we get a match we know our $ \phi _{0} $
+All there is left to do is to iterate over all angles $ \phi \in  \left\{ 0^{o}, 1^{o}, 2^{o} \dots 359 ^{o} \right\}  $ and compare the matrix of values with our own. Once we get a match we know our $ \phi _{0} $. 
+
 
 
 \subsection{Determining the velocity}\label{subsec:determining-the-velocity}
@@ -250,9 +251,24 @@ Solving these for $x_{SC}$ and $y_{SC}$ yields
 
 
 \section{Appendix: Mathematical Derivations}
+\subsection{Calculating the limitations on $ X $ and $ Y $.}
 
+\[
+	X = κ  \sin θ \sin (ϕ - ϕ _0)
+\]
+To make it easier to find the limitations we set $ X = 0 $. 
+\[
+κ \sin θ \sin (ϕ - ϕ _0) = 0 
+\]
+Inserting the definition of $ κ $ from equation \ref{eq: kappa}:
+\[
+	\frac{2 \sin θ \sin (ϕ - ϕ _0)}{1 + \cos \theta _{0}\cos \theta + \sin \theta _{0} \sin \theta \cos (\phi - \phi _{0})} = 0
+\]
+Inserting the ranges of values for $ θ $ and $ θ_0 $ from equation \ref{eq: limitations phi and theta}, we get the upper and lower limit of what equations to solve. 
+\[
+\frac{2 \sin  θ \sin (\pm α_ϕ / 2)}{1 + \cos θ_0 \cos θ + \sin θ_0 \sin  θ \cos (\pm α_ϕ / 2)} = 0
+\]
 
-\newpage
 \newpage
 %\printbibliography 
 TODO: % Ta bort kommentar
