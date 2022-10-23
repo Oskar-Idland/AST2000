@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2022.2.21)  17 OCT 2022 22:44
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2022.2.21)  20 OCT 2022 18:39
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -981,48 +981,37 @@ File: uni-3.def 2013/05/13 UCS: Unicode data U+0300..U+03FF
 )
 (/usr/local/texlive/2021/texmf-dist/tex/latex/ucs/data/uni-0.def
 File: uni-0.def 2013/05/13 UCS: Unicode data U+0000..U+00FF
-)
-
-LaTeX Warning: Reference `fig: ref picture' on page 2 undefined on input line 1
-40.
-
-[2 </Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 4/Figures/Stereo
-graphic_projection.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 214--218
+) [2 </Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 4/Figures/Ster
+eographic_projection.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 210--214
 
  []
 
-<Figures/trilateration.png, id=112, 853.1875pt x 759.83875pt>
+<Figures/trilateration.png, id=110, 853.1875pt x 759.83875pt>
 File: Figures/trilateration.png Graphic file (type png)
 <use Figures/trilateration.png>
-Package pdftex.def Info: Figures/trilateration.png  used on input line 234.
+Package pdftex.def Info: Figures/trilateration.png  used on input line 230.
 (pdftex.def)             Requested size: 170.63448pt x 151.96506pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Figures/sample0000.png, id=119, 642.4pt x 481.8pt>
+<Figures/sample0000.png, id=117, 642.4pt x 481.8pt>
 File: Figures/sample0000.png Graphic file (type png)
 <use Figures/sample0000.png>
-Package pdftex.def Info: Figures/sample0000.png  used on input line 266.
+Package pdftex.def Info: Figures/sample0000.png  used on input line 262.
 (pdftex.def)             Requested size: 128.47772pt x 96.35829pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
 [3 </Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 4/Figures/trilat
-eration.png>]
-
-LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
- on input line 284.
-
+eration.png> </Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 4/Figu
+res/sample0000.png (PNG copy)>]
 
 /Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 4/Report_Part_4.tex:
-287: LaTeX Error: Can be used only in preamble.
+283: LaTeX Error: Can be used only in preamble.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.287 \end{document}
+l.283 \end{document}
                     
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1032,55 +1021,55 @@ Package logreq Info: Writing requests to 'Report_Part_4.run.xml'.
 \openout1 = `Report_Part_4.run.xml'.
 
 [4
-\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsl
-ine {figure}{\numberline {3}{\ignorespaces Recreated reference picture from~\pa
-rencite [][]{Relevant_theory}}}{4}{figure.3}\protected@file@percent }
-\newlabel{fig: ref picture}{{3}{4}{Recreated reference picture from~\parencite 
-[][]{Relevant_theory}}{figure.3}{}}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsl
+ine {section}{\numberline {V}Discussion}{4}{section*.11}\protected@file@percent
+ }
+\newlabel{sec:discussion}{{V}{4}{}{section*.11}{}}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsl
+ine {section}{\numberline {VI}Conclusion}{4}{section*.12}\protected@file@percen
+t }
+\newlabel{sec:conclusion}{{VI}{4}{}{section*.12}{}}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsl
+ine {section}{\numberline {VII}Appendix: Mathematical Derivations}{4}{section*.
+13}\protected@file@percent }
 \@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsl
 ine {section}{\numberline {}References}{4}{section*.14}\protected@file@percent 
 }
- </Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 4/Figures/sample00
-00.png (PNG copy)>]
+]
 \newlabel{LastPage}{{}{4}{}{}{}}
 \gdef \@abspage@last{4}
 
 (/Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 4/Report_Part_4.aux
 )
-
-LaTeX Warning: There were undefined references.
-
 Package rerunfilecheck Info: File `Report_Part_4.out' has not changed.
 (rerunfilecheck)             Checksum: 399761B6955E605370AD7145545F150C;1882.
  ) 
 Here is how much of TeX's memory you used:
- 22771 strings out of 478994
- 361036 string characters out of 5858184
- 1137718 words of memory out of 5000000
- 39923 multiletter control sequences out of 15000+600000
- 410645 words of font info for 59 fonts, out of 8000000 for 9000
+ 22765 strings out of 478994
+ 360955 string characters out of 5858184
+ 1138716 words of memory out of 5000000
+ 39919 multiletter control sequences out of 15000+600000
+ 410337 words of font info for 58 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  81i,15n,89p,746b,1504s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
-></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
-</usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></
-usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></u
-sr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></us
-r/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/
-local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/lo
-cal/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/loca
-l/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/t
-exlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texl
-ive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texli
-ve/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive
-/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/
-2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/20
-21/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
+</usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
+></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb><
+/usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></
+usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></u
+sr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr
+/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/l
+ocal/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/loca
+l/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/t
+exlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/te
+xlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texl
+ive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texli
+ve/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive
+/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
 Output written on "/Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 4
-/Report_Part_4.pdf" (4 pages, 536291 bytes).
+/Report_Part_4.pdf" (4 pages, 517993 bytes).
 PDF statistics:
- 204 PDF objects out of 1000 (max. 8388607)
- 175 compressed objects within 2 object streams
- 42 named destinations out of 1000 (max. 500000)
+ 194 PDF objects out of 1000 (max. 8388607)
+ 167 compressed objects within 2 object streams
+ 41 named destinations out of 1000 (max. 500000)
  128 words of extra memory for PDF output out of 10000 (max. 10000000)
 

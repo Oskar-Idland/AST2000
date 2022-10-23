@@ -163,14 +163,10 @@ The angles from the x-axis at which the reference stars $Star_{R1}$ and $Star_{R
 These have been obtained beforehand by our astronomers.
 Now the velocities $v_{phi1}$ and $v_{phi2}$ in the direction of these angles can be determined by measuring the Doppler shift $\Delta \lambda$ and using the relationship between the Doppler shift and the velocity~\eqref{Dopplershift1}
 \begin{align}
-    \Delta \lambda &= \gamma \left(1 + \frac{v_{rad}}{c}\right) - 1 \label{Dopplershift1}\\
-	\Delta \lambda &= \sqrt{\frac{1+\frac{v_{rad}}{c}}{1-\frac{v_{rad}}{c}}} \label{Dopplershift2}
+    \frac{\Delta \lambda}{\lambda_0} &= \frac{v_{rad}}{c} \label{Dopplershift1}\\
+	v_{rad} &= \frac{\Delta \lambda}{\lambda_0} c \label{Dopplershift2}
 \end{align}
-With $\gamma$ being the Lorentz factor, $c$ being the speed of light and $v_{rad}$ being the velocity of the two objects relative to each other.
-When rearranging formula~\eqref{Dopplershift2} we obtain a formula for the velocity given a value for the Doppler shift~\eqref{Dopplershift3}.
-\begin{align}
-    v_{rad} = \frac{-2c}{\left(1+\Delta\lambda \right)^2 +1} + c \label{Dopplershift3}
-\end{align}
+With $\lambda_0$ being the wavelength of the observed electromagnetic wave from an observer at rest, $c$ being the speed of light and $v_{rad}$ being the velocity of the two objects relative to each other.\\
 Given the velocity in the direction of the two stars, we will need to change our coordinate system to calculate the velocity of the spacecraft.
 The new unit vectors of our coordinate system will be given by
 \begin{align}\label{Coord_chg1}

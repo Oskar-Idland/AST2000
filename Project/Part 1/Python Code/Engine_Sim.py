@@ -20,7 +20,7 @@ Simplifications and Assumptions:
 seed = 8
 m_h2 = constants.m_H2  # Mass of one H2 molecule In Kg
 L = 1E-6 
-T = 3*1E4
+T = 3*1E3
 N = int(1e3)
 timesteps = 1000
 nozzle_pos = np.array([0, 0, -L/2])  # Nozzle positioned directly under the box
@@ -56,7 +56,7 @@ print('Momentum: ' + str(momentum)) # Multiplying by error factor to correct for
 b = time.time()
 print(f'Momentum calculation took {b - a} s')
 thrust = momentum/1e-9
-print(thrust)
+print(f"Thrust: {thrust}")
 num_of_boxes = 10_000/thrust
 print(f"Number of boxes: {num_of_boxes:e}")
 print(f"Total Mass Flow rate: {m_dot * num_of_boxes}")
