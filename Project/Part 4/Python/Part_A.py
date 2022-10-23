@@ -55,9 +55,9 @@ def find_angle(image_filename: str) -> int:
     If None is returned there was no angle found
     '''
     for phi_0 in range(360):
-        image = Image.open(image_filename)
+        image = Image.open(f"../{image_filename}")
         filenumber = f'{phi_0}'.zfill(3)
-        filename = f'Sky Images\sky_image_{filenumber}_degrees.png'
+        filename = f'../Sky Images/sky_image_{filenumber}_degrees.png'
         possible_match = Image.open(os.path.join(filename))
         if image == possible_match:
             return phi_0
@@ -69,7 +69,7 @@ def generate_sky_image(phi: np.ndarray, theta:np.ndarray, height: int, width: in
     IMPORTANT: phi and theta must be in radians \n
     Converts the phi, theta-grid into pixels then map the corresponding RGB value to the pixels and creating and returning a new image
     '''
-    himmelkule = np.load("himmelkule.npy")
+    himmelkule = np.load("../himmelkule.npy")
     pixels = np.zeros((height, width, 3), dtype="uint8")
     
     for i in range(height):
@@ -82,7 +82,7 @@ def generate_sky_image(phi: np.ndarray, theta:np.ndarray, height: int, width: in
     return newImage
 
 if __name__ == "__main__":
-    sample = Image.open('sample0000.png')
+    sample = Image.open('../sample0000.png')
     pixels = np.array(sample)
     height, width = pixels.shape[0], pixels.shape[1]
     print(f'sample2000.png is {height} X {width} pixels')
@@ -98,8 +98,8 @@ if __name__ == "__main__":
     newImage = generate_sky_image(phi, theta, height, width)
     newImage.save('Test_Image.png')
     
-    image = Image.open('sample0200.png')
-    possible_match = Image.open(os.path.join('Sky Images/sky_image_020_degrees.png'))
+    image = Image.open('../sample0200.png')
+    possible_match = Image.open(os.path.join('../Sky Images/sky_image_020_degrees.png'))
     
     print(image == possible_match)
     # print(f'The angle phi_0 of the test image is {find_angle("Test_Image.png")} degrees')
@@ -109,15 +109,14 @@ if __name__ == "__main__":
     for n in file_numbers:
         filename = f'sample{n}.png'
         print(f'The angle phi_0 of {filename} is {find_angle(filename)} degrees ')
-    
+
     # Code to generate all possible picture from all values of theta_0
-    '''   
+
     for phi_0 in range(360):
         filenumber = f'{phi_0}'.zfill(3)
         filename = f'sky_image_{filenumber}_degrees.png'
         phi_0 *= np.pi/180 # Converting to radians
-        phi, theta = Stereographic_Projection(X,Y,phi_0,theta_0)    
-        image, pixels = generate_sky_image(phi, theta, height, width)
+        phi, theta = Stereographic_Projection(X,Y,phi_0,theta_0)
+        image = generate_sky_image(phi, theta, height, width)
         print(filename)
-        image.save(os.path.join('Sky Images', filename))
-    '''
+        image.save(os.path.join('../Sky Images', filename))

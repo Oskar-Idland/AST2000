@@ -13,6 +13,16 @@ mission = SpaceMission(seed)
 star_mass = system.star_mass
 planet_mass = system.masses[0]
 
+
+def vf_launch_res():
+    l_par = np.load("../../Part 1/Python Code/Launch_Parameters.npy")
+    mission.set_launch_parameters(l_par[2], l_par[3], l_par[4], l_par[5], [l_par[6], l_par[7]], l_par[8])
+    mission.launch_rocket(l_par[9])
+    mission.verify_launch_result([l_par[0], l_par[1]])
+    print(f"Launch Results Verified: {mission.launch_result_verified}")
+
+
+vf_launch_res()
 lambda0 = 656.3
 phi1, phi2 = utils.deg_to_rad(mission.star_direction_angles)
 sc_dop_shift0, sc_dop_shift1 = mission.measure_star_doppler_shifts()

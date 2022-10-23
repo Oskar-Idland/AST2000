@@ -14,6 +14,14 @@ star_mass = system.star_mass
 planet_mass = system.masses[0]
 
 
+def vf_launch_res():
+    l_par = np.load("../../Part 1/Python Code/Launch_Parameters.npy")
+    mission.set_launch_parameters(l_par[2], l_par[3], l_par[4], l_par[5], [l_par[6], l_par[7]], l_par[8])
+    mission.launch_rocket(l_par[9])
+    mission.verify_launch_result([l_par[0], l_par[1]])
+    print(f"Launch Results Verified: {mission.launch_result_verified}")
+
+
 def create_orbit_func(planet_idx):
     # Loading numeric orbits from file
     data = np.load(f"../../Part 2/Python Code/Orbits/Planet_{planet_idx}.npz")
@@ -44,5 +52,6 @@ def locate_spacecraft(ref_p1_idx, ref_p2_idx, time):
     return np.array([x_sc, y_sc])
 
 
+vf_launch_res()
 position_SC = locate_spacecraft(3, 6, 1)
-
+print(position_SC)
