@@ -1,12 +1,12 @@
 # Fdb version 3
-["bibtex Report_Part_4"] 1666364328 "Report_Part_4.aux" "Report_Part_4.bbl" "Report_Part_4" 1666365026
+["bibtex Report_Part_4"] 1666544183 "Report_Part_4.aux" "Report_Part_4.bbl" "Report_Part_4" 1666544186
   "C:/Users/oskar/AppData/Local/Programs/MiKTeX/bibtex/bst/revtex/apsrev4-2.bst" 1601735216 69609 e9dea59f0e753ccda3ddc8f5806d846d ""
-  "Report_Part_4.aux" 1666365025 4083 bc604e3a5e4df7f808958641955768f1 "pdflatex"
-  "Report_Part_4Notes.bib" 1666365025 104 4d8bb863c86f3d7b03a471e9d4707f34 "pdflatex"
+  "Report_Part_4.aux" 1666544185 4335 b5d0cdae30a835ece9e55e585a953b06 "pdflatex"
+  "Report_Part_4Notes.bib" 1666544185 104 4d8bb863c86f3d7b03a471e9d4707f34 "pdflatex"
   (generated)
   "Report_Part_4.bbl"
   "Report_Part_4.blg"
-["pdflatex"] 1666365023 "c:/Users/oskar/OneDrive/Dokumenter/GitHub/Privat/AST2000/Project/Part 4/Report_Part_4.tex" "Report_Part_4.pdf" "Report_Part_4" 1666365026
+["pdflatex"] 1666544183 "c:/Users/oskar/OneDrive/Dokumenter/GitHub/Privat/AST2000/Project/Part 4/Report_Part_4.tex" "Report_Part_4.pdf" "Report_Part_4" 1666544186
   "C:/Users/oskar/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1665926845 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/oskar/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1662031172 10374549 ab9957c64f9e665f244136ccccd1caef ""
   "C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1233955448 1004 54797486969f23fa377b128694d548df ""
@@ -32,13 +32,13 @@
   "C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx9.pfb" 1247596667 32298 c6d25bb16d1eac01ebdc6d7084126a1e ""
   "C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb" 1247596667 30251 6afa5cb1d0204815a708a080681d4674 ""
   "C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb" 1247596667 36299 5f9df58c2139e7edcf37c8fca4bd384d ""
-  "C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb" 1247596667 37912 07513ec114ac737ab54cea0152f4424b ""
   "C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb" 1247596667 36281 c355509802a035cadc5f15869451dcee ""
   "C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi9.pfb" 1247596667 36094 798f80770b3b148ceedd006d487db67c ""
   "C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1247596667 35752 024fb6c41858982481f6968b5fc26508 ""
   "C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb" 1247596667 32762 7fee39e011c23b3589931effd97b9702 ""
   "C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb" 1247596666 33993 9b89b85fd2d9df0482bd47194d1d3bf3 ""
   "C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1247596667 32569 5e5ddc8df908dea60932f3c484a54c0d ""
+  "C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb" 1247596666 32716 08e384dc442464e7285e891af9f45947 ""
   "C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti9.pfb" 1247596667 36310 f5ddc6715cc60deb16d9db5ded6a9391 ""
   "C:/Users/oskar/AppData/Local/Programs/MiKTeX/tex/context/base/mkii/supp-pdf.mkii" 1580393758 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "C:/Users/oskar/AppData/Local/Programs/MiKTeX/tex/generic/atbegshi/atbegshi.sty" 1575574700 24708 5584a51a7101caf7e6bbf1fc27d8f7b1 ""
@@ -123,12 +123,13 @@
   "C:/Users/oskar/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388494052 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "C:/Users/oskar/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1656236890 56148 51a9a8571c07b9921892ae11063ae853 ""
   "Figures/Stereographic_projection.png" 1665660689 101918 fa46439af0cd1572713c27c5fc6a4e75 ""
-  "Figures/sample0000.png" 1666032656 234925 69bfccb720edd79d50317ee9e86442bf ""
-  "Report_Part_4.aux" 1666365025 4083 bc604e3a5e4df7f808958641955768f1 "pdflatex"
-  "Report_Part_4.bbl" 1666364328 2035 35453d3875d823f0ec9445e740a573d9 "bibtex Report_Part_4"
-  "Report_Part_4.out" 1666365025 2078 24709dd6b45918e0924045244fe24d70 "pdflatex"
-  "Report_Part_4.tex" 1666365022 15572 40a95a2d9842c13ffb6c7468c722c159 ""
-  "c:/Users/oskar/OneDrive/Dokumenter/GitHub/Privat/AST2000/Project/Part 4/Report_Part_4.tex" 1666365022 15572 40a95a2d9842c13ffb6c7468c722c159 ""
+  "Figures/trilateration.png" 1666034220 30717 e1b4231e6c68f49d7a5119aaf9a3a439 ""
+  "Report_Part_4.aux" 1666544185 4335 b5d0cdae30a835ece9e55e585a953b06 "pdflatex"
+  "Report_Part_4.bbl" 1666544183 2035 35453d3875d823f0ec9445e740a573d9 "bibtex Report_Part_4"
+  "Report_Part_4.out" 1666544185 2078 24709dd6b45918e0924045244fe24d70 "pdflatex"
+  "Report_Part_4.tex" 1666544176 17533 07bb1d75e2a1259e6299c22c4175772e ""
+  "Test_Image.png" 1666539667 234925 69bfccb720edd79d50317ee9e86442bf ""
+  "c:/Users/oskar/OneDrive/Dokumenter/GitHub/Privat/AST2000/Project/Part 4/Report_Part_4.tex" 1666544176 17533 07bb1d75e2a1259e6299c22c4175772e ""
   (generated)
   "Report_Part_4.aux"
   "Report_Part_4.log"
