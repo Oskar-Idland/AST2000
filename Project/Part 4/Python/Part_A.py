@@ -117,7 +117,7 @@ if __name__ == "__main__":
         filename = f'sky_image_{filenumber}_degrees.png'
         phi_0 *= np.pi/180 # Converting to radians
         phi, theta = Stereographic_Projection(X,Y,phi_0,theta_0)    
-        image, pixels = generate_sky_image(phi, theta, height, width)
+        image = generate_sky_image(phi, theta, height, width)
         print(filename)
         image.save(os.path.join('Sky Images', filename))
     '''

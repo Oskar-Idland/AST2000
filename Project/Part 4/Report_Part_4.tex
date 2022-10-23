@@ -10,8 +10,8 @@
 \usepackage{hyperref}
 \usepackage{listings}
 \usepackage{subfigure}
-\usepackage[style=science, backend=biber]{biblatex}
-\addbibresource{References_Part_4.bib}
+% \usepackage[style=science, backend=biber]{biblatex}
+% \addbibresource{References_Part_4.bib} TODO: Slett før innlevering
 \hypersetup{
     colorlinks,
     linkcolor={red!50!black},
@@ -83,7 +83,7 @@ This spike in the amount of radiation at a specific wavelength is called the $H_
 To be able to do all calculations, a cartesian coordinate system will be used with the star in our solar system being in the origin and the x-axis pointing at the position of planet 0 at $T = 0$.
 
 \section{Theory} \label{sec:theory}
-For theory, see section Relevant Mathematics in the project description~\parencite[][]{Relevant_theory}
+% For theory, see section Relevant Mathematics in the project description~\parencite[][]{Relevant_theory}
 
 \section{Method} \label{sec:method}
 \subsection{Generating Pictures} \label{subsec: generating pictures}
@@ -98,19 +98,32 @@ A satellite is orbiting our home planet and has taken a $ 180 ^{o} \times 360 ^{
 \end{figure}\\
 
 To relate the spherical coordinates $ (\theta, \phi) $ to the planar coordinates $ (X, Y) $ we use the following equations:
-\begin{equation} \label{Spherical to X}
-	X = κ  \sin θ \sin (ϕ - ϕ _0)
-\end{equation}
-\begin{equation}\label{Spherical to Y}
-	Y = κ (\sin θ _0 \cos  θ - \cos θ _0 \sin θ \cos (ϕ - ϕ _0))  
-\end{equation}
+\begin{subequations}
+	\begin{equation} \label{Spherical to X}
+		X = κ  \sin θ \sin (ϕ - ϕ _0)
+	\end{equation}
+	\begin{equation}\label{Spherical to Y}
+		Y = κ (\sin θ _0 \cos  θ - \cos θ _0 \sin θ \cos (ϕ - ϕ _0))  
+	\end{equation}
+	
+	\begin{equation} \label{eq: kappa}
+	  \kappa = \frac{2}{1 + \cos \theta _{0}\cos \theta + \sin \theta _{0} \sin \theta \cos (\phi - \phi _{0})}
+	\end{equation}
+\end{subequations}
 
-\begin{equation} \label{eq: kappa}
-  \kappa = \frac{2}{1 + \cos \theta _{0}\cos \theta + \sin \theta _{0} \sin \theta \cos (\phi - \phi _{0})}
-\end{equation}
+To relate planar coordinates $ X,Y $ with spherical coordinates $ ϕ, θ $ we use the following equations 
+
+\begin{subequations} \label{eq: planar to spherical coordinates}
+	\begin{equation}
+	  \theta = \theta_0 - \arcsin \left[ \cos β \cos θ _{0} + \frac{Y}{\rho} \sin β \sin θ _{0}\right] 
+	\end{equation}
+	\begin{equation}
+	  \phi = \phi _{0} + \arctan \left[ \frac{X \sin \beta}{\rho \sin \theta _{0} \cos \beta - Y \cos  \theta _{0} \sin  \beta} \right] 
+	\end{equation}
+  \end{subequations}
 
 
-Using equation \ref{Spherical to X} \& \ref{Spherical to Y} we can convert the data taken from the satellite containing values for $ \theta $ , $ \phi  $ and the color of the pixel in the RGB format, into a stereographic projection in the $ XY $ -plane. This gives us a complete reference picture!
+Using equations \ref{eq: planar to spherical coordinates} we can convert the data taken from the satellite containing values for $ X,Y  $ and the color of the pixel in the RGB format, into a reverse stereographic projection in the $ ϕ, θ $ -plane. This gives us a complete reference picture using spherical coordinates!
 
 When the camera onboard takes a pictures it will be limited by its field of view (FOV). The FOV will be described as the maximum angular width $ \alpha $ of the photo. We use the following equations to define it. 
 \begin{equation} \label{eq: max angular width}
@@ -122,7 +135,7 @@ This creates ranges of coordinates for $\theta$ and $\phi$:
   - \frac{\alpha _{\theta}}{2} \le θ - θ _{0} \le \frac{\alpha _{\theta }}{2}, \quad - \frac{\alpha _{\theta}}{2} \le ϕ  - ϕ _{0} \le \frac{\alpha _{\theta }}{2}
 \end{equation}
 
-This, in turn, also creates limitations on the coordinates $ (X,Y) $ of the stereographic projection: 
+This, in turn, also creates limitations on the coordinates $ (X,Y) $ of the stereographic projection derrived in \ref{ssec: lim x,y}: 
 \begin{subequations} \label{eq: limitations X and Y lim}
 	\begin{equation}
 		X _{max / min} = ± \frac{2 \sin (α _{\phi} / 2)}{1 + \cos (\alpha _{\phi})}
@@ -136,23 +149,12 @@ This, in turn, also creates limitations on the coordinates $ (X,Y) $ of the ster
 \end{subequations}
 This is the key to generating a grid of x and y values which we will base our position from later. 
 
-To help us check that our calculations are correct we have been given a sample picture we will recreate using equation \ref{Spherical to X} \& \ref{Spherical to Y}.
+To help us check that our calculations are correct we have been given a sample picture we will recreate using equations \ref{eq: planar to spherical coordinates}
 The picture is centered around $ \phi = 0^{o} $ and $ \theta = 90^{o} $. The camera used has a FOV of $ \alpha_{\theta} = \alpha_{\phi} = 70^{o} $. To get the full range of the coordinates $ (X,Y) $ we simply find the height and width of the array containing the data. With this information we are able to recreate the same picture~\ref{fig: ref picture}
 
 
 \subsection{Image Analysis} \label{ssec: image analysis}
-We have assumed that $ \theta_{0} = \frac{\pi}{2} $ for the entire trip which means there is only one variable, the angle which the picture is centered around $ \varphi_{new} $. A simple solution can be implemented assuming the space shuttle only turns at integer angle values. First, we analyze the picture taken on the shuttle and convert it to spherical coordinates. For this purpose we will use the following equations to create a grid of $ \phi $ and $ \theta $ values stored in a matrix.
-
-\begin{subequations} \label{eq: planar to spherical coordinates}
-  \begin{equation}
-	\theta = \theta_0 - \arcsin \left[ \cos β \cos θ _{0} + \frac{Y}{\rho} \sin β \sin θ _{0}\right] 
-  \end{equation}
-  \begin{equation}
-	\phi = \phi _{0} + \arctan \left[ \frac{X \sin \beta}{\rho \sin \theta _{0} \cos \beta - Y \cos  \theta _{0} \sin  \beta} \right] 
-  \end{equation}
-\end{subequations}
-
-All there is left to do is to iterate over all angles $ \phi \in  \left\{ 0^{o}, 1^{o}, 2^{o} \dots 359 ^{o} \right\}  $ and compare the matrix of values with our own. Once we get a match we know our $ \phi _{0} $. 
+We have assumed that $ \theta_{0} = \frac{\pi}{2} $ for the entire trip which means there is only one variable, the angle which the picture is centered around $ \phi_{new} $. A simple solution can be implemented assuming the space shuttle only turns at integer angle values. First, we create an Image object using the PIL module. Then we iterate over all angles $ \phi \in  \left\{ 0^{o}, 1^{o}, 2^{o} \dots 359 ^{o} \right\}  $ and compare the Image with the ones we created ourselves. Once we get a match we know our $ \phi _{0} $.
 
 
 
@@ -233,7 +235,8 @@ The setup for the calculations has been visualised in figure~\ref{fig:trilaterat
 	%% H(Here), h(here approx), t(top of page), b(bottom of page)
 	\centering
 	\includegraphics[scale=0.2]{Figures/trilateration}
-	\caption{Visualisation of the trilateration method. From~\parencite[][]{trilateration_picture}}\label{fig:trilateration_figure}
+	% \caption{Visualisation of the trilateration method. From~\parencite[][]{trilateration_picture}}
+	\label{fig:trilateration_figure} % TODO: Slett før innlevering
 \end{figure}
 Since the star will always be in the origin of the coordinate system, $r_S$ can be simplified to
 \begin{align*}
@@ -252,7 +255,7 @@ Solving the equation set consisting of equations~\eqref{r_s},~\eqref{r_p1} and~\
     x_{SC}& = \frac{CE - FB}{EA - BD}\\
 	y_{SC}& = \frac{CD - AF}{BD - AE}
 \end{align*}
-The calculations for this are based on the calculations from~\parencite[][]{trilateration}
+% The calculations for this are based on the calculations from~\parencite[][]{trilateration} TODO: Slett før innlevering
 The position of the spacecraft $SC$ is then given by
 \begin{align*}
     SC = \left(x_{SC}, y_{SC} \right)
@@ -264,14 +267,18 @@ The position of the spacecraft $SC$ is then given by
 
 \begin{figure}[h!]
 	\centering
-	\includegraphics[scale = 0.2]{Figures/sample0000}
-	\caption{Recreated reference picture from~\parencite[][]{Relevant_theory}}
+	\includegraphics[scale = 0.2]{Test_Image.png}
+	\caption{Recreated reference picture from our software %from~\parencite[][]{Relevant_theory}} TODO: Slett før innlevering% 
+	}
 	\label{fig: ref picture}
   \end{figure}
-  
+
+
 
 \section{Discussion} \label{sec:discussion}
+The software is able to accurately recreate the sample picture we were given. It is also able to accurately tell which direction the shuttle is pointing, with the caveat being the angle must be an integer value. This is caused by the local database onboard is based of the full picture taken by the satellite orbiting our planet. We defined each picture to have a distance of 1 degree which limits the use cases.
 
+This could become a problem. Luckily our shuttle is able to take millions of picture per second so we have a wide range to work with. The super computer onboard will easily go through all pictures and find a match in no time. This makes the odds of failure to find a picture insignificant.   
 
 
 \section{Conclusion} \label{sec:conclusion}
@@ -279,7 +286,7 @@ The position of the spacecraft $SC$ is then given by
 
 
 \section{Appendix: Mathematical Derivations}
-\subsection{Calculating the limitations on $ X $ and $ Y $.}
+\subsection{Calculating the limitations on $ X $ and $ Y $.} \label{ssec: lim x,y}
 
 \[
 	X = κ  \sin θ \sin (ϕ - ϕ _0)
@@ -296,6 +303,7 @@ Inserting the ranges of values for $ θ $ and $ θ_0 $ from equation \ref{eq: li
 \[
 \frac{2 \sin  θ \sin (\pm α_ϕ / 2)}{1 + \cos θ_0 \cos θ + \sin θ_0 \sin  θ \cos (\pm α_ϕ / 2)} = 0
 \]
+
 
 \newpage
 %\printbibliography 
