@@ -40,3 +40,4 @@ for i in range(8):
 
 print(system.star_mass)
 print(system.star_radius)
+print(mission.star_direction_angles)
