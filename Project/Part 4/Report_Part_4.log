@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.8.28) (preloaded format=pdflatex 2022.9.1)  23 OCT 2022 18:45
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.8.28) (preloaded format=pdflatex 2022.9.1)  23 OCT 2022 18:56
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -492,56 +492,56 @@ LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix] 
 (C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex/latex/ucs/data\uni-0.def
 File: uni-0.def 2022/08/07 UCS: Unicode data U+0000..U+00FF
 ) [2 <./Figures/Stereographic_projection.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 217--221
+Underfull \hbox (badness 10000) in paragraph at lines 213--217
 
  []
 
-<Figures/trilateration.png, id=109, 853.1875pt x 759.83875pt>
+<Figures/trilateration.png, id=106, 853.1875pt x 759.83875pt>
 File: Figures/trilateration.png Graphic file (type png)
 <use Figures/trilateration.png>
-Package pdftex.def Info: Figures/trilateration.png  used on input line 237.
+Package pdftex.def Info: Figures/trilateration.png  used on input line 233.
 (pdftex.def)             Requested size: 170.63448pt x 151.96506pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Test_Image.png, id=113, 642.4pt x 481.8pt>
+<Test_Image.png, id=110, 642.4pt x 481.8pt>
 File: Test_Image.png Graphic file (type png)
 <use Test_Image.png>
-Package pdftex.def Info: Test_Image.png  used on input line 270.
+Package pdftex.def Info: Test_Image.png  used on input line 266.
 (pdftex.def)             Requested size: 128.47772pt x 96.35829pt.
 [3 <./Figures/trilateration.png> <./Test_Image.png (PNG copy)>]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 289.
+(hyperref)                removing `math shift' on input line 285.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 289.
+(hyperref)                removing `math shift' on input line 285.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 289.
+(hyperref)                removing `math shift' on input line 285.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 289.
+(hyperref)                removing `math shift' on input line 285.
 
 (Report_Part_4.bbl) [4] (Report_Part_4.aux)
 Package rerunfilecheck Info: File `Report_Part_4.out' has not changed.
 (rerunfilecheck)             Checksum: 24709DD6B45918E0924045244FE24D70;2078.
  ) 
 Here is how much of TeX's memory you used:
- 16349 strings out of 477843
- 247880 string characters out of 2823600
- 779443 words of memory out of 3000000
- 35006 multiletter control sequences out of 15000+600000
+ 16347 strings out of 477843
+ 247852 string characters out of 2823600
+ 780443 words of memory out of 3000000
+ 35005 multiletter control sequences out of 15000+600000
  475653 words of font info for 57 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  72i,15n,77p,646b,594s stack positions out of 10000i,1000n,20000p,200000b,80000s
-<C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi9.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti9.pfb>
-Output written on Report_Part_4.pdf (4 pages, 541072 bytes).
+<C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi9.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti9.pfb>
+Output written on Report_Part_4.pdf (4 pages, 529581 bytes).
 PDF statistics:
- 195 PDF objects out of 1000 (max. 8388607)
- 39 named destinations out of 1000 (max. 500000)
+ 187 PDF objects out of 1000 (max. 8388607)
+ 38 named destinations out of 1000 (max. 500000)
  128 words of extra memory for PDF output out of 10000 (max. 10000000)
 
