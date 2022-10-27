@@ -42,6 +42,9 @@ def locate_spacecraft(ref_p1_idx, ref_p2_idx, time):
     dist_sun = mission.measure_distances()[-1]
     dist_p1 = mission.measure_distances()[ref_p1_idx]
     dist_p2 = mission.measure_distances()[ref_p2_idx]
+    print(f"Dist Sun: {dist_sun}")
+    print(f"Dist Planet 1: {dist_p1}")
+    print(f"Dist Planet 2: {dist_p2}")
     A = (-2*pos_sun[0] + 2*pos_p1[0])
     B = (-2*pos_sun[1] + 2*pos_p1[1])
     C = (dist_sun**2) - (dist_p1**2) - (pos_sun[0]**2) + (pos_p1[0]**2) - (pos_sun[1]**2) + (pos_p1[1]**2)
@@ -77,6 +80,9 @@ lambda0 = mission.reference_wavelength
 phi1, phi2 = utils.deg_to_rad(mission.star_direction_angles)  # Angles to reference stars
 sc_dop_shift1, sc_dop_shift2 = mission.measure_star_doppler_shifts()  # Doppler shifts at spacecraft
 star_dop_shift1, star_dop_shift2 = mission.star_doppler_shifts_at_sun  # Doppler shift at star in solar system
+print(sc_dop_shift1, sc_dop_shift2, star_dop_shift1, star_dop_shift2)
+
+
 
 position_SC = locate_spacecraft(3, 6, utils.s_to_yr(885.21))
 velocity_SC = find_velocity(lambda0, phi1, phi2, sc_dop_shift1, sc_dop_shift2, star_dop_shift1, star_dop_shift2)

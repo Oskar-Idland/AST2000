@@ -123,7 +123,7 @@ To relate planar coordinates $ X,Y $ with spherical coordinates $ ϕ, θ $ we us
   \end{subequations}
 
 
-Using equations \ref{eq: planar to spherical coordinates} we can convert the data taken from the satellite containing values for $ X,Y  $ and the color of the pixel in the RGB format, into a reverse stereographic projection in the $ ϕ, θ $ -plane. This gives us a complete reference picture using spherical coordinates!
+Using equations \ref{eq: planar to spherical coordinates} we can convert the data taken from the satellite containing values for $ X,Y  $ and the color of the pixel in the RGB format, into a reverse stereographic projection in the $ ϕ, \theta $ -plane. This gives us a complete reference picture using spherical coordinates!
 
 When the camera onboard takes a pictures it will be limited by its field of view (FOV). The FOV will be described as the maximum angular width $ \alpha $ of the photo. We use the following equations to define it. 
 \begin{equation} \label{eq: max angular width}
@@ -260,21 +260,69 @@ The position of the spacecraft $SC$ is then given by
 
 
 \section{Results} \label{sec:results}
+We have now tested the orientation software for our rocket right after our rocket has reached space, or in other words, reached exit velocity.
+First, we have used our onboard camera to take a picture in the direction, in which the spacecraft is pointing.
+The picture we have received from the camera can be seen in figure~\ref{fig:sky_picture}.
+This picture has then been matched with the reference picture~\ref{fig: ref picture}, which our team has made beforehand.
+
+\begin{figure}[h]
+	%% H(Here), h(here approx), t(top of page), b(bottom of page)
+	\centering
+	\includegraphics[scale=0.15]{Python/sky_picture}
+	\caption{The image taken by the onboard camera right after the spacecraft reaches space.}\label{fig:sky_picture}
+\end{figure}
 
 \begin{figure}[h!]
 	\centering
-	\includegraphics[scale = 0.2]{Test_Image.png}
-	\caption{Recreated reference picture from our software %from~\parencite[][]{Relevant_theory}} TODO: Slett før innlevering% 
+	\includegraphics[scale = 0.2]{Test_Image}
+	\caption{Recreated reference picture for our software %from~\parencite[][]{Relevant_theory}} TODO: Slett før innlevering%
 	}
 	\label{fig: ref picture}
   \end{figure}
 
+By comparing the picture taken right after reaching space to different parts of the reference picture, we found the angle of the spacecraft right after reaching space to be $39^{\circ}$.\\
 
+At the same time, the distances from the spacecraft to the star in our solar system, planet 3 and planet 6 have been measured.
+The distances from the spacecraft to the different bodies are
+\begin{align*}
+    r_{Star} = 9.31411 \,AU\\
+	r_{P3} = 56.16394 \,AU\\
+	r_{P6} = 47.86636 \,AU\\
+\end{align*}
+These distances have then been used to triangulate the position of the spacecraft right after reaching outer space using the method described in section~\ref{subsec:the-position-of-the-spacecraft}.
+This amounted to the position of the spacecraft being $SC = (9.3141, 1.2278 \times 10^{-4}) AU$.\\
+
+Furthermore, the velocity of the spacecraft of the spacecraft has been calculated using the methods from section~\ref{subsec:determining-the-velocity}.
+The dopplershifts $\Delta\lambda_{SC1}$ and $\Delta\lambda_{SC2}$ of the $H_{\alpha}$ spectral line from the two reference stars at the angles $ \phi_1 = 281.057^{\circ}$ and $ \phi_2 = 157.433^{\circ}$ have been measured using onboard instruments.
+The measurements resulted in the dopplershifts at the spacecraft being
+\begin{align*}
+	&\Delta\lambda_{SC1} = 0.057026 \,\text{nm}\\
+	&\Delta\lambda_{SC2} = 0.0048287 \,\text{nm}
+\end{align*}
+The dopplershifts at the star in our solar system have been predetermined by our scientist and are
+\begin{align*}
+    &\Delta\lambda_{ST1} = 0.017867 \,\text{nm}\\
+	&\Delta\lambda_{ST2} = -0.0042600 \,\text{nm}
+\end{align*}
+Using these measurements, the velocity $v_{SC}$ of the spacecraft has been determined to be
+\begin{align*}
+    v_{SC} = (2.7712, 4.3863) \,\text{AU/Year}
+\end{align*}
+
+By combining all these measurements and results, we were successfully able to determine the position fo the spacecraft when reaching space after launching.\\
+After successfully determining the position after reaching space, the software has been uploaded to the spacecrafts main computer.
+This means, the spacecraft will be able to do all the calculations, and therefore orient itself by sending a simple command to it.
 
 \section{Discussion} \label{sec:discussion}
-The software is able to accurately recreate the sample picture we were given. It is also able to accurately tell which direction the shuttle is pointing, with the caveat being the angle must be an integer value. This is caused by the local database onboard is based of the full picture taken by the satellite orbiting our planet. We defined each picture to have a distance of 1 degree which limits the use cases.
+The software is able to accurately recreate the sample picture we were given.
+It is also able to accurately tell which direction the shuttle is pointing, with the caveat being the angle must be an integer value.
+This is caused by the local database onboard is based of the full picture taken by the satellite orbiting our planet.
+We defined each picture to have a distance of 1 degree which limits the use cases.
 
-This could become a problem. Luckily our shuttle is able to take millions of picture per second so we have a wide range to work with. The super computer onboard will easily go through all pictures and find a match in no time. This makes the odds of failure to find a picture insignificant.   
+This could become a problem.
+Luckily our shuttle is able to take millions of picture per second so we have a wide range to work with.
+The super computer onboard will easily go through all pictures and find a match in no time.
+This makes the odds of failure to find a picture insignificant.
 
 
 \section{Conclusion} \label{sec:conclusion}
@@ -285,17 +333,17 @@ This could become a problem. Luckily our shuttle is able to take millions of pic
 \subsection{Calculating the limitations on $ X $ and $ Y $.} \label{ssec: lim x,y}
 
 \[
-	X = κ  \sin θ \sin (ϕ - ϕ _0)
+	X = \kappa  \sin \theta \sin (ϕ - ϕ _0)
 \]
 To make it easier to find the limitations we set $ X = 0 $. 
 \[
-κ \sin θ \sin (ϕ - ϕ _0) = 0 
+\kappa \sin \theta \sin (ϕ - ϕ _0) = 0
 \]
-Inserting the definition of $ κ $ from equation \ref{eq: kappa}:
+Inserting the definition of $ \kappa $ from equation \ref{eq: kappa}:
 \[
 	\frac{2 \sin θ \sin (ϕ - ϕ _0)}{1 + \cos \theta _{0}\cos \theta + \sin \theta _{0} \sin \theta \cos (\phi - \phi _{0})} = 0
 \]
-Inserting the ranges of values for $ θ $ and $ θ_0 $ from equation \ref{eq: limitations phi and theta}, we get the upper and lower limit of what equations to solve. 
+Inserting the ranges of values for $ \theta $ and $ \theta_0 $ from equation~\ref{eq: limitations phi and theta}, we get the upper and lower limit of what equations to solve.
 \[
 \frac{2 \sin  θ \sin (\pm α_ϕ / 2)}{1 + \cos θ_0 \cos θ + \sin θ_0 \sin  θ \cos (\pm α_ϕ / 2)} = 0
 \]
