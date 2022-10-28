@@ -11,7 +11,7 @@
 \usepackage{listings}
 \usepackage{subfigure}
 % \usepackage[style=science, backend=biber]{biblatex}
-% \addbibresource{References_Part_4.bib} TODO: Slett før innlevering
+% \addbibresource{References_Part_4.bib} TODO: Slett kommentar før innlevering
 \hypersetup{
     colorlinks,
     linkcolor={red!50!black},
@@ -55,7 +55,7 @@ To orient ourselves, three things will be required.\\
 To know where our spacecraft is located in the solar system, we need to know our position.
 The position can be found using a process called trilateration.\\
 Trilateration is the process by which one determines the position of a body using measured distances to known positions.%~\parencite[][]{Relevant_theory}\\ 
-TODO: % Ta bort kommentar 
+% TODO: Ta bort kommentar
 This means we can use measure distances from the spacecraft to object for which we know the position and calculate our own position from there.
 These measurements will be done by our onboard radar array.\\
 The software for the array includes an index of all known objects in our solar system and can therefore include the radius of the object in it's calculations.
@@ -63,7 +63,9 @@ The measured distance will therefore always be from the spacecraft to the center
 As most objects in space - including the spacecraft itself - are moving, we need to specify the point in time when the measurements were taken.
 Otherwise, we could not know the exact location of the object we are measuring the distance to.\\
 Furthermore, we need to know in which direction we are moving.
-This consists of two parts. First, we create a reference picture of the universe in all directions with the earth in the center. Second, we take a picture on our shuttle and compare that picture with the reference picture to calculate which direction we are looking.\\
+This consists of two parts.
+First, we create a reference picture of the universe in all directions with the earth in the center.
+Second, we take a picture on our shuttle and compare that picture with the reference picture to calculate which direction we are looking.\\
 We also need to know the velocity of the spacecraft relative to the star in our solar system.
 To find the velocity relative to a star, we can use a phenomenon called Doppler shift.
 Electromagnetic radiation consist of waves which have an amplitude and a frequency.
@@ -83,13 +85,16 @@ This spike in the amount of radiation at a specific wavelength is called the $H_
 To be able to do all calculations, a cartesian coordinate system will be used with the star in our solar system being in the origin and the x-axis pointing at the position of planet 0 at $T = 0$.
 
 \section{Theory} \label{sec:theory}
-% For theory, see section Relevant Mathematics in the project description~\parencite[][]{Relevant_theory}
+% For theory, see section Relevant Mathematics in the project description~\parencite[][]{Relevant_theory} TODO: Ta bort kommentar
 
 \section{Method} \label{sec:method}
 \subsection{Generating Pictures} \label{subsec: generating pictures}
 
 
-A satellite is orbiting our home planet and has taken a $ 180 ^{o} \times 360 ^{o} $ picture of the entire sky where all positions are described using spherical coordinates. As the stars and galaxies as very far away we are going to assume the pictures looks the same from the perspective of our shuttle. Using this picture we can create a stereographic projection as a means to convert from spherical coordinates to planar coordinates. Comparing the picture taken from a camera at on the shuttle we can find our orientation.
+A satellite is orbiting our home planet and has taken a $ 180 ^{o} \times 360 ^{o} $ picture of the entire sky where all positions are described using spherical coordinates.
+As the stars and galaxies as very far away we are going to assume the pictures looks the same from the perspective of our shuttle.
+Using this picture we can create a stereographic projection as a means to convert from spherical coordinates to planar coordinates.
+Comparing the picture taken from a camera at on the shuttle we can find our orientation.
 \begin{figure}[h!]
   \centering
   \includegraphics[scale = .2]{Figures/Stereographic_projection}
@@ -111,7 +116,7 @@ To relate the spherical coordinates $ (\theta, \phi) $ to the planar coordinates
 	\end{equation}
 \end{subequations}
 
-To relate planar coordinates $ X,Y $ with spherical coordinates $ ϕ, θ $ we use the following equations 
+To relate planar coordinates $ X,Y $ with spherical coordinates $ \varphi, \theta $ we use the following equations
 
 \begin{subequations} \label{eq: planar to spherical coordinates}
 	\begin{equation}
@@ -123,9 +128,12 @@ To relate planar coordinates $ X,Y $ with spherical coordinates $ ϕ, θ $ we us
   \end{subequations}
 
 
-Using equations \ref{eq: planar to spherical coordinates} we can convert the data taken from the satellite containing values for $ X,Y  $ and the color of the pixel in the RGB format, into a reverse stereographic projection in the $ ϕ, \theta $ -plane. This gives us a complete reference picture using spherical coordinates!
+Using equations~\ref{eq: planar to spherical coordinates} we can convert the data taken from the satellite containing values for $ X,Y  $ and the color of the pixel in the RGB format, into a reverse stereographic projection in the $ \varphi, \theta $ -plane.
+This gives us a complete reference picture using spherical coordinates!
 
-When the camera onboard takes a pictures it will be limited by its field of view (FOV). The FOV will be described as the maximum angular width $ \alpha $ of the photo. We use the following equations to define it. 
+When the camera onboard takes a pictures it will be limited by its field of view (FOV).
+The FOV will be described as the maximum angular width $ \alpha $ of the photo.
+We use the following equations to define it.
 \begin{equation} \label{eq: max angular width}
 	α _{\theta} = θ _{max} - \theta _{min}, \quad α _{\phi} = ϕ _{max} - ϕ _{min}
 \end{equation}
@@ -135,7 +143,7 @@ This creates ranges of coordinates for $\theta$ and $\phi$:
   - \frac{\alpha _{\theta}}{2} \le θ - θ _{0} \le \frac{\alpha _{\theta }}{2}, \quad - \frac{\alpha _{\theta}}{2} \le ϕ  - ϕ _{0} \le \frac{\alpha _{\theta }}{2}
 \end{equation}
 
-This, in turn, also creates limitations on the coordinates $ (X,Y) $ of the stereographic projection derrived in \ref{ssec: lim x,y}: 
+This, in turn, also creates limitations on the coordinates $ (X,Y) $ of the stereographic projection derived in~\ref{eq: limitations X and Y lim}:
 \begin{subequations} \label{eq: limitations X and Y lim}
 	\begin{equation}
 		X _{max / min} = ± \frac{2 \sin (α _{\phi} / 2)}{1 + \cos (\alpha _{\phi})}
@@ -149,12 +157,19 @@ This, in turn, also creates limitations on the coordinates $ (X,Y) $ of the ster
 \end{subequations}
 This is the key to generating a grid of x and y values which we will base our position from later. 
 
-To help us check that our calculations are correct we have been given a sample picture we will recreate using equations \ref{eq: planar to spherical coordinates}
-The picture is centered around $ \phi = 0^{o} $ and $ \theta = 90^{o} $. The camera used has a FOV of $ \alpha_{\theta} = \alpha_{\phi} = 70^{o} $. To get the full range of the coordinates $ (X,Y) $ we simply find the height and width of the array containing the data. With this information we are able to recreate the same picture~\ref{fig: ref picture}
+To help us check that our calculations are correct we have been given a sample picture we will recreate using equations~\ref{eq: planar to spherical coordinates}
+The picture is centered around $ \phi = 0^{o} $ and $ \theta = 90^{o} $.
+The camera used has a FOV of $ \alpha_{\theta} = \alpha_{\phi} = 70^{o} $.
+To get the full range of the coordinates $ (X,Y) $ we simply find the height and width of the array containing the data.
+With this information we are able to recreate the same picture~\ref{fig: ref picture}
 
 
 \subsection{Image Analysis} \label{ssec: image analysis}
-We have assumed that $ \theta_{0} = \frac{\pi}{2} $ for the entire trip which means there is only one variable, the angle which the picture is centered around $ \phi_{new} $. A simple solution can be implemented assuming the space shuttle only turns at integer angle values. First, we create an Image object using the PIL module. Then we iterate over all angles $ \phi \in  \left\{ 0^{o}, 1^{o}, 2^{o} \dots 359 ^{o} \right\}  $ and compare the Image with the ones we created ourselves. Once we get a match we know our $ \phi _{0} $.
+We have assumed that $ \theta_{0} = \frac{\pi}{2} $ for the entire trip which means there is only one variable, the angle which the picture is centered around $ \phi_{new} $.
+A simple solution can be implemented assuming the space shuttle only turns at integer angle values.
+First, we create an Image object using the PIL module.
+Then we iterate over all angles $ \phi \in  \left\{ 0^{o}, 1^{o}, 2^{o} \dots 359 ^{o} \right\}  $ and compare the Image with the ones we created ourselves.
+Once we get a match we know our $ \phi _{0} $.
 
 
 
@@ -213,11 +228,11 @@ $v_u = \begin{pmatrix}
 The position of the spacecraft will be determined using the trilateration process.
 This process is much used for locating purposes, which includes the global positioning system (GPS).\\
 Using the onboard radar array we will be able to determine distances to the star in our solar system and other planets at a specific point in time $T_m$.
-The position of the other objects has already been found as a function of time and can therefore be determined for the time $T_m$.\\
+The position of the other objects has already been found as a function of time and can therefore be determined for the time $t_m$.\\
 \begin{align*}
-    S\left(T \right) &= \left(x_S, y_S \right)\\
-	P_1\left(T \right) &= \left(x_{P1}, y_{P1} \right)\\
-	P_2\left(T \right) &= \left(x_{P2}, y_{P2} \right)
+    S\left(t \right) &= \left(x_S, y_S \right)\\
+	P_1\left(t \right) &= \left(x_{P1}, y_{P1} \right)\\
+	P_2\left(t \right) &= \left(x_{P2}, y_{P2} \right)
 \end{align*}
 The radar will be used to find the distance to two planets as well as the distance to the star in our solar system.
 The distance to the star in our solar system $r_S$ and the distance to the two planets $r_{P1}$ and $r_{P2}$ can be described using Pythagoras theorem.
@@ -252,9 +267,9 @@ Solving the equation set consisting of equations~\eqref{r_s},~\eqref{r_p1} and~\
 	y_{SC}& = \frac{CD - AF}{BD - AE}
 \end{align*}
 % The calculations for this are based on the calculations from~\parencite[][]{trilateration} TODO: Slett før innlevering
-The position of the spacecraft $SC$ is then given by
+The position of the spacecraft $SC(t)$ is then given by
 \begin{align*}
-    SC = \left(x_{SC}, y_{SC} \right)
+    SC(t) = \left(x_{SC}, y_{SC} \right)
 \end{align*}
 
 
@@ -290,7 +305,10 @@ The distances from the spacecraft to the different bodies are
 	r_{P6} = 47.86636 \,AU\\
 \end{align*}
 These distances have then been used to triangulate the position of the spacecraft right after reaching outer space using the method described in section~\ref{subsec:the-position-of-the-spacecraft}.
-This amounted to the position of the spacecraft being $SC = (9.3141, 1.2278 \times 10^{-4}) AU$.\\
+This amounted to the position of the spacecraft being
+\begin{align}
+    SC(t_m) = (9.3141, 1.2278 \times 10^{-4}) AU \label{pos_results}
+\end{align}
 
 Furthermore, the velocity of the spacecraft of the spacecraft has been calculated using the methods from section~\ref{subsec:determining-the-velocity}.
 The dopplershifts $\Delta\lambda_{SC1}$ and $\Delta\lambda_{SC2}$ of the $H_{\alpha}$ spectral line from the two reference stars at the angles $ \phi_1 = 281.057^{\circ}$ and $ \phi_2 = 157.433^{\circ}$ have been measured using onboard instruments.
@@ -305,24 +323,51 @@ The dopplershifts at the star in our solar system have been predetermined by our
 	&\Delta\lambda_{ST2} = -0.0042600 \,\text{nm}
 \end{align*}
 Using these measurements, the velocity $v_{SC}$ of the spacecraft has been determined to be
-\begin{align*}
-    v_{SC} = (2.7712, 4.3863) \,\text{AU/Year}
-\end{align*}
+\begin{align}
+    v_{SC}(t_m) = (2.7712, 4.3863) \,\text{AU/Year} \label{vel_results}
+\end{align}
 
 By combining all these measurements and results, we were successfully able to determine the position fo the spacecraft when reaching space after launching.\\
 After successfully determining the position after reaching space, the software has been uploaded to the spacecrafts main computer.
 This means, the spacecraft will be able to do all the calculations, and therefore orient itself by sending a simple command to it.
 
 \section{Discussion} \label{sec:discussion}
-The software is able to accurately recreate the sample picture we were given.
-It is also able to accurately tell which direction the shuttle is pointing, with the caveat being the angle must be an integer value.
-This is caused by the local database onboard is based of the full picture taken by the satellite orbiting our planet.
-We defined each picture to have a distance of 1 degree which limits the use cases.
+The software is able to accurately recreate the sample picture which had been created beforehand by our scientists.
+It is also able to accurately tell which direction the shuttle is pointing, with the caveat being the angle must be an integer value.\\
+This is caused by the local database onboard being based on the full picture taken by the satellite orbiting our planet.
+The full reference picture has been divided up into 360 reference pictures with an offset of 1 degree to each other.\\
+As we are limited to these pictures to find a match for the picture taken by the spacecraft, the direction in which the spacecraft is pointing is rounded to an integer value.\\
+This could become a problem as this limits the accuracy for determining the direction in which the spacecraft is pointing.
+Luckily our spacecraft is able to take hundreds of pictures per second, so we have a wide range to work with.
+The powerful computer onboard will easily go through all pictures and find a match in no time.
+This makes the odds of failure to find a picture insignificant, and enables us to quickly correct for the inaccuracy of single measurements.\\
 
-This could become a problem.
-Luckily our shuttle is able to take millions of picture per second so we have a wide range to work with.
-The super computer onboard will easily go through all pictures and find a match in no time.
-This makes the odds of failure to find a picture insignificant.
+When measuring the doppler shift, we will not get an exact value for the $H_{\alpha}$ spectral line but rather a spike around the value with the value of the doppler shift being the value where the peak of the spike is.
+This means, there can be some small deviations in measuring the doppler shift.
+As we are using float numbers when calculating the velocity based on the doppler shift, these calculations are very precise.
+When comparing the velocity calculated using the doppler shift~\eqref{vel_results} to the velocity found in the launch simulation~\eqref{vel_res_launch}, we see some deviation~\eqref{delta_vel_res}.
+\begin{align}
+SC_{launch}(t_m) = (2.7651, 4.4822) \,\text{AU} \label{vel_res_launch}
+\end{align}
+\begin{align}
+\Delta SC(t_m) = (0.006131, 0.09594) \,\text{AU} \label{delta_vel_res}
+\end{align}
+
+The calculations of the position of the spacecraft relative to the star in our solar system are satisfactory for our purposes.
+The error for the measurements to the planets are very precise since we are using a high-tech radar array to measure these distances.
+During the trilateration calculations, floating point numbers are used, which means that the there is very little loss of precision.
+However, when comparing the results of the measurements~\eqref{pos_results} to the result we received from the launch simulation~\eqref{pos_res_launch}, we can see some deviation~\eqref{delta_pos_res}.
+\begin{align}
+SC_{launch}(t_m) = (9.3141, 1.2362 \times 10^{-04}) \,\text{AU} \label{pos_res_launch}
+\end{align}
+\begin{align}
+\Delta SC(t_m) = (1.00 \times 10^{-7}, 0.008582) \,\text{AU} \label{delta_pos_res}
+\end{align}
+
+The deviations~\eqref{delta_vel_res} and~\eqref{delta_pos_res} in the velocity and position are most likely due to inaccuracies in the launch simulation.
+Even though we are using the leapfrog method, which is an advanced simulation algorithm, we still get some deviation from the actual result with the timesteps we used.
+Using smaller timesteps would result in a smaller error in the launch simulation.
+However, the position determined using the trilateration method is very precise, and the velocity determined using the doppler shift is also sufficiently precise.
 
 
 \section{Conclusion} \label{sec:conclusion}
@@ -330,7 +375,7 @@ This makes the odds of failure to find a picture insignificant.
 
 
 \section{Appendix: Mathematical Derivations}
-\subsection{Calculating the limitations on $ X $ and $ Y $.} \label{ssec: lim x,y}
+\subsection{Calculating the limitations on $ X $ and $ Y $} \label{ssec: lim x,y}
 
 \[
 	X = \kappa  \sin \theta \sin (ϕ - ϕ _0)
@@ -339,7 +384,7 @@ To make it easier to find the limitations we set $ X = 0 $.
 \[
 \kappa \sin \theta \sin (ϕ - ϕ _0) = 0
 \]
-Inserting the definition of $ \kappa $ from equation \ref{eq: kappa}:
+Inserting the definition of $ \kappa $ from equation~\ref{eq: kappa}:
 \[
 	\frac{2 \sin θ \sin (ϕ - ϕ _0)}{1 + \cos \theta _{0}\cos \theta + \sin \theta _{0} \sin \theta \cos (\phi - \phi _{0})} = 0
 \]
@@ -351,6 +396,6 @@ Inserting the ranges of values for $ \theta $ and $ \theta_0 $ from equation~\re
 
 \newpage
 %\printbibliography 
-TODO: % Ta bort kommentar
+%TODO: Ta bort kommentar
 
 \end{document}
