@@ -12,5 +12,3 @@ username = "janniesc"
 seed = utils.get_seed(username)
 system = SolarSystem(seed)
 mission = SpaceMission(seed)
-planet_mass = system.masses[0]
-star_mass = system.star_mass
