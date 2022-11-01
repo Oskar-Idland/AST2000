@@ -22,7 +22,7 @@ def Reverse_Stereographic_Projection(phi, theta, theta_0, phi_0):
     kappa = 2/(1 + cos(theta_0)*cos(theta) + sin(theta_0)*sin(theta)*cos(phi - phi_0))
     X = kappa * sin(theta)*sin(phi - phi_0)
     Y = kappa * (sin(theta_0)*cos(theta) - cos(theta_0)*sin(theta)*cos(phi - phi_0))
-    return X,Y 
+    return X, Y
 
 def Stereographic_Projection(X,Y,phi_0,theta_0):
     '''
@@ -32,7 +32,7 @@ def Stereographic_Projection(X,Y,phi_0,theta_0):
     '''
     rho = np.sqrt(X**2 + Y**2)
     beta = 2*arctan(rho/2)
-    theta = theta_0  - arcsin(cos(beta)*cos(theta_0) + (Y/rho)*sin(beta)*sin(theta_0))
+    theta = theta_0 - arcsin(cos(beta)*cos(theta_0) + (Y/rho)*sin(beta)*sin(theta_0))
     phi = phi_0 + arctan((X*sin(beta)) / (rho*sin(theta_0)*cos(beta) - Y*cos(theta_0)*sin(beta)))
     return phi, theta
 
@@ -57,7 +57,7 @@ def find_angle(image_filename: str) -> int:
     for phi_0 in range(360):
         image = Image.open(image_filename)
         filenumber = f'{phi_0}'.zfill(3)
-        filename = f'Sky Images\sky_image_{filenumber}_degrees.png'
+        filename = f'../Sky Images/sky_image_{filenumber}_degrees.png'
         possible_match = Image.open(os.path.join(filename))
         if image == possible_match:
             return phi_0
@@ -99,7 +99,7 @@ if __name__ == "__main__":
     newImage.save('Test_Image.png')
     
     image = Image.open('sample0200.png')
-    possible_match = Image.open(os.path.join('Sky Images/sky_image_020_degrees.png'))
+    possible_match = Image.open(os.path.join('../Sky Images/sky_image_020_degrees.png'))
     
     print(image == possible_match)
     # print(f'The angle phi_0 of the test image is {find_angle("Test_Image.png")} degrees')

@@ -51,6 +51,7 @@ thrust_per_box = 8.113886899686883e-11
 mass_flow_rate_per_box = 2.413509643703512e-15
 num_of_boxes = thrust_force/thrust_per_box
 fuel_consumption = mass_flow_rate_per_box*num_of_boxes  # Kg/s
+estimated_time = 1000
 
 wet_mass = dry_mass + fuel_mass
 mass_home_planet = system.masses[0]*1.989e30
@@ -72,6 +73,7 @@ vel[0] = [-np.sin(planet_theta)*tang_vel_planet, np.cos(planet_theta)*tang_vel_p
 print(f"Wetmass: {wet_mass}")
 # Integration loop
 for i in range(N-1):
+    # Using Leapfrog method
     wet_mass_i = wet_mass-(fuel_consumption*dt*i)
 
     r = np.linalg.norm(pos[i])
@@ -88,11 +90,6 @@ for i in range(N-1):
     acc = (Fg+thrust)/wet_mass_i
 
     vel[i+1] = vh + acc*dt/2
-
-    # wet_mass = wet_mass - (fuel_consumption * dt)
-
-
-
 
     # Checking if we run out of fuel
     if wet_mass <= dry_mass:
@@ -132,13 +129,17 @@ sol_sys_coords, sol_sys_vel, sol_sys_time = chg_coords(planet_idx, exit_coords, 
 
 print("\nIn solar system coordinate system:")
 print(f"Position: ({sol_sys_coords[0]:E}, {sol_sys_coords[1]:E}) AU")
-print(f"Position: ({sol_sys_vel[0]:E}, {sol_sys_vel[1]:E}) AU/Year")
+print(f"Velocity: ({sol_sys_vel[0]:E}, {sol_sys_vel[1]:E}) AU/Year")
 print(f"Elapsed Time: {sol_sys_time:E} Years\n")
 print(f"Number of Boxes: {num_of_boxes:e}")
 print(f"Mass flow rate: {fuel_consumption} Kg/s\n")
 # Verifying results
 launch_position = create_orbit_func(planet_idx)[0](t_orbit_launch) + utils.m_to_AU(radius_home_planet)*np.array([np.cos(planet_theta), np.sin(planet_theta)])
-mission.set_launch_parameters(thrust_force, fuel_consumption, fuel_mass, 1200, launch_position, t_orbit_launch)
+mission.set_launch_parameters(thrust_force, fuel_consumption, fuel_mass, estimated_time, launch_position, t_orbit_launch)
 mission.launch_rocket()
 mission.verify_launch_result(sol_sys_coords)
+
+# Saving Launch parameters for later use
+launch_parameters = np.array([sol_sys_coords[0], sol_sys_coords[1], thrust_force, fuel_consumption, fuel_mass, estimated_time, launch_position[0], launch_position[1], t_orbit_launch, dt])
+np.save("Launch_Parameters.npy", launch_parameters)
 
