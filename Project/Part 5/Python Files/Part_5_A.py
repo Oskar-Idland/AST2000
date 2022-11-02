@@ -1,8 +1,8 @@
 import numpy as np
 import scipy as sp  
+import os
 import matplotlib.pyplot as plt
 import ast2000tools.utils as utils
-import ast2000tools.constants as constants
 from ast2000tools.solar_system import SolarSystem
 from ast2000tools.space_mission import SpaceMission
 G = 4*np.pi**2
@@ -17,7 +17,8 @@ sum_planet_mass = np.sum(system.masses)
 
 def trajectory(t: float, T: float, dt: float, v0: np.ndarray, r0: np.ndarray):
     '''
-    Returns the final time (yr), position(AU) and velocity(AU)
+    Finds the trajectory of the space shuttle \n
+    Returns the final time (yr), velocity(AU) and position(AU)
     '''
     N = int((T-t)/dt)
     r = np.zeros((N,2)); r[0] = r0
@@ -54,23 +55,22 @@ def trajectory(t: float, T: float, dt: float, v0: np.ndarray, r0: np.ndarray):
         a = -G *(m_system)/(np.linalg.norm(r_shuttle_system)**3) * r_shuttle_system
         v[i+1] = vh + a * dt / 2
         
-        '''
-        -----------------
-        '''
-
-        
     return T, v, r
 
 
 if __name__ == "__main__":
+    planet_file = np.load('planet_trajectories.npz')
+    dt = planet_file['times'][1] # Nice to have the same time index as used by SpaceMission
     planet_r = utils.km_to_AU(system.radii[0])
-    v0 = np.array([.5,.5])
+    v0 = np.array([1,1])
     r0 = np.array([planet_r + system.initial_positions[0,0], 0])
-    t, v, r = trajectory(0, 5, .0001, v0, r0)
+    t, v, r = trajectory(0, 2, dt, v0, r0)
+    plt.scatter(r[0,0], r[0,1], label = 'Beginning')
     plt.plot(r[:,0],r[:,1], label="Shuttle trajectory")
     plt.xlabel("x [AU]")
     plt.ylabel("y [AU]")
     plt.axis('equal')
-    print(np.linalg.norm(system.initial_positions[:,0]))
-    print(np.linalg.norm(system.initial_positions[:,1]))
+    plt.legend()
+    print(system.initial_positions[:,0])
+    print(system.initial_positions[:,1])
     plt.show()

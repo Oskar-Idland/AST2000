@@ -7,6 +7,7 @@ from ast2000tools.solar_system import SolarSystem
 from ast2000tools.space_mission import SpaceMission
 import time
 import pandas as pd
+import os
 start = time.time()
 
 username = "janniesc"
@@ -173,7 +174,7 @@ plt.scatter(0, 0, c="k")
 plt.axis("equal")
 plt.xlabel("x-position [AU]")
 plt.ylabel("y-position [AU]")
-plt.savefig("../Figures/Orbit_plots.png")
+plt.savefig(os.path.join("Figures/Orbit_plots.png"))
 plt.show()
 
 A1, S1 = A_kepler(an_planet_orbits, 0, 1, 0)
