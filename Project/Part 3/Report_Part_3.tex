@@ -110,9 +110,9 @@ Flux is defined as energy per area per time interval.
 \end{align*}
 When solving the integral described above, it results in a relation between the temperature and the Flux of a \colorbox{red}{black body}.
 This expression is also called Stefan-Boltzmanns law.
-\begin{align*}
-    F = \sigma T^4
-\end{align*}
+\begin{align}
+    F = \sigma T^4 \label{stefan_boltzmann_law}
+\end{align}
 Where $\sigma$ is a constant.\\
 Note that these two temperatures are not exactly the same, even though they both describe the temperature of the same black body.
 From Wien's displacement law we obtain the color temperature, whereas from Stefan-Boltzmanns law we obtain the effective temperature.\\
@@ -141,13 +141,9 @@ The habitable zone is defined to be the zone around a star where the temperature
 The existence of liquid water is a requirement for the existence of life forms as we know them, which is why this zone is called habitable zone.
 When assuming that the planets in our solar system are black bodies, this expression in combination with Stefan-Boltzmanns law can be used to determine the temperature of a planet based on their distance from the star.
 This way we can ultimately determine the inner and outer boundaries of the habitable zone.
+Using mathematical derivations found in~\ref{subsec:app-the-habitable-zone} we find
 \begin{align}
-    &T_{Planet} = \sqrt[4]{\frac{F}{\sigma}}\\
-	&T_{Planet} = \sqrt[4]{\frac{R_{Star}^2 T_{Star}^4}{r^2}} \label{Planet_temp}
-\end{align}
-\begin{align}
-	&r^2 = \frac{R_{Star}^2 T_{Star}^4}{T_{Planet}^4}\\
-	&r = \frac{R_{Star} T_{Star}^2}{T_{Planet}^2} \label{Radius_temp}
+	r = \frac{R_{Star} T_{Star}^2}{T_{Planet}^2} \label{Radius_temp}
 \end{align}
 
 \subsection{Powering the Rover}\label{subsec:powering-the-rover}
@@ -197,14 +193,11 @@ The gravitational forces are given by
 \end{align}
 With $M_{SC}$ being the mass of the spacecraft, $M_{Planet}$ being the mass of the planet, $M_{Star}$ being the mass of the star, $\gamma$ the universal gravitational constant, $l$ the distance between the spacecraft and the planet and $\textbf{r}$ the vector pointing from the star to the spacecraft.\\
 The ratio $k$ between these two forces, can be expressed as
+\begin{align}
+    G_{Planet} = k\, G_{Star} \label{grav_forces}
+\end{align}
+Using derivations found in~\ref{subsec:app-gravitational-forces}, we find
 \begin{align*}
-    G_{Planet} = k\, G_{Star}
-\end{align*}
-By inserting equations~\eqref{G_Planet} and~\eqref{G_Star}, we find
-\begin{align*}
-    \gamma \, \frac{M_{SC}M_{Planet}}{l^2} &= k\, \gamma \, \frac{M_{SC}M_{Star}}{|\textbf{r}|^2}\\
-	\frac{M_{Planet}}{l^2} &= k\, \frac{M_{Star}}{|\textbf{r}|^2}\\
-	l^2 =& \frac{M_{Planet}|\textbf{r}|^2}{k\,M_{Star}}\\
 	l =& |\textbf{r}|\sqrt{\frac{M_{Planet}}{k\,M_{Star}}}
 \end{align*}\\
 
@@ -445,19 +438,46 @@ By inserting equations~\eqref{G_Planet} and~\eqref{G_Star}, we find
 \subsection{Imaging the planet}\label{subsec:disc_imaging-the-planet}
 	When looking at the results the requirements of taking a resolved picture, we see a linear relationship between the maximum distance and the number of pixels in one dimension of the sensor.
 	Since the sensor is a square, the total number of required pixels will be proportional to the square of the distance.\\
-	However, a higher resolution os not necessarily better, as it often means higher costs and larger, more sensitive equipment.
-	Therefore we will first have to simulate our trajectory to determine how close we can approach the planet before we need a picture to orient ourselves.
+	However, a higher resolution is not necessarily better, as it often means higher costs and larger, more sensitive equipment.
+	Therefore, we will first have to simulate our trajectory to determine how close we can approach the planet before we need a picture to orient ourselves.
 
 \section{Conclusion} \label{sec:conclusion}
-And the conclusion
-
-\newpage
+	In this paper, an expression for the electromagnetic flux based on the distance from the star in our solar system has been successfully determined.
+	Furthermore, a connection between the flux and the temperature of a planet at a given distance has been deduced, and determined.\\
+	Using the expression for the temperature, the boundaries of the habitable zone have been determined, and which planets lie in said zone.
+	In our case, the planets inside this zone are planet 2 and 5.
+	The results we have received agree quite well with our expectations.\\
+	Since we want to land a rover on our destination planet, we used the expression for the flux to determine the required size of the solar panels of the rover.
+	This lead to a very reasonable result.\\
+	However, before landing the rover, our spacecraft first needs to reach the planet and enter orbit around it.
+	To do this we have found an expression, which relates the gravitational forces of the star on the spacecraft to the gravitational forces of the planet on the spacecraft.
+	This expression has been used to find the required distance from the planet to achieve a certain ratio between the forces.\\
+	Additionally, a relationship between the maximum distance at which the spacecraft is able to take a resolved picture and the camera resolution has been determined.
+	These results will be extremely useful in further planning and simulations of our mission of sending the spacecraft to our destination.
 
 \section{Appendix: Mathematical Derivations}
-This is the appendix
+	\subsection{The habitable zone}\label{subsec:app-the-habitable-zone}
+	Using~\eqref{stefan_boltzmann_law} and~\eqref{Flux_Distance} we find
+	\begin{align}
+		&T_{Planet} = \sqrt[4]{\frac{F}{\sigma}}\\
+		&T_{Planet} = \sqrt[4]{\frac{R_{Star}^2 T_{Star}^4}{r^2}} \label{Planet_temp}
+	\end{align}
+	\begin{align}
+		&r^2 = \frac{R_{Star}^2 T_{Star}^4}{T_{Planet}^4}\\
+		&r = \frac{R_{Star} T_{Star}^2}{T_{Planet}^2}
+	\end{align}
 
 
-\newpage
+	\subsection{Gravitational forces}\label{subsec:app-gravitational-forces}
+    By inserting equations~\eqref{G_Planet} and~\eqref{G_Star} into equation~\eqref{grav_forces}, we find
+	\begin{align*}
+    	\gamma \, \frac{M_{SC}M_{Planet}}{l^2} &= k\, \gamma \, \frac{M_{SC}M_{Star}}{|\textbf{r}|^2}\\
+		\frac{M_{Planet}}{l^2} &= k\, \frac{M_{Star}}{|\textbf{r}|^2}\\
+		l^2 =& \frac{M_{Planet}|\textbf{r}|^2}{k\,M_{Star}}\\
+		l =& |\textbf{r}|\sqrt{\frac{M_{Planet}}{k\,M_{Star}}}
+	\end{align*}\\
+
+
 \printbibliography
 
 

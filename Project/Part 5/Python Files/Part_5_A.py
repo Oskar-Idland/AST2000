@@ -23,18 +23,18 @@ def trajectory(t: float, T: float, dt: float, v0: np.ndarray, r0: np.ndarray):
     Returns the final time (yr), velocity(AU) and position(AU)
     '''
     N = int((T - t) / dt)
-    r = np.zeros((N, 2));
+    r = np.zeros((N, 2))
     r[0] = r0
-    v = np.zeros((N, 2));
+    v = np.zeros((N, 2))
     v[0] = v0
 
     '''
     We simplify the system by adding all positions, velocities and masses of the planets and star
     '''
     m_system = star_mass + sum_planet_mass
-    r_system = np.array([0.0, 0.0]);
-    v_system = np.array([0.0, 0.0]);
-    com = np.array([0.0, 0.0]);
+    r_system = np.array([0.0, 0.0])
+    v_system = np.array([0.0, 0.0])
+    com = np.array([0.0, 0.0])
     tot_momentum = 0
     for body in range(system.number_of_planets):  # Finds 
         planet_mass = system.masses[body]

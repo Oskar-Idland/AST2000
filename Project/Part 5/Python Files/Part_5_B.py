@@ -66,7 +66,7 @@ if __name__ == "__main__":
     planet_positions = planet_file['planet_positions']
     time = planet_file['times']
     home_planet_trajectory = planet_positions[:, 0, :]
-    target_planet_trajectory = planet_positions[:, 1, :]
+    target_planet_trajectory = planet_positions[:, 5, :]
     smallest_distance, time_index = find_closest_distance(home_planet_trajectory, target_planet_trajectory)
     dt = time[1]  # Nice to have the same time index as used by SpaceMission. Multiplying by 100 to get faster plot
 

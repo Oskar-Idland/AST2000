@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2022.2.21)  2 NOV 2022 18:41
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2022.2.21)  3 NOV 2022 20:37
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -955,36 +955,47 @@ Underfull \hbox (badness 3460) in paragraph at lines 78--85
  []
 
 [1{/usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+
+LaTeX Warning: Reference `subsec:app-the-habitable-zone' on page 2 undefined on
+ input line 144.
+
 [2]
-Underfull \hbox (badness 10000) in paragraph at lines 186--188
+Underfull \hbox (badness 10000) in paragraph at lines 182--184
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 209--210
+LaTeX Warning: Reference `subsec:app-gravitational-forces' on page 3 undefined 
+on input line 199.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 202--203
 
  []
 
 [3]
-<Figures/Radius_flux.png, id=143, 462.528pt x 346.896pt>
+<Figures/Radius_flux.png, id=151, 462.528pt x 346.896pt>
 File: Figures/Radius_flux.png Graphic file (type png)
 <use Figures/Radius_flux.png>
-Package pdftex.def Info: Figures/Radius_flux.png  used on input line 263.
+Package pdftex.def Info: Figures/Radius_flux.png  used on input line 256.
 (pdftex.def)             Requested size: 185.0079pt x 138.75594pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Figures/Radius_temp.png, id=147, 462.528pt x 346.896pt>
+
+LaTeX Warning: Reference `Planet_temp' on page 4 undefined on input line 285.
+
+<Figures/Radius_temp.png, id=154, 462.528pt x 346.896pt>
 File: Figures/Radius_temp.png Graphic file (type png)
 <use Figures/Radius_temp.png>
-Package pdftex.def Info: Figures/Radius_temp.png  used on input line 298.
+Package pdftex.def Info: Figures/Radius_temp.png  used on input line 291.
 (pdftex.def)             Requested size: 185.0079pt x 138.75594pt.
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+LaTeX Warning: Reference `Planet_temp' on page 4 undefined on input line 296.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 322--327
+Underfull \hbox (badness 10000) in paragraph at lines 315--320
 
  []
 
@@ -992,69 +1003,82 @@ Underfull \hbox (badness 10000) in paragraph at lines 322--327
 _flux.png> </Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 3/Figure
 s/Radius_temp.png>]
 
-LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
- on input line 327.
+LaTeX Warning: Reference `Planet_temp' on page 5 undefined on input line 324.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 330--335
+Underfull \hbox (badness 10000) in paragraph at lines 323--328
 
  []
 
-<Figures/Radius_area.png, id=168, 462.528pt x 346.896pt>
+<Figures/Radius_area.png, id=174, 462.528pt x 346.896pt>
 File: Figures/Radius_area.png Graphic file (type png)
 <use Figures/Radius_area.png>
-Package pdftex.def Info: Figures/Radius_area.png  used on input line 347.
+Package pdftex.def Info: Figures/Radius_area.png  used on input line 340.
 (pdftex.def)             Requested size: 185.0079pt x 138.75594pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 371--374
+Underfull \hbox (badness 10000) in paragraph at lines 364--367
 
  []
 
-<Figures/Grav_ratio_k.png, id=170, 462.528pt x 346.896pt>
+<Figures/Grav_ratio_k.png, id=176, 462.528pt x 346.896pt>
 File: Figures/Grav_ratio_k.png Graphic file (type png)
 <use Figures/Grav_ratio_k.png>
-Package pdftex.def Info: Figures/Grav_ratio_k.png  used on input line 383.
+Package pdftex.def Info: Figures/Grav_ratio_k.png  used on input line 376.
 (pdftex.def)             Requested size: 185.0079pt x 138.75594pt.
+<Figures/Res_pixels.png, id=179, 462.528pt x 346.896pt>
+File: Figures/Res_pixels.png Graphic file (type png)
+<use Figures/Res_pixels.png>
+Package pdftex.def Info: Figures/Res_pixels.png  used on input line 393.
+(pdftex.def)             Requested size: 185.0079pt x 138.75594pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
 [5 </Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 3/Figures/Radius
 _area.png> </Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 3/Figure
 s/Grav_ratio_k.png>]
-<Figures/Res_pixels.png, id=183, 462.528pt x 346.896pt>
-File: Figures/Res_pixels.png Graphic file (type png)
-<use Figures/Res_pixels.png>
-Package pdftex.def Info: Figures/Res_pixels.png  used on input line 400.
-(pdftex.def)             Requested size: 185.0079pt x 138.75594pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 417--424
+LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
+ on input line 400.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 410--417
 
  []
 
 [6 </Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 3/Figures/Res_pi
-xels.png>] [7]
-Underfull \hbox (badness 1430) in paragraph at lines 462--462
+xels.png>]
+Underfull \hbox (badness 1496) in paragraph at lines 472--473
+[]\OT1/cmr/m/n/10 By in-sert-ing equa-tions [] and [] into equa-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 478--479
+
+ []
+
+
+Underfull \hbox (badness 1430) in paragraph at lines 482--482
  \OT1/cmr/m/it/9 tro-mag-netic Ra-di-a-tion\OT1/cmr/m/n/9 , "[][]$\OT1/cmtt/m/n
 /9 https : / / www . uio . no /
  []
 
 
-Underfull \hbox (badness 2050) in paragraph at lines 462--462
+Underfull \hbox (badness 2050) in paragraph at lines 482--482
  \OT1/cmtt/m/n/9 studier / emner / matnat / astro / AST2000 / h22 /
  []
 
 
 /Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 3/Report_Part_3.tex:
-465: LaTeX Error: Can be used only in preamble.
+485: LaTeX Error: Can be used only in preamble.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.465 \end{document}
+l.485 \end{document}
                     
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1063,33 +1087,43 @@ or  <return>  to continue without it.
 Package logreq Info: Writing requests to 'Report_Part_3.run.xml'.
 \openout1 = `Report_Part_3.run.xml'.
 
-[8
+[7
 \@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsl
-ine {section}{\numberline {}References}{8}{section*.22}\protected@file@percent 
+ine {section}{\numberline {V}Conclusion}{7}{section*.20}\protected@file@percent
+ }
+\newlabel{sec:conclusion}{{V}{7}{}{section*.20}{}}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsl
+ine {section}{\numberline {VI}Appendix: Mathematical Derivations}{7}{section*.2
+1}\protected@file@percent }
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsl
+ine {subsection}{\numberline {A}The habitable zone}{7}{section*.22}\protected@f
+ile@percent }
+\newlabel{subsec:app-the-habitable-zone}{{VI\,A}{7}{}{section*.22}{}}
+\newlabel{Planet_temp}{{18}{7}{}{equation.6.18}{}}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsl
+ine {subsection}{\numberline {B}Gravitational forces}{7}{section*.23}\protected
+@file@percent }
+\newlabel{subsec:app-gravitational-forces}{{VI\,B}{7}{}{section*.23}{}}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsl
+ine {section}{\numberline {}References}{7}{section*.24}\protected@file@percent 
 }
 ]
-\newlabel{LastPage}{{}{8}{}{}{}}
-\gdef \@abspage@last{8}
+\newlabel{LastPage}{{}{7}{}{}{}}
+\gdef \@abspage@last{7}
 
 (/Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 3/Report_Part_3.aux
 )
 
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+LaTeX Warning: There were undefined references.
 
-
-Package rerunfilecheck Warning: File `Report_Part_3.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `Report_Part_3.out':
-(rerunfilecheck)             Before: 6EDD2C69500D43DD9067AFEF2517A392;3123
-(rerunfilecheck)             After:  29AA95A2B00B502802363CF8A29768BC;3276.
+Package rerunfilecheck Info: File `Report_Part_3.out' has not changed.
+(rerunfilecheck)             Checksum: F821C8E535C35AFCB977F0E616B496B7;3589.
  ) 
 Here is how much of TeX's memory you used:
- 21875 strings out of 478994
- 351318 string characters out of 5858184
- 1140607 words of memory out of 5000000
- 39015 multiletter control sequences out of 15000+600000
+ 21885 strings out of 478994
+ 351495 string characters out of 5858184
+ 1138639 words of memory out of 5000000
+ 39021 multiletter control sequences out of 15000+600000
  411264 words of font info for 61 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  81i,14n,89p,746b,1259s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1112,10 +1146,10 @@ exmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/2021/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb></usr/local/texlive/2021/texmf
 -dist/fonts/type1/public/esint-type1/esint10.pfb>
 Output written on "/Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 3
-/Report_Part_3.pdf" (8 pages, 321701 bytes).
+/Report_Part_3.pdf" (7 pages, 324162 bytes).
 PDF statistics:
- 282 PDF objects out of 1000 (max. 8388607)
- 241 compressed objects within 3 object streams
- 56 named destinations out of 1000 (max. 500000)
- 194 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 292 PDF objects out of 1000 (max. 8388607)
+ 252 compressed objects within 3 object streams
+ 60 named destinations out of 1000 (max. 500000)
+ 218 words of extra memory for PDF output out of 10000 (max. 10000000)
 
