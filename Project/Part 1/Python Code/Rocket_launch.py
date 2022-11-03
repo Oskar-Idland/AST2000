@@ -35,111 +35,125 @@ def chg_coords(planet_idx, coord_in, vel_in, elapsed_time_s, orbit_launch_time):
     return coord_out, vel_out, elapsed_time_yrs
 
 
-# Defining variables
-username = "janniesc"
-seed = utils.get_seed(username)
-N = 200_000
-dt = 0.01
-system = SolarSystem(seed)
-mission = SpaceMission(seed)
-planet_idx = 0
-
-dry_mass = mission.spacecraft_mass  # 1100 Kg
-fuel_mass = 1_500  # Guess! Need at least 198'472 Kg of fuel to reach space (with no fuel left)
-thrust_force = 50_000  # Newton # Needs to be at least wet_mass*9.81
-thrust_per_box = 8.113886899686883e-11
-mass_flow_rate_per_box = 2.413509643703512e-15
-num_of_boxes = thrust_force/thrust_per_box
-fuel_consumption = mass_flow_rate_per_box*num_of_boxes  # Kg/s
-estimated_time = 1000
-
-wet_mass = dry_mass + fuel_mass
-mass_home_planet = system.masses[0]*1.989e30
-rotational_period = system.rotational_periods[0]  # In days
-radius_home_planet = system.radii[0]*1000
-end_i = 0
-t_orbit_launch = 0  # In Years
-planet_theta = 2*np.pi*t_orbit_launch/utils.s_to_yr(rotational_period*24*3600)
-tang_vel_planet = 2*np.pi*radius_home_planet/(rotational_period*24*3600)
+def engine_performance(thrust, fuel_cons, m_init, speed_boost, dt=0.001):
+    v = 0
+    i = 0
+    while v < speed_boost:
+        m = m_init-((i + 0.5)*dt*fuel_cons)
+        a = thrust/m
+        v = v + a*dt
+        i += 1
+    return i*dt*fuel_cons
 
 
-# Creating and initialising arrays
-pos = np.zeros([N, 2])
-vel = np.zeros([N, 2])
-# acc = np.zeros([N, 2])
-pos[0] = [np.cos(planet_theta)*radius_home_planet, np.sin(planet_theta)*radius_home_planet]
-vel[0] = [-np.sin(planet_theta)*tang_vel_planet, np.cos(planet_theta)*tang_vel_planet]
+if __name__ == "__main__":
+    # Defining variables
+    username = "janniesc"
+    seed = utils.get_seed(username)
+    N = 200_000
+    dt = 0.01
+    system = SolarSystem(seed)
+    mission = SpaceMission(seed)
+    planet_idx = 0
 
-print(f"Wetmass: {wet_mass}")
-# Integration loop
-for i in range(N-1):
-    # Using Leapfrog method
-    wet_mass_i = wet_mass-(fuel_consumption*dt*i)
+    dry_mass = mission.spacecraft_mass  # 1100 Kg
+    fuel_mass = 392_000  # Guess!
+    thrust_force = 6_000_000  # Newton # Needs to be at least wet_mass*9.81
+    thrust_per_box = 5.290110991665214e-11  # 8.113886899686883e-11
+    mass_flow_rate_per_box = 2.413509643703512e-15
+    num_of_boxes = thrust_force/thrust_per_box
+    fuel_consumption = mass_flow_rate_per_box*num_of_boxes  # Kg/s
+    estimated_time = 1000
 
-    r = np.linalg.norm(pos[i])
-    thrust = thrust_force*pos[i]/r
-    Fg = -G*mass_home_planet*wet_mass_i*pos[i]/r**3
-    acc = (Fg+thrust)/wet_mass_i
-
-    vh = vel[i] + acc * dt / 2
-    pos[i+1] = pos[i] + vh*dt
-
-    r = np.linalg.norm(pos[i+1])
-    thrust = thrust_force*pos[i+1]/r
-    Fg = -G*mass_home_planet*wet_mass_i*pos[i+1]/r**3
-    acc = (Fg+thrust)/wet_mass_i
-
-    vel[i+1] = vh + acc*dt/2
-
-    # Checking if we run out of fuel
-    if wet_mass <= dry_mass:
-        end_i = i
-        print(f"Ran out of fuel after {end_i*dt} seconds :/")
-        break
-
-    # Checking if we reached escape velocity
-    if np.linalg.norm(vel[i]) >= np.sqrt(2*G*mass_home_planet/r):
-        exit_coords = np.array([pos[i][0], pos[i][1]])
-        exit_vel = np.array([vel[i][0], vel[i][1]])
-        end_i = i
-        elapsed_time = end_i*dt
-        print("SPACE!!!")
-        print(f"Final position: x: {int(exit_coords[0])} m, y: {int(exit_coords[1])} m")
-        print(f"Final velocity: v_x: {int(exit_vel[0])} m/s, v_y: {int(exit_vel[1])} m/s")
-        print(f"Time elapsed: {(elapsed_time/60):.2f} min")
-        print(f"Final mass of spacecraft: {wet_mass:.2f} Kg")
-        print(f"Remaining fuel: {wet_mass-dry_mass} Kg")
-        print(f"Remaining Burn Time: {(wet_mass-dry_mass)/(fuel_consumption*60):.2f} min")
-        break
+    wet_mass = dry_mass + fuel_mass
+    mass_home_planet = system.masses[0]*1.989e30
+    rotational_period = system.rotational_periods[0]  # In days
+    radius_home_planet = system.radii[0]*1000
+    end_i = 0
+    t_orbit_launch = 0  # In Years
+    planet_theta = 2*np.pi*t_orbit_launch/utils.s_to_yr(rotational_period*24*3600)
+    tang_vel_planet = 2*np.pi*radius_home_planet/(rotational_period*24*3600)
 
 
-# Plotting
-# plt.plot(pos[:end_i, 0], pos[:end_i, 1], color="k")
-plt.plot(pos[:10000, 0], pos[:10000, 1], color="k")
-# plt.scatter(create_orbit_func(planet_idx)[0](t_orbit_launch)[0] + radius_home_planet*np.cos(planet_theta), create_orbit_func(planet_idx)[0](t_orbit_launch)[1] + radius_home_planet*np.sin(planet_theta), c="r")  # Plotting launch position
-plt.xlabel("x-position")
-plt.ylabel("y-position")
-# plt.axis("equal")
-plt.grid()
-plt.savefig("../Figures/Launch_plot.png")
-plt.show()
+    # Creating and initialising arrays
+    pos = np.zeros([N, 2])
+    vel = np.zeros([N, 2])
+    # acc = np.zeros([N, 2])
+    pos[0] = [np.cos(planet_theta)*radius_home_planet, np.sin(planet_theta)*radius_home_planet]
+    vel[0] = [-np.sin(planet_theta)*tang_vel_planet, np.cos(planet_theta)*tang_vel_planet]
 
-# Changing coordinates to solar coordinate system
-sol_sys_coords, sol_sys_vel, sol_sys_time = chg_coords(planet_idx, exit_coords, exit_vel, elapsed_time, t_orbit_launch)
+    print(f"Wetmass: {wet_mass}")
+    # Integration loop
+    for i in range(N-1):
+        # Using Leapfrog method
+        wet_mass_i = wet_mass-(fuel_consumption*dt*i)
 
-print("\nIn solar system coordinate system:")
-print(f"Position: ({sol_sys_coords[0]:E}, {sol_sys_coords[1]:E}) AU")
-print(f"Velocity: ({sol_sys_vel[0]:E}, {sol_sys_vel[1]:E}) AU/Year")
-print(f"Elapsed Time: {sol_sys_time:E} Years\n")
-print(f"Number of Boxes: {num_of_boxes:e}")
-print(f"Mass flow rate: {fuel_consumption} Kg/s\n")
-# Verifying results
-launch_position = create_orbit_func(planet_idx)[0](t_orbit_launch) + utils.m_to_AU(radius_home_planet)*np.array([np.cos(planet_theta), np.sin(planet_theta)])
-mission.set_launch_parameters(thrust_force, fuel_consumption, fuel_mass, estimated_time, launch_position, t_orbit_launch)
-mission.launch_rocket()
-mission.verify_launch_result(sol_sys_coords)
+        r = np.linalg.norm(pos[i])
+        thrust = thrust_force*pos[i]/r
+        Fg = -G*mass_home_planet*wet_mass_i*pos[i]/r**3
+        if i < 10:
+            print(G*mass_home_planet/(radius_home_planet**2))
+        acc = (Fg+thrust)/wet_mass_i
 
-# Saving Launch parameters for later use
-launch_parameters = np.array([sol_sys_coords[0], sol_sys_coords[1], thrust_force, fuel_consumption, fuel_mass, estimated_time, launch_position[0], launch_position[1], t_orbit_launch, dt])
-np.save("Launch_Parameters.npy", launch_parameters)
+        vh = vel[i] + acc * dt / 2
+        pos[i+1] = pos[i] + vh*dt
+
+        r = np.linalg.norm(pos[i+1])
+        thrust = thrust_force*pos[i+1]/r
+        Fg = -G*mass_home_planet*wet_mass_i*pos[i+1]/r**3
+        acc = (Fg+thrust)/wet_mass_i
+
+        vel[i+1] = vh + acc*dt/2
+
+        # Checking if we run out of fuel
+        if wet_mass <= dry_mass:
+            end_i = i
+            print(f"Ran out of fuel after {end_i*dt} seconds :/")
+            break
+
+        # Checking if we reached escape velocity
+        if np.linalg.norm(vel[i]) >= np.sqrt(2*G*mass_home_planet/r):
+            exit_coords = np.array([pos[i][0], pos[i][1]])
+            exit_vel = np.array([vel[i][0], vel[i][1]])
+            end_i = i
+            elapsed_time = end_i*dt
+            print("SPACE!!!")
+            print(f"Final position: x: {int(exit_coords[0])} m, y: {int(exit_coords[1])} m")
+            print(f"Final velocity: v_x: {int(exit_vel[0])} m/s, v_y: {int(exit_vel[1])} m/s")
+            print(f"Time elapsed: {(elapsed_time/60):.2f} min")
+            print(f"Final mass of spacecraft: {wet_mass:.2f} Kg")
+            print(f"Remaining fuel: {wet_mass_i-dry_mass} Kg")
+            print(f"Remaining Burn Time: {(wet_mass_i-dry_mass)/(fuel_consumption*60):.2f} min")
+            break
+
+
+    # Plotting
+    # plt.plot(pos[:end_i, 0], pos[:end_i, 1], color="k")
+    plt.plot(pos[:10000, 0], pos[:10000, 1], color="k")
+    # plt.scatter(create_orbit_func(planet_idx)[0](t_orbit_launch)[0] + radius_home_planet*np.cos(planet_theta), create_orbit_func(planet_idx)[0](t_orbit_launch)[1] + radius_home_planet*np.sin(planet_theta), c="r")  # Plotting launch position
+    plt.xlabel("x-position")
+    plt.ylabel("y-position")
+    # plt.axis("equal")
+    plt.grid()
+    plt.savefig("../Figures/Launch_plot.png")
+    plt.show()
+
+    # Changing coordinates to solar coordinate system
+    sol_sys_coords, sol_sys_vel, sol_sys_time = chg_coords(planet_idx, exit_coords, exit_vel, elapsed_time, t_orbit_launch)
+
+    print("\nIn solar system coordinate system:")
+    print(f"Position: ({sol_sys_coords[0]:E}, {sol_sys_coords[1]:E}) AU")
+    print(f"Velocity: ({sol_sys_vel[0]:E}, {sol_sys_vel[1]:E}) AU/Year")
+    print(f"Elapsed Time: {sol_sys_time:E} Years\n")
+    print(f"Number of Boxes: {num_of_boxes:e}")
+    print(f"Mass flow rate: {fuel_consumption} Kg/s\n")
+    # Verifying results
+    launch_position = create_orbit_func(planet_idx)[0](t_orbit_launch) + utils.m_to_AU(radius_home_planet)*np.array([np.cos(planet_theta), np.sin(planet_theta)])
+    mission.set_launch_parameters(thrust_force, fuel_consumption, fuel_mass, estimated_time, launch_position, t_orbit_launch)
+    mission.launch_rocket()
+    mission.verify_launch_result(sol_sys_coords)
+
+    # Saving Launch parameters for later use
+    launch_parameters = np.array([sol_sys_coords[0], sol_sys_coords[1], thrust_force, fuel_consumption, fuel_mass, estimated_time, launch_position[0], launch_position[1], t_orbit_launch, dt])
+    np.save("Launch_Parameters.npy", launch_parameters)
 
