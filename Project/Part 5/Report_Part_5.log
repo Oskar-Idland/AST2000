@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.8.28) (preloaded format=pdflatex 2022.9.1)  3 NOV 2022 11:03
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.8.28) (preloaded format=pdflatex 2022.9.1)  3 NOV 2022 14:16
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -469,22 +469,66 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 LaTeX Font Info:    Trying to load font information for U+msb on input line 55.
  (C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) (Report_Part_5.bbl) [1{C:/Users/oskar/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] (Report_Part_5.aux)
+)
+Underfull \hbox (badness 10000) in paragraph at lines 70--72
+
+ []
+
+(C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex/latex/ucs/data\uni-0.def
+File: uni-0.def 2022/08/07 UCS: Unicode data U+0000..U+00FF
+) (C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex/latex/ucs/data\uni-3.def
+File: uni-3.def 2022/08/07 UCS: Unicode data U+0300..U+03FF
+)
+Underfull \hbox (badness 4013) in paragraph at lines 74--75
+[]\OT1/cmr/m/n/10 To make our jour-ney as easy as pos-si-ble we
+ []
+
+
+Underfull \hbox (badness 5175) in paragraph at lines 74--75
+\OT1/cmr/m/n/10 first try to check where our home planet and
+ []
+
+
+Underfull \hbox (badness 2875) in paragraph at lines 74--75
+\OT1/cmr/m/n/10 tar-get planet are the clos-est. Us-ing the or-bits
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 74--75
+\OT1/cmr/m/n/10 cal-cu-lated from [][][][][][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 74--75
+\OT1/cmr/m/n/10 we it-er-ate over all po-si-tions and check at
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 74--75
+\OT1/cmr/m/n/10 which time $\OML/cmm/m/it/10 t[]$ \OT1/cmr/m/n/10 the dis-tance is the small-est.
+ []
+
+
+Overfull \hbox (44.05598pt too wide) in paragraph at lines 74--75
+[][][][][][]\OT1/cmr/m/n/10 .
+ []
+
+(Report_Part_5.bbl) [1{C:/Users/oskar/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] (Report_Part_5.aux)
 Package rerunfilecheck Info: File `Report_Part_5.out' has not changed.
-(rerunfilecheck)             Checksum: BCDCE7A858E55F36E658DB6D5EF97B3D;1295.
+(rerunfilecheck)             Checksum: 08A9F4E9625321AD3A72A81AE45C12A6;1574.
  ) 
 Here is how much of TeX's memory you used:
- 15305 strings out of 477843
- 235974 string characters out of 2823600
- 766443 words of memory out of 3000000
- 34002 multiletter control sequences out of 15000+600000
+ 16248 strings out of 477843
+ 246235 string characters out of 2823600
+ 780443 words of memory out of 3000000
+ 34938 multiletter control sequences out of 15000+600000
  473643 words of font info for 47 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 72i,5n,77p,574b,530s stack positions out of 10000i,1000n,20000p,200000b,80000s
-<C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx7.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti9.pfb>
-Output written on Report_Part_5.pdf (1 page, 127364 bytes).
+ 72i,5n,77p,1693b,530s stack positions out of 10000i,1000n,20000p,200000b,80000s
+<C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx7.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti9.pfb>
+Output written on Report_Part_5.pdf (1 page, 156285 bytes).
 PDF statistics:
- 112 PDF objects out of 1000 (max. 8388607)
- 13 named destinations out of 1000 (max. 500000)
- 97 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 126 PDF objects out of 1000 (max. 8388607)
+ 14 named destinations out of 1000 (max. 500000)
+ 105 words of extra memory for PDF output out of 10000 (max. 10000000)
 
