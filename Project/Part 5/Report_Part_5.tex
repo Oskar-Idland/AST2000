@@ -45,12 +45,22 @@
 \maketitle
 
 \section{Introduction} \label{sec:introduction}
-The purpose of this project is the launch of our shuttle. Interplanetary travel have huge cost and risks. Therefore we must guarantee success by planning ahead of our journey. We will develop a simulation to visualize our orbit given some parameters as a means to get a good picture of where we will end up. 
+The purpose of this project is the launch of our shuttle. Interplanetary travel have huge cost and risks. Therefore we must guarantee success by planning ahead of our journey. We will develop a simulation to visualize our orbit given some parameters as a means to get a good grasp of where we will end up. 
 
 \section{Theory} \label{sec: theory}
 \colorbox{red}{Refferer til forklaring av leapfrog fra tidligere deler}
 
 \section{Method} \label{sec: method}
+\subsection{Simulating trajectory} \label{ssec: simulating trajectory}
+To simulate the trajectory our shuttle will have we simplify our system into a N-body system where all the planets and star will be combined into a single body. As the mass of the shuttle is so small in comparison to the rest of our solar system, we will disregard its gravitational pull. First we will calculate the center of mass $ \mathbf{CM} $
+\[
+\mathbf{CM} = \frac{1}{M} \sum_{i} m_i \mathbf{r_i}
+\]
+where $ M $ is the total mass of our solar system and $ m_i $ and $ r_i $ is the mass and position of each planet respectively. We then find the total momentum $ \mathbf{p} $ as a sum of all the momentum of each planet in the system
+\[
+\mathbf{p} = \sum_{i} m_i \mathbf{v_i}
+\]
+where $ \mathbf{v_i} $ is the velocity of each planet. 
 
 
 
