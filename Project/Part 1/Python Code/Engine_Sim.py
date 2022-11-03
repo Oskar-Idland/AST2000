@@ -57,7 +57,7 @@ b = time.time()
 print(f'Momentum calculation took {b - a} s')
 thrust = momentum/1e-9
 print(f"Thrust: {thrust}")
-num_of_boxes = 10_000/thrust
+num_of_boxes = 50_000/thrust
 print(f"Number of boxes: {num_of_boxes:e}")
 print(f"Total Mass Flow rate: {m_dot * num_of_boxes}")
 end = time.time()

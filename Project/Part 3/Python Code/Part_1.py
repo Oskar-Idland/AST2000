@@ -94,6 +94,9 @@ planet5_m = system.masses[5]
 star_m = system.star_mass
 g_r = np.linspace(0.18e9, 0.5e9, 100000)
 k = planet5_m*orbit5_r**2/(star_m*g_r**2)
+for i in range(len(k)):
+    if 9.999 < k[i] < 10.001:
+        print(g_r[i])
 plt.plot(g_r, k)
 plt.xlabel("Distance from Planet [m]")
 plt.ylabel("Ratio k")
