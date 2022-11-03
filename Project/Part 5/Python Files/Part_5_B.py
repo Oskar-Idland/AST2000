@@ -39,6 +39,7 @@ def check_close_enough():
         if distance < min_distance:
             min_distance = distance
             index = t
+    
 
     planet_m = system.masses[1]
     star_m = system.star_mass
@@ -50,6 +51,7 @@ def check_close_enough():
         print('Close enough!!')
         plt.scatter(shuttle_position[int(index - time_index), 0], shuttle_position[int(index - time_index),1], label = 'Shuttle position close enough')
         plt.scatter(target_planet_trajectory[0,index], target_planet_trajectory[1,index], label = 'Target planet position close enough')
+        print(f'Total time of travel is {(final_time_index-index)*dt: .2f} years')  
         return True    
         
 
@@ -155,10 +157,10 @@ if __name__ == "__main__":
     '''
     Plotting the trajectory of home and target planet and where they are the closest
     '''
-    # plt.plot(home_planet_trajectory[0,:], home_planet_trajectory[1,:])
-    # plt.plot(target_planet_trajectory[0,:], target_planet_trajectory[1,:])
-    # plt.scatter(home_planet_trajectory[0,time_index], home_planet_trajectory[1,time_index], label = 'Home planet')
-    # plt.scatter(target_planet_trajectory[0,time_index], target_planet_trajectory[1,time_index], label = 'Target planet')
-    # plt.axis('equal')
-    # plt.legend()
-    # plt.show()
+    plt.plot(home_planet_trajectory[0,:], home_planet_trajectory[1,:])
+    plt.plot(target_planet_trajectory[0,:], target_planet_trajectory[1,:])
+    plt.scatter(home_planet_trajectory[0,time_index], home_planet_trajectory[1,time_index], label = 'Home planet')
+    plt.scatter(target_planet_trajectory[0,time_index], target_planet_trajectory[1,time_index], label = 'Target planet')
+    plt.axis('equal')
+    plt.legend()
+    plt.show()

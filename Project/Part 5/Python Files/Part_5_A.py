@@ -45,13 +45,29 @@ def trajectory(t: float, T: float, dt: float, v0: np.ndarray, r0: np.ndarray):
     # Integration loop
     # As the shuttle mass is so small in comparison to the mass of the system, we disregard the gravitational force from the shuttle on the system.  
     for i in range(N-1):
+        # Calculating the acceleration as a N-body system
         r_shuttle_system = r[i] - r_system
-        a = -G *(m_system)/(np.linalg.norm(r_shuttle_system)**3) * r_shuttle_system 
+        a = -G *(m_system)/(np.linalg.norm(r_shuttle_system)**3) * r_shuttle_system
+        
+        # Calculating the acceleration of each body individually
+        # a = -G *(star_mass)/(np.linalg.norm(r[i])) * r[i] # Acceleration from star
+        # for p in range(8):
+        #     r_shuttle_p = r[i] - system.initial_positions[:,p]
+        #     a += -G *(system.masses[p])/(np.linalg.norm(r_shuttle_p)) * r_shuttle_p  
+            
         vh = v[i] + a * dt / 2
         r[i+1] = r[i] +  vh * dt
-        r_system = r_system + v_system*dt
+        r_system = r_system + v_system*dt # To be commented out when calculating each body individually. 
         
-        r_shuttle_system = r[i+1] - r_system
+        r_shuttle_system = r[i+1] - r_system # To be commented out when calculating each body individually.
+        
+        # Calculating the acceleration of each body individually
+        # a = -G *(star_mass)/(np.linalg.norm(r[i])) * r[i] # Acceleration from star
+        # for p in range(8):
+        #     r_shuttle_p = r[i] - system.initial_positions[:,p]
+        #     a += -G *(system.masses[p])/(np.linalg.norm(r_shuttle_p)) * r_shuttle_p
+        
+        # Calculating the acceleration as a N-body system
         a = -G *(m_system)/(np.linalg.norm(r_shuttle_system)**3) * r_shuttle_system
         v[i+1] = vh + a * dt / 2
         
