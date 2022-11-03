@@ -40,7 +40,7 @@ class Particle:
         side = np.sign(self.position[axis])  # Checking which side of the box we are on (positive or negative)
 
         if self.exiting_nozzle(axis):  # Checking if the particle is going through the nozzle
-            self.v_exit += np.linalg.norm(self.velocity)  # Storing the speed of the particle when exiting in the z-direction
+            self.v_exit += np.linalg.norm(self.velocity[axis])  # Storing the speed of the particle when exiting in the z-direction
 
         self.velocity[axis] = -self.velocity[axis]  # Changing direction of velocity in correct dimension
         self.position[axis] = side * self.box.length - self.position[axis]  # Changing position to position after collision

@@ -285,6 +285,10 @@ By inserting equations~\eqref{G_Planet} and~\eqref{G_Star}, we find
 	The flux is decreasing rapidly until approximately 4 AU, and is then flattening and decreasing a lot less at a distance greater than approximately 8 AU.
 	The amount of radiation will therefore be quite high for the inner planets and a lot less and relatively equal for the outer planets.
 
+
+
+
+\subsection{Temperature}\label{subsec:temperature-results}
 	Based on the flux and formula~\eqref{Planet_temp}, the temperature was calculated as described in the previous section.
 	Figure~\ref{fig:Radius_Temp} visualizes the temperature as a function of the distance from the star in our solar system.
 
@@ -295,8 +299,6 @@ By inserting equations~\eqref{G_Planet} and~\eqref{G_Star}, we find
 		\caption{The temperature of a black body as a function of the distance between the body and the star.}\label{fig:Radius_Temp}
 	\end{figure}
 
-
-\subsection{Temperature}\label{subsec:temperature-results}
 	Just like the flux, the temperature is most interesting at the surface of the planets.
 	Therefore, the temperature on the surface of each planet has been calculated using formula~\eqref{Planet_temp} and the method described in section~\ref{sec:method} .
 
@@ -326,7 +328,7 @@ By inserting equations~\eqref{G_Planet} and~\eqref{G_Star}, we find
 
 \subsection{The Habitable zone}\label{subsec:the-habitable-zone-results}
 	The habitable zone has been defined as the zone around the star where the temperature on a planet is between $260$ and $390$ degrees Kelvin.
-	Using formula~\eqref{Radius_temp}, which is a rearrangement of formula~\ref{Planet_temp}, the inner and outer boundaries of the habitable zone can be determined.
+	Using formula~\eqref{Radius_temp}, which is a rearrangement of formula~\eqref{Planet_temp}, the inner and outer boundaries of the habitable zone can be determined.
 	The inner boundary is found to be $12.532$ AU and the outer boundary is found to be $28.197$ AU.
 	All planets at a distance greater than the inner boundary and less than the outer boundary lie within the habitable zone of our solar system.
 	This includes Planet 2 and Planet 5\\
@@ -370,6 +372,8 @@ By inserting equations~\eqref{G_Planet} and~\eqref{G_Star}, we find
 	This planet is a rock planet with a semi-major axis of 27.7773 AU.
 	It's temperature is $266.0^{\circ}$ K or $-7.13^{\circ}$ C, which means it lies within the habitable zone.\\
 
+
+\subsection{Gravitational forces}\label{subsec:gravitational-forces}
 	To perform an orbit injection maneuver into the orbit of Planet 5 we want to find the distance from the planet at which the gravitational force from the planet is a certain amount larger than the gravitational force from the star.
 	In figure the ratio $k$ between the gravitational force form the planet and star is graphed as a function of the distance from the planet.
 
@@ -385,7 +389,7 @@ By inserting equations~\eqref{G_Planet} and~\eqref{G_Star}, we find
 
 
 \subsection{Image of the Planet}\label{subsec:image-of-the-planet}
-	Our rover is equipped with a camera with a focal length of 800 mm and a 35 mm full format image sensor.
+	Our rover is equipped with a camera with a 35 mm full format image sensor and a lens with a focal length of 800 mm.
 	The field of view is therefore approximately 2.6 degrees.
 	Using these specifications as well as the radius of Planet 5, formula~\eqref{Image_Dist} has been used to determine the maximum distance for a resolved image of the Planet 5.
 	To get an overview over the necessary resolution fo the camera, the required number of pixels in the image sensor in one dimension has been graphed as a function of the distance in figure~\ref{fig:Res_pixels}.
@@ -399,11 +403,50 @@ By inserting equations~\eqref{G_Planet} and~\eqref{G_Star}, we find
 
 	In figure~\ref{fig:Res_pixels} it can be seen that the number of required pixels in one dimension of the image sensor is linearly dependent of the maximum distance.
 	This means the better the resolution of the camera, the further away the image of the planet will appear resolved.
-	Therefore bla bla bla~\ref{fig:Radius_Temp}
+	Furthermore, the narrower the field of view, the further away the planet will appear resolved on an image.
+
 
 \section{Discussion} \label{sec:discussion}
-Here comes the discussion :)
-	\subsection{Subsection}
+	\subsection{Electromagnetic Radiation}\label{subsec:disc_radiation}
+	According to our results~\ref{fig:Radius_Flux}, the electromagnetic flux is decreasing very rapidly with increasing distance to the star during the first 4 AU.
+	Between approximately 4 and 8 AU, the rate at which the flux decreases, levels out.
+	Further out than 8 AU, the decrease of electromagnetic flux is relatively low compared to closer to the star.\\
+	The flux decreasing this way makes a lot of sense, since it is inversely proportional with the square of the distance to the sun according to equation~\eqref{Flux_Distance}.
+	However, the difference of the rate of decrease is still surprising, when comparing a point very close to the star and very far away from the star.
+
+	Since our rover only requires 40 Watts of power to keep its electrical instruments and communication running, the solar array can be between $0.065$ m$^2$ at planet 7 and $6.823$ m$^2$ at planet 3.
+	At planet 5, the panel size is $1.174$ m$^2$, which is a relatively small size for a rover.
+	This will be a big advantage, as we can make the rover, and therefore the rocket more compact.\\
+	Something we decided to neglect, is the possibility of a planet coming in the way between the star and our spacecraft or rover.
+	This would result in the electromagnetic radiation being blocked from reaching the rover.\\
+	However, since there is so much space between the planets, the probability of this happening are quite small.
+	Furthermore, the rover can temporarily be put in an energy-saving state, if such an event should happen.\\
+
+\subsection{Temperature and habitable zone}\label{subsec:disc_temperature}
+	When looking at the results of the temperature~\ref{fig:Radius_Temp}, we see that the temperature is decreasing.
+	However, the change of rate of decrease is smoother compared to the flux.\\
+	When looking at the temperatures~\ref{tab:planet_temp}, we see that only planet 2 and 5 are within the habitable zone.
+	This makes sense as the orbits of those two planets are close to each other, as well as not being far on the inside or outside of the solar system.\\
+	A temperature of $266^{\circ}$ Kelvin, or $-7.15^{\circ}$ Celsius, means that liquid water can exist.\\
+	Note that these temperatures are at the aphelion.
+	This means, the planet will be at this distance or closer to the sun, which means the temperature will often be a bit higher than the value we found.\\
+	Furthermore, we have to note that the temperature will depend on the day-night-cycle.
+	The side facing towards the star will be a lot warmer than the side facing away from the star.
+
+\subsection{Gravitational forces}\label{subsec:disc_gravitational-forces}
+	We see that the ratio of the gravitational forces from the star and planet varies greatly at close distances to the planet.
+	Since the gravitational force is inversely proportional to the square of the distance between the objects, we will not see a lot of difference in the forces from the star when being close to the planet.
+	Even with such a large mass as the star.
+	However, as we are close to the planet, its gravitational force will vary a lot.
+	Therefore, the ratio of the forces varies a lot when the spacecraft is close to the planet and a lot less when being further away.
+	When performing an injection maneuver, we want a ratio of $k = 10$, which means we have to be at a distance of $268'000$ km from the planet.
+	This sound reasonable for an orbit around a planet.
+
+\subsection{Imaging the planet}\label{subsec:disc_imaging-the-planet}
+	When looking at the results the requirements of taking a resolved picture, we see a linear relationship between the maximum distance and the number of pixels in one dimension of the sensor.
+	Since the sensor is a square, the total number of required pixels will be proportional to the square of the distance.\\
+	However, a higher resolution os not necessarily better, as it often means higher costs and larger, more sensitive equipment.
+	Therefore we will first have to simulate our trajectory to determine how close we can approach the planet before we need a picture to orient ourselves.
 
 \section{Conclusion} \label{sec:conclusion}
 And the conclusion
