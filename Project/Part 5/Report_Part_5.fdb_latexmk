@@ -1,12 +1,12 @@
 # Fdb version 3
-["bibtex Report_Part_5"] 1667568662 "Report_Part_5.aux" "Report_Part_5.bbl" "Report_Part_5" 1667568665
+["bibtex Report_Part_5"] 1667578789 "Report_Part_5.aux" "Report_Part_5.bbl" "Report_Part_5" 1667578960
   "C:/Users/oskar/AppData/Local/Programs/MiKTeX/bibtex/bst/revtex/apsrev4-2.bst" 1601731616 69609 e9dea59f0e753ccda3ddc8f5806d846d ""
-  "Report_Part_5.aux" 1667568664 2697 f581e5a3ca735a1f5971646c876af1ca "pdflatex"
-  "Report_Part_5Notes.bib" 1667568664 104 4d8bb863c86f3d7b03a471e9d4707f34 "pdflatex"
+  "Report_Part_5.aux" 1667578959 2998 5bd3468f50d02d288ede94e83fcc29b2 "pdflatex"
+  "Report_Part_5Notes.bib" 1667578959 104 4d8bb863c86f3d7b03a471e9d4707f34 "pdflatex"
   (generated)
   "Report_Part_5.bbl"
   "Report_Part_5.blg"
-["pdflatex"] 1667568662 "c:/Users/oskar/OneDrive - Universitetet i Oslo/Dokumenter/GitHub/Privat/AST2000/Project/Part 5/Report_Part_5.tex" "Report_Part_5.pdf" "Report_Part_5" 1667568665
+["pdflatex"] 1667578956 "c:/Users/oskar/OneDrive - Universitetet i Oslo/Dokumenter/GitHub/Privat/AST2000/Project/Part 5/Report_Part_5.tex" "Report_Part_5.pdf" "Report_Part_5" 1667578960
   "C:/Users/oskar/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1665923245 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/oskar/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1662027572 10374549 ab9957c64f9e665f244136ccccd1caef ""
   "C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1233951848 1004 54797486969f23fa377b128694d548df ""
@@ -27,7 +27,6 @@
   "C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/tfm/public/esint/esint10.tfm" 1136768653 364 55557743e6c24ee44e49bc5e8dbbe3cd ""
   "C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb" 1247593066 34811 78b52f49e893bcba91bd7581cdc144c0 ""
   "C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb" 1247593066 32080 340ef9bf63678554ee606688e7b5339d ""
-  "C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx7.pfb" 1247593067 32007 e8fa0078355f39467039935974716569 ""
   "C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx9.pfb" 1247593067 32298 c6d25bb16d1eac01ebdc6d7084126a1e ""
   "C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb" 1247593067 30251 6afa5cb1d0204815a708a080681d4674 ""
   "C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb" 1247593067 36299 5f9df58c2139e7edcf37c8fca4bd384d ""
@@ -111,7 +110,6 @@
   "C:/Users/oskar/AppData/Local/Programs/MiKTeX/tex/latex/subfigure/subfigure.cfg" 1114278970 2114 42ba738bf6f1cec796106a69840777a4 ""
   "C:/Users/oskar/AppData/Local/Programs/MiKTeX/tex/latex/subfigure/subfigure.sty" 1114278970 14815 1d3da78e0f66f3c62133fbabffd13cf5 ""
   "C:/Users/oskar/AppData/Local/Programs/MiKTeX/tex/latex/textcase/textcase.sty" 1657797347 2405 93dca770d0598d835703b5d004a641b7 ""
-  "C:/Users/oskar/AppData/Local/Programs/MiKTeX/tex/latex/ucs/data/uni-0.def" 1660331616 7784 4da13291385de60ba3c334b604cea4db ""
   "C:/Users/oskar/AppData/Local/Programs/MiKTeX/tex/latex/ucs/data/uni-3.def" 1660331616 12057 d77ce33c8b581781c1ca1b4e5dd902fb ""
   "C:/Users/oskar/AppData/Local/Programs/MiKTeX/tex/latex/ucs/data/uni-global.def" 1660331616 1375 a9cd26ed13adef608374493c3ba873e5 ""
   "C:/Users/oskar/AppData/Local/Programs/MiKTeX/tex/latex/ucs/ucs.sty" 1660466068 28759 986636dc25ad305c9a399f8a66ea2cd8 ""
@@ -119,11 +117,12 @@
   "C:/Users/oskar/AppData/Local/Programs/MiKTeX/tex/latex/ucs/utf8x.def" 1660466068 8944 1cf5de165d8b3a9de8975b4e3f40e814 ""
   "C:/Users/oskar/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "C:/Users/oskar/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1656233290 56148 51a9a8571c07b9921892ae11063ae853 ""
-  "Report_Part_5.aux" 1667568664 2697 f581e5a3ca735a1f5971646c876af1ca "pdflatex"
-  "Report_Part_5.bbl" 1667568662 2035 35453d3875d823f0ec9445e740a573d9 "bibtex Report_Part_5"
-  "Report_Part_5.out" 1667568664 1574 08a9f4e9625321ad3a72a81ae45c12a6 "pdflatex"
-  "Report_Part_5.tex" 1667568657 5208 5f82e02ec809e62e271daea4a6879de8 ""
-  "c:/Users/oskar/OneDrive - Universitetet i Oslo/Dokumenter/GitHub/Privat/AST2000/Project/Part 5/Report_Part_5.tex" 1667568657 5208 5f82e02ec809e62e271daea4a6879de8 ""
+  "Figures/closest_orbit.pdf" 1667552203 85404 c5e9e868056486bbe9d19f94f99219ac ""
+  "Report_Part_5.aux" 1667578959 2998 5bd3468f50d02d288ede94e83fcc29b2 "pdflatex"
+  "Report_Part_5.bbl" 1667578790 2035 35453d3875d823f0ec9445e740a573d9 "bibtex Report_Part_5"
+  "Report_Part_5.out" 1667578959 1574 08a9f4e9625321ad3a72a81ae45c12a6 "pdflatex"
+  "Report_Part_5.tex" 1667578956 5468 6076179eb4e926e03a2feb8a77f09672 ""
+  "c:/Users/oskar/OneDrive - Universitetet i Oslo/Dokumenter/GitHub/Privat/AST2000/Project/Part 5/Report_Part_5.tex" 1667578956 5468 6076179eb4e926e03a2feb8a77f09672 ""
   (generated)
   "Report_Part_5.aux"
   "Report_Part_5.log"

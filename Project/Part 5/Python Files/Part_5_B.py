@@ -7,6 +7,14 @@ from ast2000tools.solar_system import SolarSystem
 from numba import njit
 from Part_5_A import trajectory
 
+'''
+----Results----
+Total time of travel is  4.75 years
+ 244.00 degrees were good enough
+ 12.00 was fast enough
+
+'''
+
 # Initializing system
 username = "janniesc"
 seed = utils.get_seed(username)
@@ -124,8 +132,12 @@ if __name__ == "__main__":
     plt.plot(target_planet_trajectory[0, time_index:final_time_index],
              target_planet_trajectory[1, time_index:final_time_index], label='Target planet trajectory')
 
-    angles = np.linspace(230 * np.pi/180, 240 * np.pi/180, 11)
-    velocities = np.linspace(7.25, 7.75, 3)
+    median_angle = 242.5 * np.pi / 180 
+    span_angle = 2.5 * np.pi / 180
+    median_velocity = 12
+    span_velocity = 2
+    angles = np.linspace(median_angle - span_angle, median_angle + span_angle, 21)
+    velocities = np.linspace(median_velocity - span_velocity, median_velocity + span_velocity, 5)
     finished = False
     for angle in angles:
         print(f'{angle*180/np.pi: .2f}')
@@ -139,9 +151,9 @@ if __name__ == "__main__":
                 good_enough_angle = angle
                 print(f'{good_enough_angle*180/np.pi: .2f} degrees were good enough')
                 print(f'{good_enough_velocity: .2f} was fast enough')
-                plt.plot(
-                    shuttle_position[:5000, 0], shuttle_position[:5000, 1])
-                finished = True
+                # finished = True
+            plt.plot(
+                shuttle_position[:5000, 0], shuttle_position[:5000, 1])
 
             if finished:
                 break
