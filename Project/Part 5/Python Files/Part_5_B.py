@@ -7,6 +7,7 @@ from ast2000tools.solar_system import SolarSystem
 from numba import njit
 from Part_5_A import trajectory
 
+
 '''
 ----Results----
 Total time of travel is  4.75 years
@@ -90,12 +91,12 @@ def check_close_enough():
         plt.scatter(target_planet_trajectory[0, index], target_planet_trajectory[1,
                     index], label='Target planet position close enough',)
         print(
-            f'Total time of travel is {(final_time_index-index)*dt: .2f} years')
+            f'Total time of travel is {(final_time_index-index)*dt: .2f} years, and begins at year {index*dt: .2f}')
         return True
 
 
 if __name__ == "__main__":
-    planet_file = np.load('../../Part 2/Python Code/planet_trajectories.npz')
+    planet_file = np.load(os.path.join('planet_trajectories.npz'))
     planet_positions = planet_file['planet_positions']
     time = planet_file['times']
     home_planet_trajectory = planet_positions[:, 0, :]

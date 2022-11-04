@@ -64,6 +64,7 @@ These corrections will be done by firing our rocket engine to change our velocit
     \caption{Visualisation of a correctional boost to change the trajectory.}\label{fig:boost_fig}
 \end{figure}
 
+$  $
 The goal is to get close enough to the planet so that the gravitational forces from the planet dominate over the gravitational forces from the rest of the planets and the star.
 We can then initialise an orbit injection manoeuvre to enter the orbit around the planet.\\
 
@@ -78,7 +79,25 @@ A description of the Leapfrog simulation method can be found in %~\parencite[][]
 
 \section{Method} \label{sec: method}
 \subsection{Simulating trajectory} \label{ssec: simulating trajectory}
-To simulate the trajectory our 
+To simulate the trajectory our shuttle we will calculate all the forces acting upon it. Using Newton's second law of motion we get this expression for the acceleration the shuttle will experience on its journey. 
+\[
+\mathbf{a} = - G \frac{M_{\text{star}}}{\mathbf{\left\vert \mathbf{r} \right\vert ^{3}}} \mathbf{r} - \sum_{i} G \frac{m_i}{\left\vert \mathbf{r} - \mathbf{r}_i \right\vert ^{3}} \left( \mathbf{r} - \mathbf{r}_i \right) 
+\]
+Starting from the left, $ \mathbf{a} $ is the acceleration of the shuttle, $ G $ the gravitational constant, $ M_{\text{star}} $ the mass of the star and $ \mathbf{r} $ is the position of the shuttle. We then add the sum of the acceleration from the planets in the solar system where $ m_i $ and $ \mathbf{r}_i $ is the mass and position of each planet respectively. The shuttle has an insignificant amount of mass and we will ignore it during our calculations. 
+
+Then we use the Leapfrog integration method get the next position after a small amount of time $  Δt  $ has passed as shown in the equations below
+
+\begin{subequations} \label{eq: leapfrog integration}
+    \begin{equation}
+        v_{i + \frac{1}{2}} = v_i + a_i \frac{Δt }{2}
+    \end{equation}
+    \begin{equation}
+      x_{i+1} = x_{i} + v_{i + \frac{1}{2}} Δt 
+    \end{equation}
+    \begin{equation}
+      v_{i+1} = v_{i + \frac{1}{2}} + a_{i+1} \frac{Δt }{2}
+    \end{equation}
+\end{subequations}
 
 % Metode som kan brukes om ting blir simulert som N-body system. Hvis ikke bruk det som står over
 % shuttle will have we simplify our system into a N-body system where all the planets and star will be combined into a single body. As the mass of the shuttle is so small in comparison to the rest of our solar system, we will disregard its gravitational pull. First we will calculate the center of mass $ \mathbf{CM} $
@@ -95,16 +114,52 @@ To simulate the trajectory our
 % \[
 % \mathbf{a} = -G \frac{M}{\left\vert \mathbf{r} - \mathbf{r}_{sys} \right\vert ^{3}} (\mathbf{r} - \mathbf{r}_{sys}).
 % \]
-Using the leapfrog method for numerical integration we can calculate the full trajectory of our shuttle.
-\newline
+We will use this method during the launch of our rocket.
+
 \subsection{Getting close enough to the target planet}
 To make our journey as easy as possible we first try to check where our home planet and target planet are the closest. Using the orbits, calculated from the second paper %~\parencite[][]{part2} TODO: Delete comment 
-of this series of papers, we iterate over all positions and check at which time $ t_{0} $ the distance is the smallest. With this position it seems favorable to launch from the bottom of our planet $ \mathbf{r}_0 $. To figure out the direction to launch our planet we begin by using an educated guess by pointing the shuttle directly at the target planet. We then continue by simulating the orbit for multiple, evenly spaced out angles from the angle of the vector pointing directly at the target planet $ \mathbf{v}_0 $, to a max angle of $ π/8 $ radians just to get a picture of how the launch will look for different angles.  Now we have a wide span of possible angles. Before narrowing the angles down we will iterater over possible values for $ \left\vert \mathbf{v}_0 \right\vert  $. This gives us an idea of how fast the shuttle needs to travel for it to get even close to reaching the target planet. Once this is done, we will iterate over a range of angles and velocities, find the time we are the closest to the target planet and the distance. For each case we will check if the smallest distance $ d $ satisfy the requirement for beginning orbit around target planet given by 
+of this series of papers, we iterate over all positions and check at which time $ t_{0} $ the distance is the smallest. This is the time we will begin our launch. The next step is to calculate the optimal direction and speed of our initial velocity $ \mathbf{v}_0 $. Our initial position $ \mathbf{r}_0 $ will have the same directional vector meaning $ \hat{\mathbf{v}}_0 = \hat{\mathbf{r}}_0  $. To figure out the direction to launch our planet we begin by using an educated guess by pointing the shuttle directly at the target planet. The simulation will continuously check if we get a small enough distance $ d $ to allow us to begin a stable orbit. This distance must be smaller than $ l $ given by
 \[
-d \le l, \qquad l = \left\vert \mathbf{r} \right\vert \sqrt{\frac{M_{target}}{M_{star}}}  
+d \le l, \qquad l = \left\vert \mathbf{r} \right\vert \sqrt{\frac{M_{target}}{M_{star}}}.
 \]
 
 
+To make the parameters of our simulation easier we switch to polar coordinates $ (r, θ) $. We will iterate over multiple cases of possible angles and speed. This will be done by choosing a median angle and speed. Then have a variance which we will subtract for the lower end of angles and velocities, and add for our upper end. Evenly spaced out values in this interval will be used to get a wide range of possible values. In our case as seen in figure \ref{fig: closest orbit}, we get the closest orbit in the third quadrant in terms of polar coordinates. We begin our simulation by having a median angle of $ \frac{5}{4}π $ with a variance of $ \frac{π}{4} $. This let us cover the entire third quadrant. As seen in figure \ref{fig: simulation scattered} the trajectory will be quite scattered 
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[scale = .125]{Figures/full_angle_scatter.pdf}
+  \caption{Simulation of trajectory with relatively wide range of angles. The dots represent were the shuttle was the closest to the target planet }
+  \label{fig: simulation scattered}
+\end{figure}
+In our case it seems our median angle was quite close. Therefore we only tighten up the span of angles by reducing the variance of angles. We then get the following result in figure \ref{fig: simulation tighter}. 
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[scale = .125]{Figures/narrowing_down_angle.pdf}
+  \caption{Simulation of trajectory after narrowing down the variance}
+  \label{fig: simulation tighter}
+\end{figure}
+
+This is how we will find better and better values for our angle. When it comes to the speed we will use the same technique. As seen in the example from figure \ref{fig: pre speed increase} our speed was too low in all three cases. 
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[scale = .125]{Figures/pre_speed_increase.pdf}
+  \caption{Simulation of trajectory before speed increase}
+  \label{fig: pre speed increase}
+\end{figure}
+
+Then it makes sense to increase it and check if we get closer. When the speed was increased we got even closer to our target as seen in figure \ref{fig: post speed increase}
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[scale = .125]{Figures/post_speed_increase.pdf}
+  \caption{Simulation of trajectory after speed increase}
+  \label{fig: post speed increase}
+\end{figure}
+
+These examples were to illustrate how we can refine our angles and velocity to get close enough to try and orbit the target planet. For illustrative purposes we only used 5 different angles and three different speed, which gave us 15 different trajectories. In reality we will use hundreds of both to find the answer with as few adjustments as possible. 
 
 
 \subsection{Launching the Spacecraft}\label{subsec:launching-the-spacecraft}
@@ -114,10 +169,19 @@ d \le l, \qquad l = \left\vert \mathbf{r} \right\vert \sqrt{\frac{M_{target}}{M_
 \section{Results} \label{sec: results}
 \begin{figure}[h!]
   \centering
-  \includegraphics[scale = .18]{Figures/closest_orbit.pdf}
+  \includegraphics[scale = .125]{Figures/closest_orbit.pdf}
   \caption{Position where the target planet and our home planet were the closest}
   \label{fig: closest orbit}
 \end{figure}
+
+The simulation of the trajectory yielded a necessary speed of 12 AU/yr and an angle of $ 244 ^{o} $ degrees with a travel time of $ 4.75 $ years. We launched our rocket approximetly in the year 238.
+\begin{figure}[h!]
+  \centering
+  \includegraphics[scale = .125]{Figures/good_enough_distance.pdf}
+  \caption{Position of shuttle and target planet at optimal distance}
+  \label{fig: good enough distance}
+\end{figure} 
+
 \section{Discussion} \label{sec: discussion}
 
 \section{Conclusion} \label{sec: conclusion}

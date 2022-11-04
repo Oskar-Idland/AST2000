@@ -69,11 +69,18 @@ if __name__ == "__main__":
     # Nice to have the same time index as used by SpaceMission
     dt = planet_file['times'][1]
     planet_r = utils.km_to_AU(system.radii[0])
-    v0 = np.array([4, 2])
+    v0 = np.array([0, 1])
     r0 = np.array([planet_r + system.initial_positions[0, 0], 0])
-    t, v, r = trajectory(0, 2, dt, v0, r0)
+    t, v, r = trajectory(0, 7, dt, v0, r0)
     plt.scatter(r[0, 0], r[0, 1], label='Beginning')
     plt.plot(r[:, 0], r[:, 1], label="Shuttle trajectory")
+    
+    angle = np.linspace( 0 , 2 * np.pi , 150 ) 
+    radius = utils.km_to_AU(system.star_radius)
+    x = radius * np.cos( angle ) 
+    y = radius * np.sin( angle ) 
+    plt.plot(x,y, label = 'Star')
+    
     plt.xlabel("x [AU]")
     plt.ylabel("y [AU]")
     plt.grid()
