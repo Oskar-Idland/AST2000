@@ -4,10 +4,13 @@
 \@nameuse{bbl@beforestart}
 \providecommand\HyperFirstAtBeginDocument{\AtBeginDocument}
 \HyperFirstAtBeginDocument{\ifx\hyper@anchor\@undefined
+\global\let\oldcontentsline\contentsline
+\gdef\contentsline#1#2#3#4{\oldcontentsline{#1}{#2}{#3}}
 \global\let\oldnewlabel\newlabel
 \gdef\newlabel#1#2{\newlabelxx{#1}#2}
 \gdef\newlabelxx#1#2#3#4#5#6{\oldnewlabel{#1}{{#2}{#3}}}
 \AtEndDocument{\ifx\hyper@anchor\@undefined
+\let\contentsline\oldcontentsline
 \let\newlabel\oldnewlabel
 \fi}
 \fi}
@@ -15,32 +18,34 @@
 \gdef\HyperFirstAtBeginDocument#1{#1}
 \providecommand\HyField@AuxAddToFields[1]{}
 \providecommand\HyField@AuxAddToCoFields[2]{}
-\bibdata{Report_Part_5Notes}
-\bibstyle{apsrev4-2}
-\citation{REVTEX42Control}
-\citation{apsrev42Control}
 \newlabel{FirstPage}{{}{1}{}{section*.1}{}}
 \@writefile{toc}{\contentsline {title}{Satellite Launch}{1}{section*.2}\protected@file@percent }
 \@writefile{toc}{\contentsline {abstract}{Abstract}{1}{section*.1}\protected@file@percent }
 \@writefile{toc}{\contentsline {section}{\numberline {I}Introduction}{1}{section*.3}\protected@file@percent }
 \newlabel{sec:introduction}{{I}{1}{}{section*.3}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Visualisation of a correctional boost to change the trajectory.}}{1}{figure.1}\protected@file@percent }
+\newlabel{fig:boost_fig}{{1}{1}{Visualisation of a correctional boost to change the trajectory}{figure.1}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {II}Theory}{1}{section*.4}\protected@file@percent }
 \newlabel{sec: theory}{{II}{1}{}{section*.4}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {III}Method}{1}{section*.5}\protected@file@percent }
 \newlabel{sec: method}{{III}{1}{}{section*.5}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {A}Simulating trajectory}{1}{section*.6}\protected@file@percent }
 \newlabel{ssec: simulating trajectory}{{III\,A}{1}{}{section*.6}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {B}Getting close enough to the target planet}{1}{section*.7}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {IV}Results}{1}{section*.8}\protected@file@percent }
-\newlabel{sec: results}{{IV}{1}{}{section*.8}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {V}Discussion}{1}{section*.9}\protected@file@percent }
-\newlabel{sec: discussion}{{V}{1}{}{section*.9}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {VI}Conclusion}{1}{section*.10}\protected@file@percent }
-\newlabel{sec: conclusion}{{VI}{1}{}{section*.10}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {VII}Appendix}{1}{section*.11}\protected@file@percent }
-\newlabel{sec: appendix}{{VII}{1}{}{section*.11}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {}ACKNOWLEDGMENTS}{1}{section*.12}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {}References}{1}{section*.13}\protected@file@percent }
-\newlabel{sec: references}{{VII}{1}{}{section*.13}{}}
-\newlabel{LastPage}{{}{1}{}{}{}}
-\gdef \@abspage@last{1}
+\bibdata{Report_Part_5Notes}
+\bibstyle{apsrev4-2}
+\citation{REVTEX42Control}
+\citation{apsrev42Control}
+\@writefile{toc}{\contentsline {subsection}{\numberline {B}Getting close enough to the target planet}{2}{section*.7}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {C}Launching the Spacecraft}{2}{section*.8}\protected@file@percent }
+\newlabel{subsec:launching-the-spacecraft}{{III\,C}{2}{}{section*.8}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {IV}Results}{2}{section*.9}\protected@file@percent }
+\newlabel{sec: results}{{IV}{2}{}{section*.9}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {V}Discussion}{2}{section*.10}\protected@file@percent }
+\newlabel{sec: discussion}{{V}{2}{}{section*.10}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {VI}Conclusion}{2}{section*.11}\protected@file@percent }
+\newlabel{sec: conclusion}{{VI}{2}{}{section*.11}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {VII}Appendix}{2}{section*.12}\protected@file@percent }
+\newlabel{sec: appendix}{{VII}{2}{}{section*.12}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {}ACKNOWLEDGMENTS}{2}{section*.13}\protected@file@percent }
+\newlabel{LastPage}{{}{2}{}{}{}}
+\gdef \@abspage@last{2}

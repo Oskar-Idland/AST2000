@@ -91,8 +91,6 @@ if __name__ == "__main__":
         r = np.linalg.norm(pos[i])
         thrust = thrust_force*pos[i]/r
         Fg = -G*mass_home_planet*wet_mass_i*pos[i]/r**3
-        if i < 10:
-            print(G*mass_home_planet/(radius_home_planet**2))
         acc = (Fg+thrust)/wet_mass_i
 
         vh = vel[i] + acc * dt / 2
