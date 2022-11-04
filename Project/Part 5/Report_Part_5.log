@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2022.2.21)  4 NOV 2022 13:30
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2022.2.21)  4 NOV 2022 18:00
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -540,82 +540,67 @@ LaTeX Info: Redefining \nameref on input line 35.
 Class revtex4-2 Info: Taking \maketitle back from hyperref on input line 35.
 \openout3 = `Report_Part_5Notes.bib'.
 
-LaTeX Font Info:    Trying to load font information for U+esint on input line 6
-0.
- (/usr/local/texlive/2021/texmf-dist/tex/latex/esint/uesint.fd
+
+Underfull \hbox (badness 10000) in paragraph at lines 48--52
+
+ []
+
+<Figures/boost_fig.png, id=61, 1306.8825pt x 785.93625pt>
+File: Figures/boost_fig.png Graphic file (type png)
+<use Figures/boost_fig.png>
+Package pdftex.def Info: Figures/boost_fig.png  used on input line 63.
+(pdftex.def)             Requested size: 156.81912pt x 94.30827pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 67--69
+
+ []
+
+LaTeX Font Info:    Trying to load font information for U+esint on input line 8
+3.
+(/usr/local/texlive/2021/texmf-dist/tex/latex/esint/uesint.fd
 File: uesint.fd 
 )
-LaTeX Font Info:    Trying to load font information for U+msa on input line 60.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 83.
 
 
 (/usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 60.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 83.
 
 
 (/usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Underfull \hbox (badness 10000) in paragraph at lines 78--80
+Underfull \hbox (badness 10000) in paragraph at lines 101--103
 
  []
 
 (/usr/local/texlive/2021/texmf-dist/tex/latex/ucs/data/uni-0.def
 File: uni-0.def 2013/05/13 UCS: Unicode data U+0000..U+00FF
 )
-Underfull \hbox (badness 4013) in paragraph at lines 82--93
-[]\OT1/cmr/m/n/10 To make our jour-ney as easy as pos-si-ble we
+Underfull \hbox (badness 10000) in paragraph at lines 105--117
+[][][][][][]
  []
 
-
-Underfull \hbox (badness 5175) in paragraph at lines 82--93
-\OT1/cmr/m/n/10 first try to check where our home planet and
- []
-
-
-Underfull \hbox (badness 2875) in paragraph at lines 82--93
-\OT1/cmr/m/n/10 tar-get planet are the clos-est. Us-ing the or-bits
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 82--93
-\OT1/cmr/m/n/10 cal-cu-lated from [][][][][][]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 82--93
-\OT1/cmr/m/n/10 we it-er-ate over all po-si-tions and check at
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 82--93
-\OT1/cmr/m/n/10 which time $\OML/cmm/m/it/10 t[]$ \OT1/cmr/m/n/10 the dis-tance
- is the small-est.
- []
-
-
-Overfull \hbox (44.05598pt too wide) in paragraph at lines 82--93
-[][][][][][]\OT1/cmr/m/n/10 .
- []
-
+[1{/usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map} </User
+s/jannikeschler/Documents/GitHub/AST2000/Project/Part 5/Figures/boost_fig.png>]
 
 (/Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 5/Report_Part_5.bbl
-) [1{/usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-[2]
+) [2]
 (/Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 5/Report_Part_5.aux
 )
 Package rerunfilecheck Info: File `Report_Part_5.out' has not changed.
 (rerunfilecheck)             Checksum: 39FB4C1E0382B4BB746EA5265F08351A;1756.
  ) 
 Here is how much of TeX's memory you used:
- 14910 strings out of 478994
- 209679 string characters out of 5858184
- 743395 words of memory out of 5000000
- 32166 multiletter control sequences out of 15000+600000
+ 14926 strings out of 478994
+ 209958 string characters out of 5858184
+ 744395 words of memory out of 5000000
+ 32178 multiletter control sequences out of 15000+600000
  407814 words of font info for 46 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 81i,5n,89p,341b,505s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 81i,7n,89p,341b,505s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
 </usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb></
@@ -629,10 +614,10 @@ exlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texl
 ive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texli
 ve/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb>
 Output written on "/Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 5
-/Report_Part_5.pdf" (2 pages, 135211 bytes).
+/Report_Part_5.pdf" (2 pages, 451488 bytes).
 PDF statistics:
- 125 PDF objects out of 1000 (max. 8388607)
- 107 compressed objects within 2 object streams
- 16 named destinations out of 1000 (max. 500000)
- 113 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 130 PDF objects out of 1000 (max. 8388607)
+ 110 compressed objects within 2 object streams
+ 17 named destinations out of 1000 (max. 500000)
+ 118 words of extra memory for PDF output out of 10000 (max. 10000000)
 
