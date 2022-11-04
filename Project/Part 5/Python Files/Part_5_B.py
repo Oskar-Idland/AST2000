@@ -61,16 +61,15 @@ def check_close_enough():
             min_distance = distance
             index = t
 
-    print(index)
 
     # Rask versjon av løkken over, men returnerer feil index
     # index, final_time_index, min_distance = min_distance_shuttle_target()
 
-    plt.scatter(shuttle_position[int(index - time_index), 0], shuttle_position[int(
-        index - time_index), 1])
+    # plt.scatter(shuttle_position[int(index - time_index), 0], shuttle_position[int(
+    #     index - time_index), 1])
 
-    plt.scatter(target_planet_trajectory[0, index],
-                target_planet_trajectory[1, index])
+    # plt.scatter(target_planet_trajectory[0, index],
+    #             target_planet_trajectory[1, index])
 
     planet_m = system.masses[1]
     star_m = system.star_mass
@@ -84,7 +83,7 @@ def check_close_enough():
         plt.scatter(shuttle_position[int(index - time_index), 0], shuttle_position[int(
             index - time_index), 1], label='Shuttle position close enough')
         plt.scatter(target_planet_trajectory[0, index], target_planet_trajectory[1,
-                    index], label='Target planet position close enough')
+                    index], label='Target planet position close enough',)
         print(
             f'Total time of travel is {(final_time_index-index)*dt: .2f} years')
         return True
@@ -125,7 +124,7 @@ if __name__ == "__main__":
     plt.plot(target_planet_trajectory[0, time_index:final_time_index],
              target_planet_trajectory[1, time_index:final_time_index], label='Target planet trajectory')
 
-    angles = np.linspace(234 * np.pi/180, 236 * np.pi/180, 5)
+    angles = np.linspace(230 * np.pi/180, 240 * np.pi/180, 11)
     velocities = np.linspace(7.25, 7.75, 3)
     finished = False
     for angle in angles:
@@ -140,10 +139,9 @@ if __name__ == "__main__":
                 good_enough_angle = angle
                 print(f'{good_enough_angle*180/np.pi: .2f} degrees were good enough')
                 print(f'{good_enough_velocity: .2f} was fast enough')
+                plt.plot(
+                    shuttle_position[:5000, 0], shuttle_position[:5000, 1])
                 finished = True
-
-            plt.plot(
-                shuttle_position[:5000, 0], shuttle_position[:5000, 1])
 
             if finished:
                 break
@@ -159,10 +157,10 @@ if __name__ == "__main__":
     '''
     Plotting the trajectory of home and target planet and where they are the closest
     '''
-    plt.plot(home_planet_trajectory[0,:], home_planet_trajectory[1,:])
-    plt.plot(target_planet_trajectory[0,:], target_planet_trajectory[1,:])
-    plt.scatter(home_planet_trajectory[0,time_index], home_planet_trajectory[1,time_index], label = 'Home planet')
-    plt.scatter(target_planet_trajectory[0,time_index], target_planet_trajectory[1,time_index], label = 'Target planet')
-    plt.axis('equal')
-    plt.legend()
-    plt.show()
+    # plt.plot(home_planet_trajectory[0,:], home_planet_trajectory[1,:])
+    # plt.plot(target_planet_trajectory[0,:], target_planet_trajectory[1,:])
+    # plt.scatter(home_planet_trajectory[0,time_index], home_planet_trajectory[1,time_index], label = 'Home planet')
+    # plt.scatter(target_planet_trajectory[0,time_index], target_planet_trajectory[1,time_index], label = 'Target planet')
+    # plt.axis('equal')
+    # plt.legend()
+    # plt.show()
