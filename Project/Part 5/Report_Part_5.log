@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2022.2.21)  4 NOV 2022 18:00
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2022.2.21)  4 NOV 2022 18:10
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -545,7 +545,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 48--52
 
  []
 
-<Figures/boost_fig.png, id=61, 1306.8825pt x 785.93625pt>
+<Figures/boost_fig.png, id=57, 1306.8825pt x 785.93625pt>
 File: Figures/boost_fig.png Graphic file (type png)
 <use Figures/boost_fig.png>
 Package pdftex.def Info: Figures/boost_fig.png  used on input line 63.
@@ -587,17 +587,29 @@ Underfull \hbox (badness 10000) in paragraph at lines 105--117
 s/jannikeschler/Documents/GitHub/AST2000/Project/Part 5/Figures/boost_fig.png>]
 
 (/Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 5/Report_Part_5.bbl
+
+/Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 5/Report_Part_5.bbl:
+16: LaTeX Error: Missing 'biblatex' package.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.16   {}
+         
+The bibliography requires the 'biblatex' package.
+
 ) [2]
 (/Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 5/Report_Part_5.aux
 )
 Package rerunfilecheck Info: File `Report_Part_5.out' has not changed.
-(rerunfilecheck)             Checksum: 39FB4C1E0382B4BB746EA5265F08351A;1756.
+(rerunfilecheck)             Checksum: 357E0CB97DF1AFDD876786C076C4EE51;1650.
  ) 
 Here is how much of TeX's memory you used:
- 14926 strings out of 478994
- 209958 string characters out of 5858184
+ 14923 strings out of 478994
+ 209917 string characters out of 5858184
  744395 words of memory out of 5000000
- 32178 multiletter control sequences out of 15000+600000
+ 32176 multiletter control sequences out of 15000+600000
  407814 words of font info for 46 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  81i,7n,89p,341b,505s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -614,10 +626,10 @@ exlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texl
 ive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texli
 ve/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb>
 Output written on "/Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 5
-/Report_Part_5.pdf" (2 pages, 451488 bytes).
+/Report_Part_5.pdf" (2 pages, 451222 bytes).
 PDF statistics:
- 130 PDF objects out of 1000 (max. 8388607)
- 110 compressed objects within 2 object streams
- 17 named destinations out of 1000 (max. 500000)
- 118 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 126 PDF objects out of 1000 (max. 8388607)
+ 106 compressed objects within 2 object streams
+ 16 named destinations out of 1000 (max. 500000)
+ 110 words of extra memory for PDF output out of 10000 (max. 10000000)
 
