@@ -42,6 +42,33 @@
       \field{title}{AST2000 Lecture Notes - Part 1D Electromagnetic Radiation}
       \field{year}{2022}
     \endentry
+    \entry{part2}{misc}{}
+      \name{author}{2}{}{%
+        {{hash=902921da926ab5b63b72235d71025828}{%
+           family={Idland},
+           familyi={I\bibinitperiod},
+           given={Oskar},
+           giveni={O\bibinitperiod}}}%
+        {{hash=d9603b5b1566359b5e3e6b4f47a901cb}{%
+           family={Eschler},
+           familyi={E\bibinitperiod},
+           given={Jannik},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{77746039accf44d41c328979837c8dde}
+      \strng{fullhash}{77746039accf44d41c328979837c8dde}
+      \strng{bibnamehash}{77746039accf44d41c328979837c8dde}
+      \strng{authorbibnamehash}{77746039accf44d41c328979837c8dde}
+      \strng{authornamehash}{77746039accf44d41c328979837c8dde}
+      \strng{authorfullhash}{77746039accf44d41c328979837c8dde}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed on 04.11.2022}
+      \field{title}{Simulating Planetary orbits of a solar system}
+      \field{year}{2022}
+    \endentry
   \enddatalist
 \endrefsection
 \endinput

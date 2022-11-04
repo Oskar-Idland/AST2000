@@ -2349,6 +2349,7 @@
   </bcf:bibdata>
   <bcf:section number="0">
     <bcf:citekey order="1">lecture_notes_part1d</bcf:citekey>
+    <bcf:citekey order="2">part2</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">
