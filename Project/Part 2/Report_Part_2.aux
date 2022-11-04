@@ -4,10 +4,13 @@
 \@nameuse{bbl@beforestart}
 \providecommand\HyperFirstAtBeginDocument{\AtBeginDocument}
 \HyperFirstAtBeginDocument{\ifx\hyper@anchor\@undefined
+\global\let\oldcontentsline\contentsline
+\gdef\contentsline#1#2#3#4{\oldcontentsline{#1}{#2}{#3}}
 \global\let\oldnewlabel\newlabel
 \gdef\newlabel#1#2{\newlabelxx{#1}#2}
 \gdef\newlabelxx#1#2#3#4#5#6{\oldnewlabel{#1}{{#2}{#3}}}
 \AtEndDocument{\ifx\hyper@anchor\@undefined
+\let\contentsline\oldcontentsline
 \let\newlabel\oldnewlabel
 \fi}
 \fi}
@@ -25,7 +28,7 @@
 \newlabel{y_ellipse}{{3}{1}{}{equation.2.3}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Figure of an ellipse with all major components}}{1}{figure.1}\protected@file@percent }
 \newlabel{fig:Ellipse_fig}{{1}{1}{Figure of an ellipse with all major components}{figure.1}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces \colorbox {red}{Visualisation of the Leapfrog integration algorithm}}}{2}{figure.2}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces \color@box {}{red}{Visualisation of the Leapfrog integration algorithm}}}{2}{figure.2}\protected@file@percent }
 \newlabel{fig:Leapfrog_vis}{{2}{2}{\colorbox {red}{Visualisation of the Leapfrog integration algorithm}}{figure.2}{}}
 \newlabel{Kepler_dArea}{{4}{2}{}{equation.2.4}{}}
 \newlabel{Kepler3}{{5}{2}{}{equation.2.5}{}}

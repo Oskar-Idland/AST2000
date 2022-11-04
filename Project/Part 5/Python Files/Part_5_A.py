@@ -6,7 +6,8 @@ import ast2000tools.utils as utils
 from numba import njit
 from ast2000tools.solar_system import SolarSystem
 from ast2000tools.space_mission import SpaceMission
-G = 4*np.pi**2
+
+G = 4 * np.pi ** 2
 
 # Initializing system
 username = "janniesc"
@@ -19,6 +20,7 @@ initial_positions = system.initial_positions
 masses = system.masses
 planet_file = np.load('planet_trajectories.npz')
 planet_positions = planet_file['planet_positions']
+
 
 
 @njit
@@ -74,6 +76,7 @@ if __name__ == "__main__":
     plt.plot(r[:, 0], r[:, 1], label="Shuttle trajectory")
     plt.xlabel("x [AU]")
     plt.ylabel("y [AU]")
+    plt.grid()
     plt.axis('equal')
     plt.legend()
     print(system.initial_positions[:, 0])

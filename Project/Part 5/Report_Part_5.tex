@@ -11,7 +11,7 @@
 \usepackage{listings}
 \usepackage{subfigure}
 % \usepackage[style=science, backend=biber]{biblatex}
-% \addbibresource{References_Part_4.bib} TODO: Slett før innlevering
+% \addbibresource{Report_Part_5.bib} TODO: Slett før innlevering
 \hypersetup{
     colorlinks,
     linkcolor={red!50!black},
@@ -40,18 +40,41 @@
 \affiliation{Institute of Theoretical Astrophysics, University of Oslo}
 
 \begin{abstract}
-    This is an abstract \colorbox{red}{Complete this summary at the end of the paper} 
+    This is an abstract \colorbox{red}{Complete this summary at the end of the paper}
 \end{abstract}
 \maketitle
 
 \section{Introduction} \label{sec:introduction}
 The purpose of this project is the launch of our shuttle.
 Interplanetary travel have huge cost and risks.
-Therefore we must guarantee success by planning ahead of our journey.
-We will develop a simulation to visualize our orbit given some parameters as a means to get a good picture of where we will end up.
+Therefore, we must guarantee success by planning ahead of our journey.
+We will develop a simulation to visualize our orbit given some parameters as a means to get a good picture of where we will end up.\\
+
+After completing these final preparations and simulations, we will then send our spacecraft towards its destination.
+The launch and interplanetary travel will be executed based on the calculations and simulations we have done in the previous parts of this series of reports.
+However, as we have done some assumptions and simplifications in our simulations, we expect some deviations in the actual path of the spacecraft.
+This is due to factors such as solar winds, gravitational forces from small objects and friction.\\
+To reach our destination, we will therefore launch the rocket on the simulated trajectory and do some corrections of our trajectory, if the actual trajectory deviates from the simulated trajectory.\\
+These corrections will be done by firing our rocket engine to change our velocity, and therefore our trajectory as described in figure~\ref{fig:boost_fig}.
+
+\begin{figure}[h]
+    %% H(Here), h(here approx), t(top of page), b(bottom of page)
+    \centering
+    \includegraphics[scale=0.12]{Figures/boost_fig}
+    \caption{Visualisation of a correctional boost to change the trajectory.}\label{fig:boost_fig}
+\end{figure}
+
+The goal is to get close enough to the planet so that the gravitational forces from the planet dominate over the gravitational forces from the rest of the planets and the star.
+We can then initialise an orbit injection manoeuvre to enter the orbit around the planet.\\
+
+When in orbit around the destination planet, we will have to orient ourselves and analyze the orbit we are in.
+Using the onboard instruments we will determine all necessary parameters to be able to fully simulate the orbit.
+This is to predict the movement and position of our spacecraft at a later point in time, which will be necessary to determine a time and position for the landing of our rover.
+
+
 
 \section{Theory} \label{sec: theory}
-\colorbox{red}{Refferer til forklaring av leapfrog fra tidligere deler}
+A description of the Leapfrog simulation method can be found in %~\parencite[][]{part2} TODO: Delete Comment.
 
 \section{Method} \label{sec: method}
 \subsection{Simulating trajectory} \label{ssec: simulating trajectory}
@@ -75,10 +98,17 @@ To simulate the trajectory our
 Using the leapfrog method for numerical integration we can calculate the full trajectory of our shuttle.
 \newline
 \subsection{Getting close enough to the target planet}
-To make our journey as easy as possible we first try to check where our home planet and target planet are the closest. Using the orbits calculated from \colorbox{red}{Refferer til Part 2 kalkulasjoner} we iterate over all positions and check at which time $ t_{0} $ the distance is the smallest. With this position it seems favorable to launch from the bottom of our planet $ \mathbf{r}_0 $. To figure out the direction to launch our planet we begin by using an educated guess by pointing the shuttle directly at the target planet. We then continue by simulating the orbit for multiple, evenly spaced out angles from the angle of the vector pointing directly at the target planet $ \mathbf{v}_0 $, to a max angle of $ π/8 $ radians just to get a picture of how the launch will look for different angles.  Now we have a wide span of possible angles. Before narrowing the angles down we will iterater over possible values for $ \left\vert \mathbf{v}_0 \right\vert  $. This gives us an idea of how fast the shuttle needs to travel for it to get even close to reaching the target planet. Once this is done, we will iterate over a range of angles and velocities, find the time we are the closest to the target planet and the distance. For each case we will check if the smallest distance $ d $ satisfy the requirement for beginning orbit around target planet given by 
+To make our journey as easy as possible we first try to check where our home planet and target planet are the closest. Using the orbits, calculated from the second paper %~\parencite[][]{part2} TODO: Delete comment 
+of this series of papers, we iterate over all positions and check at which time $ t_{0} $ the distance is the smallest. With this position it seems favorable to launch from the bottom of our planet $ \mathbf{r}_0 $. To figure out the direction to launch our planet we begin by using an educated guess by pointing the shuttle directly at the target planet. We then continue by simulating the orbit for multiple, evenly spaced out angles from the angle of the vector pointing directly at the target planet $ \mathbf{v}_0 $, to a max angle of $ π/8 $ radians just to get a picture of how the launch will look for different angles.  Now we have a wide span of possible angles. Before narrowing the angles down we will iterater over possible values for $ \left\vert \mathbf{v}_0 \right\vert  $. This gives us an idea of how fast the shuttle needs to travel for it to get even close to reaching the target planet. Once this is done, we will iterate over a range of angles and velocities, find the time we are the closest to the target planet and the distance. For each case we will check if the smallest distance $ d $ satisfy the requirement for beginning orbit around target planet given by 
 \[
 d \le l, \qquad l = \left\vert \mathbf{r} \right\vert \sqrt{\frac{M_{target}}{M_{star}}}  
 \]
+
+
+
+
+\subsection{Launching the Spacecraft}\label{subsec:launching-the-spacecraft}
+    Having simulated the necessary parts of the launch, journey and conditions on our destination planet, we can now send the spacecraft on its journey.
 
 
 \section{Results} \label{sec: results}
@@ -96,6 +126,6 @@ d \le l, \qquad l = \left\vert \mathbf{r} \right\vert \sqrt{\frac{M_{target}}{M_
 
 \section*{ACKNOWLEDGMENTS}
 
-\section*{References} \label{sec: references}
-% printbibliography TODO: Remove Comment
+\newpage
+% \printbibliography TODO: Remove Comment
 \end{document}

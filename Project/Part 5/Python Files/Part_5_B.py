@@ -28,12 +28,10 @@ def find_closest_orbit(planet_trajectory1, planet_trajectory2):
     Main use is to find the best time to launch the shuttle \n
     Returns smallest distance and time index
     '''
-    smallest_distance = np.linalg.norm(
-        planet_trajectory1[:, 0] - planet_trajectory2[:, 0])
+    smallest_distance = np.linalg.norm(planet_trajectory1[:, 0] - planet_trajectory2[:, 0])
     time_index = 0
     for t in range(len(time)):
-        distance = np.linalg.norm(
-            planet_trajectory1[:, t] - planet_trajectory2[:, t])
+        distance = np.linalg.norm(planet_trajectory1[:, t] - planet_trajectory2[:, t])
         if distance < smallest_distance:
             smallest_distance = distance
             time_index = t
@@ -63,8 +61,7 @@ def check_close_enough():
     min_distance = 10000
     index = 0
     for t in range(time_index, final_time_index):
-        distance = np.linalg.norm(
-            target_planet_trajectory[:, t] - shuttle_position[int(t - time_index), :])
+        distance = np.linalg.norm(target_planet_trajectory[:, t] - shuttle_position[int(t - time_index), :])
         if distance < min_distance:
             min_distance = distance
             index = t
@@ -98,7 +95,7 @@ def check_close_enough():
 
 
 if __name__ == "__main__":
-    planet_file = np.load('planet_trajectories.npz')
+    planet_file = np.load('../../Part 2/Python Code/planet_trajectories.npz')
     planet_positions = planet_file['planet_positions']
     time = planet_file['times']
     home_planet_trajectory = planet_positions[:, 0, :]
