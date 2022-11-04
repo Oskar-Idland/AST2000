@@ -67,7 +67,7 @@ where $ \mathbf{v_i} $ is the velocity of each planet.
 As we use the position of the star as origin we represent the position of the $ \mathbf{CM} $ as $ \mathbf{r}_{sys} $. This position changes over time with a velocity $ \mathbf{v}_{sys} = \frac{\mathbf{p}}{M} $.  
 As the shuttle travels, its position $ \mathbf{r} $ will be influenced by its initial velocity $ \mathbf{v_0} $ and the gravitational pull of the system. The acceleration of the spacecraft is given by 
 \[
-\mathbf{a} = -G \frac{M}{\left\vert \mathbf{r} - \mathbf{r}_{sys} \right\vert ^{3}} \mathbf{r} - \mathbf{r}_{sys}.
+\mathbf{a} = -G \frac{M}{\left\vert \mathbf{r} - \mathbf{r}_{sys} \right\vert ^{3}} (\mathbf{r} - \mathbf{r}_{sys}).
 \]
 
 Using the leapfrog method for numerical integration we can calculate the full trajectory of our shuttle.

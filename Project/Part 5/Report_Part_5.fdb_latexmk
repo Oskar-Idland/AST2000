@@ -1,12 +1,12 @@
 # Fdb version 3
-["bibtex Report_Part_5"] 1667481724 "Report_Part_5.aux" "Report_Part_5.bbl" "Report_Part_5" 1667482796
+["bibtex Report_Part_5"] 1667481724 "Report_Part_5.aux" "Report_Part_5.bbl" "Report_Part_5" 1667494974
   "C:/Users/oskar/AppData/Local/Programs/MiKTeX/bibtex/bst/revtex/apsrev4-2.bst" 1601731616 69609 e9dea59f0e753ccda3ddc8f5806d846d ""
-  "Report_Part_5.aux" 1667482795 2697 f581e5a3ca735a1f5971646c876af1ca "pdflatex"
-  "Report_Part_5Notes.bib" 1667482795 104 4d8bb863c86f3d7b03a471e9d4707f34 "pdflatex"
+  "Report_Part_5.aux" 1667494973 2697 f581e5a3ca735a1f5971646c876af1ca "pdflatex"
+  "Report_Part_5Notes.bib" 1667494973 104 4d8bb863c86f3d7b03a471e9d4707f34 "pdflatex"
   (generated)
   "Report_Part_5.bbl"
   "Report_Part_5.blg"
-["pdflatex"] 1667482793 "c:/Users/oskar/OneDrive - Universitetet i Oslo/Dokumenter/GitHub/Privat/AST2000/Project/Part 5/Report_Part_5.tex" "Report_Part_5.pdf" "Report_Part_5" 1667482796
+["pdflatex"] 1667494971 "c:/Users/oskar/OneDrive - Universitetet i Oslo/Dokumenter/GitHub/Privat/AST2000/Project/Part 5/Report_Part_5.tex" "Report_Part_5.pdf" "Report_Part_5" 1667494974
   "C:/Users/oskar/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1665923245 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/oskar/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1662027572 10374549 ab9957c64f9e665f244136ccccd1caef ""
   "C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1233951848 1004 54797486969f23fa377b128694d548df ""
@@ -119,11 +119,11 @@
   "C:/Users/oskar/AppData/Local/Programs/MiKTeX/tex/latex/ucs/utf8x.def" 1660466068 8944 1cf5de165d8b3a9de8975b4e3f40e814 ""
   "C:/Users/oskar/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "C:/Users/oskar/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1656233290 56148 51a9a8571c07b9921892ae11063ae853 ""
-  "Report_Part_5.aux" 1667482795 2697 f581e5a3ca735a1f5971646c876af1ca "pdflatex"
+  "Report_Part_5.aux" 1667494973 2697 f581e5a3ca735a1f5971646c876af1ca "pdflatex"
   "Report_Part_5.bbl" 1667481724 2035 35453d3875d823f0ec9445e740a573d9 "bibtex Report_Part_5"
-  "Report_Part_5.out" 1667482795 1574 08a9f4e9625321ad3a72a81ae45c12a6 "pdflatex"
-  "Report_Part_5.tex" 1667482792 5204 17d338b7450cd12c544a3fcd42790afd ""
-  "c:/Users/oskar/OneDrive - Universitetet i Oslo/Dokumenter/GitHub/Privat/AST2000/Project/Part 5/Report_Part_5.tex" 1667482792 5204 17d338b7450cd12c544a3fcd42790afd ""
+  "Report_Part_5.out" 1667494973 1574 08a9f4e9625321ad3a72a81ae45c12a6 "pdflatex"
+  "Report_Part_5.tex" 1667494970 5206 76969b746e99f4e73b6e61da46c737e0 ""
+  "c:/Users/oskar/OneDrive - Universitetet i Oslo/Dokumenter/GitHub/Privat/AST2000/Project/Part 5/Report_Part_5.tex" 1667494970 5206 76969b746e99f4e73b6e61da46c737e0 ""
   (generated)
   "Report_Part_5.aux"
   "Report_Part_5.log"
