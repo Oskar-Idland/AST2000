@@ -10,9 +10,8 @@ from Part_5_A import trajectory
 
 '''
 ----Results----
-Total time of travel is  4.75 years
- 244.00 degrees were good enough
- 12.00 was fast enough
+Total time of travel:           4.75 years
+The best solution found had a speed of 5.877665391162627 and  a velocity vector [-2.43231345 -5.35077581]
 
 '''
 
@@ -59,7 +58,7 @@ def check_close_enough():
     Just for a quick check of how close the shuttle is to the target
     '''
 
-    min_distance = 10000
+    min_distance = 1E20 # Arbitrary large integer 
     index = 0
     for t in range(time_index, final_time_index):
         distance = np.linalg.norm(target_planet_trajectory[:, t] - shuttle_position[int(t - time_index), :])
@@ -81,18 +80,35 @@ def check_close_enough():
     star_m = system.star_mass
     distance_to_star = np.linalg.norm(
         shuttle_position[int(index - time_index)])
-    l = distance_to_star*np.sqrt(planet_m/10*star_m)
+    l = distance_to_star*np.sqrt(planet_m/(10*star_m))
     print(f'\t \t Min distance: {min_distance: .2e}')
-
+    close_enough = False
     if min_distance < l:
+        close_enough = True
         print('Close enough!!')
         plt.scatter(shuttle_position[int(index - time_index), 0], shuttle_position[int(
             index - time_index), 1], label='Shuttle position close enough')
         plt.scatter(target_planet_trajectory[0, index], target_planet_trajectory[1,
                     index], label='Target planet position close enough',)
         print(
-            f'Total time of travel is {(final_time_index-index)*dt: .2f} years, and begins at year {index*dt: .2f}')
-        return True
+            f'Total time of travel is {(index - time_index)*dt: .2f} years, and begins at year {time_index*dt}')
+        return close_enough, index
+    
+    else:
+        return close_enough, index
+
+def calculate_rocket_velocity(speed, angle, time):
+    '''
+    As the file containing the planets velocity is in cartesian coordinates we must convert our calculated vector into cartesian coordinates as well. Then subract this from our calculated vector from the simulation to get the actual value the rocket needs. 
+    '''
+    planet_vel = np.load(os.path.join('Orbits\Planet_1.npz'))['velocity']
+    time_index = int(time/dt)
+    planet_vel = planet_vel[time_index, :] # Velocity vector of home planet
+    x = speed*np.cos(angle)
+    y = speed*np.sin(angle)
+    good_enough_vel = np.array([x,y])
+    rocket_vel = good_enough_vel - planet_vel
+    return rocket_vel
 
 
 if __name__ == "__main__":
@@ -111,8 +127,8 @@ if __name__ == "__main__":
     r_home_target = target_planet_trajectory[:,
                                              time_index] - home_planet_trajectory[:, time_index]
 
-    t = time_index*dt
-    T = time_index*dt + 5
+    t = time_index*dt       # Converts index to years
+    T = time_index*dt + 5   # Converts index to years
 
     # Finds the angle of the vector pointing from home to target. We use this to calculate the start position of our rocket launch
 
@@ -130,39 +146,61 @@ if __name__ == "__main__":
     plt.plot(target_planet_trajectory[0, time_index:final_time_index],
              target_planet_trajectory[1, time_index:final_time_index], label='Target planet trajectory')
 
-    median_angle = 242.5 * np.pi / 180 
-    span_angle = 2.5 * np.pi / 180
-    median_velocity = 12
-    span_velocity = 2
-    angles = np.linspace(median_angle - span_angle, median_angle + span_angle, 21)
-    velocities = np.linspace(median_velocity - span_velocity, median_velocity + span_velocity, 5)
+    median_angle = 267.5 * np.pi / 180 
+    span_angle = 1 * np.pi / 180
+    median_velocity = 9
+    span_velocity = .25
+    angles = np.linspace(median_angle - span_angle, median_angle + span_angle, 17)
+    velocities = np.linspace(median_velocity - span_velocity, median_velocity + span_velocity, 21)
     finished = False
+    good_enough_values = []
+    
     for angle in angles:
-        print(f'{angle*180/np.pi: .2f}')
+        print(f'{angle*180/np.pi: .3f}')
         for velocity in velocities:
             print(f'\t{velocity}')
             v0 = np.array([np.cos(angle), np.sin(angle)]) * velocity
             final_time, shuttle_velocity, shuttle_position = trajectory(
                 t, T, dt, v0, r0)
-            if check_close_enough():
+            close_enough, index = check_close_enough()
+            if close_enough:
                 good_enough_velocity = velocity
                 good_enough_angle = angle
                 print(f'{good_enough_angle*180/np.pi: .2f} degrees were good enough')
                 print(f'{good_enough_velocity: .2f} was fast enough')
                 # finished = True
-            plt.plot(
-                shuttle_position[:5000, 0], shuttle_position[:5000, 1])
+                plt.plot(
+                shuttle_position[:10000, 0], shuttle_position[:10000, 1])
+                good_enough_values.append((good_enough_velocity, good_enough_angle))
 
             if finished:
                 break
         if finished:
             break
 
+    
+    if len(good_enough_values) == 0:
+        print('No results were good enough!')
+    
+    else:        
+        best_result = good_enough_values[0]
+        for result in good_enough_values:
+            vel, angle = result
+            rocket_vel = calculate_rocket_velocity(vel, angle, t)
+            rocket_speed = np.linalg.norm(rocket_vel)
+            print(rocket_speed)
+            if rocket_speed < best_result[0]:
+                best_result = [rocket_speed, rocket_vel]
+                
+        print(f'The best solution found had a speed of {best_result[0]} and  a velocity vector {best_result[1]}')
+        
     plt.xlabel('x [AU]')
     plt.ylabel('y [AU]')
     plt.legend(loc='upper right')
     plt.axis('equal')
     plt.show()
+    
+    
 
     '''
     Plotting the trajectory of home and target planet and where they are the closest

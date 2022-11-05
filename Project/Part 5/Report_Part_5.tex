@@ -124,7 +124,7 @@ d \le l, \qquad l = \left\vert \mathbf{r} \right\vert \sqrt{\frac{M_{target}}{M_
 \]
 
 
-To make the parameters of our simulation easier we switch to polar coordinates $ (r, θ) $. We will iterate over multiple cases of possible angles and speed. This will be done by choosing a median angle and speed. Then have a variance which we will subtract for the lower end of angles and velocities, and add for our upper end. Evenly spaced out values in this interval will be used to get a wide range of possible values. In our case as seen in figure \ref{fig: closest orbit}, we get the closest orbit in the third quadrant in terms of polar coordinates. We begin our simulation by having a median angle of $ \frac{5}{4}π $ with a variance of $ \frac{π}{4} $. This let us cover the entire third quadrant. As seen in figure \ref{fig: simulation scattered} the trajectory will be quite scattered 
+To make the parameters of our simulation easier we switch to polar coordinates $ (r, θ) $. We will iterate over multiple cases of possible angles and speed. This will be done by choosing a median angle and speed. Then have a variance which we will subtract for the lower end of angles and velocities, and add for our upper end. Evenly spaced out values in this interval will be used to get a wide range of possible values. In our case as seen in figure \ref{fig: closest orbit}, we get the closest orbit in the third quadrant in terms of polar coordinates. We begin our simulation by having a median angle of $ \frac{5}{4}π $ with a variance of $ \frac{π}{4} $. This let us cover the entire third quadrant. As seen in figure \ref{fig: simulation scattered} the trajectory will be quite scattered. Next we will show some examples of how we will narrow down both the trajectory and velocity to get close enough to our target planet. 
 
 \begin{figure}[h!]
   \centering
@@ -159,13 +159,14 @@ Then it makes sense to increase it and check if we get closer. When the speed wa
   \label{fig: post speed increase}
 \end{figure}
 
-These examples were to illustrate how we can refine our angles and velocity to get close enough to try and orbit the target planet. For illustrative purposes we only used 5 different angles and three different speed, which gave us 15 different trajectories. In reality we will use hundreds of both to find the answer with as few adjustments as possible. 
+These examples were to illustrate how we can refine our angles and velocity to get close enough to try and orbit the target planet. For illustrative purposes we only used 5 different angles and three different speed, which gave us 15 different trajectories. In reality we will use hundreds of both to find the answer with as few adjustments as possible.
+The simulation only yields the velocity the shuttle need in reference to our star in origin. We subtract the velocity of our home planet from the calculated value to get the actual value our shuttle will need. 
 
 
 \subsection{Launching the Spacecraft}\label{subsec:launching-the-spacecraft}
     Having simulated the necessary parts of the launch, journey and conditions on our destination planet, we can now send the spacecraft on its journey.
 
-
+\newpage
 \section{Results} \label{sec: results}
 \begin{figure}[h!]
   \centering
@@ -174,7 +175,7 @@ These examples were to illustrate how we can refine our angles and velocity to g
   \label{fig: closest orbit}
 \end{figure}
 
-The simulation of the trajectory yielded a necessary speed of 12 AU/yr and an angle of $ 244 ^{o} $ degrees with a travel time of $ 4.75 $ years. We launched our rocket approximetly in the year 238.
+The simulation of the trajectory yielded a necessary speed of 12 AU/yr and an angle of $ 244 ^{o} $ degrees with a travel time of $ 4.75 $ years. We launched our rocket approximately in the year 238. After adjusting for our home planets own velocity we get an initial velocity $ \mathbf{v}_0 = (-7.69, -7.50) $ and a speed of $ \left\vert \mathbf{v}_0 \right\vert = 10.75 \  AU / yr$. Our initial position $ \mathbf{r}_0 $ will then be $ \mathbf{r}_0 = R \hat{\mathbf{v}} + \mathbf{r}_{\text{hp}} $, where $ R $ is the radius and $ \mathbf{r}_{\text{hp}} $ the position of our home planet. 
 \begin{figure}[h!]
   \centering
   \includegraphics[scale = .125]{Figures/good_enough_distance.pdf}
