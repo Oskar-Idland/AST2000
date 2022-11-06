@@ -7,6 +7,8 @@ from ast2000tools.solar_system import SolarSystem
 from numba import njit
 from Part_5_A import trajectory
 
+π =np.pi
+
 
 '''
 ----Results----
@@ -19,7 +21,8 @@ The best solution found had a speed of 5.877665391162627 and  a velocity vector 
 username = "janniesc"
 seed = utils.get_seed(username)
 system = SolarSystem(seed)
-
+planet_m = system.masses[1]
+star_m = system.star_mass
 
 @njit
 def find_closest_orbit(planet_trajectory1, planet_trajectory2):
@@ -41,7 +44,7 @@ def find_closest_orbit(planet_trajectory1, planet_trajectory2):
 
 @njit
 def min_distance_shuttle_target():
-    min_distance = 10000
+    min_distance = 1E20
     index = 0
     for t in range(time_index, final_time_index):
         distance = np.linalg.norm(
@@ -76,8 +79,7 @@ def check_close_enough():
     # plt.scatter(target_planet_trajectory[0, index],
     #             target_planet_trajectory[1, index])
 
-    planet_m = system.masses[1]
-    star_m = system.star_mass
+
     distance_to_star = np.linalg.norm(
         shuttle_position[int(index - time_index)])
     l = distance_to_star*np.sqrt(planet_m/(10*star_m))
