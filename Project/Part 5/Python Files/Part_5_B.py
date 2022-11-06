@@ -7,7 +7,6 @@ from ast2000tools.solar_system import SolarSystem
 from numba import njit
 from Part_5_A import trajectory
 
-π =np.pi
 
 
 '''
