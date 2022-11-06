@@ -133,14 +133,32 @@ d \le l, \qquad l = \left\vert \mathbf{r} \right\vert \sqrt{\frac{M_{target}}{M_
     As stated in section~\ref{sec:introduction}, the time and direction of the launch will be based on our simulations.
     We will therefore launch the rocket at the point in time, which was deemed preferable in our simulations.\\
 
-    After reaching space, the spacecraft will orient itself, and perform an initial boost to enter the simulated trajectory
+    After reaching space, the spacecraft will orient itself, and perform an initial boost to enter the simulated trajectory.
     To execute such a correctional boost, the onboard computer first calculates the required change in velocity.
     Thereafter, we use the onboard gyroscopic stabilizer to rotate the spacecraft.\\
     Since all forces acting on the spacecraft when it is coasting in space are conservative, the angular momentum must be conserved.
     The gyroscopic stabilizer uses three inertial wheels, which can be accelerated using electric motors to induce an angular momentum to the rocket due to the conservation of the total angular momentum.
     This means, we can rotate the rocket without using any fuel.\\
     After rotating the rocket, the main rocket engine will perform a short boost to change the velocity to the velocity required to enter the simulated trajectory.
-    The exact duration of the boost, and therefore the change of velocity $\Delta v$ has been determined by the onboard computer.
+    The exact duration of the boost, and therefore the change of velocity $\Delta \textbf{v}$ has been determined by the onboard computer.
+    As we have measured the position $ \textbf{s}$ and velocity $\textbf{v}$ of the spacecraft when orienting ourselves after the launch, we can determine the required velocity $ \textbf{v}_{req}$ at the current position to enter a trajectory leading to the destination planet, using the method described in section~\ref{ssec: simulating trajectory} and~\ref{subsec:getting-close-enough}.
+    The required change in velocity can then easily be found by subtracting.
+
+    \begin{align*}
+        \Delta\textbf{v} = \textbf{v}_{req} - \textbf{v}
+    \end{align*}
+
+    However, this only gives us a vector.
+    To find the direction and magnitude of the boost, we use some trigonometry.
+    \begin{align*}
+        \Delta\textbf{v} = [\Delta v_x, \Delta v_y]\\
+        |\textbf{v}| = \sqrt{{\Delta v_x}^2 + {\Delta v_y}^2}\\
+        \theta = \arctan \left(\frac{\Delta v_y}{\Delta v_x}\right)
+    \end{align*}
+
+    We then use the calculations from the first paper %~\parencite[][]{part1} TODO: Delete comment
+    of this series of papers to calculate the amount of fuel used for a given $|\Delta\textbf{v}|$ in the process of the correction maneuver
+
     Since the duration of the calculations, rotation of the rocket and boost are insignificant compared to the duration of the journey to the destination planet, we will regard them as instantly.
     A representation of such a boost can be seen in figure~\ref{fig:boost_fig}.\\
 
@@ -149,18 +167,36 @@ d \le l, \qquad l = \left\vert \mathbf{r} \right\vert \sqrt{\frac{M_{target}}{M_
     We will therefore orient the spacecraft at regular intervals and compare the position and velocity to the simulated trajectory.
     If the deviation is gets too large, we will initiate a correctional boost.
     This boost will be executed in exactly the same way as the initial boost after the launch of the spacecraft.\\
+
     The limit of the deviation, when we decide to initiate a boost needs to be chosen carefully as correctional boosts for smaller deviations require less fuel, but may need to happen more often.
-    As we only have a limited amount of excess fuel after the launch, we need to be careful to be as efficient as possible when making corrections to our trajectory.
+    As we only have a limited amount of excess fuel after the launch, we need to be careful to be as efficient as possible when making corrections to our trajectory.\\
     This process of coasting on a trajectory, and correctional boosts will then be repeated until we arrive at the destination planet.
 
     The trajectory of the spacecraft will then end when we are within the required distance $l$ from the planet as calculated in section~\ref{subsec:getting-close-enough} and the velocity of the spacecraft relative to the planet only has a tangential component.
-    In other words, if~\eqref{formula1} is true
+    In other words, if equation~\eqref{formula1} holds.
     \begin{align}
         \textbf{v}(t) \cdot \textbf{s}(t) = 0 \label{formula1}
     \end{align}
     At this point we have to perform another correctional boost in the opposite direction than our velocity to slow the spacecraft and enter into an orbit around the planet.
-    The change of velocity $\Delta v$ depends on the velocity of the spacecraft before the boost, and the distance of the spacecraft to the center of the planet.
+    The change of velocity $\Delta \textbf{v}$ depends on the velocity of the spacecraft before the boost, and the distance of the spacecraft to the center of the planet.\\
+    The velocity $\textbf{v}_{tan}$ needed to be in a perfectly circular orbit can be calculated using the formula for the centripetal acceleration and the formula for gravitational acceleration.
+    \begin{align*}
+        a_c &= G \frac{M_{Planet}}{r^2}\\
+        a_c &= \frac{\textbf{v}_{tan}^2}{r}\\
+        \textbf{v}_{tan}^2 &= G \frac{M_{Planet}}{r}\\
+        \textbf{v}_{tan} &= \sqrt{G \frac{M_{Planet}}{r}}
+    \end{align*}
+    Since both $ \textbf{v}$ and $\textbf{v}_{tan}$ are tangential velocities and therefore point in the same direction, we can now simply determine the required change in velocity $\Delta \textbf{v}$ by subtracting.
+    \begin{align*}
+        \Delta \textbf{v} = \textbf{v} - \textbf{v}_{tan}
+    \end{align*}
 
+    After this burn, the velocity of the spacecraft matches the velocity required to be in a perfectly circular orbit around the planet.
+    The radius of the orbit has been measured and will remain constant.
+    To determine the orbital period, we can use Kepler's third law of planetary motion~\eqref{Kepler3}.
+    \begin{align}
+        \frac{a^3}{T^2} = C \label{Kepler3}
+    \end{align}
 
 
 
