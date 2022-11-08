@@ -5,6 +5,24 @@ from ast2000tools.solar_system import SolarSystem
 from ast2000tools.space_mission import SpaceMission
 from scipy.constants import G
 from scipy import interpolate
+import time
+from numba import njit
+
+A = time.time()
+
+username = "janniesc"
+seed = utils.get_seed(username)
+system = SolarSystem(seed)
+mission = SpaceMission(seed)
+N = 200_000
+dt = 0.01
+planet_idx = 0
+
+
+def plot_circle(x, y, r):
+    # Function to plot circle
+    t_circ = np.linspace(0, 2*np.pi, 100)
+    plt.plot(x+r*np.cos(t_circ), y+r*np.sin(t_circ), linewidth=2, label="Planet")
 
 
 def create_orbit_func(planet_idx):
@@ -29,12 +47,14 @@ def chg_coords(planet_idx, coord_in, vel_in, elapsed_time_s, orbit_launch_time):
     :return: Tuple with Position, Velocity and time in the Solar system coordinates and units
     """
     elapsed_time_yrs = utils.s_to_yr(elapsed_time_s)
+    total_time = elapsed_time_yrs + orbit_launch_time
     pos_func, vel_func = create_orbit_func(planet_idx)
     coord_out = pos_func(orbit_launch_time + elapsed_time_yrs) + utils.m_to_AU(coord_in)
     vel_out = vel_func(orbit_launch_time + elapsed_time_yrs) + utils.m_pr_s_to_AU_pr_yr(vel_in)
-    return coord_out, vel_out, elapsed_time_yrs
+    return coord_out, vel_out, elapsed_time_yrs, total_time
 
 
+@njit
 def engine_performance(thrust, fuel_cons, m_init, speed_boost, dt=0.001):
     v = 0
     i = 0
@@ -46,44 +66,8 @@ def engine_performance(thrust, fuel_cons, m_init, speed_boost, dt=0.001):
     return i*dt*fuel_cons
 
 
-if __name__ == "__main__":
-    # Defining variables
-    username = "janniesc"
-    seed = utils.get_seed(username)
-    N = 200_000
-    dt = 0.01
-    system = SolarSystem(seed)
-    mission = SpaceMission(seed)
-    planet_idx = 0
-
-    dry_mass = mission.spacecraft_mass  # 1100 Kg
-    fuel_mass = 392_000  # Guess!
-    thrust_force = 6_000_000  # Newton # Needs to be at least wet_mass*9.81
-    thrust_per_box = 5.290110991665214e-11  # 8.113886899686883e-11
-    mass_flow_rate_per_box = 2.413509643703512e-15
-    num_of_boxes = thrust_force/thrust_per_box
-    fuel_consumption = mass_flow_rate_per_box*num_of_boxes  # Kg/s
-    estimated_time = 1000
-
-    wet_mass = dry_mass + fuel_mass
-    mass_home_planet = system.masses[0]*1.989e30
-    rotational_period = system.rotational_periods[0]  # In days
-    radius_home_planet = system.radii[0]*1000
-    end_i = 0
-    t_orbit_launch = 0  # In Years
-    planet_theta = 2*np.pi*t_orbit_launch/utils.s_to_yr(rotational_period*24*3600)
-    tang_vel_planet = 2*np.pi*radius_home_planet/(rotational_period*24*3600)
-
-
-    # Creating and initialising arrays
-    pos = np.zeros([N, 2])
-    vel = np.zeros([N, 2])
-    # acc = np.zeros([N, 2])
-    pos[0] = [np.cos(planet_theta)*radius_home_planet, np.sin(planet_theta)*radius_home_planet]
-    vel[0] = [-np.sin(planet_theta)*tang_vel_planet, np.cos(planet_theta)*tang_vel_planet]
-
-    print(f"Wetmass: {wet_mass}")
-    # Integration loop
+@njit
+def integrate(pos, vel, dry_mass, wet_mass, thrust_force, fuel_consumption, mass_home_planet, dt):
     for i in range(N-1):
         # Using Leapfrog method
         wet_mass_i = wet_mass-(fuel_consumption*dt*i)
@@ -106,7 +90,7 @@ if __name__ == "__main__":
         # Checking if we run out of fuel
         if wet_mass <= dry_mass:
             end_i = i
-            print(f"Ran out of fuel after {end_i*dt} seconds :/")
+            status = 1
             break
 
         # Checking if we reached escape velocity
@@ -114,44 +98,96 @@ if __name__ == "__main__":
             exit_coords = np.array([pos[i][0], pos[i][1]])
             exit_vel = np.array([vel[i][0], vel[i][1]])
             end_i = i
-            elapsed_time = end_i*dt
-            print("SPACE!!!")
-            print(f"Final position: x: {int(exit_coords[0])} m, y: {int(exit_coords[1])} m")
-            print(f"Final velocity: v_x: {int(exit_vel[0])} m/s, v_y: {int(exit_vel[1])} m/s")
-            print(f"Time elapsed: {(elapsed_time/60):.2f} min")
-            print(f"Final mass of spacecraft: {wet_mass:.2f} Kg")
-            print(f"Remaining fuel: {wet_mass_i-dry_mass} Kg")
-            print(f"Remaining Burn Time: {(wet_mass_i-dry_mass)/(fuel_consumption*60):.2f} min")
+            status = 0
             break
 
+    return pos, vel, exit_coords, exit_vel, end_i, wet_mass_i, status
 
-    # Plotting
-    # plt.plot(pos[:end_i, 0], pos[:end_i, 1], color="k")
-    plt.plot(pos[:10000, 0], pos[:10000, 1], color="k")
-    # plt.scatter(create_orbit_func(planet_idx)[0](t_orbit_launch)[0] + radius_home_planet*np.cos(planet_theta), create_orbit_func(planet_idx)[0](t_orbit_launch)[1] + radius_home_planet*np.sin(planet_theta), c="r")  # Plotting launch position
-    plt.xlabel("x-position")
-    plt.ylabel("y-position")
-    # plt.axis("equal")
-    plt.grid()
-    plt.savefig("../Figures/Launch_plot.png")
-    plt.show()
+
+def launch_rocket(dry_mass, fuel_mass, thrust_force, estimated_time=1000, dt=0.01, N=200_000, thrust_per_box=5.290110991665214e-11, mass_flow_rate_per_box=2.413509643703512e-15, planet_index=0, t_orbit_launch=0, printing=False, store=True):
+    num_of_boxes = thrust_force / thrust_per_box
+    fuel_consumption = mass_flow_rate_per_box * num_of_boxes  # Kg/s
+    wet_mass = dry_mass + fuel_mass
+    mass_home_planet = system.masses[planet_index]*1.989e30
+    rotational_period = system.rotational_periods[planet_index]  # In days
+    radius_home_planet = system.radii[planet_index]*1000
+    planet_theta = 2*np.pi*t_orbit_launch/utils.s_to_yr(rotational_period*24*3600)
+    tang_vel_planet = 2*np.pi*radius_home_planet/(rotational_period*24*3600)
+
+    # Creating and initialising arrays
+    pos = np.zeros([N, 2])
+    vel = np.zeros([N, 2])
+    pos[0] = [np.cos(planet_theta)*radius_home_planet, np.sin(planet_theta)*radius_home_planet]
+    vel[0] = [-np.sin(planet_theta)*tang_vel_planet, np.cos(planet_theta)*tang_vel_planet]
+
+    # Simulating
+    pos, vel, exit_coords, exit_vel, end_i, wet_mass_i, status = integrate(pos, vel, dry_mass, wet_mass, thrust_force, fuel_consumption, mass_home_planet, dt)
 
     # Changing coordinates to solar coordinate system
-    sol_sys_coords, sol_sys_vel, sol_sys_time = chg_coords(planet_idx, exit_coords, exit_vel, elapsed_time, t_orbit_launch)
+    sol_sys_coords, sol_sys_vel, sol_sys_time, total_time = chg_coords(planet_index, exit_coords, exit_vel, end_i*dt, t_orbit_launch)
 
-    print("\nIn solar system coordinate system:")
-    print(f"Position: ({sol_sys_coords[0]:E}, {sol_sys_coords[1]:E}) AU")
-    print(f"Velocity: ({sol_sys_vel[0]:E}, {sol_sys_vel[1]:E}) AU/Year")
-    print(f"Elapsed Time: {sol_sys_time:E} Years\n")
-    print(f"Number of Boxes: {num_of_boxes:e}")
-    print(f"Mass flow rate: {fuel_consumption} Kg/s\n")
-    # Verifying results
-    launch_position = create_orbit_func(planet_idx)[0](t_orbit_launch) + utils.m_to_AU(radius_home_planet)*np.array([np.cos(planet_theta), np.sin(planet_theta)])
+    if store:
+        # Verifying and storing results
+        launch_position = create_orbit_func(planet_index)[0](t_orbit_launch) + utils.m_to_AU(radius_home_planet)*np.array([np.cos(planet_theta), np.sin(planet_theta)])
+        verify_store_launch(launch_position, sol_sys_coords, thrust_force, fuel_mass, fuel_consumption, t_orbit_launch, estimated_time, dt)
+
+    if printing:
+        if status == 0:
+            print("SPACE!!!")
+            # print(f"Final position: x: {int(exit_coords[0])} m, y: {int(exit_coords[1])} m")
+            # print(f"Final velocity: v_x: {int(exit_vel[0])} m/s, v_y: {int(exit_vel[1])} m/s")
+            print(f"Final mass of spacecraft: {wet_mass:.2f} Kg")
+            print(f"Remaining fuel: {wet_mass_i - dry_mass} Kg")
+            print(f"Remaining Burn Time: {(wet_mass_i - dry_mass) / (fuel_consumption * 60):.2f} min")
+            print(f"Duration of Launch: {int(end_i * dt // 60)} min {int(np.round(end_i * dt % 60, decimals=0))} sec\n")
+
+        elif status == 1:
+            print(f"Ran out of fuel after {end_i * dt} seconds :/")
+
+        # Plotting
+        # plt.plot(pos[:end_i, 0], pos[:end_i, 1], color="k")
+        plt.plot(pos[:10000, 0], pos[:10000, 1], color="k", label="Launch")
+        plt.scatter(create_orbit_func(planet_index)[0](t_orbit_launch)[0] + radius_home_planet * np.cos(planet_theta), create_orbit_func(planet_index)[0](t_orbit_launch)[1] + radius_home_planet * np.sin(planet_theta), c="r")  # Plotting launch position
+        plt.xlabel("x-position")
+        plt.ylabel("y-position")
+        plt.grid()
+        plt.savefig("../Figures/Launch_plot.png")
+        plt.show()
+
+        print("\nIn solar system coordinate system:")
+        print(f"Position: ({sol_sys_coords[0]:E}, {sol_sys_coords[1]:E}) AU")
+        print(f"Velocity: ({sol_sys_vel[0]:E}, {sol_sys_vel[1]:E}) AU/Year")
+        print(f"Elapsed Time: {sol_sys_time:E} Years\n")
+        print(f"Number of Boxes: {num_of_boxes:e}")
+        print(f"Mass flow rate: {fuel_consumption} Kg/s\n")
+        print(f"Launch Results verified: {mission.launch_result_verified}")
+
+    return sol_sys_coords, sol_sys_vel, sol_sys_time, total_time
+
+
+def verify_store_launch(launch_position, final_position, thrust_force, fuel_mass, fuel_consumption, t_orbit_launch, estimated_time, dt):
     mission.set_launch_parameters(thrust_force, fuel_consumption, fuel_mass, estimated_time, launch_position, t_orbit_launch)
     mission.launch_rocket()
-    mission.verify_launch_result(sol_sys_coords)
+    mission.verify_launch_result(final_position)
 
     # Saving Launch parameters for later use
-    launch_parameters = np.array([sol_sys_coords[0], sol_sys_coords[1], thrust_force, fuel_consumption, fuel_mass, estimated_time, launch_position[0], launch_position[1], t_orbit_launch, dt])
+    launch_parameters = np.array([final_position[0], final_position[1], thrust_force, fuel_consumption, fuel_mass, estimated_time, launch_position[0], launch_position[1], t_orbit_launch, dt])
     np.save("Launch_Parameters.npy", launch_parameters)
 
+
+if __name__ == "__main__":
+    # Defining variables
+
+
+    dry_mass = mission.spacecraft_mass  # 1100 Kg
+    fuel_mass = 392_000  # Guess!
+    thrust_force = 6_000_000  # Newton # Needs to be at least wet_mass*9.81
+    thrust_per_box = 5.290110991665214e-11  # 8.113886899686883e-11
+    mass_flow_rate_per_box = 2.413509643703512e-15
+    estimated_time = 1000
+    launch_time = 0
+
+    print(launch_rocket(dry_mass, fuel_mass, thrust_force, estimated_time, dt, N, thrust_per_box, mass_flow_rate_per_box, planet_idx, launch_time, printing=True, store=True))
+
+    B = time.time()
+    print(f"\nThe program took {(B-A):.2f} seconds")

@@ -174,7 +174,7 @@ plt.scatter(0, 0, c="k")
 plt.axis("equal")
 plt.xlabel("x-position [AU]")
 plt.ylabel("y-position [AU]")
-plt.savefig(os.path.join("Figures/Orbit_plots.png"))
+plt.savefig("../Figures/Orbit_plots.png")
 plt.show()
 
 A1, S1 = A_kepler(an_planet_orbits, 0, 1, 0)
