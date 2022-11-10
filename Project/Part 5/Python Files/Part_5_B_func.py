@@ -81,8 +81,8 @@ def find_velocity_for_trajectory(r0, t0, t1, dt, median_angle, angle_span, media
     # angle_span = 0.001 * np.pi / 180
     # median_velocity = 5.12745  # Absolute value!
     # velocity_span = 0.0001
-    angles = np.linspace(median_angle - angle_span, median_angle + angle_span, 5)  # Creating arrays with different angles and velocities to iterate over and test
-    velocities = np.linspace(median_velocity - velocity_span, median_velocity + velocity_span, 5)
+    angles = np.linspace(median_angle - angle_span, median_angle + angle_span, 11)  # Creating arrays with different angles and velocities to iterate over and test
+    velocities = np.linspace(median_velocity - velocity_span, median_velocity + velocity_span, 11)
 
     good_vel_ang = []
 

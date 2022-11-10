@@ -27,6 +27,7 @@ T = 13*20  #You want to find the planetary position from t=0 to t=T. How could y
 #SIMULATION PARAMETERS
 N = 3_000_000  #Number of time steps
 dt = T/N  #calculate time step from T and N
+print(dt)
 
 @jit(nopython = True)                       #Optional, but recommended for speed, check the numerical compendium
 def integrate(T, dt, N, x0, y0, vx0, vy0, G, sun_mass):
