@@ -8,8 +8,7 @@ from ast2000tools.solar_system import SolarSystem
 from ast2000tools.space_mission import SpaceMission
 
 
-username = "janniesc"
-seed = utils.get_seed(username)
+seed = 36874
 system = SolarSystem(seed)
 mission = SpaceMission(seed)
 sigma = constants.sigma

@@ -10,8 +10,7 @@ import pandas as pd
 import os
 start = time.time()
 
-username = "janniesc"
-seed = utils.get_seed(username)
+seed = 36874
 system = SolarSystem(seed)
 mission = SpaceMission(seed)
 

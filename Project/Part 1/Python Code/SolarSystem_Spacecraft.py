@@ -4,8 +4,8 @@ import ast2000tools.utils as utils
 from ast2000tools.solar_system import SolarSystem
 from ast2000tools.space_mission import SpaceMission
 
-username = "janniesc"
-seed = utils.get_seed(username)
+
+seed = 36874
 
 # Solar System
 system = SolarSystem(seed)

@@ -48,8 +48,7 @@ def engine_performance(thrust, fuel_cons, m_init, speed_boost, dt=0.001):
 
 if __name__ == "__main__":
     # Defining variables
-    username = "janniesc"
-    seed = utils.get_seed(username)
+    seed = 36874
     N = 200_000
     dt = 0.01
     system = SolarSystem(seed)

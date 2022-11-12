@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.8.28) (preloaded format=pdflatex 2022.9.1)  6 NOV 2022 16:38
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.8.28) (preloaded format=pdflatex 2022.9.1)  6 NOV 2022 18:00
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -468,79 +468,101 @@ File: Figures/boost_fig.png Graphic file (type png)
 <use Figures/boost_fig.png>
 Package pdftex.def Info: Figures/boost_fig.png  used on input line 63.
 (pdftex.def)             Requested size: 156.81912pt x 94.30827pt.
-LaTeX Font Info:    Trying to load font information for U+esint on input line 67.
+LaTeX Font Info:    Trying to load font information for U+esint on input line 66.
 (C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex/latex/esint\uesint.fd
 File: uesint.fd 
 )
-LaTeX Font Info:    Trying to load font information for U+msa on input line 67.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 66.
  (C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 67.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 66.
  (C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Underfull \hbox (badness 10000) in paragraph at lines 67--70
+Underfull \hbox (badness 10000) in paragraph at lines 69--71
 
  []
 
 (C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex/latex/ucs/data\uni-3.def
 File: uni-3.def 2022/08/07 UCS: Unicode data U+0300..U+03FF
 ) [1{C:/Users/oskar/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <./Figures/boost_fig.png>]
-<Figures/full_angle_scatter.pdf, id=83, 1387.58403pt x 687.28767pt>
+<Figures/full_angle_scatter.pdf, id=84, 1387.58403pt x 687.28767pt>
 File: Figures/full_angle_scatter.pdf Graphic file (type pdf)
 <use Figures/full_angle_scatter.pdf>
-Package pdftex.def Info: Figures/full_angle_scatter.pdf  used on input line 131.
+Package pdftex.def Info: Figures/full_angle_scatter.pdf  used on input line 136.
 (pdftex.def)             Requested size: 173.44757pt x 85.91074pt.
-<Figures/narrowing_down_angle.pdf, id=85, 1387.58403pt x 687.28767pt>
+<Figures/narrowing_down_angle.pdf, id=86, 1387.58403pt x 687.28767pt>
 File: Figures/narrowing_down_angle.pdf Graphic file (type pdf)
 <use Figures/narrowing_down_angle.pdf>
-Package pdftex.def Info: Figures/narrowing_down_angle.pdf  used on input line 139.
+Package pdftex.def Info: Figures/narrowing_down_angle.pdf  used on input line 144.
 (pdftex.def)             Requested size: 173.44757pt x 85.91074pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<Figures/pre_speed_increase.pdf, id=87, 1387.58403pt x 687.28767pt>
+<Figures/pre_speed_increase.pdf, id=88, 1387.58403pt x 687.28767pt>
 File: Figures/pre_speed_increase.pdf Graphic file (type pdf)
 <use Figures/pre_speed_increase.pdf>
-Package pdftex.def Info: Figures/pre_speed_increase.pdf  used on input line 148.
+Package pdftex.def Info: Figures/pre_speed_increase.pdf  used on input line 153.
 (pdftex.def)             Requested size: 173.44757pt x 85.91074pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<Figures/post_speed_increase.pdf, id=89, 1387.58403pt x 687.28767pt>
+<Figures/post_speed_increase.pdf, id=90, 1387.58403pt x 687.28767pt>
 File: Figures/post_speed_increase.pdf Graphic file (type pdf)
 <use Figures/post_speed_increase.pdf>
-Package pdftex.def Info: Figures/post_speed_increase.pdf  used on input line 157.
+Package pdftex.def Info: Figures/post_speed_increase.pdf  used on input line 162.
 (pdftex.def)             Requested size: 173.44757pt x 85.91074pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 172--175
+
+ []
+
 [2 <./Figures/full_angle_scatter.pdf> <./Figures/narrowing_down_angle.pdf> <./Figures/pre_speed_increase.pdf> <./Figures/post_speed_increase.pdf>]
-<Figures/closest_orbit.pdf, id=245, 1387.58403pt x 687.28767pt>
+
+LaTeX Warning: Reference `subsec:getting-close-enough' on page 3 undefined on input line 184.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 202--204
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 205--210
+
+ []
+
+
+LaTeX Warning: Reference `subsec:getting-close-enough' on page 3 undefined on input line 215.
+
+[3]
+<Figures/closest_orbit.pdf, id=257, 1387.58403pt x 687.28767pt>
 File: Figures/closest_orbit.pdf Graphic file (type pdf)
 <use Figures/closest_orbit.pdf>
-Package pdftex.def Info: Figures/closest_orbit.pdf  used on input line 173.
+Package pdftex.def Info: Figures/closest_orbit.pdf  used on input line 247.
 (pdftex.def)             Requested size: 173.44757pt x 85.91074pt.
-<Figures/good_enough_distance.pdf, id=246, 1387.58403pt x 687.28767pt>
+<Figures/good_enough_distance.pdf, id=258, 1387.58403pt x 687.28767pt>
 File: Figures/good_enough_distance.pdf Graphic file (type pdf)
 <use Figures/good_enough_distance.pdf>
-Package pdftex.def Info: Figures/good_enough_distance.pdf  used on input line 181.
+Package pdftex.def Info: Figures/good_enough_distance.pdf  used on input line 255.
 (pdftex.def)             Requested size: 173.44757pt x 85.91074pt.
- (Report_Part_5.bbl) [3 <./Figures/closest_orbit.pdf> <./Figures/good_enough_distance.pdf>] (Report_Part_5.aux)
+ (Report_Part_5.bbl) [4 <./Figures/closest_orbit.pdf> <./Figures/good_enough_distance.pdf>] (Report_Part_5.aux)
+
+LaTeX Warning: There were undefined references.
+
 Package rerunfilecheck Info: File `Report_Part_5.out' has not changed.
 (rerunfilecheck)             Checksum: 357E0CB97DF1AFDD876786C076C4EE51;1650.
  ) 
 Here is how much of TeX's memory you used:
- 15846 strings out of 477843
- 243420 string characters out of 2823600
- 776443 words of memory out of 3000000
- 34517 multiletter control sequences out of 15000+600000
- 473643 words of font info for 47 fonts, out of 8000000 for 9000
+ 15871 strings out of 477843
+ 243693 string characters out of 2823600
+ 779443 words of memory out of 3000000
+ 34533 multiletter control sequences out of 15000+600000
+ 476580 words of font info for 60 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 72i,8n,77p,1078b,530s stack positions out of 10000i,1000n,20000p,200000b,80000s
-<C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx7.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti9.pfb>
-Output written on Report_Part_5.pdf (3 pages, 710753 bytes).
+ 72i,11n,77p,1078b,530s stack positions out of 10000i,1000n,20000p,200000b,80000s
+<C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx7.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi9.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti9.pfb>
+Output written on Report_Part_5.pdf (4 pages, 731616 bytes).
 PDF statistics:
- 378 PDF objects out of 1000 (max. 8388607)
- 27 named destinations out of 1000 (max. 500000)
+ 394 PDF objects out of 1000 (max. 8388607)
+ 30 named destinations out of 1000 (max. 500000)
  140 words of extra memory for PDF output out of 10000 (max. 10000000)
 
