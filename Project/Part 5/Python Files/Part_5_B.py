@@ -11,14 +11,12 @@ from Part_5_A import trajectory
 
 '''
 ----Results----
-Total time of travel:           4.75 years
 The best solution found had a speed of 5.877665391162627 and  a velocity vector [-2.43231345 -5.35077581]
 
 '''
 
 # Initializing system
-username = "janniesc"
-seed = utils.get_seed(username)
+seed = 36874
 system = SolarSystem(seed)
 planet_m = system.masses[1]
 star_m = system.star_mass

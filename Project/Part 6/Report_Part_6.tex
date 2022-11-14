@@ -1,0 +1,104 @@
+\documentclass[reprint,english,notitlepage]{revtex4-2}
+\usepackage{amsmath}
+\usepackage[mathletters]{ucs}
+\usepackage[utf8x]{inputenc}
+\usepackage[english]{babel}
+\usepackage{esint}
+\usepackage{physics,amssymb}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{listings}
+\usepackage{subfigure}
+% \usepackage[style=science, backend=biber]{biblatex}
+% \addbibresource{References_Part_4.bib} TODO: Slett før innlevering
+\hypersetup{
+    colorlinks,
+    linkcolor={red!50!black},
+    citecolor={blue!50!black},
+    urlcolor={blue!80!black}}
+
+\lstset{inputpath=,
+    backgroundcolor=\color{white!88!black},
+    basicstyle={\ttfamily\scriptsize},
+    commentstyle=\color{magenta},
+    language=Python,
+    morekeywords={True,False},
+    tabsize=4,
+    stringstyle=\color{green!55!black},
+    frame=single,
+    keywordstyle=\color{blue},
+    showstringspaces=false,
+    columns=fullflexible,
+    keepspaces=true}
+
+\begin{document}
+
+\title{Preparing For The Landing}
+\author{Oskar Idland \& Jannik Eschler}
+\date{\today}
+\affiliation{Institute of Theoretical Astrophysics, University of Oslo}
+
+\begin{abstract}
+    This is an abstract \colorbox{red}{Complete this summary at the end of the paper}
+\end{abstract}
+\maketitle
+\section{Introduction} \label{sec:introduction}
+\colorbox{red}{To be added if evaluation includes this part}
+\section{Theory} \label{sec: theory}
+\colorbox{red}{To be added if evaluation includes this part}
+\section{Method} \label{sec: method}
+\colorbox{red}{To be added if evaluation includes this part}
+
+\section{Results} \label{sec: results}
+
+\subsection{Spectral Analysis of the Atmosphere}
+\onecolumngrid
+
+\begin{table}[h] \label{tab: Spec anal}
+\caption{\bf{Values from Spectral Analysis}}
+    \begin{tabular}{|c|*{4}{c|}}
+        \hline
+        Gas  &Wavelengh (nm) &Min. Flux &Temperature (K) &Doppler Shift (mm) \\
+        \hline
+        $ O_{2} $ &632 & & &2.21E-02 \\
+        \hline
+        $ O_{2} $ &690 & & &2.41E-02 \\
+        \hline
+        $ O_{2} $ &760 & & &2.66E-02 \\
+        \hline
+        $ H_{2} $ &720 & & &2.86E-02 \\
+        \hline
+        $ H_{2} $ &820 & & &3.26E-02 \\
+        \hline
+        $ H_{2} $ &940 & & &3.74E-02 \\
+        \hline
+        $ CO_{2} $ &1400 & & &4.86E-02 \\
+        \hline
+        $ CO_{2} $ &1600 & & &5.56E-02 \\
+        \hline
+        $ CH_{4} $ &1660 & & &5.92E-02 \\
+        \hline
+        $ CH_{4} $ &2200 & & &7.84E-02 \\
+        \hline
+        $ CO $ &2340 & & &8.21E-02 \\
+        \hline
+        $ N_{2}O $ &2870 & & &9.97E-02 \\
+        \hline
+        \end{tabular}
+
+\end{table}
+\twocolumngrid
+
+
+\section{Discussion} \label{sec: discussion}
+
+\section{Conclusion} \label{sec: conclusion}
+
+\section{Appendix} \label{sec: appendix}
+
+\section*{ACKNOWLEDGMENTS}
+
+\section*{References} \label{sec: references}
+
+\end{document}

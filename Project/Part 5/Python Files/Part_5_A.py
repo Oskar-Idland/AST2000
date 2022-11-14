@@ -10,8 +10,7 @@ from ast2000tools.space_mission import SpaceMission
 G = 4 * np.pi ** 2
 
 # Initializing system
-username = "janniesc"
-seed = utils.get_seed(username)
+seed = 36874
 system = SolarSystem(seed)
 mission = SpaceMission(seed)
 star_mass = system.star_mass
