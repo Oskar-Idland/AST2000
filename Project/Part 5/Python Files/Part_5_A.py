@@ -17,7 +17,7 @@ star_mass = system.star_mass
 sum_planet_mass = np.sum(system.masses)
 initial_positions = system.initial_positions
 masses = system.masses
-planet_file = np.load('planet_trajectories.npz')
+planet_file = np.load('../../Part 2/Python Code/planet_trajectories.npz')
 planet_positions = planet_file['planet_positions']
 
 
@@ -64,7 +64,7 @@ def trajectory(t: float, T: float, dt: float, v0: np.ndarray, r0: np.ndarray):
 
 
 if __name__ == "__main__":
-    planet_file = np.load('planet_trajectories.npz')
+    planet_file = np.load('../../Part 2/Python Code/planet_trajectories.npz')
     # Nice to have the same time index as used by SpaceMission
     dt = planet_file['times'][1]
     planet_r = utils.km_to_AU(system.radii[0])

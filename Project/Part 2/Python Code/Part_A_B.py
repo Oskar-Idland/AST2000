@@ -26,6 +26,7 @@ T = 13*20  #You want to find the planetary position from t=0 to t=T. How could y
 #SIMULATION PARAMETERS
 N = 3_000_000  #Number of time steps
 dt = T/N  #calculate time step from T and N
+print(dt)
 
 @jit(nopython = True)                       #Optional, but recommended for speed, check the numerical compendium
 def integrate(T, dt, N, x0, y0, vx0, vy0, G, sun_mass):
@@ -173,7 +174,7 @@ plt.scatter(0, 0, c="k")
 plt.axis("equal")
 plt.xlabel("x-position [AU]")
 plt.ylabel("y-position [AU]")
-plt.savefig(os.path.join("Figures/Orbit_plots.png"))
+plt.savefig("../Figures/Orbit_plots.png")
 plt.show()
 
 A1, S1 = A_kepler(an_planet_orbits, 0, 1, 0)
