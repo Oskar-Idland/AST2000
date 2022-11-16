@@ -81,8 +81,8 @@ def find_velocity_for_trajectory(r0, t0, t1, dt, median_angle, angle_span, media
     # angle_span = 0.001 * np.pi / 180
     # median_velocity = 5.12745  # Absolute value!
     # velocity_span = 0.0001
-    angles = np.linspace(median_angle - angle_span, median_angle + angle_span, 11)  # Creating arrays with different angles and velocities to iterate over and test
-    velocities = np.linspace(median_velocity - velocity_span, median_velocity + velocity_span, 11)
+    angles = np.linspace(median_angle - angle_span, median_angle + angle_span, 5)  # Creating arrays with different angles and velocities to iterate over and test
+    velocities = np.linspace(median_velocity - velocity_span, median_velocity + velocity_span, 3)
 
     good_vel_ang = []
 
@@ -93,14 +93,8 @@ def find_velocity_for_trajectory(r0, t0, t1, dt, median_angle, angle_span, media
             print("Velocity:")
             print(velocity)
             v0 = velocity * np.array([np.cos(angle), np.sin(angle)])
-            # A1 = ti.time()
             final_time, sc_velocity, sc_position = trajectory(t0, t1, dt, v0, r0)
-            # sc_position = utils.m_to_AU(sc_position1)
-            # B1 = ti.time()
             close_enough, index, dist = check_close_enough(sc_position, dest_planet_orbit, dest_planet_mass, time_index0, time_index1)
-            # C1 = ti.time()
-            # print(B1-A1)
-            # print(C1-B1)
             if close_enough:
                 good_vel_ang.append([angle, velocity, dist])
 
@@ -135,17 +129,18 @@ if __name__ == "__main__":
     launch_planet_orbit = np.transpose(planet_positions[:, launch_planet_idx, :])
     dest_planet_orbit = np.transpose(planet_positions[:, dest_planet_idx, :])  # Creating orbits for the planets
 
-    median_angle = 250.226 * np.pi / 180  # Setting Middle, max and min values for angles and velocities
-    angle_span = 0.001 * np.pi / 180
-    median_velocity = 5.12745  # Absolute value!
-    velocity_span = 0.0001
+    median_angle = 222.774515 * np.pi / 180  # Setting Middle, max and min values for angles and velocities
+    angle_span = 0.00001 * np.pi / 180
+    median_velocity = 6.87  # Absolute value!
+    velocity_span = 0.001
+    launch_angle = 180
 
     min_dist_planets, time_index00 = find_closest_orbit(launch_planet_orbit, dest_planet_orbit)  # Calculating min distance between planets, best time for launch and estimated time for reaching destination
     dt = time[1]
     time_index1 = int(time_index00 + 5 / dt)
     t00 = time_index00 * dt
 
-    r0, v01, t0, total_time = launch_rocket(mission.spacecraft_mass, 392_000, 6_000_000, t_orbit_launch=t00, printing=False, store=False)
+    r0, v01, total_time = launch_rocket(mission.spacecraft_mass, 392_000, 6_000_000, t_orbit_launch=t00, launch_angle=launch_angle, printing=False, store=False)
 
     time_index0 = int(total_time/dt)
     t1 = time_index1 * dt

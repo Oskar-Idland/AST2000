@@ -124,7 +124,7 @@ Then we use the Leapfrog integration method get the next position after a small 
 % \]
 We will use this method during the launch of our rocket.
 
-\subsection{Getting close enough to the target planet} \label{subsec:getting-close-enough}
+\subsection{Getting close enough to the target planet}\label{subsec:getting-close-enough}
 To make our journey as easy as possible we first try to check where our home planet and target planet are the closest.
 Using the orbits, calculated from the second paper %~\parencite[][]{part2} TODO: Delete comment
 of this series of papers, we iterate over all positions and check at which time $ t_{0} $ the distance is the smallest.
@@ -264,6 +264,19 @@ We subtract the velocity of our home planet from the calculated value to get the
     \begin{align}
         \frac{a^3}{T^2} = C \label{Kepler3}
     \end{align}
+
+
+\subsection{The orbit around the destination planet}\label{subsec:the-orbit-around-the-destination-planet}
+    Even though the spacecraft has performed an orbit injection maneuver which should lead to a perfectly circular orbit, the probability for unexpected things to happen is large.
+    We therefore need to check what kind of orbit we ended up in after the injection maneuver.
+    The first thing to do is to orient ourselves.
+    This way, we can find out the position and velocity of the spacecraft relative to the planet.
+    Using this data, we can determine
+
+
+
+
+
 
 
 

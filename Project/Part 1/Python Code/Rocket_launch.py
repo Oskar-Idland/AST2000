@@ -7,6 +7,7 @@ from scipy.constants import G
 from scipy import interpolate
 import time
 from numba import njit
+from snarvei_del1 import launch_rocket_shortcut
 
 A = time.time()
 
@@ -106,7 +107,7 @@ def integrate(pos, vel, dry_mass, wet_mass, thrust_force, fuel_consumption, mass
     return pos, vel, exit_coords, exit_vel, end_i, wet_mass_i, status
 
 
-def launch_rocket(dry_mass, fuel_mass, thrust_force, estimated_time=1000, dt=0.001, N=200_000, thrust_per_box=5.290110991665214e-11, mass_flow_rate_per_box=2.413509643703512e-15, planet_index=0, t_orbit_launch=0, printing=False, store=True):
+def launch_rocket(dry_mass, fuel_mass, thrust_force, estimated_time=1000, dt=0.001, N=200_000, thrust_per_box=5.290110991665214e-11, mass_flow_rate_per_box=2.413509643703512e-15, planet_index=0, t_orbit_launch=0, launch_angle=0, printing=False, store=True):
     num_of_boxes = thrust_force / thrust_per_box
     fuel_consumption = mass_flow_rate_per_box * num_of_boxes  # Kg/s
     wet_mass = dry_mass + fuel_mass
@@ -116,6 +117,7 @@ def launch_rocket(dry_mass, fuel_mass, thrust_force, estimated_time=1000, dt=0.0
     planet_theta = np.pi # 2*np.pi*t_orbit_launch/utils.s_to_yr(rotational_period*24*3600)
     tang_vel_planet = 2*np.pi*radius_home_planet/(rotational_period*24*3600)
 
+    """
     # Creating and initialising arrays
     pos = np.zeros([N, 2])
     vel = np.zeros([N, 2])
@@ -127,6 +129,7 @@ def launch_rocket(dry_mass, fuel_mass, thrust_force, estimated_time=1000, dt=0.0
 
     # Changing coordinates to solar coordinate system
     sol_sys_coords, sol_sys_vel, sol_sys_time, total_time = chg_coords(planet_index, exit_coords, exit_vel, end_i*dt, t_orbit_launch)
+    
 
     if store:
         # Verifying and storing results
@@ -164,8 +167,13 @@ def launch_rocket(dry_mass, fuel_mass, thrust_force, estimated_time=1000, dt=0.0
         print(f"Number of Boxes: {num_of_boxes:e}")
         print(f"Mass flow rate: {fuel_consumption} Kg/s\n")
         print(f"Launch Results verified: {mission.launch_result_verified}")
+    """
 
-    return sol_sys_coords, sol_sys_vel, sol_sys_time, total_time
+    height_above_suface = 0
+
+    pos_after_launch, vel_after_launch, time, fuel_consumed = launch_rocket_shortcut(thrust_force, fuel_consumption, t_orbit_launch, height_above_suface, launch_angle, fuel_mass)
+
+    return pos_after_launch, vel_after_launch, time
 
 
 def verify_store_launch(launch_position, final_position, thrust_force, fuel_mass, fuel_consumption, t_orbit_launch1, estimated_time, dt):
@@ -193,8 +201,8 @@ if __name__ == "__main__":
     launch_time = 200
     print(system.radii[0])
     print(utils.m_to_AU(49_587_900))
-
-    print(launch_rocket(dry_mass, fuel_mass, thrust_force, estimated_time, dt, N, thrust_per_box, mass_flow_rate_per_box, planet_idx, launch_time, printing=True, store=True))
+    launch_angle = 250
+    print(launch_rocket(dry_mass, fuel_mass, thrust_force, estimated_time, dt, N, thrust_per_box, mass_flow_rate_per_box, planet_idx, launch_time, launch_angle=launch_angle, printing=True, store=True))
 
     B = time.time()
     print(f"\nThe program took {(B-A):.2f} seconds")
