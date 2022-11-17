@@ -40,7 +40,7 @@ def find_closest_orbit(planet_trajectory1, planet_trajectory2):
     for i in range(1, len(dist_arr)):
         if np.linalg.norm(dist_arr[i]) < least_value:
             least_value = np.linalg.norm(dist_arr[i])
-            idx = i
+            idx = i + 5000
     return dist_arr[idx], idx
 
 
@@ -70,6 +70,7 @@ def check_close_enough(sc_traj, planet_traj, planet_mass, time_index0, time_inde
     print("Distance")
     print(min_distance, close_enough)
     plt.plot(sc_traj[:10000, 0], sc_traj[:10000, 1], c="k")
+    plt.scatter(sc_traj[index-time_index0, 0], sc_traj[index-time_index0, 1])
     plt.scatter(planet_traj[index, 0], planet_traj[index, 1])
 
     return close_enough, index, min_distance
@@ -81,8 +82,8 @@ def find_velocity_for_trajectory(r0, t0, t1, dt, median_angle, angle_span, media
     # angle_span = 0.001 * np.pi / 180
     # median_velocity = 5.12745  # Absolute value!
     # velocity_span = 0.0001
-    angles = np.linspace(median_angle - angle_span, median_angle + angle_span, 5)  # Creating arrays with different angles and velocities to iterate over and test
-    velocities = np.linspace(median_velocity - velocity_span, median_velocity + velocity_span, 3)
+    angles = np.linspace(median_angle - angle_span, median_angle + angle_span, 11)  # Creating arrays with different angles and velocities to iterate over and test
+    velocities = np.linspace(median_velocity - velocity_span, median_velocity + velocity_span, 1)
 
     good_vel_ang = []
 
@@ -129,30 +130,37 @@ if __name__ == "__main__":
     launch_planet_orbit = np.transpose(planet_positions[:, launch_planet_idx, :])
     dest_planet_orbit = np.transpose(planet_positions[:, dest_planet_idx, :])  # Creating orbits for the planets
 
-    median_angle = 222.774515 * np.pi / 180  # Setting Middle, max and min values for angles and velocities
-    angle_span = 0.00001 * np.pi / 180
-    median_velocity = 6.87  # Absolute value!
-    velocity_span = 0.001
-    launch_angle = 180
-
-    min_dist_planets, time_index00 = find_closest_orbit(launch_planet_orbit, dest_planet_orbit)  # Calculating min distance between planets, best time for launch and estimated time for reaching destination
+    min_dist_planets, time_index0 = find_closest_orbit(launch_planet_orbit, dest_planet_orbit)  # Calculating min distance between planets, best time for launch and estimated time for reaching destination
     dt = time[1]
-    time_index1 = int(time_index00 + 5 / dt)
-    t00 = time_index00 * dt
-
-    r0, v01, total_time = launch_rocket(mission.spacecraft_mass, 392_000, 6_000_000, t_orbit_launch=t00, launch_angle=launch_angle, printing=False, store=False)
-
-    time_index0 = int(total_time/dt)
+    t0 = time_index0 * dt
+    time_index1 = int(time_index0 + 3 / dt)
     t1 = time_index1 * dt
 
-    plt.plot(launch_planet_orbit[time_index0:(time_index1 - 1), 0], launch_planet_orbit[time_index0:(time_index1 - 1), 1])
-    plt.scatter(launch_planet_orbit[time_index0, 0], launch_planet_orbit[time_index0, 1], c="r")
-    plt.scatter(launch_planet_orbit[time_index1, 0], launch_planet_orbit[time_index1, 1], c="k")
-    plt.plot(dest_planet_orbit[time_index0:(time_index1 - 1), 0], dest_planet_orbit[time_index0:(time_index1 - 1), 1])
-    plt.scatter(dest_planet_orbit[time_index0, 0], dest_planet_orbit[time_index0, 1], c="r")
-    plt.scatter(dest_planet_orbit[time_index1, 0], dest_planet_orbit[time_index1, 1], c="k")
+    launch_angle = 280
+    r0, v0, t0 = launch_rocket(mission.spacecraft_mass, 392_000, 6_000_000, t_orbit_launch=t0, launch_angle=launch_angle, printing=False, store=False)
 
-    find_velocity_for_trajectory(r0, total_time, t1, dt, median_angle, angle_span, median_velocity, velocity_span, dest_planet_orbit, dest_planet_mass, time_index0, time_index1)
+    exit_vel_angle = np.arctan(v0[1]/v0[0])
+
+    median_angle = exit_vel_angle * np.pi / 180  # Setting Middle, max and min values for angles and velocities
+    angle_span = 1 * np.pi / 180
+    # median_velocity = 7.3  # Absolute value!
+    median_velocity = np.linalg.norm(v0)
+    velocity_span = 1e-25
+    print(v0)
+    print((exit_vel_angle/np.pi*180) + 360)
+
+
+
+    # plt.plot(launch_planet_orbit[time_index0:(time_index1 - 1), 0], launch_planet_orbit[time_index0:(time_index1 - 1), 1])
+    plt.plot(launch_planet_orbit[time_index0:(time_index0 + 5_000), 0], launch_planet_orbit[time_index0:(time_index0 + 5_000), 1])
+    plt.scatter(launch_planet_orbit[time_index0, 0], launch_planet_orbit[time_index0, 1], c="r")
+    # plt.scatter(launch_planet_orbit[time_index1, 0], launch_planet_orbit[time_index1, 1], c="k")
+    # plt.plot(dest_planet_orbit[time_index0:(time_index1 - 1), 0], dest_planet_orbit[time_index0:(time_index1 - 1), 1])
+    plt.plot(dest_planet_orbit[(time_index0 + 5000):(time_index0 + 10000), 0], dest_planet_orbit[(time_index0 + 5000):(time_index0 + 10000), 1])
+    # plt.scatter(dest_planet_orbit[time_index0, 0], dest_planet_orbit[time_index0, 1], c="r")
+    # plt.scatter(dest_planet_orbit[time_index1, 0], dest_planet_orbit[time_index1, 1], c="k")
+
+    find_velocity_for_trajectory(r0, t0, t1, dt, median_angle, angle_span, median_velocity, velocity_span, dest_planet_orbit, dest_planet_mass, time_index0, time_index1)
     plt.axis("equal")
     plt.show()
     BB = ti.time()

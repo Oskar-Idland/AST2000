@@ -140,8 +140,9 @@ def launch_rocket(dry_mass, fuel_mass, thrust_force, estimated_time=1000, dt=0.0
     if printing:
         if status == 0:
             print("SPACE!!!")
-            # print(f"Final position: x: {int(exit_coords[0])} m, y: {int(exit_coords[1])} m")
-            # print(f"Final velocity: v_x: {int(exit_vel[0])} m/s, v_y: {int(exit_vel[1])} m/s")
+            print(f"Final position: x: {int(exit_coords[0])} m, y: {int(exit_coords[1])} m")
+            print(f"Final velocity: v_x: {int(exit_vel[0])} m/s, v_y: {int(exit_vel[1])} m/s")
+            print(f"Distance: {np.linalg.norm(exit_coords)}")
             print(f"Final mass of spacecraft: {wet_mass:.2f} Kg")
             print(f"Remaining fuel: {wet_mass_i - dry_mass} Kg")
             print(f"Remaining Burn Time: {(wet_mass_i - dry_mass) / (fuel_consumption * 60):.2f} min")
@@ -169,11 +170,12 @@ def launch_rocket(dry_mass, fuel_mass, thrust_force, estimated_time=1000, dt=0.0
         print(f"Launch Results verified: {mission.launch_result_verified}")
     """
 
-    height_above_suface = 0
+    height_above_suface = 3_000_000 # 12_248_227 - 8_653_612 = 3_594_615 Height from our own launch simulation - the radius of the planet
 
     pos_after_launch, vel_after_launch, time, fuel_consumed = launch_rocket_shortcut(thrust_force, fuel_consumption, t_orbit_launch, height_above_suface, launch_angle, fuel_mass)
-
+    
     return pos_after_launch, vel_after_launch, time
+
 
 
 def verify_store_launch(launch_position, final_position, thrust_force, fuel_mass, fuel_consumption, t_orbit_launch1, estimated_time, dt):
@@ -198,10 +200,10 @@ if __name__ == "__main__":
     thrust_per_box = 5.290110991665214e-11  # 8.113886899686883e-11
     mass_flow_rate_per_box = 2.413509643703512e-15
     estimated_time = 1000
-    launch_time = 200
+    launch_time = 0
     print(system.radii[0])
     print(utils.m_to_AU(49_587_900))
-    launch_angle = 250
+    launch_angle = 180
     print(launch_rocket(dry_mass, fuel_mass, thrust_force, estimated_time, dt, N, thrust_per_box, mass_flow_rate_per_box, planet_idx, launch_time, launch_angle=launch_angle, printing=True, store=True))
 
     B = time.time()
