@@ -6,6 +6,7 @@ import ast2000tools.utils as utils
 from ast2000tools.solar_system import SolarSystem
 from numba import njit
 from Part_5_A import trajectory
+from Initialize_System import *
 
 
 
@@ -20,6 +21,7 @@ seed = 36874
 system = SolarSystem(seed)
 planet_m = system.masses[1]
 star_m = system.star_mass
+
 
 @njit
 def find_closest_orbit(planet_trajectory1, planet_trajectory2):

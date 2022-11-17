@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.8.28) (preloaded format=pdflatex 2022.9.1)  13 NOV 2022 14:11
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.8.28) (preloaded format=pdflatex 2022.9.1)  16 NOV 2022 19:08
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -458,33 +458,251 @@ Package hyperref Info: Link coloring ON on input line 35.
 Class revtex4-2 Info: Taking \maketitle back from hyperref on input line 35.
 \openout3 = `Report_Part_6Notes.bib'.
 
-LaTeX Font Info:    Trying to load font information for U+esint on input line 60.
+LaTeX Font Info:    Trying to load font information for U+esint on input line 56.
  (C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex/latex/esint\uesint.fd
 File: uesint.fd 
 )
-LaTeX Font Info:    Trying to load font information for U+msa on input line 60.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 56.
  (C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 60.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 56.
  (C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) (Report_Part_6.bbl) [1{C:/Users/oskar/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] (Report_Part_6.aux)
+)
+<Figures/O2 632.pdf, id=91, 462.52798pt x 289.08pt>
+File: Figures/O2 632.pdf Graphic file (type pdf)
+<use Figures/O2 632.pdf>
+Package pdftex.def Info: Figures/O2 632.pdf  used on input line 91.
+(pdftex.def)             Requested size: 231.26341pt x 144.53964pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<Figures/O2 690.pdf, id=92, 462.52798pt x 289.08pt>
+File: Figures/O2 690.pdf Graphic file (type pdf)
+<use Figures/O2 690.pdf>
+Package pdftex.def Info: Figures/O2 690.pdf  used on input line 98.
+(pdftex.def)             Requested size: 231.26341pt x 144.53964pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<Figures/O2 760.pdf, id=93, 462.52798pt x 289.08pt>
+File: Figures/O2 760.pdf Graphic file (type pdf)
+<use Figures/O2 760.pdf>
+Package pdftex.def Info: Figures/O2 760.pdf  used on input line 105.
+(pdftex.def)             Requested size: 231.26341pt x 144.53964pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<Figures/H2O 720.pdf, id=94, 462.52798pt x 289.08pt>
+File: Figures/H2O 720.pdf Graphic file (type pdf)
+<use Figures/H2O 720.pdf>
+Package pdftex.def Info: Figures/H2O 720.pdf  used on input line 112.
+(pdftex.def)             Requested size: 231.26341pt x 144.53964pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<Figures/H2O 820.pdf, id=95, 462.52798pt x 289.08pt>
+File: Figures/H2O 820.pdf Graphic file (type pdf)
+<use Figures/H2O 820.pdf>
+Package pdftex.def Info: Figures/H2O 820.pdf  used on input line 119.
+(pdftex.def)             Requested size: 231.26341pt x 144.53964pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<Figures/H2O 940.pdf, id=96, 462.52798pt x 289.08pt>
+File: Figures/H2O 940.pdf Graphic file (type pdf)
+<use Figures/H2O 940.pdf>
+Package pdftex.def Info: Figures/H2O 940.pdf  used on input line 126.
+(pdftex.def)             Requested size: 231.26341pt x 144.53964pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<Figures/CO2 1400.pdf, id=97, 462.52798pt x 289.08pt>
+File: Figures/CO2 1400.pdf Graphic file (type pdf)
+<use Figures/CO2 1400.pdf>
+Package pdftex.def Info: Figures/CO2 1400.pdf  used on input line 133.
+(pdftex.def)             Requested size: 231.26341pt x 144.53964pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<Figures/CO2 1600.pdf, id=98, 462.52798pt x 289.08pt>
+File: Figures/CO2 1600.pdf Graphic file (type pdf)
+<use Figures/CO2 1600.pdf>
+Package pdftex.def Info: Figures/CO2 1600.pdf  used on input line 140.
+(pdftex.def)             Requested size: 231.26341pt x 144.53964pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<Figures/CH4 1660.pdf, id=99, 462.52798pt x 289.08pt>
+File: Figures/CH4 1660.pdf Graphic file (type pdf)
+<use Figures/CH4 1660.pdf>
+Package pdftex.def Info: Figures/CH4 1660.pdf  used on input line 147.
+(pdftex.def)             Requested size: 231.26341pt x 144.53964pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<Figures/CH4 2200.pdf, id=100, 462.52798pt x 289.08pt>
+File: Figures/CH4 2200.pdf Graphic file (type pdf)
+<use Figures/CH4 2200.pdf>
+Package pdftex.def Info: Figures/CH4 2200.pdf  used on input line 154.
+(pdftex.def)             Requested size: 231.26341pt x 144.53964pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<Figures/CO 2340.pdf, id=101, 462.52798pt x 289.08pt>
+File: Figures/CO 2340.pdf Graphic file (type pdf)
+<use Figures/CO 2340.pdf>
+Package pdftex.def Info: Figures/CO 2340.pdf  used on input line 161.
+(pdftex.def)             Requested size: 231.26341pt x 144.53964pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<Figures/N2O 2870.pdf, id=102, 462.52798pt x 289.08pt>
+File: Figures/N2O 2870.pdf Graphic file (type pdf)
+<use Figures/N2O 2870.pdf>
+Package pdftex.def Info: Figures/N2O 2870.pdf  used on input line 168.
+(pdftex.def)             Requested size: 231.26341pt x 144.53964pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[1{C:/Users/oskar/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <./Figures/O2 632.pdf> <./Figures/O2 690.pdf>]
+
+LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix] on input line 173.
+
+
+Class revtex4-2 Warning: Deferred float stuck during \clearpage processing.
+
+[2 <./Figures/O2 760.pdf> <./Figures/H2O 720.pdf> <./Figures/H2O 820.pdf> <./Figures/H2O 940.pdf> <./Figures/CO2 1400.pdf> <./Figures/CO2 1600.pdf>]
+
+LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix] on input line 173.
+
+
+Class revtex4-2 Warning: Deferred float stuck during \clearpage processing.
+
+[3 <./Figures/CH4 1660.pdf> <./Figures/CH4 2200.pdf> <./Figures/CO 2340.pdf> <./Figures/N2O 2870.pdf>]
+<Figures/Temperature plot.pdf, id=660, 462.52798pt x 346.89601pt>
+File: Figures/Temperature plot.pdf Graphic file (type pdf)
+<use Figures/Temperature plot.pdf>
+Package pdftex.def Info: Figures/Temperature plot.pdf  used on input line 181.
+(pdftex.def)             Requested size: 185.0079pt x 138.75594pt.
+<Figures/Density plot.pdf, id=661, 462.52798pt x 346.89601pt>
+File: Figures/Density plot.pdf Graphic file (type pdf)
+<use Figures/Density plot.pdf>
+Package pdftex.def Info: Figures/Density plot.pdf  used on input line 188.
+(pdftex.def)             Requested size: 185.0079pt x 138.75594pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 207--209
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 210--212
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 213--215
+
+ []
+
+(C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex/latex/ucs/data\uni-33.def
+File: uni-33.def 2022/08/07 UCS: Unicode data U+2100..U+21FF
+)
+Underfull \hbox (badness 10000) in paragraph at lines 216--218
+
+ []
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 220.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 220.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 220.
+
+[4 <./Figures/Temperature plot.pdf> <./Figures/Density plot.pdf>]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 229.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 229.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 229.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 232.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 232.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 232.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 239.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 239.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 239.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 246.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 246.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 249.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 249.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 249.
+
+(C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex/latex/ucs/data\uni-3.def
+File: uni-3.def 2022/08/07 UCS: Unicode data U+0300..U+03FF
+) (C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex/latex/ucs/data\uni-34.def
+File: uni-34.def 2022/08/07 UCS: Unicode data U+2200..U+22FF
+) (Report_Part_6.bbl) [5] (Report_Part_6.aux)
 Package rerunfilecheck Info: File `Report_Part_6.out' has not changed.
-(rerunfilecheck)             Checksum: B0BF9E8D3DC4558DFAC364C901A92BEB;1425.
+(rerunfilecheck)             Checksum: C05EA36DFDEA441CAF0ACC4846B5D26F;2638.
  ) 
 Here is how much of TeX's memory you used:
- 15319 strings out of 477843
- 236095 string characters out of 2823600
- 778443 words of memory out of 3000000
- 34012 multiletter control sequences out of 15000+600000
- 474465 words of font info for 50 fonts, out of 8000000 for 9000
+ 16702 strings out of 477843
+ 253380 string characters out of 2823600
+ 777443 words of memory out of 3000000
+ 35343 multiletter control sequences out of 15000+600000
+ 475988 words of font info for 58 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 72i,9n,77p,438b,530s stack positions out of 10000i,1000n,20000p,200000b,80000s
-<C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi9.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti9.pfb>
-Output written on Report_Part_6.pdf (1 page, 100769 bytes).
+ 72i,9n,77p,977b,530s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ <C:\Users\oskar\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi9.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti9.pfb>
+Output written on Report_Part_6.pdf (5 pages, 471890 bytes).
 PDF statistics:
- 98 PDF objects out of 1000 (max. 8388607)
- 14 named destinations out of 1000 (max. 500000)
- 97 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 838 PDF objects out of 1000 (max. 8388607)
+ 41 named destinations out of 1000 (max. 500000)
+ 247 words of extra memory for PDF output out of 10000 (max. 10000000)
 

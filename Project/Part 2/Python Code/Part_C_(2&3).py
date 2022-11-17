@@ -82,7 +82,7 @@ def read_radial_velocity(filename):
 
 
 def radial_velocity_analysis(t,v_rad):
-    k = 400
+    k = 200
 
     plt.plot(t[k:-k], v_rad[k:-k], label = 'Velocity with noise')
 
@@ -103,9 +103,6 @@ t, v_rad = read_radial_velocity('velocitydata.txt')
 radial_velocity_analysis(t,v_rad)
 v_rad, t = read_radial_velocity('velocitydata3.txt')
 radial_velocity_analysis(t,v_rad)
-
-
-# TODO Ta bort før innlevering
 
 
 
