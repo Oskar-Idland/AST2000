@@ -117,7 +117,7 @@ def launch_rocket(dry_mass, fuel_mass, thrust_force, estimated_time=1000, dt=0.0
     planet_theta = np.pi # 2*np.pi*t_orbit_launch/utils.s_to_yr(rotational_period*24*3600)
     tang_vel_planet = 2*np.pi*radius_home_planet/(rotational_period*24*3600)
 
-    """
+
     # Creating and initialising arrays
     pos = np.zeros([N, 2])
     vel = np.zeros([N, 2])
@@ -175,7 +175,7 @@ def launch_rocket(dry_mass, fuel_mass, thrust_force, estimated_time=1000, dt=0.0
     pos_after_launch, vel_after_launch, time, fuel_consumed = launch_rocket_shortcut(thrust_force, fuel_consumption, t_orbit_launch, height_above_suface, launch_angle, fuel_mass)
     
     return pos_after_launch, vel_after_launch, time
-
+    """
 
 
 def verify_store_launch(launch_position, final_position, thrust_force, fuel_mass, fuel_consumption, t_orbit_launch1, estimated_time, dt):

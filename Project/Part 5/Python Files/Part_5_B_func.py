@@ -10,6 +10,7 @@ import time as ti
 from Part_5_A import trajectory
 sys.path.append("../../Part 1/Python Code")
 from Rocket_launch import launch_rocket  # It works when running, even if it shows an error in the editor!
+from ast2000tools.shortcuts import SpaceMissionShortcuts
 
 '''
 ----Results----
@@ -24,6 +25,10 @@ seed = utils.get_seed(username)
 mission = SpaceMission(seed)
 system = SolarSystem(seed)
 star_m = system.star_mass
+code_launch_results = 83949
+code_escape_trajectory = 74482
+shortcut1 = SpaceMissionShortcuts(mission, [code_launch_results, code_escape_trajectory])
+
 
 
 @njit
@@ -69,7 +74,7 @@ def check_close_enough(sc_traj, planet_traj, planet_mass, time_index0, time_inde
 
     print("Distance")
     print(min_distance, close_enough)
-    plt.plot(sc_traj[:10000, 0], sc_traj[:10000, 1], c="k")
+    plt.plot(sc_traj[:7550, 0], sc_traj[:7550, 1], c="k")
     plt.scatter(sc_traj[index-time_index0, 0], sc_traj[index-time_index0, 1])
     plt.scatter(planet_traj[index, 0], planet_traj[index, 1])
 
@@ -84,6 +89,9 @@ def find_velocity_for_trajectory(r0, t0, t1, dt, median_angle, angle_span, media
     # velocity_span = 0.0001
     angles = np.linspace(median_angle - angle_span, median_angle + angle_span, 11)  # Creating arrays with different angles and velocities to iterate over and test
     velocities = np.linspace(median_velocity - velocity_span, median_velocity + velocity_span, 1)
+    print(angles)
+    print(velocities)
+
 
     good_vel_ang = []
 
@@ -94,6 +102,7 @@ def find_velocity_for_trajectory(r0, t0, t1, dt, median_angle, angle_span, media
             print("Velocity:")
             print(velocity)
             v0 = velocity * np.array([np.cos(angle), np.sin(angle)])
+            print(v0)
             final_time, sc_velocity, sc_position = trajectory(t0, t1, dt, v0, r0)
             close_enough, index, dist = check_close_enough(sc_position, dest_planet_orbit, dest_planet_mass, time_index0, time_index1)
             if close_enough:
@@ -133,21 +142,21 @@ if __name__ == "__main__":
     min_dist_planets, time_index0 = find_closest_orbit(launch_planet_orbit, dest_planet_orbit)  # Calculating min distance between planets, best time for launch and estimated time for reaching destination
     dt = time[1]
     t0 = time_index0 * dt
-    time_index1 = int(time_index0 + 3 / dt)
+    time_index1 = int(time_index0 + 10_000)
     t1 = time_index1 * dt
 
-    launch_angle = 280
+    launch_angle = 200
+    shortcut1.place_spacecraft_on_escape_trajectory(6_000_000, 273.73826154189527, t0, 3_000_000, launch_angle, 392_000)
     r0, v0, t0 = launch_rocket(mission.spacecraft_mass, 392_000, 6_000_000, t_orbit_launch=t0, launch_angle=launch_angle, printing=False, store=False)
 
-    exit_vel_angle = np.arctan(v0[1]/v0[0])
-
-    median_angle = exit_vel_angle * np.pi / 180  # Setting Middle, max and min values for angles and velocities
-    angle_span = 1 * np.pi / 180
+    median_angle = np.arctan2(v0[1], v0[0])
+    # median_angle = 100 * np.pi / 180  # Setting Middle, max and min values for angles and velocities
+    angle_span = 0.1 * np.pi / 180
     # median_velocity = 7.3  # Absolute value!
     median_velocity = np.linalg.norm(v0)
     velocity_span = 1e-25
     print(v0)
-    print((exit_vel_angle/np.pi*180) + 360)
+    print((median_angle/np.pi*180) + 360)
 
 
 

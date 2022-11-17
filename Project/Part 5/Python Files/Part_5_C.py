@@ -13,12 +13,14 @@ from ast2000tools.shortcuts import SpaceMissionShortcuts
 seed = 36874
 code_launch_results = 83949
 code_escape_trajectory = 74482
+stable_orbit = 88515# insert code here
 
 # Initializing system
 username = "janniesc"
 system = SolarSystem(seed)
 mission = SpaceMission(seed)
-shortcut = SpaceMissionShortcuts(mission, [code_launch_results, code_escape_trajectory])
+shortcut1 = SpaceMissionShortcuts(mission, [code_launch_results, code_escape_trajectory])
+shortcut = SpaceMissionShortcuts(mission, [stable_orbit])
 G = 4 * np.pi ** 2
 
 def find_orbit_inj_velocity(planet_idx, dist):
@@ -34,17 +36,14 @@ def interplanetary_travel(r0, v0, t0, t1_approx, dt, max_dev, dest_planet_idx, d
     distance = mission.measure_distances()[dest_planet_idx]
     dest_planet_mass = system.masses[dest_planet_idx]
 
-    # Creating Reference Trajectory to destination planet
+    # Boosting after entering space to have required velocity for trajectory to destination planet
     v_req = reference_vel[0]
     delta_v = v_req - v
-    print("HELLO")
-    print(v, v_req, delta_v)
     inter_trav.boost(delta_v)
-    print(v_req)
-    print(inter_trav.orient()[2])
 
     # Coasting until we are close enough to planet
-    coast_time = 0.00001
+    # Checking deviation from simulated orbit at regular intervals and performing correctional burn if necessary
+    coast_time = 0.01
     while distance > l:
         inter_trav.coast(coast_time)
         t_curr, r_curr, v_curr = inter_trav.orient()
@@ -57,7 +56,7 @@ def interplanetary_travel(r0, v0, t0, t1_approx, dt, max_dev, dest_planet_idx, d
             delta_v1 = v_req1-v_curr
             inter_trav.boost(delta_v1)
 
-    # Checking when we are at the correct position for orbit injection
+    # Checking (almost) continuously if we are at the correct position for orbit injection
     t_111, r111, v111 = inter_trav.orient
     r222 = dest_planet_orbit[int(t_111/dt)]
     v222 = (dest_planet_orbit[int(t_111/dt)+1] - dest_planet_orbit[int(t_111/dt)])/dt
@@ -65,12 +64,14 @@ def interplanetary_travel(r0, v0, t0, t1_approx, dt, max_dev, dest_planet_idx, d
         t_111, r111, v111 = inter_trav.orient
         r222 = dest_planet_orbit[int(t_111 / dt)]
         v222 = (dest_planet_orbit[int(t_111 / dt) + 1] - dest_planet_orbit[int(t_111 / dt)]) / dt
+        inter_trav.coast(0.000001)
 
-    # Adjusting velocity
+    # Calculating and adjusting velocity to enter orbit
     v_req_orbit = find_orbit_inj_velocity(dest_planet_idx, np.linalg.norm(mission.measure_distances()[dest_planet_idx]))
     delta_v = np.linalg.norm(v222)-v_req_orbit
     heading = np.arccos(v222[0]/np.linalg.norm(v222))
     inter_trav.boost(delta_v*np.array([np.cos(heading), np.sin(heading)]))
+
     return inter_trav.orient
 
 
@@ -83,51 +84,62 @@ if __name__ == "__main__":
     dest_planet_mass = system.masses[dest_planet_idx]
     launch_angle = 260.483012
 
-    with np.load("../../Part 2/Python Code/planet_trajectories.npz") as file:  # Loading Orbits from earlier simulations
+    # Loading Orbits from earlier simulations
+    with np.load("../../Part 2/Python Code/planet_trajectories.npz") as file:
         time = file['times']
         planet_positions = file['planet_positions']
     launch_planet_orbit = np.transpose(planet_positions[:, launch_planet_idx, :])
     dest_planet_orbit = np.transpose(planet_positions[:, dest_planet_idx, :])  # Creating orbits for the planets
 
-
-    min_dist_planets, time_index0 = find_closest_orbit(launch_planet_orbit, dest_planet_orbit)  # Calculating min distance between planets, best time for launch and estimated time for reaching destination
+    # Calculating min distance between planets, best time for launch and estimated time for reaching destination
+    min_dist_planets, time_index0 = find_closest_orbit(launch_planet_orbit, dest_planet_orbit)
     dt = time[1]  # Defining time of launch and an approximation when we will be reaching our destination
-    time_index1 = int(time_index0 + (3 / dt))
-    t1_approx = time_index1 * dt
+    time_index1 = int(time_index0 + 10_000)
+    t1 = time_index1 * dt
     t0 = time_index0 * dt
 
 
-    # Launching spacecraft to find position, velocity and time after the launch + Verifying launch results and orientation
-    # launch_rocket(mission.spacecraft_mass, 392_000, 6_000_000, t_orbit_launch=t0, launch_angle=launch_angle, printing=False, store=True)
-    shortcut.place_spacecraft_on_escape_trajectory(6_000_000, 273.73826154189527, t0, 3_000_000, launch_angle, 392_000)
-    fuel_consumed, t0, r0, v0 = shortcut.get_launch_results()
+    # Shortcut to launch rocket from planet
+    shortcut1.place_spacecraft_on_escape_trajectory(6_000_000, 273.73826154189527, t0, 3_000_000, launch_angle, 392_000)
+    fuel_consumed, t0, r0, v0 = shortcut1.get_launch_results()
     mission.verify_launch_result(r0)
     mission.verify_manual_orientation(r0, v0, 37.01285168461271)
-    print(f"EXIT VELOCITY: {np.linalg.norm(v0)}, {v0}")
+    # print(f"Exit Velocity: {np.linalg.norm(v0)}, {v0}")
 
+    # Finding a trajectory and necessary velocity after reaching space to end up at our destination planet
+    reference_traj, reference_vel = find_velocity_for_trajectory(r0, t0, t1, dt, (launch_angle * np.pi / 180), (0.00001 * np.pi / 180), np.linalg.norm(v0), 0.000001, dest_planet_orbit, dest_planet_mass, time_index0, time_index1)
 
     # Plotting orbits of planets and trajectory of spacecraft during simulated travel to destination
-    # plt.plot(launch_planet_orbit[time_index0:(time_index1 - 1), 0], launch_planet_orbit[time_index0:(time_index1 - 1), 1])
-    plt.plot(launch_planet_orbit[time_index0:(time_index0 + 100), 0], launch_planet_orbit[time_index0:(time_index0 + 100), 1])
-    # plt.scatter(launch_planet_orbit[time_index0, 0], launch_planet_orbit[time_index0, 1], c="r")
-    # plt.scatter(launch_planet_orbit[time_index1, 0], launch_planet_orbit[time_index1, 1], c="k")
-    # plt.plot(dest_planet_orbit[time_index0:(time_index1 - 1), 0], dest_planet_orbit[time_index0:(time_index1 - 1), 1])
-    # plt.plot(dest_planet_orbit[time_index0:(time_index0 + 5000), 0], dest_planet_orbit[time_index0:(time_index0 + 5000), 1])
-    # plt.scatter(dest_planet_orbit[time_index0, 0], dest_planet_orbit[time_index0, 1], c="r")
-    # plt.scatter(dest_planet_orbit[time_index1, 0], dest_planet_orbit[time_index1, 1], c="k")
-
-    reference_traj, reference_vel = find_velocity_for_trajectory(r0, t0, t1_approx, dt, (launch_angle * np.pi / 180), (0.00001 * np.pi / 180), np.linalg.norm(v0), 0.000001, dest_planet_orbit, dest_planet_mass, time_index0, time_index1)
-
+    plt.plot(launch_planet_orbit[time_index0:(time_index0 + 10000), 0], launch_planet_orbit[time_index0:(time_index0 + 10000), 1], label="Launch Planet orbit")
+    plt.plot(dest_planet_orbit[time_index0:(time_index0 + 10000), 0], dest_planet_orbit[time_index0:(time_index0 + 10000), 1], label="Destination Planet orbit")
     plt.axis("equal")
-    # plt.show()
+    plt.legend()
+    plt.xlabel("x-position [AU]")
+    plt.ylabel("y-position [AU]")
+    plt.savefig("../Figures/inter_trav.png")
+    plt.show()
 
     # Defining some variables for interplanetary travel
+    int_trav = mission.begin_interplanetary_travel()
+    r_planet_orb = np.linalg.norm(dest_planet_orbit[time_index1])
     max_deviation = 0.0001
-    dest_planet_idx = 1
-    l = 1
+    l = r_planet_orb*np.sqrt(dest_planet_mass/(10*system.star_mass))
+    print(f"l: {l}")
 
     # Starting interplanetary travel
-    interplanetary_travel(r0, v0, t0, t1_approx, dt, max_deviation, dest_planet_idx, dest_planet_orbit, reference_traj, reference_vel, l)
+    # t_in_orbit, r_in_orbit, v_in_orbit = interplanetary_travel(r0, v0, t0, t1, dt, max_deviation, dest_planet_idx, dest_planet_orbit, reference_traj, reference_vel, l)
+
+    # Shortcut to stable orbit
+    orbital_height = 75_000_000
+    orbit_rad = utils.m_to_AU(system.radii[dest_planet_idx]*1000 + orbital_height)
+    orbital_angle = 0
+    shortcut.place_spacecraft_in_stable_orbit(t1, orbital_height, orbital_angle, dest_planet_idx)
+
+    v = np.sqrt(G*dest_planet_mass/orbit_rad)
+    r_orb = orbital_height + system.radii[dest_planet_idx]*1000
+
+    print(f"v_orb: {np.linalg.norm([3.54142, -1.94128])}")
+    print(f"r_orb: {utils.m_to_AU(np.linalg.norm(r_orb))}")
 
     BB = ti.time()
     print(BB-AA)

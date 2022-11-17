@@ -211,17 +211,17 @@ We subtract the velocity of our home planet from the calculated value to get the
     As we have measured the position $ \textbf{r}$ and velocity $\textbf{v}$ of the spacecraft when orienting ourselves after the launch, we can determine the required velocity $ \textbf{v}_{req}$ at the current position to enter a trajectory leading to the destination planet, using the method described in section~\ref{ssec: simulating trajectory} and~\ref{subsec:getting-close-enough}.
     The required change in velocity can then easily be found by subtracting.
 
-    \begin{align*}
-        \Delta\textbf{v} = \textbf{v}_{req} - \textbf{v}
-    \end{align*}
+    \begin{align}
+        \Delta\textbf{v} = \textbf{v}_{req} - \textbf{v} \label{boost_calc_1}
+    \end{align}
 
     However, this only gives us a vector.
     To find the direction and magnitude of the boost, we use some trigonometry.
-    \begin{align*}
+    \begin{align} \label{boost_calc2}
         \Delta\textbf{v} = [\Delta v_x, \Delta v_y]\\
         |\textbf{v}| = \sqrt{{\Delta v_x}^2 + {\Delta v_y}^2}\\
         \theta = \arctan \left(\frac{\Delta v_y}{\Delta v_x}\right)
-    \end{align*}
+    \end{align}
 
     We then use the calculations from the first paper %~\parencite[][]{part1} TODO: Delete comment
     of this series of papers to calculate the amount of fuel used for a given $|\Delta\textbf{v}|$ in the process of the correction maneuver
@@ -250,8 +250,8 @@ We subtract the velocity of our home planet from the calculated value to get the
     \begin{align*}
         a_c &= G \frac{M_{Planet}}{r^2}\\
         a_c &= \frac{\textbf{v}_{tan}^2}{r}\\
-        \textbf{v}_{tan}^2 &= G \frac{M_{Planet}}{r}\\
-        \textbf{v}_{tan} &= \sqrt{G \frac{M_{Planet}}{r}}
+        v_{tan}^2 &= G \frac{M_{Planet}}{r}\\
+        v_{tan} &= \sqrt{G \frac{M_{Planet}}{r}}
     \end{align*}
     Since both $ \textbf{v}$ and $\textbf{v}_{tan}$ are tangential velocities and therefore point in the same direction, we can now simply determine the required change in velocity $\Delta \textbf{v}$ by subtracting.
     \begin{align*}
@@ -271,35 +271,64 @@ We subtract the velocity of our home planet from the calculated value to get the
     We therefore need to check what kind of orbit we ended up in after the injection maneuver.
     The first thing to do is to orient ourselves.
     This way, we can find out the position and velocity of the spacecraft relative to the planet.
-    Using this data, we can determine
+    By determining our position and therefore the distance to the planet along the entire orbit and interpolating, we can find a function for the ellipse which makes up the orbit.
+    Using this data, we can set up a two-body system as it is described in the second part of this series of papers%~\parencite[][]{part2}.
+    This enables ut to describe the orbit as an ellipse with the planet in one of the focal points.
+    The apoapsis and periapsis are given as the points on the orbit, which are respectively farthest and closest to the planet.
+    The distances from these points to the planet are called the semi-major axis and semi-minor axis of the orbit
+    By using formula~\eqref{formula2} we can determine the eccentricity $e$of the orbit.
+    \begin{align}
+        e = \sqrt{1-(b/a)^2} \label{formula2}
+    \end{align}
 
 
 
+    \section{Results} \label{sec: results}
 
+    \begin{figure}[h]
+      \centering
+      \includegraphics[scale = .125]{Figures/closest_orbit}
+      \caption{Position where the target planet and our home planet were the closest}
+      \label{fig: closest orbit}
+    \end{figure}
 
+    Our team of scientists have been very busy guiding the rocket to its final orbit around the destination planet, and have successfully completed the task.
+    After launching the rocket, it successfully determined its position and velocity after reaching space.
+    The launch happened at 08:33 on the 19th July on the year 238 in the timeframe of our solar system at an angle of $260.483^{\circ}$ and lasted 16 minutes and 36 seconds.
+    This means the spacecraft reached space at 08:50.
+    At this point in time, the spacecraft measured its position and velocity to be:
+    \begin{align*}
+        r_0 &= [-6.3033, -6.0995] \,\text{AU}\\
+        v_0 &= [ 2.5919, -6.1838] \quad\text{AU/Year}
+    \end{align*}
 
+    However, this was not exactly the velocity $\textbf{v}_{req}$ we needed to enter the desired trajectory towards the destination planet.
+    Therefore, a correction burn was performed.
+    The required change of velocity $\Delta\textbf{v}$ was calculated using equations~\eqref{boost_calc_1} and~\eqref{boost_calc2}.
+    After entering the simulated trajectory, the spacecraft coasted for 0.01 years, which equates to roughly 3 days and 15 hours and 36 minutes.\\
+    Thereafter, the spacecraft oriented itself again to determine the deviation from the simulated trajectory.
+    Multiple times, the deviation was large enough to require a correctional burn.
+    These burns have been executed the same way as the first one after reaching space.\\
+    After being closer than $9.601 \times 10^{-4}$ AU or $1.436 \times 10^5$ km, the gravitational forces from the destination planet started dominating.
+    At this point, the spacecraft continuously monitored its movement relative to the planet and performed an orbit injection maneuver as it is described in section~\ref{subsec:launching-the-spacecraft}.
+    This resulted in a circular orbit around the destination planet after 316 days and 8 hours of travel.\\
+    The trajectory of the interplanetary travel can be seen in figure~\ref{fig:inter_trav}.
+    \begin{figure}[h]
+        %% H(Here), h(here approx), t(top of page), b(bottom of page)
+        \centering
+        \includegraphics[scale=0.35]{Figures/inter_trav}
+        \caption{The interplanetary travel of the spacecraft. The black line depicts the trajectory of the spacecraft.}\label{fig:inter_trav}
+    \end{figure}
 
+    The orbit was at an altitude of $7.5 \times 10^4$ km above the surface of the planet, which required a tangential velocity of $6.705$ AU/Year.
+    Using Kepler's law the orbital period has been determined to be 7 hours 10 minutes and 35 seconds.
 
-\newpage
-\section{Results} \label{sec: results}
-\begin{figure}[h!]
-  \centering
-  \includegraphics[scale = .125]{Figures/closest_orbit}
-  \caption{Position where the target planet and our home planet were the closest}
-  \label{fig: closest orbit}
-\end{figure}
-
-The simulation of the trajectory yielded a necessary speed of 12 AU/yr and an angle of $ \colorbox{red}{X} ^{o} $ degrees with a travel time of $ \colorbox{red}{Y} $ years.
-We launched our rocket approximately in the year \colorbox{red}{Z}.
-After adjusting for our home planets own velocity we get an initial velocity $ \mathbf{v}_0 = \colorbox{red}{(v_1, v_2) }$ and a speed of $ \left\vert \mathbf{v}_0 \right\vert = \colorbox{red}{v_0} \  AU / yr$.
-Our initial position $ \mathbf{r}_0 $ will then be $ \mathbf{r}_0 = R \hat{\mathbf{v}} + \mathbf{r}_{\text{hp}} $, where $ R $ is the radius and $ \mathbf{r}_{\text{hp}} $ the position of our home planet.
-\begin{figure}[h!]
-  \centering
-  \includegraphics[scale = .125]{Figures/good_enough_distance}
-  \caption{Position of shuttle and target planet at optimal distance}
-  \label{fig: good enough distance}
-  \colorbox{red}{Update when the actual trajectory has been chosen}
-\end{figure}
+    \begin{figure}[h]
+      \centering
+      \includegraphics[scale = .125]{Figures/good_enough_distance}
+      \caption{Position of shuttle and target planet at optimal distance for our simulated orbit. Lines depict trajectories at different angles}
+      \label{fig: good enough distance}
+    \end{figure}
 
 
 \section{Discussion} \label{sec: discussion}
