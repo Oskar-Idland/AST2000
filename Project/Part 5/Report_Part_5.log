@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2022.2.21)  17 NOV 2022 17:26
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2022.2.21)  17 NOV 2022 20:15
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -643,7 +643,10 @@ File: Figures/good_enough_distance.pdf Graphic file (type pdf)
 Package pdftex.def Info: Figures/good_enough_distance.pdf  used on input line 3
 28.
 (pdftex.def)             Requested size: 173.44757pt x 85.91074pt.
-
+ [4 </Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 5/Figures/close
+st_orbit.pdf> </Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 5/Fig
+ures/inter_trav.png> </Users/jannikeschler/Documents/GitHub/AST2000/Project/Par
+t 5/Figures/good_enough_distance.pdf>]
 (/Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 5/Report_Part_5.bbl
 
 /Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 5/Report_Part_5.bbl:
@@ -657,10 +660,7 @@ l.16   {}
          
 The bibliography requires the 'biblatex' package.
 
-) [4 </Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 5/Figures/clos
-est_orbit.pdf> </Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 5/Fi
-gures/inter_trav.png> </Users/jannikeschler/Documents/GitHub/AST2000/Project/Pa
-rt 5/Figures/good_enough_distance.pdf>] [5]
+) [5]
 (/Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 5/Report_Part_5.aux
 )
 Package rerunfilecheck Info: File `Report_Part_5.out' has not changed.
@@ -690,7 +690,7 @@ e/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2
 21/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2021
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb>
 Output written on "/Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 5
-/Report_Part_5.pdf" (5 pages, 719269 bytes).
+/Report_Part_5.pdf" (5 pages, 723907 bytes).
 PDF statistics:
  414 PDF objects out of 1000 (max. 8388607)
  199 compressed objects within 2 object streams
