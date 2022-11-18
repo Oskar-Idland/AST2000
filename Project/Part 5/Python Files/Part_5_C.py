@@ -137,11 +137,18 @@ if __name__ == "__main__":
 
     v = np.sqrt(G*dest_planet_mass/orbit_rad)
     r_orb = orbital_height + system.radii[dest_planet_idx]*1000
-
     print(f"v_orb: {np.linalg.norm([3.54142, -1.94128])}")
     print(f"r_orb: {utils.m_to_AU(np.linalg.norm(r_orb))}")
 
-    BB = ti.time()
-    print(BB-AA)
+    # int_trav.coast(0.1)
+    t_end, r_end, v_end = int_trav.orient()
+    t_idx_end = int(t_end / dt)
+    print(t_idx_end)
+    for i in range((t_idx_end-3000), (t_idx_end+3000)):
+        # int_trav.coast(0.1)
+        r_orb_end = np.linalg.norm(r_end-dest_planet_orbit[i])
+        print(f"r_orb_end at index {i}: {np.linalg.norm(r_orb_end)}")
 
+    BB = ti.time()
+    print(f"\n\nSimulation took {BB-AA:.4f} sec")
 

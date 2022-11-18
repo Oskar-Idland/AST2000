@@ -40,7 +40,10 @@
 \affiliation{Institute of Theoretical Astrophysics, University of Oslo}
 
 \begin{abstract}
-    This is an abstract \colorbox{red}{Complete this summary at the end of the paper}
+    The spacecraft was launched on the 19th July of the year 238 from planet 0 at an angle of $260.483^{\circ}$ and successfully reached space after 16 minutes and 36 seconds.
+    It entered the predetermined trajectory at an angle of to planet 1 and followed it using multiple correctional boosts until reaching its destination.
+    After reaching planet 1, the spacecraft slowed as part of an orbital injection maneuver to enter a circular orbit at an altitude of 75'000 km above the surface.
+    By calculating the orbit as a two body system after entering orbit and after multiple orbits of the spacecraft we were able to confirm that the orbit was circular and stable.
 \end{abstract}
 \maketitle
 
@@ -342,45 +345,62 @@ Furthermore, a lot of our calculations include gravitational forces, which are d
 It is relatively simple to determine the mass of our spacecraft, but since we are not able to determine the mass of the planets and the star in our solar system using scales, these might not be entirely exact.
 Even though our scientists have found very good methods for these applications, there will always be some uncertainties.
 
-Other things impacting the results of our simulations and the journey of the spacecraft are forces, which we did not account for.
-During the launch this includes the aerodynamic drag, which we neglected but actually exerts quite a significant force at higher velocities.
-We might therefore not reach the height or velocity we simulated and wanted to reach.
-This is quite dangerous as the rocket could either fall back to earth at a different place, which might be populated.
-The rocket could also end up in something called a gravitational slingshot, which transfers some of the planet's momentum to the spacecraft and launches it into another, unspecified trajectory.
+\subsection{Forces during launch and trajectory}\label{subsec:the-launch}
+    Other things impacting the results of our simulations and the journey of the spacecraft are forces, which we did not account for.
+    During the launch this includes the aerodynamic drag, which we neglected but actually exerts quite a significant force at higher velocities.
+    We might therefore not reach the height or velocity we simulated and wanted to reach.\\
+    This is quite dangerous as the rocket could either fall back to earth at a different place, which might be populated.
+    The rocket could also end up in something called a gravitational slingshot, which transfers some of the planet's momentum to the spacecraft and launches it into another, unspecified trajectory.\\
 
-After the launch from our home planet, and entering space, there will be further forces which are difficult to foresee and therefore account for.
-We are of course aware of the larger objects in our solar system like the planets and star, which exert most of the gravitational forces on the spacecraft.
-However, there are thousands of small objects such as meteoroids in space, which exert small gravitational forces.
-These forces are relatively small, but can still have an effect on the trajectory of the spacecraft when close enough.
-Furthermore, the star continuously expels clouds of ions into the solar system due to the violent fusion processes in its core.
-These are called solar winds and exert a small, but continuous force on the spacecraft, which can further impact its trajectory.
-These forces are unaccounted for in our simulations, which could lead to significant deviations.
+    After the launch from our home planet, and entering space, there will be further forces which are difficult to foresee and therefore account for.
+    We are of course aware of the larger objects in our solar system like the planets and star, which exert most of the gravitational forces on the spacecraft.
+    However, there are thousands of small objects such as meteoroids in space, which exert small gravitational forces.
+    These forces are relatively small, but can still have an effect on the trajectory of the spacecraft when close enough.\\
+    Furthermore, the star continuously expels clouds of ions into the solar system due to the violent fusion processes in its core.
+    These are called solar winds and exert a small, but continuous force on the spacecraft, which can further impact its trajectory.
+    These forces are unaccounted for in our simulations, which could lead to significant deviations.
 
-Another source of error can be the spacecraft itself.
-Even though we are using cutting edge technology, there will always be a small chance of an error, which could lead to uncertainties in measurements such as when orienting ourselves and measuring our velocity.
-Furthermore, the behaviour of the rocket engine in space can differ from what we expect and therefore induce combustion instabilities, which can make it difficult to perform a precise correctional burn.
-An assumption which might impact our results as well, is the duration of the correctional boost.
-We assumed these to be instant, whereas they do have some duration in reality.
-This could mean that the spacecraft does not enter the exact calculated trajectory, which we wanted after the boost.
-However, as we are checking the deviance from the simulated trajectory at regular intervals, this error would most likely be corrected during the next boost, resulting in the spacecraft reaching its destination nevertheless.
+\subsection{The Spacecraft}\label{subsec:the-spacecraft}
+    Another source of error can be the spacecraft itself.
+    Even though we are using cutting edge technology, there will always be a small chance of an error, which could lead to uncertainties in measurements such as when orienting ourselves and measuring our velocity.
+    Furthermore, the behaviour of the rocket engine in space can differ from what we expect and therefore induce combustion instabilities, which can make it difficult to perform a precise correctional burn.\\
+    An assumption which might impact our results as well, is the duration of the correctional boost.
+    We assumed these to be instant, whereas they do have some duration in reality.
+    This could mean that the spacecraft does not enter the exact calculated trajectory, which we wanted after the boost.
+    However, as we are checking the deviance from the simulated trajectory at regular intervals, this error would most likely be corrected during the next boost, resulting in the spacecraft reaching its destination nevertheless.
 
-Looking at the orbital injection maneuver, we also see some possible error sources.
-The burn which is meant to slow down the spacecraft has a duration, as all other correctional burns did.
-This means, we would have to start this burn a little earlier than we did in our simulations.
-Not doing so, or failing to do it at the perfect point in time would lead to entering into an elliptical orbit.
-We entered a perfectly circular, and therefore a stable orbit, but the chances for achieving this are extremely low.
-This result should therefore be seen very critically.
-If we entered an elliptical orbit instead, we would have to perform correctional boosts to enter a more stable orbit.
-Just like when travelling in space, we will also be influenced by small objects while executing the orbital injection maneuver and while being in orbit around the planet.
-This makes if even more difficult to achieve a perfectly circular orbit.
+\subsection{Entering Orbit}\label{subsec:entering-orbit}
+    Looking at the orbital injection maneuver, we also see some possible error sources.
+    The burn which is meant to slow down the spacecraft has a duration, as all other correctional burns did.
+    This means, we would have to start this burn a little earlier than we did in our simulations.
+    Not doing so, or failing to do it at the perfect point in time would lead to entering into an elliptical orbit.\\
+    We entered a perfectly circular, and therefore a stable orbit, but the chances for achieving this are extremely low.
+    This result should therefore be seen very critically.
+    If we entered an elliptical orbit instead, we would have to perform correctional boosts to enter a more stable orbit.\\
+    Just like when travelling in space, we will also be influenced by small objects while executing the orbital injection maneuver and while being in orbit around the planet.
+    This makes if even more difficult to achieve a perfectly circular orbit.\\
 
-As we are still rather far up in orbit, the atmosphere is extremely thin, but staying in the orbit for prolonged periods of time will still require us to perform correctional boosts.
-The perfectly circular orbit will therefore most likely not stay circular forever if the spacecraft simply coasts.
-There will be minimal amounts of friction which can vary and brake the spacecraft at different times and alter the orbit.
+    As we are still rather far up in orbit, the atmosphere is extremely thin, but staying in the orbit for prolonged periods of time will still require us to perform correctional boosts.
+    The perfectly circular orbit will therefore most likely not stay circular forever if the spacecraft simply coasts.
+    There will be minimal amounts of friction which can vary and brake the spacecraft at different times and alter the orbit.
+    However, after orbiting around the planet multiple times and measuring the orbit again, we could confirm that the orbit we entered was stable.
 
 
 
 \section{Conclusion} \label{sec: conclusion}
+    After simulating all parts of the journey of the spacecraft to the destination planet, we were finally able to launch it.
+    Using the simulations, necessary parameters such as thrust, launch angle and favorable time of launch for a successful launch could be determined.
+    The launch happened at 08:33 on the 19th July of the year 238, and went well
+    This lead to a successful orientation of the spacecraft after reaching space and entering into the predetermined trajectory towards the destination planet, which was simulated using the orbital mechanics and the leapfrog algorithm.
+    During the travel from the launch planet to the destination planet, multiple trajectory corrections were necessary to keep the spacecraft on the predetermined trajectory.
+    After 316 days and 8 hours of travel, the spacecraft finally reached its destination and initialised an orbit injection maneuver.
+    The injection maneuver slowed the spacecraft sufficiently to enter into orbit around planet 1.
+    This was a very critical maneuver, since small deviations could lead to the spacecraft entering an elliptical, and therefore unstable orbit.
+    Thanks to precise boosts, we were able to enter a circular, and therefore stable orbit.
+    To confirm the shape and stability of the orbit, the orbit was calculated again based on the position and velocity of the spacecraft after multiple orbits.
+    We were therefore able to confirm successful travel to planet 1 and entry into a stable orbit at an orbital height of 75'000 km above the surface.
+
+
 
 \section{Appendix} \label{sec: appendix}
 
