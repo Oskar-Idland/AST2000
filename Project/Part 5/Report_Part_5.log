@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2022.2.21)  14 NOV 2022 13:04
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2022.2.21)  18 NOV 2022 12:02
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -540,34 +540,34 @@ LaTeX Info: Redefining \nameref on input line 35.
 Class revtex4-2 Info: Taking \maketitle back from hyperref on input line 35.
 \openout3 = `Report_Part_5Notes.bib'.
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 48--52
-
- []
-
-<Figures/boost_fig.png, id=53, 1306.8825pt x 785.93625pt>
-File: Figures/boost_fig.png Graphic file (type png)
-<use Figures/boost_fig.png>
-Package pdftex.def Info: Figures/boost_fig.png  used on input line 63.
-(pdftex.def)             Requested size: 156.81912pt x 94.30827pt.
-LaTeX Font Info:    Trying to load font information for U+esint on input line 6
-6.
-(/usr/local/texlive/2021/texmf-dist/tex/latex/esint/uesint.fd
+LaTeX Font Info:    Trying to load font information for U+esint on input line 4
+3.
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/esint/uesint.fd
 File: uesint.fd 
 )
-LaTeX Font Info:    Trying to load font information for U+msa on input line 66.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 43.
 
 
 (/usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 66.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 43.
 
 
 (/usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Underfull \hbox (badness 10000) in paragraph at lines 69--71
+Underfull \hbox (badness 10000) in paragraph at lines 51--55
+
+ []
+
+<Figures/boost_fig.png, id=73, 1306.8825pt x 785.93625pt>
+File: Figures/boost_fig.png Graphic file (type png)
+<use Figures/boost_fig.png>
+Package pdftex.def Info: Figures/boost_fig.png  used on input line 66.
+(pdftex.def)             Requested size: 156.81912pt x 94.30827pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 72--74
 
  []
 
@@ -576,417 +576,99 @@ File: uni-3.def 2013/05/13 UCS: Unicode data U+0300..U+03FF
 ) [1{/usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map} </Us
 ers/jannikeschler/Documents/GitHub/AST2000/Project/Part 5/Figures/boost_fig.png
 >]
-<Figures/full_angle_scatter.pdf, id=81, 1387.58403pt x 687.28767pt>
+<Figures/full_angle_scatter.pdf, id=98, 1387.58403pt x 687.28767pt>
 File: Figures/full_angle_scatter.pdf Graphic file (type pdf)
 <use Figures/full_angle_scatter.pdf>
-Package pdftex.def Info: Figures/full_angle_scatter.pdf  used on input line 155
+Package pdftex.def Info: Figures/full_angle_scatter.pdf  used on input line 158
 .
 (pdftex.def)             Requested size: 173.44757pt x 85.91074pt.
-<Figures/narrowing_down_angle.pdf, id=83, 1387.58403pt x 687.28767pt>
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<Figures/narrowing_down_angle.pdf, id=100, 1387.58403pt x 687.28767pt>
 File: Figures/narrowing_down_angle.pdf Graphic file (type pdf)
 <use Figures/narrowing_down_angle.pdf>
 Package pdftex.def Info: Figures/narrowing_down_angle.pdf  used on input line 1
-65.
+68.
 (pdftex.def)             Requested size: 173.44757pt x 85.91074pt.
-
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<Figures/pre_speed_increase.pdf, id=85, 1387.58403pt x 687.28767pt>
+<Figures/pre_speed_increase.pdf, id=102, 1387.58403pt x 687.28767pt>
 File: Figures/pre_speed_increase.pdf Graphic file (type pdf)
 <use Figures/pre_speed_increase.pdf>
-Package pdftex.def Info: Figures/pre_speed_increase.pdf  used on input line 176
+Package pdftex.def Info: Figures/pre_speed_increase.pdf  used on input line 179
 .
 (pdftex.def)             Requested size: 173.44757pt x 85.91074pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<Figures/post_speed_increase.pdf, id=87, 1387.58403pt x 687.28767pt>
+<Figures/post_speed_increase.pdf, id=104, 1387.58403pt x 687.28767pt>
 File: Figures/post_speed_increase.pdf Graphic file (type pdf)
 <use Figures/post_speed_increase.pdf>
 Package pdftex.def Info: Figures/post_speed_increase.pdf  used on input line 18
-6.
+9.
 (pdftex.def)             Requested size: 173.44757pt x 85.91074pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 199--202
-
- []
-
 [2 </Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 5/Figures/full_a
 ngle_scatter.pdf> </Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 5
 /Figures/narrowing_down_angle.pdf> </Users/jannikeschler/Documents/GitHub/AST20
 00/Project/Part 5/Figures/pre_speed_increase.pdf> </Users/jannikeschler/Documen
 ts/GitHub/AST2000/Project/Part 5/Figures/post_speed_increase.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 229--231
+Underfull \hbox (badness 10000) in paragraph at lines 202--205
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 232--237
+Underfull \hbox (badness 10000) in paragraph at lines 232--234
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 235--240
 
  []
 
 [3]
-<Figures/closest_orbit.pdf, id=256, 1387.58403pt x 687.28767pt>
+<Figures/closest_orbit.pdf, id=281, 1387.58403pt x 687.28767pt>
 File: Figures/closest_orbit.pdf Graphic file (type pdf)
 <use Figures/closest_orbit.pdf>
-Package pdftex.def Info: Figures/closest_orbit.pdf  used on input line 274.
+Package pdftex.def Info: Figures/closest_orbit.pdf  used on input line 293.
 (pdftex.def)             Requested size: 173.44757pt x 85.91074pt.
-
-/Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 5/Report_Part_5.tex:
-281: Missing $ inserted.
-<inserted text> 
-                $
-l.281 ...mathbf{v}_0 = \colorbox{red}{(v_1, v_2) }
-                                                  $ and a speed of $ \left\v...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-/Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 5/Report_Part_5.tex:
-281: Extra }, or forgotten $.
-\color@b@x ...hbox {\kern \fboxsep {\set@color #3}
-                                                  \kern \fboxsep }\dimen@ \h...
-l.281 ...mathbf{v}_0 = \colorbox{red}{(v_1, v_2) }
-                                                  $ and a speed of $ \left\v...
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-/Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 5/Report_Part_5.tex:
-281: Extra }, or forgotten $.
-\color@b@x ...xsep {\set@color #3}\kern \fboxsep }
-                                                  \dimen@ \ht \z@ \advance \...
-l.281 ...mathbf{v}_0 = \colorbox{red}{(v_1, v_2) }
-                                                  $ and a speed of $ \left\v...
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-/Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 5/Report_Part_5.tex:
-281: Missing $ inserted.
-<inserted text> 
-                $
-l.281 ...bf{v}_0 \right\vert = \colorbox{red}{v_0}
-                                                   \  AU / yr$.
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-/Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 5/Report_Part_5.tex:
-281: Extra }, or forgotten $.
-\color@b@x ...hbox {\kern \fboxsep {\set@color #3}
-                                                  \kern \fboxsep }\dimen@ \h...
-l.281 ...bf{v}_0 \right\vert = \colorbox{red}{v_0}
-                                                   \  AU / yr$.
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-/Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 5/Report_Part_5.tex:
-281: Extra }, or forgotten $.
-\color@b@x ...xsep {\set@color #3}\kern \fboxsep }
-                                                  \dimen@ \ht \z@ \advance \...
-l.281 ...bf{v}_0 \right\vert = \colorbox{red}{v_0}
-                                                   \  AU / yr$.
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-
-/Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 5/Report_Part_5.tex:
-283: LaTeX Error: Not in outer par mode.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.283 \begin{figure}[h!]
-                        
-You've lost some text.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-/Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 5/Report_Part_5.tex:
-283: Undefined control sequence.
-\@xfloat@LaTeX ...f \fi \global \setbox \@currbox 
-                                                  \color@vbox \normalcolor \...
-l.283 \begin{figure}[h!]
-                        
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-/Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 5/Report_Part_5.tex:
-283: Missing number, treated as zero.
-<to be read again> 
-                   \vbox 
-l.283 \begin{figure}[h!]
-                        
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-<Figures/good_enough_distance.pdf, id=257, 1387.58403pt x 687.28767pt>
+<Figures/inter_trav.png, id=286, 462.528pt x 346.896pt>
+File: Figures/inter_trav.png Graphic file (type png)
+<use Figures/inter_trav.png>
+Package pdftex.def Info: Figures/inter_trav.png  used on input line 322.
+(pdftex.def)             Requested size: 161.88722pt x 121.4154pt.
+<Figures/good_enough_distance.pdf, id=287, 1387.58403pt x 687.28767pt>
 File: Figures/good_enough_distance.pdf Graphic file (type pdf)
 <use Figures/good_enough_distance.pdf>
-Package pdftex.def Info: Figures/good_enough_distance.pdf  used on input line 2
-85.
+Package pdftex.def Info: Figures/good_enough_distance.pdf  used on input line 3
+31.
 (pdftex.def)             Requested size: 173.44757pt x 85.91074pt.
-/Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 5/Report_Part_5.tex:
-289: Undefined control sequence.
-<argument> \count \@currbox 
-                            >\z@ 
-l.289 \end{figure}
-                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-/Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 5/Report_Part_5.tex:
-289: Missing number, treated as zero.
-<to be read again> 
-                   >
-l.289 \end{figure}
-                  
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-/Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 5/Report_Part_5.tex:
-289: Undefined control sequence.
-<argument> \count@ \count \@currbox 
-                                    \divide \count@ \sixt@@n \multiply \coun...
-l.289 \end{figure}
-                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-/Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 5/Report_Part_5.tex:
-289: Missing number, treated as zero.
-<to be read again> 
-                   \divide 
-l.289 \end{figure}
-                  
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-/Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 5/Report_Part_5.tex:
-289: Undefined control sequence.
-<argument> ...sixt@@n \@tempcnta \count \@currbox 
-                                                  \advance \@tempcnta -\coun...
-l.289 \end{figure}
-                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-/Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 5/Report_Part_5.tex:
-289: Missing number, treated as zero.
-<to be read again> 
-                   \advance 
-l.289 \end{figure}
-                  
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-/Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 5/Report_Part_5.tex:
-289: Undefined control sequence.
-\tally@float ...group \@tempcnta \count \@currbox 
-                                                  \divide \@tempcnta \@xxxii...
-l.289 \end{figure}
-                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-/Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 5/Report_Part_5.tex:
-289: Missing number, treated as zero.
-<to be read again> 
-                   \divide 
-l.289 \end{figure}
-                  
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-/Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 5/Report_Part_5.tex:
-289: Undefined control sequence.
-\tally@float ...\@xxxii \advance \count \@currbox 
-                                                  -\@tempcnta \divide \@temp...
-l.289 \end{figure}
-                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-/Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 5/Report_Part_5.tex:
-289: Missing number, treated as zero.
-<to be read again> 
-                   \divide 
-l.289 \end{figure}
-                  
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-/Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 5/Report_Part_5.tex:
-289: Undefined control sequence.
-<argument> \count \@currbox 
-                            >\@xvi 
-l.289 \end{figure}
-                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-/Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 5/Report_Part_5.tex:
-289: Missing number, treated as zero.
-<to be read again> 
-                   >
-l.289 \end{figure}
-                  
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-/Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 5/Report_Part_5.tex:
-289: Undefined control sequence.
-<argument> ...@tempboxa \vbox {\unvcopy \@currbox 
-                                                  \hrule }\dimen@ \ht \@temp...
-l.289 \end{figure}
-                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-/Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 5/Report_Part_5.tex:
-289: Missing number, treated as zero.
-<to be read again> 
-                   \hrule 
-l.289 \end{figure}
-                  
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
 
 
-/Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 5/Report_Part_5.tex:
-292: LaTeX Error: Something's wrong--perhaps a missing \item.
+LaTeX Warning: `h' float specifier changed to `ht'.
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.292 \section
-              {Discussion} \label{sec: discussion}
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+[4 </Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 5/Figures/closes
+t_orbit.pdf> </Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 5/Figu
+res/inter_trav.png>]
+
+LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
+ on input line 347.
 
 
-/Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 5/Report_Part_5.tex:
-292: LaTeX Error: Something's wrong--perhaps a missing \item.
+Underfull \hbox (badness 10000) in paragraph at lines 349--354
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.292 \section
-              {Discussion} \label{sec: discussion}
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-/Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 5/Report_Part_5.tex:
-292: Missing } inserted.
-<inserted text> 
-                }
-l.292 \section{Discussion}
-                           \label{sec: discussion}
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-/Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 5/Report_Part_5.tex:
-292: Missing } inserted.
-<inserted text> 
-                }
-l.292 \section{Discussion}
-                           \label{sec: discussion}
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-/Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 5/Report_Part_5.tex:
-292: Missing $ inserted.
-<inserted text> 
-                $
-l.292 \section{Discussion}
-                           \label{sec: discussion}
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-/Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 5/Report_Part_5.tex:
-292: Missing } inserted.
-<inserted text> 
-                }
-l.292 \section{Discussion}
-                           \label{sec: discussion}
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-/Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 5/Report_Part_5.tex:
-292: Missing } inserted.
-<inserted text> 
-                }
-l.292 \section{Discussion}
-                           \label{sec: discussion}
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-/Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 5/Report_Part_5.tex:
-292: Missing $ inserted.
-<inserted text> 
-                $
-l.292 \section{Discussion}
-                           \label{sec: discussion}
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
+ []
 
 
+Underfull \hbox (badness 10000) in paragraph at lines 373--382
+
+ []
+
+[5 </Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 5/Figures/good_e
+nough_distance.pdf>]
 (/Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 5/Report_Part_5.bbl
 
 /Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 5/Report_Part_5.bbl:
@@ -1000,21 +682,20 @@ l.16   {}
          
 The bibliography requires the 'biblatex' package.
 
-) [4 </Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 5/Figures/clos
-est_orbit.pdf>]
+) [6]
 (/Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 5/Report_Part_5.aux
 )
 Package rerunfilecheck Info: File `Report_Part_5.out' has not changed.
-(rerunfilecheck)             Checksum: 6204E862C6BBF6A8E818761E1E43B3E9;1544.
+(rerunfilecheck)             Checksum: C0FF5716561BD0016EB3B312716A739C;2420.
  ) 
 Here is how much of TeX's memory you used:
- 14964 strings out of 478994
- 211844 string characters out of 5858184
- 753395 words of memory out of 5000000
- 32193 multiletter control sequences out of 15000+600000
+ 14999 strings out of 478994
+ 212417 string characters out of 5858184
+ 754395 words of memory out of 5000000
+ 32213 multiletter control sequences out of 15000+600000
  410751 words of font info for 59 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 81i,12n,89p,438b,462s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 81i,11n,89p,438b,462s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
 </usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb></
@@ -1028,12 +709,14 @@ texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/tex
 live/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texliv
 e/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2
 021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/20
-21/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb>
+21/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2021
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2021/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb>
 Output written on "/Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 5
-/Report_Part_5.pdf" (4 pages, 669667 bytes).
+/Report_Part_5.pdf" (6 pages, 735453 bytes).
 PDF statistics:
- 338 PDF objects out of 1000 (max. 8388607)
- 164 compressed objects within 2 object streams
- 28 named destinations out of 1000 (max. 500000)
- 132 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 435 PDF objects out of 1000 (max. 8388607)
+ 217 compressed objects within 3 object streams
+ 42 named destinations out of 1000 (max. 500000)
+ 177 words of extra memory for PDF output out of 10000 (max. 10000000)
 

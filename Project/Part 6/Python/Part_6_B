@@ -3,6 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import ast2000tools.constants as constants
 from numba import njit as TURBOOOO
+from multiprocessing import Pool
 c = constants.c
 k = constants.k_B
 u = 1.6605402E-27
@@ -102,16 +103,14 @@ def plot(data_slice, flux_slice, noise_slice, computed, name, λ_lowest, λ_0):
     plt.plot(data_slice*1e9,
              computed, label=f'λ_0 = {λ_0}\nΔλ = {abs(λ_lowest - λ_0): .3f} ')
     plt.plot(data_slice*1e9, noise_slice, label = 'Noise')
-    # plt.plot([λ_lowest - abs(λ_lowest - λ_0), λ_lowest - abs(λ_lowest - λ_0)], [.5, 1.25], label = 'lower bound')
-    # plt.plot([λ_lowest + abs(λ_lowest - λ_0), λ_lowest + abs(λ_lowest - λ_0)], [.5, 1.25])
     plt.title(f'Gaussian line profile of {name}')
     plt.xlabel(r'λ (nm)')
     plt.ylabel('Flux')
-    plt.legend(loc = 'lower left', prop={'size': 8})
+    plt.legend(loc = 'lower left', fontsize = 16)
 
 
     
-def plot_gas(gas):
+def plot_gas(gas, show = False):
     for λ_0 in gas['Spectral Lines']:
         data_slice  =   gas[f'result {λ_0}']['data_slice']
         flux_slice  =   gas[f'result {λ_0}']['flux_slice']
@@ -120,12 +119,14 @@ def plot_gas(gas):
         λ_lowest    =   gas[f'result {λ_0}']['λ_lowest']
         name        =   gas['name']
         
-        plt.figure().set_figwidth(20*4)
-        plt.figure().set_figheight(4)
+        plt.figure(figsize=(20,8))
         plot(data_slice, flux_slice, noise_slice+.95, computed, name, λ_lowest, λ_0)
-        plt.tight_layout()
-        plt.savefig(os.path.join(f'Part 6\Figures\{name} {λ_0}.pdf'), format='pdf')
-        plt.close()
+        if show:
+            plt.show()
+            
+        else:
+            plt.savefig(os.path.join(f'Part 6\Figures\{name} {λ_0}.pdf'), format='pdf')
+            plt.close()
 
 
 def plot_gases():
@@ -133,7 +134,7 @@ def plot_gases():
         plot_gas(gas)
         
         
-def compute_gas(gas, N = 50, table = True):
+def analyse_gas(gas, N = 50, table = True):
     if table:
         print('Gas|Wavelength (nm)|Min. Flux (W/m^3)|T (K)| Δλ')
         print('---|---------------|-----------------|-----|-------')
@@ -147,11 +148,11 @@ def compute_gas(gas, N = 50, table = True):
                                 'flux_slice': flux_slice, 'noise_slice': noise_slice, 'computed': computed, 'λ_lowest': λ_lowest, 'Δλ': Δλ}
 
 
-def compute_print_all(N = 50):
+def analyse_gases(N = 50):
     print('Gas|Wavelength (nm)|Min. Flux (W/m^3)|T (K)| Δλ')
     print('---|---------------|-----------------|-----|-------')
     for gas in gases:
-        compute_gas(gas, N, False)
+        analyse_gas(gas, N, table = False)
 
 
 # Gases and their properties stored in dictionaries
@@ -166,8 +167,5 @@ gases = [O2, H2O, CO2, CH4, CO, N2O]
 
 
 if __name__ == '__main__':
-    # compute_print_all(N = 200)
-    # plot_gases()
-    compute_gas(H2O, 200)
-    plot_gas(H2O)
-
+    analyse_gases(N = 200)
+    plot_gases()

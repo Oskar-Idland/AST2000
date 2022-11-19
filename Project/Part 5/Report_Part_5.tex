@@ -40,7 +40,10 @@
 \affiliation{Institute of Theoretical Astrophysics, University of Oslo}
 
 \begin{abstract}
-    This is an abstract \colorbox{red}{Complete this summary at the end of the paper}
+    The spacecraft was launched on the 19th July of the year 238 from planet 0 at an angle of $260.483^{\circ}$ and successfully reached space after 16 minutes and 36 seconds.
+    It entered the predetermined trajectory at an angle of to planet 1 and followed it using multiple correctional boosts until reaching its destination.
+    After reaching planet 1, the spacecraft slowed as part of an orbital injection maneuver to enter a circular orbit at an altitude of 75'000 km above the surface.
+    By calculating the orbit as a two body system after entering orbit and after multiple orbits of the spacecraft we were able to confirm that the orbit was circular and stable.
 \end{abstract}
 \maketitle
 
@@ -211,17 +214,17 @@ We subtract the velocity of our home planet from the calculated value to get the
     As we have measured the position $ \textbf{r}$ and velocity $\textbf{v}$ of the spacecraft when orienting ourselves after the launch, we can determine the required velocity $ \textbf{v}_{req}$ at the current position to enter a trajectory leading to the destination planet, using the method described in section~\ref{ssec: simulating trajectory} and~\ref{subsec:getting-close-enough}.
     The required change in velocity can then easily be found by subtracting.
 
-    \begin{align*}
-        \Delta\textbf{v} = \textbf{v}_{req} - \textbf{v}
-    \end{align*}
+    \begin{align}
+        \Delta\textbf{v} = \textbf{v}_{req} - \textbf{v} \label{boost_calc_1}
+    \end{align}
 
     However, this only gives us a vector.
     To find the direction and magnitude of the boost, we use some trigonometry.
-    \begin{align*}
+    \begin{align} \label{boost_calc2}
         \Delta\textbf{v} = [\Delta v_x, \Delta v_y]\\
         |\textbf{v}| = \sqrt{{\Delta v_x}^2 + {\Delta v_y}^2}\\
         \theta = \arctan \left(\frac{\Delta v_y}{\Delta v_x}\right)
-    \end{align*}
+    \end{align}
 
     We then use the calculations from the first paper %~\parencite[][]{part1} TODO: Delete comment
     of this series of papers to calculate the amount of fuel used for a given $|\Delta\textbf{v}|$ in the process of the correction maneuver
@@ -250,8 +253,8 @@ We subtract the velocity of our home planet from the calculated value to get the
     \begin{align*}
         a_c &= G \frac{M_{Planet}}{r^2}\\
         a_c &= \frac{\textbf{v}_{tan}^2}{r}\\
-        \textbf{v}_{tan}^2 &= G \frac{M_{Planet}}{r}\\
-        \textbf{v}_{tan} &= \sqrt{G \frac{M_{Planet}}{r}}
+        v_{tan}^2 &= G \frac{M_{Planet}}{r}\\
+        v_{tan} &= \sqrt{G \frac{M_{Planet}}{r}}
     \end{align*}
     Since both $ \textbf{v}$ and $\textbf{v}_{tan}$ are tangential velocities and therefore point in the same direction, we can now simply determine the required change in velocity $\Delta \textbf{v}$ by subtracting.
     \begin{align*}
@@ -271,41 +274,133 @@ We subtract the velocity of our home planet from the calculated value to get the
     We therefore need to check what kind of orbit we ended up in after the injection maneuver.
     The first thing to do is to orient ourselves.
     This way, we can find out the position and velocity of the spacecraft relative to the planet.
-    Using this data, we can determine
+    By determining our position and therefore the distance to the planet along the entire orbit and interpolating, we can find a function for the ellipse which makes up the orbit.
+    Using this data, we can set up a two-body system as it is described in the second part of this series of papers%~\parencite[][]{part2}.
+    This enables ut to describe the orbit as an ellipse with the planet in one of the focal points.
+    The apoapsis and periapsis are given as the points on the orbit, which are respectively farthest and closest to the planet.
+    The distances from these points to the planet are called the semi-major axis and semi-minor axis of the orbit
+    By using formula~\eqref{formula2} we can determine the eccentricity $e$of the orbit.
+    \begin{align}
+        e = \sqrt{1-(b/a)^2} \label{formula2}
+    \end{align}
 
 
 
+    \section{Results} \label{sec: results}
 
+    \begin{figure}[h]
+      \centering
+      \includegraphics[scale = .125]{Figures/closest_orbit}
+      \caption{Position where the target planet and our home planet were the closest}
+      \label{fig: closest orbit}
+    \end{figure}
 
+    Our team of scientists have been very busy guiding the rocket to its final orbit around the destination planet, and have successfully completed the task.
+    After launching the rocket, it successfully determined its position and velocity after reaching space.
+    The launch happened at 08:33 on the 19th July of the year 238 in the timeframe of our solar system at an angle of $260.483^{\circ}$ and lasted 16 minutes and 36 seconds.
+    This means the spacecraft reached space at 08:50.
+    At this point in time, the spacecraft measured its position and velocity to be:
+    \begin{align*}
+        r_0 &= [-6.3033, -6.0995] \,\text{AU}\\
+        v_0 &= [ 2.5919, -6.1838] \quad\text{AU/Year}
+    \end{align*}
 
+    However, this was not exactly the velocity $\textbf{v}_{req}$ we needed to enter the desired trajectory towards the destination planet.
+    Therefore, a correction burn was performed.
+    The required change of velocity $\Delta\textbf{v}$ was calculated using equations~\eqref{boost_calc_1} and~\eqref{boost_calc2}.
+    After entering the simulated trajectory, the spacecraft coasted for 0.01 years, which equates to roughly 3 days and 15 hours and 36 minutes.\\
+    Thereafter, the spacecraft oriented itself again to determine the deviation from the simulated trajectory.
+    Multiple times, the deviation was large enough to require a correctional burn.
+    These burns have been executed the same way as the first one after reaching space.\\
+    After being closer than $9.601 \times 10^{-4}$ AU or $1.436 \times 10^5$ km, the gravitational forces from the destination planet started dominating.
+    At this point, the spacecraft continuously monitored its movement relative to the planet and performed an orbit injection maneuver as it is described in section~\ref{subsec:launching-the-spacecraft}.
+    This resulted in a circular orbit around the destination planet after 316 days and 8 hours of travel.\\
+    The trajectory of the interplanetary travel can be seen in figure~\ref{fig:inter_trav}.
+    \begin{figure}[h]
+        %% H(Here), h(here approx), t(top of page), b(bottom of page)
+        \centering
+        \includegraphics[scale=0.35]{Figures/inter_trav}
+        \caption{The interplanetary travel of the spacecraft. The black line depicts the trajectory of the spacecraft.}\label{fig:inter_trav}
+    \end{figure}
 
+    The orbit was at an altitude of $7.5 \times 10^4$ km above the surface of the planet, which required a tangential velocity of $6.705$ AU/Year.
+    Using Kepler's law the orbital period has been determined to be 7 hours 10 minutes and 35 seconds.
 
-\newpage
-\section{Results} \label{sec: results}
-\begin{figure}[h!]
-  \centering
-  \includegraphics[scale = .125]{Figures/closest_orbit}
-  \caption{Position where the target planet and our home planet were the closest}
-  \label{fig: closest orbit}
-\end{figure}
-
-The simulation of the trajectory yielded a necessary speed of 12 AU/yr and an angle of $ \colorbox{red}{X} ^{o} $ degrees with a travel time of $ \colorbox{red}{Y} $ years.
-We launched our rocket approximately in the year \colorbox{red}{Z}.
-After adjusting for our home planets own velocity we get an initial velocity $ \mathbf{v}_0 = \colorbox{red}{(v_1, v_2) }$ and a speed of $ \left\vert \mathbf{v}_0 \right\vert = \colorbox{red}{v_0} \  AU / yr$.
-Our initial position $ \mathbf{r}_0 $ will then be $ \mathbf{r}_0 = R \hat{\mathbf{v}} + \mathbf{r}_{\text{hp}} $, where $ R $ is the radius and $ \mathbf{r}_{\text{hp}} $ the position of our home planet.
-\begin{figure}[h!]
-  \centering
-  \includegraphics[scale = .125]{Figures/good_enough_distance}
-  \caption{Position of shuttle and target planet at optimal distance}
-  \label{fig: good enough distance}
-  \colorbox{red}{Update when the actual trajectory has been chosen}
-\end{figure}
+    \begin{figure}[h]
+      \centering
+      \includegraphics[scale = .125]{Figures/good_enough_distance}
+      \caption{Position of shuttle and target planet at optimal distance for our simulated orbit. Lines depict trajectories at different angles}
+      \label{fig: good enough distance}
+    \end{figure}
 
 
 \section{Discussion} \label{sec: discussion}
+A lot of these calculations are based on the previous papers in this series of papers.
+Hence, any uncertainties from these parts can impact calculations in this part.\\
+This applies especially for the orbits of the planets in the solar system as these are numerically calculated.
+As we do not have unlimited computing power, we had to trade some accuracy for shorter computing time.
+This also applies for the numeric calculations of the simulated trajectory of this part.
+However, due to advanced simulation algorithms, the errors induced could be reduced to a minimum and therefore, the impact on the end result should not lead to very large deviations.\\
+Furthermore, a lot of our calculations include gravitational forces, which are dependent on the mass of objects.
+It is relatively simple to determine the mass of our spacecraft, but since we are not able to determine the mass of the planets and the star in our solar system using scales, these might not be entirely exact.
+Even though our scientists have found very good methods for these applications, there will always be some uncertainties.
+
+\subsection{Forces during launch and trajectory}\label{subsec:the-launch}
+    Other things impacting the results of our simulations and the journey of the spacecraft are forces, which we did not account for.
+    During the launch this includes the aerodynamic drag, which we neglected but actually exerts quite a significant force at higher velocities.
+    We might therefore not reach the height or velocity we simulated and wanted to reach.\\
+    This is quite dangerous as the rocket could either fall back to earth at a different place, which might be populated.
+    The rocket could also end up in something called a gravitational slingshot, which transfers some of the planet's momentum to the spacecraft and launches it into another, unspecified trajectory.\\
+
+    After the launch from our home planet, and entering space, there will be further forces which are difficult to foresee and therefore account for.
+    We are of course aware of the larger objects in our solar system like the planets and star, which exert most of the gravitational forces on the spacecraft.
+    However, there are thousands of small objects such as meteoroids in space, which exert small gravitational forces.
+    These forces are relatively small, but can still have an effect on the trajectory of the spacecraft when close enough.\\
+    Furthermore, the star continuously expels clouds of ions into the solar system due to the violent fusion processes in its core.
+    These are called solar winds and exert a small, but continuous force on the spacecraft, which can further impact its trajectory.
+    These forces are unaccounted for in our simulations, which could lead to significant deviations.
+
+\subsection{The Spacecraft}\label{subsec:the-spacecraft}
+    Another source of error can be the spacecraft itself.
+    Even though we are using cutting edge technology, there will always be a small chance of an error, which could lead to uncertainties in measurements such as when orienting ourselves and measuring our velocity.
+    Furthermore, the behaviour of the rocket engine in space can differ from what we expect and therefore induce combustion instabilities, which can make it difficult to perform a precise correctional burn.\\
+    An assumption which might impact our results as well, is the duration of the correctional boost.
+    We assumed these to be instant, whereas they do have some duration in reality.
+    This could mean that the spacecraft does not enter the exact calculated trajectory, which we wanted after the boost.
+    However, as we are checking the deviance from the simulated trajectory at regular intervals, this error would most likely be corrected during the next boost, resulting in the spacecraft reaching its destination nevertheless.
+
+\subsection{Entering Orbit}\label{subsec:entering-orbit}
+    Looking at the orbital injection maneuver, we also see some possible error sources.
+    The burn which is meant to slow down the spacecraft has a duration, as all other correctional burns did.
+    This means, we would have to start this burn a little earlier than we did in our simulations.
+    Not doing so, or failing to do it at the perfect point in time would lead to entering into an elliptical orbit.\\
+    We entered a perfectly circular, and therefore a stable orbit, but the chances for achieving this are extremely low.
+    This result should therefore be seen very critically.
+    If we entered an elliptical orbit instead, we would have to perform correctional boosts to enter a more stable orbit.\\
+    Just like when travelling in space, we will also be influenced by small objects while executing the orbital injection maneuver and while being in orbit around the planet.
+    This makes if even more difficult to achieve a perfectly circular orbit.\\
+
+    As we are still rather far up in orbit, the atmosphere is extremely thin, but staying in the orbit for prolonged periods of time will still require us to perform correctional boosts.
+    The perfectly circular orbit will therefore most likely not stay circular forever if the spacecraft simply coasts.
+    There will be minimal amounts of friction which can vary and brake the spacecraft at different times and alter the orbit.
+    However, after orbiting around the planet multiple times and measuring the orbit again, we could confirm that the orbit we entered was stable.
+
 
 
 \section{Conclusion} \label{sec: conclusion}
+    After simulating all parts of the journey of the spacecraft to the destination planet, we were finally able to launch it.
+    Using the simulations, necessary parameters such as thrust, launch angle and favorable time of launch for a successful launch could be determined.
+    The launch happened at 08:33 on the 19th July of the year 238, and went well
+    This lead to a successful orientation of the spacecraft after reaching space and entering into the predetermined trajectory towards the destination planet, which was simulated using the orbital mechanics and the leapfrog algorithm.
+    During the travel from the launch planet to the destination planet, multiple trajectory corrections were necessary to keep the spacecraft on the predetermined trajectory.
+    After 316 days and 8 hours of travel, the spacecraft finally reached its destination and initialised an orbit injection maneuver.
+    The injection maneuver slowed the spacecraft sufficiently to enter into orbit around planet 1.
+    This was a very critical maneuver, since small deviations could lead to the spacecraft entering an elliptical, and therefore unstable orbit.
+    Thanks to precise boosts, we were able to enter a circular, and therefore stable orbit.
+    To confirm the shape and stability of the orbit, the orbit was calculated again based on the position and velocity of the spacecraft after multiple orbits.
+    We were therefore able to confirm successful travel to planet 1 and entry into a stable orbit at an orbital height of 75'000 km above the surface.
+
+
 
 \section{Appendix} \label{sec: appendix}
 
