@@ -1,7 +1,7 @@
-PWD c:\Users\oskar\OneDrive - Universitetet i Oslo\Dokumenter\GitHub\Privat\AST2000\Project\Part 4
+PWD c:\Users\oskar\OneDrive - Universitetet i Oslo\Dokumenter\GitHub\Privat\AST2000\Project\Part 6
 INPUT C:\Users\oskar\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
-INPUT c:\Users\oskar\OneDrive - Universitetet i Oslo\Dokumenter\GitHub\Privat\AST2000\Project\Part 4\Report_Part_4.tex
-OUTPUT Report_Part_4.log
+INPUT c:\Users\oskar\OneDrive - Universitetet i Oslo\Dokumenter\GitHub\Privat\AST2000\Project\Part 6\Report_Part_6.tex
+OUTPUT c:\Users\oskar\OneDrive - Universitetet i Oslo\Dokumenter\GitHub\Privat\AST2000\Project\Part 6\out\Report_Part_6.log
 INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex\latex\revtex\revtex4-2.cls
 INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex\latex\revtex\revtex4-2.cls
 INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex\latex\revtex\revtex4-2.cls
@@ -667,10 +667,10 @@ INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex\latex\listings\lstlang1.s
 INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex\latex\listings\lstlang1.sty
 INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex\latex\listings\lstlang1.sty
 INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex\latex\listings\lstlang1.sty
-INPUT .\Report_Part_4.aux
-INPUT Report_Part_4.aux
-INPUT Report_Part_4.aux
-OUTPUT Report_Part_4.aux
+INPUT c:\Users\oskar\OneDrive - Universitetet i Oslo\Dokumenter\GitHub\Privat\AST2000\Project\Part 6\out\Report_Part_6.aux
+INPUT c:\Users\oskar\OneDrive - Universitetet i Oslo\Dokumenter\GitHub\Privat\AST2000\Project\Part 6\out\Report_Part_6.aux
+INPUT c:\Users\oskar\OneDrive - Universitetet i Oslo\Dokumenter\GitHub\Privat\AST2000\Project\Part 6\out\Report_Part_6.aux
+OUTPUT c:\Users\oskar\OneDrive - Universitetet i Oslo\Dokumenter\GitHub\Privat\AST2000\Project\Part 6\out\Report_Part_6.aux
 INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex\latex\ucs\ucsencs.def
 INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex\latex\ucs\ucsencs.def
 INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex\latex\ucs\ucsencs.def
@@ -695,24 +695,30 @@ INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex\latex\00miktex\epstopdf-s
 INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex\latex\00miktex\epstopdf-sys.cfg
 INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex\latex\00miktex\epstopdf-sys.cfg
 INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex\latex\graphics\color.sty
-INPUT .\Report_Part_4.out
-INPUT Report_Part_4.out
-INPUT .\Report_Part_4.out
-INPUT Report_Part_4.out
-INPUT .\Report_Part_4.out
-INPUT Report_Part_4.out
-INPUT .\Report_Part_4.out
-INPUT Report_Part_4.out
-OUTPUT Report_Part_4.pdf
-INPUT .\Report_Part_4.out
-INPUT .\Report_Part_4.out
-OUTPUT Report_Part_4.out
-OUTPUT Report_Part_4Notes.bib
+INPUT c:\Users\oskar\OneDrive - Universitetet i Oslo\Dokumenter\GitHub\Privat\AST2000\Project\Part 6\out\Report_Part_6.out
+INPUT c:\Users\oskar\OneDrive - Universitetet i Oslo\Dokumenter\GitHub\Privat\AST2000\Project\Part 6\out\Report_Part_6.out
+INPUT c:\Users\oskar\OneDrive - Universitetet i Oslo\Dokumenter\GitHub\Privat\AST2000\Project\Part 6\out\Report_Part_6.out
+INPUT c:\Users\oskar\OneDrive - Universitetet i Oslo\Dokumenter\GitHub\Privat\AST2000\Project\Part 6\out\Report_Part_6.out
+INPUT c:\Users\oskar\OneDrive - Universitetet i Oslo\Dokumenter\GitHub\Privat\AST2000\Project\Part 6\out\Report_Part_6.out
+INPUT c:\Users\oskar\OneDrive - Universitetet i Oslo\Dokumenter\GitHub\Privat\AST2000\Project\Part 6\out\Report_Part_6.out
+INPUT c:\Users\oskar\OneDrive - Universitetet i Oslo\Dokumenter\GitHub\Privat\AST2000\Project\Part 6\out\Report_Part_6.out
+INPUT c:\Users\oskar\OneDrive - Universitetet i Oslo\Dokumenter\GitHub\Privat\AST2000\Project\Part 6\out\Report_Part_6.out
+OUTPUT c:\Users\oskar\OneDrive - Universitetet i Oslo\Dokumenter\GitHub\Privat\AST2000\Project\Part 6\out\Report_Part_6.pdf
+INPUT c:\Users\oskar\OneDrive - Universitetet i Oslo\Dokumenter\GitHub\Privat\AST2000\Project\Part 6\out\Report_Part_6.out
+INPUT c:\Users\oskar\OneDrive - Universitetet i Oslo\Dokumenter\GitHub\Privat\AST2000\Project\Part 6\out\Report_Part_6.out
+OUTPUT c:\Users\oskar\OneDrive - Universitetet i Oslo\Dokumenter\GitHub\Privat\AST2000\Project\Part 6\out\Report_Part_6.out
+OUTPUT c:\Users\oskar\OneDrive - Universitetet i Oslo\Dokumenter\GitHub\Privat\AST2000\Project\Part 6\out\Report_Part_6Notes.bib
 INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr9.tfm
 INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr12.tfm
 INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx12.tfm
 INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmti9.tfm
 INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx9.tfm
+INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr6.tfm
+INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmmi9.tfm
+INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmmi6.tfm
+INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmsy9.tfm
+INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmsy6.tfm
+INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex9.tfm
 INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
 INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
 INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex\latex\esint\uesint.fd
@@ -736,45 +742,92 @@ INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex\latex\amsfonts\umsb.fd
 INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
 INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm7.tfm
 INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm5.tfm
-INPUT .\Figures\Stereographic_projection.png
-INPUT Figures\Stereographic_projection.png
-INPUT .\Figures\Stereographic_projection.png
-INPUT .\Figures\Stereographic_projection.png
-INPUT .\Figures\Stereographic_projection.png
-INPUT .\Figures\Stereographic_projection.png
-INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex\latex\ucs\data\uni-3.def
-INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex\latex\ucs\data\uni-3.def
-INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex\latex\ucs\data\uni-3.def
-INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex\latex\ucs\data\uni-3.def
 INPUT C:\Users\oskar\AppData\Local\MiKTeX\fonts\map\pdftex\pdftex.map
-INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex\latex\ucs\data\uni-0.def
-INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex\latex\ucs\data\uni-0.def
-INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex\latex\ucs\data\uni-0.def
-INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex\latex\ucs\data\uni-0.def
-INPUT .\Figures\trilateration.png
-INPUT Figures\trilateration.png
-INPUT .\Figures\trilateration.png
-INPUT .\Figures\trilateration.png
-INPUT .\Figures\trilateration.png
-INPUT .\Figures\trilateration.png
-INPUT .\Python\sky_picture.png
-INPUT Python\sky_picture.png
-INPUT .\Python\sky_picture.png
-INPUT .\Python\sky_picture.png
-INPUT .\Python\sky_picture.png
-INPUT .\Python\sky_picture.png
-INPUT .\Test_Image.png
-INPUT Test_Image.png
-INPUT .\Test_Image.png
-INPUT .\Test_Image.png
-INPUT .\Test_Image.png
-INPUT .\Test_Image.png
-INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr6.tfm
-INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmmi9.tfm
-INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmmi6.tfm
-INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmsy9.tfm
-INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmsy6.tfm
-INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex9.tfm
+INPUT .\Figures\O2 632.pdf
+INPUT .\Figures\O2 632.pdf
+INPUT Figures\O2 632.pdf
+INPUT .\Figures\O2 632.pdf
+INPUT .\Figures\O2 632.pdf
+INPUT .\Figures\O2 632.pdf
+INPUT .\Figures\O2 690.pdf
+INPUT .\Figures\O2 690.pdf
+INPUT Figures\O2 690.pdf
+INPUT .\Figures\O2 690.pdf
+INPUT .\Figures\O2 690.pdf
+INPUT .\Figures\O2 690.pdf
+INPUT .\Figures\O2 760.pdf
+INPUT .\Figures\O2 760.pdf
+INPUT Figures\O2 760.pdf
+INPUT .\Figures\O2 760.pdf
+INPUT .\Figures\O2 760.pdf
+INPUT .\Figures\O2 760.pdf
+INPUT .\Figures\H2O 720.pdf
+INPUT .\Figures\H2O 720.pdf
+INPUT Figures\H2O 720.pdf
+INPUT .\Figures\H2O 720.pdf
+INPUT .\Figures\H2O 720.pdf
+INPUT .\Figures\H2O 720.pdf
+INPUT .\Figures\H2O 820.pdf
+INPUT .\Figures\H2O 820.pdf
+INPUT Figures\H2O 820.pdf
+INPUT .\Figures\H2O 820.pdf
+INPUT .\Figures\H2O 820.pdf
+INPUT .\Figures\H2O 820.pdf
+INPUT .\Figures\H2O 940.pdf
+INPUT .\Figures\H2O 940.pdf
+INPUT Figures\H2O 940.pdf
+INPUT .\Figures\H2O 940.pdf
+INPUT .\Figures\H2O 940.pdf
+INPUT .\Figures\H2O 940.pdf
+INPUT .\Figures\CO2 1400.pdf
+INPUT .\Figures\CO2 1400.pdf
+INPUT Figures\CO2 1400.pdf
+INPUT .\Figures\CO2 1400.pdf
+INPUT .\Figures\CO2 1400.pdf
+INPUT .\Figures\CO2 1400.pdf
+INPUT .\Figures\CO2 1600.pdf
+INPUT .\Figures\CO2 1600.pdf
+INPUT Figures\CO2 1600.pdf
+INPUT .\Figures\CO2 1600.pdf
+INPUT .\Figures\CO2 1600.pdf
+INPUT .\Figures\CO2 1600.pdf
+INPUT .\Figures\CH4 1660.pdf
+INPUT .\Figures\CH4 1660.pdf
+INPUT Figures\CH4 1660.pdf
+INPUT .\Figures\CH4 1660.pdf
+INPUT .\Figures\CH4 1660.pdf
+INPUT .\Figures\CH4 1660.pdf
+INPUT .\Figures\CH4 2200.pdf
+INPUT .\Figures\CH4 2200.pdf
+INPUT Figures\CH4 2200.pdf
+INPUT .\Figures\CH4 2200.pdf
+INPUT .\Figures\CH4 2200.pdf
+INPUT .\Figures\CH4 2200.pdf
+INPUT .\Figures\CO 2340.pdf
+INPUT .\Figures\CO 2340.pdf
+INPUT Figures\CO 2340.pdf
+INPUT .\Figures\CO 2340.pdf
+INPUT .\Figures\CO 2340.pdf
+INPUT .\Figures\CO 2340.pdf
+INPUT .\Figures\N2O 2870.pdf
+INPUT .\Figures\N2O 2870.pdf
+INPUT Figures\N2O 2870.pdf
+INPUT .\Figures\N2O 2870.pdf
+INPUT .\Figures\N2O 2870.pdf
+INPUT .\Figures\N2O 2870.pdf
+INPUT .\Figures\Temperature plot.pdf
+INPUT .\Figures\Temperature plot.pdf
+INPUT Figures\Temperature plot.pdf
+INPUT .\Figures\Temperature plot.pdf
+INPUT .\Figures\Temperature plot.pdf
+INPUT .\Figures\Temperature plot.pdf
+INPUT .\Figures\Density plot.pdf
+INPUT .\Figures\Density plot.pdf
+INPUT Figures\Density plot.pdf
+INPUT .\Figures\Density plot.pdf
+INPUT .\Figures\Density plot.pdf
+INPUT .\Figures\Density plot.pdf
+INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\tcrm1000.tfm
 INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
 INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\fonts\tfm\public\esint\esint10.tfm
 INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\fonts\tfm\public\esint\esint10.tfm
@@ -782,27 +835,39 @@ INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\sym
 INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam7.tfm
 INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
 INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm7.tfm
-INPUT .\Report_Part_4.bbl
-INPUT Report_Part_4.bbl
-INPUT .\Report_Part_4.bbl
-INPUT Report_Part_4.bbl
-INPUT Report_Part_4.aux
-INPUT .\Report_Part_4.out
-INPUT .\Report_Part_4.out
+INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex\latex\ucs\data\uni-33.def
+INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex\latex\ucs\data\uni-33.def
+INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex\latex\ucs\data\uni-33.def
+INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex\latex\ucs\data\uni-33.def
+INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex\latex\ucs\data\uni-3.def
+INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex\latex\ucs\data\uni-3.def
+INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex\latex\ucs\data\uni-3.def
+INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex\latex\ucs\data\uni-3.def
+INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex\latex\ucs\data\uni-34.def
+INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex\latex\ucs\data\uni-34.def
+INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex\latex\ucs\data\uni-34.def
+INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex\latex\ucs\data\uni-34.def
+INPUT .\Report_Part_6.bbl
+INPUT Report_Part_6.bbl
+INPUT .\Report_Part_6.bbl
+INPUT Report_Part_6.bbl
+INPUT c:\Users\oskar\OneDrive - Universitetet i Oslo\Dokumenter\GitHub\Privat\AST2000\Project\Part 6\out\Report_Part_6.aux
+INPUT c:\Users\oskar\OneDrive - Universitetet i Oslo\Dokumenter\GitHub\Privat\AST2000\Project\Part 6\out\Report_Part_6.out
+INPUT c:\Users\oskar\OneDrive - Universitetet i Oslo\Dokumenter\GitHub\Privat\AST2000\Project\Part 6\out\Report_Part_6.out
+INPUT C:\Users\oskar\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm1000.pk
+INPUT C:\Users\oskar\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm1000.pk
 INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx12.pfb
 INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx12.pfb
 INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx9.pfb
 INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx9.pfb
-INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmex10.pfb
-INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmex10.pfb
 INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi10.pfb
 INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi10.pfb
-INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi7.pfb
-INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi7.pfb
 INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi9.pfb
 INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi9.pfb
 INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr10.pfb
 INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr10.pfb
+INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr6.pfb
+INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr6.pfb
 INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr7.pfb
 INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr7.pfb
 INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr9.pfb
