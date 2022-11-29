@@ -18,7 +18,6 @@ system = SolarSystem(seed)
 mission = SpaceMission(seed)
 shortcut = SpaceMissionShortcuts(mission, [stable_orbit])
 shortcut1 = SpaceMissionShortcuts(mission, [code_launch_results, code_escape_trajectory])
-G = 4 * np.pi ** 2
 planet_idx = 1
 
 # FOR SIMPLICITY WE WILL ONLY MOVE ON THE XY-PLANE
@@ -75,17 +74,31 @@ def decrease_orbit(r0, r1, land_seq, planet_idx=1):  # TODO: Finish function
     :param planet_idx: Planet Index
     :return: None
     """
-    m_planet = system.masses(planet_idx) * 1.98847e30
-    G_SI = 6.6743015 * 10 ** (-11)
-    v0_abs = np.sqrt(G_SI * m_planet / r0)
-    T_orb0 = (2 * np.pi * r0) / v0_abs
+    m_planet = system.masses(planet_idx) * 1.98847e30  # Planet mass
+    G_SI = 6.6743015 * 10 ** (-11)  # Universal gravitational constant
+    v0_abs = np.sqrt(G_SI * m_planet / r0)  # Absolute velocity in the initial circular orbit
+    T_orb0 = (2 * np.pi * r0) / v0_abs  # Calculating orbital period
+    delta_v0 = -np.sqrt(G_SI/r1)*(np.sqrt((2*r0)/(r0+r1))-1)  # Calculating required boost to enter Hohmann transfer orbit
+    delta_v1 = -np.sqrt(G_SI / r0) * (np.sqrt((2 * r1) / (r0 + r1)) - 1)  # Calculating required boost to enter circular target orbit
+
+    t, pos, vel = land_seq.orient()
+    vel_norm = vel / np.linalg.norm(vel)
+    land_seq.boost(delta_v0 * vel_norm)  # Boosting to go from the initial corculat orbit into the Hohmann transfer orbit.
+
+    land_seq.fall(T_orb0/4)  # Falling for 1/4 of the orbital time (until we are at the periapsis)
+
+    t, pos, vel = land_seq.orient()
+    vel_norm = vel / np.linalg.norm(vel)
+    land_seq.boost(delta_v1 * vel_norm)  # Boosting to go from the Hohmann transfer orbit into the circular target orbit.
+    t, pos, vel = land_seq.orient()
+    return t, pos, vel
 
 
 def find_actual_coordinates(curr_coords, time_elapsed, planet_idx=1, cartesian=False):
     """
     Calculates at which coordinates the input position was at time 0.
     :param curr_coords: Current coordinates in spherical form in radians (or cartesian if cartesian is set to True) (Phi is 0 at z-axis)
-    :param time_elapsed: Point of time from start in years
+    :param time_elapsed: Point of time from start of landing sequence in seconds
     :param planet_idx: Planet index
     :return: Spherical coordinates of the position we are over now at time 0.
     """
@@ -100,8 +113,7 @@ def find_actual_coordinates(curr_coords, time_elapsed, planet_idx=1, cartesian=F
 
     r_planet = system.radii[planet_idx] * 1000  # Planet radius
     omega = (2 * np.pi) / (system.rotational_periods[planet_idx] * 24 * 3600)  # Angular velocity of atmosphere
-    time_elapsed_sec = utils.yr_to_s(time_elapsed)  # Converting time to seconds
-    new_theta = (curr_coords[1] - (omega * time_elapsed_sec)) % (2 * np.pi)  # Calculating new theta angle
+    new_theta = (curr_coords[1] - (omega * time_elapsed)) % (2 * np.pi)  # Calculating new theta angle
     new_coords = np.array([r_planet, new_theta, curr_coords[2]])  # New coordinates
     return new_coords
 
@@ -125,8 +137,7 @@ def find_new_coordinates(curr_coords, time_ahead, planet_idx=1, cartesian=False)
 
     r_planet = system.radii[planet_idx] * 1000  # Planet radius
     omega = (2 * np.pi) / (system.rotational_periods[planet_idx] * 24 * 3600)  # Angular velocity of atmosphere
-    time_elapsed_sec = utils.yr_to_s(time_ahead)  # Converting time to seconds
-    new_theta = (curr_coords[1] + (omega * time_elapsed_sec)) % (2 * np.pi)  # Calculating new theta angle
+    new_theta = (curr_coords[1] + (omega * time_ahead)) % (2 * np.pi)  # Calculating new theta angle
     new_coords = np.array([r_planet, new_theta, curr_coords[2]])  # New Coordinates
     return new_coords
 
@@ -167,7 +178,8 @@ def verify_constant_orbit_height(land_seq, max_diff=100):
 def image_landing_site(land_seq, idx=0, planet_idx=1):
     t, pos_cart, vel_cart = land_seq.orient()
     r, theta, phi = cart_to_spherical(pos_cart[0], pos_cart[1], pos_cart[2])
-    pos = f"Landing_site{idx}: {r}, {theta}, {phi}\n"
+    act_coords = find_actual_coordinates([r, theta, phi], t)
+    pos = f"Landing_site{idx}: {act_coords[0]}, {act_coords[1]}, {act_coords[2]}\n"
     with open("landing_area_coords.txt", "a") as file:
         file.write(pos)
     land_seq.look_in_direction_of_planet(planet_idx)
@@ -179,12 +191,13 @@ def image_landing_site(land_seq, idx=0, planet_idx=1):
 if __name__ == "__main__":
     landing_seq = mission.begin_landing_sequence()  # Creating landing sequence instance
     # print(verify_constant_orbit_height(landing_seq))  # Verifying stability of orbital height
-
-    picture_num = 10  # Number of landing site pictures to be taken
-    picture_delay = 1000  # Delay between when pictures are taken in seconds
+    landing_seq.start_video()
+    picture_num = 15  # Number of landing site pictures to be taken
+    picture_delay = 60  # Delay between when pictures are taken in seconds
     with open("landing_area_coords.txt", "w") as file:  # Creating and clearing file with landing site coordinates
         file.write("Landing Site Index, Radius [m], Theta [rad], Phi [rad]\n")  # Writing header to file
     for idx in range(picture_num):
         image_landing_site(landing_seq, idx=idx)
         landing_seq.fall(picture_delay)
-
+    # landing_seq.fall(10000)
+    landing_seq.finish_video()
