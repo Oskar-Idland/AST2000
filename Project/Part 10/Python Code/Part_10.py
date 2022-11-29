@@ -65,7 +65,8 @@ def plot_HR_diagram(ticks: list, offset: float = 0, savefig: bool = False):
     return fig, ax
      
 
-def plot_star(ax, star: list, lbl: str, figname: str, x1: int, x2: int, star_radius: float, savefig: bool = True) -> None:
+def plot_star(ax, star: list, lbl: str, figname: str, x1: int, 
+              x2: int, star_radius: float, savefig: bool = True) -> None:
     '''
     Plots star in HR diagram\n
     star            - The coordinates of the star [Temperature [K], Luminosity [L_sun]]\n
@@ -97,6 +98,74 @@ def plot_arrow(ax, lbl: str, c1: float, c2: float, x1: float, x2: float) -> None
         arrowprops=dict(arrowstyle="->",
                         connectionstyle="arc3"),
         )    
+    
+def make_plots(plot_sun: bool = True, plot_sun_star: bool = True,
+               plot_cloud: bool = True, plot_arrows: bool = True) -> None:
+    '''
+    Function which creates desired plots
+    '''
+    
+    if plot_sun:
+        '''Plotting the sun in HR diagram'''
+        # TODO: Slett kommentar før innlevering
+        sun_HR_coords = [T_sun, 1]
+        lbl = 'The Sun'
+        figname = 'The Sun'
+        fig, ax = plot_HR_diagram([35000, 18000, 10000, 6000, 4000, 3000])
+        plot_star(ax, sun_HR_coords, lbl, figname, -100, -50, R_sun, savefig = True)
+    
+    if plot_sun_star:
+        '''Plotting our star together with the sun in its current state in the HR-diagram'''
+        sun_HR_coords = [T_sun, 1]
+        lbl = 'The Sun'
+        figname = 'Sun and Star'
+        fig, ax = plot_HR_diagram([35000, 18000, 10000, 6000, 4000, 3000])
+        plot_star(ax, sun_HR_coords, lbl, figname, -100, -50, R_sun, savefig = False)
+    
+        star_HR_coords = [star_temp, star_L]
+        lbl = 'Our Star Today'
+        figname = 'Sun and Star'
+        plot_star(ax, star_HR_coords, lbl, figname, -100, -50, star_radius, savefig = True)
+    
+
+    if plot_cloud:
+        '''Plotting our star when it was a gas cloud in the HR-diagram'''
+        lbl = 'Our Star Pre-Collapse'
+        figname = 'Pre-Collapse'
+        cloud_HR_coords = [T_cloud, L_cloud]
+        fig, ax = plot_HR_diagram([35000, 3000, 10], offset = -1999)
+        plot_star(ax, cloud_HR_coords, lbl, figname, -10, -50, R_cloud/1E4, savefig = True)
+        
+    
+    if plot_arrows:
+        '''Plotting arrows on the HR-diagram'''
+        fig, ax = plot_HR_diagram([35000, 18000, 10000, 6000, 4000, 3000])
+        dwarf_lbl   = 'White Dwarfs'
+        main_lbl    = 'Main Sequence'
+        giant_lbl   = 'Giants'
+        Sgiant_lbl  = 'Super Giants'
+        S_groups    = [dwarf_lbl, main_lbl, giant_lbl, Sgiant_lbl]    
+        
+        dwarf_coords    = [18000, 1E-2]
+        main_coords     = [9000, 1E1]
+        giant_coords    = [3500, 1E2]
+        Sgiant_coords   = [5000, 1E4]
+        S_coords        = [dwarf_coords, main_coords, giant_coords, Sgiant_coords]
+        
+        dwarf_x     = [-75, -25]
+        main_x      = [-75, -50]
+        giant_x     = [25, -25]
+        Sgiant_x    = [-50, -25]
+        S_x         = [dwarf_x, main_x, giant_x, Sgiant_x]
+        
+        for i in range(len(S_groups)):
+            c1, c2 = S_coords[i][0], S_coords[i][1]
+            x1, x2 = S_x[i][0], S_x[i][1]
+            lbl = S_groups[i]
+            plot_arrow(ax, lbl, c1, c2, x1, x2)
+
+
+        plt.savefig(os.path.join('Part 10/figures/HR-Diagram_Classification.pdf'))
         
 
 def Star_L(radius: float, temp: float) -> float: 
@@ -266,67 +335,10 @@ if __name__ == "__main__":
     print(f'Weight of 1L dwarf star material    {D_ρ/1000: .2e} [kg]')
     print(f'Star gravitational pull when dwarf: {D_g: .2e} [m/s^2]')
     
-    
-    '''Plotting the sun in HR diagram'''
-    # TODO: Slett kommentar før innlevering
-    sun_HR_coords = [T_sun, 1]
-    lbl = 'The Sun'
-    figname = 'The Sun'
-    fig, ax = plot_HR_diagram([35000, 18000, 10000, 6000, 4000, 3000])
-    plot_star(ax, sun_HR_coords, lbl, figname, -100, -50, R_sun, savefig = True)
-    
-    '''Plotting our star together with the sun in its current state in the HR-diagram'''
-    # TODO: Slett kommentar før innlevering
-    sun_HR_coords = [T_sun, 1]
-    lbl = 'The Sun'
-    figname = 'Sun and Star'
-    fig, ax = plot_HR_diagram([35000, 18000, 10000, 6000, 4000, 3000])
-    plot_star(ax, sun_HR_coords, lbl, figname, -100, -50, R_sun, savefig = False)
-    
-    star_HR_coords = [star_temp, star_L]
-    lbl = 'Our Star Today'
-    figname = 'Sun and Star'
-    plot_star(ax, star_HR_coords, lbl, figname, -100, -50, star_radius, savefig = True)
+    # TODO: Remove comment before deadline
+    # make_plots()
     
 
-    
-    '''Plotting our star when it was a gas cloud in the HR-diagram'''
-    # TODO: Slett kommentar før innlevering
-    lbl = 'Our Star Pre-Collapse'
-    figname = 'Pre-Collapse'
-    cloud_HR_coords = [T_cloud, L_cloud]
-    fig, ax = plot_HR_diagram([35000, 3000, 10], offset = -1999)
-    plot_star(ax, cloud_HR_coords, lbl, figname, -10, -50, R_cloud/1E4, savefig = True)
-    
-    '''Plotting arrows on the HR-diagram'''
-    # TODO: Slett kommentar før innlevering
-    fig, ax = plot_HR_diagram([35000, 18000, 10000, 6000, 4000, 3000])
-    dwarf_lbl   = 'White Dwarfs'
-    main_lbl    = 'Main Sequence'
-    giant_lbl   = 'Giants'
-    Sgiant_lbl  = 'Super Giants'
-    S_groups    = [dwarf_lbl, main_lbl, giant_lbl, Sgiant_lbl]    
-    
-    dwarf_coords    = [18000, 1E-2]
-    main_coords     = [9000, 1E1]
-    giant_coords    = [3500, 1E2]
-    Sgiant_coords   = [5000, 1E4]
-    S_coords        = [dwarf_coords, main_coords, giant_coords, Sgiant_coords]
-    
-    dwarf_x     = [-75, -25]
-    main_x      = [-75, -50]
-    giant_x     = [25, -25]
-    Sgiant_x    = [-50, -25]
-    S_x         = [dwarf_x, main_x, giant_x, Sgiant_x]
-    
-    for i in range(len(S_groups)):
-        c1, c2 = S_coords[i][0], S_coords[i][1]
-        x1, x2 = S_x[i][0], S_x[i][1]
-        lbl = S_groups[i]
-        plot_arrow(ax, lbl, c1, c2, x1, x2)
-
-
-    plt.savefig(os.path.join('Part 10/figures/HR-Diagram_Classification.pdf'))
     
     '''
     Output
