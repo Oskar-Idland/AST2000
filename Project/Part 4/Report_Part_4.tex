@@ -43,7 +43,12 @@
 \affiliation{Institute of Theoretical Astrophysics, University of Oslo}
 
 \begin{abstract}
-    This is an abstract \colorbox{red}{Complete this summary at the end of the paper}
+    To orient the spacecraft when in space, an orientation software consisting of three parts has been created and tested for a launch at time $t = 0$.
+	Using the onboard camera, a picture was taken, which was matched to a set of reference photos taken by a satellite in orbit around our home planet.
+	By measuring the distances to known celestial objects with our radar array, and using a method called trilateration we were able to determine the exact position of the spacecraft relative to the star.
+	The velocity of the spacecraft relative to the star has been found by measuring the redshift of the $H_{\alpha}$-spectral line from reference stars and comparing it to the known redshifts seen from the perspective of the star in our solar system.
+	The test of this software resulted in a heading angle of $39^{\circ}$, a position of $(9.3141, 1.2278\times10^{-4})$ AU and a velocity of $(2.7712, 4.3863)$ AU/Year relative to the star.
+
 \end{abstract}
 \maketitle
 
@@ -307,7 +312,7 @@ The distances from the spacecraft to the different bodies are
 These distances have then been used to triangulate the position of the spacecraft right after reaching outer space using the method described in section~\ref{subsec:the-position-of-the-spacecraft}.
 This amounted to the position of the spacecraft being
 \begin{align}
-    SC(t_m) = (9.3141, 1.2278 \times 10^{-4}) AU \label{pos_results}
+    SC(t_m) = (9.3141, 1.2278 \times 10^{-4}) \text{AU} \label{pos_results}
 \end{align}
 
 Furthermore, the velocity of the spacecraft of the spacecraft has been calculated using the methods from section~\ref{subsec:determining-the-velocity}.

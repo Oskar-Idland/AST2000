@@ -7,7 +7,6 @@ from ast2000tools.solar_system import SolarSystem
 from ast2000tools.space_mission import SpaceMission
 sys.path.append("../../Part 1/Python Code")
 from Rocket_launch import launch_rocket  # It works when running, even if it shows an error in the editor!
-from Part_5_A import trajectory
 from Part_5_B_func import *
 from ast2000tools.shortcuts import SpaceMissionShortcuts
 seed = 36874
