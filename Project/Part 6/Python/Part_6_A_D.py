@@ -74,12 +74,12 @@ def decrease_orbit(r0, r1, land_seq, planet_idx=1):  # TODO: Finish function
     :param planet_idx: Planet Index
     :return: None
     """
-    m_planet = system.masses(planet_idx) * 1.98847e30  # Planet mass
-    G_SI = 6.6743015 * 10 ** (-11)  # Universal gravitational constant
-    v0_abs = np.sqrt(G_SI * m_planet / r0)  # Absolute velocity in the initial circular orbit
+    m_planet = system.masses[planet_idx] * 1.98847e30  # Planet mass
+    GM = (6.6743015 * 10 ** (-11))*m_planet  # Standard gravitational parameter
+    v0_abs = np.sqrt(GM * m_planet / r0)  # Absolute velocity in the initial circular orbit
     T_orb0 = (2 * np.pi * r0) / v0_abs  # Calculating orbital period
-    delta_v0 = -np.sqrt(G_SI/r1)*(np.sqrt((2*r0)/(r0+r1))-1)  # Calculating required boost to enter Hohmann transfer orbit
-    delta_v1 = -np.sqrt(G_SI / r0) * (np.sqrt((2 * r1) / (r0 + r1)) - 1)  # Calculating required boost to enter circular target orbit
+    delta_v0 = -np.sqrt(GM/r1)*(np.sqrt((2*r0)/(r0+r1))-1)  # Calculating required boost to enter Hohmann transfer orbit
+    delta_v1 = -np.sqrt(GM / r0) * (np.sqrt((2 * r1) / (r0 + r1)) - 1)  # Calculating required boost to enter circular target orbit
 
     t, pos, vel = land_seq.orient()
     vel_norm = vel / np.linalg.norm(vel)
@@ -190,7 +190,7 @@ def image_landing_site(land_seq, idx=0, planet_idx=1):
 
 if __name__ == "__main__":
     landing_seq = mission.begin_landing_sequence()  # Creating landing sequence instance
-    # print(verify_constant_orbit_height(landing_seq))  # Verifying stability of orbital height
+    print(verify_constant_orbit_height(landing_seq))  # Verifying stability of orbital height
     landing_seq.start_video()
     picture_num = 15  # Number of landing site pictures to be taken
     picture_delay = 60  # Delay between when pictures are taken in seconds

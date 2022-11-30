@@ -101,7 +101,7 @@ def drag(pos, vel, densities, area_parachute=0):
     r = round(np.linalg.norm(pos))
     w = find_w(pos)
     v_drag = vel-w
-    F_D_abs = (1 / 2) * rho_atm * C_D * (area_sc + area_parachute) * np.linalg.norm(v_drag) ** 2
+    F_D_abs = (1 / 2) * densities[r] * C_D * (area_sc + area_parachute) * np.linalg.norm(v_drag) ** 2
     F_D = - F_D_abs*vel_norm
     return F_D
 
@@ -144,6 +144,7 @@ def plot_planet():
 
 if __name__ == "__main__":
     densities = np.load("../../Part 6/Densities.npy")
+    sc_area = mission.spacecraft_area
     landing_seq = mission.begin_landing_sequence()  # Creating landing sequence instance
     t0, pos0, vel0 = landing_seq.orient()
     boost0_strength = 200
@@ -173,7 +174,7 @@ if __name__ == "__main__":
         landing_seq.fall(1)
 
     t0, pos0, vel0 = landing_seq.orient()
-    boost0_strength = -3000
+    boost0_strength = -2000
     vel0_norm = vel0 / np.linalg.norm(vel0)
     landing_seq.boost(boost0_strength * vel0_norm)
 

@@ -87,84 +87,84 @@
   \clearpage
   \begin{figure}[h!]  
     \centering
-    \includegraphics[scale =.3]{Figures/O2 632.pdf}
+    \includegraphics[scale =.3]{Figures/O2 632}
     \caption{Flux Data and Spectral Line Analysis}
     \label{fig: O2 632}
 \end{figure}
 
 \begin{figure}[h!]  
     \centering
-    \includegraphics[scale =.3]{Figures/O2 690.pdf}
+    \includegraphics[scale =.3]{Figures/O2 690}
     \caption{Flux Data and Spectral Line Analysis}
     \label{fig: O2 690}
 \end{figure}
 
 \begin{figure}[h!]
   \centering
-  \includegraphics[scale =.3]{Figures/O2 760.pdf}
+  \includegraphics[scale =.3]{Figures/O2 760}
   \caption{Flux Data and Spectral Line Analysis}
   \label{fig: O2 760}
 \end{figure}
 
 \begin{figure}[h!]
   \centering
-  \includegraphics[scale =.3]{Figures/H2O 720.pdf}
+  \includegraphics[scale =.3]{Figures/H2O 720}
   \caption{Flux Data and Spectral Line Analysis}
   \label{fig: H2 720}
 \end{figure}
 
 \begin{figure}[h!]
   \centering
-  \includegraphics[scale =.3]{Figures/H2O 820.pdf}
+  \includegraphics[scale =.3]{Figures/H2O 820}
   \caption{Flux Data and Spectral Line Analysis}
   \label{fig: H2 820}
 \end{figure}
 
 \begin{figure}[h!]
   \centering
-  \includegraphics[scale =.3]{Figures/H2O 940.pdf}
+  \includegraphics[scale =.3]{Figures/H2O 940}
   \caption{Flux Data and Spectral Line Analysis}
   \label{fig: H2 940}
 \end{figure}
 
 \begin{figure}[h!]
   \centering
-  \includegraphics[scale =.3]{Figures/CO2 1400.pdf}
+  \includegraphics[scale =.3]{Figures/CO2 1400}
   \caption{Flux Data and Spectral Line Analysis}
   \label{fig: CO2 1400}
 \end{figure}
 
 \begin{figure}[h!]
   \centering
-  \includegraphics[scale =.3]{Figures/CO2 1600.pdf}
+  \includegraphics[scale =.3]{Figures/CO2 1600}
   \caption{Flux Data and Spectral Line Analysis}
   \label{fig: CO2 1600}
 \end{figure}
 
 \begin{figure}[h!]
   \centering
-  \includegraphics[scale =.3]{Figures/CH4 1660.pdf}
+  \includegraphics[scale =.3]{Figures/CH4 1660}
   \caption{Flux Data and Spectral Line Analysis}
   \label{fig: CH4 1660}
 \end{figure}
 
 \begin{figure}[h!]
   \centering
-  \includegraphics[scale =.3]{Figures/CH4 2200.pdf}
+  \includegraphics[scale =.3]{Figures/CH4 2200}
   \caption{Flux Data and Spectral Line Analysis}
   \label{fig: CH4 2200}
 \end{figure}
 
 \begin{figure}[h!]
   \centering
-  \includegraphics[scale =.3]{Figures/CO 2340.pdf}
+  \includegraphics[scale =.3]{Figures/CO 2340}
   \caption{Flux Data and Spectral Line Analysis}
   \label{fig: CO 2340}
 \end{figure}
 
 \begin{figure}[h!]
   \centering
-  \includegraphics[scale =.3]{Figures/N2O 2870.pdf}
+  \includegraphics[scale =.3]{Figures/N2O 2870}
   \caption{Flux Data and Spectral Line Analysis}
   \label{fig: N20 2870}
 \end{figure}
@@ -178,18 +178,91 @@ On top of the plots we have added the noise from our data. The noise have values
 \subsection{Model of Planet Atmosphere}
 \begin{figure}[h!]
   \centering
-  \includegraphics[scale = .4]{Figures/Temperature plot.pdf}
+  \includegraphics[scale = .4]{Figures/Temperature plot}
   \caption{Our model of the temperature as a function of meters above the surface }
   \label{fig: Temperature}
 \end{figure}
 
 \begin{figure}[h!]
   \centering
-  \includegraphics[scale = .4]{Figures/Density plot.pdf}
+  \includegraphics[scale = .4]{Figures/Density plot}
   \caption{Our model of the atmospheric density as a function of meters above the surface }
   \label{fig: Density}
 \end{figure}
 
+
+\subsection{Lowering the orbit}\label{subsec:lowering-the-orbit}
+    After completing the journey to Planet 1 and entering a high altitude orbit around the planet, we now used a Hohmann transfer maneuver to decrease the orbital height to a low-altitude orbit.
+    The initial orbital height was around 75'000 km above the surface of the planet.
+    To get a better view of the planet, two controlled boosts were executed.
+    The first one to enter an elliptical transfer orbit from the initial orbit introduced a speed of change of
+    The change of speed during each burn have been calculated to be
+    \begin{align*}
+        &\Delta v_0 = -1190.3 \,\text{m/s}\\
+        &\Delta v_1 = 519.76 \,\text{m/s}
+    \end{align*}
+
+    \colorbox{red}{The calculations for these values can be found in the appendix.}\\
+
+    After the Hohmann transfer orbit and both boosts have been executed, we entered a new orbit with an orbital altitude of $1 \times 10^6$ meters above the surface of the planet.\\
+
+    To verify the stability of the orbit, we first measured the average height of the orbit.
+    Thereafter, the spacecraft orbited the planet for $1 \times 10^6$ seconds, before measuring the average height again.
+    This resulted in an altitude difference of $-64.92$ meters over the course of $12.73$ days.
+
+
+\subsection{Finding landing sites}\label{subsec:finding-landing-sites}
+    In our lower orbit we were now able to take more precise observations of the surface of the planet, and therefore scout for possible landing sites.
+    Over the course of $15$ minutes, the spacecraft has therefore been taking 15 pictures in equally spaced intervals of $1$ minute, pointing straight towards the planet.\\
+    As we can see in Figures in section~\ref{subsec:potential-landing-sites}, the planets surface consists of both oceans, which are a dark green-blue colour and have an even texture.
+    In the oceans, there are some islands, which are a dark green colour and partially have high mountains.\\
+    The view of some islands and oceans are obstructed by the blue-coloured clouds, but by using information of multiple images, we can see that there is a large island right underneath in Figure~\ref{fig:l_site6} and~\ref{fig:l_site7}.\\
+
+    The spherical coordinates of each of the imaged landing sites in section~\ref{subsec:potential-landing-sites} can be seen in table~\ref{tab:land_coords}.
+    All coordinates are relative to the position of the planet at the time when we entered the lower-altitude orbit.\\
+    \begin{table}[h]
+        \begin{tabular}{|c|c|c|c|}
+            %% l (Left aligned), c (Centered), r (Right aligned)
+            \hline
+            Site Nr. & Radius [km] & $\,\theta$ [rad] & $\,\phi$ [rad]\\
+            \hline
+            Site 0 & 3775.2 & 3.0479 & -2.8217\\
+            \hline
+            Site 1 & 3775.2 & 3.0442 & -2.7816\\
+            \hline
+            Site 2 & 3775.2 & 3.0405 & -2.7415\\
+            \hline
+            Site 3 & 3775.2 & 3.0368 & -2.7015\\
+            \hline
+            Site 4 & 3775.2 & 3.0331 & -2.6614\\
+            \hline
+            Site 5 & 3775.2 & 3.0294 & -2.6213\\
+            \hline
+            Site 6 & 3775.2 & 3.0257 & -2.5813\\
+            \hline
+            Site 7 & 3775.2 & 3.0220 & -2.5412\\
+            \hline
+            Site 8 & 3775.2 & 3.0183 & -2.5011\\
+            \hline
+            Site 9 & 3775.2 & 3.0146 & -2.4610\\
+            \hline
+            Site 10 & 3775.2 & 3.0109 & -2.4210\\
+            \hline
+            Site 11 & 3775.2 & 3.0072 & -2.3809\\
+            \hline
+            Site 12 & 3775.2 & 3.0035 & -2.3408\\
+            \hline
+            Site 13 & 3775.2 & 2.9998 & -2.3008\\
+            \hline
+            Site 14 & 3775.2 & 2.9961 & -2.2607\\
+            \hline
+        \end{tabular}
+        \caption{Spherical coordinates of the potential landing sites imaged in section~\ref{subsec:potential-landing-sites}}
+        \label{tab:land_coords}
+    \end{table}
+
+    As it is preferable to land on land, the island in landing site 6 offers a well suited landing site for our purposes.
+    By landing on land, we will also be able to take probes of the soil on planet 1, to determine it's composition.
 
 \section{Discussion} \label{sec: discussion}
 \subsection{Spectral Line Analysis} \label{ssec: Spec Anal}
@@ -213,7 +286,7 @@ When running our analysis we could choose whatever accuracy we wanted. As our ac
 The Doppler shift is quite inconsistent in most cases. We clearly observe this in $ CO_2 $, $ H_2O $ and $ CH_4 $ in which we observe the absolute shift being around 2 times as much for $ CO_2 $, 2-3 times as much for $ H_2O $ and 7 times as much for $ CH_4 $. In all other cases their are either just one line per gas or consistent results. $ O_2 $ had very consistent results. 
 \newline
 
-The flux was on the higher end of what we expected (0.7 $ →  $ 1). Only a single line of $ O_2 $ and $ H_2O $ broke through 0.90. We expect to see a lower flux for real spectral lines. The most likely candidates so far being $ N_2O $ and $ CO  $ both had a very high flux of 0.97 which makes it more uncertain they are real. 
+The flux was on the higher end of what we expected (0.7 $ \rightarrow  $ 1). Only a single line of $ O_2 $ and $ H_2O $ broke through 0.90. We expect to see a lower flux for real spectral lines. The most likely candidates so far being $ N_2O $ and $ CO  $ both had a very high flux of 0.97 which makes it more uncertain they are real.
 \newline
 
 When looking into which spectral lines fit the measured data the most we also need to take the noise into account. The more noise, the higher the likelihood of fluctuations looking like spectral lines. We will focus on the parts of the graphs where the noise is relatively low and seemingly bounces of the Gaussian line distribution. 
@@ -250,22 +323,172 @@ The spectral line of $ CO $ seen in \ref{fig: CO 2340} is surrounded by a bit di
 The spectral line of $ N_2O $ seen in \ref{fig: N20 2870} is located right under a local maxima which makes it more likely the measured dip in flux is a result of chance and noisy data. Looking at the rest of the graph there seems to be no dip of significance around any of the local minima. 
 
 
+\subsection{Lowering the orbit}\label{subsec:lowering-the-orbit-disc}
+    The Hohmann transfer is a difficult maneuver to execute.
+    The boosts need to be executed at exactly the right time and exactly deliver the calculated impulse to the spacecraft.
+    However, since our team consists of some of the best scientists of our country, we were able to execute the boosts as planned.
+    Furthermore, it is possible to do some correction burns in case the main boosts into the Hohmann transfer orbit and into the lower, circular orbit did not work exactly as expected.\\
+    The solar winds from the star in our solar system are negligible when we are so close to the planet.
+    But we will have to account for the gravitational forces from the small objects close to us.
+    These can alter the trajectory of the spacecraft, which means we need to do some corrections to the trajectory to successfully execute the orbit transfer.
+    In our simulations, we did not perform major corrections, but could have done if necessary, which means no significant unknown forces acted on the spacecraft during the transfer.\\
+
+    When performing the orbit stability confirmation, we saw that the orbital height of the spacecraft was lowered by apporoximately $64$ meters.
+    This corresponds to $0.0013$\% of the total orbital radius, which is not significant for a period of 12 days and 18 hours.\\
+    The measurements are very reliable, as each of the orbital heights are based on the average of $1000$ measurements, taken at equally spaced positions around the entire orbit.\\
+
+    One way to explain for the difference in orbital height is atmospheric drag.
+    We are in a low-altitude orbit, which means that there will be a very thin atmosphere where we are.
+    From figure~\ref{fig: Density} we can see that the density of the atmosphere converges to 0, but still has a clear non-zero value at our orbital height.
+    This means, that the spacecraft constantly experiences some drag, which causes it to slow down very gently and therefore the orbital height to decrease.
+
+
+\subsection{Finding landing sites}\label{subsec:finding-landing-sites-disc}
+    The coordinates found for the landing sites were based on basic trigonometry, and assuming that the planet has a constant angular velocity around it's z-axis.
+    Given the pictures we took, it is possible to identify a suitable landing site.
+    The clouds do make it a bit more difficult, as they limit our view.
+    However, as we have taken multiple picture, we could look at the landing site from multiple angles, which gave us a lot more information.\\
+
+    Due to the specifications of our camera, we were not able to get a very close up view of a landing site.
+    This will make things a bit more challenging when landing, but since we can make small adjustments when landing, it is sufficient to find a relatively clear area.
+    The large island in figure~\ref{fig:l_site6} provides such an area with clearance in all directions, which allows for some deviance.\\
+
+    All other landing sites either provide too little information due to the clouds, or are very close or on the ocean.
+    They therefore provide only little, or no room for our landing, which makes them less suitable.
+
+
+
 \section{Conclusion} \label{sec: conclusion}
 \subsection{Atmosphere composition} \label{ssec: Atmpos Comp}
-Judging by temperature, Doppler shift and variation in analysis it seems $ CO $ and $ N_2O $ is the only viable options. These two have the most consistent and almost equal temperature. 
+Judging by temperature, Doppler shift and variation in analysis it seems $ CO $ and $ N_2O $ is the only viable options.
+These two have the most consistent and almost equal temperature.
 
-Judging by the flux, $ CO $ and $ N_2O  $ are the worst option. On the other hand, $ O_2 $ and $ CH_4 $ rises as the best options. 
+Judging by the flux, $ CO $ and $ N_2O  $ are the worst option.
+On the other hand, $ O_2 $ and $ CH_4 $ rises as the best options.
 
 Judging by how good a fit our model is, we observe $ O_2 $ being the best fit by far. 
 
-To conclude the discussion of results as seen in \ref{ssec: Spec Anal}, there is no clear candidate which checks all the boxes. We choose to consider how well a fit our model is in addition to the flux the most important factors as that is based in actual data and not our just our own calculations. The line profile seen in \ref{fig: O2 690} and \ref{fig: O2 760} matches a lot closer than the one seen in \ref{fig: O2 632}. As the temperature of the first two are equal (450 $ K $) which also matches earlier estimates made in \colorbox{red}{Jannik: Refferer til temp estimat i del 3} of the planets temperature, we will assume they are real lines. The atmosphere is therefore 100 \% $ O_2 $ with a mean molecular weight $ μ $ of 
+To conclude the discussion of results as seen in \ref{ssec: Spec Anal}, there is no clear candidate which checks all the boxes.
+We choose to consider how well a fit our model is in addition to the flux the most important factors as that is based in actual data and not our just our own calculations.
+The line profile seen in \ref{fig: O2 690} and \ref{fig: O2 760} matches a lot closer than the one seen in \ref{fig: O2 632}.
+As the temperature of the first two are equal (450 $ K $) which also matches earlier estimates made in \colorbox{red}{Jannik: Refferer til temp estimat i del 3} of the planets temperature, we will assume they are real lines.
+The atmosphere is therefore 100 \% $ O_2 $ with a mean molecular weight $ \mu $ of
 \[
-μ =   \frac{2 ⋅ 15.9994 ⋅  1.66 ⋅ 10^{-27}}{1.00794 ⋅ 1.66  ⋅  10^{-27}} = 31.75.
+\mu =   \frac{2 ⋅ 15.9994 ⋅  1.66 ⋅ 10^{-27}}{1.00794 ⋅ 1.66  ⋅  10^{-27}} = 31.75.
 \]
 
+\subsection{Finding landing sites from lower orbit}\label{subsec:finding-landing-sites-from-lower-orbit}
+    By using a Hohmann transfer orbit, which included two main boosts of our spacecraft, we were able to successfully decrease the orbital altitude from $7.5 \times 10^7$ to $1 \times 10^{6}$ meters above the surface of the planet.
+    The maneuver resulted in a relatively stable orbit around the planet.
+    When measuring the altitude before and after a 12 day and 18 hour period, the altitude of the orbit decreased by only $64.92$ meters.
+    The main reason for this decrease is due to atmospheric drag.
+    Due to the low orbital height, we entered the top of the atmosphere, which has a very low density, but still exerts a slight, constant force on the spacecraft.
+    This caused a decrease in speed, and therefore altitude.\\
 
+    From the lower orbit we were able to scout for potential landing sites using the onboard camera.
+    In figure ~\ref{fig:l_site6} we were able to see a relatively large island, which provides a large area in all directions and therefore is suitable for our purposes.
+    The spherical coordinates of the preferred landing site are\\
+    \begin{align*}
+        \text{Radius}:&\; 3775.2 \;\text{km}\\
+        \theta :&\; 3.0257^{\circ} \;\text{rad}\\
+        \phi :&\; -2.5813^{\circ} \;\text{rad}
+    \end{align*}
+
+    These coordinates are relative to the position of the planet at the point in time when we entered the lower orbit.
 
 \section{Appendix} \label{sec: appendix}
+\subsection{Potential Landing sites}\label{subsec:potential-landing-sites}
+\begin{figure}[h]
+    %% H(Here), h(here approx), t(top of page), b(bottom of page)
+    \centering
+    \includegraphics[scale=0.14]{Figures/l_site0}
+    \caption{Picture of possible landing site 0 from the low-altitude orbit.}\label{fig:l_site0}
+\end{figure}
+\begin{figure}[h]
+    %% H(Here), h(here approx), t(top of page), b(bottom of page)
+    \centering
+    \includegraphics[scale=0.14]{Figures/l_site1}
+    \caption{Picture of possible landing site 1 from the low-altitude orbit.}\label{fig:l_site1}
+\end{figure}
+\begin{figure}[h]
+    %% H(Here), h(here approx), t(top of page), b(bottom of page)
+    \centering
+    \includegraphics[scale=0.14]{Figures/l_site2}
+    \caption{Picture of possible landing site 2 from the low-altitude orbit.}\label{fig:l_site2}
+\end{figure}
+\begin{figure}[h]
+    %% H(Here), h(here approx), t(top of page), b(bottom of page)
+    \centering
+    \includegraphics[scale=0.14]{Figures/l_site3}
+    \caption{Picture of possible landing site 3 from the low-altitude orbit.}\label{fig:l_site3}
+\end{figure}
+\begin{figure}[h]
+    %% H(Here), h(here approx), t(top of page), b(bottom of page)
+    \centering
+    \includegraphics[scale=0.14]{Figures/l_site4}
+    \caption{Picture of possible landing site 4 from the low-altitude orbit.}\label{fig:l_site4}
+\end{figure}
+\begin{figure}[h]
+    %% H(Here), h(here approx), t(top of page), b(bottom of page)
+    \centering
+    \includegraphics[scale=0.14]{Figures/l_site5}
+    \caption{Picture of possible landing site 5 from the low-altitude orbit.}\label{fig:l_site5}
+\end{figure}
+\begin{figure}[h]
+    %% H(Here), h(here approx), t(top of page), b(bottom of page)
+    \centering
+    \includegraphics[scale=0.14]{Figures/l_site6}
+    \caption{Picture of possible landing site 6 from the low-altitude orbit.}\label{fig:l_site6}
+\end{figure}
+\begin{figure}[h]
+    %% H(Here), h(here approx), t(top of page), b(bottom of page)
+    \centering
+    \includegraphics[scale=0.14]{Figures/l_site7}
+    \caption{Picture of possible landing site 7 from the low-altitude orbit.}\label{fig:l_site7}
+\end{figure}
+\begin{figure}[h]
+    %% H(Here), h(here approx), t(top of page), b(bottom of page)
+    \centering
+    \includegraphics[scale=0.14]{Figures/l_site8}
+    \caption{Picture of possible landing site 8 from the low-altitude orbit.}\label{fig:l_site8}
+\end{figure}
+\begin{figure}[h]
+    %% H(Here), h(here approx), t(top of page), b(bottom of page)
+    \centering
+    \includegraphics[scale=0.14]{Figures/l_site9}
+    \caption{Picture of possible landing site 9 from the low-altitude orbit.}\label{fig:l_site9}
+\end{figure}
+\begin{figure}[h]
+    %% H(Here), h(here approx), t(top of page), b(bottom of page)
+    \centering
+    \includegraphics[scale=0.14]{Figures/l_site10}
+    \caption{Picture of possible landing site 10 from the low-altitude orbit.}\label{fig:l_site10}
+\end{figure}
+\begin{figure}[h]
+    %% H(Here), h(here approx), t(top of page), b(bottom of page)
+    \centering
+    \includegraphics[scale=0.14]{Figures/l_site11}
+    \caption{Picture of possible landing site 11 from the low-altitude orbit.}\label{fig:l_site11}
+\end{figure}
+\begin{figure}[h]
+    %% H(Here), h(here approx), t(top of page), b(bottom of page)
+    \centering
+    \includegraphics[scale=0.14]{Figures/l_site12}
+    \caption{Picture of possible landing site 12 from the low-altitude orbit.}\label{fig:l_site12}
+\end{figure}
+\begin{figure}[h]
+    %% H(Here), h(here approx), t(top of page), b(bottom of page)
+    \centering
+    \includegraphics[scale=0.14]{Figures/l_site13}
+    \caption{Picture of possible landing site 13 from the low-altitude orbit.}\label{fig:l_site13}
+\end{figure}
+\begin{figure}[h]
+    %% H(Here), h(here approx), t(top of page), b(bottom of page)
+    \centering
+    \includegraphics[scale=0.14]{Figures/l_site14}
+    \caption{Picture of possible landing site 14 from the low-altitude orbit.}\label{fig:l_site14}
+\end{figure}
+
 
 \section*{ACKNOWLEDGMENTS}   
 

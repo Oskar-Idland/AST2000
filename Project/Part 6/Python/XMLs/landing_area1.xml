@@ -27,10 +27,10 @@
     <name>The star</name>
     <Objects>
       <SerializedMCAstObject>
-        <pos_x>-5.552103566677122</pos_x>
-        <pos_z>-9.000901008553852</pos_z>
+        <pos_x>-5.416845193878537</pos_x>
+        <pos_z>-9.080052339742023</pos_z>
         <pos_y>0</pos_y>
-        <rot_y>-465409.2659751365</rot_y>
+        <rot_y>-465483.1871291013</rot_y>
         <radius>3775.2448601354226</radius>
         <temperature>296.52427329530656</temperature>
         <seed>36874001</seed>
@@ -42,10 +42,10 @@
         <Frames>
           <Frame>
             <id>0</id>
-            <pos_x>-5.552103566677122</pos_x>
-            <pos_z>-9.000901008553852</pos_z>
+            <pos_x>-5.416845193878537</pos_x>
+            <pos_z>-9.080052339742023</pos_z>
             <pos_y>0</pos_y>
-            <rot_y>-465409.2659751365</rot_y>
+            <rot_y>-465483.1871291013</rot_y>
           </Frame>
         </Frames>
         <Objects/>
@@ -55,17 +55,17 @@
 </Objects>
 <Cameras>
   <SerializedCamera>
-    <cam_x>-5.552071671764173</cam_x>
-    <cam_z>-9.000899729688317</cam_z>
+    <cam_x>-5.416875070672018</cam_x>
+    <cam_z>-9.080063585367284</cam_z>
     <cam_y>0.0</cam_y>
-    <dir_x>-0.9991971559046623</dir_x>
-    <dir_z>-0.040062995794548494</dir_z>
+    <dir_x>0.9358975276501194</dir_x>
+    <dir_z>0.3522723630067993</dir_z>
     <dir_y>6.123233995736766e-17</dir_y>
     <up_x>0.0</up_x>
     <up_z>0.0</up_z>
     <up_y>1.0</up_y>
     <fov>70</fov>
-    <time>239.4156217065309</time>
+    <time>239.45364819273908</time>
     <frame>0</frame>
   </SerializedCamera>
 </Cameras>
