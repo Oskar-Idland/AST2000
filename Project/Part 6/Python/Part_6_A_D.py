@@ -9,7 +9,6 @@ from ast2000tools.shortcuts import SpaceMissionShortcuts
 from numba import njit
 
 # Initializing mission, system and shortcuts
-username = "janniesc"
 seed = 36874
 code_launch_results = 83949
 code_escape_trajectory = 74482
@@ -65,7 +64,7 @@ def spherical_to_cart(r, theta, phi):
     return x, y, z
 
 
-def decrease_orbit(r0, r1, land_seq, planet_idx=1):  # TODO: Finish function
+def decrease_orbit(r0, r1, land_seq, planet_idx=1):
     """
     Performs maneuver to decrease orbital altitude to given altitude using Hohmann transfer
     :param r0: Radius of initial (higher) orbit [m]

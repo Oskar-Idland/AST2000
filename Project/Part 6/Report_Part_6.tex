@@ -40,8 +40,12 @@
 \affiliation{Institute of Theoretical Astrophysics, University of Oslo}
 
 \begin{abstract}
-    This is an abstract \colorbox{red}{Complete this summary at the end of the paper}
+    By using a Hohmann transfer orbit, the altitude of the spacecraft's orbit has been lowered from $7.5 \times 10^7$ meters to $1 \times 10^6$ meters above the surface.
+    When analysing the atmosphere using temperature, doppler shift, variation and flux, no gases were consistent options.
+    Since the measurement using flux is the most reliable, it leads to the conclusion that the atmosphere is $100\%$ O$_2$.
+    Using the onboard camera, the planets surface has been imaged to determine the most suitable landing site at the spherical coordinates [$R = 3775.2$ km, $\theta = 3.0257^{\circ}$ rad, $\phi = -2.5813^{\circ}$ rad].
 \end{abstract}
+
 \maketitle
 \section{Introduction} \label{sec:introduction}
 \colorbox{red}{To be added if evaluation includes this part}
@@ -202,7 +206,7 @@ On top of the plots we have added the noise from our data. The noise have values
         &\Delta v_1 = 519.76 \,\text{m/s}
     \end{align*}
 
-    \colorbox{red}{The calculations for these values can be found in the appendix.}\\
+    The calculations for these values can be found in section~\ref{subsec:calculation-of-the-hohmann-transfer-orbit}.\\
 
     After the Hohmann transfer orbit and both boosts have been executed, we entered a new orbit with an orbital altitude of $1 \times 10^6$ meters above the surface of the planet.\\
 
@@ -371,7 +375,8 @@ Judging by how good a fit our model is, we observe $ O_2 $ being the best fit by
 To conclude the discussion of results as seen in \ref{ssec: Spec Anal}, there is no clear candidate which checks all the boxes.
 We choose to consider how well a fit our model is in addition to the flux the most important factors as that is based in actual data and not our just our own calculations.
 The line profile seen in \ref{fig: O2 690} and \ref{fig: O2 760} matches a lot closer than the one seen in \ref{fig: O2 632}.
-As the temperature of the first two are equal (450 $ K $) which also matches earlier estimates made in \colorbox{red}{Jannik: Refferer til temp estimat i del 3} of the planets temperature, we will assume they are real lines.
+As the temperature of the first two are equal (450 $ K $) which also matches earlier estimates made in %~\parencite[][]{part3} TODO: Remove Comment
+of the planets temperature, we will assume they are real lines.
 The atmosphere is therefore 100 \% $ O_2 $ with a mean molecular weight $ \mu $ of
 \[
 \mu =   \frac{2 ⋅ 15.9994 ⋅  1.66 ⋅ 10^{-27}}{1.00794 ⋅ 1.66  ⋅  10^{-27}} = 31.75.
@@ -397,6 +402,21 @@ The atmosphere is therefore 100 \% $ O_2 $ with a mean molecular weight $ \mu $ 
     These coordinates are relative to the position of the planet at the point in time when we entered the lower orbit.
 
 \section{Appendix} \label{sec: appendix}
+\subsection{Calculation of the Hohmann transfer orbit}\label{subsec:calculation-of-the-hohmann-transfer-orbit}
+    The calculations of the boosts for the Hohmann transfer orbit are based on theory from %~\parencite[][]{hohmann_wiki}. TODO: Remove comment
+    The magnitude of the boosts are calculated using the formulae for kinetic and potential energy.
+    This results in the formulae for the boosts $\Delta v_0$ and $\Delta v_1$ being
+    \begin{align*}
+        \Delta v_0 = -\sqrt{\frac{\mu}{r_1}} \left(\sqrt{\frac{2r_0}{r_0 + r_1}}-1\right)\\
+        \Delta v_1 = -\sqrt{\frac{\mu}{r_0}} \left(1-\sqrt{\frac{2r_1}{r_0 + r_1}}\right)
+    \end{align*}
+    Where $r_0$ is the radius of the initial, higher orbit, $r_1$ is the radius of the lower target orbit and $\mu$ is the standard gravitational parameter.
+
+    The first boost was done at an arbitrary point in time, as the initial orbit was circular.
+    However, the second boost had to be timed very well, which meant after $\frac{T}{4}$, where $T$ is the orbital period of the Hohmann transfer orbit.
+    This way, the second boost will be executed at the perihelion of the transfer orbit and inject us in the desired orbit.
+
+
 \subsection{Potential Landing sites}\label{subsec:potential-landing-sites}
 \begin{figure}[h]
     %% H(Here), h(here approx), t(top of page), b(bottom of page)
