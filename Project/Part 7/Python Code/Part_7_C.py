@@ -1,5 +1,4 @@
 import numpy as np
-import ast2000tools.utils as utils
 import matplotlib.pyplot as plt
 from ast2000tools.solar_system import SolarSystem
 from ast2000tools.space_mission import SpaceMission
@@ -27,65 +26,87 @@ C_D = 1  # Drag coefficient
 omega_atm = (2 * np.pi) / (system.rotational_periods[planet_idx] * 24 * 3600)  # Angular velocity of the atmosphere
 
 
-def landing(land_seq, pos0, vel0, dh_lander, dh_parachute, dh_booster, area_sc, area_lander, area_parachute, densities,
-            landing_booster_force):
+def landing(land_seq, pos0, vel0, dh_lander, dh_parachute, dh_booster, area_sc, area_lander, area_parachute, densities, landing_booster_force):
+    """
+    Function to land the rover on the surface of the planet using initial position and velocity and other variables
+    :param land_seq: Landing Sequence class instance
+    :param pos0: Initial position array [x, y, z] in meters
+    :param vel0: Initial velocity array [x, y, z] in meters
+    :param dh_lander: Deployment height of the lander
+    :param dh_parachute: Deployment height of the parachute
+    :param dh_booster: Activation height of the landing thrusters
+    :param area_sc: Surface area of the spacecraft
+    :param area_lander: Surface area of the lander
+    :param area_parachute: Surface area of the parachute
+    :param densities: Array with densities of the atmosphere
+    :param landing_booster_force: Force of the landing thrusters
+    :return: Time array; Position array; Velocity array; Array with absolute values of drag force; Array with indexes of events during landing
+    """
     # Setting some values for the landing
-    N = 1_000_000
-    fall_step = 1
+    N = 10_000  # Number of time steps
+    fall_step = 1  # Length of time step
     radius_planet = 3775244.8601354226  # Radius of planet
-    land_seq.adjust_landing_thruster(landing_booster_force, dh_booster)
-    land_seq.adjust_parachute_area(area_parachute)
-    area_curr = area_sc
-    entered_atmosphere = False
+    land_seq.adjust_landing_thruster(landing_booster_force, dh_booster)  # Adjusting landing thruster strength and activation height
+    land_seq.adjust_parachute_area(area_parachute)  # Adjusting parachute area
+    area_curr = area_sc  # Creating a variable for the current area
+    entered_atmosphere = False  # Status variable
+    boosters_active = False  # Status variable
 
-    time = np.zeros(N)
-    pos = np.zeros([N, 3])
-    vel = np.zeros([N, 3])
-    fd_abs = np.zeros(N)
-    indexes = np.zeros(5)
+    time = np.zeros(N)  # Array for time points
+    pos = np.zeros([N, 3])  # Position
+    vel = np.zeros([N, 3])  # Velocity
+    fd_abs = np.zeros(N)  # Absolute drag force
+    indexes = np.zeros(4)  # Array to store time indexes of events
 
+    # Initializing arrays
     pos[0] = pos0
     vel[0] = vel0
     fd_abs[0] = 0
 
+    # Integration loop
     for i in range(1, N):
-        try:
-            land_seq.fall(fall_step)
-        except:
-            pass
-        time[i], pos[i], vel[i] = land_seq.orient()
-        fd_abs[i] = np.linalg.norm(drag(pos[i], vel[i], densities, area_curr))
-        print(fd_abs[i] / area_curr)
+        land_seq.fall(fall_step)  # Integrating for fall_step seconds
+        time[i], pos[i], vel[i] = land_seq.orient()  # Orienting ourselves and saving current position, velocity and time
+        fd_abs[i] = np.linalg.norm(drag(pos[i], vel[i], densities, area_curr))  # Saving absolute drag force
 
         # Executing braking boost if atmospheric pressure is getting too high
-        if land_seq.lander_launched and fd_abs[i] / area_curr > 2200:
-            land_seq.boost(-vel[i] / 4)
-            pass
+        if entered_atmosphere and (land_seq.lander_launched is False) and fd_abs[i] > 20_000:
+            land_seq.boost(-vel[i] / 5)  # Braking with 1/5 of our current velocity
 
-        if (land_seq.lander_launched is False) and (np.linalg.norm(pos[i]) <= dh_lander):
-            land_seq.launch_lander()
-            area_curr = area_lander
-            indexes[1] = i - 1
+        # Deploying lander if we are below the deployment height
+        if (land_seq.lander_launched is False) and ((np.linalg.norm(pos[i]) - radius_planet) <= dh_lander):
+            w = find_w(pos[i])
+            delta_v = w-vel[i]  # Calculating a boost so that the lander is launched with as little velocity as possible relative to the atmosphere
+            land_seq.launch_lander(delta_v)  # Launching lander
+            area_curr = area_lander  # Changing current area to lander area
+            indexes[1] = i + 1  # Saving index of event
 
-        if land_seq.lander_launched and (land_seq.parachute_deployed is False) and (
-                np.linalg.norm(pos[i]) <= dh_parachute):
-            land_seq.deploy_parachute()
-            area_curr = area_lander + area_parachute
-            indexes[3] = i - 1
+        # Deploying parachute if we are below deployment height
+        if land_seq.lander_launched and (land_seq.parachute_deployed is False) and ((np.linalg.norm(pos[i]) - radius_planet) < dh_parachute):
+            land_seq.deploy_parachute()  # Deploying parachute
+            area_curr = area_lander + area_parachute  # Changing current area to lander area + parachute area
+            indexes[2] = i
 
+        # Checking whether we have entered the atmosphere
         if (entered_atmosphere is False) and ((np.linalg.norm(pos[i]) - radius_planet) <= 200_000):
-            indexes[0] = i - 1
+            entered_atmosphere = True
+            indexes[0] = i + 1  # Saving index of event
 
+        # Checking whether landing boosters were activated
+        if (boosters_active is False) and land_seq.landing_thruster_activated:
+            boosters_active = True
+            indexes[3] = i - 1  # Saving index of event
+
+        # Checking whether the lander has reached the surface
         if land_seq.reached_surface:
+            # Slicing arrays
             pos = pos[:i]
             vel = vel[:i]
             time = time[:i]
             fd_abs = fd_abs[:i]
-            print(f"Landing speed: {-np.linalg.norm(vel[-1] - find_w(pos[-1]))} m/s")
-            break
+            break  # Ending integration loop
 
-    return time, pos, vel, fd_abs, indexes
-
+    return time, pos, vel, fd_abs, indexes  # Returning arrays
 
 if __name__ == "__main__":
     # FOR SIMPLICITY WE WILL ONLY MOVE ON THE XY-PLANE
@@ -100,8 +121,7 @@ if __name__ == "__main__":
     # Putting Spacecraft into low stable orbit (requires verification of launch and orientation first)
     launch_angle = 260.483012
     t_launch = 2752487 * dt
-    shortcut1.place_spacecraft_on_escape_trajectory(6_000_000, 273.73826154189527, t_launch, 3_000_000, launch_angle,
-                                                    392_000)
+    shortcut1.place_spacecraft_on_escape_trajectory(6_000_000, 273.73826154189527, t_launch, 3_000_000, launch_angle, 392_000)
     fuel_consumed, t_after_launch, r_after_launch, v_after_launch = shortcut1.get_launch_results()
     mission.verify_manual_orientation(r_after_launch, v_after_launch, 37.01285168461271)
     shortcut.place_spacecraft_in_stable_orbit(time0, orbital_height0, orbital_angle0, planet_idx)
@@ -112,36 +132,29 @@ if __name__ == "__main__":
     lander_mass = mission.lander_mass
     sc_area = mission.spacecraft_area
     lander_area = mission.lander_area
-    main_chute_area = 100
-    drogue_chute_area = 0  # 20
-    booster_force = 0
-    dh_lander = 100_000  # dh = deployment height
-    dh_main_chute = 5_000
-    dh_drogue_chute = 20_000
+    main_chute_area = 7
+    booster_force = 250
+    dh_lander = 140_000  # dh = deployment height
+    dh_main_chute = 1_000
     dh_booster = 200
 
     landing_seq = mission.begin_landing_sequence()  # Creating landing sequence instance
     vel0 = landing_seq.orient()[2]  # Finding velocity to execute boost
 
-    boost0_strength = 1000  # Strength of boost to initiate landing
+    boost0_strength = 1000  # Strength of boost to fall out of orbit and initiate landing
     vel0_norm = vel0 / np.linalg.norm(vel0)
     landing_seq.boost(-boost0_strength * vel0_norm)  # Decreasing tangential velocity to initiate fall into atmosphere
     t0, pos0, vel0 = landing_seq.orient()  # Orienting ourselves after the boost
 
-    t, pos, vel, fd_abs, indexes = landing(landing_seq, pos0, vel0, dh_lander, dh_main_chute, dh_booster, sc_area,
-                                           lander_area, main_chute_area, densities, booster_force)
+    # Calling function to land the lander
+    t, pos, vel, fd_abs, indexes = landing(landing_seq, pos0, vel0, dh_lander, dh_main_chute, dh_booster, sc_area, lander_area, main_chute_area, densities, booster_force)
 
-    """
-    # Calling function to simulate landing
-    t, pos, vel, fd_abs, indexes = simulate_landing(pos0, vel0, sc_mass, lander_mass, sc_area, lander_area, main_chute_area, drogue_chute_area, densities, booster_force, dh_lander, dh_main_chute, dh_drogue_chute, dh_booster)
-    """
-    labels = ["Entered Atmosphere", "Lander Deployed", "Main Deployed", "Drogue Deployed",
-              "Boosters Activated"]  # List with labels for plotting
+    labels = ["Entered Atmosphere", "Lander Deployed", "Main Deployed", "Boosters Activated"]  # List with labels for plotting
 
     # Plotting landing of spacecraft from a closer perspective
-    plt.plot(pos[int(len(pos) * 41 / 64):, 0], pos[int(len(pos) * 41 / 64):, 1], label="Spacecraft trajectory")
-    plot_planet(24 * np.pi / 128, 28 * np.pi / 128, label="Planet")  # Plotting planet
-    plot_planet(23 * np.pi / 128, 26.5 * np.pi / 128, 200_000, label="Atmosphere")  # Plotting border of atmosphere
+    plt.plot(pos[int(len(pos) * 24.5 / 64):, 0], pos[int(len(pos) * 24.5 / 64):, 1], label="Spacecraft trajectory")  # Plotting spacecraft trajectory
+    plot_planet(24 * np.pi / 128, 31 * np.pi / 128, label="Planet surface")  # Plotting planet
+    plot_planet(23 * np.pi / 128, 29 * np.pi / 128, 200_000, label="Atmosphere border")  # Plotting border of atmosphere
     plt.axis("equal")
     plt.xlabel("x [m]")
     plt.ylabel("y [m]")
@@ -150,8 +163,8 @@ if __name__ == "__main__":
     plt.show()
 
     # Plotting landing of spacecraft from a further perspective
-    plt.plot(pos[:, 0], pos[:, 1], label="Spacecraft trajectory")
-    plot_planet(0, np.pi / 2, label="Planet")  # Plotting planet
+    plt.plot(pos[:, 0], pos[:, 1], label="Spacecraft trajectory")  # Plotting spacecraft trajectory
+    plot_planet(0, np.pi / 2, label="Planet surface")  # Plotting planet
     plt.axis("equal")
     plt.xlabel("x [m]")
     plt.ylabel("y [m]")
@@ -164,20 +177,20 @@ if __name__ == "__main__":
     v_abs = np.array([np.linalg.norm(vel[i] - v_rel[i]) for i in range(len(vel))])
 
     # Plotting velocity during the landing
-    [plt.scatter(t[int(indexes[i])], v_abs[int(indexes[i])], label=labels[i]) for i in range(len(indexes))]
+    [plt.scatter(t[int(indexes[i])], v_abs[int(indexes[i])], label=labels[i]) for i in range(len(indexes))]  # Plotting points where different events during the landing happened
     plt.plot(t, v_abs, label="Velocity")
     plt.xlabel("Time [s]")
     plt.ylabel("Absolute velocity [m/s]")
     plt.legend()
-    plt.savefig("../Figures/landing_velocity.png")
+    plt.savefig("../Figures/landing_velocity.png")  # Saving plot
     plt.show()
 
     # Plotting drag force during the landing
-    [plt.scatter(t[int(indexes[i])], fd_abs[int(indexes[i])], label=labels[i]) for i in range(len(indexes))]
+    [plt.scatter(t[int(indexes[i])], fd_abs[int(indexes[i])], label=labels[i]) for i in range(len(indexes))]  # Plotting points where different events during the landing happened
     plt.plot(t, fd_abs)
     plt.xlabel("Time [s]")
     plt.ylabel("Absolute drag force [N]")
     plt.legend()
-    plt.savefig("../Figures/landing_f_drag.png")
+    plt.savefig("../Figures/landing_f_drag.png")  # Saving plot
     plt.show()
 
