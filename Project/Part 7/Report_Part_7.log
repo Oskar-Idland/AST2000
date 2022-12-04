@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2022.2.21)  4 DEC 2022 17:31
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2022.2.21)  4 DEC 2022 19:43
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -542,10 +542,10 @@ Class revtex4-2 Info: Taking \maketitle back from hyperref on input line 35.
 
 
 /Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 7/Report_Part_7.tex:
-52: Illegal unit of measure (pt inserted).
+56: Illegal unit of measure (pt inserted).
 <to be read again> 
                    \relax 
-l.52 \vspace{20}
+l.56 \vspace{20}
                 
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -554,48 +554,51 @@ To recover gracefully from this error, it's best to
 delete the erroneous units; e.g., type `2' to delete
 two letters. (See Chapter 27 of The TeXbook.)
 
-LaTeX Font Info:    Trying to load font information for U+esint on input line 5
-7.
+LaTeX Font Info:    Trying to load font information for U+esint on input line 6
+1.
 (/usr/local/texlive/2021/texmf-dist/tex/latex/esint/uesint.fd
 File: uesint.fd 
 )
-LaTeX Font Info:    Trying to load font information for U+msa on input line 57.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 61.
 
 
 (/usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 57.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 61.
 
 
 (/usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-<Figures/sim_landing_far.png, id=49, 462.528pt x 346.896pt>
+<Figures/sim_landing_far.png, id=59, 462.528pt x 346.896pt>
 File: Figures/sim_landing_far.png Graphic file (type png)
 <use Figures/sim_landing_far.png>
-Package pdftex.def Info: Figures/sim_landing_far.png  used on input line 95.
+Package pdftex.def Info: Figures/sim_landing_far.png  used on input line 99.
 (pdftex.def)             Requested size: 69.37619pt x 52.03215pt.
-<Figures/sim_landing_close.png, id=51, 462.528pt x 346.896pt>
+<Figures/sim_landing_close.png, id=61, 462.528pt x 346.896pt>
 File: Figures/sim_landing_close.png Graphic file (type png)
 <use Figures/sim_landing_close.png>
-Package pdftex.def Info: Figures/sim_landing_close.png  used on input line 102.
+Package pdftex.def Info: Figures/sim_landing_close.png  used on input line 106.
 
-(pdftex.def)             Requested size: 69.37619pt x 52.03215pt.
-<Figures/sim_landing_velocity.png, id=52, 462.528pt x 346.896pt>
-File: Figures/sim_landing_velocity.png Graphic file (type png)
-<use Figures/sim_landing_velocity.png>
-Package pdftex.def Info: Figures/sim_landing_velocity.png  used on input line 1
-09.
 (pdftex.def)             Requested size: 69.37619pt x 52.03215pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Figures/sim_landing_f_drag.png, id=53, 462.528pt x 346.896pt>
+<Figures/sim_landing_velocity.png, id=62, 462.528pt x 346.896pt>
+File: Figures/sim_landing_velocity.png Graphic file (type png)
+<use Figures/sim_landing_velocity.png>
+Package pdftex.def Info: Figures/sim_landing_velocity.png  used on input line 1
+13.
+(pdftex.def)             Requested size: 69.37619pt x 52.03215pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<Figures/sim_landing_f_drag.png, id=63, 462.528pt x 346.896pt>
 File: Figures/sim_landing_f_drag.png Graphic file (type png)
 <use Figures/sim_landing_f_drag.png>
-Package pdftex.def Info: Figures/sim_landing_f_drag.png  used on input line 116
+Package pdftex.def Info: Figures/sim_landing_f_drag.png  used on input line 120
 .
 (pdftex.def)             Requested size: 69.37619pt x 52.03215pt.
 
@@ -603,88 +606,122 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 [1{/usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map} </User
 s/jannikeschler/Documents/GitHub/AST2000/Project/Part 7/Figures/sim_landing_far
-.png> </Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 7/Figures/sim
-_landing_close.png>]
+.png>]
 
 LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
- on input line 133.
+ on input line 138.
 
-<Figures/landing_far.png, id=79, 462.528pt x 346.896pt>
+<Figures/landing_far.png, id=89, 462.528pt x 346.896pt>
 File: Figures/landing_far.png Graphic file (type png)
 <use Figures/landing_far.png>
-Package pdftex.def Info: Figures/landing_far.png  used on input line 144.
+Package pdftex.def Info: Figures/landing_far.png  used on input line 149.
 (pdftex.def)             Requested size: 69.37619pt x 52.03215pt.
-<Figures/landing_close.png, id=80, 462.528pt x 346.896pt>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<Figures/landing_close.png, id=90, 462.528pt x 346.896pt>
 File: Figures/landing_close.png Graphic file (type png)
 <use Figures/landing_close.png>
-Package pdftex.def Info: Figures/landing_close.png  used on input line 151.
+Package pdftex.def Info: Figures/landing_close.png  used on input line 156.
 (pdftex.def)             Requested size: 69.37619pt x 52.03215pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Figures/landing_velocity.png, id=81, 462.528pt x 346.896pt>
+<Figures/landing_velocity.png, id=91, 462.528pt x 346.896pt>
 File: Figures/landing_velocity.png Graphic file (type png)
 <use Figures/landing_velocity.png>
-Package pdftex.def Info: Figures/landing_velocity.png  used on input line 158.
+Package pdftex.def Info: Figures/landing_velocity.png  used on input line 163.
 (pdftex.def)             Requested size: 69.37619pt x 52.03215pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Figures/landing_f_drag.png, id=82, 462.528pt x 346.896pt>
+<Figures/landing_f_drag.png, id=92, 462.528pt x 346.896pt>
 File: Figures/landing_f_drag.png Graphic file (type png)
 <use Figures/landing_f_drag.png>
-Package pdftex.def Info: Figures/landing_f_drag.png  used on input line 165.
+Package pdftex.def Info: Figures/landing_f_drag.png  used on input line 170.
 (pdftex.def)             Requested size: 69.37619pt x 52.03215pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 171--174
+Underfull \hbox (badness 10000) in paragraph at lines 176--179
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 180--191
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 192--203
 
  []
 
 [2 </Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 7/Figures/sim_la
-nding_velocity.png> </Users/jannikeschler/Documents/GitHub/AST2000/Project/Part
- 7/Figures/sim_landing_f_drag.png> </Users/jannikeschler/Documents/GitHub/AST20
-00/Project/Part 7/Figures/landing_far.png> </Users/jannikeschler/Documents/GitH
-ub/AST2000/Project/Part 7/Figures/landing_close.png> </Users/jannikeschler/Docu
-ments/GitHub/AST2000/Project/Part 7/Figures/landing_velocity.png>]
+nding_close.png> </Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 7/
+Figures/sim_landing_velocity.png> </Users/jannikeschler/Documents/GitHub/AST200
+0/Project/Part 7/Figures/sim_landing_f_drag.png> </Users/jannikeschler/Document
+s/GitHub/AST2000/Project/Part 7/Figures/landing_far.png>]
 
 LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
- on input line 198.
+ on input line 203.
 
-No file Report_Part_7.bbl.
+
+Underfull \hbox (badness 10000) in paragraph at lines 204--212
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 220--223
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 224--225
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 226--229
+
+ []
+
 [3 </Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 7/Figures/landin
-g_f_drag.png>]
+g_close.png> </Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 7/Figu
+res/landing_velocity.png> </Users/jannikeschler/Documents/GitHub/AST2000/Projec
+t/Part 7/Figures/landing_f_drag.png>]
+No file Report_Part_7.bbl.
+[4]
 (/Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 7/Report_Part_7.aux
 )
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
 Package rerunfilecheck Info: File `Report_Part_7.out' has not changed.
-(rerunfilecheck)             Checksum: 263F8BFB1A9220B10680036C60EE7120;1312.
+(rerunfilecheck)             Checksum: 9AA49C0FE201217C40FCD003B58CE57A;1732.
  ) 
 Here is how much of TeX's memory you used:
- 14509 strings out of 478994
- 206579 string characters out of 5858184
- 745395 words of memory out of 5000000
- 31751 multiletter control sequences out of 15000+600000
+ 14529 strings out of 478994
+ 206830 string characters out of 5858184
+ 753395 words of memory out of 5000000
+ 31760 multiletter control sequences out of 15000+600000
  409824 words of font info for 56 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  81i,10n,89p,341b,419s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
 ></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb><
-/usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></
-usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></us
-r/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/l
-ocal/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/loca
-l/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local
-/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb>
+/usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></
+usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></u
+sr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr
+/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/l
+ocal/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/loca
+l/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/t
+exlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/te
+xlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texl
+ive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb>
 Output written on "/Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 7
-/Report_Part_7.pdf" (3 pages, 289807 bytes).
+/Report_Part_7.pdf" (4 pages, 326445 bytes).
 PDF statistics:
- 139 PDF objects out of 1000 (max. 8388607)
- 108 compressed objects within 2 object streams
- 22 named destinations out of 1000 (max. 500000)
- 121 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 183 PDF objects out of 1000 (max. 8388607)
+ 148 compressed objects within 2 object streams
+ 33 named destinations out of 1000 (max. 500000)
+ 137 words of extra memory for PDF output out of 10000 (max. 10000000)
 
