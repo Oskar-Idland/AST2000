@@ -115,7 +115,7 @@ if __name__ == "__main__":
     dt = 8.666669555556518e-05
     time0 = 2762487 * dt
     orbital_height0 = 1_000_000
-    orbital_angle0 = 0
+    orbital_angle0 = -0.31
     radius_planet = 3775244.8601354226  # Radius of planet
 
     # Putting Spacecraft into low stable orbit (requires verification of launch and orientation first)
@@ -146,15 +146,21 @@ if __name__ == "__main__":
     landing_seq.boost(-boost0_strength * vel0_norm)  # Decreasing tangential velocity to initiate fall into atmosphere
     t0, pos0, vel0 = landing_seq.orient()  # Orienting ourselves after the boost
 
+    landing_seq.look_in_direction_of_planet(1)  # Setting up camera
+    landing_seq.start_video()  # Starting video recording
+
     # Calling function to land the lander
     t, pos, vel, fd_abs, indexes = landing(landing_seq, pos0, vel0, dh_lander, dh_main_chute, dh_booster, sc_area, lander_area, main_chute_area, densities, booster_force)
 
-    labels = ["Entered Atmosphere", "Lander Deployed", "Main Deployed", "Boosters Activated"]  # List with labels for plotting
+    landing_seq.finish_video()  # Stopping video recording
+
+    labels = ["Entered Atmosphere", "Lander Deployed", "Parachute Deployed", "Boosters Activated"]  # List with labels for plotting
 
     # Plotting landing of spacecraft from a closer perspective
-    plt.plot(pos[int(len(pos) * 24.5 / 64):, 0], pos[int(len(pos) * 24.5 / 64):, 1], label="Spacecraft trajectory")  # Plotting spacecraft trajectory
-    plot_planet(24 * np.pi / 128, 31 * np.pi / 128, label="Planet surface")  # Plotting planet
-    plot_planet(23 * np.pi / 128, 29 * np.pi / 128, 200_000, label="Atmosphere border")  # Plotting border of atmosphere
+    plot_planet(9.5 * np.pi / 128, 16.5 * np.pi / 128, 200_000, label="Atmosphere border")  # Plotting border of atmosphere
+    plot_planet(10 * np.pi / 128, 17.5 * np.pi / 128, label="Planet surface")  # Plotting planet
+    [plt.scatter(pos[int(indexes[i]), 0], pos[int(indexes[i]), 1], label=labels[i]) for i in range(len(indexes) - 1)]
+    plt.plot(pos[int(len(pos) * 24.5 / 64):, 0], pos[int(len(pos) * 24.5 / 64):, 1], label="Spacecraft trajectory", c="k")  # Plotting last section of spacecraft trajectory
     plt.axis("equal")
     plt.xlabel("x [m]")
     plt.ylabel("y [m]")
@@ -164,7 +170,7 @@ if __name__ == "__main__":
 
     # Plotting landing of spacecraft from a further perspective
     plt.plot(pos[:, 0], pos[:, 1], label="Spacecraft trajectory")  # Plotting spacecraft trajectory
-    plot_planet(0, np.pi / 2, label="Planet surface")  # Plotting planet
+    plot_planet(-np.pi / 2, np.pi / 2, label="Planet surface")  # Plotting planet
     plt.axis("equal")
     plt.xlabel("x [m]")
     plt.ylabel("y [m]")
@@ -186,10 +192,10 @@ if __name__ == "__main__":
     plt.show()
 
     # Plotting drag force during the landing
-    [plt.scatter(t[int(indexes[i])], fd_abs[int(indexes[i])], label=labels[i]) for i in range(len(indexes))]  # Plotting points where different events during the landing happened
-    plt.plot(t, fd_abs)
+    [plt.scatter(t[int(indexes[i])], 0.001*fd_abs[int(indexes[i])], label=labels[i]) for i in range(len(indexes))]  # Plotting points where different events during the landing happened
+    plt.plot(t, 0.001*fd_abs)  # Scaling the drag force array by 0.001 to express it in Kilonewtons
     plt.xlabel("Time [s]")
-    plt.ylabel("Absolute drag force [N]")
+    plt.ylabel("Absolute drag force [kN]")
     plt.legend()
     plt.savefig("../Figures/landing_f_drag.png")  # Saving plot
     plt.show()

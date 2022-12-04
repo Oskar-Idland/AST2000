@@ -264,7 +264,7 @@ if __name__ == "__main__":
     dt = 8.666669555556518e-05
     time0 = 2762487 * dt
     orbital_height0 = 1_000_000
-    orbital_angle0 = 0
+    orbital_angle0 = -0.31
     radius_planet = 3775244.8601354226  # Radius of planet
 
     # Putting Spacecraft into low stable orbit (requires verification of launch and orientation first)
@@ -298,12 +298,13 @@ if __name__ == "__main__":
     # Calling function to simulate landing
     t, pos, vel, fd_abs, indexes = simulate_landing(pos0, vel0, sc_mass, lander_mass, sc_area, lander_area, main_chute_area, densities, booster_force, dh_lander, dh_parachute, dh_booster)
 
-    labels = ["Entered Atmosphere", "Lander Deployed", "Main Deployed", "Boosters Activated"]  # List with labels for plotting
+    labels = ["Entered Atmosphere", "Lander Deployed", "Parachute Deployed", "Boosters Activated"]  # List with labels for plotting
 
     # Plotting landing of spacecraft from a closer perspective
-    plt.plot(pos[int(len(pos)*43/64):, 0], pos[int(len(pos)*43/64):, 1], label="Spacecraft trajectory")  # Plotting spacecraft trajectory
-    plot_planet(24 * np.pi / 128, 28 * np.pi / 128, label="Planet surface")  # Plotting planet
-    plot_planet(23*np.pi/128, 26*np.pi/128, 200_000, label="Atmosphere border")  # Plotting border of atmosphere
+    plot_planet(10.5*np.pi/128, 14*np.pi/128, 200_000, label="Atmosphere border")  # Plotting border of atmosphere
+    plot_planet(11 * np.pi / 128, 15 * np.pi / 128, label="Planet surface")  # Plotting planet
+    [plt.scatter(pos[int(indexes[i]), 0], pos[int(indexes[i]), 1], label=labels[i]) for i in range(len(indexes)-1)]
+    plt.plot(pos[int(len(pos)*43/64):, 0], pos[int(len(pos)*43/64):, 1], label="Spacecraft trajectory", c="k")  # Plotting last section of spacecraft trajectory
     plt.axis("equal")
     plt.xlabel("x [m]")
     plt.ylabel("y [m]")
@@ -313,7 +314,7 @@ if __name__ == "__main__":
 
     # Plotting landing of spacecraft from a further perspective
     plt.plot(pos[:, 0], pos[:, 1], label="Spacecraft trajectory")  # Plotting spacecraft trajectory
-    plot_planet(0, np.pi/2, label="Planet surface")  # Plotting planet
+    plot_planet(-np.pi/2, np.pi/2, label="Planet surface")  # Plotting planet
     plt.axis("equal")
     plt.xlabel("x [m]")
     plt.ylabel("y [m]")

@@ -189,7 +189,7 @@ def image_landing_site(land_seq, idx=0, planet_idx=1):
 
 if __name__ == "__main__":
     landing_seq = mission.begin_landing_sequence()  # Creating landing sequence instance
-    print(verify_constant_orbit_height(landing_seq))  # Verifying stability of orbital height
+    # print(verify_constant_orbit_height(landing_seq))  # Verifying stability of orbital height
     landing_seq.start_video()
     picture_num = 15  # Number of landing site pictures to be taken
     picture_delay = 60  # Delay between when pictures are taken in seconds
