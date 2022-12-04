@@ -77,7 +77,7 @@ def landing(land_seq, pos0, vel0, dh_lander, dh_parachute, dh_booster, area_sc, 
         if (land_seq.lander_launched is False) and ((np.linalg.norm(pos[i]) - radius_planet) <= dh_lander):
             w = find_w(pos[i])
             delta_v = w-vel[i]  # Calculating a boost so that the lander is launched with as little velocity as possible relative to the atmosphere
-            land_seq.launch_lander(delta_v)  # Launching lander
+            land_seq.launch_lander([0, 0, 0])  # Launching lander
             area_curr = area_lander  # Changing current area to lander area
             indexes[1] = i + 1  # Saving index of event
 
@@ -115,7 +115,7 @@ if __name__ == "__main__":
     dt = 8.666669555556518e-05
     time0 = 2762487 * dt
     orbital_height0 = 1_000_000
-    orbital_angle0 = -0.31
+    orbital_angle0 = -0.307
     radius_planet = 3775244.8601354226  # Radius of planet
 
     # Putting Spacecraft into low stable orbit (requires verification of launch and orientation first)

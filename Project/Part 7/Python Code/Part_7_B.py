@@ -19,7 +19,7 @@ G = 6.6743015e-11  # Universal gravitational constant
 
 # Defining some important constants
 m_planet = system.masses[planet_idx] * 1.98847e30  # Planet mass in kg
-g = G*m_planet/(system.radii[1]*1000)  # Gravitational acceleration on the planet
+g = G*m_planet/((system.radii[1]*1000)**2)  # Gravitational acceleration on the planet
 rho_atm = system.atmospheric_densities[planet_idx]  # Average atmospheric density
 C_D = 1  # Drag coefficient
 omega_atm = (2 * np.pi) / (system.rotational_periods[planet_idx] * 24 * 3600)  # Angular velocity of the atmosphere
@@ -51,6 +51,30 @@ def spherical_to_cart(r, theta, phi):
     y = r*np.sin(phi)*np.sin(theta)
     z = r * np.cos(phi)
     return x, y, z
+
+
+def find_actual_coordinates(curr_coords, time_elapsed, planet_idx=1, cartesian=False):
+    """
+    Calculates at which coordinates the input position was at time 0.
+    :param curr_coords: Current coordinates in spherical form in radians (or cartesian if cartesian is set to True) (Phi is 0 at z-axis)
+    :param time_elapsed: Point of time from start of landing sequence in seconds
+    :param planet_idx: Planet index
+    :return: Spherical coordinates of the position we are over now at time 0.
+    """
+    if cartesian:  # Converting to spherical if current coordinates are cartesian
+        x = curr_coords[0]
+        y = curr_coords[1]
+        z = curr_coords[2]
+        r = np.sqrt(x ** 2 + y ** 2 + z ** 2)
+        theta = np.arccos(z / r)
+        phi = np.sign(y) * np.arccos(x / np.sqrt(x ** 2 + y ** 2))
+        curr_coords = np.array([r, theta, phi])
+
+    r_planet = system.radii[planet_idx] * 1000  # Planet radius
+    omega = (2 * np.pi) / (system.rotational_periods[planet_idx] * 24 * 3600)  # Angular velocity of atmosphere
+    new_phi = (curr_coords[2] - (omega * time_elapsed))  # Calculating new theta angle
+    new_coords = np.array([r_planet, curr_coords[1], new_phi])  # New coordinates
+    return new_coords
 
 
 def find_w(current_pos):
@@ -94,11 +118,11 @@ def terminal_velocity(area_parachute):
     :param area_parachute: Area of parachutes im m^2
     :return: Absolute terminal velocity
     """
-    area_sc = mission.spacecraft_area
-    m = mission.spacecraft_mass
+    area_lander = mission.lander_area
+    m = mission.lander_mass
     rho_atm = system.atmospheric_densities[planet_idx]
     C_D = 1
-    v = np.sqrt(2*m*g/(rho_atm*C_D*(area_sc + area_parachute)))
+    v = np.sqrt(2*m*g/(rho_atm*C_D*(area_lander + area_parachute)))
     return v
 
 
@@ -247,7 +271,8 @@ def simulate_landing(pos0, vel0, mass_sc, mass_lander, area_sc, area_lander, are
     print(f"Boosters activated: {boosters_activated}")
     print(f"\nLanding velocity: {vel[-1]-find_w(pos[-1])}")
     print(f"Landing speed: {-np.linalg.norm(vel[-1] - find_w(pos[-1]))} m/s")
-    print(f"Landing position: {pos[-1]/np.linalg.norm(pos[-1])}")
+    landing_coordinates = find_actual_coordinates(pos[-1], time[0], cartesian=True)
+    print(f"Landing position: {landing_coordinates[0]:.4f}, {landing_coordinates[1]:.4f}, {landing_coordinates[2]:.4f}")
     elapsed_time = round(time[-1])  # Calculating duration of landing in hours, minutes and seconds
     hours = elapsed_time // 3600
     minutes = (elapsed_time - (hours*3600)) // 60
@@ -264,7 +289,7 @@ if __name__ == "__main__":
     dt = 8.666669555556518e-05
     time0 = 2762487 * dt
     orbital_height0 = 1_000_000
-    orbital_angle0 = -0.31
+    orbital_angle0 = -0.329
     radius_planet = 3775244.8601354226  # Radius of planet
 
     # Putting Spacecraft into low stable orbit (requires verification of launch and orientation first)
@@ -344,3 +369,5 @@ if __name__ == "__main__":
     plt.savefig("../Figures/sim_landing_f_drag.png")  # Saving plot
     plt.show()
 
+print(terminal_velocity(7))
+print(terminal_velocity(0))

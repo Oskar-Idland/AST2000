@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2022.2.21)  4 DEC 2022 12:01
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2022.2.21)  4 DEC 2022 17:00
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -560,13 +560,32 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 <Figures/Temperature plot.pdf, id=123, 462.52798pt x 346.89601pt>
 File: Figures/Temperature plot.pdf Graphic file (type pdf)
 <use Figures/Temperature plot.pdf>
-Package pdftex.def Info: Figures/Temperature plot.pdf  used on input line 100.
+Package pdftex.def Info: Figures/Temperature plot.pdf  used on input line 102.
 (pdftex.def)             Requested size: 185.0079pt x 138.75594pt.
 <Figures/Density plot.pdf, id=124, 462.52798pt x 346.89601pt>
 File: Figures/Density plot.pdf Graphic file (type pdf)
 <use Figures/Density plot.pdf>
-Package pdftex.def Info: Figures/Density plot.pdf  used on input line 107.
+Package pdftex.def Info: Figures/Density plot.pdf  used on input line 109.
 (pdftex.def)             Requested size: 185.0079pt x 138.75594pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 126--127
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 128--129
+
+ []
+
+
+Underfull \hbox (badness 1038) in paragraph at lines 136--141
+\OT1/cmr/m/n/10 tak-ing 15 pic-tures in equally spaced in-ter-vals of $1$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 136--141
+
+ []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -576,94 +595,144 @@ ature plot.pdf> </Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 6/F
 igures/Density plot.pdf>]
 
 LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
- on input line 194.
+ on input line 195.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 202--204
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 205--207
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 208--210
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 211--213
+
+ []
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 213.
+(hyperref)                removing `math shift' on input line 215.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 213.
+(hyperref)                removing `subscript' on input line 215.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 213.
+(hyperref)                removing `math shift' on input line 215.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 222.
+(hyperref)                removing `math shift' on input line 224.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 222.
+(hyperref)                removing `subscript' on input line 224.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 222.
+(hyperref)                removing `math shift' on input line 224.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 225.
+(hyperref)                removing `math shift' on input line 227.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 225.
+(hyperref)                removing `subscript' on input line 227.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 225.
+(hyperref)                removing `math shift' on input line 227.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 232.
+(hyperref)                removing `math shift' on input line 234.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 232.
+(hyperref)                removing `subscript' on input line 234.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 232.
+(hyperref)                removing `math shift' on input line 234.
 
 [3]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 239.
+(hyperref)                removing `math shift' on input line 241.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 239.
+(hyperref)                removing `math shift' on input line 241.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 242.
+(hyperref)                removing `math shift' on input line 244.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 242.
+(hyperref)                removing `subscript' on input line 244.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 242.
+(hyperref)                removing `math shift' on input line 244.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 249--257
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 258--261
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 269--273
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 274--277
+
+ []
 
 [4] (/usr/local/texlive/2021/texmf-dist/tex/latex/ucs/data/uni-34.def
 File: uni-34.def 2013/05/13 UCS: Unicode data U+2200..U+22FF
-) [5]
+)
+Underfull \hbox (badness 10000) in paragraph at lines 304--310
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 311--314
+
+ []
+
+[5]
 <Figures/O2 632.pdf, id=277, 1445.4pt x 578.16pt>
 File: Figures/O2 632.pdf Graphic file (type pdf)
 <use Figures/O2 632.pdf>
-Package pdftex.def Info: Figures/O2 632.pdf  used on input line 341.
+Package pdftex.def Info: Figures/O2 632.pdf  used on input line 343.
 (pdftex.def)             Requested size: 433.62335pt x 173.44933pt.
 <Figures/O2 690.pdf, id=278, 1445.4pt x 578.16pt>
 File: Figures/O2 690.pdf Graphic file (type pdf)
 <use Figures/O2 690.pdf>
-Package pdftex.def Info: Figures/O2 690.pdf  used on input line 348.
+Package pdftex.def Info: Figures/O2 690.pdf  used on input line 350.
 (pdftex.def)             Requested size: 433.62335pt x 173.44933pt.
 <Figures/O2 760.pdf, id=279, 1445.4pt x 578.16pt>
 File: Figures/O2 760.pdf Graphic file (type pdf)
 <use Figures/O2 760.pdf>
-Package pdftex.def Info: Figures/O2 760.pdf  used on input line 355.
+Package pdftex.def Info: Figures/O2 760.pdf  used on input line 357.
 (pdftex.def)             Requested size: 433.62335pt x 173.44933pt.
 
 
@@ -672,7 +741,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 <Figures/H2O 720.pdf, id=280, 1300.86pt x 578.16pt>
 File: Figures/H2O 720.pdf Graphic file (type pdf)
 <use Figures/H2O 720.pdf>
-Package pdftex.def Info: Figures/H2O 720.pdf  used on input line 362.
+Package pdftex.def Info: Figures/H2O 720.pdf  used on input line 364.
 (pdftex.def)             Requested size: 390.26102pt x 173.44933pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -680,7 +749,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 <Figures/H2O 820.pdf, id=281, 1300.86pt x 578.16pt>
 File: Figures/H2O 820.pdf Graphic file (type pdf)
 <use Figures/H2O 820.pdf>
-Package pdftex.def Info: Figures/H2O 820.pdf  used on input line 369.
+Package pdftex.def Info: Figures/H2O 820.pdf  used on input line 371.
 (pdftex.def)             Requested size: 390.26102pt x 173.44933pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -688,7 +757,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 <Figures/H2O 940.pdf, id=282, 1300.86pt x 578.16pt>
 File: Figures/H2O 940.pdf Graphic file (type pdf)
 <use Figures/H2O 940.pdf>
-Package pdftex.def Info: Figures/H2O 940.pdf  used on input line 376.
+Package pdftex.def Info: Figures/H2O 940.pdf  used on input line 378.
 (pdftex.def)             Requested size: 390.26102pt x 173.44933pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -696,7 +765,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 <Figures/CO2 1400.pdf, id=283, 1445.4pt x 578.16pt>
 File: Figures/CO2 1400.pdf Graphic file (type pdf)
 <use Figures/CO2 1400.pdf>
-Package pdftex.def Info: Figures/CO2 1400.pdf  used on input line 383.
+Package pdftex.def Info: Figures/CO2 1400.pdf  used on input line 385.
 (pdftex.def)             Requested size: 433.62335pt x 173.44933pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -704,7 +773,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 <Figures/CO2 1600.pdf, id=284, 1445.4pt x 578.16pt>
 File: Figures/CO2 1600.pdf Graphic file (type pdf)
 <use Figures/CO2 1600.pdf>
-Package pdftex.def Info: Figures/CO2 1600.pdf  used on input line 390.
+Package pdftex.def Info: Figures/CO2 1600.pdf  used on input line 392.
 (pdftex.def)             Requested size: 433.62335pt x 173.44933pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -712,7 +781,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 <Figures/CH4 1660.pdf, id=285, 1445.4pt x 578.16pt>
 File: Figures/CH4 1660.pdf Graphic file (type pdf)
 <use Figures/CH4 1660.pdf>
-Package pdftex.def Info: Figures/CH4 1660.pdf  used on input line 397.
+Package pdftex.def Info: Figures/CH4 1660.pdf  used on input line 399.
 (pdftex.def)             Requested size: 433.62335pt x 173.44933pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -720,7 +789,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 <Figures/CH4 2200.pdf, id=286, 1445.4pt x 578.16pt>
 File: Figures/CH4 2200.pdf Graphic file (type pdf)
 <use Figures/CH4 2200.pdf>
-Package pdftex.def Info: Figures/CH4 2200.pdf  used on input line 404.
+Package pdftex.def Info: Figures/CH4 2200.pdf  used on input line 406.
 (pdftex.def)             Requested size: 433.62335pt x 173.44933pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -728,7 +797,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 <Figures/CO 2340.pdf, id=287, 1445.4pt x 578.16pt>
 File: Figures/CO 2340.pdf Graphic file (type pdf)
 <use Figures/CO 2340.pdf>
-Package pdftex.def Info: Figures/CO 2340.pdf  used on input line 411.
+Package pdftex.def Info: Figures/CO 2340.pdf  used on input line 413.
 (pdftex.def)             Requested size: 433.62335pt x 173.44933pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -736,7 +805,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 <Figures/N2O 2870.pdf, id=288, 1445.4pt x 578.16pt>
 File: Figures/N2O 2870.pdf Graphic file (type pdf)
 <use Figures/N2O 2870.pdf>
-Package pdftex.def Info: Figures/N2O 2870.pdf  used on input line 418.
+Package pdftex.def Info: Figures/N2O 2870.pdf  used on input line 420.
 (pdftex.def)             Requested size: 433.62335pt x 173.44933pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -757,77 +826,77 @@ eschler/Documents/GitHub/AST2000/Project/Part 6/Figures/N2O 2870.pdf>]
 <Figures/l_site0.png, id=825, 1284.8pt x 1027.84pt>
 File: Figures/l_site0.png Graphic file (type png)
 <use Figures/l_site0.png>
-Package pdftex.def Info: Figures/l_site0.png  used on input line 429.
+Package pdftex.def Info: Figures/l_site0.png  used on input line 431.
 (pdftex.def)             Requested size: 179.87077pt x 143.89662pt.
 <Figures/l_site1.png, id=826, 1284.8pt x 1027.84pt>
 File: Figures/l_site1.png Graphic file (type png)
 <use Figures/l_site1.png>
-Package pdftex.def Info: Figures/l_site1.png  used on input line 435.
+Package pdftex.def Info: Figures/l_site1.png  used on input line 437.
 (pdftex.def)             Requested size: 179.87077pt x 143.89662pt.
 <Figures/l_site2.png, id=827, 1284.8pt x 1027.84pt>
 File: Figures/l_site2.png Graphic file (type png)
 <use Figures/l_site2.png>
-Package pdftex.def Info: Figures/l_site2.png  used on input line 441.
+Package pdftex.def Info: Figures/l_site2.png  used on input line 443.
 (pdftex.def)             Requested size: 179.87077pt x 143.89662pt.
 <Figures/l_site3.png, id=828, 1284.8pt x 1027.84pt>
 File: Figures/l_site3.png Graphic file (type png)
 <use Figures/l_site3.png>
-Package pdftex.def Info: Figures/l_site3.png  used on input line 447.
+Package pdftex.def Info: Figures/l_site3.png  used on input line 449.
 (pdftex.def)             Requested size: 179.87077pt x 143.89662pt.
 <Figures/l_site4.png, id=829, 1284.8pt x 1027.84pt>
 File: Figures/l_site4.png Graphic file (type png)
 <use Figures/l_site4.png>
-Package pdftex.def Info: Figures/l_site4.png  used on input line 453.
+Package pdftex.def Info: Figures/l_site4.png  used on input line 455.
 (pdftex.def)             Requested size: 179.87077pt x 143.89662pt.
 <Figures/l_site5.png, id=830, 1284.8pt x 1027.84pt>
 File: Figures/l_site5.png Graphic file (type png)
 <use Figures/l_site5.png>
-Package pdftex.def Info: Figures/l_site5.png  used on input line 459.
+Package pdftex.def Info: Figures/l_site5.png  used on input line 461.
 (pdftex.def)             Requested size: 179.87077pt x 143.89662pt.
 <Figures/l_site6.png, id=831, 1284.8pt x 1027.84pt>
 File: Figures/l_site6.png Graphic file (type png)
 <use Figures/l_site6.png>
-Package pdftex.def Info: Figures/l_site6.png  used on input line 465.
+Package pdftex.def Info: Figures/l_site6.png  used on input line 467.
 (pdftex.def)             Requested size: 179.87077pt x 143.89662pt.
 <Figures/l_site7.png, id=832, 1284.8pt x 1027.84pt>
 File: Figures/l_site7.png Graphic file (type png)
 <use Figures/l_site7.png>
-Package pdftex.def Info: Figures/l_site7.png  used on input line 471.
+Package pdftex.def Info: Figures/l_site7.png  used on input line 473.
 (pdftex.def)             Requested size: 179.87077pt x 143.89662pt.
 <Figures/l_site8.png, id=833, 1284.8pt x 1027.84pt>
 File: Figures/l_site8.png Graphic file (type png)
 <use Figures/l_site8.png>
-Package pdftex.def Info: Figures/l_site8.png  used on input line 477.
+Package pdftex.def Info: Figures/l_site8.png  used on input line 479.
 (pdftex.def)             Requested size: 179.87077pt x 143.89662pt.
 <Figures/l_site9.png, id=834, 1284.8pt x 1027.84pt>
 File: Figures/l_site9.png Graphic file (type png)
 <use Figures/l_site9.png>
-Package pdftex.def Info: Figures/l_site9.png  used on input line 483.
+Package pdftex.def Info: Figures/l_site9.png  used on input line 485.
 (pdftex.def)             Requested size: 179.87077pt x 143.89662pt.
 <Figures/l_site10.png, id=835, 1284.8pt x 1027.84pt>
 File: Figures/l_site10.png Graphic file (type png)
 <use Figures/l_site10.png>
-Package pdftex.def Info: Figures/l_site10.png  used on input line 489.
+Package pdftex.def Info: Figures/l_site10.png  used on input line 491.
 (pdftex.def)             Requested size: 179.87077pt x 143.89662pt.
 <Figures/l_site11.png, id=836, 1284.8pt x 1027.84pt>
 File: Figures/l_site11.png Graphic file (type png)
 <use Figures/l_site11.png>
-Package pdftex.def Info: Figures/l_site11.png  used on input line 495.
+Package pdftex.def Info: Figures/l_site11.png  used on input line 497.
 (pdftex.def)             Requested size: 179.87077pt x 143.89662pt.
 <Figures/l_site12.png, id=837, 1284.8pt x 1027.84pt>
 File: Figures/l_site12.png Graphic file (type png)
 <use Figures/l_site12.png>
-Package pdftex.def Info: Figures/l_site12.png  used on input line 501.
+Package pdftex.def Info: Figures/l_site12.png  used on input line 503.
 (pdftex.def)             Requested size: 179.87077pt x 143.89662pt.
 <Figures/l_site13.png, id=838, 1284.8pt x 1027.84pt>
 File: Figures/l_site13.png Graphic file (type png)
 <use Figures/l_site13.png>
-Package pdftex.def Info: Figures/l_site13.png  used on input line 507.
+Package pdftex.def Info: Figures/l_site13.png  used on input line 509.
 (pdftex.def)             Requested size: 179.87077pt x 143.89662pt.
 <Figures/l_site14.png, id=839, 1284.8pt x 1027.84pt>
 File: Figures/l_site14.png Graphic file (type png)
 <use Figures/l_site14.png>
-Package pdftex.def Info: Figures/l_site14.png  used on input line 513.
+Package pdftex.def Info: Figures/l_site14.png  used on input line 515.
 (pdftex.def)             Requested size: 179.87077pt x 143.89662pt.
 
 
@@ -890,13 +959,13 @@ l_site14.png (PNG copy)>]
 (/Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 6/Report_Part_6.aux
 )
 Package rerunfilecheck Info: File `Report_Part_6.out' has not changed.
-(rerunfilecheck)             Checksum: 7A44C2273C1D767626A9099E7D9297A3;3758.
+(rerunfilecheck)             Checksum: 72ACEB79C33886D812E3E57DF3B997D0;3758.
  ) 
 Here is how much of TeX's memory you used:
- 15331 strings out of 478994
- 217348 string characters out of 5858184
- 753395 words of memory out of 5000000
- 32497 multiletter control sequences out of 15000+600000
+ 15332 strings out of 478994
+ 217358 string characters out of 5858184
+ 752395 words of memory out of 5000000
+ 32498 multiletter control sequences out of 15000+600000
  410159 words of font info for 57 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  81i,10n,89p,510b,522s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -918,7 +987,7 @@ ive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive
 exmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/2021/tex
 mf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
 Output written on "/Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 6
-/Report_Part_6.pdf" (15 pages, 30446942 bytes).
+/Report_Part_6.pdf" (15 pages, 30448488 bytes).
 PDF statistics:
  944 PDF objects out of 1000 (max. 8388607)
  358 compressed objects within 4 object streams
