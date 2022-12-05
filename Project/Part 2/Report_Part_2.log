@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2022.2.21)  5 DEC 2022 14:41
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2022.2.21)  5 DEC 2022 20:50
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -540,79 +540,80 @@ LaTeX Info: Redefining \nameref on input line 33.
 Class revtex4-2 Info: Taking \maketitle back from hyperref on input line 33.
 \openout3 = `Report_Part_2Notes.bib'.
 
-LaTeX Font Info:    Trying to load font information for U+esint on input line 5
-7.
+LaTeX Font Info:    Trying to load font information for U+esint on input line 6
+2.
  (/usr/local/texlive/2021/texmf-dist/tex/latex/esint/uesint.fd
 File: uesint.fd 
 )
-LaTeX Font Info:    Trying to load font information for U+msa on input line 57.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 62.
 
 
 (/usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 57.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 62.
 
 
 (/usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-<Figures/Ellipse.png, id=85, 709.65125pt x 305.64188pt>
+<Figures/Ellipse.png, id=89, 709.65125pt x 305.64188pt>
 File: Figures/Ellipse.png Graphic file (type png)
 <use Figures/Ellipse.png>
-Package pdftex.def Info: Figures/Ellipse.png  used on input line 66.
+Package pdftex.def Info: Figures/Ellipse.png  used on input line 71.
 (pdftex.def)             Requested size: 212.897pt x 91.69325pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Underfull \hbox (badness 1033) in paragraph at lines 83--93
+Underfull \hbox (badness 1033) in paragraph at lines 88--98
 \OT1/cmr/m/n/10 the co-or-di-nates back to carte-sian co-or-di-nates us-ing
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 83--93
+Underfull \hbox (badness 10000) in paragraph at lines 88--98
 
  []
 
 
 Package amsfonts Warning: Obsolete command \bold; \mathbf should be used instea
-d on input line 97.
-
-<Figures/leapfrog1.png, id=92, 440.64626pt x 170.6375pt>
-File: Figures/leapfrog1.png Graphic file (type png)
-<use Figures/leapfrog1.png>
-Package pdftex.def Info: Figures/leapfrog1.png  used on input line 109.
-(pdftex.def)             Requested size: 176.25537pt x 68.25378pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 97--115
-
- []
+d on input line 102.
 
 [1{/usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map} </User
 s/jannikeschler/Documents/GitHub/AST2000/Project/Part 2/Figures/Ellipse.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 119--122
+<Figures/leapfrog1.png, id=115, 440.64626pt x 170.6375pt>
+File: Figures/leapfrog1.png Graphic file (type png)
+<use Figures/leapfrog1.png>
+Package pdftex.def Info: Figures/leapfrog1.png  used on input line 114.
+(pdftex.def)             Requested size: 176.25537pt x 68.25378pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 102--120
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 119--122
+Underfull \hbox (badness 10000) in paragraph at lines 124--127
 
  []
 
 
-Overfull \hbox (36.50056pt too wide) in paragraph at lines 146--158
-[][][][][][][]
+Underfull \hbox (badness 10000) in paragraph at lines 124--127
+
  []
 
 
-Underfull \hbox (badness 1052) in paragraph at lines 146--158
+Underfull \hbox (badness 10000) in paragraph at lines 151--152
+
+ []
+
+
+Underfull \hbox (badness 1052) in paragraph at lines 153--164
 \OT1/cmr/m/n/10 have the high-est an-gu-lar ve-loc-ity at the per-i-he-lion
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 146--158
+Underfull \hbox (badness 10000) in paragraph at lines 153--164
 
  []
 
@@ -623,53 +624,204 @@ File: uni-3.def 2013/05/13 UCS: Unicode data U+0300..U+03FF
 (/usr/local/texlive/2021/texmf-dist/tex/latex/ucs/data/uni-34.def
 File: uni-34.def 2013/05/13 UCS: Unicode data U+2200..U+22FF
 )
-<Figures/Orbit_plots.png, id=136, 462.528pt x 346.896pt>
+<Figures/Orbit_plots.png, id=141, 462.528pt x 346.896pt>
 File: Figures/Orbit_plots.png Graphic file (type png)
 <use Figures/Orbit_plots.png>
-Package pdftex.def Info: Figures/Orbit_plots.png  used on input line 225.
+Package pdftex.def Info: Figures/Orbit_plots.png  used on input line 231.
 (pdftex.def)             Requested size: 185.0079pt x 138.75594pt.
 
+/Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 2/Report_Part_2.tex:
+251: Missing $ inserted.
+<inserted text> 
+                $
+l.251         Area & 3.07 \times
+                                 10^{-06} & 3.07 \times 10^{-06}\\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+/Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 2/Report_Part_2.tex:
+251: Extra }, or forgotten $.
+<template> \unskip \hfil }
+                          \hskip \tabmidsep \relax \hskip -.5\arrayrulewidth...
+l.251         Area & 3.07 \times 10^{-06} &
+                                            3.07 \times 10^{-06}\\
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
 
+/Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 2/Report_Part_2.tex:
+251: Missing $ inserted.
+<inserted text> 
+                $
+l.251         Area & 3.07 \times 10^{-06} &
+                                            3.07 \times 10^{-06}\\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
 
-Underfull \hbox (badness 10000) in paragraph at lines 275--277
+/Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 2/Report_Part_2.tex:
+251: Missing } inserted.
+<inserted text> 
+                }
+l.251         Area & 3.07 \times 10^{-06} &
+                                            3.07 \times 10^{-06}\\
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
 
- []
+/Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 2/Report_Part_2.tex:
+251: Missing $ inserted.
+<inserted text> 
+                $
+l.251 ...Area & 3.07 \times 10^{-06} & 3.07 \times
+                                                   10^{-06}\\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+/Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 2/Report_Part_2.tex:
+252: Extra }, or forgotten $.
+<template> \unskip \hfil }
+                          \hskip \tabmidsep \relax \hskip -.5\arrayrulewidth...
+l.252         \hline
+                    
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+/Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 2/Report_Part_2.tex:
+252: Missing $ inserted.
+<inserted text> 
+                $
+l.252         \hline
+                    
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+/Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 2/Report_Part_2.tex:
+252: Missing } inserted.
+<inserted text> 
+                }
+l.252         \hline
+                    
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+/Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 2/Report_Part_2.tex:
+253: Missing $ inserted.
+<inserted text> 
+                $
+l.253 		Distance & 6.82 \times
+                               10^{-07} & 6.82 \times 10^{-07}\\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+/Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 2/Report_Part_2.tex:
+253: Extra }, or forgotten $.
+<template> \unskip \hfil }
+                          \hskip \tabmidsep \relax \hskip -.5\arrayrulewidth...
+l.253 		Distance & 6.82 \times 10^{-07} &
+                                          6.82 \times 10^{-07}\\
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+/Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 2/Report_Part_2.tex:
+253: Missing $ inserted.
+<inserted text> 
+                $
+l.253 		Distance & 6.82 \times 10^{-07} &
+                                          6.82 \times 10^{-07}\\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+/Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 2/Report_Part_2.tex:
+253: Missing } inserted.
+<inserted text> 
+                }
+l.253 		Distance & 6.82 \times 10^{-07} &
+                                          6.82 \times 10^{-07}\\
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+/Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 2/Report_Part_2.tex:
+253: Missing $ inserted.
+<inserted text> 
+                $
+l.253 ...ance & 6.82 \times 10^{-07} & 6.82 \times
+                                                   10^{-07}\\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+/Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 2/Report_Part_2.tex:
+254: Extra }, or forgotten $.
+<template> \unskip \hfil }
+                          \hskip \tabmidsep \relax \hskip -.5\arrayrulewidth...
+l.254 		\hline
+              
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+/Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 2/Report_Part_2.tex:
+254: Missing $ inserted.
+<inserted text> 
+                $
+l.254 		\hline
+              
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+/Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 2/Report_Part_2.tex:
+254: Missing } inserted.
+<inserted text> 
+                }
+l.254 		\hline
+              
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
 
 [3 </Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 2/Figures/Orbit_
 plots.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 281--283
 
-LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
- on input line 277.
+ []
 
-<Figures/Planet_Orbit_CM.pdf, id=155, 1387.58403pt x 687.28767pt>
+<Figures/Planet_Orbit_CM.pdf, id=158, 1387.58403pt x 687.28767pt>
 File: Figures/Planet_Orbit_CM.pdf Graphic file (type pdf)
 <use Figures/Planet_Orbit_CM.pdf>
-Package pdftex.def Info: Figures/Planet_Orbit_CM.pdf  used on input line 319.
+Package pdftex.def Info: Figures/Planet_Orbit_CM.pdf  used on input line 327.
 (pdftex.def)             Requested size: 208.12862pt x 103.0887pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<Figures/Solar_Orbit_CM.pdf, id=156, 1387.58403pt x 687.28767pt>
+<Figures/Solar_Orbit_CM.pdf, id=159, 1387.58403pt x 687.28767pt>
 File: Figures/Solar_Orbit_CM.pdf Graphic file (type pdf)
 <use Figures/Solar_Orbit_CM.pdf>
-Package pdftex.def Info: Figures/Solar_Orbit_CM.pdf  used on input line 326.
+Package pdftex.def Info: Figures/Solar_Orbit_CM.pdf  used on input line 334.
 (pdftex.def)             Requested size: 208.12862pt x 103.0887pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<Figures/Energy_AngularMomentum_plot.pdf, id=158, 1387.58403pt x 687.28767pt>
+<Figures/Energy_AngularMomentum_plot.pdf, id=161, 1387.58403pt x 687.28767pt>
 File: Figures/Energy_AngularMomentum_plot.pdf Graphic file (type pdf)
 <use Figures/Energy_AngularMomentum_plot.pdf>
 Package pdftex.def Info: Figures/Energy_AngularMomentum_plot.pdf  used on input
- line 335.
+ line 345.
 (pdftex.def)             Requested size: 208.12862pt x 103.0887pt.
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 342--355
+Underfull \hbox (badness 10000) in paragraph at lines 352--365
 
  []
 
@@ -677,73 +829,83 @@ Underfull \hbox (badness 10000) in paragraph at lines 342--355
 _Orbit_CM.pdf> </Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 2/Fi
 gures/Solar_Orbit_CM.pdf> </Users/jannikeschler/Documents/GitHub/AST2000/Projec
 t/Part 2/Figures/Energy_AngularMomentum_plot.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 382--389
 
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 372.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 372.
+ []
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 372.
+(hyperref)                removing `math shift' on input line 397.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 372.
+(hyperref)                removing `subscript' on input line 397.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 372.
+(hyperref)                removing `math shift' on input line 397.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 372.
+(hyperref)                removing `math shift' on input line 397.
 
 
-Overfull \hbox (21.1081pt too wide) detected at line 378
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 397.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 397.
+
+
+Overfull \hbox (21.1081pt too wide) detected at line 403
 \OT1/cmr/bx/n/10 R \OT1/cmr/m/n/10 = [][] + [] [] = [] [] + []\OT1/cmr/bx/n/10 
 r \OT1/cmr/m/n/10 = [] + []\OT1/cmr/bx/n/10 r
  []
 
-
-Overfull \hbox (33.11954pt too wide) detected at line 401
+[5]
+Overfull \hbox (33.11954pt too wide) detected at line 426
 [] \OT1/cmr/m/n/10 = [] [][]
  []
 
 (/usr/local/texlive/2021/texmf-dist/tex/latex/ucs/data/uni-0.def
 File: uni-0.def 2013/05/13 UCS: Unicode data U+0000..U+00FF
-) [5]
-<Figures/Other_Group_Radial_Velocity.png, id=293, 462.528pt x 346.896pt>
+)
+<Figures/Other_Group_Radial_Velocity.png, id=300, 462.528pt x 346.896pt>
 File: Figures/Other_Group_Radial_Velocity.png Graphic file (type png)
 <use Figures/Other_Group_Radial_Velocity.png>
 Package pdftex.def Info: Figures/Other_Group_Radial_Velocity.png  used on input
- line 443.
+ line 468.
 (pdftex.def)             Requested size: 115.63171pt x 86.72379pt.
 
+Underfull \hbox (badness 10000) in paragraph at lines 474--477
+
+ []
+
+[6 </Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 2/Figures/Other_
+Group_Radial_Velocity.png>]
+<Figures/triangle_sas.jpg, id=309, 474.27188pt x 355.3275pt>
+File: Figures/triangle_sas.jpg Graphic file (type jpg)
+<use Figures/triangle_sas.jpg>
+Package pdftex.def Info: Figures/triangle_sas.jpg  used on input line 495.
+(pdftex.def)             Requested size: 189.70538pt x 142.12846pt.
+
 (/Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 2/Report_Part_2.bbl
-) [6 </Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 2/Figures/Othe
-r_Group_Radial_Velocity.png>]
+) [7 </Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 2/Figures/tria
+ngle_sas.jpg>]
 (/Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 2/Report_Part_2.aux
 )
-
-Package rerunfilecheck Warning: File `Report_Part_2.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `Report_Part_2.out':
-(rerunfilecheck)             Before: 0B9F49B2401C0BF89305DC5993AAE344;3207
-(rerunfilecheck)             After:  9B79411BA56564B2D3E0C4341C843793;3207.
+Package rerunfilecheck Info: File `Report_Part_2.out' has not changed.
+(rerunfilecheck)             Checksum: 234840CB03BEE4944108BE54F31FB54F;3421.
  ) 
 Here is how much of TeX's memory you used:
- 16048 strings out of 478994
- 223325 string characters out of 5858184
- 753395 words of memory out of 5000000
- 33251 multiletter control sequences out of 15000+600000
+ 16069 strings out of 478994
+ 223745 string characters out of 5858184
+ 751395 words of memory out of 5000000
+ 33267 multiletter control sequences out of 15000+600000
  411063 words of font info for 60 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 81i,10n,89p,807b,531s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 81i,10n,89p,807b,533s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
 </usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx6.pfb></
@@ -758,15 +920,16 @@ xlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texli
 ve/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/
 2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/202
 1/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2021
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2021/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2021/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/2021/texmf
--dist/fonts/type1/public/esint-type1/esint10.pfb>
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2021/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2021/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2021/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/2021/texmf-d
+ist/fonts/type1/public/esint-type1/esint10.pfb>
 Output written on "/Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 2
-/Report_Part_2.pdf" (6 pages, 449099 bytes).
+/Report_Part_2.pdf" (7 pages, 508023 bytes).
 PDF statistics:
- 370 PDF objects out of 1000 (max. 8388607)
- 231 compressed objects within 3 object streams
- 47 named destinations out of 1000 (max. 500000)
- 196 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 392 PDF objects out of 1000 (max. 8388607)
+ 249 compressed objects within 3 object streams
+ 50 named destinations out of 1000 (max. 500000)
+ 209 words of extra memory for PDF output out of 10000 (max. 10000000)
 
