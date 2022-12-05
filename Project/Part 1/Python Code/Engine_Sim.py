@@ -33,6 +33,7 @@ def adv_p(p):
 
 adv_p = np.vectorize(adv_p)
 
+# Creating an array with particles
 a = time.time()
 particles = np.array([Particle(m_h2, T, seed*i, Box) for i in range(N)])
 b = time.time()
@@ -45,8 +46,8 @@ print(f'Advancing particles took {b - a} s')
 
 exited_particles = 0
 for particle in particles:
-    exited_particles += particle.num_exited
-m_dot = exited_particles * constants.m_H2/1e-9
+    exited_particles += particle.num_exited  # Adding up the momentum of all exited particles
+m_dot = exited_particles * constants.m_H2/1e-9  # Mass flow rate
 print(f"Mass flow rate: {m_dot}")
 
 

@@ -1,15 +1,15 @@
-# In this file we will define and declare all functions and classes
 import numpy as np
 import random
 from scipy.constants import Boltzmann as k
 import matplotlib.pyplot as plt
-# FUNCTIONS -------------------
 from C_Box import Box
-# CLASSES ---------------------
+
 
 class Particle:
+    """
+    Class for a particle for the gas simulation with attributes such as position, velocity and whether it is inside the box or not
+    """
     particle_num = 0
-
     def __init__(self, m, T, seed, box):
         self.name = f"Particle_{Particle.particle_num}"
         Particle.particle_num += 1

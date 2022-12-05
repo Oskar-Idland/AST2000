@@ -1,6 +1,9 @@
 import numpy as np
 
 class Box:
+    """
+    Class for a bos, which holds attributes such as length, nozzle area, position and radius
+    """
     def __init__(self, L, nozzle_pos):
         self.length = L  # Length of one side of the box
         self.nozzle_area = 0.25*L**2  # Nozzle Area
