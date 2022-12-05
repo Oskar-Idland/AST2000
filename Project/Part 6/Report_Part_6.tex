@@ -34,7 +34,7 @@
 
 \begin{document}
 
-\title{Preparing For The Landing}
+\title{Preparing for the landing}
 \author{Oskar Idland \& Jannik Eschler}
 \date{\today}
 \affiliation{Institute of Theoretical Astrophysics, University of Oslo}
@@ -43,18 +43,18 @@
     By using a Hohmann transfer orbit, the altitude of the spacecraft's orbit has been lowered from $7.5 \times 10^7$ meters to $1 \times 10^6$ meters above the surface.
     When analysing the atmosphere using temperature, doppler shift, variation and flux, no gases were consistent options.
     Since the measurement using flux is the most reliable, it leads to the conclusion that the atmosphere is $100\%$ O$_2$.
-    Using the onboard camera, the planets surface has been imaged to determine the most suitable landing site at the spherical coordinates [$R = 3775.2$ km, $\theta = 3.0257^{\circ}$ rad, $\phi = -2.5813^{\circ}$ rad].
+    Using the onboard camera, the planets surface has been imaged to determine the most suitable landing site at the spherical coordinates [$R = 3775.2$ km, $\theta = 1.5708^{\circ}$ rad, $\phi = 0.2626^{\circ}$ rad].
 \end{abstract}
 
 \maketitle
-\section{Introduction} \label{sec:introduction}
-\colorbox{red}{To be added if evaluation includes this part}
-\section{Theory} \label{sec: theory}
-\colorbox{red}{To be added if evaluation includes this part}
-\section{Method} \label{sec: method}
-\colorbox{red}{To be added if evaluation includes this part}
-\section{Results} \label{sec: results}
 \onecolumngrid
+\section{Information} \label{sec:info}
+\begin{center}
+    In this paper we would like to only be graded based on the programming, results and discussion.
+\end{center}
+
+\section{Results} \label{sec: results}
+
 \subsection{Spectral Analysis of the Atmosphere} \label{ssec: Analysis results}
 \begin{table}[h!] \label{tab: Spec anal}
   \begin{tabular}{|c|*{4}{c|}}    
@@ -88,96 +88,13 @@
     \end{tabular}
   \end{table}
   \newpage
-  \clearpage
-  \begin{figure}[h!]  
-    \centering
-    \includegraphics[scale =.3]{Figures/O2 632}
-    \caption{Flux Data and Spectral Line Analysis}
-    \label{fig: O2 632}
-\end{figure}
-
-\begin{figure}[h!]  
-    \centering
-    \includegraphics[scale =.3]{Figures/O2 690}
-    \caption{Flux Data and Spectral Line Analysis}
-    \label{fig: O2 690}
-\end{figure}
-
-\begin{figure}[h!]
-  \centering
-  \includegraphics[scale =.3]{Figures/O2 760}
-  \caption{Flux Data and Spectral Line Analysis}
-  \label{fig: O2 760}
-\end{figure}
-
-\begin{figure}[h!]
-  \centering
-  \includegraphics[scale =.3]{Figures/H2O 720}
-  \caption{Flux Data and Spectral Line Analysis}
-  \label{fig: H2 720}
-\end{figure}
-
-\begin{figure}[h!]
-  \centering
-  \includegraphics[scale =.3]{Figures/H2O 820}
-  \caption{Flux Data and Spectral Line Analysis}
-  \label{fig: H2 820}
-\end{figure}
-
-\begin{figure}[h!]
-  \centering
-  \includegraphics[scale =.3]{Figures/H2O 940}
-  \caption{Flux Data and Spectral Line Analysis}
-  \label{fig: H2 940}
-\end{figure}
-
-\begin{figure}[h!]
-  \centering
-  \includegraphics[scale =.3]{Figures/CO2 1400}
-  \caption{Flux Data and Spectral Line Analysis}
-  \label{fig: CO2 1400}
-\end{figure}
-
-\begin{figure}[h!]
-  \centering
-  \includegraphics[scale =.3]{Figures/CO2 1600}
-  \caption{Flux Data and Spectral Line Analysis}
-  \label{fig: CO2 1600}
-\end{figure}
-
-\begin{figure}[h!]
-  \centering
-  \includegraphics[scale =.3]{Figures/CH4 1660}
-  \caption{Flux Data and Spectral Line Analysis}
-  \label{fig: CH4 1660}
-\end{figure}
-
-\begin{figure}[h!]
-  \centering
-  \includegraphics[scale =.3]{Figures/CH4 2200}
-  \caption{Flux Data and Spectral Line Analysis}
-  \label{fig: CH4 2200}
-\end{figure}
-
-\begin{figure}[h!]
-  \centering
-  \includegraphics[scale =.3]{Figures/CO 2340}
-  \caption{Flux Data and Spectral Line Analysis}
-  \label{fig: CO 2340}
-\end{figure}
-
-\begin{figure}[h!]
-  \centering
-  \includegraphics[scale =.3]{Figures/N2O 2870}
-  \caption{Flux Data and Spectral Line Analysis}
-  \label{fig: N20 2870}
-\end{figure}
-\clearpage
 \twocolumngrid
+% Figure~\ref{fig: O2 632},~\ref{fig: O2 690},~\ref{fig: O2 760},~\ref{fig: H2 720},~\ref{fig: H2 820},~\ref{fig: H2 940},~\ref{fig: CO2 1400},~\ref{fig: CO2 1600},~\ref{fig: CH4 1660},~\ref{fig: CH4 2200},~\ref{fig: CO 2340} \&~\ref{fig: N20 2870}
+Depicted in the figures in section~\ref{subsec:figures-atmospheric-analysis} are the Gaussian line profile of possible gases contained in the target planets atmosphere.
+Table~\ref{tab: Spec anal} depicts much of the same information in addition to the temperature.
 
-Depicted in Figure \ref{fig: O2 632}, \ref{fig: O2 690}, \ref{fig: O2 760}, \ref{fig: H2 720}, \ref{fig: H2 820}, \ref{fig: H2 940}, \ref{fig: CO2 1400}, \ref{fig: CO2 1600}, \ref{fig: CH4 1660}, \ref{fig: CH4 2200}, \ref{fig: CO 2340} \& \ref{fig: N20 2870} are the Gaussian line profile of possible gases contained in the target planets atmosphere. Table \ref{tab: Spec anal} depicts much of the same information in addition to the temperature. 
-
-On top of the plots we have added the noise from our data. The noise have values in the range of 0.05 to 0.15, but  For the sake of visualization we have added 0.95 as to lay the noise on top of the other data to make it easier to see its effect. 
+On top of the plots we have added the noise from our data.
+The noise have values in the range of 0.05 to 0.15, but for the sake of visualization we have added 0.95 as to lay the noise on top of the other data to make it easier to see its effect.
 
 \subsection{Model of Planet Atmosphere}
 \begin{figure}[h!]
@@ -223,6 +140,7 @@ On top of the plots we have added the noise from our data. The noise have values
     The view of some islands and oceans are obstructed by the blue-coloured clouds, but by using information of multiple images, we can see that there is a large island right underneath in Figure~\ref{fig:l_site6} and~\ref{fig:l_site7}.\\
 
     The spherical coordinates of each of the imaged landing sites in section~\ref{subsec:potential-landing-sites} can be seen in table~\ref{tab:land_coords}.
+    Radius stands for the distance of the positions to the center of the planet, theta is the angle between the z-axis and the line from the center of the planet and the spacecraft, and phi is the angle between the x-axis and the line between the center of the planet and the spacecraft.
     All coordinates are relative to the position of the planet at the time when we entered the lower-altitude orbit.\\
     \begin{table}[h]
         \begin{tabular}{|c|c|c|c|}
@@ -230,35 +148,35 @@ On top of the plots we have added the noise from our data. The noise have values
             \hline
             Site Nr. & Radius [km] & $\,\theta$ [rad] & $\,\phi$ [rad]\\
             \hline
-            Site 0 & 3775.2 & 3.0479 & -2.8217\\
+            Site 0 & 3775.2 & 1.5708 & 0.0\\
             \hline
-            Site 1 & 3775.2 & 3.0442 & -2.7816\\
+            Site 1 & 3775.2 & 1.5708 & 0.04377\\
             \hline
-            Site 2 & 3775.2 & 3.0405 & -2.7415\\
+            Site 2 & 3775.2 & 1.5708 & 0.08754\\
             \hline
-            Site 3 & 3775.2 & 3.0368 & -2.7015\\
+            Site 3 & 3775.2 & 1.5708 & 0.1313\\
             \hline
-            Site 4 & 3775.2 & 3.0331 & -2.6614\\
+            Site 4 & 3775.2 & 1.5708 & 0.1751\\
             \hline
-            Site 5 & 3775.2 & 3.0294 & -2.6213\\
+            Site 5 & 3775.2 & 1.5708 & 0.2189\\
             \hline
-            Site 6 & 3775.2 & 3.0257 & -2.5813\\
+            Site 6 & 3775.2 & 1.5708 & 0.2626\\
             \hline
-            Site 7 & 3775.2 & 3.0220 & -2.5412\\
+            Site 7 & 3775.2 & 1.5708 & 0.3064\\
             \hline
-            Site 8 & 3775.2 & 3.0183 & -2.5011\\
+            Site 8 & 3775.2 & 1.5708 & 0.3502\\
             \hline
-            Site 9 & 3775.2 & 3.0146 & -2.4610\\
+            Site 9 & 3775.2 & 1.5708 & 0.3939\\
             \hline
-            Site 10 & 3775.2 & 3.0109 & -2.4210\\
+            Site 10 & 3775.2 & 1.5708 & 0.4377\\
             \hline
-            Site 11 & 3775.2 & 3.0072 & -2.3809\\
+            Site 11 & 3775.2 & 1.5708 & 0.4815\\
             \hline
-            Site 12 & 3775.2 & 3.0035 & -2.3408\\
+            Site 12 & 3775.2 & 1.5708 & 0.5252\\
             \hline
-            Site 13 & 3775.2 & 2.9998 & -2.3008\\
+            Site 13 & 3775.2 & 1.5708 & 0.5690\\
             \hline
-            Site 14 & 3775.2 & 2.9961 & -2.2607\\
+            Site 14 & 3775.2 & 1.5708 & 0.6128\\
             \hline
         \end{tabular}
         \caption{Spherical coordinates of the potential landing sites imaged in section~\ref{subsec:potential-landing-sites}}
@@ -374,7 +292,7 @@ Judging by how good a fit our model is, we observe $ O_2 $ being the best fit by
 
 To conclude the discussion of results as seen in \ref{ssec: Spec Anal}, there is no clear candidate which checks all the boxes.
 We choose to consider how well a fit our model is in addition to the flux the most important factors as that is based in actual data and not our just our own calculations.
-The line profile seen in \ref{fig: O2 690} and \ref{fig: O2 760} matches a lot closer than the one seen in \ref{fig: O2 632}.
+The line profile seen in \ref{fig: O2 690} and \ref{fig: O2 760} matches a lot closer than the one seen in~\ref{fig: O2 632}.
 As the temperature of the first two are equal (450 $ K $) which also matches earlier estimates made in %~\parencite[][]{part3} TODO: Remove Comment
 of the planets temperature, we will assume they are real lines.
 The atmosphere is therefore 100 \% $ O_2 $ with a mean molecular weight $ \mu $ of
@@ -395,8 +313,8 @@ The atmosphere is therefore 100 \% $ O_2 $ with a mean molecular weight $ \mu $ 
     The spherical coordinates of the preferred landing site are\\
     \begin{align*}
         \text{Radius}:&\; 3775.2 \;\text{km}\\
-        \theta :&\; 3.0257^{\circ} \;\text{rad}\\
-        \phi :&\; -2.5813^{\circ} \;\text{rad}
+        \theta :&\; 1.5708^{\circ} \;\text{rad}\\
+        \phi :&\; 0.2626^{\circ} \;\text{rad}
     \end{align*}
 
     These coordinates are relative to the position of the planet at the point in time when we entered the lower orbit.
@@ -417,102 +335,190 @@ The atmosphere is therefore 100 \% $ O_2 $ with a mean molecular weight $ \mu $ 
     This way, the second boost will be executed at the perihelion of the transfer orbit and inject us in the desired orbit.
 
 
+\onecolumngrid
+\clearpage
+\subsection{Figures from Atmospheric analysis}\label{subsec:figures-atmospheric-analysis}
+    \begin{figure}[h!]
+        \centering
+        \includegraphics[scale =.3]{Figures/O2 632}
+        \caption{Flux Data and Spectral Line Analysis}
+        \label{fig: O2 632}
+    \end{figure}
+
+    \begin{figure}[h!]
+        \centering
+        \includegraphics[scale =.3]{Figures/O2 690}
+        \caption{Flux Data and Spectral Line Analysis}
+        \label{fig: O2 690}
+    \end{figure}
+
+    \begin{figure}[h!]
+      \centering
+      \includegraphics[scale =.3]{Figures/O2 760}
+      \caption{Flux Data and Spectral Line Analysis}
+      \label{fig: O2 760}
+    \end{figure}
+
+    \begin{figure}[h!]
+      \centering
+      \includegraphics[scale =.3]{Figures/H2O 720}
+      \caption{Flux Data and Spectral Line Analysis}
+      \label{fig: H2 720}
+    \end{figure}
+
+    \begin{figure}[h!]
+      \centering
+      \includegraphics[scale =.3]{Figures/H2O 820}
+      \caption{Flux Data and Spectral Line Analysis}
+      \label{fig: H2 820}
+    \end{figure}
+
+    \begin{figure}[h!]
+      \centering
+      \includegraphics[scale =.3]{Figures/H2O 940}
+      \caption{Flux Data and Spectral Line Analysis}
+      \label{fig: H2 940}
+    \end{figure}
+
+    \begin{figure}[h!]
+      \centering
+      \includegraphics[scale =.3]{Figures/CO2 1400}
+      \caption{Flux Data and Spectral Line Analysis}
+      \label{fig: CO2 1400}
+    \end{figure}
+
+    \begin{figure}[h!]
+      \centering
+      \includegraphics[scale =.3]{Figures/CO2 1600}
+      \caption{Flux Data and Spectral Line Analysis}
+      \label{fig: CO2 1600}
+    \end{figure}
+
+    \begin{figure}[h!]
+      \centering
+      \includegraphics[scale =.3]{Figures/CH4 1660}
+      \caption{Flux Data and Spectral Line Analysis}
+      \label{fig: CH4 1660}
+    \end{figure}
+
+    \begin{figure}[h!]
+      \centering
+      \includegraphics[scale =.3]{Figures/CH4 2200}
+      \caption{Flux Data and Spectral Line Analysis}
+      \label{fig: CH4 2200}
+    \end{figure}
+
+    \begin{figure}[h!]
+      \centering
+      \includegraphics[scale =.3]{Figures/CO 2340}
+      \caption{Flux Data and Spectral Line Analysis}
+      \label{fig: CO 2340}
+    \end{figure}
+
+    \begin{figure}[h!]
+      \centering
+      \includegraphics[scale =.3]{Figures/N2O 2870}
+      \caption{Flux Data and Spectral Line Analysis}
+      \label{fig: N20 2870}
+    \end{figure}
+\clearpage
+\twocolumngrid
+
 \subsection{Potential Landing sites}\label{subsec:potential-landing-sites}
-\begin{figure}[h]
-    %% H(Here), h(here approx), t(top of page), b(bottom of page)
-    \centering
-    \includegraphics[scale=0.14]{Figures/l_site0}
-    \caption{Picture of possible landing site 0 from the low-altitude orbit.}\label{fig:l_site0}
-\end{figure}
-\begin{figure}[h]
-    %% H(Here), h(here approx), t(top of page), b(bottom of page)
-    \centering
-    \includegraphics[scale=0.14]{Figures/l_site1}
-    \caption{Picture of possible landing site 1 from the low-altitude orbit.}\label{fig:l_site1}
-\end{figure}
-\begin{figure}[h]
-    %% H(Here), h(here approx), t(top of page), b(bottom of page)
-    \centering
-    \includegraphics[scale=0.14]{Figures/l_site2}
-    \caption{Picture of possible landing site 2 from the low-altitude orbit.}\label{fig:l_site2}
-\end{figure}
-\begin{figure}[h]
-    %% H(Here), h(here approx), t(top of page), b(bottom of page)
-    \centering
-    \includegraphics[scale=0.14]{Figures/l_site3}
-    \caption{Picture of possible landing site 3 from the low-altitude orbit.}\label{fig:l_site3}
-\end{figure}
-\begin{figure}[h]
-    %% H(Here), h(here approx), t(top of page), b(bottom of page)
-    \centering
-    \includegraphics[scale=0.14]{Figures/l_site4}
-    \caption{Picture of possible landing site 4 from the low-altitude orbit.}\label{fig:l_site4}
-\end{figure}
-\begin{figure}[h]
-    %% H(Here), h(here approx), t(top of page), b(bottom of page)
-    \centering
-    \includegraphics[scale=0.14]{Figures/l_site5}
-    \caption{Picture of possible landing site 5 from the low-altitude orbit.}\label{fig:l_site5}
-\end{figure}
-\begin{figure}[h]
-    %% H(Here), h(here approx), t(top of page), b(bottom of page)
-    \centering
-    \includegraphics[scale=0.14]{Figures/l_site6}
-    \caption{Picture of possible landing site 6 from the low-altitude orbit.}\label{fig:l_site6}
-\end{figure}
-\begin{figure}[h]
-    %% H(Here), h(here approx), t(top of page), b(bottom of page)
-    \centering
-    \includegraphics[scale=0.14]{Figures/l_site7}
-    \caption{Picture of possible landing site 7 from the low-altitude orbit.}\label{fig:l_site7}
-\end{figure}
-\begin{figure}[h]
-    %% H(Here), h(here approx), t(top of page), b(bottom of page)
-    \centering
-    \includegraphics[scale=0.14]{Figures/l_site8}
-    \caption{Picture of possible landing site 8 from the low-altitude orbit.}\label{fig:l_site8}
-\end{figure}
-\begin{figure}[h]
-    %% H(Here), h(here approx), t(top of page), b(bottom of page)
-    \centering
-    \includegraphics[scale=0.14]{Figures/l_site9}
-    \caption{Picture of possible landing site 9 from the low-altitude orbit.}\label{fig:l_site9}
-\end{figure}
-\begin{figure}[h]
-    %% H(Here), h(here approx), t(top of page), b(bottom of page)
-    \centering
-    \includegraphics[scale=0.14]{Figures/l_site10}
-    \caption{Picture of possible landing site 10 from the low-altitude orbit.}\label{fig:l_site10}
-\end{figure}
-\begin{figure}[h]
-    %% H(Here), h(here approx), t(top of page), b(bottom of page)
-    \centering
-    \includegraphics[scale=0.14]{Figures/l_site11}
-    \caption{Picture of possible landing site 11 from the low-altitude orbit.}\label{fig:l_site11}
-\end{figure}
-\begin{figure}[h]
-    %% H(Here), h(here approx), t(top of page), b(bottom of page)
-    \centering
-    \includegraphics[scale=0.14]{Figures/l_site12}
-    \caption{Picture of possible landing site 12 from the low-altitude orbit.}\label{fig:l_site12}
-\end{figure}
-\begin{figure}[h]
-    %% H(Here), h(here approx), t(top of page), b(bottom of page)
-    \centering
-    \includegraphics[scale=0.14]{Figures/l_site13}
-    \caption{Picture of possible landing site 13 from the low-altitude orbit.}\label{fig:l_site13}
-\end{figure}
-\begin{figure}[h]
-    %% H(Here), h(here approx), t(top of page), b(bottom of page)
-    \centering
-    \includegraphics[scale=0.14]{Figures/l_site14}
-    \caption{Picture of possible landing site 14 from the low-altitude orbit.}\label{fig:l_site14}
-\end{figure}
+    \begin{figure}[h]
+        %% H(Here), h(here approx), t(top of page), b(bottom of page)
+        \centering
+        \includegraphics[scale=0.14]{Figures/l_site0}
+        \caption{Picture of possible landing site 0 from the low-altitude orbit.}\label{fig:l_site0}
+    \end{figure}
+    \begin{figure}[h]
+        %% H(Here), h(here approx), t(top of page), b(bottom of page)
+        \centering
+        \includegraphics[scale=0.14]{Figures/l_site1}
+        \caption{Picture of possible landing site 1 from the low-altitude orbit.}\label{fig:l_site1}
+    \end{figure}
+    \begin{figure}[h]
+        %% H(Here), h(here approx), t(top of page), b(bottom of page)
+        \centering
+        \includegraphics[scale=0.14]{Figures/l_site2}
+        \caption{Picture of possible landing site 2 from the low-altitude orbit.}\label{fig:l_site2}
+    \end{figure}
+    \begin{figure}[h]
+        %% H(Here), h(here approx), t(top of page), b(bottom of page)
+        \centering
+        \includegraphics[scale=0.14]{Figures/l_site3}
+        \caption{Picture of possible landing site 3 from the low-altitude orbit.}\label{fig:l_site3}
+    \end{figure}
+    \begin{figure}[h]
+        %% H(Here), h(here approx), t(top of page), b(bottom of page)
+        \centering
+        \includegraphics[scale=0.14]{Figures/l_site4}
+        \caption{Picture of possible landing site 4 from the low-altitude orbit.}\label{fig:l_site4}
+    \end{figure}
+    \begin{figure}[h]
+        %% H(Here), h(here approx), t(top of page), b(bottom of page)
+        \centering
+        \includegraphics[scale=0.14]{Figures/l_site5}
+        \caption{Picture of possible landing site 5 from the low-altitude orbit.}\label{fig:l_site5}
+    \end{figure}
+    \begin{figure}[h]
+        %% H(Here), h(here approx), t(top of page), b(bottom of page)
+        \centering
+        \includegraphics[scale=0.14]{Figures/l_site6}
+        \caption{Picture of possible landing site 6 from the low-altitude orbit.}\label{fig:l_site6}
+    \end{figure}
+    \begin{figure}[h]
+        %% H(Here), h(here approx), t(top of page), b(bottom of page)
+        \centering
+        \includegraphics[scale=0.14]{Figures/l_site7}
+        \caption{Picture of possible landing site 7 from the low-altitude orbit.}\label{fig:l_site7}
+    \end{figure}
+    \begin{figure}[h]
+        %% H(Here), h(here approx), t(top of page), b(bottom of page)
+        \centering
+        \includegraphics[scale=0.14]{Figures/l_site8}
+        \caption{Picture of possible landing site 8 from the low-altitude orbit.}\label{fig:l_site8}
+    \end{figure}
+    \begin{figure}[h]
+        %% H(Here), h(here approx), t(top of page), b(bottom of page)
+        \centering
+        \includegraphics[scale=0.14]{Figures/l_site9}
+        \caption{Picture of possible landing site 9 from the low-altitude orbit.}\label{fig:l_site9}
+    \end{figure}
+    \begin{figure}[h]
+        %% H(Here), h(here approx), t(top of page), b(bottom of page)
+        \centering
+        \includegraphics[scale=0.14]{Figures/l_site10}
+        \caption{Picture of possible landing site 10 from the low-altitude orbit.}\label{fig:l_site10}
+    \end{figure}
+    \begin{figure}[h]
+        %% H(Here), h(here approx), t(top of page), b(bottom of page)
+        \centering
+        \includegraphics[scale=0.14]{Figures/l_site11}
+        \caption{Picture of possible landing site 11 from the low-altitude orbit.}\label{fig:l_site11}
+    \end{figure}
+    \begin{figure}[h]
+        %% H(Here), h(here approx), t(top of page), b(bottom of page)
+        \centering
+        \includegraphics[scale=0.14]{Figures/l_site12}
+        \caption{Picture of possible landing site 12 from the low-altitude orbit.}\label{fig:l_site12}
+    \end{figure}
+    \begin{figure}[h]
+        %% H(Here), h(here approx), t(top of page), b(bottom of page)
+        \centering
+        \includegraphics[scale=0.14]{Figures/l_site13}
+        \caption{Picture of possible landing site 13 from the low-altitude orbit.}\label{fig:l_site13}
+    \end{figure}
+    \begin{figure}[h]
+        %% H(Here), h(here approx), t(top of page), b(bottom of page)
+        \centering
+        \includegraphics[scale=0.14]{Figures/l_site14}
+        \caption{Picture of possible landing site 14 from the low-altitude orbit.}\label{fig:l_site14}
+    \end{figure}
 
 
-\section*{ACKNOWLEDGMENTS}   
-
-\section*{References} \label{sec: references}
+\newpage
+%\printbibliography TODO: Remove Comment
 
 \end{document}
 

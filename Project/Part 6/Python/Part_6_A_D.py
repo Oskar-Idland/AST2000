@@ -42,7 +42,7 @@ def cart_to_spherical(x, y, z):
     :param x: x-coordinate
     :param y: y-coordinate
     :param z: z-coordinate
-    :return: Spherical coordinates r, theta, phi (phi measured from z-axis)
+    :return: Spherical coordinates r, theta (theta measured from z-axis), phi
     """
     r = np.sqrt(x ** 2 + y ** 2 + z ** 2)
     theta = np.arccos(z / r)
@@ -112,8 +112,8 @@ def find_actual_coordinates(curr_coords, time_elapsed, planet_idx=1, cartesian=F
 
     r_planet = system.radii[planet_idx] * 1000  # Planet radius
     omega = (2 * np.pi) / (system.rotational_periods[planet_idx] * 24 * 3600)  # Angular velocity of atmosphere
-    new_theta = (curr_coords[1] - (omega * time_elapsed)) % (2 * np.pi)  # Calculating new theta angle
-    new_coords = np.array([r_planet, new_theta, curr_coords[2]])  # New coordinates
+    new_phi = (curr_coords[2] + (omega * time_elapsed))  # Calculating new theta angle
+    new_coords = np.array([r_planet, curr_coords[1], new_phi])  # New coordinates
     return new_coords
 
 
@@ -176,8 +176,8 @@ def verify_constant_orbit_height(land_seq, max_diff=100):
 
 def image_landing_site(land_seq, idx=0, planet_idx=1):
     t, pos_cart, vel_cart = land_seq.orient()
-    r, theta, phi = cart_to_spherical(pos_cart[0], pos_cart[1], pos_cart[2])
-    act_coords = find_actual_coordinates([r, theta, phi], t)
+    # r, theta, phi = cart_to_spherical(pos_cart[0], pos_cart[1], pos_cart[2])
+    act_coords = find_actual_coordinates(pos_cart, t, cartesian=True)
     pos = f"Landing_site{idx}: {act_coords[0]}, {act_coords[1]}, {act_coords[2]}\n"
     with open("landing_area_coords.txt", "a") as file:
         file.write(pos)
@@ -189,7 +189,7 @@ def image_landing_site(land_seq, idx=0, planet_idx=1):
 
 if __name__ == "__main__":
     landing_seq = mission.begin_landing_sequence()  # Creating landing sequence instance
-    print(verify_constant_orbit_height(landing_seq))  # Verifying stability of orbital height
+    # print(verify_constant_orbit_height(landing_seq))  # Verifying stability of orbital height
     landing_seq.start_video()
     picture_num = 15  # Number of landing site pictures to be taken
     picture_delay = 60  # Delay between when pictures are taken in seconds

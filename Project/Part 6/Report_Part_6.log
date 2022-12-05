@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2022.2.21)  30 NOV 2022 19:21
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2022.2.21)  5 DEC 2022 11:01
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -557,345 +557,347 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 43.
 (/usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1{/usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-<Figures/O2 632.pdf, id=129, 1445.4pt x 578.16pt>
-File: Figures/O2 632.pdf Graphic file (type pdf)
-<use Figures/O2 632.pdf>
-Package pdftex.def Info: Figures/O2 632.pdf  used on input line 94.
-(pdftex.def)             Requested size: 433.62335pt x 173.44933pt.
-<Figures/O2 690.pdf, id=130, 1445.4pt x 578.16pt>
-File: Figures/O2 690.pdf Graphic file (type pdf)
-<use Figures/O2 690.pdf>
-Package pdftex.def Info: Figures/O2 690.pdf  used on input line 101.
-(pdftex.def)             Requested size: 433.62335pt x 173.44933pt.
-<Figures/O2 760.pdf, id=131, 1445.4pt x 578.16pt>
-File: Figures/O2 760.pdf Graphic file (type pdf)
-<use Figures/O2 760.pdf>
-Package pdftex.def Info: Figures/O2 760.pdf  used on input line 108.
-(pdftex.def)             Requested size: 433.62335pt x 173.44933pt.
-<Figures/H2O 720.pdf, id=132, 1300.86pt x 578.16pt>
-File: Figures/H2O 720.pdf Graphic file (type pdf)
-<use Figures/H2O 720.pdf>
-Package pdftex.def Info: Figures/H2O 720.pdf  used on input line 115.
-(pdftex.def)             Requested size: 390.26102pt x 173.44933pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<Figures/H2O 820.pdf, id=133, 1300.86pt x 578.16pt>
-File: Figures/H2O 820.pdf Graphic file (type pdf)
-<use Figures/H2O 820.pdf>
-Package pdftex.def Info: Figures/H2O 820.pdf  used on input line 122.
-(pdftex.def)             Requested size: 390.26102pt x 173.44933pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<Figures/H2O 940.pdf, id=134, 1300.86pt x 578.16pt>
-File: Figures/H2O 940.pdf Graphic file (type pdf)
-<use Figures/H2O 940.pdf>
-Package pdftex.def Info: Figures/H2O 940.pdf  used on input line 129.
-(pdftex.def)             Requested size: 390.26102pt x 173.44933pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<Figures/CO2 1400.pdf, id=135, 1445.4pt x 578.16pt>
-File: Figures/CO2 1400.pdf Graphic file (type pdf)
-<use Figures/CO2 1400.pdf>
-Package pdftex.def Info: Figures/CO2 1400.pdf  used on input line 136.
-(pdftex.def)             Requested size: 433.62335pt x 173.44933pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<Figures/CO2 1600.pdf, id=136, 1445.4pt x 578.16pt>
-File: Figures/CO2 1600.pdf Graphic file (type pdf)
-<use Figures/CO2 1600.pdf>
-Package pdftex.def Info: Figures/CO2 1600.pdf  used on input line 143.
-(pdftex.def)             Requested size: 433.62335pt x 173.44933pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<Figures/CH4 1660.pdf, id=137, 1445.4pt x 578.16pt>
-File: Figures/CH4 1660.pdf Graphic file (type pdf)
-<use Figures/CH4 1660.pdf>
-Package pdftex.def Info: Figures/CH4 1660.pdf  used on input line 150.
-(pdftex.def)             Requested size: 433.62335pt x 173.44933pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<Figures/CH4 2200.pdf, id=138, 1445.4pt x 578.16pt>
-File: Figures/CH4 2200.pdf Graphic file (type pdf)
-<use Figures/CH4 2200.pdf>
-Package pdftex.def Info: Figures/CH4 2200.pdf  used on input line 157.
-(pdftex.def)             Requested size: 433.62335pt x 173.44933pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<Figures/CO 2340.pdf, id=139, 1445.4pt x 578.16pt>
-File: Figures/CO 2340.pdf Graphic file (type pdf)
-<use Figures/CO 2340.pdf>
-Package pdftex.def Info: Figures/CO 2340.pdf  used on input line 164.
-(pdftex.def)             Requested size: 433.62335pt x 173.44933pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<Figures/N2O 2870.pdf, id=140, 1445.4pt x 578.16pt>
-File: Figures/N2O 2870.pdf Graphic file (type pdf)
-<use Figures/N2O 2870.pdf>
-Package pdftex.def Info: Figures/N2O 2870.pdf  used on input line 171.
-(pdftex.def)             Requested size: 433.62335pt x 173.44933pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[2 </Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 6/Figures/O2 632
-.pdf> </Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 6/Figures/O2 
-690.pdf> </Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 6/Figures/
-O2 760.pdf>] [3 </Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 6/F
-igures/H2O 720.pdf> </Users/jannikeschler/Documents/GitHub/AST2000/Project/Part
- 6/Figures/H2O 820.pdf> </Users/jannikeschler/Documents/GitHub/AST2000/Project/
-Part 6/Figures/H2O 940.pdf>] [4 </Users/jannikeschler/Documents/GitHub/AST2000/
-Project/Part 6/Figures/CO2 1400.pdf> </Users/jannikeschler/Documents/GitHub/AST
-2000/Project/Part 6/Figures/CO2 1600.pdf> </Users/jannikeschler/Documents/GitHu
-b/AST2000/Project/Part 6/Figures/CH4 1660.pdf>] [5 </Users/jannikeschler/Docume
-nts/GitHub/AST2000/Project/Part 6/Figures/CH4 2200.pdf> </Users/jannikeschler/D
-ocuments/GitHub/AST2000/Project/Part 6/Figures/CO 2340.pdf> </Users/jannikeschl
-er/Documents/GitHub/AST2000/Project/Part 6/Figures/N2O 2870.pdf>]
-<Figures/Temperature plot.pdf, id=697, 462.52798pt x 346.89601pt>
+<Figures/Temperature plot.pdf, id=123, 462.52798pt x 346.89601pt>
 File: Figures/Temperature plot.pdf Graphic file (type pdf)
 <use Figures/Temperature plot.pdf>
-Package pdftex.def Info: Figures/Temperature plot.pdf  used on input line 185.
+Package pdftex.def Info: Figures/Temperature plot.pdf  used on input line 102.
 (pdftex.def)             Requested size: 185.0079pt x 138.75594pt.
-<Figures/Density plot.pdf, id=698, 462.52798pt x 346.89601pt>
+<Figures/Density plot.pdf, id=124, 462.52798pt x 346.89601pt>
 File: Figures/Density plot.pdf Graphic file (type pdf)
 <use Figures/Density plot.pdf>
-Package pdftex.def Info: Figures/Density plot.pdf  used on input line 192.
+Package pdftex.def Info: Figures/Density plot.pdf  used on input line 109.
 (pdftex.def)             Requested size: 185.0079pt x 138.75594pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 209--210
+Underfull \hbox (badness 10000) in paragraph at lines 126--127
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 211--212
+Underfull \hbox (badness 10000) in paragraph at lines 128--129
 
  []
 
 
-Underfull \hbox (badness 1038) in paragraph at lines 219--224
+Underfull \hbox (badness 1038) in paragraph at lines 136--141
 \OT1/cmr/m/n/10 tak-ing 15 pic-tures in equally spaced in-ter-vals of $1$
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 219--224
+Underfull \hbox (badness 10000) in paragraph at lines 136--141
 
  []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[6 </Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 6/Figures/Temper
+[2 </Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 6/Figures/Temper
 ature plot.pdf> </Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 6/F
 igures/Density plot.pdf>]
 
 LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
- on input line 279.
+ on input line 195.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 284--286
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 287--289
+Underfull \hbox (badness 10000) in paragraph at lines 202--204
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 290--292
+Underfull \hbox (badness 10000) in paragraph at lines 205--207
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 293--295
+Underfull \hbox (badness 10000) in paragraph at lines 208--210
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 211--213
 
  []
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 297.
+(hyperref)                removing `math shift' on input line 215.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 297.
+(hyperref)                removing `subscript' on input line 215.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 297.
+(hyperref)                removing `math shift' on input line 215.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 306.
+(hyperref)                removing `math shift' on input line 224.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 306.
+(hyperref)                removing `subscript' on input line 224.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 306.
+(hyperref)                removing `math shift' on input line 224.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 309.
+(hyperref)                removing `math shift' on input line 227.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 309.
+(hyperref)                removing `subscript' on input line 227.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 309.
+(hyperref)                removing `math shift' on input line 227.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 316.
+(hyperref)                removing `math shift' on input line 234.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 316.
+(hyperref)                removing `subscript' on input line 234.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 316.
+(hyperref)                removing `math shift' on input line 234.
 
-[7]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 323.
-
+[3]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 323.
+(hyperref)                removing `math shift' on input line 241.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 326.
+(hyperref)                removing `math shift' on input line 241.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 326.
+(hyperref)                removing `math shift' on input line 244.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 326.
+(hyperref)                removing `subscript' on input line 244.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 331--339
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 244.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 249--257
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 340--343
+Underfull \hbox (badness 10000) in paragraph at lines 258--261
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 351--355
+Underfull \hbox (badness 10000) in paragraph at lines 269--273
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 356--359
+Underfull \hbox (badness 10000) in paragraph at lines 274--277
 
  []
 
-(/usr/local/texlive/2021/texmf-dist/tex/latex/ucs/data/uni-34.def
+[4] (/usr/local/texlive/2021/texmf-dist/tex/latex/ucs/data/uni-34.def
 File: uni-34.def 2013/05/13 UCS: Unicode data U+2200..U+22FF
-) [8]
-Underfull \hbox (badness 10000) in paragraph at lines 386--392
+)
+Underfull \hbox (badness 10000) in paragraph at lines 304--310
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 393--396
+Underfull \hbox (badness 10000) in paragraph at lines 311--314
 
  []
 
-<Figures/l_site0.png, id=833, 1284.8pt x 1027.84pt>
+[5]
+<Figures/O2 632.pdf, id=277, 1445.4pt x 578.16pt>
+File: Figures/O2 632.pdf Graphic file (type pdf)
+<use Figures/O2 632.pdf>
+Package pdftex.def Info: Figures/O2 632.pdf  used on input line 343.
+(pdftex.def)             Requested size: 433.62335pt x 173.44933pt.
+<Figures/O2 690.pdf, id=278, 1445.4pt x 578.16pt>
+File: Figures/O2 690.pdf Graphic file (type pdf)
+<use Figures/O2 690.pdf>
+Package pdftex.def Info: Figures/O2 690.pdf  used on input line 350.
+(pdftex.def)             Requested size: 433.62335pt x 173.44933pt.
+<Figures/O2 760.pdf, id=279, 1445.4pt x 578.16pt>
+File: Figures/O2 760.pdf Graphic file (type pdf)
+<use Figures/O2 760.pdf>
+Package pdftex.def Info: Figures/O2 760.pdf  used on input line 357.
+(pdftex.def)             Requested size: 433.62335pt x 173.44933pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<Figures/H2O 720.pdf, id=280, 1300.86pt x 578.16pt>
+File: Figures/H2O 720.pdf Graphic file (type pdf)
+<use Figures/H2O 720.pdf>
+Package pdftex.def Info: Figures/H2O 720.pdf  used on input line 364.
+(pdftex.def)             Requested size: 390.26102pt x 173.44933pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<Figures/H2O 820.pdf, id=281, 1300.86pt x 578.16pt>
+File: Figures/H2O 820.pdf Graphic file (type pdf)
+<use Figures/H2O 820.pdf>
+Package pdftex.def Info: Figures/H2O 820.pdf  used on input line 371.
+(pdftex.def)             Requested size: 390.26102pt x 173.44933pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<Figures/H2O 940.pdf, id=282, 1300.86pt x 578.16pt>
+File: Figures/H2O 940.pdf Graphic file (type pdf)
+<use Figures/H2O 940.pdf>
+Package pdftex.def Info: Figures/H2O 940.pdf  used on input line 378.
+(pdftex.def)             Requested size: 390.26102pt x 173.44933pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<Figures/CO2 1400.pdf, id=283, 1445.4pt x 578.16pt>
+File: Figures/CO2 1400.pdf Graphic file (type pdf)
+<use Figures/CO2 1400.pdf>
+Package pdftex.def Info: Figures/CO2 1400.pdf  used on input line 385.
+(pdftex.def)             Requested size: 433.62335pt x 173.44933pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<Figures/CO2 1600.pdf, id=284, 1445.4pt x 578.16pt>
+File: Figures/CO2 1600.pdf Graphic file (type pdf)
+<use Figures/CO2 1600.pdf>
+Package pdftex.def Info: Figures/CO2 1600.pdf  used on input line 392.
+(pdftex.def)             Requested size: 433.62335pt x 173.44933pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<Figures/CH4 1660.pdf, id=285, 1445.4pt x 578.16pt>
+File: Figures/CH4 1660.pdf Graphic file (type pdf)
+<use Figures/CH4 1660.pdf>
+Package pdftex.def Info: Figures/CH4 1660.pdf  used on input line 399.
+(pdftex.def)             Requested size: 433.62335pt x 173.44933pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<Figures/CH4 2200.pdf, id=286, 1445.4pt x 578.16pt>
+File: Figures/CH4 2200.pdf Graphic file (type pdf)
+<use Figures/CH4 2200.pdf>
+Package pdftex.def Info: Figures/CH4 2200.pdf  used on input line 406.
+(pdftex.def)             Requested size: 433.62335pt x 173.44933pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<Figures/CO 2340.pdf, id=287, 1445.4pt x 578.16pt>
+File: Figures/CO 2340.pdf Graphic file (type pdf)
+<use Figures/CO 2340.pdf>
+Package pdftex.def Info: Figures/CO 2340.pdf  used on input line 413.
+(pdftex.def)             Requested size: 433.62335pt x 173.44933pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<Figures/N2O 2870.pdf, id=288, 1445.4pt x 578.16pt>
+File: Figures/N2O 2870.pdf Graphic file (type pdf)
+<use Figures/N2O 2870.pdf>
+Package pdftex.def Info: Figures/N2O 2870.pdf  used on input line 420.
+(pdftex.def)             Requested size: 433.62335pt x 173.44933pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[6 </Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 6/Figures/O2 632
+.pdf> </Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 6/Figures/O2 
+690.pdf>] [7 </Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 6/Figu
+res/O2 760.pdf> </Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 6/F
+igures/H2O 720.pdf> </Users/jannikeschler/Documents/GitHub/AST2000/Project/Part
+ 6/Figures/H2O 820.pdf>] [8 </Users/jannikeschler/Documents/GitHub/AST2000/Proj
+ect/Part 6/Figures/H2O 940.pdf> </Users/jannikeschler/Documents/GitHub/AST2000/
+Project/Part 6/Figures/CO2 1400.pdf> </Users/jannikeschler/Documents/GitHub/AST
+2000/Project/Part 6/Figures/CO2 1600.pdf>] [9 </Users/jannikeschler/Documents/G
+itHub/AST2000/Project/Part 6/Figures/CH4 1660.pdf> </Users/jannikeschler/Docume
+nts/GitHub/AST2000/Project/Part 6/Figures/CH4 2200.pdf> </Users/jannikeschler/D
+ocuments/GitHub/AST2000/Project/Part 6/Figures/CO 2340.pdf>] [10 </Users/jannik
+eschler/Documents/GitHub/AST2000/Project/Part 6/Figures/N2O 2870.pdf>]
+<Figures/l_site0.png, id=825, 1284.8pt x 1027.84pt>
 File: Figures/l_site0.png Graphic file (type png)
 <use Figures/l_site0.png>
-Package pdftex.def Info: Figures/l_site0.png  used on input line 424.
+Package pdftex.def Info: Figures/l_site0.png  used on input line 431.
 (pdftex.def)             Requested size: 179.87077pt x 143.89662pt.
-<Figures/l_site1.png, id=834, 1284.8pt x 1027.84pt>
+<Figures/l_site1.png, id=826, 1284.8pt x 1027.84pt>
 File: Figures/l_site1.png Graphic file (type png)
 <use Figures/l_site1.png>
-Package pdftex.def Info: Figures/l_site1.png  used on input line 430.
+Package pdftex.def Info: Figures/l_site1.png  used on input line 437.
 (pdftex.def)             Requested size: 179.87077pt x 143.89662pt.
-<Figures/l_site2.png, id=835, 1284.8pt x 1027.84pt>
+<Figures/l_site2.png, id=827, 1284.8pt x 1027.84pt>
 File: Figures/l_site2.png Graphic file (type png)
 <use Figures/l_site2.png>
-Package pdftex.def Info: Figures/l_site2.png  used on input line 436.
+Package pdftex.def Info: Figures/l_site2.png  used on input line 443.
 (pdftex.def)             Requested size: 179.87077pt x 143.89662pt.
-<Figures/l_site3.png, id=836, 1284.8pt x 1027.84pt>
+<Figures/l_site3.png, id=828, 1284.8pt x 1027.84pt>
 File: Figures/l_site3.png Graphic file (type png)
 <use Figures/l_site3.png>
-Package pdftex.def Info: Figures/l_site3.png  used on input line 442.
+Package pdftex.def Info: Figures/l_site3.png  used on input line 449.
 (pdftex.def)             Requested size: 179.87077pt x 143.89662pt.
-<Figures/l_site4.png, id=837, 1284.8pt x 1027.84pt>
+<Figures/l_site4.png, id=829, 1284.8pt x 1027.84pt>
 File: Figures/l_site4.png Graphic file (type png)
 <use Figures/l_site4.png>
-Package pdftex.def Info: Figures/l_site4.png  used on input line 448.
+Package pdftex.def Info: Figures/l_site4.png  used on input line 455.
 (pdftex.def)             Requested size: 179.87077pt x 143.89662pt.
-<Figures/l_site5.png, id=838, 1284.8pt x 1027.84pt>
+<Figures/l_site5.png, id=830, 1284.8pt x 1027.84pt>
 File: Figures/l_site5.png Graphic file (type png)
 <use Figures/l_site5.png>
-Package pdftex.def Info: Figures/l_site5.png  used on input line 454.
+Package pdftex.def Info: Figures/l_site5.png  used on input line 461.
 (pdftex.def)             Requested size: 179.87077pt x 143.89662pt.
-<Figures/l_site6.png, id=839, 1284.8pt x 1027.84pt>
+<Figures/l_site6.png, id=831, 1284.8pt x 1027.84pt>
 File: Figures/l_site6.png Graphic file (type png)
 <use Figures/l_site6.png>
-Package pdftex.def Info: Figures/l_site6.png  used on input line 460.
+Package pdftex.def Info: Figures/l_site6.png  used on input line 467.
 (pdftex.def)             Requested size: 179.87077pt x 143.89662pt.
-<Figures/l_site7.png, id=840, 1284.8pt x 1027.84pt>
+<Figures/l_site7.png, id=832, 1284.8pt x 1027.84pt>
 File: Figures/l_site7.png Graphic file (type png)
 <use Figures/l_site7.png>
-Package pdftex.def Info: Figures/l_site7.png  used on input line 466.
+Package pdftex.def Info: Figures/l_site7.png  used on input line 473.
 (pdftex.def)             Requested size: 179.87077pt x 143.89662pt.
-<Figures/l_site8.png, id=841, 1284.8pt x 1027.84pt>
+<Figures/l_site8.png, id=833, 1284.8pt x 1027.84pt>
 File: Figures/l_site8.png Graphic file (type png)
 <use Figures/l_site8.png>
-Package pdftex.def Info: Figures/l_site8.png  used on input line 472.
+Package pdftex.def Info: Figures/l_site8.png  used on input line 479.
 (pdftex.def)             Requested size: 179.87077pt x 143.89662pt.
-<Figures/l_site9.png, id=842, 1284.8pt x 1027.84pt>
+<Figures/l_site9.png, id=834, 1284.8pt x 1027.84pt>
 File: Figures/l_site9.png Graphic file (type png)
 <use Figures/l_site9.png>
-Package pdftex.def Info: Figures/l_site9.png  used on input line 478.
+Package pdftex.def Info: Figures/l_site9.png  used on input line 485.
 (pdftex.def)             Requested size: 179.87077pt x 143.89662pt.
-<Figures/l_site10.png, id=843, 1284.8pt x 1027.84pt>
+<Figures/l_site10.png, id=835, 1284.8pt x 1027.84pt>
 File: Figures/l_site10.png Graphic file (type png)
 <use Figures/l_site10.png>
-Package pdftex.def Info: Figures/l_site10.png  used on input line 484.
+Package pdftex.def Info: Figures/l_site10.png  used on input line 491.
 (pdftex.def)             Requested size: 179.87077pt x 143.89662pt.
-<Figures/l_site11.png, id=844, 1284.8pt x 1027.84pt>
+<Figures/l_site11.png, id=836, 1284.8pt x 1027.84pt>
 File: Figures/l_site11.png Graphic file (type png)
 <use Figures/l_site11.png>
-Package pdftex.def Info: Figures/l_site11.png  used on input line 490.
+Package pdftex.def Info: Figures/l_site11.png  used on input line 497.
 (pdftex.def)             Requested size: 179.87077pt x 143.89662pt.
-<Figures/l_site12.png, id=845, 1284.8pt x 1027.84pt>
+<Figures/l_site12.png, id=837, 1284.8pt x 1027.84pt>
 File: Figures/l_site12.png Graphic file (type png)
 <use Figures/l_site12.png>
-Package pdftex.def Info: Figures/l_site12.png  used on input line 496.
+Package pdftex.def Info: Figures/l_site12.png  used on input line 503.
 (pdftex.def)             Requested size: 179.87077pt x 143.89662pt.
-<Figures/l_site13.png, id=846, 1284.8pt x 1027.84pt>
+<Figures/l_site13.png, id=838, 1284.8pt x 1027.84pt>
 File: Figures/l_site13.png Graphic file (type png)
 <use Figures/l_site13.png>
-Package pdftex.def Info: Figures/l_site13.png  used on input line 502.
+Package pdftex.def Info: Figures/l_site13.png  used on input line 509.
 (pdftex.def)             Requested size: 179.87077pt x 143.89662pt.
-<Figures/l_site14.png, id=847, 1284.8pt x 1027.84pt>
+<Figures/l_site14.png, id=839, 1284.8pt x 1027.84pt>
 File: Figures/l_site14.png Graphic file (type png)
 <use Figures/l_site14.png>
-Package pdftex.def Info: Figures/l_site14.png  used on input line 508.
+Package pdftex.def Info: Figures/l_site14.png  used on input line 515.
 (pdftex.def)             Requested size: 179.87077pt x 143.89662pt.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -935,60 +937,69 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 (/Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 6/Report_Part_6.bbl
-) [9 </Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 6/Figures/l_si
-te0.png (PNG copy)> </Users/jannikeschler/Documents/GitHub/AST2000/Project/Part
- 6/Figures/l_site1.png (PNG copy)>] [10 </Users/jannikeschler/Documents/GitHub/
-AST2000/Project/Part 6/Figures/l_site2.png (PNG copy)> </Users/jannikeschler/Do
-cuments/GitHub/AST2000/Project/Part 6/Figures/l_site3.png (PNG copy)> </Users/j
-annikeschler/Documents/GitHub/AST2000/Project/Part 6/Figures/l_site4.png (PNG c
-opy)>] [11 </Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 6/Figure
-s/l_site5.png (PNG copy)> </Users/jannikeschler/Documents/GitHub/AST2000/Projec
-t/Part 6/Figures/l_site6.png (PNG copy)> </Users/jannikeschler/Documents/GitHub
-/AST2000/Project/Part 6/Figures/l_site7.png (PNG copy)>] [12 </Users/jannikesch
-ler/Documents/GitHub/AST2000/Project/Part 6/Figures/l_site8.png (PNG copy)> </U
-sers/jannikeschler/Documents/GitHub/AST2000/Project/Part 6/Figures/l_site9.png 
-(PNG copy)> </Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 6/Figur
-es/l_site10.png (PNG copy)>] [13 </Users/jannikeschler/Documents/GitHub/AST2000
-/Project/Part 6/Figures/l_site11.png (PNG copy)> </Users/jannikeschler/Document
-s/GitHub/AST2000/Project/Part 6/Figures/l_site12.png (PNG copy)> </Users/jannik
-eschler/Documents/GitHub/AST2000/Project/Part 6/Figures/l_site13.png (PNG copy)
->] [14 </Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 6/Figures/l_
-site14.png (PNG copy)>]
+) [11 </Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 6/Figures/l_s
+ite0.png (PNG copy)> </Users/jannikeschler/Documents/GitHub/AST2000/Project/Par
+t 6/Figures/l_site1.png (PNG copy)> </Users/jannikeschler/Documents/GitHub/AST2
+000/Project/Part 6/Figures/l_site2.png (PNG copy)>] [12 </Users/jannikeschler/D
+ocuments/GitHub/AST2000/Project/Part 6/Figures/l_site3.png (PNG copy)> </Users/
+jannikeschler/Documents/GitHub/AST2000/Project/Part 6/Figures/l_site4.png (PNG 
+copy)> </Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 6/Figures/l_
+site5.png (PNG copy)>] [13 </Users/jannikeschler/Documents/GitHub/AST2000/Proje
+ct/Part 6/Figures/l_site6.png (PNG copy)> </Users/jannikeschler/Documents/GitHu
+b/AST2000/Project/Part 6/Figures/l_site7.png (PNG copy)> </Users/jannikeschler/
+Documents/GitHub/AST2000/Project/Part 6/Figures/l_site8.png (PNG copy)>]
+[14 </Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 6/Figures/l_sit
+e9.png (PNG copy)> </Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 
+6/Figures/l_site10.png (PNG copy)> </Users/jannikeschler/Documents/GitHub/AST20
+00/Project/Part 6/Figures/l_site11.png (PNG copy)>] [15 </Users/jannikeschler/D
+ocuments/GitHub/AST2000/Project/Part 6/Figures/l_site12.png (PNG copy)> </Users
+/jannikeschler/Documents/GitHub/AST2000/Project/Part 6/Figures/l_site13.png (PN
+G copy)> </Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 6/Figures/
+l_site14.png (PNG copy)>]
 (/Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 6/Report_Part_6.aux
 )
-Package rerunfilecheck Info: File `Report_Part_6.out' has not changed.
-(rerunfilecheck)             Checksum: 7BB4B5B99DFA7F5DECBD3DB747D7AB58;3838.
+
+Package rerunfilecheck Warning: File `Report_Part_6.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `Report_Part_6.out':
+(rerunfilecheck)             Before: 72ACEB79C33886D812E3E57DF3B997D0;3758
+(rerunfilecheck)             After:  0984FE40FE696FF6A7ABE6961FFB5628;3652.
  ) 
 Here is how much of TeX's memory you used:
- 15335 strings out of 478994
- 217386 string characters out of 5858184
- 754395 words of memory out of 5000000
- 32500 multiletter control sequences out of 15000+600000
+ 15332 strings out of 478994
+ 217358 string characters out of 5858184
+ 752395 words of memory out of 5000000
+ 32498 multiletter control sequences out of 15000+600000
  410159 words of font info for 57 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  81i,10n,89p,510b,522s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc
-}</usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
-</usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></
-usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></u
-sr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></us
-r/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/
-local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/lo
-cal/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/loca
-l/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/t
-exlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texl
-ive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive
-/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/
-2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/20
-21/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2021
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2021/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/2021/tex
-mf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
+pdfTeX warning (dest): name{section*.26} has been referenced but does not exi
+st, replaced by a fixed one
+
+{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<
+/usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></
+usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></us
+r/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr
+/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/
+local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/lo
+cal/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/loca
+l/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/
+texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/tex
+live/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texliv
+e/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2
+021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/20
+21/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2021
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2021/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2021/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/2021/texmf
+-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
 Output written on "/Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 6
-/Report_Part_6.pdf" (14 pages, 30449122 bytes).
+/Report_Part_6.pdf" (15 pages, 30448340 bytes).
 PDF statistics:
- 959 PDF objects out of 1000 (max. 8388607)
- 374 compressed objects within 4 object streams
- 72 named destinations out of 1000 (max. 500000)
- 370 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 944 PDF objects out of 1000 (max. 8388607)
+ 358 compressed objects within 4 object streams
+ 71 named destinations out of 1000 (max. 500000)
+ 354 words of extra memory for PDF output out of 10000 (max. 10000000)
 
