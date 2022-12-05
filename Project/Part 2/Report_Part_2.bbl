@@ -1,53 +1,104 @@
-%apsrev4-2.bst 2019-01-14 (MD) hand-edited version of apsrev4-1.bst
-%Control: key (0)
-%Control: author (8) initials jnrlst
-%Control: editor formatted (1) identically to author
-%Control: production of article title (0) allowed
-%Control: page (0) single
-%Control: year (1) truncated
-%Control: production of eprint (0) enabled
-\begin{thebibliography}{0}%
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.1 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
 \makeatletter
-\providecommand \@ifxundefined [1]{%
- \@ifx{#1\undefined}
-}%
-\providecommand \@ifnum [1]{%
- \ifnum #1\expandafter \@firstoftwo
- \else \expandafter \@secondoftwo
- \fi
-}%
-\providecommand \@ifx [1]{%
- \ifx #1\expandafter \@firstoftwo
- \else \expandafter \@secondoftwo
- \fi
-}%
-\providecommand \natexlab [1]{#1}%
-\providecommand \enquote  [1]{``#1''}%
-\providecommand \bibnamefont  [1]{#1}%
-\providecommand \bibfnamefont [1]{#1}%
-\providecommand \citenamefont [1]{#1}%
-\providecommand \href@noop [0]{\@secondoftwo}%
-\providecommand \href [0]{\begingroup \@sanitize@url \@href}%
-\providecommand \@href[1]{\@@startlink{#1}\@@href}%
-\providecommand \@@href[1]{\endgroup#1\@@endlink}%
-\providecommand \@sanitize@url [0]{\catcode `\\12\catcode `\$12\catcode
-  `\&12\catcode `\#12\catcode `\^12\catcode `\_12\catcode `\%12\relax}%
-\providecommand \@@startlink[1]{}%
-\providecommand \@@endlink[0]{}%
-\providecommand \url  [0]{\begingroup\@sanitize@url \@url }%
-\providecommand \@url [1]{\endgroup\@href {#1}{\urlprefix }}%
-\providecommand \urlprefix  [0]{URL }%
-\providecommand \Eprint [0]{\href }%
-\providecommand \doibase [0]{https://doi.org/}%
-\providecommand \selectlanguage [0]{\@gobble}%
-\providecommand \bibinfo  [0]{\@secondoftwo}%
-\providecommand \bibfield  [0]{\@secondoftwo}%
-\providecommand \translation [1]{[#1]}%
-\providecommand \BibitemOpen [0]{}%
-\providecommand \bibitemStop [0]{}%
-\providecommand \bibitemNoStop [0]{.\EOS\space}%
-\providecommand \EOS [0]{\spacefactor3000\relax}%
-\providecommand \BibitemShut  [1]{\csname bibitem#1\endcsname}%
-\let\auto@bib@innerbib\@empty
-%</preamble>
-\end{thebibliography}%
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global}
+    \entry{mw_ellipse}{online}{}
+      \name{author}{1}{}{%
+        {{hash=631b82f55dd31800b2d985064f1d80f0}{%
+           family={Webster},
+           familyi={W\bibinitperiod},
+           given={Merriam},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{631b82f55dd31800b2d985064f1d80f0}
+      \strng{fullhash}{631b82f55dd31800b2d985064f1d80f0}
+      \strng{bibnamehash}{631b82f55dd31800b2d985064f1d80f0}
+      \strng{authorbibnamehash}{631b82f55dd31800b2d985064f1d80f0}
+      \strng{authornamehash}{631b82f55dd31800b2d985064f1d80f0}
+      \strng{authorfullhash}{631b82f55dd31800b2d985064f1d80f0}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed on 05.12.2022}
+      \field{title}{Dictionary "Ellipse"}
+      \verb{urlraw}
+      \verb https://www.merriam-webster.com/dictionary/ellipse
+      \endverb
+      \verb{url}
+      \verb https://www.merriam-webster.com/dictionary/ellipse
+      \endverb
+    \endentry
+    \entry{leapfrog}{online}{}
+      \name{author}{1}{}{%
+        {{hash=a31228990fa955c0e82809508deabeb6}{%
+           family={Varin},
+           familyi={V\bibinitperiod},
+           given={Charles},
+           giveni={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{a31228990fa955c0e82809508deabeb6}
+      \strng{fullhash}{a31228990fa955c0e82809508deabeb6}
+      \strng{bibnamehash}{a31228990fa955c0e82809508deabeb6}
+      \strng{authorbibnamehash}{a31228990fa955c0e82809508deabeb6}
+      \strng{authornamehash}{a31228990fa955c0e82809508deabeb6}
+      \strng{authorfullhash}{a31228990fa955c0e82809508deabeb6}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{19}
+      \field{month}{12}
+      \field{title}{Leapfrog integration}
+      \field{year}{2014}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://cvarin.github.io/CSci-Survival-Guide/leapfrog.html
+      \endverb
+      \verb{url}
+      \verb https://cvarin.github.io/CSci-Survival-Guide/leapfrog.html
+      \endverb
+    \endentry
+    \entry{lecture_notes_1b}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=ed268c6ff074655858006ef4fb9139b6}{%
+           family={Hansen},
+           familyi={H\bibinitperiod},
+           given={Frode\bibnamedelima K.},
+           giveni={F\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+      }
+      \strng{namehash}{ed268c6ff074655858006ef4fb9139b6}
+      \strng{fullhash}{ed268c6ff074655858006ef4fb9139b6}
+      \strng{bibnamehash}{ed268c6ff074655858006ef4fb9139b6}
+      \strng{authorbibnamehash}{ed268c6ff074655858006ef4fb9139b6}
+      \strng{authornamehash}{ed268c6ff074655858006ef4fb9139b6}
+      \strng{authorfullhash}{ed268c6ff074655858006ef4fb9139b6}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{"\url{https://www.uio.no/studier/emner/matnat/astro/AST2000/h22/undervisningsmateriell/lecture_notes/part1b.pdf}"}
+      \field{title}{AST2000 Lecture Notes - Part 1B - Celectial Mechanics: calculating the orbits}
+      \field{year}{2022}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

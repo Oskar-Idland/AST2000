@@ -90,7 +90,7 @@ The definition of this unit is already in the name. The width of the curve at ha
 Since the maximum value of $f(\mu, \sigma; x)$ is attained at the mean value where $x=\mu$ and therefore equal to $f(\mu, \sigma; x=\mu)$, are we looking for values for which
 
 \begin{align}
-    f(\mu, \sigma; x_1) = \frac{1}{2} f(\mu, \sigma, \mu) \label{FWHM_EQ1}
+    f(\mu, \sigma; x_1) = \frac{1}{2} f(\mu, \sigma; \mu) \label{FWHM_EQ1}
 \end{align}
 
 Half the width of the curve at half maximum will then be given by $W_{Half} = \sqrt{(\mu - x_1)^2}$.
@@ -335,28 +335,7 @@ An actual launch would therefore probably differ from the results obtained by th
 	\[
 	\left<v \right> = \sqrt{\left( \frac{m}{2πkT} \right)} \int_{0}^{∞} 4πv^{3}\left( \frac{m}{2πkT} \right) ^{3} \exp \left[ -\frac{1}{2} \frac{mv^{2}}{kT} \right]  \ \mathrm{d}x 
 	\]
-	\[
-	\left<v \right> = 
-	\]
-	
-	
-	
-	
-	\[
-	\int_{0}^{\infty} x^{\frac{3}{2}} e^{-x} \mathrm{d}x = \frac{3}{4} \sqrt{\pi}  
-	\]
-	We try to rewrite the first integral to fit the form of the second 
-	\[
-	\int _{0}^{\infty} vP(v) \ \mathrm{d}v = \int _{0}^{\infty} \left( \frac{m}{2 \pi k T} \right) ^{\frac{3}{2}} e ^{-\frac{1}{2} \frac{mv^{2}}{k T}} 4 \pi v^{3}
-	\]\newline 
-	\[
-	\frac{4}{\sqrt{\pi}} \int _{0}^{\infty} \left( \frac{mv^{2}}{2 \pi k T} \right) ^{\frac{3}{2}} e ^{-\frac{1}{2} \frac{mv^{2}}{k T}} 
-	\]
-	We use substitution to get the aforementioned integral
-	\[
-	\frac{4}{\sqrt{\pi}} \frac{3}{4} \sqrt{\pi} = 3
-	\]
-	
+
 	\subsection{Proof of the Ideal Gas Law}\label{der: ideal gas}
 	To derive $ P = nkT $ we solve $ \frac{1}{3} \int_{0}^{∞} pv\ n(p) \ \mathrm{d}p $. 
 	We start by substituting $ v $ with $ \frac{p}{m} $. 
@@ -370,9 +349,5 @@ An actual launch would therefore probably differ from the results obtained by th
 	\[
 	P = \frac{n}{3m} \int_{0}^{∞} p^{2}\left( 2πmkT \right) ^{-\frac{3}{2}} \exp \left[ - \frac{1}{2} \frac{p^{2}}{mkT} \right] 4πp^{2} \ \mathrm{d}p. 
 	\]
-
-
-\newpage
-%\printbibliography TODO: Remove Comment
 
 \end{document}

@@ -10,8 +10,8 @@
 \usepackage{hyperref}
 \usepackage{listings}
 \usepackage{subfigure}
-% \usepackage[style=science, backend=biber]{biblatex}
-% \addbibresource{Report_Part_5.bib} TODO: Slett før innlevering
+\usepackage[style=science, backend=biber]{biblatex}
+\addbibresource{Report_Part_5.bib}
 \hypersetup{
     colorlinks,
     linkcolor={red!50!black},
@@ -65,7 +65,7 @@ These corrections will be done by firing our rocket engine to change our velocit
     \centering
     \includegraphics[scale=0.12]{Figures/boost_fig}
     \caption{Visualisation of a correctional boost to change the trajectory. The actual trajectory (black) deviates from the planned trajectory (red), then a trajectory
-        correction $\Delta v$ is used to prevent the trajectory from drifting further away (blue). From %~\parencite[][]{project_description5} TODO: Remove Comment
+        correction $\Delta v$ is used to prevent the trajectory from drifting further away (blue). From~\parencite[][]{project_description5}
     }\label{fig:boost_fig}
 \end{figure}
 
@@ -81,7 +81,7 @@ The more eccentric an orbit is, the more unstable it is.
 
 
 \section{Theory} \label{sec: theory}
-A description of the Leapfrog simulation method can be found in section II of the second paper %~\parencite[][]{part2} TODO: Delete Comment.
+A description of the Leapfrog simulation method can be found in section II of the second paper~\parencite[][]{part2}
 of this series of papers
 
 
@@ -129,7 +129,7 @@ We will use this method during the launch of our rocket.
 
 \subsection{Getting close enough to the target planet}\label{subsec:getting-close-enough}
 To make our journey as easy as possible we first try to check where our home planet and target planet are the closest.
-Using the orbits, calculated from the second paper %~\parencite[][]{part2} TODO: Delete comment
+Using the orbits, calculated from the second paper~\parencite[][]{part2}
 of this series of papers, we iterate over all positions and check at which time $ t_{0} $ the distance is the smallest.
 This is the time we will begin our launch.
 The next step is to calculate the optimal direction and speed of our initial velocity $ \mathbf{v}_0 $.
@@ -227,7 +227,7 @@ We subtract the velocity of our home planet from the calculated value to get the
         \theta = \arctan \left(\frac{\Delta v_y}{\Delta v_x}\right)
     \end{align}
 
-    We then use the calculations from the first paper %~\parencite[][]{part1} TODO: Delete comment
+    We then use the calculations from the first paper~\parencite[][]{part1}
     of this series of papers to calculate the amount of fuel used for a given $|\Delta\textbf{v}|$ in the process of the correction maneuver
 
     Since the duration of the calculations, rotation of the rocket and boost are insignificant compared to the duration of the journey to the destination planet, we will regard them as instantly.
@@ -276,7 +276,7 @@ We subtract the velocity of our home planet from the calculated value to get the
     The first thing to do is to orient ourselves.
     This way, we can find out the position and velocity of the spacecraft relative to the planet.
     By determining our position and therefore the distance to the planet along the entire orbit and interpolating, we can find a function for the ellipse which makes up the orbit.
-    Using this data, we can set up a two-body system as it is described in the second part of this series of papers%~\parencite[][]{part2}. TODO: Remove Comment
+    Using this data, we can set up a two-body system as it is described in the second part of this series of papers~\parencite[][]{part2}.
     This enables ut to describe the orbit as an ellipse with the planet in one of the focal points.
     The apoapsis and periapsis are given as the points on the orbit, which are respectively farthest and closest to the planet.
     The distances from these points to the planet are called the semi-major axis and semi-minor axis of the orbit
@@ -403,5 +403,5 @@ Even though our scientists have found very good methods for these applications, 
 
 
 \newpage
-% \printbibliography TODO: Remove Comment
+\printbibliography
 \end{document}

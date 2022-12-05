@@ -1,0 +1,15 @@
+[0] Config.pm:311> INFO - This is Biber 2.16
+[0] Config.pm:314> INFO - Logfile is 'Report_Part_7.blg'
+[46] biber-darwin:340> INFO - === Mon Dec  5, 2022, 23:39:18
+[56] Biber.pm:415> INFO - Reading '/Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 7/Report_Part_7.bcf'
+[118] Biber.pm:952> INFO - Found 1 citekeys in bib section 0
+[130] Biber.pm:4340> INFO - Processing section 0
+[138] Biber.pm:4531> INFO - Looking for bibtex format file 'Report_Part_7.bib' for section 0
+[139] bibtex.pm:1689> INFO - LaTeX decoding ...
+[141] bibtex.pm:1494> INFO - Found BibTeX data source '/Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 7/Report_Part_7.bib'
+[167] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[167] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[167] Biber.pm:4168> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
+[167] Biber.pm:4174> INFO - No sort tailoring available for locale 'en-US'
+[168] bbl.pm:654> INFO - Writing 'Report_Part_7.bbl' with encoding 'UTF-8'
+[169] bbl.pm:757> INFO - Output to Report_Part_7.bbl

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2022.2.21)  5 DEC 2022 23:02
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2022.2.21)  5 DEC 2022 23:22
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -635,23 +635,18 @@ v [][] [] [] \OT1/cmr/m/n/10 4\OML/cmm/m/it/10 ^^Yv[] \OT1/cmr/m/n/10 d\OML/cmm
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 351--352
-
- []
-
-[5]
 (/Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 1/Rocket Engine.bbl
-)
+) [5]
 (/Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 1/Rocket Engine.aux
 )
 Package rerunfilecheck Info: File `"Rocket Engine".out' has not changed.
 (rerunfilecheck)             Checksum: 5054452614E7C91D3BF6717BEE02A19F;2369.
  ) 
 Here is how much of TeX's memory you used:
- 15973 strings out of 478994
- 221807 string characters out of 5858184
- 750399 words of memory out of 5000000
- 33203 multiletter control sequences out of 15000+600000
+ 15974 strings out of 478994
+ 221817 string characters out of 5858184
+ 755399 words of memory out of 5000000
+ 33204 multiletter control sequences out of 15000+600000
  409824 words of font info for 56 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  81i,10n,89p,343b,583s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -675,7 +670,7 @@ texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2021/te
 xmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/2021/texm
 f-dist/fonts/type1/public/esint-type1/esint10.pfb>
 Output written on "/Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 1
-/Rocket Engine.pdf" (5 pages, 301916 bytes).
+/Rocket Engine.pdf" (5 pages, 301148 bytes).
 PDF statistics:
  196 PDF objects out of 1000 (max. 8388607)
  164 compressed objects within 2 object streams

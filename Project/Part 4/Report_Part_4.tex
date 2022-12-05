@@ -10,8 +10,8 @@
 \usepackage{hyperref}
 \usepackage{listings}
 \usepackage{subfigure}
-% \usepackage[style=science, backend=biber]{biblatex}
-% \addbibresource{References_Part_4.bib} TODO: Slett kommentar før innlevering
+\usepackage[style=science, backend=biber]{biblatex}
+\addbibresource{References_Part_4.bib}
 \hypersetup{
     colorlinks,
     linkcolor={red!50!black},
@@ -59,7 +59,7 @@ Without it, we wouldn't be able to steer our spacecraft and reach our destinatio
 To orient ourselves, three things will be required.\\
 To know where our spacecraft is located in the solar system, we need to know our position.
 The position can be found using a process called trilateration.\\
-Trilateration is the process by which one determines the position of a body using measured distances to known positions.%~\parencite[][]{Relevant_theory} TODO: Ta bort kommentar
+Trilateration is the process by which one determines the position of a body using measured distances to known positions.~\parencite[][]{Relevant_theory}
 This means we can use measure distances from the spacecraft to object for which we know the position and calculate our own position from there.
 These measurements will be done by our onboard radar array.\\
 The software for the array includes an index of all known objects in our solar system and can therefore include the radius of the object in it's calculations.
@@ -89,7 +89,7 @@ This spike in the amount of radiation at a specific wavelength is called the $H_
 To be able to do all calculations, a cartesian coordinate system will be used with the star in our solar system being in the origin and the x-axis pointing at the position of planet 0 at $T = 0$.
 
 \section{Theory} \label{sec:theory}
-For theory, see section Relevant Mathematics in the project description%~\parencite[][]{Relevant_theory} TODO: Ta bort kommentar
+For theory, see section Relevant Mathematics in the project description~\parencite[][]{Relevant_theory}
 
 \section{Method} \label{sec:method}
 \subsection{Generating Pictures} \label{subsec: generating pictures}
@@ -250,7 +250,7 @@ The setup for the calculations has been visualised in figure~\ref{fig:trilaterat
 	%% H(Here), h(here approx), t(top of page), b(bottom of page)
 	\centering
 	\includegraphics[scale=0.2]{Figures/trilateration}
-	\caption{Visualisation of the trilateration method. From%~\parencite[][]{trilateration_picture} TODO: Slett før innlevering
+	\caption{Visualisation of the trilateration method. From~\parencite[][]{trilateration_picture}
 	}
 	\label{fig:trilateration_figure}
 \end{figure}
@@ -271,7 +271,7 @@ Solving the equation set consisting of equations~\eqref{r_s},~\eqref{r_p1} and~\
     x_{SC}& = \frac{CE - FB}{EA - BD}\\
 	y_{SC}& = \frac{CD - AF}{BD - AE}
 \end{align*}
-The calculations for this are based on the calculations from%~\parencite[][]{trilateration} TODO: Slett før innlevering
+The calculations for this are based on the calculations from~\parencite[][]{trilateration}
 The position of the spacecraft $SC(t)$ is then given by
 \begin{align*}
     SC(t) = \left(x_{SC}, y_{SC} \right)
@@ -295,7 +295,7 @@ This picture has then been matched with the reference picture~\ref{fig: ref pict
 \begin{figure}[h!]
 	\centering
 	\includegraphics[scale = 0.2]{Test_Image}
-	\caption{Recreated reference picture for our software %from~\parencite[][]{Relevant_theory}} TODO: Slett før innlevering%
+	\caption{Recreated reference picture for our software from~\parencite[][]{Relevant_theory}}
 	}
 	\label{fig: ref picture}
   \end{figure}
@@ -427,6 +427,6 @@ Y = ± \frac{2 \sin (α_{ϕ} / 2)}{1 + \cos (α_{ϕ} / 2)}
 
 
 \newpage
-%\printbibliography TODO: Ta bort kommentar
+\printbibliography
 
 \end{document}

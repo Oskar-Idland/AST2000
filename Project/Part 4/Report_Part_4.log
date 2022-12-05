@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2022.2.21)  5 DEC 2022 14:25
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2022.2.21)  5 DEC 2022 23:31
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -453,6 +453,354 @@ Package: subfigure 2002/03/15 v2.1.5 subfigure package
 \subfig@top=\skip60
 \subfig@bottom=\skip61
 )
+(/usr/local/texlive/2021/texmf-dist/tex/latex/biblatex/biblatex.sty
+Package: biblatex 2020/12/31 v3.16 programmable bibliographies (PK/MW)
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count299
+)
+(/usr/local/texlive/2021/texmf-dist/tex/latex/logreq/logreq.sty
+Package: logreq 2010/08/04 v1.0 xml request logger
+\lrq@indent=\count300
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/logreq/logreq.def
+File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
+))
+(/usr/local/texlive/2021/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+
+/usr/local/texlive/2021/texmf-dist/tex/latex/biblatex/biblatex.sty:202: Package
+ biblatex Error: Incompatible package 'natbib'.
+
+See the biblatex package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.202 \blx@packageincompatibility
+                                 
+The 'natbib' package and biblatex are incompatible.
+
+
+/usr/local/texlive/2021/texmf-dist/tex/latex/biblatex/biblatex.sty:202: Package
+ biblatex Error: Incompatible package 'ucs'.
+
+See the biblatex package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.202 \blx@packageincompatibility
+                                 
+The 'ucs' package and biblatex are incompatible.
+
+\c@tabx@nest=\count301
+\c@listtotal=\count302
+\c@listcount=\count303
+\c@liststart=\count304
+\c@liststop=\count305
+\c@citecount=\count306
+\c@citetotal=\count307
+\c@multicitecount=\count308
+\c@multicitetotal=\count309
+\c@instcount=\count310
+\c@maxnames=\count311
+\c@minnames=\count312
+\c@maxitems=\count313
+\c@minitems=\count314
+\c@citecounter=\count315
+\c@maxcitecounter=\count316
+\c@savedcitecounter=\count317
+\c@uniquelist=\count318
+\c@uniquename=\count319
+\c@refsection=\count320
+\c@refsegment=\count321
+\c@maxextratitle=\count322
+\c@maxextratitleyear=\count323
+\c@maxextraname=\count324
+\c@maxextradate=\count325
+\c@maxextraalpha=\count326
+\c@abbrvpenalty=\count327
+\c@highnamepenalty=\count328
+\c@lownamepenalty=\count329
+\c@maxparens=\count330
+\c@parenlevel=\count331
+\blx@tempcnta=\count332
+\blx@tempcntb=\count333
+\blx@tempcntc=\count334
+\blx@maxsection=\count335
+\blx@maxsegment@0=\count336
+\blx@notetype=\count337
+\blx@parenlevel@text=\count338
+\blx@parenlevel@foot=\count339
+\blx@sectionciteorder@0=\count340
+\blx@entrysetcounter=\count341
+\blx@biblioinstance=\count342
+\labelnumberwidth=\skip62
+\labelalphawidth=\skip63
+\biblabelsep=\skip64
+\bibitemsep=\skip65
+\bibnamesep=\skip66
+\bibinitsep=\skip67
+\bibparsep=\skip68
+
+/usr/local/texlive/2021/texmf-dist/tex/latex/biblatex/biblatex.sty:869: LaTeX E
+rror: Command \bibhang already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.869 \newlength{\bibhang}
+                          
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+\blx@bcfin=\read3
+\blx@bcfout=\write4
+\blx@langwohyphens=\language88
+\c@mincomprange=\count343
+\c@maxcomprange=\count344
+\c@mincompwidth=\count345
+Package biblatex Info: Trying to load biblatex default data model...
+Package biblatex Info: ... file 'blx-dm.def' found.
+(/usr/local/texlive/2021/texmf-dist/tex/latex/biblatex/blx-dm.def
+File: blx-dm.def 2020/12/31 v3.16 biblatex localization (PK/MW)
+)
+Package biblatex Info: Trying to load biblatex style data model...
+Package biblatex Info: ... file 'science.dbx' not found.
+Package biblatex Info: Trying to load biblatex custom data model...
+Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
+\c@afterword=\count346
+\c@savedafterword=\count347
+\c@annotator=\count348
+\c@savedannotator=\count349
+\c@author=\count350
+\c@savedauthor=\count351
+\c@bookauthor=\count352
+\c@savedbookauthor=\count353
+\c@commentator=\count354
+\c@savedcommentator=\count355
+\c@editor=\count356
+\c@savededitor=\count357
+\c@editora=\count358
+\c@savededitora=\count359
+\c@editorb=\count360
+\c@savededitorb=\count361
+\c@editorc=\count362
+\c@savededitorc=\count363
+\c@foreword=\count364
+\c@savedforeword=\count365
+\c@holder=\count366
+\c@savedholder=\count367
+\c@introduction=\count368
+\c@savedintroduction=\count369
+\c@namea=\count370
+\c@savednamea=\count371
+\c@nameb=\count372
+\c@savednameb=\count373
+\c@namec=\count374
+\c@savednamec=\count375
+\c@translator=\count376
+\c@savedtranslator=\count377
+\c@shortauthor=\count378
+\c@savedshortauthor=\count379
+\c@shorteditor=\count380
+\c@savedshorteditor=\count381
+\c@labelname=\count382
+\c@savedlabelname=\count383
+\c@institution=\count384
+\c@savedinstitution=\count385
+\c@lista=\count386
+\c@savedlista=\count387
+\c@listb=\count388
+\c@savedlistb=\count389
+\c@listc=\count390
+\c@savedlistc=\count391
+\c@listd=\count392
+\c@savedlistd=\count393
+\c@liste=\count394
+\c@savedliste=\count395
+\c@listf=\count396
+\c@savedlistf=\count397
+\c@location=\count398
+\c@savedlocation=\count399
+\c@organization=\count400
+\c@savedorganization=\count401
+\c@origlocation=\count402
+\c@savedoriglocation=\count403
+\c@origpublisher=\count404
+\c@savedorigpublisher=\count405
+\c@publisher=\count406
+\c@savedpublisher=\count407
+\c@language=\count408
+\c@savedlanguage=\count409
+\c@origlanguage=\count410
+\c@savedoriglanguage=\count411
+\c@pageref=\count412
+\c@savedpageref=\count413
+\shorthandwidth=\skip69
+\shortjournalwidth=\skip70
+\shortserieswidth=\skip71
+\shorttitlewidth=\skip72
+\shortauthorwidth=\skip73
+\shorteditorwidth=\skip74
+\locallabelnumberwidth=\skip75
+\locallabelalphawidth=\skip76
+\localshorthandwidth=\skip77
+\localshortjournalwidth=\skip78
+\localshortserieswidth=\skip79
+\localshorttitlewidth=\skip80
+\localshortauthorwidth=\skip81
+\localshorteditorwidth=\skip82
+
+
+/usr/local/texlive/2021/texmf-dist/tex/latex/biblatex/biblatex.sty:12112: LaTeX
+ Error: Command \citename already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.12112 ...*{\citename}{\blx@citexpunct{citename}}
+                                                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+/usr/local/texlive/2021/texmf-dist/tex/latex/biblatex/biblatex.sty:12206: LaTeX
+ Error: Command \textcite already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.12206 ...tcite}{\blx@warn@citecmd\textcite\cite}
+                                                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+Package biblatex Info: Trying to load compatibility code...
+Package biblatex Info: ... file 'blx-compat.def' found.
+(/usr/local/texlive/2021/texmf-dist/tex/latex/biblatex/blx-compat.def
+File: blx-compat.def 2020/12/31 v3.16 biblatex compatibility (PK/MW)
+)
+Package biblatex Info: Trying to load generic definitions...
+Package biblatex Info: ... file 'biblatex.def' found.
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/biblatex/biblatex.def
+File: biblatex.def 2020/12/31 v3.16 biblatex compatibility (PK/MW)
+\c@textcitecount=\count414
+\c@textcitetotal=\count415
+\c@textcitemaxnames=\count416
+\c@biburlbigbreakpenalty=\count417
+\c@biburlbreakpenalty=\count418
+\c@biburlnumpenalty=\count419
+\c@biburlucpenalty=\count420
+\c@biburllcpenalty=\count421
+\biburlbigskip=\muskip18
+\biburlnumskip=\muskip19
+\biburlucskip=\muskip20
+\biburllcskip=\muskip21
+
+
+/usr/local/texlive/2021/texmf-dist/tex/latex/biblatex/biblatex.def:334: LaTeX E
+rror: Command \bibfont already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.334 ...ommand*{\bibfont}{\normalfont\normalsize}
+                                                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+\c@smartand=\count422
+
+Package biblatex Warning: Redefining '\citeauthor'.
+
+
+Package biblatex Warning: Redefining '\citeyear'.
+
+
+/usr/local/texlive/2021/texmf-dist/tex/latex/biblatex/biblatex.def:2291: LaTeX 
+Error: Command \Citeauthor already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2291 ...e\citeauthor*}{\bibsentence\citeauthor}}
+                                                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+)
+Package biblatex Info: Trying to load bibliography style 'science'...
+Package biblatex Info: ... file 'science.bbx' found.
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/biblatex-science/science.bbx
+File: science.bbx 2018/10/18 v1.2 biblatex bibliography style
+Package biblatex Info: Trying to load bibliography style 'numeric-comp'...
+Package biblatex Info: ... file 'numeric-comp.bbx' found.
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/biblatex/bbx/numeric-comp.bbx
+File: numeric-comp.bbx 2020/12/31 v3.16 biblatex bibliography style (PK/MW)
+Package biblatex Info: Trying to load bibliography style 'numeric'...
+Package biblatex Info: ... file 'numeric.bbx' found.
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/biblatex/bbx/numeric.bbx
+File: numeric.bbx 2020/12/31 v3.16 biblatex bibliography style (PK/MW)
+Package biblatex Info: Trying to load bibliography style 'standard'...
+Package biblatex Info: ... file 'standard.bbx' found.
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
+File: standard.bbx 2020/12/31 v3.16 biblatex bibliography style (PK/MW)
+\c@bbx:relatedcount=\count423
+\c@bbx:relatedtotal=\count424
+))))
+Package biblatex Info: Trying to load citation style 'science'...
+Package biblatex Info: ... file 'science.cbx' found.
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/biblatex-science/science.cbx
+File: science.cbx 2018/10/18 v1.2 biblatex citation style
+Package biblatex Info: Trying to load citation style 'numeric-comp'...
+Package biblatex Info: ... file 'numeric-comp.cbx' found.
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/biblatex/cbx/numeric-comp.cbx
+File: numeric-comp.cbx 2020/12/31 v3.16 biblatex citation style (PK/MW)
+\c@cbx@tempcnta=\count425
+\c@cbx@tempcntb=\count426
+\c@cbx@tempcntc=\count427
+\c@cbx@tempcntd=\count428
+Package biblatex Info: Redefining '\cite'.
+Package biblatex Info: Redefining '\parencite'.
+Package biblatex Info: Redefining '\footcite'.
+Package biblatex Info: Redefining '\footcitetext'.
+Package biblatex Info: Redefining '\smartcite'.
+Package biblatex Info: Redefining '\supercite'.
+Package biblatex Info: Redefining '\textcite'.
+Package biblatex Info: Redefining '\textcites'.
+Package biblatex Info: Redefining '\cites'.
+Package biblatex Info: Redefining '\parencites'.
+Package biblatex Info: Redefining '\smartcites'.
+))
+Package biblatex Info: Trying to load configuration file...
+Package biblatex Info: ... file 'biblatex.cfg' found.
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/biblatex/biblatex.cfg
+File: biblatex.cfg 
+))
 Package hyperref Info: Option `colorlinks' set `true' on input line 19.
 
 (/usr/local/texlive/2021/texmf-dist/tex/latex/listings/lstlang1.sty
@@ -463,6 +811,17 @@ lass! (Proceeding with fingers crossed.) on input line 36.
 Class revtex4-2 Info: cite was not loaded (OK!) on input line 36.
 Class revtex4-2 Info: mcite was not loaded (OK!) on input line 36.
 Class revtex4-2 Info: multicol was not loaded (OK!) on input line 36.
+
+
+Package biblatex Warning: Patching footnotes failed.
+(biblatex)                Footnote detection will not work.
+
+
+Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
+(biblatex)                Loading 'csquotes' recommended.
+
+\@quotelevel=\count429
+\@quotereset=\count430
 
 (/Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 4/Report_Part_4.aux
 )
@@ -491,21 +850,29 @@ File: ucsencs.def 2011/01/21 Fixes to fontencodings LGR, T3
 )
 (/usr/local/texlive/2021/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count299
+\scratchcounter=\count431
 \scratchdimen=\dimen160
 \scratchbox=\box67
-\nofMPsegments=\count300
-\nofMParguments=\count301
+\nofMPsegments=\count432
+\nofMParguments=\count433
 \everyMPshowfont=\toks29
-\MPscratchCnt=\count302
+\MPscratchCnt=\count434
 \MPscratchDim=\dimen161
-\MPnumerator=\count303
-\makeMPintoPDFobject=\count304
+\MPnumerator=\count435
+\makeMPintoPDFobject=\count436
 \everyMPtoPDFconversion=\toks30
 ) (/usr/local/texlive/2021/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/grfext/grfext.sty
+Package: grfext 2019/12/03 v1.3 Manage graphics extensions (HO)
+)
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 85.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 504.
 
 (/usr/local/texlive/2021/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
@@ -523,7 +890,7 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 ty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count305
+\c@section@level=\count437
 )
 LaTeX Info: Redefining \ref on input line 36.
 LaTeX Info: Redefining \pageref on input line 36.
@@ -533,10 +900,43 @@ LaTeX Info: Redefining \nameref on input line 36.
 )
 (/Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 4/Report_Part_4.out
 )
-\@outlinefile=\write4
-\openout4 = `Report_Part_4.out'.
+\@outlinefile=\write5
+\openout5 = `Report_Part_4.out'.
 
-\c@lstlisting=\count306
+\c@lstlisting=\count438
+Package biblatex Info: Trying to load language 'english'...
+Package biblatex Info: ... file 'english.lbx' found.
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/biblatex/lbx/english.lbx
+File: english.lbx 2020/12/31 v3.16 biblatex localization (PK/MW)
+)
+Package biblatex Info: Input encoding 'utf8' detected.
+Package biblatex Info: Automatic encoding selection.
+(biblatex)             Assuming data encoding 'utf8'.
+Package biblatex Info: Document encoding is UTF8 ....
+Package biblatex Info: ... and expl3
+(biblatex)             2021-02-18 L3 programming layer (loader) 
+(biblatex)             is new enough (at least 2020/04/06),
+(biblatex)             setting 'casechanger=expl3'.
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/biblatex/blx-case-expl3.sty
+Package: blx-case-expl3 2020/12/31 v3.16 expl3 case changing code for biblatex
+)
+\openout4 = `Report_Part_4.bcf'.
+
+Package biblatex Info: Trying to load bibliographic data...
+Package biblatex Info: ... file 'Report_Part_4.bbl' found.
+
+(/Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 4/Report_Part_4.bbl
+
+Package biblatex Warning: Biber reported the following issues
+(biblatex)                with 'trilateration':
+(biblatex)                - Entry 'trilateration' (/Users/jannikeschler/Documen
+ts/GitHub/AST2000/Project/Part 4/References_Part_4.bib): Invalid format '29.03.
+2019' of date field 'date' - ignoring.
+
+)
+Package biblatex Info: Reference section=0 on input line 36.
+Package biblatex Info: Reference segment=0 on input line 36.
 Class revtex4-2 Info: Taking \maketitle back from hyperref on input line 36.
 \openout3 = `Report_Part_4Notes.bib'.
 
@@ -557,7 +957,7 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 46.
 (/usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-<Figures/Stereographic_projection.png, id=60, 1123.7985pt x 460.72125pt>
+<Figures/Stereographic_projection.png, id=66, 1123.7985pt x 460.72125pt>
 File: Figures/Stereographic_projection.png Graphic file (type png)
 <use Figures/Stereographic_projection.png>
 Package pdftex.def Info: Figures/Stereographic_projection.png  used on input li
@@ -580,23 +980,36 @@ Underfull \hbox (badness 10000) in paragraph at lines 232--236
 
  []
 
-<Figures/trilateration.png, id=111, 853.1875pt x 759.83875pt>
+<Figures/trilateration.png, id=117, 853.1875pt x 759.83875pt>
 File: Figures/trilateration.png Graphic file (type png)
 <use Figures/trilateration.png>
 Package pdftex.def Info: Figures/trilateration.png  used on input line 252.
 (pdftex.def)             Requested size: 170.63448pt x 151.96506pt.
-<Python/sky_picture.png, id=117, 642.4pt x 481.8pt>
+[3 </Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 4/Figures/trilat
+eration.png>]
+<Python/sky_picture.png, id=140, 642.4pt x 481.8pt>
 File: Python/sky_picture.png Graphic file (type png)
 <use Python/sky_picture.png>
 Package pdftex.def Info: Python/sky_picture.png  used on input line 291.
 (pdftex.def)             Requested size: 96.35583pt x 72.26688pt.
-[3 </Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 4/Figures/trilat
-eration.png>]
-<Test_Image.png, id=128, 642.4pt x 481.8pt>
+<Test_Image.png, id=141, 642.4pt x 481.8pt>
 File: Test_Image.png Graphic file (type png)
 <use Test_Image.png>
 Package pdftex.def Info: Test_Image.png  used on input line 297.
 (pdftex.def)             Requested size: 128.47772pt x 96.35829pt.
+
+/Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 4/Report_Part_4.tex:
+301: Extra }, or forgotten \endgroup.
+\@endfloatbox ...pagefalse \outer@nobreak \egroup 
+                                                  \color@endbox 
+l.301   \end{figure}
+                    
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
 
 Underfull \hbox (badness 10000) in paragraph at lines 303--304
 
@@ -626,22 +1039,53 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 391.
 
+
+Overfull \hbox (50.83289pt too wide) detected at line 397
+\OML/cmm/m/it/10 X \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 k [] ^^R [][][];  Y \OT1/
+cmr/m/n/10 = \OML/cmm/m/it/10 k\OT1/cmr/m/n/10 ([] \OML/cmm/m/it/10 ^^R[] [] ^^
+R \OMS/cmsy/m/n/10 ^^@ [] \OML/cmm/m/it/10 ^^R[] [] ^^R [][][]\OT1/cmr/m/n/10 )
+
+ []
+
 [5]
-(/Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 4/Report_Part_4.bbl
-)
+
+/Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 4/Report_Part_4.tex:
+432: LaTeX Error: Can be used only in preamble.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.432 \end{document}
+                    
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+Package logreq Info: Writing requests to 'Report_Part_4.run.xml'.
+\openout1 = `Report_Part_4.run.xml'.
+
+[6
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsl
+ine {section}{\numberline {}References}{6}{section*.15}\protected@file@percent 
+}
+]
+\newlabel{LastPage}{{}{6}{}{}{}}
+\gdef \@abspage@last{6}
+
 (/Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 4/Report_Part_4.aux
 )
 Package rerunfilecheck Info: File `Report_Part_4.out' has not changed.
-(rerunfilecheck)             Checksum: 2EF2ABE7A8A61DF7DF5B6544DE6549DB;2073.
+(rerunfilecheck)             Checksum: 1FD1D3A6BE40B2D4F788D11FA5240C78;2179.
  ) 
 Here is how much of TeX's memory you used:
- 15472 strings out of 478994
- 216644 string characters out of 5858184
- 757395 words of memory out of 5000000
- 32685 multiletter control sequences out of 15000+600000
- 409824 words of font info for 56 fonts, out of 8000000 for 9000
+ 22796 strings out of 478994
+ 361389 string characters out of 5858184
+ 1143053 words of memory out of 5000000
+ 39938 multiletter control sequences out of 15000+600000
+ 410337 words of font info for 58 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 81i,15n,89p,347b,591s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 81i,15n,89p,746b,1504s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
 ></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb><
 /usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></
@@ -657,12 +1101,14 @@ ve/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/
 021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/202
 1/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2021/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2021/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb>
+xmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2021/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/2021/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
 Output written on "/Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 4
-/Report_Part_4.pdf" (5 pages, 715516 bytes).
+/Report_Part_4.pdf" (6 pages, 743891 bytes).
 PDF statistics:
- 220 PDF objects out of 1000 (max. 8388607)
- 189 compressed objects within 2 object streams
- 47 named destinations out of 1000 (max. 500000)
- 133 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 252 PDF objects out of 1000 (max. 8388607)
+ 215 compressed objects within 3 object streams
+ 52 named destinations out of 1000 (max. 500000)
+ 141 words of extra memory for PDF output out of 10000 (max. 10000000)
 

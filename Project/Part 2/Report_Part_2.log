@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2022.2.21)  5 DEC 2022 20:50
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2022.2.21)  5 DEC 2022 23:28
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -453,65 +453,432 @@ Package: subfigure 2002/03/15 v2.1.5 subfigure package
 \subfig@top=\skip60
 \subfig@bottom=\skip61
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 17.
+(/usr/local/texlive/2021/texmf-dist/tex/latex/biblatex/biblatex.sty
+Package: biblatex 2020/12/31 v3.16 programmable bibliographies (PK/MW)
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count299
+)
+(/usr/local/texlive/2021/texmf-dist/tex/latex/logreq/logreq.sty
+Package: logreq 2010/08/04 v1.0 xml request logger
+\lrq@indent=\count300
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/logreq/logreq.def
+File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
+))
+(/usr/local/texlive/2021/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+
+/usr/local/texlive/2021/texmf-dist/tex/latex/biblatex/biblatex.sty:202: Package
+ biblatex Error: Incompatible package 'natbib'.
+
+See the biblatex package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.202 \blx@packageincompatibility
+                                 
+The 'natbib' package and biblatex are incompatible.
+
+
+/usr/local/texlive/2021/texmf-dist/tex/latex/biblatex/biblatex.sty:202: Package
+ biblatex Error: Incompatible package 'ucs'.
+
+See the biblatex package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.202 \blx@packageincompatibility
+                                 
+The 'ucs' package and biblatex are incompatible.
+
+\c@tabx@nest=\count301
+\c@listtotal=\count302
+\c@listcount=\count303
+\c@liststart=\count304
+\c@liststop=\count305
+\c@citecount=\count306
+\c@citetotal=\count307
+\c@multicitecount=\count308
+\c@multicitetotal=\count309
+\c@instcount=\count310
+\c@maxnames=\count311
+\c@minnames=\count312
+\c@maxitems=\count313
+\c@minitems=\count314
+\c@citecounter=\count315
+\c@maxcitecounter=\count316
+\c@savedcitecounter=\count317
+\c@uniquelist=\count318
+\c@uniquename=\count319
+\c@refsection=\count320
+\c@refsegment=\count321
+\c@maxextratitle=\count322
+\c@maxextratitleyear=\count323
+\c@maxextraname=\count324
+\c@maxextradate=\count325
+\c@maxextraalpha=\count326
+\c@abbrvpenalty=\count327
+\c@highnamepenalty=\count328
+\c@lownamepenalty=\count329
+\c@maxparens=\count330
+\c@parenlevel=\count331
+\blx@tempcnta=\count332
+\blx@tempcntb=\count333
+\blx@tempcntc=\count334
+\blx@maxsection=\count335
+\blx@maxsegment@0=\count336
+\blx@notetype=\count337
+\blx@parenlevel@text=\count338
+\blx@parenlevel@foot=\count339
+\blx@sectionciteorder@0=\count340
+\blx@entrysetcounter=\count341
+\blx@biblioinstance=\count342
+\labelnumberwidth=\skip62
+\labelalphawidth=\skip63
+\biblabelsep=\skip64
+\bibitemsep=\skip65
+\bibnamesep=\skip66
+\bibinitsep=\skip67
+\bibparsep=\skip68
+
+/usr/local/texlive/2021/texmf-dist/tex/latex/biblatex/biblatex.sty:869: LaTeX E
+rror: Command \bibhang already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.869 \newlength{\bibhang}
+                          
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+\blx@bcfin=\read3
+\blx@bcfout=\write4
+\blx@langwohyphens=\language88
+\c@mincomprange=\count343
+\c@maxcomprange=\count344
+\c@mincompwidth=\count345
+Package biblatex Info: Trying to load biblatex default data model...
+Package biblatex Info: ... file 'blx-dm.def' found.
+(/usr/local/texlive/2021/texmf-dist/tex/latex/biblatex/blx-dm.def
+File: blx-dm.def 2020/12/31 v3.16 biblatex localization (PK/MW)
+)
+Package biblatex Info: Trying to load biblatex style data model...
+Package biblatex Info: ... file 'science.dbx' not found.
+Package biblatex Info: Trying to load biblatex custom data model...
+Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
+\c@afterword=\count346
+\c@savedafterword=\count347
+\c@annotator=\count348
+\c@savedannotator=\count349
+\c@author=\count350
+\c@savedauthor=\count351
+\c@bookauthor=\count352
+\c@savedbookauthor=\count353
+\c@commentator=\count354
+\c@savedcommentator=\count355
+\c@editor=\count356
+\c@savededitor=\count357
+\c@editora=\count358
+\c@savededitora=\count359
+\c@editorb=\count360
+\c@savededitorb=\count361
+\c@editorc=\count362
+\c@savededitorc=\count363
+\c@foreword=\count364
+\c@savedforeword=\count365
+\c@holder=\count366
+\c@savedholder=\count367
+\c@introduction=\count368
+\c@savedintroduction=\count369
+\c@namea=\count370
+\c@savednamea=\count371
+\c@nameb=\count372
+\c@savednameb=\count373
+\c@namec=\count374
+\c@savednamec=\count375
+\c@translator=\count376
+\c@savedtranslator=\count377
+\c@shortauthor=\count378
+\c@savedshortauthor=\count379
+\c@shorteditor=\count380
+\c@savedshorteditor=\count381
+\c@labelname=\count382
+\c@savedlabelname=\count383
+\c@institution=\count384
+\c@savedinstitution=\count385
+\c@lista=\count386
+\c@savedlista=\count387
+\c@listb=\count388
+\c@savedlistb=\count389
+\c@listc=\count390
+\c@savedlistc=\count391
+\c@listd=\count392
+\c@savedlistd=\count393
+\c@liste=\count394
+\c@savedliste=\count395
+\c@listf=\count396
+\c@savedlistf=\count397
+\c@location=\count398
+\c@savedlocation=\count399
+\c@organization=\count400
+\c@savedorganization=\count401
+\c@origlocation=\count402
+\c@savedoriglocation=\count403
+\c@origpublisher=\count404
+\c@savedorigpublisher=\count405
+\c@publisher=\count406
+\c@savedpublisher=\count407
+\c@language=\count408
+\c@savedlanguage=\count409
+\c@origlanguage=\count410
+\c@savedoriglanguage=\count411
+\c@pageref=\count412
+\c@savedpageref=\count413
+\shorthandwidth=\skip69
+\shortjournalwidth=\skip70
+\shortserieswidth=\skip71
+\shorttitlewidth=\skip72
+\shortauthorwidth=\skip73
+\shorteditorwidth=\skip74
+\locallabelnumberwidth=\skip75
+\locallabelalphawidth=\skip76
+\localshorthandwidth=\skip77
+\localshortjournalwidth=\skip78
+\localshortserieswidth=\skip79
+\localshorttitlewidth=\skip80
+\localshortauthorwidth=\skip81
+\localshorteditorwidth=\skip82
+
+
+/usr/local/texlive/2021/texmf-dist/tex/latex/biblatex/biblatex.sty:12112: LaTeX
+ Error: Command \citename already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.12112 ...*{\citename}{\blx@citexpunct{citename}}
+                                                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+/usr/local/texlive/2021/texmf-dist/tex/latex/biblatex/biblatex.sty:12206: LaTeX
+ Error: Command \textcite already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.12206 ...tcite}{\blx@warn@citecmd\textcite\cite}
+                                                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+Package biblatex Info: Trying to load compatibility code...
+Package biblatex Info: ... file 'blx-compat.def' found.
+(/usr/local/texlive/2021/texmf-dist/tex/latex/biblatex/blx-compat.def
+File: blx-compat.def 2020/12/31 v3.16 biblatex compatibility (PK/MW)
+)
+Package biblatex Info: Trying to load generic definitions...
+Package biblatex Info: ... file 'biblatex.def' found.
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/biblatex/biblatex.def
+File: biblatex.def 2020/12/31 v3.16 biblatex compatibility (PK/MW)
+\c@textcitecount=\count414
+\c@textcitetotal=\count415
+\c@textcitemaxnames=\count416
+\c@biburlbigbreakpenalty=\count417
+\c@biburlbreakpenalty=\count418
+\c@biburlnumpenalty=\count419
+\c@biburlucpenalty=\count420
+\c@biburllcpenalty=\count421
+\biburlbigskip=\muskip18
+\biburlnumskip=\muskip19
+\biburlucskip=\muskip20
+\biburllcskip=\muskip21
+
+
+/usr/local/texlive/2021/texmf-dist/tex/latex/biblatex/biblatex.def:334: LaTeX E
+rror: Command \bibfont already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.334 ...ommand*{\bibfont}{\normalfont\normalsize}
+                                                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+\c@smartand=\count422
+
+Package biblatex Warning: Redefining '\citeauthor'.
+
+
+Package biblatex Warning: Redefining '\citeyear'.
+
+
+/usr/local/texlive/2021/texmf-dist/tex/latex/biblatex/biblatex.def:2291: LaTeX 
+Error: Command \Citeauthor already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2291 ...e\citeauthor*}{\bibsentence\citeauthor}}
+                                                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+)
+Package biblatex Info: Trying to load bibliography style 'science'...
+Package biblatex Info: ... file 'science.bbx' found.
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/biblatex-science/science.bbx
+File: science.bbx 2018/10/18 v1.2 biblatex bibliography style
+Package biblatex Info: Trying to load bibliography style 'numeric-comp'...
+Package biblatex Info: ... file 'numeric-comp.bbx' found.
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/biblatex/bbx/numeric-comp.bbx
+File: numeric-comp.bbx 2020/12/31 v3.16 biblatex bibliography style (PK/MW)
+Package biblatex Info: Trying to load bibliography style 'numeric'...
+Package biblatex Info: ... file 'numeric.bbx' found.
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/biblatex/bbx/numeric.bbx
+File: numeric.bbx 2020/12/31 v3.16 biblatex bibliography style (PK/MW)
+Package biblatex Info: Trying to load bibliography style 'standard'...
+Package biblatex Info: ... file 'standard.bbx' found.
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
+File: standard.bbx 2020/12/31 v3.16 biblatex bibliography style (PK/MW)
+\c@bbx:relatedcount=\count423
+\c@bbx:relatedtotal=\count424
+))))
+Package biblatex Info: Trying to load citation style 'science'...
+Package biblatex Info: ... file 'science.cbx' found.
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/biblatex-science/science.cbx
+File: science.cbx 2018/10/18 v1.2 biblatex citation style
+Package biblatex Info: Trying to load citation style 'numeric-comp'...
+Package biblatex Info: ... file 'numeric-comp.cbx' found.
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/biblatex/cbx/numeric-comp.cbx
+File: numeric-comp.cbx 2020/12/31 v3.16 biblatex citation style (PK/MW)
+\c@cbx@tempcnta=\count425
+\c@cbx@tempcntb=\count426
+\c@cbx@tempcntc=\count427
+\c@cbx@tempcntd=\count428
+Package biblatex Info: Redefining '\cite'.
+Package biblatex Info: Redefining '\parencite'.
+Package biblatex Info: Redefining '\footcite'.
+Package biblatex Info: Redefining '\footcitetext'.
+Package biblatex Info: Redefining '\smartcite'.
+Package biblatex Info: Redefining '\supercite'.
+Package biblatex Info: Redefining '\textcite'.
+Package biblatex Info: Redefining '\textcites'.
+Package biblatex Info: Redefining '\cites'.
+Package biblatex Info: Redefining '\parencites'.
+Package biblatex Info: Redefining '\smartcites'.
+))
+Package biblatex Info: Trying to load configuration file...
+Package biblatex Info: ... file 'biblatex.cfg' found.
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/biblatex/biblatex.cfg
+File: biblatex.cfg 
+))
+Package hyperref Info: Option `colorlinks' set `true' on input line 19.
 
 (/usr/local/texlive/2021/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2020/03/24 1.8d listings language file
 )
 Class revtex4-2 Info: Unrecognized LaTeX tabular. Please update this document c
-lass! (Proceeding with fingers crossed.) on input line 33.
-Class revtex4-2 Info: cite was not loaded (OK!) on input line 33.
-Class revtex4-2 Info: mcite was not loaded (OK!) on input line 33.
-Class revtex4-2 Info: multicol was not loaded (OK!) on input line 33.
+lass! (Proceeding with fingers crossed.) on input line 35.
+Class revtex4-2 Info: cite was not loaded (OK!) on input line 35.
+Class revtex4-2 Info: mcite was not loaded (OK!) on input line 35.
+Class revtex4-2 Info: multicol was not loaded (OK!) on input line 35.
+
+
+Package biblatex Warning: Patching footnotes failed.
+(biblatex)                Footnote detection will not work.
+
+
+Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
+(biblatex)                Loading 'csquotes' recommended.
+
+\@quotelevel=\count429
+\@quotereset=\count430
 
 (/Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 2/Report_Part_2.aux
 )
 \openout1 = `Report_Part_2.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
  (/usr/local/texlive/2021/texmf-dist/tex/latex/ucs/ucsencs.def
 File: ucsencs.def 2011/01/21 Fixes to fontencodings LGR, T3
 )
 (/usr/local/texlive/2021/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count299
+\scratchcounter=\count431
 \scratchdimen=\dimen160
 \scratchbox=\box67
-\nofMPsegments=\count300
-\nofMParguments=\count301
+\nofMPsegments=\count432
+\nofMParguments=\count433
 \everyMPshowfont=\toks29
-\MPscratchCnt=\count302
+\MPscratchCnt=\count434
 \MPscratchDim=\dimen161
-\MPnumerator=\count303
-\makeMPintoPDFobject=\count304
+\MPnumerator=\count435
+\makeMPintoPDFobject=\count436
 \everyMPtoPDFconversion=\toks30
 ) (/usr/local/texlive/2021/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/grfext/grfext.sty
+Package: grfext 2019/12/03 v1.3 Manage graphics extensions (HO)
+)
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 85.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 504.
 
 (/usr/local/texlive/2021/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-Package hyperref Info: Link coloring ON on input line 33.
+Package hyperref Info: Link coloring ON on input line 35.
 
 (/usr/local/texlive/2021/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
@@ -523,97 +890,119 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 ty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count305
+\c@section@level=\count437
 )
-LaTeX Info: Redefining \ref on input line 33.
-LaTeX Info: Redefining \pageref on input line 33.
-LaTeX Info: Redefining \nameref on input line 33.
+LaTeX Info: Redefining \ref on input line 35.
+LaTeX Info: Redefining \pageref on input line 35.
+LaTeX Info: Redefining \nameref on input line 35.
 
 (/Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 2/Report_Part_2.out
 )
 (/Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 2/Report_Part_2.out
 )
-\@outlinefile=\write4
-\openout4 = `Report_Part_2.out'.
+\@outlinefile=\write5
+\openout5 = `Report_Part_2.out'.
 
-\c@lstlisting=\count306
-Class revtex4-2 Info: Taking \maketitle back from hyperref on input line 33.
+\c@lstlisting=\count438
+Package biblatex Info: Trying to load language 'english'...
+Package biblatex Info: ... file 'english.lbx' found.
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/biblatex/lbx/english.lbx
+File: english.lbx 2020/12/31 v3.16 biblatex localization (PK/MW)
+)
+Package biblatex Info: Input encoding 'utf8' detected.
+Package biblatex Info: Automatic encoding selection.
+(biblatex)             Assuming data encoding 'utf8'.
+Package biblatex Info: Document encoding is UTF8 ....
+Package biblatex Info: ... and expl3
+(biblatex)             2021-02-18 L3 programming layer (loader) 
+(biblatex)             is new enough (at least 2020/04/06),
+(biblatex)             setting 'casechanger=expl3'.
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/biblatex/blx-case-expl3.sty
+Package: blx-case-expl3 2020/12/31 v3.16 expl3 case changing code for biblatex
+)
+\openout4 = `Report_Part_2.bcf'.
+
+Package biblatex Info: Trying to load bibliographic data...
+Package biblatex Info: ... file 'Report_Part_2.bbl' found.
+
+(/Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 2/Report_Part_2.bbl
+)
+Package biblatex Info: Reference section=0 on input line 35.
+Package biblatex Info: Reference segment=0 on input line 35.
+Class revtex4-2 Info: Taking \maketitle back from hyperref on input line 35.
 \openout3 = `Report_Part_2Notes.bib'.
 
 LaTeX Font Info:    Trying to load font information for U+esint on input line 6
-2.
+5.
  (/usr/local/texlive/2021/texmf-dist/tex/latex/esint/uesint.fd
 File: uesint.fd 
 )
-LaTeX Font Info:    Trying to load font information for U+msa on input line 62.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 65.
 
 
 (/usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 62.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 65.
 
 
 (/usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-<Figures/Ellipse.png, id=89, 709.65125pt x 305.64188pt>
+<Figures/Ellipse.png, id=90, 709.65125pt x 305.64188pt>
 File: Figures/Ellipse.png Graphic file (type png)
 <use Figures/Ellipse.png>
-Package pdftex.def Info: Figures/Ellipse.png  used on input line 71.
+Package pdftex.def Info: Figures/Ellipse.png  used on input line 74.
 (pdftex.def)             Requested size: 212.897pt x 91.69325pt.
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-Underfull \hbox (badness 1033) in paragraph at lines 88--98
+Underfull \hbox (badness 1033) in paragraph at lines 91--101
 \OT1/cmr/m/n/10 the co-or-di-nates back to carte-sian co-or-di-nates us-ing
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 88--98
+Underfull \hbox (badness 10000) in paragraph at lines 91--101
 
  []
-
-
-Package amsfonts Warning: Obsolete command \bold; \mathbf should be used instea
-d on input line 102.
 
 [1{/usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map} </User
 s/jannikeschler/Documents/GitHub/AST2000/Project/Part 2/Figures/Ellipse.png>]
-<Figures/leapfrog1.png, id=115, 440.64626pt x 170.6375pt>
+
+Package amsfonts Warning: Obsolete command \bold; \mathbf should be used instea
+d on input line 105.
+
+<Figures/leapfrog1.png, id=118, 440.64626pt x 170.6375pt>
 File: Figures/leapfrog1.png Graphic file (type png)
 <use Figures/leapfrog1.png>
-Package pdftex.def Info: Figures/leapfrog1.png  used on input line 114.
+Package pdftex.def Info: Figures/leapfrog1.png  used on input line 117.
 (pdftex.def)             Requested size: 176.25537pt x 68.25378pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 102--120
+Underfull \hbox (badness 10000) in paragraph at lines 105--123
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 124--127
+Underfull \hbox (badness 10000) in paragraph at lines 127--130
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 124--127
+Underfull \hbox (badness 10000) in paragraph at lines 127--130
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 151--152
+Underfull \hbox (badness 10000) in paragraph at lines 154--155
 
  []
 
 
-Underfull \hbox (badness 1052) in paragraph at lines 153--164
+Underfull \hbox (badness 1052) in paragraph at lines 156--167
 \OT1/cmr/m/n/10 have the high-est an-gu-lar ve-loc-ity at the per-i-he-lion
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 153--164
+Underfull \hbox (badness 10000) in paragraph at lines 156--167
 
  []
 
@@ -624,26 +1013,26 @@ File: uni-3.def 2013/05/13 UCS: Unicode data U+0300..U+03FF
 (/usr/local/texlive/2021/texmf-dist/tex/latex/ucs/data/uni-34.def
 File: uni-34.def 2013/05/13 UCS: Unicode data U+2200..U+22FF
 )
-<Figures/Orbit_plots.png, id=141, 462.528pt x 346.896pt>
+<Figures/Orbit_plots.png, id=147, 462.528pt x 346.896pt>
 File: Figures/Orbit_plots.png Graphic file (type png)
 <use Figures/Orbit_plots.png>
-Package pdftex.def Info: Figures/Orbit_plots.png  used on input line 231.
+Package pdftex.def Info: Figures/Orbit_plots.png  used on input line 240.
 (pdftex.def)             Requested size: 185.0079pt x 138.75594pt.
-
+ [3]
 /Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 2/Report_Part_2.tex:
-251: Missing $ inserted.
+260: Missing $ inserted.
 <inserted text> 
                 $
-l.251         Area & 3.07 \times
+l.260         Area & 3.07 \times
                                  10^{-06} & 3.07 \times 10^{-06}\\
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 /Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 2/Report_Part_2.tex:
-251: Extra }, or forgotten $.
+260: Extra }, or forgotten $.
 <template> \unskip \hfil }
                           \hskip \tabmidsep \relax \hskip -.5\arrayrulewidth...
-l.251         Area & 3.07 \times 10^{-06} &
+l.260         Area & 3.07 \times 10^{-06} &
                                             3.07 \times 10^{-06}\\
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -652,19 +1041,19 @@ the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
 /Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 2/Report_Part_2.tex:
-251: Missing $ inserted.
+260: Missing $ inserted.
 <inserted text> 
                 $
-l.251         Area & 3.07 \times 10^{-06} &
+l.260         Area & 3.07 \times 10^{-06} &
                                             3.07 \times 10^{-06}\\
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 /Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 2/Report_Part_2.tex:
-251: Missing } inserted.
+260: Missing } inserted.
 <inserted text> 
                 }
-l.251         Area & 3.07 \times 10^{-06} &
+l.260         Area & 3.07 \times 10^{-06} &
                                             3.07 \times 10^{-06}\\
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -673,19 +1062,19 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 /Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 2/Report_Part_2.tex:
-251: Missing $ inserted.
+260: Missing $ inserted.
 <inserted text> 
                 $
-l.251 ...Area & 3.07 \times 10^{-06} & 3.07 \times
+l.260 ...Area & 3.07 \times 10^{-06} & 3.07 \times
                                                    10^{-06}\\
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 /Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 2/Report_Part_2.tex:
-252: Extra }, or forgotten $.
+261: Extra }, or forgotten $.
 <template> \unskip \hfil }
                           \hskip \tabmidsep \relax \hskip -.5\arrayrulewidth...
-l.252         \hline
+l.261         \hline
                     
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -694,19 +1083,19 @@ the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
 /Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 2/Report_Part_2.tex:
-252: Missing $ inserted.
+261: Missing $ inserted.
 <inserted text> 
                 $
-l.252         \hline
+l.261         \hline
                     
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 /Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 2/Report_Part_2.tex:
-252: Missing } inserted.
+261: Missing } inserted.
 <inserted text> 
                 }
-l.252         \hline
+l.261         \hline
                     
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -715,19 +1104,19 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 /Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 2/Report_Part_2.tex:
-253: Missing $ inserted.
+262: Missing $ inserted.
 <inserted text> 
                 $
-l.253 		Distance & 6.82 \times
+l.262 		Distance & 6.82 \times
                                10^{-07} & 6.82 \times 10^{-07}\\
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 /Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 2/Report_Part_2.tex:
-253: Extra }, or forgotten $.
+262: Extra }, or forgotten $.
 <template> \unskip \hfil }
                           \hskip \tabmidsep \relax \hskip -.5\arrayrulewidth...
-l.253 		Distance & 6.82 \times 10^{-07} &
+l.262 		Distance & 6.82 \times 10^{-07} &
                                           6.82 \times 10^{-07}\\
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -736,19 +1125,19 @@ the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
 /Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 2/Report_Part_2.tex:
-253: Missing $ inserted.
+262: Missing $ inserted.
 <inserted text> 
                 $
-l.253 		Distance & 6.82 \times 10^{-07} &
+l.262 		Distance & 6.82 \times 10^{-07} &
                                           6.82 \times 10^{-07}\\
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 /Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 2/Report_Part_2.tex:
-253: Missing } inserted.
+262: Missing } inserted.
 <inserted text> 
                 }
-l.253 		Distance & 6.82 \times 10^{-07} &
+l.262 		Distance & 6.82 \times 10^{-07} &
                                           6.82 \times 10^{-07}\\
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -757,19 +1146,19 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 /Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 2/Report_Part_2.tex:
-253: Missing $ inserted.
+262: Missing $ inserted.
 <inserted text> 
                 $
-l.253 ...ance & 6.82 \times 10^{-07} & 6.82 \times
+l.262 ...ance & 6.82 \times 10^{-07} & 6.82 \times
                                                    10^{-07}\\
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 /Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 2/Report_Part_2.tex:
-254: Extra }, or forgotten $.
+263: Extra }, or forgotten $.
 <template> \unskip \hfil }
                           \hskip \tabmidsep \relax \hskip -.5\arrayrulewidth...
-l.254 		\hline
+l.263 		\hline
               
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -778,19 +1167,19 @@ the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
 /Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 2/Report_Part_2.tex:
-254: Missing $ inserted.
+263: Missing $ inserted.
 <inserted text> 
                 $
-l.254 		\hline
+l.263 		\hline
               
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 /Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 2/Report_Part_2.tex:
-254: Missing } inserted.
+263: Missing } inserted.
 <inserted text> 
                 }
-l.254 		\hline
+l.263 		\hline
               
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -798,114 +1187,165 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-[3 </Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 2/Figures/Orbit_
-plots.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 281--283
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 290--292
 
  []
 
-<Figures/Planet_Orbit_CM.pdf, id=158, 1387.58403pt x 687.28767pt>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<Figures/Planet_Orbit_CM.pdf, id=164, 1387.58403pt x 704.6325pt>
 File: Figures/Planet_Orbit_CM.pdf Graphic file (type pdf)
 <use Figures/Planet_Orbit_CM.pdf>
-Package pdftex.def Info: Figures/Planet_Orbit_CM.pdf  used on input line 327.
-(pdftex.def)             Requested size: 208.12862pt x 103.0887pt.
-<Figures/Solar_Orbit_CM.pdf, id=159, 1387.58403pt x 687.28767pt>
+Package pdftex.def Info: Figures/Planet_Orbit_CM.pdf  used on input line 336.
+(pdftex.def)             Requested size: 208.12862pt x 105.6903pt.
+<Figures/Solar_Orbit_CM.pdf, id=165, 1387.58403pt x 704.6325pt>
 File: Figures/Solar_Orbit_CM.pdf Graphic file (type pdf)
 <use Figures/Solar_Orbit_CM.pdf>
-Package pdftex.def Info: Figures/Solar_Orbit_CM.pdf  used on input line 334.
-(pdftex.def)             Requested size: 208.12862pt x 103.0887pt.
-<Figures/Energy_AngularMomentum_plot.pdf, id=161, 1387.58403pt x 687.28767pt>
+Package pdftex.def Info: Figures/Solar_Orbit_CM.pdf  used on input line 343.
+(pdftex.def)             Requested size: 208.12862pt x 105.6903pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[4 </Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 2/Figures/Orbit_
+plots.png> </Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 2/Figure
+s/Planet_Orbit_CM.pdf>]
+
+LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
+ on input line 351.
+
+<Figures/Energy_AngularMomentum_plot.pdf, id=222, 1387.58403pt x 704.6325pt>
 File: Figures/Energy_AngularMomentum_plot.pdf Graphic file (type pdf)
 <use Figures/Energy_AngularMomentum_plot.pdf>
 Package pdftex.def Info: Figures/Energy_AngularMomentum_plot.pdf  used on input
- line 345.
-(pdftex.def)             Requested size: 208.12862pt x 103.0887pt.
+ line 354.
+(pdftex.def)             Requested size: 208.12862pt x 105.6903pt.
+<Figures/Other_Group_Radial_Velocity.png, id=223, 462.528pt x 346.896pt>
+File: Figures/Other_Group_Radial_Velocity.png Graphic file (type png)
+<use Figures/Other_Group_Radial_Velocity.png>
+Package pdftex.def Info: Figures/Other_Group_Radial_Velocity.png  used on input
+ line 363.
+(pdftex.def)             Requested size: 231.26343pt x 173.44757pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 352--365
-
- []
-
-[4 </Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 2/Figures/Planet
-_Orbit_CM.pdf> </Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 2/Fi
-gures/Solar_Orbit_CM.pdf> </Users/jannikeschler/Documents/GitHub/AST2000/Projec
-t/Part 2/Figures/Energy_AngularMomentum_plot.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 382--389
+Underfull \hbox (badness 10000) in paragraph at lines 369--382
 
  []
 
 
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 397.
+Underfull \hbox (badness 10000) in paragraph at lines 399--406
 
+ []
 
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 397.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 397.
-
+[5 </Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 2/Figures/Solar_
+Orbit_CM.pdf> </Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 2/Fig
+ures/Energy_AngularMomentum_plot.pdf> </Users/jannikeschler/Documents/GitHub/AS
+T2000/Project/Part 2/Figures/Other_Group_Radial_Velocity.png>]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 397.
+(hyperref)                removing `math shift' on input line 416.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 397.
+(hyperref)                removing `subscript' on input line 416.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 397.
+(hyperref)                removing `math shift' on input line 416.
 
 
-Overfull \hbox (21.1081pt too wide) detected at line 403
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 416.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 416.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 416.
+
+
+Overfull \hbox (21.1081pt too wide) detected at line 422
 \OT1/cmr/bx/n/10 R \OT1/cmr/m/n/10 = [][] + [] [] = [] [] + []\OT1/cmr/bx/n/10 
 r \OT1/cmr/m/n/10 = [] + []\OT1/cmr/bx/n/10 r
  []
 
-[5]
-Overfull \hbox (33.11954pt too wide) detected at line 426
+
+Overfull \hbox (33.11954pt too wide) detected at line 445
 [] \OT1/cmr/m/n/10 = [] [][]
  []
 
 (/usr/local/texlive/2021/texmf-dist/tex/latex/ucs/data/uni-0.def
 File: uni-0.def 2013/05/13 UCS: Unicode data U+0000..U+00FF
 )
-<Figures/Other_Group_Radial_Velocity.png, id=300, 462.528pt x 346.896pt>
-File: Figures/Other_Group_Radial_Velocity.png Graphic file (type png)
-<use Figures/Other_Group_Radial_Velocity.png>
-Package pdftex.def Info: Figures/Other_Group_Radial_Velocity.png  used on input
- line 468.
-(pdftex.def)             Requested size: 115.63171pt x 86.72379pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 474--477
+LaTeX Warning: Reference `fig:triangle_sas' on page 6 undefined on input line 4
+78.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 477--480
 
  []
 
-[6 </Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 2/Figures/Other_
-Group_Radial_Velocity.png>]
-<Figures/triangle_sas.jpg, id=309, 474.27188pt x 355.3275pt>
+[6]
+<Figures/triangle_sas.jpg, id=315, 474.27188pt x 355.3275pt>
 File: Figures/triangle_sas.jpg Graphic file (type jpg)
 <use Figures/triangle_sas.jpg>
-Package pdftex.def Info: Figures/triangle_sas.jpg  used on input line 495.
+Package pdftex.def Info: Figures/triangle_sas.jpg  used on input line 498.
 (pdftex.def)             Requested size: 189.70538pt x 142.12846pt.
 
-(/Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 2/Report_Part_2.bbl
-) [7 </Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 2/Figures/tria
-ngle_sas.jpg>]
+
+/Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 2/Report_Part_2.tex:
+507: LaTeX Error: Can be used only in preamble.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.507 \end{document}
+                    
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+Package logreq Info: Writing requests to 'Report_Part_2.run.xml'.
+\openout1 = `Report_Part_2.run.xml'.
+
+[7
+\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsl
+ine {figure}{\numberline {8}{\ignorespaces Arbitrary triangle for the calculati
+on of the area dA in section~\ref  {subsec:calculation-of-swept-out-area}.}}{7}
+{figure.8}\protected@file@percent }
+\newlabel{fig:triangle_sas}{{8}{7}{Arbitrary triangle for the calculation of th
+e area dA in section~\ref {subsec:calculation-of-swept-out-area}}{figure.8}{}}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsl
+ine {section}{\numberline {}References}{7}{section*.21}\protected@file@percent 
+}
+ </Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 2/Figures/triangle
+_sas.jpg>]
+\newlabel{LastPage}{{}{7}{}{}{}}
+\gdef \@abspage@last{7}
+
 (/Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 2/Report_Part_2.aux
 )
+
+LaTeX Warning: There were undefined references.
+
 Package rerunfilecheck Info: File `Report_Part_2.out' has not changed.
-(rerunfilecheck)             Checksum: 234840CB03BEE4944108BE54F31FB54F;3421.
+(rerunfilecheck)             Checksum: 1FB03F205ABAE47BCB74B7D85B71B442;3519.
  ) 
 Here is how much of TeX's memory you used:
- 16069 strings out of 478994
- 223745 string characters out of 5858184
- 751395 words of memory out of 5000000
- 33267 multiletter control sequences out of 15000+600000
- 411063 words of font info for 60 fonts, out of 8000000 for 9000
+ 23386 strings out of 478994
+ 368351 string characters out of 5858184
+ 1137130 words of memory out of 5000000
+ 40515 multiletter control sequences out of 15000+600000
+ 411576 words of font info for 62 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 81i,10n,89p,807b,533s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 81i,10n,89p,920b,1515s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
 </usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx6.pfb></
@@ -923,13 +1363,15 @@ ve/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2021/t
 exmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2021/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2021/texmf
--dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/2021/texmf-d
-ist/fonts/type1/public/esint-type1/esint10.pfb>
+-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2021/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/2021/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmtt9.pfb></usr/local/texlive/2021/texmf-dist
+/fonts/type1/public/esint-type1/esint10.pfb>
 Output written on "/Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 2
-/Report_Part_2.pdf" (7 pages, 508023 bytes).
+/Report_Part_2.pdf" (7 pages, 531949 bytes).
 PDF statistics:
- 392 PDF objects out of 1000 (max. 8388607)
- 249 compressed objects within 3 object streams
- 50 named destinations out of 1000 (max. 500000)
+ 413 PDF objects out of 1000 (max. 8388607)
+ 267 compressed objects within 3 object streams
+ 53 named destinations out of 1000 (max. 500000)
  209 words of extra memory for PDF output out of 10000 (max. 10000000)
 

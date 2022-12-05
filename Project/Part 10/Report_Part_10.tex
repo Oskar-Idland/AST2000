@@ -10,9 +10,8 @@
 \usepackage{hyperref}
 \usepackage{listings}
 \usepackage{subfigure}
-% \usepackage{biblatex}
-% \usepackage[style=science, backend=biber]{biblatex}
-% \addbibresource{References_Part_4.bib} TODO: Slett før innlevering
+\usepackage[style=science, backend=biber]{biblatex}
+\addbibresource{Report_Part_10.bib}
 \hypersetup{
     colorlinks,
     linkcolor={red!50!black},
@@ -79,8 +78,7 @@ We can use this to find a new way to express the Luminosity.
 \begin{equation} \label{eq: Lumin 2}
   L = FdA 
 \end{equation}
-Stefan-Boltzmann's law%~\parencite[][p. 3]{for_notat_3d} TODO: Remove Comment
-dictates that the flux $ F $ can be expressed as
+Stefan-Boltzmann's law~\parencite[][p. 3]{for_notat_3d} dictates that the flux $ F $ can be expressed as
 
 \begin{equation}\label{eq: Flux 2}
   F = σT^{4}.
@@ -104,7 +102,7 @@ It seems our star is a main sequence star! This was very likely as this is where
 \subsubsection*{The Lifespan of Our Star}
 In all stars their is a struggle between two forces. The first being the gravitational force trying to crush all the atoms in the star in on itself. The other being the radiation pressure generated from the fusion of mainly hydrogen inside the star. As more and more hydrogen is turned into helium the mean molecular weight $ μ $ of the star increases and as such, its mass increases as well. When the mass increases the gravitational force increases and the star will shrink. The shrinkage will create higher pressure and temperature which will make the fusion more effective, increasing the radiation pressure. The two forces will balance each other until the star has a relatively stable radius until there isn't enough hydrogen to stop the gravitational forces, but we will cover this later. When these two forces are equal, the star has reached hydrostatic equilibrium. 
 
-This tells us there is a relationship between the mass of the star and its lifetime $ t $. The equation expressing this relationship (derived in %~\parencite[][p. 7]{for_notat_3d}) TODO: Remove Comment
+This tells us there is a relationship between the mass of the star and its lifetime $ t $. The equation expressing this relationship (derived in ~\parencite[][p. 7]{for_notat_3d})
 is as follows:
 \begin{equation} \label{eq: Lifetime}
   t = \frac{pMc^{2}}{L}
@@ -114,7 +112,7 @@ Where $ p $ is the fraction of the total mass being converted into energy, $ M $
 \subsubsection*{Relationships between mass, temperature and luminosity}
 As one can see from the HR-diagram~\ref{fig: HR_diagram}, there is a clear relationship between the temperature and luminosity of a star as they sit on the main sequence.
 We therefore expect to see "well behaved" main sequence stars to obey certain ratios.
-Derived in%~\parencite[][equation 4]{for_notat_3b} TODO: Remove Comment
+Derived in~\parencite[][equation 4]{for_notat_3b}
 we see the two following equations
 \begin{equation}\label{eq: T M ratio}
   M ∝ T^{2}_{eff}
@@ -147,7 +145,7 @@ Star do not begin their existence as bright, hot spheres creating fusion reactio
   \item Has a temperature of 10 K
   \item Is made up of 75\% Hydrogen and 25\% Helium
 \end{itemize} 
-As derived in%~\parencite[][Section 3]{for_notat_3b} TODO: Remove Comment
+As derived in~\parencite[][Section 3]{for_notat_3b}
 , there is a minimum radius requirement radius $ R_j $ for a GMC to collapse in on itself.
 \begin{equation}
   R_j = \left( \frac{15kT }{4 π G μ m_h ρ} \right) ^{\frac{1}{2}}
@@ -220,7 +218,7 @@ We are now going to re-calculate the luminosity of our star based on the nuclear
   \item Assume energy production occurs via the pp-chain and CNO-cycle
   \item The core consist of 76.5\% Hydrogen, 25.3\% Helium and 0.2\% Carbon, Oxygen and Nitrogen 
 \end{itemize}
-As our star has a core temperature $ T_c $ of about 17 million Kelvin the most dominant chain reactions in the core is the pp-chain and the CNO-cycle. The basic equation for calculating energy released per kg per second we get from%~\parencite[][page 4]{for_notat_3c}. TODO Remove Comment
+As our star has a core temperature $ T_c $ of about 17 million Kelvin the most dominant chain reactions in the core is the pp-chain and the CNO-cycle. The basic equation for calculating energy released per kg per second we get from~\parencite[][page 4]{for_notat_3c}.
 \begin{equation}\label{eq: chain reaction}
   ε_{\text{AB }} = ε_{\text{0, reac}} X_{S} X_{B} ρ^{α} T^{β}
 \end{equation}
@@ -229,7 +227,7 @@ In this equation, $ \rho $ is the density, $ \alpha $ and $ \beta $ are indices 
 X_{A} = \frac{n_{A}m_{A}}{nm} = \frac{\text{total mass in type A nuclei}}{\text{total mass}}
 \]
 
-The pp-chain is actually multiple chain reactions. We will focus on the the most important one, namely the pp-I chain. This chain reaction converts four $ _{1}^{1}\text{H} $ to $ _{2}^{4}\text{He} $ and is the most efficient at 15 million Kelvin. We will now introduce a new way of writing temperature. With this notation $ T_{n} = T ⋅ 10^{n}K $. This is used in the equation for the pp-chain as follows, derived in%~\parencite[][page 6]{for_notat_3c}. TODO: Remove Comment
+The pp-chain is actually multiple chain reactions. We will focus on the the most important one, namely the pp-I chain. This chain reaction converts four $ _{1}^{1}\text{H} $ to $ _{2}^{4}\text{He} $ and is the most efficient at 15 million Kelvin. We will now introduce a new way of writing temperature. With this notation $ T_{n} = T ⋅ 10^{n}K $. This is used in the equation for the pp-chain as follows, derived in~\parencite[][page 6]{for_notat_3c}.
 \begin{equation}\label{eq: pp-chain}
   ε_{\text{pp}} ≈ ε_{\text{0, pp}}X^{2}_{H}ρ T^{4}_{6}
 \end{equation}
@@ -240,7 +238,7 @@ In this equation, $ ε_{\text{0, pp}} = 1.08 ⋅ 10^{-12}Wm^{3} / kg^{2} $, the 
 \end{equation}
 
 The CNO-cycle also converts four $ _{1}^{1}\text{H} $ to $ _{2}^{4}\text{He} $.
-We will use the expression derived in%~\parencite[][page 6]{for_notat_3c} TODO: Remove Comment
+We will use the expression derived in~\parencite[][page 6]{for_notat_3c}
 which is valid for temperature around 20 million Kelvin.
 \begin{equation}\label{eq: CNO-cycle}
   ε_{\text{CNO}} = ε_{\text{0, CNO}}X_{H}X_{\text{CNO}}ρT^{20}_{6}
@@ -336,11 +334,11 @@ We want to find an expression of how large our star will become as a white dwarf
   \item Uniform density
 \end{itemize}
 
-We can use the equation for hydrostatic equilibrium as derived in%~\parencite[][equation 1]{for_notat_3e}. TODO: Remove Comment
+We can use the equation for hydrostatic equilibrium as derived in~\parencite[][equation 1]{for_notat_3e}.
 \begin{equation}\label{eq: Hydro equilibrium }
   \frac{P}{R} ≈  \frac{GM}{R^{2}} \frac{4M}{3 π R^{3}} = \frac{3GM^{2}}{4 π R^{5}}
 \end{equation}
-Replacing the pressure $ P $ with the degeneration pressure we get the equation from%~\parencite[][equation 2]{for_notat_3e}. TODO: Remove Comment
+Replacing the pressure $ P $ with the degeneration pressure we get the equation from~\parencite[][equation 2]{for_notat_3e}.
 \begin{equation}\label{}
   \left( \frac{3}{π} \right) ^{\frac{2}{3}} \frac{h^{2}}{20m_e} n_{e}^{\frac{5}{3}} = \frac{3GM^{2}}{4 π R^{5}}
 \end{equation}
@@ -377,7 +375,7 @@ It does not seem likely there will be any walking on the neutron star after all.
 \begin{figure}[h!]
   \centering
   \includegraphics[scale = .75]{figures/Spectral_class}
-  \caption{HR-Diagram showing different categorizations of stars%~\parencite[][page 2]{for_notat_3d}. TODO Remove Comment
+  \caption{HR-Diagram showing different categorizations of stars~\parencite[][page 2]{for_notat_3d}.
   }
   \label{fig: Spectral class}
 \end{figure}
@@ -385,6 +383,6 @@ It does not seem likely there will be any walking on the neutron star after all.
 \twocolumngrid
 
 \newpage
-%\printbibliography TODO: Remove Comment
+\printbibliography
 
 \end{document}
