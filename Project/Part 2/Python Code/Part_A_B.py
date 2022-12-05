@@ -1,13 +1,12 @@
+# This Code is based on the calc_orbits_skeleton
+
 import matplotlib.pyplot as plt
 from scipy import interpolate
-from numba import jit, njit
+from numba import jit
 import numpy as np
-import ast2000tools.utils as utils
 from ast2000tools.solar_system import SolarSystem
 from ast2000tools.space_mission import SpaceMission
 import time
-import pandas as pd
-import os
 start = time.time()
 
 seed = 36874
