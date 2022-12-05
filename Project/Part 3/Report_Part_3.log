@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2022.2.21)  5 DEC 2022 10:55
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2022.2.21)  5 DEC 2022 14:40
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -667,8 +667,14 @@ The bibliography requires the 'biblatex' package.
 )
 (/Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 3/Report_Part_3.aux
 )
-Package rerunfilecheck Info: File `Report_Part_3.out' has not changed.
-(rerunfilecheck)             Checksum: F87FDE8668FEBA651AF14A1E18517E43;3655.
+
+Package rerunfilecheck Warning: File `Report_Part_3.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `Report_Part_3.out':
+(rerunfilecheck)             Before: F87FDE8668FEBA651AF14A1E18517E43;3655
+(rerunfilecheck)             After:  35DE34E06EC0CE600D145100AADEF6E1;3802.
  ) 
 Here is how much of TeX's memory you used:
  14570 strings out of 478994
@@ -696,7 +702,7 @@ texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2021/te
 xmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/2021/texm
 f-dist/fonts/type1/public/esint-type1/esint10.pfb>
 Output written on "/Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 3
-/Report_Part_3.pdf" (7 pages, 309712 bytes).
+/Report_Part_3.pdf" (7 pages, 309991 bytes).
 PDF statistics:
  288 PDF objects out of 1000 (max. 8388607)
  249 compressed objects within 3 object streams
