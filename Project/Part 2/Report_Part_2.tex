@@ -37,7 +37,12 @@
 \affiliation{Institute of Theoretical Astrophysics, University of Oslo}
 
 \begin{abstract}
-This is an abstract \colorbox{red}{Complete this summary at the end of the paper}
+	Using initial positions and velocities, and masses of all planets in the solar system, the planetary orbits of the solar system have been simulated.
+	These orbits were then compared to the values calculated using Kepler's laws.
+	The comparison to Kepler's second law and Newtons revised version of Kepler's third law agreed with the results of the simulation.
+	Kepler's original version of the third law gave significant deviances from the results in the simulation.
+	The orbits were then simulated again by setting up a two-body system with the center of mass of the solar system as a reference point.
+	The orbits displayed consistent total energy with only small fluctuations.
 \end{abstract}
 \maketitle
 
@@ -143,7 +148,8 @@ To calculate the areas, each area will be divided into smaller areas $dA$, which
     dA = \frac{1}{2}r^2 d\theta 
 \end{equation}
 
-\colorbox{red}{The derivation of this formula can be found in the Appendix}
+The derivation of this formula can be found in section~\ref{subsec:calculation-of-swept-out-area}.\\
+
 When running the simulation, a small area $dA$ which is equal to the area swept out by the position vector $\textbf{r}$ during the time interval $\Delta t$, will be calculated using formula~\eqref{Kepler_dArea}.
 To find the total area swept out during a time interval $[a, b]$, all smaller areas $dA$ in the interval $[a, b]$ need to be added together.
 This will give an approximation of the total swept out area.
@@ -242,14 +248,14 @@ These equations will be used to check if the energy and angular momentum remains
 		\hline
         Planet 0 & Aphelion & Perihelion\\
         \hline
-        Area & 0.00000307 & 0.00000307\\
+        Area & 3.07 \times 10^{-06} & 3.07 \times 10^{-06}\\
         \hline
-		Distance & 6.823815E-07 & 6.823823E-07\\
+		Distance & 6.82 \times 10^{-07} & 6.82 \times 10^{-07}\\
 		\hline
-		Velocity & 0.20996355 & 0.20996378\\
+		Velocity & 0.2099 & 0.2099\\
 		\hline
     \end{tabular}
-	\caption{Area, Distance and Velocity results for calculated areas at Aphelion and Perihelion}
+	\caption{Area, Distance and Velocity results for calculated areas at Aphelion and Perihelion. Areas are given in AU$^2$, Distances in AU and Velocities in AU/Yr.}
 	\label{tab:Kepler2_table1}
 \end{table}
 
@@ -261,11 +267,11 @@ These equations will be used to check if the energy and angular momentum remains
 		\hline
 		 & Difference\\
 		\hline
-		Area & $ 3.181500E-12 AU^2 $\\
+		Area & $ 3.182 \times 10^{-12} AU^2 $\\
 		\hline
-		Distance & $ 7.306208E-13 AU $\\
+		Distance & $ 7.306 \times 10^{-13} AU $\\
 		\hline
-		Velocity & $  0.00000022 AU/Yr $\\
+		Velocity & $  2.2 \times 10^{-7}AU/Yr $\\
 		\hline
 	\end{tabular}
     \caption{Differences between results of the two areas}
@@ -281,27 +287,27 @@ These equations will be used to check if the energy and angular momentum remains
         \hline
 		Method & \textbf{Planet 0} & \textbf{Planet 1}\\
 		\hline
-        Analytic	& 12.81499 Yrs & 16.93432 Yrs\\
-		Kepler		& 27.00534 Yrs & 35.68609 Yrs\\
-		Newton		& 12.81498 Yrs & 16.93431 Yrs\\
+        Analytic	& 12.8150 Yrs & 16.9343 Yrs\\
+		Kepler		& 27.0053 Yrs & 35.6861 Yrs\\
+		Newton		& 12.8150 Yrs & 16.9343 Yrs\\
 		\hline\hline
 		Method & \textbf{Planet 2} & \textbf{Planet 3}\\
 		\hline
-        Analytic	& 34.83863 Yrs & 252.32753 Yrs\\
-		Kepler		& 73.41629 Yrs & 531.73585 Yrs\\
-		Newton		& 34.83862 Yrs & 252.32499 Yrs\\
+        Analytic	& 34.8386 Yrs & 252.3275 Yrs\\
+		Kepler		& 73.4163 Yrs & 531.7359 Yrs\\
+		Newton		& 34.8386 Yrs & 252.3250 Yrs\\
 		\hline\hline
 		Method & \textbf{Planet 4} & \textbf{Planet 5}\\
 		\hline
-        Analytic	& 116.61089 Yrs & 69.47113 Yrs\\
-		Kepler		& 245.73693 Yrs & 146.39819 Yrs\\
-		Newton		& 116.61089 Yrs & 69.47113 Yrs\\
+        Analytic	& 116.6109 Yrs & 69.4711 Yrs\\
+		Kepler		& 245.7369 Yrs & 146.3982 Yrs\\
+		Newton		& 116.6109 Yrs & 69.4711 Yrs\\
 		\hline\hline
 		Method & \textbf{Planet 6} & \textbf{Planet 7}\\
 		\hline
-        Analytic	& 171.66819 Yrs & 7.25601 Yrs\\
-		Kepler		& 361.76050 Yrs & 15.29077 Yrs\\
-		Newton		& 171.66798 Yrs & 7.25601 Yrs\\
+        Analytic	& 171.6682 Yrs & 7.2560 Yrs\\
+		Kepler		& 361.7605 Yrs & 15.2908 Yrs\\
+		Newton		& 171.6680 Yrs & 7.2560 Yrs\\
 		\hline
 	\end{tabular}
     \caption{Orbital Periods of all planets calculated using three different methods}
@@ -313,26 +319,30 @@ It can be seen that the orbits are not entirely consistent with Kepler's third l
 They are however very consistent with Newton's revised version of Kepler's third law as they deviate less than $0.0015\%$ from each other.
 
 \subsection{Orbits Around Center of Mass}
-	The simulation of planet number 3 and solar orbits respectively yielded the following results. The plots include a perfect circle to emphasize the elliptical orbit. The small orange dot in the center of figure \ref{fig: P_orbit_cm} is the orbit of the star. 
+	The simulation of planet number 3 and solar orbits respectively yielded the following results.
+	The plots include a perfect circle to emphasize the elliptical orbit.
+	The small orange dot in the center of figure~\ref{fig: P_orbit_cm} is the orbit of the star.
 	\begin{figure}[h!]
 	  \centering
-	  \includegraphics[scale = .15]{Figures/Planet_Orbit_CM.pdf}
+	  \includegraphics[scale = 0.15]{Figures/Planet_Orbit_CM}
 	  \caption{Plot of the simulated orbit of the planet around the center of mass}
 	  \label{fig: P_orbit_cm}
 	\end{figure}
 	
 	\begin{figure}[h!]
 	  \centering
-	  \includegraphics[scale = .15]{Figures/Solar_Orbit_CM.pdf}
+	  \includegraphics[scale = 0.15]{Figures/Solar_Orbit_CM}
 	  \caption{Plot of the simulated orbit of the star around the center of mass}
 	  \label{fig: S_orbit_cm}
 	\end{figure}
 	
-	The total angular momentum and energy of the two-body system calculated by the analytical solution shown in \ref{Method orbit calc}. The total energy changes cyclicly approximately  99.9999997591\% to  100.0000004921 \%  from the mean value. The Angular momentum stays at approximately  0 for the entire simulation. 
+	The total angular momentum and energy of the two-body system calculated by the analytical solution shown in~\ref{Method orbit calc}.
+	The total energy changes cyclically approximately 99.9999997591\% to 100.0000004921\% from the mean value.
+	The Angular momentum stays at approximately 0 for the entire simulation.
 	
 	\begin{figure}[h!]
 	  \centering
-	  \includegraphics[scale = .15]{Figures/Energy_AngularMomentum_plot.pdf}
+	  \includegraphics[scale = 0.15]{Figures/Energy_AngularMomentum_plot}
 	  \caption{Plot of the total energy and angular momentum of the two body system}
 	  \label{fig: tot_Energy_AM}
 	\end{figure}
@@ -340,10 +350,10 @@ They are however very consistent with Newton's revised version of Kepler's third
 
 \section{Discussion}
 To get an accurate simulation, it is important to choose a sufficiently small time interval dt.
-An adequate number is approximately 10'000 steps per year of simulation, which corresponds to a time interval of $\Delta t = 52$ min $33.6$ sec.
-Using smaller time intervals will result in a more precise simulation, but will increase computing time. In this simulation, $3*10^6$ time steps were used over a time period of $260$ Years.
-This will result in a time step of $\Delta t = 45$ min $35$ sec, which seems reasonable.
-The simulation has then been run once with $8*10^7$ time steps, which did not result in any significant change in the results but reduced the time interval to $\Delta t = 1$ min $46$ sec.
+An adequate number is approximately 10'000 steps per year of simulation, which corresponds to a time interval of $\Delta t = 52$ min $34$ sec.
+Using smaller time intervals will result in a more precise simulation, but will increase computing time.
+In this simulation, $3*10^6$ time steps were used over a time period of $260$ Years.
+This will result in a time step of $\Delta t = 45$ min $35$ sec, which seems reasonable.\\
 Due to the large dimensions of the orbits, this is enough to be able to simulate the orbits precisely.\\
 These orbits will, however, not be entirely as it would be in reality, due to the fact that we are using some simplifications.
 The most important being negation of relativistic effects and assuming that there are no forces other than the gravitational force from the sun.
@@ -359,12 +369,27 @@ So the relative difference is almost the same for all planets.
 Newton's revised version, gives a better result and results in the relative difference being approximately $0.0005 \pm 0.001\%$ for all planets, which is very accurate.
 This makes sense since we are not working with earth, but rather another home planet, which requires a more general formula.
 
-	\subsection{Orbits Around Center of Mass}
-	To judge the accuracy of the orbits we look at the total energy in the system to see if it is conserved. As seen in figure \ref{fig: tot_Energy_AM} we observed some fluctuations in the total energy, while angular momentum was constant. The magnitude of the energy was $ 10^{-13} $. At this scale the its most likely just calculation errors from the computer. The orbits of the star and the planet mirror each other which point to an accurate simulation. The forces acting on both bodies should have opposite direction and a difference in magnitude, which the graph portrays perfectly. 
+\subsection{Orbits Around Center of Mass}
+	To judge the accuracy of the orbits we look at the total energy in the system to see if it is conserved.
+	As seen in figure~\ref{fig: tot_Energy_AM} we observed some fluctuations in the total energy, while angular momentum was constant.
+	The magnitude of the energy was $ 10^{-13} $.
+	At this scale this is most likely just calculation errors from the computer.
+	The orbits of the star and the planet mirror each other which point to an accurate simulation.
+	The forces acting on both bodies should have opposite direction and a difference in magnitude, which the graph portrays perfectly.
+
 
 \section{Conclusion}
-The orbits around the two-body system was simulated accurately while conserving both energy and angular momentum. 
-\colorbox{red}{Add more!}
+The simulation of the orbits in the solar system were successfully calculated.
+As can be seen in~\ref{fig:Orbit_Plot}, all eight planetary orbits are relatively circular around the star.\\
+The analytic orbits and numerical orbits mostly agree, with some small deviances.
+It was found that the orbital periods of the planets ranged from $7.256$ to $252.3$ years.
+These orbital periods were compared to the values calculated using Kepler's original laws, and Newtons revised version.\\
+Kepler's original version of his third law had some significant differences, whereas Newtons revised version gave the same results as the result from the simulation.
+When comparing it using Kepler's second law, the result agreed very well with the results from the simulation.\\
+
+The orbits were then further simulated by using a two-body system with the center of mass as a reference system.
+The orbits around the two-body system was simulated accurately while conserving both energy and angular momentum.
+\colorbox{red}{Add more?}
 
 \section{Appendix}
 
@@ -407,13 +432,13 @@ The orbits around the two-body system was simulated accurately while conserving 
 			\]
 			When the center of mass is put in the origin $ \mathbf{R} = 0 $.
 			\[
-			E_k = \frac{1}{2} μ v^{2}
+			E_k = \frac{1}{2} \mu v^{2}
 			\]
 
 
 		\subsubsection{Calculating Angular Momentum}\label{AM calc}
 			\[
-			\mathbf{P} = \mathbf{r}_1 × m_1 \mathbf{\dot{r}}_1 + \mathbf{r}_2 × m_2 \mathbf{\dot{r}}_2 
+			\mathbf{P} = \mathbf{r}_1 \times m_1 \mathbf{\dot{r}}_1 + \mathbf{r}_2 × m_2 \mathbf{\dot{r}}_2
 			\]
 			\[
 			\mathbf{P} = m_1 \left(- \frac{m_2}{M}\right)_{}^{2}\mathbf{r} × \mathbf{\dot{r}} + m_2 \left(\frac{m_1}{M}\right)_{}^{2} \mathbf{r} × \mathbf{\dot{r}}
@@ -422,10 +447,10 @@ The orbits around the two-body system was simulated accurately while conserving 
 			\mathbf{P} = \frac{m_1m_2}{M^{2}} \left(m_1 + m_2\right)_{}^{} \mathbf{r} × \mathbf{\dot{r}} 
 			\]
 			\[
-			\mathbf{P} = μ \mathbf{r} = \mathbf{\dot{r}}
+			\mathbf{P} = \mu \mathbf{r} = \mathbf{\dot{r}}
 			\]
 			\[
-			\mathbf{P} = \mathbf{r} × μ \mathbf{\dot{r}}
+			\mathbf{P} = \mathbf{r} \times \mu \mathbf{\dot{r}}
 			\]
 	\newpage
 	\subsection{Radial Velocity Curve}
@@ -445,6 +470,31 @@ The orbits around the two-body system was simulated accurately while conserving 
 			  \label{fig: Radial Velocity}
 			\end{figure}
 
+\subsection{Calculation of swept out area}\label{subsec:calculation-of-swept-out-area}
+    To determine the swept out area $dA$ during the small time interval $dt$, we will be looking at how to express the area of a triangle using two sides and the included angle.\\
+	In figure~\ref{fig:triangle_sas} we can see an arbitrary triangle with two sides of length $r$.
+	Furthermore, the included angle between these two sides is $d\theta$.\\
+
+	We now draw a line $b$ (seen in red) from one of the corners opposite of $d\theta$ down on the opposite side, so that b stands normal on the side.
+	The length of $b$ can then be expressed as $b = r \sin\left(d\theta\right)$.
+	The area of the triangle $dA$ can now be calculated using the formula
+	\begin{align*}
+		dA = \frac{1}{2} a b
+	\end{align*}
+	Where $a$ is the baseline of length $r$ and $b$ is the height of the triangle seen in red with length $r \sin\left(d\theta\right)$.
+	Inserting these lengths yields
+	\begin{align*}
+	    dA = \frac{1}{2} r r \sin\left(d\theta\right)\\
+		dA = \frac{1}{2} r^2 \sin\left(d\theta\right)
+	\end{align*}
+
+
+\begin{figure}[h]
+	%% H(Here), h(here approx), t(top of page), b(bottom of page)
+	\centering
+	\includegraphics[scale=0.4]{Figures/triangle_sas}
+	\caption{Arbitrary triangle for the calculation of the area dA in section~\ref{subsec:calculation-of-swept-out-area}.}\label{fig:triangle_sas}
+\end{figure}
 
 
 \newpage
