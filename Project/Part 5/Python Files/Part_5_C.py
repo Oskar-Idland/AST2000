@@ -22,6 +22,7 @@ shortcut1 = SpaceMissionShortcuts(mission, [code_launch_results, code_escape_tra
 shortcut = SpaceMissionShortcuts(mission, [stable_orbit])
 G = 4 * np.pi ** 2
 
+
 def find_orbit_inj_velocity(planet_idx, dist):
     """
     Finds required speed for a stable orbit at given distance
@@ -132,7 +133,7 @@ if __name__ == "__main__":
     l = r_planet_orb*np.sqrt(dest_planet_mass/(10*system.star_mass))
     print(f"l: {l}")
 
-    # Starting interplanetary travel
+    # Starting interplanetary travel using our own function
     # t_in_orbit, r_in_orbit, v_in_orbit = interplanetary_travel(r0, v0, t0, t1, dt, max_deviation, dest_planet_idx, dest_planet_orbit, reference_traj, reference_vel, l)
 
     # Shortcut to stable orbit
@@ -147,13 +148,8 @@ if __name__ == "__main__":
     print(f"r_orb: {utils.m_to_AU(np.linalg.norm(r_orb))}")
 
     # int_trav.coast(0.1)
-    t_end, r_end, v_end = int_trav.orient()
-    t_idx_end = int(t_end / dt)
-    print(t_idx_end)
-    for i in range((t_idx_end-3000), (t_idx_end+3000)):
-        # int_trav.coast(0.1)
-        r_orb_end = np.linalg.norm(r_end-dest_planet_orbit[i])
-        print(f"r_orb_end at index {i}: {np.linalg.norm(r_orb_end)}")
+    t_end, r_end, v_end = int_trav.orient()  # Orienting ourselves to find position and velocity in orbit
+    print(t_end, r_end, v_end)
 
     BB = ti.time()
     print(f"\n\nSimulation took {BB-AA:.4f} sec")
