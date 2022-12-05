@@ -117,7 +117,7 @@ def launch_rocket(dry_mass, fuel_mass, thrust_force, estimated_time=1000, dt=0.0
     planet_theta = np.pi # 2*np.pi*t_orbit_launch/utils.s_to_yr(rotational_period*24*3600)
     tang_vel_planet = 2*np.pi*radius_home_planet/(rotational_period*24*3600)
 
-    """
+    # This is our own written simulation for the rocket simulation. It works for a starting time of t=0, but not other ones
     # Creating and initialising arrays
     pos = np.zeros([N, 2])
     vel = np.zeros([N, 2])
@@ -143,7 +143,7 @@ def launch_rocket(dry_mass, fuel_mass, thrust_force, estimated_time=1000, dt=0.0
             print(f"Final position: x: {int(exit_coords[0])} m, y: {int(exit_coords[1])} m")
             print(f"Final velocity: v_x: {int(exit_vel[0])} m/s, v_y: {int(exit_vel[1])} m/s")
             print(f"Distance: {np.linalg.norm(exit_coords)}")
-            print(f"Final mass of spacecraft: {wet_mass:.2f} Kg")
+            print(f"Final mass of spacecraft: {wet_mass_i:.2f} Kg")
             print(f"Remaining fuel: {wet_mass_i - dry_mass} Kg")
             print(f"Remaining Burn Time: {(wet_mass_i - dry_mass) / (fuel_consumption * 60):.2f} min")
             print(f"Duration of Launch: {int(end_i * dt // 60)} min {int(np.round(end_i * dt % 60, decimals=0))} sec\n")
@@ -168,12 +168,17 @@ def launch_rocket(dry_mass, fuel_mass, thrust_force, estimated_time=1000, dt=0.0
         print(f"Number of Boxes: {num_of_boxes:e}")
         print(f"Mass flow rate: {fuel_consumption} Kg/s\n")
         print(f"Launch Results verified: {mission.launch_result_verified}")
-    """
+        
+    pos_after_launch = sol_sys_coords
+    vel_after_launch = sol_sys_vel
+    time = sol_sys_time
 
+    """
     height_above_suface = 3_000_000 # 12_248_227 - 8_653_612 = 3_594_615 Height from our own launch simulation - the radius of the planet
 
+    # Using rocket launch shortcut
     pos_after_launch, vel_after_launch, time, fuel_consumed = launch_rocket_shortcut(thrust_force, fuel_consumption, t_orbit_launch, height_above_suface, launch_angle, fuel_mass)
-    
+    """
     return pos_after_launch, vel_after_launch, time
 
 
