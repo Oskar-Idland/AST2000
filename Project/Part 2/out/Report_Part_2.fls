@@ -695,17 +695,17 @@ INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex\latex\00miktex\epstopdf-s
 INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex\latex\00miktex\epstopdf-sys.cfg
 INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex\latex\00miktex\epstopdf-sys.cfg
 INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex\latex\graphics\color.sty
-INPUT c:\Users\oskar\OneDrive - Universitetet i Oslo\Dokumenter\GitHub\Privat\AST2000\Project\Part 2\out\Report_Part_2.out
-INPUT c:\Users\oskar\OneDrive - Universitetet i Oslo\Dokumenter\GitHub\Privat\AST2000\Project\Part 2\out\Report_Part_2.out
-INPUT c:\Users\oskar\OneDrive - Universitetet i Oslo\Dokumenter\GitHub\Privat\AST2000\Project\Part 2\out\Report_Part_2.out
-INPUT c:\Users\oskar\OneDrive - Universitetet i Oslo\Dokumenter\GitHub\Privat\AST2000\Project\Part 2\out\Report_Part_2.out
-INPUT c:\Users\oskar\OneDrive - Universitetet i Oslo\Dokumenter\GitHub\Privat\AST2000\Project\Part 2\out\Report_Part_2.out
-INPUT c:\Users\oskar\OneDrive - Universitetet i Oslo\Dokumenter\GitHub\Privat\AST2000\Project\Part 2\out\Report_Part_2.out
-INPUT c:\Users\oskar\OneDrive - Universitetet i Oslo\Dokumenter\GitHub\Privat\AST2000\Project\Part 2\out\Report_Part_2.out
-INPUT c:\Users\oskar\OneDrive - Universitetet i Oslo\Dokumenter\GitHub\Privat\AST2000\Project\Part 2\out\Report_Part_2.out
+INPUT .\Report_Part_2.out
+INPUT Report_Part_2.out
+INPUT .\Report_Part_2.out
+INPUT Report_Part_2.out
+INPUT .\Report_Part_2.out
+INPUT Report_Part_2.out
+INPUT .\Report_Part_2.out
+INPUT Report_Part_2.out
 OUTPUT c:\Users\oskar\OneDrive - Universitetet i Oslo\Dokumenter\GitHub\Privat\AST2000\Project\Part 2\out\Report_Part_2.pdf
-INPUT c:\Users\oskar\OneDrive - Universitetet i Oslo\Dokumenter\GitHub\Privat\AST2000\Project\Part 2\out\Report_Part_2.out
-INPUT c:\Users\oskar\OneDrive - Universitetet i Oslo\Dokumenter\GitHub\Privat\AST2000\Project\Part 2\out\Report_Part_2.out
+INPUT .\Report_Part_2.out
+INPUT .\Report_Part_2.out
 OUTPUT c:\Users\oskar\OneDrive - Universitetet i Oslo\Dokumenter\GitHub\Privat\AST2000\Project\Part 2\out\Report_Part_2.out
 OUTPUT c:\Users\oskar\OneDrive - Universitetet i Oslo\Dokumenter\GitHub\Privat\AST2000\Project\Part 2\out\Report_Part_2Notes.bib
 INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr9.tfm
@@ -781,18 +781,15 @@ INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\sym
 INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
 INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm7.tfm
 INPUT .\Figures\Planet_Orbit_CM.pdf
-INPUT .\Figures\Planet_Orbit_CM.pdf
 INPUT Figures\Planet_Orbit_CM.pdf
 INPUT .\Figures\Planet_Orbit_CM.pdf
 INPUT .\Figures\Planet_Orbit_CM.pdf
 INPUT .\Figures\Planet_Orbit_CM.pdf
 INPUT .\Figures\Solar_Orbit_CM.pdf
-INPUT .\Figures\Solar_Orbit_CM.pdf
 INPUT Figures\Solar_Orbit_CM.pdf
 INPUT .\Figures\Solar_Orbit_CM.pdf
 INPUT .\Figures\Solar_Orbit_CM.pdf
 INPUT .\Figures\Solar_Orbit_CM.pdf
-INPUT .\Figures\Energy_AngularMomentum_plot.pdf
 INPUT .\Figures\Energy_AngularMomentum_plot.pdf
 INPUT Figures\Energy_AngularMomentum_plot.pdf
 INPUT .\Figures\Energy_AngularMomentum_plot.pdf
@@ -808,6 +805,12 @@ INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex\latex\ucs\data\uni-0.def
 INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex\latex\ucs\data\uni-0.def
 INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex\latex\ucs\data\uni-0.def
 INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex\latex\ucs\data\uni-0.def
+INPUT .\Figures\triangle_sas.jpg
+INPUT Figures\triangle_sas.jpg
+INPUT .\Figures\triangle_sas.jpg
+INPUT .\Figures\triangle_sas.jpg
+INPUT .\Figures\triangle_sas.jpg
+INPUT .\Figures\triangle_sas.jpg
 INPUT .\Report_Part_2.bbl
 INPUT Report_Part_2.bbl
 INPUT .\Report_Part_2.bbl
@@ -845,6 +848,8 @@ INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\c
 INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr9.pfb
 INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy10.pfb
 INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy10.pfb
+INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy6.pfb
+INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy6.pfb
 INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy7.pfb
 INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy7.pfb
 INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy9.pfb

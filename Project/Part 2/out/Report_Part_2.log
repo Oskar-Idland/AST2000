@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.8.28) (preloaded format=pdflatex 2022.9.1)  5 DEC 2022 21:53
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.8.28) (preloaded format=pdflatex 2022.9.1)  5 DEC 2022 22:01
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -450,7 +450,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
 Package hyperref Info: Link coloring ON on input line 33.
- (c:\Users\oskar\OneDrive - Universitetet i Oslo\Dokumenter\GitHub\Privat\AST2000\Project\Part 2\out\Report_Part_2.out) (c:\Users\oskar\OneDrive - Universitetet i Oslo\Dokumenter\GitHub\Privat\AST2000\Project\Part 2\out\Report_Part_2.out)
+ (Report_Part_2.out) (Report_Part_2.out)
 \@outlinefile=\write4
 \openout4 = `Report_Part_2.out'.
 
@@ -458,180 +458,459 @@ Package hyperref Info: Link coloring ON on input line 33.
 Class revtex4-2 Info: Taking \maketitle back from hyperref on input line 33.
 \openout3 = `Report_Part_2Notes.bib'.
 
-LaTeX Font Info:    Trying to load font information for U+esint on input line 57.
+LaTeX Font Info:    Trying to load font information for U+esint on input line 63.
  (C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex/latex/esint\uesint.fd
 File: uesint.fd 
 )
-LaTeX Font Info:    Trying to load font information for U+msa on input line 57.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 63.
  (C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 57.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 63.
  (C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-<Figures/Ellipse.png, id=80, 709.65125pt x 305.64188pt>
+
+LaTeX Warning: Reference `fig:Ellipse_fig' on page 1 undefined on input line 68.
+
+<Figures/Ellipse.png, id=87, 709.65125pt x 305.64188pt>
 File: Figures/Ellipse.png Graphic file (type png)
 <use Figures/Ellipse.png>
-Package pdftex.def Info: Figures/Ellipse.png  used on input line 66.
+Package pdftex.def Info: Figures/Ellipse.png  used on input line 73.
 (pdftex.def)             Requested size: 212.897pt x 91.69325pt.
 
+LaTeX Warning: Reference `fig:Ellipse_fig' on page 1 undefined on input line 76.
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+
+LaTeX Warning: Reference `x_ellipse' on page 1 undefined on input line 83.
 
 
-Underfull \hbox (badness 1033) in paragraph at lines 83--93
+LaTeX Warning: Reference `y_ellipse' on page 1 undefined on input line 83.
+
+
+LaTeX Warning: Reference `x_ellipse' on page 1 undefined on input line 92.
+
+
+LaTeX Warning: Reference `y_ellipse' on page 1 undefined on input line 92.
+
+
+Underfull \hbox (badness 1033) in paragraph at lines 90--100
 \OT1/cmr/m/n/10 the co-or-di-nates back to carte-sian co-or-di-nates us-ing
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 83--93
+Underfull \hbox (badness 10000) in paragraph at lines 90--100
 
  []
-
-
-Package amsfonts Warning: Obsolete command \bold; \mathbf should be used instead on input line 97.
 
 [1{C:/Users/oskar/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <./Figures/Ellipse.png>]
-<Figures/leapfrog1.png, id=106, 440.64626pt x 170.6375pt>
+
+Package amsfonts Warning: Obsolete command \bold; \mathbf should be used instead on input line 104.
+
+<Figures/leapfrog1.png, id=108, 440.64626pt x 170.6375pt>
 File: Figures/leapfrog1.png Graphic file (type png)
 <use Figures/leapfrog1.png>
-Package pdftex.def Info: Figures/leapfrog1.png  used on input line 109.
+Package pdftex.def Info: Figures/leapfrog1.png  used on input line 116.
 (pdftex.def)             Requested size: 176.25537pt x 68.25378pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 97--115
+Underfull \hbox (badness 10000) in paragraph at lines 104--122
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 119--122
+Underfull \hbox (badness 10000) in paragraph at lines 126--129
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 119--122
+Underfull \hbox (badness 10000) in paragraph at lines 126--129
 
  []
 
 
-Overfull \hbox (36.50056pt too wide) in paragraph at lines 146--158
-[][][][][][][]
+LaTeX Warning: Reference `Kepler_dArea' on page 2 undefined on input line 147.
+
+
+LaTeX Warning: Reference `subsec:calculation-of-swept-out-area' on page 2 undefined on input line 153.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 153--154
+
  []
 
 
-Underfull \hbox (badness 1052) in paragraph at lines 146--158
+LaTeX Warning: Reference `Kepler_dArea' on page 2 undefined on input line 155.
+
+
+Underfull \hbox (badness 1052) in paragraph at lines 155--166
 \OT1/cmr/m/n/10 have the high-est an-gu-lar ve-loc-ity at the per-i-he-lion
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 146--158
+Underfull \hbox (badness 10000) in paragraph at lines 155--166
 
  []
 
-[2 <./Figures/leapfrog1.png>] (C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex/latex/ucs/data\uni-3.def
+[2 <./Figures/leapfrog1.png>]
+
+LaTeX Warning: Reference `Kepler3' on page 3 undefined on input line 167.
+
+
+LaTeX Warning: Reference `KeplerNewton3' on page 3 undefined on input line 167.
+
+(C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex/latex/ucs/data\uni-3.def
 File: uni-3.def 2022/08/07 UCS: Unicode data U+0300..U+03FF
-) (C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex/latex/ucs/data\uni-34.def
+)
+
+LaTeX Warning: Reference `r1r2 calc' on page 3 undefined on input line 192.
+
+
+LaTeX Warning: Reference `E_k calc' on page 3 undefined on input line 192.
+
+(C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex/latex/ucs/data\uni-34.def
 File: uni-34.def 2022/08/07 UCS: Unicode data U+2200..U+22FF
 )
-<Figures/Orbit_plots.png, id=131, 462.528pt x 346.896pt>
+
+LaTeX Warning: Reference `r_1 redef' on page 3 undefined on input line 219.
+
+
+LaTeX Warning: Reference `r_2 redef' on page 3 undefined on input line 219.
+
+
+LaTeX Warning: Reference `AM calc' on page 3 undefined on input line 219.
+
+
+LaTeX Warning: Reference `fig:Orbit_Plot' on page 3 undefined on input line 235.
+
+<Figures/Orbit_plots.png, id=121, 462.528pt x 346.896pt>
 File: Figures/Orbit_plots.png Graphic file (type png)
 <use Figures/Orbit_plots.png>
-Package pdftex.def Info: Figures/Orbit_plots.png  used on input line 231.
+Package pdftex.def Info: Figures/Orbit_plots.png  used on input line 239.
 (pdftex.def)             Requested size: 185.0079pt x 138.75594pt.
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
+LaTeX Warning: Reference `fig:Orbit_Plot' on page 3 undefined on input line 246.
 
 [3]
 
-LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix] on input line 261.
+LaTeX Warning: Reference `tab:Kepler2_table1' on page 4 undefined on input line 250.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 281--283
+LaTeX Warning: Reference `tab:Kepler2_table2' on page 4 undefined on input line 251.
+
+c:/Users/oskar/OneDrive - Universitetet i Oslo/Dokumenter/GitHub/Privat/AST2000/Project/Part 2/Report_Part_2.tex:259: Missing $ inserted.
+<inserted text> 
+                $
+l.259         Area & 3.07 \times
+                                 10^{-06} & 3.07 \times 10^{-06}\\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+c:/Users/oskar/OneDrive - Universitetet i Oslo/Dokumenter/GitHub/Privat/AST2000/Project/Part 2/Report_Part_2.tex:259: Extra }, or forgotten $.
+<template> \unskip \hfil }
+                          \hskip \tabmidsep \relax \hskip -.5\arrayrulewidth...
+l.259         Area & 3.07 \times 10^{-06} &
+                                            3.07 \times 10^{-06}\\
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+c:/Users/oskar/OneDrive - Universitetet i Oslo/Dokumenter/GitHub/Privat/AST2000/Project/Part 2/Report_Part_2.tex:259: Missing $ inserted.
+<inserted text> 
+                $
+l.259         Area & 3.07 \times 10^{-06} &
+                                            3.07 \times 10^{-06}\\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+c:/Users/oskar/OneDrive - Universitetet i Oslo/Dokumenter/GitHub/Privat/AST2000/Project/Part 2/Report_Part_2.tex:259: Missing } inserted.
+<inserted text> 
+                }
+l.259         Area & 3.07 \times 10^{-06} &
+                                            3.07 \times 10^{-06}\\
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+c:/Users/oskar/OneDrive - Universitetet i Oslo/Dokumenter/GitHub/Privat/AST2000/Project/Part 2/Report_Part_2.tex:259: Missing $ inserted.
+<inserted text> 
+                $
+l.259 ...Area & 3.07 \times 10^{-06} & 3.07 \times
+                                                   10^{-06}\\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+c:/Users/oskar/OneDrive - Universitetet i Oslo/Dokumenter/GitHub/Privat/AST2000/Project/Part 2/Report_Part_2.tex:260: Extra }, or forgotten $.
+<template> \unskip \hfil }
+                          \hskip \tabmidsep \relax \hskip -.5\arrayrulewidth...
+l.260         \hline
+                    
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+c:/Users/oskar/OneDrive - Universitetet i Oslo/Dokumenter/GitHub/Privat/AST2000/Project/Part 2/Report_Part_2.tex:260: Missing $ inserted.
+<inserted text> 
+                $
+l.260         \hline
+                    
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+c:/Users/oskar/OneDrive - Universitetet i Oslo/Dokumenter/GitHub/Privat/AST2000/Project/Part 2/Report_Part_2.tex:260: Missing } inserted.
+<inserted text> 
+                }
+l.260         \hline
+                    
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+c:/Users/oskar/OneDrive - Universitetet i Oslo/Dokumenter/GitHub/Privat/AST2000/Project/Part 2/Report_Part_2.tex:261: Missing $ inserted.
+<inserted text> 
+                $
+l.261 		Distance & 6.82 \times
+                               10^{-07} & 6.82 \times 10^{-07}\\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+c:/Users/oskar/OneDrive - Universitetet i Oslo/Dokumenter/GitHub/Privat/AST2000/Project/Part 2/Report_Part_2.tex:261: Extra }, or forgotten $.
+<template> \unskip \hfil }
+                          \hskip \tabmidsep \relax \hskip -.5\arrayrulewidth...
+l.261 		Distance & 6.82 \times 10^{-07} &
+                                          6.82 \times 10^{-07}\\
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+c:/Users/oskar/OneDrive - Universitetet i Oslo/Dokumenter/GitHub/Privat/AST2000/Project/Part 2/Report_Part_2.tex:261: Missing $ inserted.
+<inserted text> 
+                $
+l.261 		Distance & 6.82 \times 10^{-07} &
+                                          6.82 \times 10^{-07}\\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+c:/Users/oskar/OneDrive - Universitetet i Oslo/Dokumenter/GitHub/Privat/AST2000/Project/Part 2/Report_Part_2.tex:261: Missing } inserted.
+<inserted text> 
+                }
+l.261 		Distance & 6.82 \times 10^{-07} &
+                                          6.82 \times 10^{-07}\\
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+c:/Users/oskar/OneDrive - Universitetet i Oslo/Dokumenter/GitHub/Privat/AST2000/Project/Part 2/Report_Part_2.tex:261: Missing $ inserted.
+<inserted text> 
+                $
+l.261 ...ance & 6.82 \times 10^{-07} & 6.82 \times
+                                                   10^{-07}\\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+c:/Users/oskar/OneDrive - Universitetet i Oslo/Dokumenter/GitHub/Privat/AST2000/Project/Part 2/Report_Part_2.tex:262: Extra }, or forgotten $.
+<template> \unskip \hfil }
+                          \hskip \tabmidsep \relax \hskip -.5\arrayrulewidth...
+l.262 		\hline
+              
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+c:/Users/oskar/OneDrive - Universitetet i Oslo/Dokumenter/GitHub/Privat/AST2000/Project/Part 2/Report_Part_2.tex:262: Missing $ inserted.
+<inserted text> 
+                $
+l.262 		\hline
+              
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+c:/Users/oskar/OneDrive - Universitetet i Oslo/Dokumenter/GitHub/Privat/AST2000/Project/Part 2/Report_Part_2.tex:262: Missing } inserted.
+<inserted text> 
+                }
+l.262 		\hline
+              
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: Reference `Kepler3' on page 4 undefined on input line 289.
+
+
+LaTeX Warning: Reference `KeplerNewton3' on page 4 undefined on input line 289.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 289--291
 
  []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Figures/Planet_Orbit_CM.pdf, id=147, 1387.58403pt x 704.6325pt>
+
+LaTeX Warning: Reference `fig: P_orbit_cm' on page 4 undefined on input line 332.
+
+<Figures/Planet_Orbit_CM.pdf, id=132, 1387.58403pt x 704.6325pt>
 File: Figures/Planet_Orbit_CM.pdf Graphic file (type pdf)
 <use Figures/Planet_Orbit_CM.pdf>
-Package pdftex.def Info: Figures/Planet_Orbit_CM.pdf  used on input line 325.
+Package pdftex.def Info: Figures/Planet_Orbit_CM.pdf  used on input line 335.
 (pdftex.def)             Requested size: 208.12862pt x 105.6903pt.
-<Figures/Solar_Orbit_CM.pdf, id=148, 1387.58403pt x 704.6325pt>
+<Figures/Solar_Orbit_CM.pdf, id=133, 1387.58403pt x 704.6325pt>
 File: Figures/Solar_Orbit_CM.pdf Graphic file (type pdf)
 <use Figures/Solar_Orbit_CM.pdf>
-Package pdftex.def Info: Figures/Solar_Orbit_CM.pdf  used on input line 332.
+Package pdftex.def Info: Figures/Solar_Orbit_CM.pdf  used on input line 342.
 (pdftex.def)             Requested size: 208.12862pt x 105.6903pt.
-[4 <./Figures/Orbit_plots.png> <./Figures/Planet_Orbit_CM.pdf> <./Figures/Solar_Orbit_CM.pdf>]
-<Figures/Energy_AngularMomentum_plot.pdf, id=245, 1387.58403pt x 704.6325pt>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: Reference `Method orbit calc' on page 4 undefined on input line 347.
+
+[4 <./Figures/Orbit_plots.png> <./Figures/Planet_Orbit_CM.pdf>]
+
+LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix] on input line 350.
+
+<Figures/Energy_AngularMomentum_plot.pdf, id=188, 1387.58403pt x 704.6325pt>
 File: Figures/Energy_AngularMomentum_plot.pdf Graphic file (type pdf)
 <use Figures/Energy_AngularMomentum_plot.pdf>
-Package pdftex.def Info: Figures/Energy_AngularMomentum_plot.pdf  used on input line 341.
+Package pdftex.def Info: Figures/Energy_AngularMomentum_plot.pdf  used on input line 353.
 (pdftex.def)             Requested size: 208.12862pt x 105.6903pt.
-<Figures/Other_Group_Radial_Velocity.png, id=246, 462.528pt x 346.896pt>
+<Figures/Other_Group_Radial_Velocity.png, id=189, 462.528pt x 346.896pt>
 File: Figures/Other_Group_Radial_Velocity.png Graphic file (type png)
 <use Figures/Other_Group_Radial_Velocity.png>
-Package pdftex.def Info: Figures/Other_Group_Radial_Velocity.png  used on input line 351.
+Package pdftex.def Info: Figures/Other_Group_Radial_Velocity.png  used on input line 362.
 (pdftex.def)             Requested size: 231.26343pt x 173.44757pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 357--370
+Underfull \hbox (badness 10000) in paragraph at lines 368--381
 
  []
 
 
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 390.
+LaTeX Warning: Reference `fig: tot_Energy_AM' on page 5 undefined on input line 390.
 
 
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 390.
+LaTeX Warning: Reference `fig:Orbit_Plot' on page 5 undefined on input line 399.
 
 
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 390.
+Underfull \hbox (badness 10000) in paragraph at lines 398--405
 
+ []
 
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 390.
-
+[5 <./Figures/Solar_Orbit_CM.pdf> <./Figures/Energy_AngularMomentum_plot.pdf> <./Figures/Other_Group_Radial_Velocity.png>]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 390.
+(hyperref)                removing `math shift' on input line 415.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 390.
+(hyperref)                removing `subscript' on input line 415.
 
-[5 <./Figures/Energy_AngularMomentum_plot.pdf> <./Figures/Other_Group_Radial_Velocity.png>]
-Overfull \hbox (21.1081pt too wide) detected at line 396
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 415.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 415.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 415.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 415.
+
+
+Overfull \hbox (21.1081pt too wide) detected at line 421
 \OT1/cmr/bx/n/10 R \OT1/cmr/m/n/10 = [][] + [] [] = [] [] + []\OT1/cmr/bx/n/10 r \OT1/cmr/m/n/10 = [] + []\OT1/cmr/bx/n/10 r
  []
 
 
-Overfull \hbox (33.11954pt too wide) detected at line 419
+LaTeX Warning: Reference `r_1 redef' on page 6 undefined on input line 438.
+
+
+LaTeX Warning: Reference `r_2 redef' on page 6 undefined on input line 438.
+
+
+Overfull \hbox (33.11954pt too wide) detected at line 444
 [] \OT1/cmr/m/n/10 = [] [][]
  []
 
 (C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex/latex/ucs/data\uni-0.def
 File: uni-0.def 2022/08/07 UCS: Unicode data U+0000..U+00FF
-) [6] (Report_Part_2.bbl) (c:\Users\oskar\OneDrive - Universitetet i Oslo\Dokumenter\GitHub\Privat\AST2000\Project\Part 2\out\Report_Part_2.aux)
-Package rerunfilecheck Info: File `Report_Part_2.out' has not changed.
-(rerunfilecheck)             Checksum: 00C8BCEB0A1E5F0EA2912979BB2F9806;3199.
+)
+
+LaTeX Warning: Reference `fig:triangle_sas' on page 6 undefined on input line 477.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 476--479
+
+ []
+
+[6]
+<Figures/triangle_sas.jpg, id=277, 474.27188pt x 355.3275pt>
+File: Figures/triangle_sas.jpg Graphic file (type jpg)
+<use Figures/triangle_sas.jpg>
+Package pdftex.def Info: Figures/triangle_sas.jpg  used on input line 497.
+(pdftex.def)             Requested size: 189.70538pt x 142.12846pt.
+
+
+LaTeX Warning: Reference `subsec:calculation-of-swept-out-area' on page 7 undefined on input line 498.
+
+
+LaTeX Warning: Reference `subsec:calculation-of-swept-out-area' on page 7 undefined on input line 498.
+
+(Report_Part_2.bbl) [7 <./Figures/triangle_sas.jpg>] (c:\Users\oskar\OneDrive - Universitetet i Oslo\Dokumenter\GitHub\Privat\AST2000\Project\Part 2\out\Report_Part_2.aux)
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+
+Package rerunfilecheck Warning: File `Report_Part_2.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `Report_Part_2.out':
+(rerunfilecheck)             Before: AD8DB1AA0DC9F0C69F8CEE4F2A5656B8;3442
+(rerunfilecheck)             After:  22B09C68AEDF25436BF31A88EC75A056;3413.
  ) 
 Here is how much of TeX's memory you used:
- 16960 strings out of 477843
- 256220 string characters out of 2823600
+ 16984 strings out of 477843
+ 256641 string characters out of 2823600
  779443 words of memory out of 3000000
- 35598 multiletter control sequences out of 15000+600000
+ 35616 multiletter control sequences out of 15000+600000
  476892 words of font info for 61 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 72i,10n,77p,1036b,536s stack positions out of 10000i,1000n,20000p,200000b,80000s
- <C:\Users\oskar\AppData\Local\MiKTeX\fonts/pk/ljfour/public/esint/dpi600\esint10.pk><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx6.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx7.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi9.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy9.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti9.pfb>
-Output written on "c:\Users\oskar\OneDrive - Universitetet i Oslo\Dokumenter\GitHub\Privat\AST2000\Project\Part 2\out\Report_Part_2.pdf" (6 pages, 489796 bytes).
+ 72i,10n,77p,1036b,538s stack positions out of 10000i,1000n,20000p,200000b,80000s
+
+pdfTeX warning (dest): name{section*.21} has been referenced but does not exist, replaced by a fixed one
+
+ <C:\Users\oskar\AppData\Local\MiKTeX\fonts/pk/ljfour/public/esint/dpi600\esint10.pk><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx6.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx7.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi9.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy9.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti9.pfb>
+Output written on "c:\Users\oskar\OneDrive - Universitetet i Oslo\Dokumenter\GitHub\Privat\AST2000\Project\Part 2\out\Report_Part_2.pdf" (7 pages, 547565 bytes).
 PDF statistics:
- 380 PDF objects out of 1000 (max. 8388607)
- 46 named destinations out of 1000 (max. 500000)
- 188 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 376 PDF objects out of 1000 (max. 8388607)
+ 50 named destinations out of 1000 (max. 500000)
+ 209 words of extra memory for PDF output out of 10000 (max. 10000000)
 
