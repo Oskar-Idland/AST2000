@@ -30,11 +30,11 @@ print(dt)
 @jit(nopython = True)                       #Optional, but recommended for speed, check the numerical compendium
 def integrate(T, dt, N, x0, y0, vx0, vy0, G, sun_mass):
     t = np.linspace(0.0, T, N)
-    x = np.zeros((N, 2))
-    v = np.zeros((N, 2))
+    x = np.zeros((N, 2))  # Position
+    v = np.zeros((N, 2))  # Velocity
 
-    x[0] = [x0, y0]
-    v[0] = [vx0, vy0]
+    x[0] = [x0, y0]  # Setting initial position
+    v[0] = [vx0, vy0]  # Setting initial velocity
 
     for i in range(N-1):
         '''
@@ -55,7 +55,14 @@ def integrate(T, dt, N, x0, y0, vx0, vy0, G, sun_mass):
     return t, x, v
 
 
-def find_analytical_orbit(N_points, system, planet_index): ### find which input parameters you need for your planet to calculate the analytical orbit, these should be imported from ast2000tools
+def find_analytical_orbit(N_points, system, planet_index):
+    """
+    Finds analytical orbit of planet
+    :param N_points: Number of indexes
+    :param system: Solarsystem instance
+    :param planet_index: Planet index
+    :return: Arrays with x-positions and y-positions
+    """
     a = system.semi_major_axes[planet_index]
     e = system.eccentricities[planet_index]
     init_angle = system.aphelion_angles[planet_index]
@@ -67,6 +74,14 @@ def find_analytical_orbit(N_points, system, planet_index): ### find which input 
 
 
 def A_kepler(planet_orbits, start_idx, stop_idx, planet_idx):
+    """
+    Calculates swept out area during time interval using Keplers law
+    :param planet_orbits: Array with orbits of the planets
+    :param start_idx: Starting index of the time interval
+    :param stop_idx: Ending index of the time interval
+    :param planet_idx:
+    :return:
+    """
     A = 0
     S = 0
     orbits_arr = np.array(planet_orbits)
@@ -86,7 +101,7 @@ position_function = []
 velocity_function = []
 verification_positions = np.zeros([2, 8, N])
 
-for planet_idx in range(8):
+for planet_idx in range(8):  # Doing calculations for each planet
     # ORBITAL DATA
     x0 = system.initial_positions[0, planet_idx]        # x-position at t = 0
     y0 = system.initial_positions[1, planet_idx]        # y-position at t = 0
@@ -99,8 +114,8 @@ for planet_idx in range(8):
     x_analytic, y_analytic = find_analytical_orbit(N, system, planet_idx)  # Find analytic orbit first to check your numerical calculation
     an_planet_orbits.append([x_analytic, y_analytic])
 
-    verification_positions[0, planet_idx] = x[:, 0]
-    verification_positions[1, planet_idx] = x[:, 1]
+    verification_positions[0, planet_idx] = x[:, 0]  # Saving x-positions of the planet for later verification
+    verification_positions[1, planet_idx] = x[:, 1]  # Saving y-positions of the planet for later verification
 
 
     #INTERPOLATION
@@ -130,8 +145,8 @@ for planet_idx in range(8):
     '''
 
 
-    P_Newton = np.sqrt((4*(np.pi**2)*(system.semi_major_axes[planet_idx]**3))/(G*(system.star_mass + system.masses[planet_idx])))
-    P_Kepler = np.sqrt(system.semi_major_axes[planet_idx]**3)
+    P_Newton = np.sqrt((4*(np.pi**2)*(system.semi_major_axes[planet_idx]**3))/(G*(system.star_mass + system.masses[planet_idx])))  # Calculating orbital period using Newtons revised version of Keplers third law
+    P_Kepler = np.sqrt(system.semi_major_axes[planet_idx]**3)  # Calculating orbital period using Keplers original third law
     print(f"Planet {planet_idx} -------------------")
     print(f"Newton: {P_Newton:.8f} Yrs, Kepler: {P_Kepler:.8f} Yrs")
     print(f"Difference: {abs(P_Kepler-P_Newton):.8f} Yrs")
@@ -176,8 +191,8 @@ plt.ylabel("y-position [AU]")
 plt.savefig("../Figures/Orbit_plots.png")
 plt.show()
 
-A1, S1 = A_kepler(an_planet_orbits, 0, 1, 0)
-A2, S2 = A_kepler(an_planet_orbits, 100_000, 100_001, 0)
+A1, S1 = A_kepler(an_planet_orbits, 0, 1, 0)  # Finding area swept out during the first time interval
+A2, S2 = A_kepler(an_planet_orbits, 100_000, 100_001, 0)  # Finding area swept out during the first time interval
 V1 = S1 / (1 * dt)
 V2 = S2 / (1 * dt)
 print(f"Planet {0}")

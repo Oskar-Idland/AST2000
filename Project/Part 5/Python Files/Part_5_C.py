@@ -23,6 +23,12 @@ shortcut = SpaceMissionShortcuts(mission, [stable_orbit])
 G = 4 * np.pi ** 2
 
 def find_orbit_inj_velocity(planet_idx, dist):
+    """
+    Finds required speed for a stable orbit at given distance
+    :param planet_idx: Planet index
+    :param dist: Distance from planet in meters
+    :return:
+    """
     mass = system.masses[planet_idx]
     return np.sqrt((G*mass/dist))
 
@@ -45,21 +51,22 @@ def interplanetary_travel(r0, v0, t0, t1_approx, dt, max_dev, dest_planet_idx, d
     coast_time = 0.01
     while distance > l:
         inter_trav.coast(coast_time)
-        t_curr, r_curr, v_curr = inter_trav.orient()
+        t_curr, r_curr, v_curr = inter_trav.orient()  # Orienting ourselves
         if np.linalg.norm(reference_traj[int((t_curr-t0)/dt)] - r_curr) > max_dev:
             v_curr_abs = np.linalg.norm(v_curr)
             heading = np.arctan(v_curr[1]/v_curr[0]) + np.pi
+            # Calculating new trajectory and the required initial velocity for it
             v_req1 = find_velocity_for_trajectory(r_curr, t_curr, t1_approx, dt, heading, 10 * np.pi / 180, v_curr_abs, 0.001, dest_planet_orbit, dest_planet_mass, int(t_curr/dt), int(t1_approx/dt))
             print(heading / np.pi * 180)
             print(v_curr)
             delta_v1 = v_req1-v_curr
-            inter_trav.boost(delta_v1)
+            inter_trav.boost(delta_v1)  # Boosting into new trajectory
 
     # Checking (almost) continuously if we are at the correct position for orbit injection
     t_111, r111, v111 = inter_trav.orient
     r222 = dest_planet_orbit[int(t_111/dt)]
     v222 = (dest_planet_orbit[int(t_111/dt)+1] - dest_planet_orbit[int(t_111/dt)])/dt
-    while np.dot((r111-r222), (v111-v222)) > 0.01:
+    while np.dot((r111-r222), (v111-v222)) > 0.01:  # Continuing to coast until the velocity is perpendicular to the position relative to the planet.
         t_111, r111, v111 = inter_trav.orient
         r222 = dest_planet_orbit[int(t_111 / dt)]
         v222 = (dest_planet_orbit[int(t_111 / dt) + 1] - dest_planet_orbit[int(t_111 / dt)]) / dt
