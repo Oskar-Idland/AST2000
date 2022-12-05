@@ -147,7 +147,7 @@ This creates ranges of coordinates for $\theta$ and $\phi$:
   - \frac{\alpha _{\theta}}{2} \le θ - θ _{0} \le \frac{\alpha _{\theta }}{2}, \quad - \frac{\alpha _{\theta}}{2} \le ϕ  - ϕ _{0} \le \frac{\alpha _{\theta }}{2}
 \end{equation}
 
-This, in turn, also creates limitations on the coordinates $ (X,Y) $ of the stereographic projection derived in~\ref{eq: limitations X and Y lim}:
+This, in turn, also creates limitations on the coordinates $ (X,Y) $ of the stereographic projection derived in~\ref{ssec: lim x,y}:
 \begin{subequations} \label{eq: limitations X and Y lim}
 	\begin{equation}
 		X _{max / min} = ± \frac{2 \sin (α _{\phi} / 2)}{1 + \cos (\alpha _{\phi})}
@@ -171,8 +171,8 @@ With this information we are able to recreate the same picture~\ref{fig: ref pic
 \subsection{Image Analysis} \label{ssec: image analysis}
 We have assumed that $ \theta_{0} = \frac{\pi}{2} $ for the entire trip which means there is only one variable, the angle which the picture is centered around $ \phi_{new} $.
 A simple solution can be implemented assuming the space shuttle only turns at integer angle values.
-First, we create an Image object using the PIL module.
-Then we iterate over all angles $ \phi \in  \left\{ 0^{o}, 1^{o}, 2^{o} \dots 359 ^{o} \right\}  $ and compare the Image with the ones we created ourselves.
+First, we create an Image object using the PIL module as it supports equality checks between photos.
+Then we iterate over all angles $ \phi \in  \left\{ 0^{o}, 1^{o}, 2^{o} \dots 359 ^{o} \right\}  $ and compare the image with the ones we created ourselves.
 Once we get a match we know our $ \phi _{0} $.
 
 
@@ -389,21 +389,40 @@ After completing the test, the software has been uploaded to the spacecraft so t
 
 \section{Appendix: Mathematical Derivations}
 \subsection{Calculating the limitations on $ X $ and $ Y $} \label{ssec: lim x,y}
+To derive the stereographic projection transformation in \ref{eq: limitations X and Y lim}
+we will simplify the expression when calculating $ X_{\text{max/min}} $ by using $ Y = 0 $ and when calculating $ Y_{\text{max/min}} $ using $ X = 0 $. 
 
 \[
-	X = \kappa  \sin \theta \sin (ϕ - ϕ _0)
+X = k \sin θ \sin (ϕ - ϕ_{0}), \quad Y = k(\sin θ_{0} \cos θ - \cos  θ_{0} \sin  θ \cos (ϕ - ϕ_{0}))
 \]
-To make it easier to find the limitations we set $ X = 0 $. 
+where
 \[
-\kappa \sin \theta \sin (ϕ - ϕ _0) = 0
+κ = \frac{2}{1 + \cos  θ_{0} \cos  θ + \sin  θ_{0} \sin  θ \cos (ϕ - ϕ_{0})}
 \]
-Inserting the definition of $ \kappa $ from equation~\ref{eq: kappa}:
+Expanding $ κ $ in equation for $ X $
 \[
-	\frac{2 \sin θ \sin (ϕ - ϕ _0)}{1 + \cos \theta _{0}\cos \theta + \sin \theta _{0} \sin \theta \cos (\phi - \phi _{0})} = 0
+X = \frac{2 \sin  θ \sin (ϕ - ϕ_{0})}{1 + \cos θ_{0} \cos θ + \sin  θ_{0} \sin  θ \cos (ϕ - ϕ_{0})}
 \]
-Inserting the ranges of values for $ \theta $ and $ \theta_0 $ from equation~\ref{eq: limitations phi and theta}, we get the upper and lower limit of what equations to solve.
+As mentioned we set $ Y = 0 $ when finding $ X_{\text{max/min}} $. This gives us $ θ = θ_{0} = \frac{π}{2} $. 
 \[
-\frac{2 \sin  θ \sin (\pm α_ϕ / 2)}{1 + \cos θ_0 \cos θ + \sin θ_0 \sin  θ \cos (\pm α_ϕ / 2)} = 0
+X = \frac{2 \sin (ϕ - ϕ_{0})}{1 + \cos (ϕ-ϕ_{0})} 
+\]
+As we know 
+\[
+- \frac{α_{0}}{2} < θ - θ_{0} < - \frac{α_{0}}{2}
+\]
+We change the original expression to 
+\[
+X_{\text{max/min}} = ± \frac{2 \sin (α_{ϕ} / 2)}{1 + \cos (α_{0} / 2)}
+\]
+Now we repeat this for $ Y $ using $ X = 0 $. 
+\[
+Y = \frac{2(\sin θ_{0} \cos θ - \cos  θ_{0} \sin θ \cos (ϕ- ϕ_{0}))}{1 + \cos  θ_{0} \cos  θ + \sin  θ _{0} \sin  θ \cos (ϕ - ϕ _{0})}
+\]
+
+We use $  ϕ = ϕ_{0} = 0 $ and the same limitations on $ ϕ - ϕ_{0} $ as for $ θ - θ_{0}  $
+\[
+Y = ± \frac{2 \sin (α_{ϕ} / 2)}{1 + \cos (α_{ϕ} / 2)} 
 \]
 
 

@@ -149,13 +149,14 @@ Then have a variance which we will subtract for the lower end of angles and velo
 Evenly spaced out values in this interval will be used to get a wide range of possible values.
 In our case as seen in figure~\ref{fig: closest orbit}, we get the closest orbit in the third quadrant in terms of polar coordinates.
 We begin our simulation by having a median angle of $ \frac{5}{4}\pi $ with a variance of $ \frac{\pi}{4} $.
-This let us cover the entire third quadrant.
+This let us cover the entire third quadrant. For the following figure \ref{fig: simulation scattered}, \ref{fig: simulation tighter}, \ref{fig: pre speed increase}\& \ref{fig: post speed increase}, the blue line represents our home planet's trajectory, the orange being the target planet's trajectory. The rest are the trajectory of our shuttle in each simulation. The points are the shuttle and planets position when they are the closest to each other.
+
 As seen in figure~\ref{fig: simulation scattered} the trajectory will be quite scattered.
 Next we will show some examples of how we will narrow down both the trajectory and velocity to get close enough to our target planet.
 
 \begin{figure}[h!]
   \centering
-  \includegraphics[scale = .125]{Figures/full_angle_scatter}
+  \includegraphics[scale = .185]{Figures/full_angle_scatter}
   \caption{Simulation of trajectory with relatively wide range of angles. The dots represent were the shuttle was the closest to the target planet }
   \label{fig: simulation scattered}
 \end{figure}
@@ -165,7 +166,7 @@ We then get the following result in figure~\ref{fig: simulation tighter}.
 
 \begin{figure}[h!]
   \centering
-  \includegraphics[scale = .125]{Figures/narrowing_down_angle}
+  \includegraphics[scale = .185]{Figures/narrowing_down_angle}
   \caption{Simulation of trajectory after narrowing down the variance}
   \label{fig: simulation tighter}
 \end{figure}
@@ -176,7 +177,7 @@ As seen in the example from figure~\ref{fig: pre speed increase} our speed was t
 
 \begin{figure}[h!]
   \centering
-  \includegraphics[scale = .125]{Figures/pre_speed_increase}
+  \includegraphics[scale = .185]{Figures/pre_speed_increase}
   \caption{Simulation of trajectory before speed increase}
   \label{fig: pre speed increase}
 \end{figure}
@@ -186,7 +187,7 @@ When the speed was increased we got even closer to our target as seen in figure~
 
 \begin{figure}[h!]
   \centering
-  \includegraphics[scale = .125]{Figures/post_speed_increase}
+  \includegraphics[scale = .185]{Figures/post_speed_increase}
   \caption{Simulation of trajectory after speed increase}
   \label{fig: post speed increase}
 \end{figure}
@@ -290,7 +291,7 @@ We subtract the velocity of our home planet from the calculated value to get the
 
     \begin{figure}[h]
       \centering
-      \includegraphics[scale = .125]{Figures/closest_orbit}
+      \includegraphics[scale = .2]{Figures/closest_orbit}
       \caption{Position where the target planet and our home planet were the closest}
       \label{fig: closest orbit}
     \end{figure}
@@ -319,7 +320,7 @@ We subtract the velocity of our home planet from the calculated value to get the
     \begin{figure}[h]
         %% H(Here), h(here approx), t(top of page), b(bottom of page)
         \centering
-        \includegraphics[scale=0.35]{Figures/inter_trav}
+        \includegraphics[scale=0.5]{Figures/inter_trav}
         \caption{The interplanetary travel of the spacecraft. The black line depicts the trajectory of the spacecraft.}\label{fig:inter_trav}
     \end{figure}
 
@@ -328,7 +329,7 @@ We subtract the velocity of our home planet from the calculated value to get the
 
     \begin{figure}[h]
       \centering
-      \includegraphics[scale = .125]{Figures/good_enough_distance}
+      \includegraphics[scale = .19]{Figures/good_enough_distance}
       \caption{Position of shuttle and target planet at optimal distance for our simulated orbit. Lines depict trajectories at different angles}
       \label{fig: good enough distance}
     \end{figure}
