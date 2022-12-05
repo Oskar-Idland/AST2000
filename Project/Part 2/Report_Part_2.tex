@@ -45,7 +45,7 @@ This is an abstract \colorbox{red}{Complete this summary at the end of the paper
 When making our way out of the earth's atmosphere, we will have to know where our destination will be after the launch.
 To be able to reach our destination we therefore have to get known in our solar system and explore and simulate the different planets in the system.
 After finding out the orbits of the planets, it will be much easier to coordinate our launch to our target to minimize the time and effort required to find the destination.
-Using this, we will also be able to give estimates about the possibility of extraterrestrial life discovering our solar system.
+Using this, we will also be able to give estimates about the possibility of extraterrestrial life discovering our solar system. A fellow research team from a neighboring planetary system needed our help. They wanted to test their method for calculating a planets mass using a radial velocity curve. To aid them they need us to cleanse up their measured data as it contains a lot of noise. 
 
 \section{Method}
 The calculation of the planetary orbits in our solar system can either be done numerically or analytically.
@@ -214,6 +214,12 @@ Using the redefined vectors from \ref{r_1 redef} and \ref{r_2 redef}  we get the
 \]
 These equations will be used to check if the energy and angular momentum remains constant in the solar system. 
 
+\subsection{Radial Velocity Curve}
+	To help our friends we devised our own method for finding the real velocity curve hiding in the noise. The research team let us know we can assume the mean value of the noise is zero. One can create a new data point by averaging out the sum of a collection of points.
+	 
+	The simples way to do this would be to take every second point from the array starting at index 1, and sum the surrounding points (index 0-2) to create a new data point to plot together with the time arrays index 1. We can define this as the resolution $ k $, where for each point in the radial velocity array $ v_r $ the sum of the points $ \frac{k}{2} $ indexes to the right and left of that point becomes a single data point. When finished we divide by $ k $ to get the average value. As $ k $ gets bigger we get fewer data point, but a smoother curve. This method creates what looks like a lower resolution of data, but this can be interpolated if more data points is needed. We got 20 000 data points by the other group and used a resolution $ k = 200 $, meaning we have 100 data points before interpolation. We plot this against the time array at every $ k $ time index starting at index $ k $
+
+
 \section{Results}
 \subsection{Planetary Orbits}
     The simulation of the orbits yielded in both numeric and analytic orbits for all planets.
@@ -337,6 +343,14 @@ They are however very consistent with Newton's revised version of Kepler's third
 	  \label{fig: tot_Energy_AM}
 	\end{figure}
 	
+	
+	\subsection{Radial Velocity Curves}	
+		\begin{figure}[h!]
+			\centering
+			\includegraphics[scale = .5]{Figures/Other_Group_Radial_Velocity}
+			\caption{Radial Velocity Curve}
+			\label{fig: Radial Velocity}
+		\end{figure}
 
 \section{Discussion}
 To get an accurate simulation, it is important to choose a sufficiently small time interval dt.
@@ -361,10 +375,13 @@ This makes sense since we are not working with earth, but rather another home pl
 
 	\subsection{Orbits Around Center of Mass}
 	To judge the accuracy of the orbits we look at the total energy in the system to see if it is conserved. As seen in figure \ref{fig: tot_Energy_AM} we observed some fluctuations in the total energy, while angular momentum was constant. The magnitude of the energy was $ 10^{-13} $. At this scale the its most likely just calculation errors from the computer. The orbits of the star and the planet mirror each other which point to an accurate simulation. The forces acting on both bodies should have opposite direction and a difference in magnitude, which the graph portrays perfectly. 
+	
+
+
 
 \section{Conclusion}
-The orbits around the two-body system was simulated accurately while conserving both energy and angular momentum. 
-\colorbox{red}{Add more!}
+The orbits around the two-body system was simulated accurately while conserving both energy and angular momentum. The radial velocity curve was quite accurate and gave a good estimation of the actual curve 
+		
 
 \section{Appendix}
 
@@ -427,23 +444,7 @@ The orbits around the two-body system was simulated accurately while conserving 
 			\[
 			\mathbf{P} = \mathbf{r} × μ \mathbf{\dot{r}}
 			\]
-	\newpage
-	\subsection{Radial Velocity Curve}
-		For this challenge we used our own method for finding the velocity curve. If one can assume the mean value of the noise is zero one can create a new data point by averaging out the sum of a collection of points. 
-		\colorbox{red}{Legg til kalkulasjoner for massen til sjernen}
 
-		\subsubsection{Method}
-			The simples way to do this would be to take every second point from the array starting at index 1, and sum the surrounding points (index 0-2) to create a new data point to plot together with the time arrays index 1. We can define this as the resolution $ k $, where for each point in the radial velocity array $ v_r $ the sum of the points $ \frac{k}{2} $ indexes to the right and left of that point becomes a single data point. When finished we divide by $ k $ to get the average value. As $ k $ gets bigger we get fewer data point, but a smoother curve. This method is dependant on the initial amount of data points. We got 20 000 data points by the other group and used a resolution $ k = 500 $. We plot this against the time array at every $ k $ time index starting at index $ k $
-
-		\subsubsection{Results}	
-			The radial velocity curve was quite accurate and gave a good estimation of the actual curve 
-
-			\begin{figure}[h!]
-			  \centering
-			  \includegraphics[scale = .25]{Figures/Other_Group_Radial_Velocity}
-			  \caption{Radial Velocity Curve of Different Group}
-			  \label{fig: Radial Velocity}
-			\end{figure}
 
 
 

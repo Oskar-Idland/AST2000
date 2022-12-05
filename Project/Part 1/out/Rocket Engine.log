@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.8.28) (preloaded format=pdflatex 2022.9.1)  5 DEC 2022 20:01
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.8.28) (preloaded format=pdflatex 2022.9.1)  5 DEC 2022 20:12
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -450,7 +450,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
 Package hyperref Info: Link coloring ON on input line 33.
- (c:\Users\oskar\OneDrive - Universitetet i Oslo\Dokumenter\GitHub\Privat\AST2000\Project\Part 1\out\Rocket Engine.out) (c:\Users\oskar\OneDrive - Universitetet i Oslo\Dokumenter\GitHub\Privat\AST2000\Project\Part 1\out\Rocket Engine.out)
+ (Rocket Engine.out) (Rocket Engine.out)
 \@outlinefile=\write4
 \openout4 = `"Rocket Engine.out"'.
 
@@ -458,92 +458,155 @@ Package hyperref Info: Link coloring ON on input line 33.
 Class revtex4-2 Info: Taking \maketitle back from hyperref on input line 33.
 \openout3 = `"Rocket EngineNotes.bib"'.
 
-LaTeX Font Info:    Trying to load font information for U+esint on input line 54.
+LaTeX Font Info:    Trying to load font information for U+esint on input line 41.
  (C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex/latex/esint\uesint.fd
 File: uesint.fd 
 )
-LaTeX Font Info:    Trying to load font information for U+msa on input line 54.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 41.
  (C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 54.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 41.
  (C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [1{C:/Users/oskar/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] (C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex/latex/ucs/data\uni-34.def
+) [1{C:/Users/oskar/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
+
+LaTeX Warning: Reference `FWHM_EQ1' on page 2 undefined on input line 104.
+
+
+LaTeX Warning: Reference `der: FWHM' on page 2 undefined on input line 111.
+
+
+LaTeX Warning: Reference `subsec:sigma-to-fwhm-ratio' on page 2 undefined on input line 112.
+
+(C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex/latex/ucs/data\uni-34.def
 File: uni-34.def 2022/08/07 UCS: Unicode data U+2200..U+22FF
 )
-<./Figures/Max-Boltz1.png, id=87, 650.43pt x 578.16pt>
+
+LaTeX Warning: Reference `MB_ThreeDim' on page 2 undefined on input line 137.
+
+
+LaTeX Warning: Reference `MB_1Dim' on page 2 undefined on input line 137.
+
+<./Figures/Max-Boltz1.png, id=81, 650.43pt x 578.16pt>
 File: ./Figures/Max-Boltz1.png Graphic file (type png)
 <use ./Figures/Max-Boltz1.png>
-Package pdftex.def Info: ./Figures/Max-Boltz1.png  used on input line 138.
+Package pdftex.def Info: ./Figures/Max-Boltz1.png  used on input line 144.
 (pdftex.def)             Requested size: 195.1305pt x 173.44933pt.
-<./Figures/Max-Boltz3.png, id=89, 650.43pt x 578.16pt>
+<./Figures/Max-Boltz3.png, id=83, 650.43pt x 578.16pt>
 File: ./Figures/Max-Boltz3.png Graphic file (type png)
 <use ./Figures/Max-Boltz3.png>
-Package pdftex.def Info: ./Figures/Max-Boltz3.png  used on input line 144.
+Package pdftex.def Info: ./Figures/Max-Boltz3.png  used on input line 150.
 (pdftex.def)             Requested size: 195.1305pt x 173.44933pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 159--161
-
- []
-
 [2 <./Figures/Max-Boltz1.png> <./Figures/Max-Boltz3.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 208--213
+
+LaTeX Warning: Reference `eq: avg speed' on page 3 undefined on input line 161.
+
+
+LaTeX Warning: Reference `eq: avg kinetic energy' on page 3 undefined on input line 161.
+
+
+LaTeX Warning: Reference `der: mean velocity' on page 3 undefined on input line 161.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 165--167
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 208--213
+Underfull \hbox (badness 10000) in paragraph at lines 214--219
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 214--219
 
  []
 
 [3]
-Underfull \hbox (badness 1127) in paragraph at lines 226--233
-\OT1/cmr/m/n/10 mass of the space-craft was 1'001'100 Kg with the
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 226--233
+Underfull \hbox (badness 10000) in paragraph at lines 232--242
 
  []
 
-(C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex/latex/ucs/data\uni-3.def
+
+Underfull \hbox (badness 10000) in paragraph at lines 232--242
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 246--252
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 254--260
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 274--278
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 274--278
+
+ []
+
+[4] (C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex/latex/ucs/data\uni-3.def
 File: uni-3.def 2022/08/07 UCS: Unicode data U+0300..U+03FF
 ) (C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex/latex/ucs/data\uni-0.def
 File: uni-0.def 2022/08/07 UCS: Unicode data U+0000..U+00FF
 )
-Overfull \hbox (24.86153pt too wide) detected at line 294
+Overfull \hbox (24.86153pt too wide) detected at line 336
 [] \OT1/cmr/m/n/10 = [][] \OML/cmm/m/it/10 vP\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 v\OT1/cmr/m/n/10 ) d\OML/cmm/m/it/10 v \OT1/cmr/m/n/10 = [][] \OML/cmm/m/it/10 v [][] [] [] \OT1/cmr/m/n/10 4\OML/cmm/m/it/10 ^^Yv[] \OT1/cmr/m/n/10 d\OML/cmm/m/it/10 v
  []
 
-[4]
-Underfull \hbox (badness 10000) in paragraph at lines 311--312
+
+Underfull \hbox (badness 10000) in paragraph at lines 353--354
 
  []
 
-(Rocket Engine.bbl) [5] (c:\Users\oskar\OneDrive - Universitetet i Oslo\Dokumenter\GitHub\Privat\AST2000\Project\Part 1\out\Rocket Engine.aux)
-Package rerunfilecheck Info: File `"Rocket Engine".out' has not changed.
-(rerunfilecheck)             Checksum: B65CF671359E178AF5C183F527940F7C;2296.
+c:/Users/oskar/OneDrive - Universitetet i Oslo/Dokumenter/GitHub/Privat/AST2000/Project/Part 1/Rocket Engine.tex:378: Undefined control sequence.
+l.378 ... curve where the value $f(\mu, \sigma, \x
+                                                  _1)$ of the gaussian distr...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Reference `FWHM_EQ1' on page 5 undefined on input line 379.
+
+[5] (Rocket Engine.bbl) [6] (c:\Users\oskar\OneDrive - Universitetet i Oslo\Dokumenter\GitHub\Privat\AST2000\Project\Part 1\out\Rocket Engine.aux)
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+
+Package rerunfilecheck Warning: File `"Rocket Engine".out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `"Rocket Engine".out':
+(rerunfilecheck)             Before: 08E90E889D332517BB8F1F8CB72C57F6;2070
+(rerunfilecheck)             After:  B0A0E7905B879A7066D54F9144B58E9A;2530.
  ) 
 Here is how much of TeX's memory you used:
- 16878 strings out of 477843
- 254417 string characters out of 2823600
- 783447 words of memory out of 3000000
- 35542 multiletter control sequences out of 15000+600000
- 475653 words of font info for 57 fonts, out of 8000000 for 9000
+ 16880 strings out of 477843
+ 254251 string characters out of 2823600
+ 780447 words of memory out of 3000000
+ 35541 multiletter control sequences out of 15000+600000
+ 475961 words of font info for 58 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  72i,10n,77p,438b,589s stack positions out of 10000i,1000n,20000p,200000b,80000s
- <C:\Users\oskar\AppData\Local\MiKTeX\fonts/pk/ljfour/public/esint/dpi600\esint10.pk><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cmextra/cmex7.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi9.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti9.pfb>
-Output written on "c:\Users\oskar\OneDrive - Universitetet i Oslo\Dokumenter\GitHub\Privat\AST2000\Project\Part 1\out\Rocket Engine.pdf" (5 pages, 319651 bytes).
+ <C:\Users\oskar\AppData\Local\MiKTeX\fonts/pk/ljfour/public/esint/dpi600\esint10.pk><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cmextra/cmex7.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi9.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy9.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti9.pfb>
+Output written on "c:\Users\oskar\OneDrive - Universitetet i Oslo\Dokumenter\GitHub\Privat\AST2000\Project\Part 1\out\Rocket Engine.pdf" (6 pages, 343700 bytes).
 PDF statistics:
- 207 PDF objects out of 1000 (max. 8388607)
- 29 named destinations out of 1000 (max. 500000)
- 139 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 213 PDF objects out of 1000 (max. 8388607)
+ 31 named destinations out of 1000 (max. 500000)
+ 131 words of extra memory for PDF output out of 10000 (max. 10000000)
 

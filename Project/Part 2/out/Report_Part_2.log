@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.8.28) (preloaded format=pdflatex 2022.9.1)  5 DEC 2022 13:19
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.8.28) (preloaded format=pdflatex 2022.9.1)  5 DEC 2022 21:53
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -399,35 +399,35 @@ Package: subfigure 2002/07/30 v2.1.4 subfigure package
 \subfig@top=\skip59
 \subfig@bottom=\skip60
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 20.
+Package hyperref Info: Option `colorlinks' set `true' on input line 17.
  (C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
 File: lstlang1.sty 2020/03/24 1.8d listings language file
 )
-Class revtex4-2 Info: Unrecognized LaTeX tabular. Please update this document class! (Proceeding with fingers crossed.) on input line 36.
-Class revtex4-2 Info: cite was not loaded (OK!) on input line 36.
-Class revtex4-2 Info: mcite was not loaded (OK!) on input line 36.
-Class revtex4-2 Info: multicol was not loaded (OK!) on input line 36.
+Class revtex4-2 Info: Unrecognized LaTeX tabular. Please update this document class! (Proceeding with fingers crossed.) on input line 33.
+Class revtex4-2 Info: cite was not loaded (OK!) on input line 33.
+Class revtex4-2 Info: mcite was not loaded (OK!) on input line 33.
+Class revtex4-2 Info: multicol was not loaded (OK!) on input line 33.
  (c:\Users\oskar\OneDrive - Universitetet i Oslo\Dokumenter\GitHub\Privat\AST2000\Project\Part 2\out\Report_Part_2.aux)
 \openout1 = `Report_Part_2.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
  (C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex/latex/ucs\ucsencs.def
 File: ucsencs.def 2011/01/21 Fixes to fontencodings LGR, T3
 ) (C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
@@ -449,81 +449,82 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
  (C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-Package hyperref Info: Link coloring ON on input line 36.
+Package hyperref Info: Link coloring ON on input line 33.
  (c:\Users\oskar\OneDrive - Universitetet i Oslo\Dokumenter\GitHub\Privat\AST2000\Project\Part 2\out\Report_Part_2.out) (c:\Users\oskar\OneDrive - Universitetet i Oslo\Dokumenter\GitHub\Privat\AST2000\Project\Part 2\out\Report_Part_2.out)
 \@outlinefile=\write4
 \openout4 = `Report_Part_2.out'.
 
 \c@lstlisting=\count312
-Class revtex4-2 Info: Taking \maketitle back from hyperref on input line 36.
+Class revtex4-2 Info: Taking \maketitle back from hyperref on input line 33.
 \openout3 = `Report_Part_2Notes.bib'.
 
-LaTeX Font Info:    Trying to load font information for U+esint on input line 60.
+LaTeX Font Info:    Trying to load font information for U+esint on input line 57.
  (C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex/latex/esint\uesint.fd
 File: uesint.fd 
 )
-LaTeX Font Info:    Trying to load font information for U+msa on input line 60.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 57.
  (C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 60.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 57.
  (C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-<Figures/Ellipse.png, id=84, 709.65125pt x 305.64188pt>
+<Figures/Ellipse.png, id=80, 709.65125pt x 305.64188pt>
 File: Figures/Ellipse.png Graphic file (type png)
 <use Figures/Ellipse.png>
-Package pdftex.def Info: Figures/Ellipse.png  used on input line 69.
+Package pdftex.def Info: Figures/Ellipse.png  used on input line 66.
 (pdftex.def)             Requested size: 212.897pt x 91.69325pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Underfull \hbox (badness 1033) in paragraph at lines 86--96
+Underfull \hbox (badness 1033) in paragraph at lines 83--93
 \OT1/cmr/m/n/10 the co-or-di-nates back to carte-sian co-or-di-nates us-ing
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 86--96
+Underfull \hbox (badness 10000) in paragraph at lines 83--93
 
  []
 
 
-Package amsfonts Warning: Obsolete command \bold; \mathbf should be used instead on input line 100.
-
-<Figures/leapfrog1.png, id=91, 440.64626pt x 170.6375pt>
-File: Figures/leapfrog1.png Graphic file (type png)
-<use Figures/leapfrog1.png>
-Package pdftex.def Info: Figures/leapfrog1.png  used on input line 112.
-(pdftex.def)             Requested size: 176.25537pt x 68.25378pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 100--118
-
- []
+Package amsfonts Warning: Obsolete command \bold; \mathbf should be used instead on input line 97.
 
 [1{C:/Users/oskar/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <./Figures/Ellipse.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 122--125
+<Figures/leapfrog1.png, id=106, 440.64626pt x 170.6375pt>
+File: Figures/leapfrog1.png Graphic file (type png)
+<use Figures/leapfrog1.png>
+Package pdftex.def Info: Figures/leapfrog1.png  used on input line 109.
+(pdftex.def)             Requested size: 176.25537pt x 68.25378pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 97--115
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 122--125
+Underfull \hbox (badness 10000) in paragraph at lines 119--122
 
  []
 
 
-Overfull \hbox (36.50056pt too wide) in paragraph at lines 149--161
+Underfull \hbox (badness 10000) in paragraph at lines 119--122
+
+ []
+
+
+Overfull \hbox (36.50056pt too wide) in paragraph at lines 146--158
 [][][][][][][]
  []
 
 
-Underfull \hbox (badness 1052) in paragraph at lines 149--161
+Underfull \hbox (badness 1052) in paragraph at lines 146--158
 \OT1/cmr/m/n/10 have the high-est an-gu-lar ve-loc-ity at the per-i-he-lion
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 149--161
+Underfull \hbox (badness 10000) in paragraph at lines 146--158
 
  []
 
@@ -532,112 +533,105 @@ File: uni-3.def 2022/08/07 UCS: Unicode data U+0300..U+03FF
 ) (C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex/latex/ucs/data\uni-34.def
 File: uni-34.def 2022/08/07 UCS: Unicode data U+2200..U+22FF
 )
-<Figures/Orbit_plots.png, id=135, 462.528pt x 346.896pt>
+<Figures/Orbit_plots.png, id=131, 462.528pt x 346.896pt>
 File: Figures/Orbit_plots.png Graphic file (type png)
 <use Figures/Orbit_plots.png>
-Package pdftex.def Info: Figures/Orbit_plots.png  used on input line 228.
+Package pdftex.def Info: Figures/Orbit_plots.png  used on input line 231.
 (pdftex.def)             Requested size: 185.0079pt x 138.75594pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
+[3]
 
-Underfull \hbox (badness 10000) in paragraph at lines 278--280
+LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix] on input line 261.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 281--283
 
  []
 
-[3 <./Figures/Orbit_plots.png>]
 
-LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix] on input line 280.
+LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Figures/Planet_Orbit_CM.pdf, id=154, 1387.58403pt x 687.28767pt>
+<Figures/Planet_Orbit_CM.pdf, id=147, 1387.58403pt x 704.6325pt>
 File: Figures/Planet_Orbit_CM.pdf Graphic file (type pdf)
 <use Figures/Planet_Orbit_CM.pdf>
-Package pdftex.def Info: Figures/Planet_Orbit_CM.pdf  used on input line 322.
-(pdftex.def)             Requested size: 208.12862pt x 103.0887pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<Figures/Solar_Orbit_CM.pdf, id=155, 1387.58403pt x 687.28767pt>
+Package pdftex.def Info: Figures/Planet_Orbit_CM.pdf  used on input line 325.
+(pdftex.def)             Requested size: 208.12862pt x 105.6903pt.
+<Figures/Solar_Orbit_CM.pdf, id=148, 1387.58403pt x 704.6325pt>
 File: Figures/Solar_Orbit_CM.pdf Graphic file (type pdf)
 <use Figures/Solar_Orbit_CM.pdf>
-Package pdftex.def Info: Figures/Solar_Orbit_CM.pdf  used on input line 329.
-(pdftex.def)             Requested size: 208.12862pt x 103.0887pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<Figures/Energy_AngularMomentum_plot.pdf, id=157, 1387.58403pt x 687.28767pt>
+Package pdftex.def Info: Figures/Solar_Orbit_CM.pdf  used on input line 332.
+(pdftex.def)             Requested size: 208.12862pt x 105.6903pt.
+[4 <./Figures/Orbit_plots.png> <./Figures/Planet_Orbit_CM.pdf> <./Figures/Solar_Orbit_CM.pdf>]
+<Figures/Energy_AngularMomentum_plot.pdf, id=245, 1387.58403pt x 704.6325pt>
 File: Figures/Energy_AngularMomentum_plot.pdf Graphic file (type pdf)
 <use Figures/Energy_AngularMomentum_plot.pdf>
-Package pdftex.def Info: Figures/Energy_AngularMomentum_plot.pdf  used on input line 338.
-(pdftex.def)             Requested size: 208.12862pt x 103.0887pt.
+Package pdftex.def Info: Figures/Energy_AngularMomentum_plot.pdf  used on input line 341.
+(pdftex.def)             Requested size: 208.12862pt x 105.6903pt.
+<Figures/Other_Group_Radial_Velocity.png, id=246, 462.528pt x 346.896pt>
+File: Figures/Other_Group_Radial_Velocity.png Graphic file (type png)
+<use Figures/Other_Group_Radial_Velocity.png>
+Package pdftex.def Info: Figures/Other_Group_Radial_Velocity.png  used on input line 351.
+(pdftex.def)             Requested size: 231.26343pt x 173.44757pt.
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 345--358
+Underfull \hbox (badness 10000) in paragraph at lines 357--370
 
  []
 
-[4 <./Figures/Planet_Orbit_CM.pdf> <./Figures/Solar_Orbit_CM.pdf> <./Figures/Energy_AngularMomentum_plot.pdf>]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 375.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 375.
+(hyperref)                removing `math shift' on input line 390.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 375.
+(hyperref)                removing `subscript' on input line 390.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 375.
+(hyperref)                removing `math shift' on input line 390.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 375.
+(hyperref)                removing `math shift' on input line 390.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 375.
+(hyperref)                removing `subscript' on input line 390.
 
 
-Overfull \hbox (21.1081pt too wide) detected at line 381
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 390.
+
+[5 <./Figures/Energy_AngularMomentum_plot.pdf> <./Figures/Other_Group_Radial_Velocity.png>]
+Overfull \hbox (21.1081pt too wide) detected at line 396
 \OT1/cmr/bx/n/10 R \OT1/cmr/m/n/10 = [][] + [] [] = [] [] + []\OT1/cmr/bx/n/10 r \OT1/cmr/m/n/10 = [] + []\OT1/cmr/bx/n/10 r
  []
 
 
-Overfull \hbox (33.11954pt too wide) detected at line 404
+Overfull \hbox (33.11954pt too wide) detected at line 419
 [] \OT1/cmr/m/n/10 = [] [][]
  []
 
 (C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex/latex/ucs/data\uni-0.def
 File: uni-0.def 2022/08/07 UCS: Unicode data U+0000..U+00FF
-) [5]
-<Figures/Other_Group_Radial_Velocity.png, id=291, 462.528pt x 346.896pt>
-File: Figures/Other_Group_Radial_Velocity.png Graphic file (type png)
-<use Figures/Other_Group_Radial_Velocity.png>
-Package pdftex.def Info: Figures/Other_Group_Radial_Velocity.png  used on input line 446.
-(pdftex.def)             Requested size: 115.63171pt x 86.72379pt.
- (Report_Part_2.bbl) [6 <./Figures/Other_Group_Radial_Velocity.png>] (c:\Users\oskar\OneDrive - Universitetet i Oslo\Dokumenter\GitHub\Privat\AST2000\Project\Part 2\out\Report_Part_2.aux)
+) [6] (Report_Part_2.bbl) (c:\Users\oskar\OneDrive - Universitetet i Oslo\Dokumenter\GitHub\Privat\AST2000\Project\Part 2\out\Report_Part_2.aux)
 Package rerunfilecheck Info: File `Report_Part_2.out' has not changed.
-(rerunfilecheck)             Checksum: 0B9F49B2401C0BF89305DC5993AAE344;3207.
+(rerunfilecheck)             Checksum: 00C8BCEB0A1E5F0EA2912979BB2F9806;3199.
  ) 
 Here is how much of TeX's memory you used:
  16960 strings out of 477843
- 256225 string characters out of 2823600
- 781443 words of memory out of 3000000
- 35597 multiletter control sequences out of 15000+600000
+ 256220 string characters out of 2823600
+ 779443 words of memory out of 3000000
+ 35598 multiletter control sequences out of 15000+600000
  476892 words of font info for 61 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 72i,10n,77p,923b,536s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ 72i,10n,77p,1036b,536s stack positions out of 10000i,1000n,20000p,200000b,80000s
  <C:\Users\oskar\AppData\Local\MiKTeX\fonts/pk/ljfour/public/esint/dpi600\esint10.pk><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx6.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx7.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi9.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy9.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti9.pfb>
-Output written on "c:\Users\oskar\OneDrive - Universitetet i Oslo\Dokumenter\GitHub\Privat\AST2000\Project\Part 2\out\Report_Part_2.pdf" (6 pages, 490887 bytes).
+Output written on "c:\Users\oskar\OneDrive - Universitetet i Oslo\Dokumenter\GitHub\Privat\AST2000\Project\Part 2\out\Report_Part_2.pdf" (6 pages, 489796 bytes).
 PDF statistics:
- 384 PDF objects out of 1000 (max. 8388607)
- 47 named destinations out of 1000 (max. 500000)
- 196 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 380 PDF objects out of 1000 (max. 8388607)
+ 46 named destinations out of 1000 (max. 500000)
+ 188 words of extra memory for PDF output out of 10000 (max. 10000000)
 

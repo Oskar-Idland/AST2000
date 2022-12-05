@@ -35,13 +35,13 @@
 
 \begin{document}
 
-\title{}
+\title{Exploration our of Star}
 \author{Candidates: 15369 \& 15401}
 \date{\today}
 \affiliation{Institute of Theoretical Astrophysics, University of Oslo}
 
 \begin{abstract}
-    This is an abstract \colorbox{red}{Complete this summary at the end of the paper}
+    We thoroughly investigated our star's birth, life and death. Just using its surface temperature of 11733 Kelvin, mass of 4.4 $ M_{⊙} $ and its radius of 2.07 $ ⋅ 10^{9} $ m, we were able to make estimates of its lifespan of $ 3 ⋅ 10^{8} $ years and luminosity of $ 1.5 ⋅ 10^{2} L_{⊙}$. Comparing it with a star known as The Sun, we also learned our star is quite well behaved. Further we calculated an estimate of its minimum size as a gas cloud of $ 7.5 ⋅ 10^{15} $ and luminosity $ 1.1 ⋅ 10^{2} L_{⊙}$. We then explored its core and calculated the energy produced from its nuclear reactions and make an estimate of its luminosity just using this. Finally, we explored the death of our star, the stages it evolves in and placement on the HR-Diagram.
 \end{abstract}
 \maketitle
 \section{Introduction} \label{sec: introduction}
@@ -109,7 +109,7 @@ is as follows:
 \begin{equation} \label{eq: Lifetime}
   t = \frac{pMc^{2}}{L}
 \end{equation}
-Where $ p $ is the fraction of the total mass being converted into energy, $ M $ is the mass of the star, $ L $ being the luminosity and $ c $ being the speed of light. We will assume this to be 10\% as this is true for the Sun. Using equation \ref{eq: Lifetime} we get a lifetime of 3.04e+08 years. This is approximately 3\% of the Sun's lifespan!
+Where $ p $ is the fraction of the total mass being converted into energy, $ M $ is the mass of the star, $ L $ being the luminosity and $ c $ being the speed of light. We will assume this to be 10\% as this is true for the Sun. Using equation \ref{eq: Lifetime} we get a lifetime of $ 3.04 ⋅ 10^{8} $ years. This is approximately 3\% of the Sun's lifespan!
 
 \subsubsection*{Relationships between mass, temperature and luminosity}
 As one can see from the HR-diagram~\ref{fig: HR_diagram}, there is a clear relationship between the temperature and luminosity of a star as they sit on the main sequence.
@@ -156,7 +156,7 @@ Where $ T $ is the temperature of the cloud, $ k $ is Boltzmann's constant, $ G 
 \begin{equation}\label{eq: Jeans length}
   R = \frac{GMμ m_h }{5kT} 
 \end{equation}
-Using the mass of our star we get a Jean's Length $ R_j $ of 7.5e+15 meters. To see how big this is in comparison with other stars lets place it into the HR-Diagram! Before we can do this we need to find its luminosity. We already have its radius and temperature so we will use equation \ref{eq: Luminosity final} again. 
+Using the mass of our star we get a Jean's Length $ R_j $ of $ 7.5 ⋅ 10^{15} $ meters. To see how big this is in comparison with other stars lets place it into the HR-Diagram! Before we can do this we need to find its luminosity. We already have its radius and temperature so we will use equation \ref{eq: Luminosity final} again. 
 \begin{equation}
   L_{\text{GMC}} = 1.1 ⋅ 10^{2}\ L_{⊙}
 \end{equation}
@@ -216,7 +216,7 @@ We are now going to re-calculate the luminosity of our star based on the nuclear
 \begin{itemize}
   \item All nuclear reactions take place within a sphere of 0.2R 
   \item Uniform density
-  \item The core temperature temperature is the same throughout the whole sphere
+  \item The core temperature is the same throughout the whole sphere
   \item Assume energy production occurs via the pp-chain and CNO-cycle
   \item The core consist of 76.5\% Hydrogen, 25.3\% Helium and 0.2\% Carbon, Oxygen and Nitrogen 
 \end{itemize}
@@ -274,10 +274,16 @@ As we assumed the reactions is only happening inside a radius of 0.2 $ R $ we ca
 \end{equation}
 Doing the integral in the previous equation \ref{eq: Lumin chain} we get the following
 \begin{equation}\label{eq: Lumin chain final }
-  L = ρ \frac{4}{3} ε_{\text{total}} 0.2R^{3} = 2.5 ⋅ 10^{25}
+  L = ρ \frac{4}{3} ε_{\text{total}} (0.2R)^{3} = 1.0 ⋅ 10^{24} \ W
 \end{equation}
 
-Our attempt at calculating the luminosity using chain reactions in the core of the star fell quite short. Our new luminosity is 3 orders of magnitude smaller than the one calculated in equation \ref{eq: Luminosity final}. This could be for many reasons. Its not likely the density being equal inside the entire star, nor the fact that the reactions only occurs in a radius of $ 0.2R $. Both reactions, but especially the CNO-cycle, are highly temperature sensitive. As mentioned earlier, both equations \ref{eq: pp-chain} \& \ref{eq: CNO-cycle} have their preferred temperature range where both are the most accurate. Our core temperature $ T_c $ of 17.2 million Kelvin falls almost dead center between the 15 million Kelvin preferred by the pp-chain and the 20 million preferred by the CNO-cycle. This could be the reason for our failed calculations. 
+Rearranging equation \ref{eq: Luminosity final} and solving for $ T $ we get an estimate of our surface temperature
+
+\begin{equation}\label{eq: estimed temp}
+  T = \sqrt[4]{\frac{L}{σ4πr^{2}} } = 756 K 
+\end{equation}
+
+Our attempt at calculating the luminosity using chain reactions in the core of the star fell quite short. As a result, the temperature \ref{eq: estimed temp} estimate was off as well. Our new luminosity is 3 orders of magnitude smaller than the one calculated in equation \ref{eq: Luminosity final}. This could be for many reasons. Its not likely the density being equal inside the entire star, nor the fact that the reactions only occurs in a radius of $ 0.2R $. Both reactions, but especially the CNO-cycle, are highly temperature sensitive. As mentioned earlier, both equations \ref{eq: pp-chain} \& \ref{eq: CNO-cycle} have their preferred temperature range where both are the most accurate. Our core temperature $ T_c $ of 17.2 million Kelvin falls almost dead center between the 15 million Kelvin preferred by the pp-chain and the 20 million preferred by the CNO-cycle. This could be the reason for our failed calculations. 
 
 
 \section{The Death of Our Star}

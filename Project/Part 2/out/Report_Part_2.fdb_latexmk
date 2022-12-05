@@ -1,12 +1,12 @@
 # Fdb version 3
-["bibtex Report_Part_2"] 1670242753 "Report_Part_2.aux" "Report_Part_2.bbl" "Report_Part_2" 1670242767
+["bibtex Report_Part_2"] 1670271187 "Report_Part_2.aux" "Report_Part_2.bbl" "Report_Part_2" 1670273632
   "C:/Users/oskar/AppData/Local/Programs/MiKTeX/bibtex/bst/revtex/apsrev4-2.bst" 1601731616 69609 e9dea59f0e753ccda3ddc8f5806d846d ""
-  "Report_Part_2.aux" 1670242513 6924 7f59185dcd2e3797a9d8b9a2445555e2 ""
+  "Report_Part_2.aux" 1670267496 6812 e1b974f6f25d4d7cb1b599ecda7bedc2 ""
   "Report_Part_2Notes.bib" 1664712737 104 4d8bb863c86f3d7b03a471e9d4707f34 ""
   (generated)
   "Report_Part_2.bbl"
   "Report_Part_2.blg"
-["pdflatex"] 1670242764 "c:/Users/oskar/OneDrive - Universitetet i Oslo/Dokumenter/GitHub/Privat/AST2000/Project/Part 2/Report_Part_2.tex" "out/Report_Part_2.pdf" "Report_Part_2" 1670242767
+["pdflatex"] 1670273629 "c:/Users/oskar/OneDrive - Universitetet i Oslo/Dokumenter/GitHub/Privat/AST2000/Project/Part 2/Report_Part_2.tex" "out/Report_Part_2.pdf" "Report_Part_2" 1670273632
   "C:/Users/oskar/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1665923245 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/oskar/AppData/Local/MiKTeX/fonts/pk/ljfour/public/esint/dpi600/esint10.pk" 1645521988 10544 0811bdf2222d179dac2158081c8a8d3f ""
   "C:/Users/oskar/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1662027572 10374549 ab9957c64f9e665f244136ccccd1caef ""
@@ -134,17 +134,17 @@
   "C:/Users/oskar/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "C:/Users/oskar/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1656233290 56148 51a9a8571c07b9921892ae11063ae853 ""
   "Figures/Ellipse.png" 1663685959 227277 1948e2f85afb35559e8c34b36e4a9001 ""
-  "Figures/Energy_AngularMomentum_plot.pdf" 1664375672 19207 b359a6def453452fa8fe92961f414801 ""
+  "Figures/Energy_AngularMomentum_plot.pdf" 1670271420 18334 da7d5173cab4df669fbfcecb9ab8b84c ""
   "Figures/Orbit_plots.png" 1668624081 74528 3afaa9d559460644f8a074e17e6f8d3c ""
   "Figures/Other_Group_Radial_Velocity.png" 1664708141 39072 828f8a3c8e65027e69012f1b0ca8fd18 ""
-  "Figures/Planet_Orbit_CM.pdf" 1664387510 20613 eb4044265e1369c697ef2a2c756dd720 ""
-  "Figures/Solar_Orbit_CM.pdf" 1664387609 20219 3ecac5c88c9882b26c78b23d84597129 ""
+  "Figures/Planet_Orbit_CM.pdf" 1670271370 20608 a6f60479a595a5c3f3d74f45bf7a1cba ""
+  "Figures/Solar_Orbit_CM.pdf" 1670271402 20527 f093dd4a9e0dd5a95f015857a3a4686e ""
   "Figures/leapfrog1.png" 1663685959 5078 399f32e8e2f85c2aeb86cb64c09608e3 ""
-  "Report_Part_2.bbl" 1670242753 2035 35453d3875d823f0ec9445e740a573d9 "bibtex Report_Part_2"
-  "Report_Part_2.tex" 1670242761 25999 994e1af4b4d26b421a5abf1f66fe471e ""
-  "c:/Users/oskar/OneDrive - Universitetet i Oslo/Dokumenter/GitHub/Privat/AST2000/Project/Part 2/Report_Part_2.tex" 1670242761 25999 994e1af4b4d26b421a5abf1f66fe471e ""
-  "out/Report_Part_2.aux" 1670242767 6601 7bd0c0c86460da2b9096d786f3de2251 "pdflatex"
-  "out/Report_Part_2.out" 1670242767 3207 0b9f49b2401c0bf89305dc5993aae344 "pdflatex"
+  "Report_Part_2.bbl" 1670271187 2035 35453d3875d823f0ec9445e740a573d9 "bibtex Report_Part_2"
+  "Report_Part_2.tex" 1670273612 26261 4178d38e5a832a0fe35bc7ba573442a5 ""
+  "c:/Users/oskar/OneDrive - Universitetet i Oslo/Dokumenter/GitHub/Privat/AST2000/Project/Part 2/Report_Part_2.tex" 1670273612 26261 4178d38e5a832a0fe35bc7ba573442a5 ""
+  "out/Report_Part_2.aux" 1670273631 6464 5498785834b9cb991acaaa689fe21cd4 "pdflatex"
+  "out/Report_Part_2.out" 1670273631 3199 00c8bceb0a1e5f0ea2912979bb2f9806 "pdflatex"
   (generated)
   "out/Report_Part_2.aux"
   "out/Report_Part_2.log"
