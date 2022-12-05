@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2022.2.21)  5 DEC 2022 14:17
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2022.2.21)  5 DEC 2022 14:40
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -638,7 +638,7 @@ and I'll forget about whatever was undefined.
 (/Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 1/Rocket Engine.aux
 )
 Package rerunfilecheck Info: File `"Rocket Engine".out' has not changed.
-(rerunfilecheck)             Checksum: 19A4291856C164E856A60C60C5F3D82D;2052.
+(rerunfilecheck)             Checksum: 5AA728AA151F9A45204CA61EE6A56A16;2055.
  ) 
 Here is how much of TeX's memory you used:
  15031 strings out of 478994
@@ -666,7 +666,7 @@ exmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2021/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/2021/texmf
 -dist/fonts/type1/public/esint-type1/esint10.pfb>
 Output written on "/Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 1
-/Rocket Engine.pdf" (5 pages, 281324 bytes).
+/Rocket Engine.pdf" (5 pages, 280501 bytes).
 PDF statistics:
  179 PDF objects out of 1000 (max. 8388607)
  149 compressed objects within 2 object streams
