@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2022.2.21)  4 DEC 2022 19:43
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2022.2.21)  5 DEC 2022 10:29
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -575,55 +575,39 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 File: Figures/sim_landing_far.png Graphic file (type png)
 <use Figures/sim_landing_far.png>
 Package pdftex.def Info: Figures/sim_landing_far.png  used on input line 99.
-(pdftex.def)             Requested size: 69.37619pt x 52.03215pt.
+(pdftex.def)             Requested size: 185.0079pt x 138.75594pt.
 <Figures/sim_landing_close.png, id=61, 462.528pt x 346.896pt>
 File: Figures/sim_landing_close.png Graphic file (type png)
 <use Figures/sim_landing_close.png>
 Package pdftex.def Info: Figures/sim_landing_close.png  used on input line 106.
 
-(pdftex.def)             Requested size: 69.37619pt x 52.03215pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<Figures/sim_landing_velocity.png, id=62, 462.528pt x 346.896pt>
+(pdftex.def)             Requested size: 185.0079pt x 138.75594pt.
+ [1{/usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map} </Use
+rs/jannikeschler/Documents/GitHub/AST2000/Project/Part 7/Figures/sim_landing_fa
+r.png>]
+<Figures/sim_landing_velocity.png, id=80, 462.528pt x 346.896pt>
 File: Figures/sim_landing_velocity.png Graphic file (type png)
 <use Figures/sim_landing_velocity.png>
 Package pdftex.def Info: Figures/sim_landing_velocity.png  used on input line 1
 13.
-(pdftex.def)             Requested size: 69.37619pt x 52.03215pt.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<Figures/sim_landing_f_drag.png, id=63, 462.528pt x 346.896pt>
+(pdftex.def)             Requested size: 185.0079pt x 138.75594pt.
+<Figures/sim_landing_f_drag.png, id=81, 462.528pt x 346.896pt>
 File: Figures/sim_landing_f_drag.png Graphic file (type png)
 <use Figures/sim_landing_f_drag.png>
 Package pdftex.def Info: Figures/sim_landing_f_drag.png  used on input line 120
 .
-(pdftex.def)             Requested size: 69.37619pt x 52.03215pt.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[1{/usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map} </User
-s/jannikeschler/Documents/GitHub/AST2000/Project/Part 7/Figures/sim_landing_far
-.png>]
-
-LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
- on input line 138.
-
+(pdftex.def)             Requested size: 185.0079pt x 138.75594pt.
 <Figures/landing_far.png, id=89, 462.528pt x 346.896pt>
 File: Figures/landing_far.png Graphic file (type png)
 <use Figures/landing_far.png>
 Package pdftex.def Info: Figures/landing_far.png  used on input line 149.
-(pdftex.def)             Requested size: 69.37619pt x 52.03215pt.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
+(pdftex.def)             Requested size: 185.0079pt x 138.75594pt.
 <Figures/landing_close.png, id=90, 462.528pt x 346.896pt>
 File: Figures/landing_close.png Graphic file (type png)
 <use Figures/landing_close.png>
 Package pdftex.def Info: Figures/landing_close.png  used on input line 156.
-(pdftex.def)             Requested size: 69.37619pt x 52.03215pt.
+(pdftex.def)             Requested size: 185.0079pt x 138.75594pt.
+
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
@@ -631,7 +615,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 File: Figures/landing_velocity.png Graphic file (type png)
 <use Figures/landing_velocity.png>
 Package pdftex.def Info: Figures/landing_velocity.png  used on input line 163.
-(pdftex.def)             Requested size: 69.37619pt x 52.03215pt.
+(pdftex.def)             Requested size: 185.0079pt x 138.75594pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
@@ -639,7 +623,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 File: Figures/landing_f_drag.png Graphic file (type png)
 <use Figures/landing_f_drag.png>
 Package pdftex.def Info: Figures/landing_f_drag.png  used on input line 170.
-(pdftex.def)             Requested size: 69.37619pt x 52.03215pt.
+(pdftex.def)             Requested size: 185.0079pt x 138.75594pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
@@ -647,6 +631,15 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 Underfull \hbox (badness 10000) in paragraph at lines 176--179
 
  []
+
+[2 </Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 7/Figures/sim_la
+nding_close.png> </Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 7/
+Figures/sim_landing_velocity.png> </Users/jannikeschler/Documents/GitHub/AST200
+0/Project/Part 7/Figures/sim_landing_f_drag.png> </Users/jannikeschler/Document
+s/GitHub/AST2000/Project/Part 7/Figures/landing_far.png>]
+
+LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
+ on input line 180.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 180--191
@@ -658,21 +651,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 192--203
 
  []
 
-[2 </Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 7/Figures/sim_la
-nding_close.png> </Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 7/
-Figures/sim_landing_velocity.png> </Users/jannikeschler/Documents/GitHub/AST200
-0/Project/Part 7/Figures/sim_landing_f_drag.png> </Users/jannikeschler/Document
-s/GitHub/AST2000/Project/Part 7/Figures/landing_far.png>]
-
-LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
- on input line 203.
-
 
 Underfull \hbox (badness 10000) in paragraph at lines 204--212
 
  []
 
-
+[3 </Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 7/Figures/landin
+g_close.png> </Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 7/Figu
+res/landing_velocity.png> </Users/jannikeschler/Documents/GitHub/AST2000/Projec
+t/Part 7/Figures/landing_f_drag.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 220--223
 
  []
@@ -687,21 +674,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 226--229
 
  []
 
-[3 </Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 7/Figures/landin
-g_close.png> </Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 7/Figu
-res/landing_velocity.png> </Users/jannikeschler/Documents/GitHub/AST2000/Projec
-t/Part 7/Figures/landing_f_drag.png>]
-No file Report_Part_7.bbl.
 [4]
+No file Report_Part_7.bbl.
+[5]
 (/Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 7/Report_Part_7.aux
 )
 Package rerunfilecheck Info: File `Report_Part_7.out' has not changed.
 (rerunfilecheck)             Checksum: 9AA49C0FE201217C40FCD003B58CE57A;1732.
  ) 
 Here is how much of TeX's memory you used:
- 14529 strings out of 478994
- 206830 string characters out of 5858184
- 753395 words of memory out of 5000000
+ 14530 strings out of 478994
+ 206835 string characters out of 5858184
+ 752395 words of memory out of 5000000
  31760 multiletter control sequences out of 15000+600000
  409824 words of font info for 56 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -718,10 +702,10 @@ exlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/te
 xlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texl
 ive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb>
 Output written on "/Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 7
-/Report_Part_7.pdf" (4 pages, 326445 bytes).
+/Report_Part_7.pdf" (5 pages, 327064 bytes).
 PDF statistics:
- 183 PDF objects out of 1000 (max. 8388607)
- 148 compressed objects within 2 object streams
- 33 named destinations out of 1000 (max. 500000)
+ 187 PDF objects out of 1000 (max. 8388607)
+ 151 compressed objects within 2 object streams
+ 34 named destinations out of 1000 (max. 500000)
  137 words of extra memory for PDF output out of 10000 (max. 10000000)
 

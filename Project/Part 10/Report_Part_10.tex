@@ -10,6 +10,7 @@
 \usepackage{hyperref}
 \usepackage{listings}
 \usepackage{subfigure}
+% \usepackage{biblatex}
 % \usepackage[style=science, backend=biber]{biblatex}
 % \addbibresource{References_Part_4.bib} TODO: Slett før innlevering
 \hypersetup{
@@ -78,22 +79,23 @@ We can use this to find a new way to express the Luminosity.
 \begin{equation} \label{eq: Lumin 2}
   L = FdA 
 \end{equation}
-Stefan-Boltzmann's law \colorbox{red}{Referer til 3d s, 3} dictates that the flux $ F $ can be expressed as 
+Stefan-Boltzmann's law%~\parencite[][p. 3]{for_notat_3d} TODO: Remove Comment
+dictates that the flux $ F $ can be expressed as
 
 \begin{equation}\label{eq: Flux 2}
   F = σT^{4}.
 \end{equation}
 
-Where $ T $ is the temperature in Kelvin and $ σ  $ is Stefan-Boltzmann's constant. We also know the total area of a sphere to be $ 4 π r^{2} $  where $ r $ is the radius of the sphere. Combining this and equations \ref{eq: Lumin 2} \& \ref{eq: Flux 2} we get the following expression for the luminosity. 
+Where $ T $ is the temperature in Kelvin and $ \sigma  $ is Stefan-Boltzmann's constant. We also know the total area of a sphere to be $ 4 \pi r^{2} $  where $ r $ is the radius of the sphere. Combining this and equations \ref{eq: Lumin 2} \& \ref{eq: Flux 2} we get the following expression for the luminosity.
 
 \begin{equation} \label{eq: Luminosity final}
   L = σT^{4} 4 π r^{2}
 \end{equation}
-Using our measured surface temperature of our star we get a luminosity $ L = 5.79 ⋅ 10^{28} W$  or $ 1.51 ⋅ 10^{2} L_{⊙} $. The use of the  $ "⊙" $ symbol is a way to express a quantity as a fraction of said quantity in relation to the Sun. An example would be $ M_{⊙} $ and $ L_{⊙} $ being the mass and luminosity of the sun respectively. This kind of notation is useful as it creates an easy baseline of comparison of different stars. 
+Using our measured surface temperature of our star we get a luminosity $ L = 5.79 \cdot 10^{28} W$  or $ 1.51 \cdot 10^{2} L_{\odot} $. The use of the  $ "\odot" $ symbol is a way to express a quantity as a fraction of said quantity in relation to the Sun. An example would be $ M_{⊙} $ and $ L_{⊙} $ being the mass and luminosity of the sun respectively. This kind of notation is useful as it creates an easy baseline of comparison of different stars.
 Now we have the coordinates needed to plot our star in the HR diagram. 
 \begin{figure}[h!]
   \centering
-  \includegraphics[scale = .5]{figures/HR_diagram_Sun and Star.pdf}
+  \includegraphics[scale = .5]{figures/HR_diagram_Sun and Star}
   \caption{Our Star and the Sun in the HR-Diagram. Both in true size relative to the other stars}
   \label{fig: HR_Diagram_Today}
 \end{figure}
@@ -102,14 +104,20 @@ It seems our star is a main sequence star! This was very likely as this is where
 \subsubsection*{The Lifespan of Our Star}
 In all stars their is a struggle between two forces. The first being the gravitational force trying to crush all the atoms in the star in on itself. The other being the radiation pressure generated from the fusion of mainly hydrogen inside the star. As more and more hydrogen is turned into helium the mean molecular weight $ μ $ of the star increases and as such, its mass increases as well. When the mass increases the gravitational force increases and the star will shrink. The shrinkage will create higher pressure and temperature which will make the fusion more effective, increasing the radiation pressure. The two forces will balance each other until the star has a relatively stable radius until there isn't enough hydrogen to stop the gravitational forces, but we will cover this later. When these two forces are equal, the star has reached hydrostatic equilibrium. 
 
-This tells us there is a relationship between the mass of the star and its lifetime $ t $. The equation expressing this relationship (derived in \colorbox{red}{referer til 3d s, 7}) is as follows: 
+This tells us there is a relationship between the mass of the star and its lifetime $ t $. The equation expressing this relationship (derived in %~\parencite[][p. 7]{for_notat_3d}) TODO: Remove Comment
+is as follows:
 \begin{equation} \label{eq: Lifetime}
   t = \frac{pMc^{2}}{L}
 \end{equation}
-Where $ p $ is the fraction of the total mass being converted into energy, $ M $ is the mass of the star, $ L $ being the luminosity and $ c $ being the speed of light. We will assume this to be 10\% as this is true for the Sun. Using equation \ref{eq: Lifetime} we get a lifetime of 3.04e+08 years. This is approximately 30 times as long as the Sun!
+Where $ p $ is the fraction of the total mass being converted into energy, $ M $ is the mass of the star, $ L $ being the luminosity and $ c $ being the speed of light.
+We will assume this to be 10\% as this is true for the Sun. Using equation \ref{eq: Lifetime} we get a lifetime of 3.04e+08 years.
+This is approximately 30 times as long as the Sun!
 
 \subsubsection*{Relationships between mass, temperature and luminosity}
-As one can see from the HR-diagram \ref{fig: HR_diagram}, there is a clear relationship between the temperature and luminosity of a star as they sit on the main sequence. We therefore expect to see  "well behaved" main sequence stars to obey certain ratios. Derived in \colorbox{red}{Refferer til forelesningsnotat 3b eq 4} we see the two following equations
+As one can see from the HR-diagram~\ref{fig: HR_diagram}, there is a clear relationship between the temperature and luminosity of a star as they sit on the main sequence.
+We therefore expect to see "well behaved" main sequence stars to obey certain ratios.
+Derived in%~\parencite[][equation 4]{for_notat_3b} TODO: Remove Comment
+we see the two following equations
 \begin{equation}\label{eq: T M ratio}
   M ∝ T^{2}_{eff}
 \end{equation}
@@ -141,7 +149,8 @@ Star do not begin their existence as bright, hot spheres creating fusion reactio
   \item Has a temperature of 10 K
   \item Is made up of 75\% Hydrogen and 25\% Helium
 \end{itemize} 
-As derived in \colorbox{red}{Referer til part 3b Jeans length}, there is a minimum radius requirement radius $ R_j $ for a GMC to collapse in on itself. 
+As derived in%~\parencite[][Section 3]{for_notat_3b} TODO: Remove Comment
+, there is a minimum radius requirement radius $ R_j $ for a GMC to collapse in on itself.
 \begin{equation}
   R_j = \left( \frac{15kT }{4 π G μ m_h ρ} \right) ^{\frac{1}{2}}
 \end{equation}
@@ -156,7 +165,7 @@ Using the mass of our star we get a Jean's Length $ R_j $ of 2.5e+15 meters. To 
 Now we are finally able to put it in our HR-Diagram! The GMC is at the size of giant stars. 
 \begin{figure}[h!]
   \centering
-  \includegraphics[scale = .5]{figures/HR_diagram_Pre-Collapse.pdf}
+  \includegraphics[scale = .5]{figures/HR_diagram_Pre-Collapse}
   \caption{Our star as a GMC plotted true to size}
   \label{fig:figure1}
 \end{figure}
@@ -213,16 +222,16 @@ We are now going to re-calculate the luminosity of our star based on the nuclear
   \item Assume energy production occurs via the pp-chain and CNO-cycle
   \item The core consist of 76.5\% Hydrogen, 25.3\% Helium and 0.2\% Carbon, Oxygen and Nitrogen 
 \end{itemize}
-As our star has a core temperature $ T_c $ of about 17 million Kelvin the most dominant chain reactions in the core is the pp-chain and the CNO-cycle. The basic equation for calculating energy released per kg per second we get from \colorbox{red}{Referer til 3c s, 4}. 
+As our star has a core temperature $ T_c $ of about 17 million Kelvin the most dominant chain reactions in the core is the pp-chain and the CNO-cycle. The basic equation for calculating energy released per kg per second we get from%~\parencite[][page 4]{for_notat_3c}. TODO Remove Comment
 \begin{equation}\label{eq: chain reaction}
   ε_{\text{AB }} = ε_{\text{0, reac}} X_{S} X_{B} ρ^{α} T^{β}
 \end{equation}
-In this equation, $ ρ $ is the density, $ α $ and $ β $ are indices which depend on the temperature $ T $ and $ X_{A} $ and $ X_{B} $ is the mass fraction of the two nuclei in the reaction which follow the following definition. 
+In this equation, $ \rho $ is the density, $ \alpha $ and $ \beta $ are indices which depend on the temperature $ T $ and $ X_{A} $ and $ X_{B} $ is the mass fraction of the two nuclei in the reaction which follow the following definition.
 \[
 X_{A} = \frac{n_{A}m_{A}}{nm} = \frac{\text{total mass in type A nuclei}}{\text{total mass}}
 \]
 
-The pp-chain is actually multiple chain reactions. We will focus on the the most important one, namely the pp-I chain. This chain reaction converts four $ _{1}^{1}\text{H} $ to $ _{2}^{4}\text{He} $ and is the most efficient at 15 million Kelvin. We will now introduce a new way of writing temperature. With this notation $ T_{n} = T ⋅ 10^{n}K $. This is used in the equation for the pp-chain as follows, derived in \colorbox{red}{Referer til 3c, s, 6}. 
+The pp-chain is actually multiple chain reactions. We will focus on the the most important one, namely the pp-I chain. This chain reaction converts four $ _{1}^{1}\text{H} $ to $ _{2}^{4}\text{He} $ and is the most efficient at 15 million Kelvin. We will now introduce a new way of writing temperature. With this notation $ T_{n} = T ⋅ 10^{n}K $. This is used in the equation for the pp-chain as follows, derived in%~\parencite[][page 6]{for_notat_3c}. TODO: Remove Comment
 \begin{equation}\label{eq: pp-chain}
   ε_{\text{pp}} ≈ ε_{\text{0, pp}}X^{2}_{H}ρ T^{4}_{6}
 \end{equation}
@@ -232,7 +241,9 @@ In this equation, $ ε_{\text{0, pp}} = 1.08 ⋅ 10^{-12}Wm^{3} / kg^{2} $, the 
   ε_{\text{pp}} ≈ 1.25 ⋅ 10^{-5}
 \end{equation}
 
-The CNO-cycle also converts four $ _{1}^{1}\text{H} $ to $ _{2}^{4}\text{He} $. We will use the expression derived in \colorbox{red}{Referer til 3c s, 6} which is valid for temperature around 20 million Kelvin. 
+The CNO-cycle also converts four $ _{1}^{1}\text{H} $ to $ _{2}^{4}\text{He} $.
+We will use the expression derived in%~\parencite[][page 6]{for_notat_3c} TODO: Remove Comment
+which is valid for temperature around 20 million Kelvin.
 \begin{equation}\label{eq: CNO-cycle}
   ε_{\text{CNO}} = ε_{\text{0, CNO}}X_{H}X_{\text{CNO}}ρT^{20}_{6}
 \end{equation}\newline
@@ -295,7 +306,7 @@ To regain hydrostatic equilibrium our star's core will begin to expand a new. As
 
 \begin{figure}[h!]
   \centering
-  \includegraphics[scale = .5]{figures/horizontal_branch.png}
+  \includegraphics[scale = .5]{figures/horizontal_branch}
   \caption{HR-Diagram showing evolution of a star moving from main sequence to the horizontal branch}
   \label{fig: Main to giant}
 \end{figure}  
@@ -321,11 +332,11 @@ We want to find an expression of how large our star will become as a white dwarf
   \item Uniform density
 \end{itemize}
 
-We can use the equation for hydrostatic equilibrium as derived in \colorbox{red}{referer til 3e eq, 1}. 
+We can use the equation for hydrostatic equilibrium as derived in%~\parencite[][equation 1]{for_notat_3e}. TODO: Remove Comment
 \begin{equation}\label{eq: Hydro equilibrium }
   \frac{P}{R} ≈  \frac{GM}{R^{2}} \frac{4M}{3 π R^{3}} = \frac{3GM^{2}}{4 π R^{5}}
 \end{equation}
-Replacing the pressure $ P $ with the degeneration pressure we get the equation from \colorbox{red}{referer til 3e eq, 2}. 
+Replacing the pressure $ P $ with the degeneration pressure we get the equation from%~\parencite[][equation 2]{for_notat_3e}. TODO: Remove Comment
 \begin{equation}\label{}
   \left( \frac{3}{π} \right) ^{\frac{2}{3}} \frac{h^{2}}{20m_e} n_{e}^{\frac{5}{3}} = \frac{3GM^{2}}{4 π R^{5}}
 \end{equation}
@@ -361,15 +372,15 @@ It does not seem likely there will be any walking on the neutron star after all.
 \subsection{Detailed HR-Diagram}
 \begin{figure}[h!]
   \centering
-  \includegraphics[scale = .75]{figures/Spectral_class.png}
-  \caption{HR-Diagram showing different categorizations of stars \colorbox{red}{Referer til 3d s, 2}}
+  \includegraphics[scale = .75]{figures/Spectral_class}
+  \caption{HR-Diagram showing different categorizations of stars%~\parencite[][page 2]{for_notat_3d}. TODO Remove Comment
+  }
   \label{fig: Spectral class}
 \end{figure}
 \clearpage
 \twocolumngrid
 
-\section*{ACKNOWLEDGMENTS}
-
-\section*{References} \label{sec: references}
+\newpage
+%\printbibliography TODO: Remove Comment
 
 \end{document}
