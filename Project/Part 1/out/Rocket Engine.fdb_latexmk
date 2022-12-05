@@ -1,11 +1,11 @@
 # Fdb version 3
-["bibtex Rocket Engine"] 1670242597 "Rocket Engine.aux" "Rocket Engine.bbl" "Rocket Engine" 1670242681
+["bibtex Rocket Engine"] 1670266852 "Rocket Engine.aux" "Rocket Engine.bbl" "Rocket Engine" 1670266864
   "C:/Users/oskar/AppData/Local/Programs/MiKTeX/bibtex/bst/revtex/apsrev4-2.bst" 1601731616 69609 e9dea59f0e753ccda3ddc8f5806d846d ""
   "Rocket Engine.aux" 1663685957 3550 9c77cf5ea28e5d90a3136591a668b9ad ""
   (generated)
   "Rocket Engine.bbl"
   "Rocket Engine.blg"
-["pdflatex"] 1670242677 "c:/Users/oskar/OneDrive - Universitetet i Oslo/Dokumenter/GitHub/Privat/AST2000/Project/Part 1/Rocket Engine.tex" "out/Rocket Engine.pdf" "Rocket Engine" 1670242681
+["pdflatex"] 1670266860 "c:/Users/oskar/OneDrive - Universitetet i Oslo/Dokumenter/GitHub/Privat/AST2000/Project/Part 1/Rocket Engine.tex" "out/Rocket Engine.pdf" "Rocket Engine" 1670266864
   "C:/Users/oskar/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1665923245 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/oskar/AppData/Local/MiKTeX/fonts/pk/ljfour/public/esint/dpi600/esint10.pk" 1645521988 10544 0811bdf2222d179dac2158081c8a8d3f ""
   "C:/Users/oskar/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1662027572 10374549 ab9957c64f9e665f244136ccccd1caef ""
@@ -41,8 +41,10 @@
   "C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb" 1247593067 32762 7fee39e011c23b3589931effd97b9702 ""
   "C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb" 1247593066 33993 9b89b85fd2d9df0482bd47194d1d3bf3 ""
   "C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1247593067 32569 5e5ddc8df908dea60932f3c484a54c0d ""
+  "C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy5.pfb" 1247593066 32915 7bf7720c61a5b3a7ff25b0964421c9b6 ""
   "C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb" 1247593066 32716 08e384dc442464e7285e891af9f45947 ""
   "C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti9.pfb" 1247593067 36310 f5ddc6715cc60deb16d9db5ded6a9391 ""
+  "C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cmextra/cmex7.pfb" 1247593070 30457 bc0868ebece724ed7c3d37e3d9bff7bd ""
   "C:/Users/oskar/AppData/Local/Programs/MiKTeX/tex/context/base/mkii/supp-pdf.mkii" 1580390158 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "C:/Users/oskar/AppData/Local/Programs/MiKTeX/tex/generic/atbegshi/atbegshi.sty" 1575571100 24708 5584a51a7101caf7e6bbf1fc27d8f7b1 ""
   "C:/Users/oskar/AppData/Local/Programs/MiKTeX/tex/generic/babel/babel.sty" 1658325492 151308 f48d89beb96c9b108345f21bd476da55 ""
@@ -117,6 +119,8 @@
   "C:/Users/oskar/AppData/Local/Programs/MiKTeX/tex/latex/subfigure/subfigure.cfg" 1114278970 2114 42ba738bf6f1cec796106a69840777a4 ""
   "C:/Users/oskar/AppData/Local/Programs/MiKTeX/tex/latex/subfigure/subfigure.sty" 1114278970 14815 1d3da78e0f66f3c62133fbabffd13cf5 ""
   "C:/Users/oskar/AppData/Local/Programs/MiKTeX/tex/latex/textcase/textcase.sty" 1657797347 2405 93dca770d0598d835703b5d004a641b7 ""
+  "C:/Users/oskar/AppData/Local/Programs/MiKTeX/tex/latex/ucs/data/uni-0.def" 1660331616 7784 4da13291385de60ba3c334b604cea4db ""
+  "C:/Users/oskar/AppData/Local/Programs/MiKTeX/tex/latex/ucs/data/uni-3.def" 1660331616 12057 d77ce33c8b581781c1ca1b4e5dd902fb ""
   "C:/Users/oskar/AppData/Local/Programs/MiKTeX/tex/latex/ucs/data/uni-34.def" 1660331616 10889 4789a61c771c4cbc86f9aeb9c2a86b8c ""
   "C:/Users/oskar/AppData/Local/Programs/MiKTeX/tex/latex/ucs/data/uni-global.def" 1660331616 1375 a9cd26ed13adef608374493c3ba873e5 ""
   "C:/Users/oskar/AppData/Local/Programs/MiKTeX/tex/latex/ucs/ucs.sty" 1660466068 28759 986636dc25ad305c9a399f8a66ea2cd8 ""
@@ -126,11 +130,11 @@
   "C:/Users/oskar/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1656233290 56148 51a9a8571c07b9921892ae11063ae853 ""
   "Figures/Max-Boltz1.png" 1663080597 37161 9a569f3d56783d7dbc1a1304863b86f0 ""
   "Figures/Max-Boltz3.png" 1663080597 41323 647bd62fe6ae8e14bdbac45dda22c470 ""
-  "Rocket Engine.bbl" 1670242597 2038 e03f3577820c2bf6c60bfe4d5a284fda "bibtex Rocket Engine"
-  "Rocket Engine.tex" 1670242675 17970 368b44f4fb230e77fcdbdb321e43b8aa ""
-  "c:/Users/oskar/OneDrive - Universitetet i Oslo/Dokumenter/GitHub/Privat/AST2000/Project/Part 1/Rocket Engine.tex" 1670242675 17970 368b44f4fb230e77fcdbdb321e43b8aa ""
-  "out/Rocket Engine.aux" 1670242679 3256 13b518df9e93360d6c9c5f783e0398d5 "pdflatex"
-  "out/Rocket Engine.out" 1670242679 1821 e254756531af8f458997d7287221974f "pdflatex"
+  "Rocket Engine.bbl" 1670266852 2038 e03f3577820c2bf6c60bfe4d5a284fda "bibtex Rocket Engine"
+  "Rocket Engine.tex" 1670266835 20258 08f75b3bd560b830b002d596d13e9ea2 ""
+  "c:/Users/oskar/OneDrive - Universitetet i Oslo/Dokumenter/GitHub/Privat/AST2000/Project/Part 1/Rocket Engine.tex" 1670266835 20258 08f75b3bd560b830b002d596d13e9ea2 ""
+  "out/Rocket Engine.aux" 1670266863 3804 cb18179f4d9b40ce7d2849de9139cd0b "pdflatex"
+  "out/Rocket Engine.out" 1670266863 2296 b65cf671359e178af5c183f527940f7c "pdflatex"
   (generated)
   "out/Rocket Engine.aux"
   "out/Rocket Engine.log"
