@@ -107,7 +107,6 @@ def make_plots(plot_sun: bool = True, plot_sun_star: bool = True,
     
     if plot_sun:
         '''Plotting the sun in HR diagram'''
-        # TODO: Slett kommentar før innlevering
         sun_HR_coords = [T_sun, 1]
         lbl = 'The Sun'
         figname = 'The Sun'
@@ -209,7 +208,7 @@ def R_j(Mass: float, T: float = 10) -> float:
     Mass -  [kg]
     T    -  [K] 
     '''
-    return (3*G*μ*m_h*Mass)/(15*k*T)
+    return (G*μ*m_h*Mass)/(5*k*T)
 
 def T_c(T_surface: float, ρ_star: float, star_radius: float, μ: float)-> float: 
     '''
@@ -304,13 +303,17 @@ if __name__ == "__main__":
     print()
     
     '''Printing facts about our star's nuclear reactions '''
-    E_pp    = ε_pp(star_temp_c*1E-6, star_ρ)
-    E_CNO   = ε_CNO(star_temp_c*1E-6, star_ρ)
+    E_pp        = ε_pp(star_temp_c*1E-6, star_ρ)
+    E_CNO       = ε_CNO(star_temp_c*1E-6, star_ρ)
+    R_core      = 0.2*star_radius
+    L_estimate  = star_ρ*4/3*π*(E_pp + E_CNO)*R_core**3 
+    T_estimate  = (L_estimate/(4*π*σ*star_radius**2))**(1/4)
     
     print(f'Star core temperature:                      {star_temp_c: .2e} [K]')
     print(f'Energy released from pp chain:              {E_pp: .2e} [W/kg]')
     print(f'Energy released form CNO chain:             {E_CNO: .2e} [W/kg]')
-    print(f'Calculated luminosity form core reactions   {star_ρ*4/3*π *(E_pp + E_CNO)*0.2*star_radius**3: .1e} W')
+    print(f'Calculated luminosity form core reactions   {L_estimate: .1e} W')
+    print(f'Estimated surface temperature:              {T_estimate: .0f} K')
     print()
     
     '''Printing factors derived from constants from the star'''
@@ -350,13 +353,14 @@ if __name__ == "__main__":
     Star luminosity:             5.79e+28 W
     Star lifetime is:            3.04e+08 [yr]
 
-    Min radius of GMC:   2.5e+15 [m]
-    Luminosity of GMC:   1.1e+02 [Solar Luminosities]
+    Min radius of GMC:   7.5e+15 [m]
+    Luminosity of GMC:   1.0e+03 [Solar Luminosities]
 
     Star core temperature:                       1.72e+07 [K]
     Energy released from pp chain:               1.26e-05 [W/kg]
     Energy released form CNO chain:              1.58e-06 [W/kg]
     Calculated luminosity form core reactions    2.5e+25 W
+    Estimated surface temperature:               3782 K
 
     ML factor
         Star:  1.0e+95
