@@ -1,12 +1,12 @@
 # Fdb version 3
-["bibtex out/Report_Part_10"] 1669806586 "out/Report_Part_10.aux" "out/Report_Part_10.bbl" "out/Report_Part_10" 1669807157
+["bibtex out/Report_Part_10"] 1670242570 "out/Report_Part_10.aux" "out/Report_Part_10.bbl" "out/Report_Part_10" 1670242574
   "C:/Users/oskar/AppData/Local/Programs/MiKTeX/bibtex/bst/revtex/apsrev4-2.bst" 1601731616 69609 e9dea59f0e753ccda3ddc8f5806d846d ""
-  "c:/Users/oskar/OneDrive - Universitetet i Oslo/Dokumenter/GitHub/Privat/AST2000/Project/Part 10/out/Report_Part_10Notes.bib" 1669807156 104 4d8bb863c86f3d7b03a471e9d4707f34 ""
-  "out/Report_Part_10.aux" 1669807156 7343 956823272a9d8d2767741c54d3ec795d "pdflatex"
+  "c:/Users/oskar/OneDrive - Universitetet i Oslo/Dokumenter/GitHub/Privat/AST2000/Project/Part 10/out/Report_Part_10Notes.bib" 1670242573 104 4d8bb863c86f3d7b03a471e9d4707f34 ""
+  "out/Report_Part_10.aux" 1670242573 6993 600e255c4317af5abf7f58be437690ca "pdflatex"
   (generated)
   "out/Report_Part_10.bbl"
   "out/Report_Part_10.blg"
-["pdflatex"] 1669807153 "c:/Users/oskar/OneDrive - Universitetet i Oslo/Dokumenter/GitHub/Privat/AST2000/Project/Part 10/Report_Part_10.tex" "out/Report_Part_10.pdf" "Report_Part_10" 1669807157
+["pdflatex"] 1670242570 "c:/Users/oskar/OneDrive - Universitetet i Oslo/Dokumenter/GitHub/Privat/AST2000/Project/Part 10/Report_Part_10.tex" "out/Report_Part_10.pdf" "Report_Part_10" 1670242574
   "C:/Users/oskar/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1665923245 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/oskar/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1000.pk" 1646135735 11548 c2b177f177dcc3c2c2d6d11e556620ca ""
   "C:/Users/oskar/AppData/Local/MiKTeX/fonts/pk/ljfour/public/esint/dpi600/esint10.pk" 1645521988 10544 0811bdf2222d179dac2158081c8a8d3f ""
@@ -121,17 +121,17 @@
   "C:/Users/oskar/AppData/Local/Programs/MiKTeX/tex/latex/ucs/utf8x.def" 1660466068 8944 1cf5de165d8b3a9de8975b4e3f40e814 ""
   "C:/Users/oskar/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "C:/Users/oskar/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1656233290 56148 51a9a8571c07b9921892ae11063ae853 ""
-  "Report_Part_10.tex" 1669807152 27276 6574921b256536d0294e3eca4141776d ""
-  "c:/Users/oskar/OneDrive - Universitetet i Oslo/Dokumenter/GitHub/Privat/AST2000/Project/Part 10/Report_Part_10.tex" 1669807152 27276 6574921b256536d0294e3eca4141776d ""
+  "Report_Part_10.tex" 1670242563 27469 1c91495592c343334f181c39815b4d99 ""
+  "c:/Users/oskar/OneDrive - Universitetet i Oslo/Dokumenter/GitHub/Privat/AST2000/Project/Part 10/Report_Part_10.tex" 1670242563 27469 1c91495592c343334f181c39815b4d99 ""
   "figures/HR-Diagram_Classification.pdf" 1669575093 8778078 0d4e7759df8168cd6cc5dccc218ce5ce ""
   "figures/HR_diagram_Pre-Collapse.pdf" 1669319845 8759168 d1709f9edfb2d01a05696e26061dfdd2 ""
   "figures/HR_diagram_Sun and Star.pdf" 1669488683 8777274 549738cf413aeb38a339d3579ad38221 ""
   "figures/HR_diagram_The Sun.pdf" 1669479755 8776119 d7ec8ed1df8e0846e6ca27b995428df6 ""
   "figures/Spectral_class.png" 1669657098 510922 ab1ea06289d14fc1245b5017b90bf98b ""
   "figures/horizontal_branch.png" 1669662031 85233 e978be87515c04091885297440f4386d ""
-  "out/Report_Part_10.aux" 1669807156 7343 956823272a9d8d2767741c54d3ec795d "pdflatex"
-  "out/Report_Part_10.bbl" 1669806586 2035 35453d3875d823f0ec9445e740a573d9 "bibtex out/Report_Part_10"
-  "out/Report_Part_10.out" 1669807156 4139 d321a35f222da0f23199f690d137cbb8 "pdflatex"
+  "out/Report_Part_10.aux" 1670242573 6993 600e255c4317af5abf7f58be437690ca "pdflatex"
+  "out/Report_Part_10.bbl" 1670242570 2035 35453d3875d823f0ec9445e740a573d9 "bibtex out/Report_Part_10"
+  "out/Report_Part_10.out" 1670242573 3902 4ecb852efa6b58dbc00389db8cc074ea "pdflatex"
   (generated)
   "out/Report_Part_10.aux"
   "out/Report_Part_10.log"
