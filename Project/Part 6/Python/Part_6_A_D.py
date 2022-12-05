@@ -180,9 +180,9 @@ def image_landing_site(land_seq, idx=0, planet_idx=1):
     act_coords = find_actual_coordinates(pos_cart, t, cartesian=True)
     pos = f"Landing_site{idx}: {act_coords[0]}, {act_coords[1]}, {act_coords[2]}\n"
     with open("landing_area_coords.txt", "a") as file:
-        file.write(pos)
+        file.write(pos)  # Writing position of landing site to txt file
     land_seq.look_in_direction_of_planet(planet_idx)
-    land_seq.take_picture(f"landing_area{idx}.xml")
+    land_seq.take_picture(f"landing_area{idx}.xml")  # Taking picture
 
 
 
@@ -190,13 +190,12 @@ def image_landing_site(land_seq, idx=0, planet_idx=1):
 if __name__ == "__main__":
     landing_seq = mission.begin_landing_sequence()  # Creating landing sequence instance
     # print(verify_constant_orbit_height(landing_seq))  # Verifying stability of orbital height
-    landing_seq.start_video()
+    landing_seq.start_video()  # Starting video recording
     picture_num = 15  # Number of landing site pictures to be taken
     picture_delay = 60  # Delay between when pictures are taken in seconds
     with open("landing_area_coords.txt", "w") as file:  # Creating and clearing file with landing site coordinates
         file.write("Landing Site Index, Radius [m], Theta [rad], Phi [rad]\n")  # Writing header to file
     for idx in range(picture_num):
-        image_landing_site(landing_seq, idx=idx)
+        image_landing_site(landing_seq, idx=idx)  # Imaging landing site
         landing_seq.fall(picture_delay)
-    # landing_seq.fall(10000)
-    landing_seq.finish_video()
+    landing_seq.finish_video()  # Finishing video recording

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2022.2.21)  5 DEC 2022 14:40
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2022.2.21)  5 DEC 2022 23:02
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -557,15 +557,19 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 41.
 (/usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1{/usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+Underfull \hbox (badness 1400) in paragraph at lines 109--113
+\OT1/cmr/m/n/10 The math-e-mat-i-cal deriva-tion of this can be found
+ []
+
 (/usr/local/texlive/2021/texmf-dist/tex/latex/ucs/data/uni-34.def
 File: uni-34.def 2013/05/13 UCS: Unicode data U+2200..U+22FF
 )
-<./Figures/Max-Boltz1.png, id=87, 650.43pt x 578.16pt>
+<./Figures/Max-Boltz1.png, id=91, 650.43pt x 578.16pt>
 File: ./Figures/Max-Boltz1.png Graphic file (type png)
 <use ./Figures/Max-Boltz1.png>
 Package pdftex.def Info: ./Figures/Max-Boltz1.png  used on input line 142.
 (pdftex.def)             Requested size: 195.1305pt x 173.44933pt.
-<./Figures/Max-Boltz3.png, id=89, 650.43pt x 578.16pt>
+<./Figures/Max-Boltz3.png, id=93, 650.43pt x 578.16pt>
 File: ./Figures/Max-Boltz3.png Graphic file (type png)
 <use ./Figures/Max-Boltz3.png>
 Package pdftex.def Info: ./Figures/Max-Boltz3.png  used on input line 148.
@@ -573,103 +577,108 @@ Package pdftex.def Info: ./Figures/Max-Boltz3.png  used on input line 148.
  [2 </Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 1/./Figures/Max
 -Boltz1.png> </Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 1/./Fi
 gures/Max-Boltz3.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 162--164
+Underfull \hbox (badness 10000) in paragraph at lines 163--165
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 211--216
+Underfull \hbox (badness 10000) in paragraph at lines 212--217
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 211--216
+Underfull \hbox (badness 10000) in paragraph at lines 212--217
 
  []
 
 [3]
-Underfull \hbox (badness 10000) in paragraph at lines 229--239
+Underfull \hbox (badness 10000) in paragraph at lines 230--240
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 229--239
+Underfull \hbox (badness 10000) in paragraph at lines 230--240
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 243--249
+Underfull \hbox (badness 10000) in paragraph at lines 244--250
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 251--257
+Underfull \hbox (badness 10000) in paragraph at lines 252--258
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 271--275
+Underfull \hbox (badness 10000) in paragraph at lines 272--276
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 271--275
+Underfull \hbox (badness 10000) in paragraph at lines 272--276
 
  []
 
-[4]
-Underfull \hbox (badness 10000) in paragraph at lines 293--294
+[4] (/usr/local/texlive/2021/texmf-dist/tex/latex/ucs/data/uni-3.def
+File: uni-3.def 2013/05/13 UCS: Unicode data U+0300..U+03FF
+)
+(/usr/local/texlive/2021/texmf-dist/tex/latex/ucs/data/uni-0.def
+File: uni-0.def 2013/05/13 UCS: Unicode data U+0000..U+00FF
+)
+Overfull \hbox (24.86153pt too wide) detected at line 334
+[] \OT1/cmr/m/n/10 = [][] \OML/cmm/m/it/10 vP\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 
+v\OT1/cmr/m/n/10 ) d\OML/cmm/m/it/10 v \OT1/cmr/m/n/10 = [][] \OML/cmm/m/it/10 
+v [][] [] [] \OT1/cmr/m/n/10 4\OML/cmm/m/it/10 ^^Yv[] \OT1/cmr/m/n/10 d\OML/cmm
+/m/it/10 v
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 351--352
 
  []
 
-/Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 1/Rocket Engine.tex:
-304: Undefined control sequence.
-l.304 ... curve where the value $f(\mu, \sigma, \x
-                                                  _1)$ of the gaussian distr...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
+[5]
 (/Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 1/Rocket Engine.bbl
-) [5]
+)
 (/Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 1/Rocket Engine.aux
 )
 Package rerunfilecheck Info: File `"Rocket Engine".out' has not changed.
-(rerunfilecheck)             Checksum: 5AA728AA151F9A45204CA61EE6A56A16;2055.
+(rerunfilecheck)             Checksum: 5054452614E7C91D3BF6717BEE02A19F;2369.
  ) 
 Here is how much of TeX's memory you used:
- 15031 strings out of 478994
- 211621 string characters out of 5858184
- 749399 words of memory out of 5000000
- 32270 multiletter control sequences out of 15000+600000
+ 15973 strings out of 478994
+ 221807 string characters out of 5858184
+ 750399 words of memory out of 5000000
+ 33203 multiletter control sequences out of 15000+600000
  409824 words of font info for 56 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 81i,11n,89p,343b,583s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 81i,10n,89p,343b,583s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
 ></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb><
 /usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></
-usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></u
-sr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr
-/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/l
-ocal/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/loc
-al/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local
-/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/te
-xlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texli
-ve/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/
-2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/202
-1/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2021
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2021/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2021/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/2021/texmf
--dist/fonts/type1/public/esint-type1/esint10.pfb>
+usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex7.pfb
+></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb>
+</usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></
+usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></us
+r/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/
+local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/lo
+cal/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local
+/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/te
+xlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texli
+ve/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/
+2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2
+021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/202
+1/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2021/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2021/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/2021/texm
+f-dist/fonts/type1/public/esint-type1/esint10.pfb>
 Output written on "/Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 1
-/Rocket Engine.pdf" (5 pages, 280501 bytes).
+/Rocket Engine.pdf" (5 pages, 301916 bytes).
 PDF statistics:
- 179 PDF objects out of 1000 (max. 8388607)
- 149 compressed objects within 2 object streams
- 26 named destinations out of 1000 (max. 500000)
- 131 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 196 PDF objects out of 1000 (max. 8388607)
+ 164 compressed objects within 2 object streams
+ 29 named destinations out of 1000 (max. 500000)
+ 139 words of extra memory for PDF output out of 10000 (max. 10000000)
 

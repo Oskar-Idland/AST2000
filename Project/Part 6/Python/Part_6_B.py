@@ -67,7 +67,7 @@ def χ_Squared(flux: np.ndarray, data: np.ndarray, GLD, σ, λ_0: float, m: floa
 
     Returns: Flux and temperature, corresponding to the lowest χ squared and the slice of data used together with the lowest χ squared.  
     '''
-    # TODO: Sjekk om riktig formel
+
     # Doppler shift with max velocity of 10 000 m/s and max temp of 450 k
     Δλ = λ_0*(10_000 + ((2*k*450)/m)**.5)/c
     # Range of possible temperatures on planet

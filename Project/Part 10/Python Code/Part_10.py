@@ -337,9 +337,9 @@ if __name__ == "__main__":
     print(f'Star density when dwarf:            {D_ρ: .2e} [kg/m^3]')
     print(f'Weight of 1L dwarf star material    {D_ρ/1000: .2e} [kg]')
     print(f'Star gravitational pull when dwarf: {D_g: .2e} [m/s^2]')
-    
-    # TODO: Remove comment before deadline
-    # make_plots()
+
+
+    make_plots()
     
 
     

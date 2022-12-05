@@ -71,6 +71,18 @@ def engine_performance(thrust, fuel_cons, m_init, speed_boost, dt=0.001):
 
 @njit
 def integrate(pos, vel, dry_mass, wet_mass, thrust_force, fuel_consumption, mass_home_planet, dt):
+    """
+    Integrating the rocket launch using a leapfrog algorithm
+    :param pos: Position array
+    :param vel: Velocity array
+    :param dry_mass: Dry mass of the spacecraft
+    :param wet_mass: Wet mass of the spacecraft
+    :param thrust_force: Thrust force
+    :param fuel_consumption: Fuel consumption
+    :param mass_home_planet: Mass of the launch planet
+    :param dt: Timestep size
+    :return: Position array, velocity array, exit coordinates and velocity, final mass and time
+    """
     for i in range(N-1):
         # Using Leapfrog method
         wet_mass_i = wet_mass-(fuel_consumption*dt*i)
@@ -108,6 +120,23 @@ def integrate(pos, vel, dry_mass, wet_mass, thrust_force, fuel_consumption, mass
 
 
 def launch_rocket(dry_mass, fuel_mass, thrust_force, estimated_time=1000, dt=0.001, N=200_000, thrust_per_box=5.290110991665214e-11, mass_flow_rate_per_box=2.413509643703512e-15, planet_index=0, t_orbit_launch=0, launch_angle=0, printing=False, store=True):
+    """
+    Function to simulate the rocket launch
+    :param dry_mass: Dry mass
+    :param fuel_mass: Fuel mass
+    :param thrust_force: Thrust force
+    :param estimated_time: Estimated duration of the launch
+    :param dt: Timestep size
+    :param N: Number of time steps
+    :param thrust_per_box: Thrust per box in the rocket engine
+    :param mass_flow_rate_per_box: Mass flow rate per box in the rocket engine
+    :param planet_index: Launch planet index
+    :param t_orbit_launch: Time of the launch in the reference frame of the solar system
+    :param launch_angle: Launch angle
+    :param printing: Whether to print information (Boolean)
+    :param store: Whether to store information in a file (Boolean)
+    :return: Coordinates and velocity after launch, time after launch
+    """
     num_of_boxes = thrust_force / thrust_per_box
     fuel_consumption = mass_flow_rate_per_box * num_of_boxes  # Kg/s
     wet_mass = dry_mass + fuel_mass
@@ -117,6 +146,7 @@ def launch_rocket(dry_mass, fuel_mass, thrust_force, estimated_time=1000, dt=0.0
     planet_theta = np.pi # 2*np.pi*t_orbit_launch/utils.s_to_yr(rotational_period*24*3600)
     tang_vel_planet = 2*np.pi*radius_home_planet/(rotational_period*24*3600)
 
+    """
     # This is our own written simulation for the rocket simulation. It works for a starting time of t=0, but not other ones
     # Creating and initialising arrays
     pos = np.zeros([N, 2])
@@ -178,7 +208,7 @@ def launch_rocket(dry_mass, fuel_mass, thrust_force, estimated_time=1000, dt=0.0
 
     # Using rocket launch shortcut
     pos_after_launch, vel_after_launch, time, fuel_consumed = launch_rocket_shortcut(thrust_force, fuel_consumption, t_orbit_launch, height_above_suface, launch_angle, fuel_mass)
-    """
+
     return pos_after_launch, vel_after_launch, time
 
 
@@ -209,6 +239,8 @@ if __name__ == "__main__":
     print(system.radii[0])
     print(utils.m_to_AU(49_587_900))
     launch_angle = 180
+
+    # Launching rocket
     print(launch_rocket(dry_mass, fuel_mass, thrust_force, estimated_time, dt, N, thrust_per_box, mass_flow_rate_per_box, planet_idx, launch_time, launch_angle=launch_angle, printing=True, store=True))
 
     B = time.time()

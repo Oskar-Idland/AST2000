@@ -14,6 +14,10 @@ planet_mass = system.masses[0]
 
 
 def vf_launch_res():
+    """
+    Verifying launch results
+    :return: None
+    """
     l_par = np.load("../../Part 1/Python Code/Launch_Parameters.npy")
     mission.set_launch_parameters(l_par[2], l_par[3], l_par[4], l_par[5], [l_par[6], l_par[7]], l_par[8])
     mission.launch_rocket(l_par[9])
@@ -36,7 +40,7 @@ def find_velocity(lambda0, phi1, phi2, sc_ds1, sc_ds2, star_ds1, star_ds2):
     return utils.m_pr_s_to_AU_pr_yr(vel_cart)  # Changing units
 
 
-vf_launch_res()
+vf_launch_res()  # Verifying launch results
 
 lambda0 = mission.reference_wavelength
 phi1, phi2 = utils.deg_to_rad(mission.star_direction_angles)  # Angles to reference stars
