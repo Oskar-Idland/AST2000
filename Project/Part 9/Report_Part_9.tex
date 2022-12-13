@@ -1,0 +1,208 @@
+\documentclass[reprint,english,notitlepage]{revtex4-2}
+\usepackage{amsmath}
+\usepackage[mathletters]{ucs}
+\usepackage[utf8x]{inputenc}
+\usepackage[english]{babel}
+\usepackage{esint}
+\usepackage{physics,amssymb}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{listings}
+\usepackage{subfigure}
+\usepackage[style=science, backend=biber]{biblatex}
+\addbibresource{Report_Part_9.bib}
+\hypersetup{
+    colorlinks,
+    linkcolor={red!50!black},
+    citecolor={blue!50!black},
+    urlcolor={blue!80!black}}
+
+\lstset{inputpath=,
+    backgroundcolor=\color{white!88!black},
+    basicstyle={\ttfamily\scriptsize},
+    commentstyle=\color{magenta},
+    language=Python,
+    morekeywords={True,False},
+    tabsize=4,
+    stringstyle=\color{green!55!black},
+    frame=single,
+    keywordstyle=\color{blue},
+    showstringspaces=false,
+    columns=fullflexible,
+    keepspaces=true}
+
+\begin{document}
+
+\title{Interplanetary Rocket Launch}
+\author{Candidates: 15369 \& 15401}
+\date{\today}
+\affiliation{Institute of Theoretical Astrophysics, University of Oslo}
+
+\begin{abstract}
+    \colorbox{red}{Write Abstract}
+\end{abstract}
+\maketitle
+
+\section{Exercise 1}\label{sec:exercise-1}
+    \subsection{Introduction}\label{subsec:introduction1}
+        In this exercise, we will be looking at the gravitational doppler shift.
+        This is an effect, where the gravitational deformation of spacetime affects the wavelength of light, so that it appears either longer or shorter.\\
+        For an observer close to a large mass, time will go at a different rate than for a far-away observer.
+        This time difference, affects the frequency and therefore wavelength of light.
+        We will therefore try to describe this difference in wavelength for an observer close to the mass and the observer far away.
+
+    \subsection{Situation}\label{subsec:situation1}
+        We will be looking at our own solar system containing the sun and the earth.
+        To simplify things, we will be using polar coordinates.\\
+        One observer will be positioned on the surface of the sun, whereas another observer will be positioned far away from the sun.
+        This allows us to measure the wavelength of the light perceived by both observers.\\
+        We will then send out light, or electromagnetic waves, radially outward from the mass or inwards to the mass.
+        This way, we are able to simplify our calculations and neglect tangential components.
+
+    \subsection{Method}\label{subsec:method1}
+        According to general relativity, the time interval $\Delta t_{shell}$ between the two peaks of the electromagnetic wave varies when spacetime is deformed, such as in the presence of a large mass.\\
+        To be able to relate the time intervals $\Delta t$, which is the time interval seen by an observer far away, and $\Delta t_{shell}$, which is the time interval for the shell observer, we will be using the formula for the Schwarzschild line element ~\eqref{schwarzschild_line} between two ticks $A$ and $B$ on the clock of the sell observer.
+        \begin{align}
+            \Delta s^2_{AB} = \left(1-\frac{2M}{r}\right) \Delta t^2 - \frac{\Delta r^2_{AB}}{\left(1-\frac{2M}{r}\right)} - r^2 \Delta \phi^2_{AB} \label{schwarzschild_line}
+        \end{align}
+        By using the fact that the shell observer is at rest, equation~\eqref{schwarzschild_line} can be simplified, and $\Delta s_{AB}$ can be substituted by $\Delta t_{shell}$.
+        This yields the formula
+        \begin{align}
+                \Delta t = \frac{\Delta t_{shell}}{\sqrt{\left(1-\frac{2M}{r}\right)}} \label{eq2}
+        \end{align}
+        The derivation of this formula can be found in section ~\ref{subsec:derivation-of-time-interval-difference}\\\\
+
+        This formula for the difference in time intervals for the observers, can then be used to find the gravitational Doppler shift of light, which is close to a large mass.
+        We know that the doppler shift is given by formula~\eqref{grav_dopplershift1}.
+        \begin{align}
+            \frac{\Delta \lambda}{\lambda_{shell}} \label{grav_dopplershift1}
+        \end{align}
+        Since we define the relationship of the frequency $\nu$ and the wavelength $\lambda$ to be $\nu = \frac{c}{\lambda}$ and $\nu = \frac{1}{\Delta t}$, we can substitute $\lambda$ by $\Delta_t$ and $\lambda_{shell}$ by $\Delta_t_{shell}$ in equation ~\eqref{grav_dopplershift1}.
+        By then inserting the expression found in ~\eqref{eq2}, we get
+        \begin{align}
+            \frac{\Delta \lambda}{\lambda_{shell}} &= \frac{\Delta t - \Delta t_{shell}}{\Delta t_{shell}}\\
+            \frac{\Delta \lambda}{\lambda_{shell}} &= \frac{1}{\sqrt{\left(1-\frac{2M}{r}\right)}} - 1
+        \end{align}\\\\
+
+        We can see that if the distance $r \gg 2M$, the second term under the root, will be going towards zero.
+        We define $x = \frac{2M}{r}$ and create a taylor expansion around $x = 0$.
+        Using a taylor expansion of degree 1, we find that the doppler shift can be approximated by
+        \begin{align}
+            \frac{\Delta \lambda}{\lambda_{shell}} = \frac{M}{r}
+        \end{align}
+        For the derivation, see section~\ref{subsec:exercise-1.3}.
+        
+
+
+    \subsection{Conclusion}\label{subsec:conclusion1}
+        Looking at the results, we can see that there are significant effects from general relativity when we are close to a large mass.\\
+        By using electromagnetic radiation, we determined the difference in proper time for the observer close to the mass and the far-away observer, and its effects.\\
+
+        When sending electromagnetic radiation radially outwards from the mass, the wavelength of the radiation, will appear increased for a far-away observer or redshifted.
+        The opposite effect happens when radiation is sent inwards to the mass, which is called blueshift.
+        The magnitude of this effect depends on the mass and the radius from where the radiation is sent out or received.
+
+
+
+
+\section{Exercise 2}\label{sec:exercise-2}
+    \subsection{Introduction}\label{subsec:introduction2}
+        To get a better grasp of the movement of an object when taking general relativity into account, we will be taking a closer look at the Schwarzschild line element.
+        Together with the principle of maximum aging, we will be able to derive a quantity, which is equivalent to mechanical spin.\\
+        This helps us to further understand movement, and calculations of the movement in free float.
+
+    \subsection{Situation}\label{subsec:situation2}
+        The main object of interest in this exercise is an object, which is orbiting around a black hole with mass $M$ and radius $2M$.
+        The orbit does not need to be a circular orbit, but can have an elliptical shape.\\
+        We define three points along the orbit of the object (Note that we will be using a polar coordinate system in this exercise).
+        Point $1$ at time $t_1$ and position $(r_1, \phi_1)$, point $2$ at time $t_2$ and position $(r_2, \phi_2)$ and point $3$ at time $t_3$ and position $(r_3, \phi_3)$.
+        We assume all parameters to be known, except $\phi_2$, and can then define two time steps $\Delta t_{12} = (t_2-t_1)$ and $\Delta t_{23} = (t_3-t_2)$.\\
+
+        In the following derivations and calculations, the time steps $\Delta_t_{12}$ and $\Delta t_{23}$ are extremely small, which will allow us to use Lorentz-transformation and therefore the Schwarzschild line element.
+        Therefore, we will assume the radius during each interval to be constant and equal to respectively $r_A$ and $r_B$.\\
+
+        The proper time interval corresponding to $\Delta t_{12}$ and $\Delta t_{23}$ are $\Delta\tau_{12}$ and $\Delta\tau_{23}$.
+
+    \subsection{Method}\label{subsec:method2}
+        The change in position corresponding to free float, is found when minimising the change in spatial coordinates, and therefore maximizing the change in time coordinates.
+        This is called the principle of maximum aging.
+        Finding these changes in coordinates, is a relatively straight forward, but requires some calculations.
+        We will first need to approximate $\Delta s_{12}$ and $\Delta s_{23}$ by $\Delta \tau_{12}$ and $\Delta \tau_{23}$.
+        This approximation is possible due to the approximation that the radius $r$ is constant during each time interval.\\
+
+        At this point we can define a new time interval $\Delta \tau_{13}$ from point 1 to 3, which is equal to the sum of $\Delta \tau_{12}$ and $\Delta\tau_{23}$.
+        The Schwarzschild line element for this new interval, is therefore equal to the sum of the line elements of the other intervals.\\
+
+        By finding the derivative of the line element for $\Delta \tau_{13}$ with respect to $\phi$ and setting it equal to 0, we can find the change in coordinates, which maximizes the change of time coordinates.
+
+    \subsection{Conclusion}\label{subsec:conclusion2}
+        When doing the calculations, the terms not including $\phi$ will be constant.
+        We now find that the quantity $r^2 \frac{d\phi}{d\tau}$ is the same in both time intervals, even with $d\phi$ and $d\tau$ changing.
+        We can therefore conclude that this quantity must be conserved.
+
+        This is an important result, as it tells us that the principle of maximum aging describes a path where the spin is constant.
+        When in free fall, an object will therefore move on such a trajectory.\\
+
+        This quantity can be compared to the spin in classical mechanics.
+        In classical mechanics, spin is conserved if no outer force is applied, which corresponds to the trajectory of the object in free fall.
+
+
+
+
+\section{Exercise 6}\label{sec:exercise-6}
+    \subsection{Introduction}\label{subsec:introduction6}
+    \subsection{Situation}\label{subsec:situation6}
+    \subsection{Method}\label{subsec:method6}
+    \subsection{Conclusion}\label{subsec:conclusion6}
+
+
+\newpage
+\section{Exercise 7}\label{sec:exercise-7}
+    \subsection{Introduction}\label{subsec:introduction7}
+    \subsection{Situation}\label{subsec:situation7}
+    \subsection{Method}\label{subsec:method7}
+    \subsection{Conclusion}\label{subsec:conclusion7}
+
+
+
+\section{Appendix}\label{sec:appendix}
+    \subsection{Exercise 1}\label{subsec:exercise-1}
+        \subsubsection{Derivation of time interval difference}\label{subsec:derivation-of-time-interval-difference}
+            We are here using a polar coordinate, to simplify calculations.
+            Since the shell observer is at rest, and therefore not moving radially or tangentially, equation~\eqref{schwarzschild_line} can be simplified to
+            \begin{align}
+                \Delta s^2_{AB} &= \left(1-\frac{2M}{r}\right) \Delta t^2 - 0 - 0\\
+                \Delta s^2_{AB} &= \left(1-\frac{2M}{r}\right) \Delta t^2
+            \end{align}
+            This can be rearranged to solve for the time interval $\Delta t$
+            \begin{align}
+                \Delta t = \frac{\Delta s_{AB}}{\sqrt{\left(1-\frac{2M}{r}\right)}} \label{eq1}
+            \end{align}
+            To be able to relate $\Delta t$ to $\Delta t_{shell}$, we will now need to express $\Delta s_{AB}$ in terms of $\Delta t_{shell}$.
+            We know per definition that the time interval $\Delta t_{shell}$ is the time interval measured on the shell clock and therefore equates to the time interval for the proper time $\Delta \tau_{AB}$ on the shell.
+            Furthermore, since the shell observer is at rest, we can relate $\Delta s_{AB}$ to $\Delta \tau_{AB}$.
+            We find that
+            \begin{align}
+                \Delta s^2_{AB} &= (\Delta \tau_{AB})^2 - (\Delta x_{shell}_{AB})^2\\
+                \Delta s_{AB} &= \Delta \tau_{AB}
+            \end{align}
+            This can then be used to define the relation $\Delta t_{shell} = \Delta s_{AB}$.
+            Inserting this relation into~\eqref{eq1}, we find a formula which relates $\Delta t$ to $\Delta t_{shell}$.
+            \begin{align}
+                \Delta t = \frac{\Delta t_{shell}}{\sqrt{\left(1-\frac{2M}{r}\right)}}
+            \end{align}
+
+        \subsubsection{Exercise 1.3}\label{subsec:exercise-1.3}
+            We us e a taylor series of degree 1 around $x = 0$.            
+            \begin{align}
+                T_1(x) = \left(\frac{1}{\sqrt{1-a}}-1 \right) + \frac{1}{2(1-a)^{3/2}}(x-a)\\
+                T_1(x) = \left(\frac{1}{\sqrt{1-0}}-1 \right) + \frac{1}{2(1-0)^{3/2}}(x-0)\\
+                T_1(x) = \left(\frac{1}{\sqrt{1}}-1 \right) + \frac{1}{2(1)^{3/2}}x\\
+                T_1(x) = 0 + \frac{1}{2}x\\
+                T_1\left(\frac{2M}{r}\right) = \frac{M}{r}
+            \end{align}
+\clearpage
+\newpage
+\printbibliography
+\end{document}
