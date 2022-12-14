@@ -184,7 +184,6 @@
         A graph of this potential might therefore look something like figure~\ref{fig:potential_sketch}.
 
         \begin{figure}[h]
-            %% H(Here), h(here approx), t(top of page), b(bottom of page)
             \centering
             \includegraphics[scale=0.15]{potential_sketch}
             \caption{A sketch of the potential around a black hole as a function of radius.}\label{fig:potential_sketch}
@@ -224,7 +223,6 @@
         In our case, the energy per mass is higher than the critical energy as seen in figure~\ref{fig:eff_potential}, and the rocket will therefore fall into the black hole.\\
 
         \begin{figure}[h]
-            %% H(Here), h(here approx), t(top of page), b(bottom of page)
             \centering
             \includegraphics[scale=0.4]{ex6_effpotential}
             \caption{The effective potential as a function of radius around the black hole. The energy per mass of the rocket is seen in red.}\label{fig:eff_potential}
@@ -236,7 +234,6 @@
         This effect is called Spaghettification and can be seen in figure~\ref{fig:spaghettification}.
 
         \begin{figure}[h]
-            %% H(Here), h(here approx), t(top of page), b(bottom of page)
             \centering
             \includegraphics[scale=0.15]{spaghettification}
             \caption{Sketch of the Spaghettification effect and the gravitational forces on the astronaut (red)}\label{fig:spaghettification}
@@ -246,11 +243,79 @@
 \newpage
 \section{Exercise 7}\label{sec:exercise-7}
     \subsection{Introduction}\label{subsec:introduction7}
+        After entering the event horizon, things get a bit weird.
+        The gravitational effects get so strong that time and space switch places.
+        Fortunately though, we managed to fix the rocket engine, and able to use it for one last attempt to escape the black hole.
+        However, escaping out of a black hole is as difficult as it seems, and we therefore need to study the environment inside the black hole a bit before we know whether we are able to escape.
+        This involves sending out two beams of light from the rocket.
+        One is sent out towards the center of the black hole, and the other radially outwards.
+        By studying the behaviour of these light beams, we will be able to evaluate whether our rocket is able to escape.
+
     \subsection{Situation}\label{subsec:situation7}
+        We are still looking at the same black hole as in exercise 6 (\ref{sec:exercise-6}).
+        However, this time the rocket with our astronaut has already entered the event horizon and is therefore inside the black hole.
+        In other words the rocket is at a radius of $r < 2M$.
+        The rocket is falling towards the center of the black hole at a velocity, which is corresponds as if the rocket started falling with $v = 0$ from very far away.
+        As stated in section~\ref{subsec:introduction7}, we emitted two light beams to examine our environment to determine our chance of escape.
+        These light beams are both moving radially towards, or away from the black hole.
+        This means that for the light beams $d\phi = 0$ as well as $d\tau = 0$, as it is for all light beams.
+
     \subsection{Method}\label{subsec:method7}
+        As things are a bit weird inside the black hole, and some mathematics that we use outside the black hole tend to break down, we have measure things a bit differently.
+        We will not be able to use the Schwarzschild time anymore, as it is meant for the environment outside the black hole.
+        Therefore, we are now expressing the Schwarzschild line element using the wristwatch time of the astronaut instead of the Schwarzschild time.
+        Luckily, we were able to do this before entering the black hole.
+        We were therefore able to use shell coordinate frames as a tool to do this change of coordinate.
+
+        Since the shell observer is at rest, we can use special relativity and therefore Lorentz transformation to express the wristwatch time in terms of shell coordinates.
+        By using the know relations between shell coordinates and Schwarzschild coordinates, as well as an expression for the shell velocity (found in~\parencite[][page 7]{lecture2d}) we can now find a new form of the Schwarzschild line element.
+
+        This new form of the Schwarzschild line element can then be used to describe the movement of the light beams inside the black hole.
+        Due to the nature of light beams and by emitting them radially, we can simplify the equation and get~\eqref{velocity_beams}.
+        \begin{align}
+            \frac{dr}{dt'} = -\sqrt{\frac{2M}{r}} \pm 1 \label{velocity_beams}
+        \end{align}
+
+        The plus-minus sign here refers to the two different directions at which the light beams are emitted.
+
+        To get a better understanding of the meaning of this equation and the movement of the light we will now to some reasoning.
+        By examining~\eqref{velocity_beams} closer, we see that for the light beam emitted towards the center of the black hole, the velocity will always be negative since both terms are negative.
+        It will move at the speed of light far away from the black hole, and increase its velocity the closer it gets to the event horizon.
+        At the event horizon where $r = 2M$, its velocity will be twice the speed of light and will increase with decreasing distance.
+        For the light beam sent outwards, the velocity will be radially outwards outside the black hole and increase with the distance.
+        At the event horizon, the velocity will be 0 and change direction.
+        Inside the black hole, the velocity of the light beam sent radially outwards will change direction immediately and move towards the center of the black hole instead.
+        It's velocity will increase as the distance to the singularity decreases, but will be less than the velocity of the light beam which has been emitted towards the singularity.
+
+        This is of course different to what other observers outside the black hole would measure for the speed of the light beams inside the event horizon.
+        Since we do not have any reference points, and can neither use shell coordinates, we can only measure the velocity of the light relative to the movement of an observer.
+        \colorbox{red}{Finish reasoning}
+
+
     \subsection{Conclusion}\label{subsec:conclusion7}
+        We have now examined the movement of the two light beams and found an expression~\eqref{velocity_beams} for their velocity.
+        Their movement is also described in the Minkowski diagram of the rocket~\ref{fig:world_line}, describing the movement of the rocket along its world line.
 
+        \begin{figure}[h]
+            \centering
+            \includegraphics[scale=0.2]{world_line}
+            \caption{A Minkowski diagram of the rocket. The position of the rocket is represented by the balls and the light beams by the arrows.}\label{fig:world_line}
+        \end{figure}
 
+        We see that the rocket starts by moving in both the time and spatial dimensions.
+        The closer it gets to the singularity, the more it accelerates in the spatial dimensions and less it moves in the time dimension.
+        When the rocket reaches the singularity, it only moves in the spatial dimension, and not into the time dimension anymore.
+        Time has therefore stopped completely for it.
+        Looking at the arrows, we see a behaviour corresponding to the earlier reasoning of the movement of the light beams.
+        The light beam which is sent outwards, moves a lot in both the time and spatial dimensions.
+        When reaching the event horizon at $r = 2M$, it stops moving in the spatial dimension and only moves in the time dimension, before accelerating towards the singularity in the spatial dimension and correspondingly decreasing its movement in the time dimension.
+        The light beam, which is emitted radially towards the singularity, always follows the world line of the rocket, as it is being sent out in the same direction.
+        Just like the rocket, it moves in both the spatial and time dimensions further away from the singularity, but decreases its movement in the time direction as the radius decreases and the velocity in the spatial dimension increases according to formula~\eqref{velocity_beams}.
+
+        We see that after passing the event horizon, neither of the light beams can move in the positive spatial direction.
+        This means that the light beams are not able to escape from the black holes.
+        Since nothing is moving faster than light, our rocket will not be able to escape from the black hole after passing the event horizon.
+        Even using a rocket, which can reach almost the speed of light, our astronaut will face spaghettification as he continues moving towards the singularity.
 
 \section{Appendix}\label{sec:appendix}
     \subsection{Exercise 1}\label{subsec:exercise-1}
