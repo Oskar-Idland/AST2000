@@ -62,11 +62,11 @@
 
     \subsection{Method}\label{subsec:method1}
         According to general relativity, the time interval $\Delta t_{shell}$ between the two peaks of the electromagnetic wave varies when spacetime is deformed, such as in the presence of a large mass.\\
-        To be able to relate the time intervals $\Delta t$, which is the time interval seen by an observer far away, and $\Delta t_{shell}$, which is the time interval for the shell observer, we will be using the formula for the Schwarzschild line element ~\eqref{schwarzschild_line} between two ticks $A$ and $B$ on the clock of the sell observer.
+        To be able to relate the time intervals $\Delta t$, which is the time interval seen by an observer far away, and $\Delta t_{shell}$, which is the time interval for the shell observer, we will be using the formula for the Schwarzschild line element (which can be found in ~\parencite[][]{lecture2c}) between two ticks $A$ and $B$ on the clock of the shell observer.
         \begin{align}
             \Delta s^2_{AB} = \left(1-\frac{2M}{r}\right) \Delta t^2 - \frac{\Delta r^2_{AB}}{\left(1-\frac{2M}{r}\right)} - r^2 \Delta \phi^2_{AB} \label{schwarzschild_line}
         \end{align}
-        By using the fact that the shell observer is at rest, equation~\eqref{schwarzschild_line} can be simplified, and $\Delta s_{AB}$ can be substituted by $\Delta t_{shell}$.
+        By using the fact that the shell observer is at rest, the equation for the Schwarzschild line element can be simplified, and $\Delta s_{AB}$ can be substituted by $\Delta t_{shell}$.
         This yields the formula
         \begin{align}
                 \Delta t = \frac{\Delta t_{shell}}{\sqrt{\left(1-\frac{2M}{r}\right)}} \label{eq2}
@@ -152,9 +152,95 @@
 
 \section{Exercise 6}\label{sec:exercise-6}
     \subsection{Introduction}\label{subsec:introduction6}
+        Since the mass of a black hole is so large, that it even attracts light and nothing can escape from it, they are very intimidating.
+        However, as long as we are not inside the event horizon, objects tend to behave just like in the presence of an extremely heavy star.\\
+        This begs the question: What happens if we accidentally set a course very close to, or even into a black hole?
+        And what happens if we are being pulled inside the black hole?\\
+        The answer to this question is connected to Energy, and potential.
+        This relativistic energy and potential are very similar, but not identical to the ones from classical mechanics.
+
+
     \subsection{Situation}\label{subsec:situation6}
+        The system we will be using to determine the fate of an object floating towards a black hole, will be containing a black hole in the center of our polar coordinate system with a mass M.\\
+        We now have a rocket at a shell with radius 20M from the black hole.
+        The rocket is flying with a velocity of $v_{shell} = 0.993$ at an angle of $\phi = 167^{\circ}$ (measured from the radial vector).
+        However, at this point, the engines break, which means the rocket will now be floating freely until the engines are fixed.
+        The situation can be seen in figure~\ref{fig:setup6}.
+
+        \begin{figure}[h]
+            \centering
+            \includegraphics[scale=0.3]{setup6}
+            \caption{A graphical depiction of the situation in exercise 6. From~\parencite[][page 6]{part9}}\label{fig:setup6}
+        \end{figure}
+
+
     \subsection{Method}\label{subsec:method6}
+        As the rocket is floating freely, we will be able to perform some calculations for its trajectory.
+        For a rocket on a trajectory towards a black hole, there are generally three outcomes.
+        The rocket can either continue orbiting around the black hole, fall into the black hole or escape from its gravitational pull.\\
+
+        To determine the outcome, we will be calculating the potential of the rocket when it's getting closer to the black hole.
+        The potential consists of both kinetic potential and gravitational potential.
+        A graph of this potential might therefore look something like figure~\ref{fig:potential_sketch}.
+
+        \begin{figure}[h]
+            %% H(Here), h(here approx), t(top of page), b(bottom of page)
+            \centering
+            \includegraphics[scale=0.15]{potential_sketch}
+            \caption{A sketch of the potential around a black hole as a function of radius.}\label{fig:potential_sketch}
+        \end{figure}
+
+        Furthermore, we will have to look at the energy of the rocket, as this will determine its fate.
+        The potential is given by formula~\eqref{eq_potential}.
+        \begin{align}
+            V(r) = \sqrt{\left( 1- \frac{2M}{r}\right) \left[1 + \frac{\left(L/m \right)^2}{r^2}}\right]_{}^{} \label{eq_potential}
+        \end{align}
+
+        When looking at the effective potential in figure~\ref{fig:potential_sketch}, we see that a rocket falling towards the black hole will first lose some potential.
+        Thereafter, it gains potential very quickly, before losing it rapidly again when falling into the black hole.
+        To fall into the black hole, the rocket therefore needs enough energy, which can be converted to potential energy to overcome this "hill" in potential.
+        This amount of energy is called the critical energy per mass $\frac{E_{crit}}{m}$ of the black hole.\\
+
+        By calculating the Energy per mass of the rocket $\frac{E}{m}$ using formula~\eqref{energy_per_mass} and comparing it to the critical energy per mass $\frac{E_{crit}}{m}$, we can determine the fate of the rocket.
+        \begin{align}
+            \frac{E}{m} = \sqrt{1-\frac{2M}{R}}\gamma_{shell} \label{energy_per_mass}
+        \end{align}
+
+
+
+
+
     \subsection{Conclusion}\label{subsec:conclusion6}
+        We find that there are three outcomes to this tricky situation.
+        According to our calculations, the fate of the rocket is dependent on the total energy per mass of the rocket and the critical energy of the black hole.\\
+
+        If the total energy per mass of the rocket is less than this critical energy, the rocket will not be able to overcome the "hill" of potential when getting close to the black hole, and therefore not be able to enter the black hole.
+        However, if the energy per mass is larger than this critical energy, the rocket will get close enough to the black hole to be pulled inside.\\
+        We can further deduce that an energy per mass lower than the critical energy per mass will result in the rocket falling back into the "pit" of potential seen in figure~\ref{fig:potential_sketch}.
+        From there, the rocket can have two different outcomes.\\
+        If the energy is between $\frac{E_{crit}}{m}$ and $Lim_{r \rightarrow \infty} \frac{V(r)}{m}$, the rocket will be able to escape the gravitational pull of the black hole, and the rocket is safe.
+        If the energy is lower than $Lim_{r \rightarrow \infty} \frac{V(r)}{m}$ the rocket will be stuck inside the "pit" of potential energy, and end up orbiting the black hole.\\
+
+        In our case, the energy per mass is higher than the critical energy as seen in figure~\ref{fig:eff_potential}, and the rocket will therefore fall into the black hole.\\
+
+        \begin{figure}[h]
+            %% H(Here), h(here approx), t(top of page), b(bottom of page)
+            \centering
+            \includegraphics[scale=0.4]{ex6_effpotential}
+            \caption{The effective potential as a function of radius around the black hole. The energy per mass of the rocket is seen in red.}\label{fig:eff_potential}
+        \end{figure}
+
+        After falling into the black hole, the gravitational forces will be so extreme, and increase so much relative to the radius that different body parts of the astronaut in the rocket will experience a different forces.
+        The part closest to the black hole will experience a much stronger force than the body part furthest from the black hole.\\
+        This means the astronaut will be stretched along his length.
+        This effect is called Spaghettification and can be seen in figure~\ref{fig:spaghettification}.
+
+        \begin{figure}[h]
+            %% H(Here), h(here approx), t(top of page), b(bottom of page)
+            \centering
+            \includegraphics[scale=0.15]{spaghettification}
+            \caption{Sketch of the Spaghettification effect and the gravitational forces on the astronaut (red)}\label{fig:spaghettification}
+        \end{figure}
 
 
 \newpage
