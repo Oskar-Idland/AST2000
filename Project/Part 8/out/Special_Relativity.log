@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.8.28) (preloaded format=pdflatex 2022.9.1)  19 NOV 2022 11:57
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.8.28) (preloaded format=pdflatex 2022.9.1)  16 DEC 2022 14:35
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"c:/Users/oskar/OneDrive - Universitetet i Oslo/Dokumenter/GitHub/Privat/AST2000/Project/Part 8/Special Relativity.tex"
-(c:/Users/oskar/OneDrive - Universitetet i Oslo/Dokumenter/GitHub/Privat/AST2000/Project/Part 8/Special Relativity.tex
+**"c:/Users/oskar/OneDrive - Universitetet i Oslo/Dokumenter/GitHub/Privat/AST2000/Project/Part 8/Special_Relativity.tex"
+(c:/Users/oskar/OneDrive - Universitetet i Oslo/Dokumenter/GitHub/Privat/AST2000/Project/Part 8/Special_Relativity.tex
 LaTeX2e <2022-06-01> patch level 5
 L3 programming layer <2022-08-23> (C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex/latex/revtex\revtex4-2.cls
 Document Class: revtex4-2 2020/10/03 4.2e (https://journals.aps.org/revtex/ for documentation)
@@ -399,35 +399,35 @@ Package: subfigure 2002/07/30 v2.1.4 subfigure package
 \subfig@top=\skip59
 \subfig@bottom=\skip60
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 19.
+Package hyperref Info: Option `colorlinks' set `true' on input line 17.
  (C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
 File: lstlang1.sty 2020/03/24 1.8d listings language file
 )
-Class revtex4-2 Info: Unrecognized LaTeX tabular. Please update this document class! (Proceeding with fingers crossed.) on input line 35.
-Class revtex4-2 Info: cite was not loaded (OK!) on input line 35.
-Class revtex4-2 Info: mcite was not loaded (OK!) on input line 35.
-Class revtex4-2 Info: multicol was not loaded (OK!) on input line 35.
- (c:\Users\oskar\OneDrive - Universitetet i Oslo\Dokumenter\GitHub\Privat\AST2000\Project\Part 8\out\Special Relativity.aux)
-\openout1 = `"Special Relativity.aux"'.
+Class revtex4-2 Info: Unrecognized LaTeX tabular. Please update this document class! (Proceeding with fingers crossed.) on input line 33.
+Class revtex4-2 Info: cite was not loaded (OK!) on input line 33.
+Class revtex4-2 Info: mcite was not loaded (OK!) on input line 33.
+Class revtex4-2 Info: multicol was not loaded (OK!) on input line 33.
+ (c:\Users\oskar\OneDrive - Universitetet i Oslo\Dokumenter\GitHub\Privat\AST2000\Project\Part 8\out\Special_Relativity.aux)
+\openout1 = `Special_Relativity.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
  (C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex/latex/ucs\ucsencs.def
 File: ucsencs.def 2011/01/21 Fixes to fontencodings LGR, T3
 ) (C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
@@ -449,53 +449,139 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
  (C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-Package hyperref Info: Link coloring ON on input line 35.
+Package hyperref Info: Link coloring ON on input line 33.
+ (c:\Users\oskar\OneDrive - Universitetet i Oslo\Dokumenter\GitHub\Privat\AST2000\Project\Part 8\out\Special_Relativity.out) (c:\Users\oskar\OneDrive - Universitetet i Oslo\Dokumenter\GitHub\Privat\AST2000\Project\Part 8\out\Special_Relativity.out)
 \@outlinefile=\write4
-\openout4 = `"Special Relativity.out"'.
+\openout4 = `Special_Relativity.out'.
 
 \c@lstlisting=\count312
-Class revtex4-2 Info: Taking \maketitle back from hyperref on input line 35.
-\openout3 = `"Special RelativityNotes.bib"'.
+Class revtex4-2 Info: Taking \maketitle back from hyperref on input line 33.
+\openout3 = `Special_RelativityNotes.bib'.
+
+LaTeX Font Info:    Trying to load font information for U+esint on input line 46.
+ (C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex/latex/esint\uesint.fd
+File: uesint.fd 
+)
+LaTeX Font Info:    Trying to load font information for U+msa on input line 46.
+ (C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 46.
+ (C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+) [1{C:/Users/oskar/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] (C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex/latex/ucs/data\uni-33.def
+File: uni-33.def 2022/08/07 UCS: Unicode data U+2100..U+21FF
+)
+Underfull \hbox (badness 10000) in paragraph at lines 95--97
+
+ []
+
+(C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex/latex/ucs/data\uni-3.def
+File: uni-3.def 2022/08/07 UCS: Unicode data U+0300..U+03FF
+) (C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex/latex/ucs/data\uni-34.def
+File: uni-34.def 2022/08/07 UCS: Unicode data U+2200..U+22FF
+)
+<figures/worldline_example.png, id=149, 489.027pt x 293.29575pt>
+File: figures/worldline_example.png Graphic file (type png)
+<use figures/worldline_example.png>
+Package pdftex.def Info: figures/worldline_example.png  used on input line 124.
+(pdftex.def)             Requested size: 244.5129pt x 146.6475pt.
+<figures/Spaceships_t_0.png, id=154, 1284.8pt x 1027.84pt>
+File: figures/Spaceships_t_0.png Graphic file (type png)
+<use figures/Spaceships_t_0.png>
+Package pdftex.def Info: figures/Spaceships_t_0.png  used on input line 133.
+(pdftex.def)             Requested size: 160.59961pt x 128.47968pt.
 
 
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-c:/Users/oskar/OneDrive - Universitetet i Oslo/Dokumenter/GitHub/Privat/AST2000/Project/Part 8/Special Relativity.tex:50: Package amsmath Error: \vec allowed only in math mode.
+<figures/Station_perspective.png, id=155, 1284.8pt x 1027.84pt>
+File: figures/Station_perspective.png Graphic file (type png)
+<use figures/Station_perspective.png>
+Package pdftex.def Info: figures/Station_perspective.png  used on input line 140.
+(pdftex.def)             Requested size: 160.59961pt x 128.47968pt.
+<figures/1_perspective.png, id=156, 1284.8pt x 1027.84pt>
+File: figures/1_perspective.png Graphic file (type png)
+<use figures/1_perspective.png>
+Package pdftex.def Info: figures/1_perspective.png  used on input line 146.
+(pdftex.def)             Requested size: 160.59961pt x 128.47968pt.
+<figures/2_perspective.png, id=157, 1284.8pt x 1027.84pt>
+File: figures/2_perspective.png Graphic file (type png)
+<use figures/2_perspective.png>
+Package pdftex.def Info: figures/2_perspective.png  used on input line 152.
+(pdftex.def)             Requested size: 160.59961pt x 128.47968pt.
 
-See the amsmath package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.50 \vec{}
-           
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-No file "Special Relativity".bbl.
-[1{C:/Users/oskar/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] (c:\Users\oskar\OneDrive - Universitetet i Oslo\Dokumenter\GitHub\Privat\AST2000\Project\Part 8\out\Special Relativity.aux)
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Package rerunfilecheck Warning: File `"Special Relativity".out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-Package rerunfilecheck Info: Checksums for `"Special Relativity".out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  A83404C68FB4A7A8CE4765774640F78D;2529.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[2 <./figures/worldline_example.png>]
+
+LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix] on input line 161.
+
+<figures/4.2.1.png, id=169, 350.5095pt x 328.8285pt>
+File: figures/4.2.1.png Graphic file (type png)
+<use figures/4.2.1.png>
+Package pdftex.def Info: figures/4.2.1.png  used on input line 165.
+(pdftex.def)             Requested size: 175.25432pt x 164.41385pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<figures/4.2.2.png, id=172, 351.11176pt x 223.43475pt>
+File: figures/4.2.2.png Graphic file (type png)
+<use figures/4.2.2.png>
+Package pdftex.def Info: figures/4.2.2.png  used on input line 173.
+(pdftex.def)             Requested size: 175.55544pt x 111.7171pt.
+<figures/4.2.3.png, id=175, 357.13425pt x 224.037pt>
+File: figures/4.2.3.png Graphic file (type png)
+<use figures/4.2.3.png>
+Package pdftex.def Info: figures/4.2.3.png  used on input line 181.
+(pdftex.def)             Requested size: 178.56668pt x 112.01822pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<figures/4.5.png, id=178, 440.847pt x 263.18324pt>
+File: figures/4.5.png Graphic file (type png)
+<use figures/4.5.png>
+Package pdftex.def Info: figures/4.5.png  used on input line 189.
+(pdftex.def)             Requested size: 220.42296pt x 131.5913pt.
+[3 <./figures/Spaceships_t_0.png (PNG copy)> <./figures/Station_perspective.png (PNG copy)> <./figures/1_perspective.png (PNG copy)> <./figures/2_perspective.png (PNG copy)> <./figures/4.2.1.png> <./figures/4.2.2.png>]
+
+LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix] on input line 193.
+
+<figures/4.10.png, id=193, 458.9145pt x 452.892pt>
+File: figures/4.10.png Graphic file (type png)
+<use figures/4.10.png>
+Package pdftex.def Info: figures/4.10.png  used on input line 198.
+(pdftex.def)             Requested size: 229.45668pt x 226.44543pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[4 <./figures/4.2.3.png> <./figures/4.5.png> <./figures/4.10.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 283--285
+
+ []
+
+[5] (c:\Users\oskar\OneDrive - Universitetet i Oslo\Dokumenter\GitHub\Privat\AST2000\Project\Part 8\out\Special_Relativity.bbl) [6] (c:\Users\oskar\OneDrive - Universitetet i Oslo\Dokumenter\GitHub\Privat\AST2000\Project\Part 8\out\Special_Relativity.aux)
+Package rerunfilecheck Info: File `Special_Relativity.out' has not changed.
+(rerunfilecheck)             Checksum: 73DECD89888CF8EB86CC9432FBD08C2E;3088.
  ) 
 Here is how much of TeX's memory you used:
- 15233 strings out of 477843
- 235022 string characters out of 2823600
- 763457 words of memory out of 3000000
- 33946 multiletter control sequences out of 15000+600000
- 470816 words of font info for 33 fonts, out of 8000000 for 9000
+ 16673 strings out of 477843
+ 253262 string characters out of 2823600
+ 780455 words of memory out of 3000000
+ 35311 multiletter control sequences out of 15000+600000
+ 472716 words of font info for 44 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 72i,5n,77p,443b,530s stack positions out of 10000i,1000n,20000p,200000b,80000s
-<C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti9.pfb>
-Output written on "c:\Users\oskar\OneDrive - Universitetet i Oslo\Dokumenter\GitHub\Privat\AST2000\Project\Part 8\out\Special Relativity.pdf" (1 page, 71238 bytes).
+ 72i,8n,77p,1039b,530s stack positions out of 10000i,1000n,20000p,200000b,80000s
+<C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti9.pfb>
+Output written on "c:\Users\oskar\OneDrive - Universitetet i Oslo\Dokumenter\GitHub\Privat\AST2000\Project\Part 8\out\Special_Relativity.pdf" (6 pages, 3723809 bytes).
 PDF statistics:
- 61 PDF objects out of 1000 (max. 8388607)
- 23 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 271 PDF objects out of 1000 (max. 8388607)
+ 54 named destinations out of 1000 (max. 500000)
+ 283 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -27,7 +27,8 @@ def P(r,v,mu):
     return np.cross(r,mu*v)
 
 @njit
-def integrate(T, dt, N, S_x0, S_y0, S_vx0, S_vy0, P_x0, P_y0, P_vx0, P_vy0, G, sun_mass, planet_mass):
+def calc_orbit(T, dt, N, S_x0, S_y0, S_vx0, S_vy0, P_x0, P_y0, P_vx0, P_vy0, G, sun_mass, planet_mass):
+    '''Function to calculate planet positions starting at t0 = 0 to T'''
     t = np.linspace(0.0, T, N)
     r_Star = np.zeros((N, 2))
     r_Planet = np.zeros((N, 2))
@@ -78,7 +79,6 @@ def integrate(T, dt, N, S_x0, S_y0, S_vx0, S_vy0, P_x0, P_y0, P_vx0, P_vy0, G, s
 
 def main(): # Putting the execution of calculations in main function
 
-
     #CALCULATED DATA
     T = 2*20  #You want to find the planetary position from t=0 to t=T. How could you make an educated guess for T?
     # Look at our solar system which planet has the same distance from the sun.
@@ -102,7 +102,6 @@ def main(): # Putting the execution of calculations in main function
     planet_mass = system.masses[Planet] 
     star_radius_au = system.star_radius * 6.684587*1e-9
 
-    print(planet_mass)
     P_x0 = system.initial_positions[0,Planet]
     P_y0 = system.initial_positions[1,Planet]
     P_vx0 = system.initial_velocities[0,Planet] 
@@ -119,7 +118,7 @@ def main(): # Putting the execution of calculations in main function
     S_y0 = -com[1]
 
 
-    t, r_Planet, v_Planet, r_Star, v_Star  = integrate(T, dt, N, S_x0, S_y0, S_vx0, S_vy0, P_x0, P_y0, P_vx0, P_vy0, G, star_mass, planet_mass)
+    t, r_Planet, v_Planet, r_Star, v_Star  = calc_orbit(T, dt, N, S_x0, S_y0, S_vx0, S_vy0, P_x0, P_y0, P_vx0, P_vy0, G, star_mass, planet_mass)
 
     r = (P_x0**2 + P_y0**2)**0.5
     t = np.linspace(0, 2*np.pi, 1000)
@@ -137,7 +136,7 @@ def main(): # Putting the execution of calculations in main function
     plt.scatter(r_Planet[-1][0],r_Planet[-1][1], label = 'Planet end position' )
     plt.xlabel("x-position [AU]")
     plt.ylabel("y-position [AU]")
-    plt.legend()
+    plt.legend(fontsize = 20)
     plt.axis('equal')
 
     plt.show()
@@ -172,7 +171,7 @@ def main(): # Putting the execution of calculations in main function
     plt.tight_layout()
     lns = P_plot + E_plot
     labels = [l.get_label() for l in lns]
-    plt.legend(lns, labels)
+    plt.legend(lns, labels, loc = 'lower right', fontsize = 30)
     plt.show()
 
 if __name__ == "__main__":
