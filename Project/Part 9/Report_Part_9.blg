@@ -1,15 +1,15 @@
 [0] Config.pm:311> INFO - This is Biber 2.16
 [0] Config.pm:314> INFO - Logfile is 'Report_Part_9.blg'
-[45] biber-darwin:340> INFO - === Fri Dec 16, 2022, 15:31:37
-[55] Biber.pm:415> INFO - Reading '/Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 9/Report_Part_9.bcf'
-[115] Biber.pm:952> INFO - Found 4 citekeys in bib section 0
-[126] Biber.pm:4340> INFO - Processing section 0
-[134] Biber.pm:4531> INFO - Looking for bibtex format file 'Report_Part_9.bib' for section 0
-[134] bibtex.pm:1689> INFO - LaTeX decoding ...
-[138] bibtex.pm:1494> INFO - Found BibTeX data source '/Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 9/Report_Part_9.bib'
-[168] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[168] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[169] Biber.pm:4168> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
-[169] Biber.pm:4174> INFO - No sort tailoring available for locale 'en-US'
-[173] bbl.pm:654> INFO - Writing 'Report_Part_9.bbl' with encoding 'UTF-8'
-[174] bbl.pm:757> INFO - Output to Report_Part_9.bbl
+[46] biber-darwin:340> INFO - === Fri Dec 16, 2022, 17:43:59
+[56] Biber.pm:415> INFO - Reading '/Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 9/Report_Part_9.bcf'
+[114] Biber.pm:952> INFO - Found 4 citekeys in bib section 0
+[125] Biber.pm:4340> INFO - Processing section 0
+[132] Biber.pm:4531> INFO - Looking for bibtex format file 'Report_Part_9.bib' for section 0
+[132] bibtex.pm:1689> INFO - LaTeX decoding ...
+[136] bibtex.pm:1494> INFO - Found BibTeX data source '/Users/jannikeschler/Documents/GitHub/AST2000/Project/Part 9/Report_Part_9.bib'
+[165] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[166] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[166] Biber.pm:4168> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
+[166] Biber.pm:4174> INFO - No sort tailoring available for locale 'en-US'
+[170] bbl.pm:654> INFO - Writing 'Report_Part_9.bbl' with encoding 'UTF-8'
+[171] bbl.pm:757> INFO - Output to Report_Part_9.bbl
