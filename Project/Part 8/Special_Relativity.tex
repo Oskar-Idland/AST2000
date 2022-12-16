@@ -43,18 +43,17 @@
 \section{Exercise 1}\label{ex: 1}
 
   \subsection{Introduction}
-  In this part we are going to explore the consequences of light traveling at a constant velocity in all frames of reference. The effect of this will give us some insight in how this we perceive the order of which events take place in different frames of reference. This is key to understanding how Einstein derived Special Relativity. We will do this by looking at two different reference points and only using the equation for position $ r = r_0 + vt + \frac{1}{2} at ^{2} $. 
+  In this part we are going to explore the consequences of light traveling at a constant velocity in all frames of reference. The effect of this will give us some insight in how we perceive the order of which events take place in different frames of reference. This is key to understanding how Einstein derived Special Relativity. We will do this by looking at two different reference points and only using the equation for position $ r = r_0 + vt + \frac{1}{2} at ^{2} $. 
 
   \subsection{The Situation}
   In this situation we have two spaceships traveling at the same constant speed with a distance $ L $ in between them. In the middle there is an observer $ M $ traveling at the same speed as the spaceships. We will look at two different frames of reference. One is the frame of reference of a planet below the spaceships. Here, time and space is denoted by $ t $ and $ x $ respectively. We also have the frame of reference of the observer $ M $ where time and space is denoted by $ t' $ and $ x' $ respectively. 
   
-  We also have four events happening. Event A is the left most spaceship shooting its laser towards the right most ship. This occurs at $  x = x' = 0 $ and $ t = t' = 0 $. Event B is the right most ship shooting its laser towards the left most ship. Event C is when the left most ship is hit by the laser from the right most ship. Event D is when the right most ship is hit by the left most ship. 
+  We also have four events happening. Event A is the left most spaceship shooting its laser towards the right most ship. This occurs at $  x = x' = 0 $ and $ t = t' = 0 $. Event B is the right most ship shooting its laser towards the left most ship. Event C is when the left most ship is hit by the laser from the right most ship. Event D is when the right most ship is hit by the laser from left most ship. 
   
-  \colorbox{red}{Legg til bilder av event A og B events} 
 
   \subsection{Method}
   We will begin by exploring these events from the perspective of the observer $ M $. 
-  Let's begin at event A and B. From the observer's point of view it, as well as the spaceships, are standing still. Both spaceships shoot their lasers at the same time (event A and B). How will the observer in the middle perceive this? Quite predicatively and maybe intuitively you would expect the observer to observe these events happening simultaneously. This is a natural conclusion as both beams of light are shot at the same time and have to travel the same distance $ L / 2 $. 
+  Let's begin at event A and B. From the observer's point of view, itself, as well as the spaceships, are standing still. Both spaceships shoot their lasers at the same time (event A and B). How will the observer in the middle perceive this? Quite predicatively and maybe intuitively you would expect the observer to observe these events happening simultaneously. This is a natural conclusion as both beams of light are shot at the same time and have to travel the same distance $ L / 2 $. 
   
   Now let's explore this at this from the planets' perspective using only the following we know from the perspective of the observer.
   
@@ -75,6 +74,14 @@
   
   
   For event C and D we expect the same result as event A and B when seeing this from the perspective of observer $ M $. Both lasers will again travel with the same speed to reach the spaceships spaced equally far apart and stationary. 
+  \begin{figure}[h!]
+    \centering
+    \includegraphics[scale = .1]{figures/C_D_Station.png}
+    \caption{Event C and D as seen from the space station}
+    \label{fig: C_D station}
+  \end{figure}
+  
+  
   From the planet's perspective we must again do some calculations. As we derive in \ref{o: 1.1.4}, the time it takes the beam to travel from the observer $ M $ to the left most ship and right most ship is the following.
   \begin{equation}\label{eq: t_C}
     t_C = \frac{L / 2}{1 + v}
@@ -88,9 +95,43 @@
   
   
   \subsection{Conclusion} 
-  From the perspective of the observer $ M $ we get the result of both beams being shot at the same time and arriving at the observer at the same time as well. When looking at it from the perspective of the planet the result are quite surprising if you have no knowledge of special relativity. As seen in equations \ref{eq: t_L} and \ref{eq: t_R} we notice the laser from the left most ship takes a longer time to reach the observer $ M $ than the laser from the right most ship. This is not surprising as you can imagine the lasers from the left most ship "chasing" after the observer and the observer running towards the laser from the right most ship. The only solution to this incongruence is that the laser were in fact not shot out at the same time! To reach the same place at the same time the laser from the left most ship must have been shot out before the laser from the right most ship. 
+  From the perspective of the observer $ M $ we get the result of both beams being shot at the same time and arriving at the observer at the same time as well, as seen in figures \ref{fig: A_B station} and \ref{fig: M_station}
+  \begin{figure}[h!]
+    \centering
+    \includegraphics[scale = .1]{figures/A_B_Station.png}
+    \caption{Event A and B as seen from the space station}
+    \label{fig: A_B station}
+  \end{figure} 
   
-  This carries over to the explosion of each ship (event C and D). As derived in equations \ref{eq: t_C} and \ref{eq: t_D}. We must conclude the same as before. From the perspective of the planet, event C must happen before event D. 
+  \begin{figure}[h!]
+    \centering
+    \includegraphics[scale = .1]{figures/M_Station.png}
+    \caption{The lasers crossing observer $ M $ at the same time}
+    \label{fig: M_station}
+  \end{figure}
+  
+  When looking at it from the perspective of the planet the result are quite surprising if you have no knowledge of special relativity. As seen in equations \ref{eq: t_L} and \ref{eq: t_R} we notice the laser from the left most ship takes a longer time to reach the observer $ M $ than the laser from the right most ship. This is not surprising as you can imagine the lasers from the left most ship "chasing" after the observer and the observer running towards the laser from the right most ship. The only solution to this incongruence is that the laser were in fact not shot out at the same time! To reach the same place at the same time the laser from the left most ship must have been shot out before the laser from the right most ship. 
+  \begin{figure}[h!]
+    \centering
+    \includegraphics[scale = .1]{figures/B_Planet.png}
+    \caption{Event A and B from the perspective of the planet}
+    \label{fig: A_B_Planet}
+  \end{figure}
+  
+  
+  This carries over to the explosion of each ship (event C and D). As derived in equations \ref{eq: t_C} and \ref{eq: t_D}. We must conclude the same as before. From the perspective of the planet, event C must happen before event D. We see this in figures \ref{fig: C_Planet} and \ref{fig: D_Planet}
+  \begin{figure}[h!]
+    \centering
+    \includegraphics[scale = .1]{figures/C_Planet.png}
+    \caption{Event C from the perspective of the planet}
+    \label{fig: C_Planet}
+  \end{figure}
+  \begin{figure}[h!]
+    \centering
+    \includegraphics[scale = .1]{figures/D_Planet.png}
+    \caption{Event D from the perspective of the planet}
+    \label{fig: D_Planet}
+  \end{figure}
   
   In conclusion, when looking at the events from the perspective of the planet, event A must happen before event B. Event C must happen before event D. As event A and B must both happen before they can cross observer $ M $, we also know both happen before event C and D. This gives the following chain of events. \\
   A → B → C → D.\\
@@ -154,7 +195,7 @@
     \label{fig: Situation 2}
   \end{figure}
   
-  When looking at the difference of time measured by the different observers we will define two event. Event 1 is defined as where $ t = 0 $ and all ships are in the same position as seen in \ref{fig: Initial position}. Event 2 is when spaceship 3 catches up to spaceship 2. The spaceship measures this taking 10 miliseseconds, while the clock on spaceship 2 measures 8 miliseconds. 
+  When looking at the difference of time measured by the different observers we will define two events. Event 1 is defined as where $ t = 0 $ and all ships are in the same position as seen in \ref{fig: Initial position}. Event 2 is when spaceship 3 catches up to spaceship 2. The spaceship measures this taking 10 milliseconds, while the clock on spaceship 2 measures 8 milliseconds. 
 
   \subsection{Method}
   To draw the worldlines we will look at the movement of each ship to get a rough estimate of their velocities in relation to one another. If two objects are at the same place at the same time we expect their worldlines to intersect.
@@ -209,15 +250,16 @@
 \section{Exercise 7}
 
   \subsection{Introduction}
+  So far we have only explored how time can be relative, but wait, there is more! Color, or more specifically the wavelength of light, can vary between reference systems as well. To do this we are going to look at a collision between two spaceship and see how two different observers see the event. We will introduce a concept called momenergy (momentum-energy) which lets ut look at momentum in four-dimensional space time. As a photon is a massless particle its energy $ E = \sqrt{m^{2} + p^{2}} = p  $ is equal to its momentum. 
 
   \subsection{The Situation}
+  We begin by looking at two spaceships traveling over a planet. One is made of antimatter, the other in regular matter. This means a collison between the two will result in pure energy we assume comes in the form of photons. We will refer to the left most ship as $ A $ and the right most ship as $ B $. A travels in the positive x-direction with a velocity $ v_{A} $, while B travels in the negative x-direction with a velocity $ v_{B} = - v_{A} $. There are two observer ready to measure the wavelength of the photons that are about to be emitted after the explosion. Observer 1 is on the planet using unprimed coordinates, observer 2 is traveling on a spaceship alongside A using primed coordinates. 
 
   \subsection{Method}
-  The momenenergy four-vector is generally written on the following form.
+  Lets begin by finding the momenergy four-vector of a photon traveling in the positive x-direction. The momenergy four-vector is generally written on the following form.
   \[
   P_{μ}^{γ} = (m,\vec{p})
   \]
-  
   As the photon is traveling in the positive x-direction, and its momentum is just its energy as it has no mass we get the following. 
   \begin{equation}\label{eq: photon momenergy}
     P_{μ}^{γ} =  (E, p_{x}, p_{y}, p_{z}) = (E, E, 0, 0)
@@ -227,19 +269,43 @@
   As both spaceships have the same momentum, but in opposite direction they will naturally cancel each other out as they collide. For momentum to be conserved there needs to be photon traveling in direction $ \vec{p} $ for every photon traveling in direction $ - \vec{p} $. 
   
   If the photons are emitted with an angle $ θ $ off the x-axis we can calculate how much of the momentum is going in the x or y direction using simple trigonometry. 
-  We just need to modify equation \ref{eq: photon momenergy}, and we get the following.
+  We just need to modify equation \ref{eq: photon momenergy}, and we get equation \ref{eq: angle photon momenergy}.
   \begin{equation}\label{eq: angle photon momenergy}
     P_{μ}^{γ} =  (E, p_{x}, p_{y}, p_{z}) = (E, E \cos θ, E \sin θ, 0)
   \end{equation}
-  This is assuming there is no movement in the z-direction. As mentioned earlier, for momentum to be conserved there needs to be photon traveling in direction $ \vec{p} $ for every photon traveling in direction $ - \vec{p} $. In this case there also need to be a photon traveling with momenenergy $  (E, -E\cos θ, -E \sin θ, 0)  $. 
+  This is assuming there is no movement in the z-direction. As mentioned earlier, for momentum to be conserved there needs to be photon traveling in direction $ \vec{p} $ for every photon traveling in direction $ - \vec{p} $. In this case there also need to be a photon traveling with momenergy $  (E, -E\cos θ, -E \sin θ, 0)  $.
+  
+  We can extrapolate the previous results to any number of photons. Each photon spawned must have another photon with the same energy traveling in the opposite direction.  
+  
+  To explore how different observers experience this explosion we need to use the momenergy in each frame of reference, convert this into the wavelength of the photons and see what colors they become. For this we will assume all energy is divided equally. For the full calculations see \ref{smiley: 7}.
   
   
   \subsection{Conclusion} 
+  Even relativisticly we get the convervation of momentum. This is great as it lets us easily look at how much energy the average photon carries after the explosion. From the perspective of the planet the explosion will look orange, while the observer traveling alonside A will percive it as green. As seen in figure \ref{fig: Explo Planet} and \ref{fig: Explo Space} we even have photos to prove it!
+  
+  \begin{figure}[h!]
+    \centering
+    \includegraphics[scale = .125]{figures/Explo_Planet.png}
+    \caption{Spaceship explosion from the perspective of the planet }
+    \label{fig: Explo Planet}
+  \end{figure}
+  
+  \begin{figure}[h!]
+    \centering
+    \includegraphics[scale = .125]{figures/Explo_Space.png}
+    \caption{Spaceship explosion from the perspective of the space station }
+    \label{fig: Explo Space}
+  \end{figure}
 
-  \subsection{Specific Questions}
+\newpage
+\section*{References} \label{sec: references}
+\begin{enumerate}
+  \item Hansen F. K. Lecture Notes 2A.  \url{https://www.uio.no/studier/emner/matnat/astro/AST2000/h18/undervisningsmateriell_h2018/forelesningsnotater/part2a.pdf}
+  \item Hansen F. K. Lecture Notes 2B. \url{https://www.uio.no/studier/emner/matnat/astro/AST2000/h18/undervisningsmateriell_h2018/forelesningsnotater/part2b.pdf} \label{ref: Example worldline}
+\end{enumerate}
 
 
-
+\newpage
 \section{Appendix} \label{sec: appendix}
 \subsection{Exercise 1}
 \subsubsection*{1.2.1}\label{1.2.1}
@@ -301,7 +367,7 @@ t_C - t_M = \frac{L / 2}{v + 1}
 \[
 t_C = t_M + \frac{L / 2}{v + 1}
 \]
-\\
+
 \subsubsection*{1.2.4}\label{1.2.4}
 We begin by calculating the time the laser reaches the opposite spaceship
 \[
@@ -319,7 +385,7 @@ From the perspective of the spaceship we don't need to take into the account the
 \]
 
 
-\subsection{Exercise 7}
+\subsection{Exercise 7}\label{smiley: 7}
 \subsubsection*{7.1}
 In relation to the planet, the left most ship has a velocity $ v_a $ and the right most velocity $ v_{b} = -v_a $. It then naturally follows that in the reference system of A will measure the velocity of B to be the following
 \[
@@ -375,7 +441,7 @@ P'_{μ}(A) = M_L P_{μ}'(A) = (m,0)
 In the video we get a mass $ m $, velocity $ v $ and $ N $ number of photons from the planet's perspective. 
 
 \[
-m = 10^{6}, \quad v = 0.15567 c, \quad N = 5.6 ⋅ 10^{41}
+m = 10^{6}\ \text{kg}, \quad v = 0.15567\ c, \quad N = 5.6 ⋅ 10^{41}
 \]
 We use conservation of energy to relate the energy of both spaceships divided by the number of photons to get the energy of each photon. To get the energy in SI units we multiply by the speed of light $ c $
 \[
@@ -506,14 +572,12 @@ t_D:= t = L + vt
 t_D = \frac{L / 2}{1 - v}
 \]
 
-\section*{ACKNOWLEDGMENTS}
 
-\section*{References} \label{sec: references}
-\begin{enumerate}
-  \item Refferer til forelesning notater 2a og b
-  \item Reffere til notatene for bilde \label{ref: Example worldline}
-  % \item Referer til wiki https://en.wikipedia.org/wiki/Visible_spectrum
-\end{enumerate}
-
+\begin{figure}[h!]
+  \centering
+  \includegraphics[scale = .125]{figures/Turtle.png}
+  \caption{Motivational Turtle. Because its ok to be a little slow. Its all relative!}
+  \label{fig: Turtle}
+\end{figure}
 
 \end{document}
