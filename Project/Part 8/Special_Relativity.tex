@@ -213,7 +213,27 @@
   \subsection{The Situation}
 
   \subsection{Method}
-
+  The momenenergy four-vector is generally written on the following form.
+  \[
+  P_{μ}^{γ} = (m,\vec{p})
+  \]
+  
+  As the photon is traveling in the positive x-direction, and its momentum is just its energy as it has no mass we get the following. 
+  \begin{equation}\label{eq: photon momenergy}
+    P_{μ}^{γ} =  (E, p_{x}, p_{y}, p_{z}) = (E, E, 0, 0)
+  \end{equation}
+  
+  
+  As both spaceships have the same momentum, but in opposite direction they will naturally cancel each other out as they collide. For momentum to be conserved there needs to be photon traveling in direction $ \vec{p} $ for every photon traveling in direction $ - \vec{p} $. 
+  
+  If the photons are emitted with an angle $ θ $ off the x-axis we can calculate how much of the momentum is going in the x or y direction using simple trigonometry. 
+  We just need to modify equation \ref{eq: photon momenergy}, and we get the following.
+  \begin{equation}\label{eq: angle photon momenergy}
+    P_{μ}^{γ} =  (E, p_{x}, p_{y}, p_{z}) = (E, E \cos θ, E \sin θ, 0)
+  \end{equation}
+  This is assuming there is no movement in the z-direction. As mentioned earlier, for momentum to be conserved there needs to be photon traveling in direction $ \vec{p} $ for every photon traveling in direction $ - \vec{p} $. In this case there also need to be a photon traveling with momenenergy $  (E, -E\cos θ, -E \sin θ, 0)  $. 
+  
+  
   \subsection{Conclusion} 
 
   \subsection{Specific Questions}
@@ -300,6 +320,141 @@ From the perspective of the spaceship we don't need to take into the account the
 
 
 \subsection{Exercise 7}
+\subsubsection*{7.1}
+In relation to the planet, the left most ship has a velocity $ v_a $ and the right most velocity $ v_{b} = -v_a $. It then naturally follows that in the reference system of A will measure the velocity of B to be the following
+\[
+v_a' = 0 
+\]
+\[
+v_b' = -2 v_a
+\]
+\subsubsection*{7.2}
+Four-vector $ P_{μ} $ for momentum is written on the following form. 
+\[
+P_{μ} = m γ(1, \vec{v}) = γ(m,\vec{p})
+\]
+We then use the velocities from the planet perspective found in the previous exercise. 
+\[
+P_{μ}(A) = γ_{A}(m, mv_{A}, 0, 0)
+\]
+\[
+P_{μ}(B) = γ_{B}(m, -mv_{A}, 0, 0)
+\]
+
+\subsubsection*{7.3}
+To find $ P_{μ}'(A) $ and $ P_{μ}'(B) $ we transform them using the  matrix $ M_L $ for Lorentz transformation. 
+\[
+  \begin{pmatrix}
+    E' \\
+    p'_{x} \\
+    p'_{y} \\
+    p'_{z} \\
+   \end{pmatrix} = 
+   \begin{pmatrix}
+     γ_{\text{rel }} & - v_{\text{rel }} &0  &0  \\
+      -v_{\text{rel }} γ_{\text{rel }}&γ_{\text{rel }}  &0  &0  \\
+      0&  0&  1& 0 \\
+      0&  0&  0& 1 \\
+    \end{pmatrix} = 
+    \begin{pmatrix}
+       E \\
+       p_{x} \\
+       p_{y} \\
+       p_{z} \\
+      \end{pmatrix}
+\]
+
+\[
+P'_{μ}(A) = M_L P_{μ}'(A) = (m,0)
+\]
+\[
+  P'_{μ}(B) = M_L P_{μ}'(B) = (m,0) = γ^{2}_{A}((1 + v^{2}_{A}), - 2mv_{a})
+\]
+
+\subsubsection*{7.8}
+In the video we get a mass $ m $, velocity $ v $ and $ N $ number of photons from the planet's perspective. 
+
+\[
+m = 10^{6}, \quad v = 0.15567 c, \quad N = 5.6 ⋅ 10^{41}
+\]
+We use conservation of energy to relate the energy of both spaceships divided by the number of photons to get the energy of each photon. To get the energy in SI units we multiply by the speed of light $ c $
+\[
+E_{\text{photon}} = \frac{E_{A} + E_{B}}{N} c = γ_{\text{rel}} \frac{2m}{N}c = 1.08 ⋅ 10^{-27}
+\]
+To find the wavelength we divide Plank's constant with the energy 
+\[
+λ = \frac{h}{E} = 611\ \text{nm}
+\]
+
+\subsubsection*{7.9}
+A wavelength of $  611\ \text{nm} $ corresponds to the color orange which is exactly what we see in the video.
+
+\subsubsection*{7.10}
+We know
+\[
+E' = γ_{\text{rel}}E - v_{\text{rel}} γ_{\text{rel}} p_{x}
+\]
+For a photon traveling in the positive x-direction we get know its momentum is the same as its energy
+\[
+E' = γE - v γ E = E γ(1 - v)
+\]
+For a photon traveling in the negative x-direction we get the opposite direction and sign for $ v $, meaning we get the following
+\[
+E' = E γ(1 ± v)
+\]
+
+\subsubsection*{7.11}
+We have the following 
+\[
+λ' = \frac{h}{E'}
+\]
+We then insert the energy we just derived in the previous task. 
+\[
+λ' = \frac{h}{E γ(1 \pm v)}
+\]
+Inserting the Lorentz factor and energy $ E $ we get 
+\[
+λ' = \left( \frac{\sqrt{1 - v^{2}} }{1 \pm v} \right) 
+\]
+The Doppler shift $ Δλ $ is defined as
+\[
+Δλ = λ - λ' 
+\]
+We insert the expression for $ λ' $
+\[
+Δλ = λ\left( 1 - \frac{\sqrt{1 - v^{2}} }{1 \pm v} \right) 
+\]
+\[
+Δλ = \left( \sqrt{\frac{1 + v}{1 - v} - 1}  \right) 
+\]
+We insert this into the formula for relativistic Doppler shift. 
+\[
+\frac{Δλ}{λ} = \left( \sqrt{\frac{1 + v}{1 - v}}  - 1 \right) 
+\]
+
+\subsubsection*{7.12}
+We use the formula calculated above to find the Doppler shift and its corresponding color.
+\[
+λ' = λ -  λ \left( \sqrt{\frac{1 + v}{1 - v}} -1 \right) = 508 \ \text{nm}
+\]
+This corresponds to the color green which is the same as we saw in the video. 
+
+\subsubsection*{7.13}
+The normal Doppler formula when velocity $ v $ is low:
+\[
+\frac{Δλ}{λ} = 1 - \frac{v}{c}
+\]
+To show the formula is consistent with the relativistic formula we use a first order Taylor expansion around $ v = 0 $.
+\[
+f(v) = \sqrt{\frac{1 + v}{1 - v}} 
+\] 
+\[
+T_{f}(v) = f(0) + f'(0)(v-0) = \sqrt{\frac{1}{1}} - 1 + \frac{1}{\left(  - 1 \right) ^{2} \frac{1 + 0}{1-0}}  v
+\]
+\[
+T_{f}(v) = \frac{v}{c}
+\]
+  
 
 
 
@@ -357,6 +512,7 @@ t_D = \frac{L / 2}{1 - v}
 \begin{enumerate}
   \item Refferer til forelesning notater 2a og b
   \item Reffere til notatene for bilde \label{ref: Example worldline}
+  % \item Referer til wiki https://en.wikipedia.org/wiki/Visible_spectrum
 \end{enumerate}
 
 
