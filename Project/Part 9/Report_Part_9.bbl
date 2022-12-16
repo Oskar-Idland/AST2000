@@ -1,0 +1,122 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.1 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global}
+    \entry{wiki_gr}{online}{}
+      \name{author}{1}{}{%
+        {{hash=24065405e624b75a35242cfec413f45d}{%
+           family={Hirvonen},
+           familyi={H\bibinitperiod},
+           given={Ville},
+           giveni={V\bibinitperiod}}}%
+      }
+      \strng{namehash}{24065405e624b75a35242cfec413f45d}
+      \strng{fullhash}{24065405e624b75a35242cfec413f45d}
+      \strng{bibnamehash}{24065405e624b75a35242cfec413f45d}
+      \strng{authorbibnamehash}{24065405e624b75a35242cfec413f45d}
+      \strng{authornamehash}{24065405e624b75a35242cfec413f45d}
+      \strng{authorfullhash}{24065405e624b75a35242cfec413f45d}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed on 16.12.2022}
+      \field{title}{General Relativity For Dummies: An Intuitive Introduction}
+      \field{year}{2022}
+      \verb{urlraw}
+      \verb https://profoundphysics.com/general-relativity-for-dummies/
+      \endverb
+      \verb{url}
+      \verb https://profoundphysics.com/general-relativity-for-dummies/
+      \endverb
+    \endentry
+    \entry{lecture2c}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=ed268c6ff074655858006ef4fb9139b6}{%
+           family={Hansen},
+           familyi={H\bibinitperiod},
+           given={Frode\bibnamedelima K.},
+           giveni={F\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+      }
+      \strng{namehash}{ed268c6ff074655858006ef4fb9139b6}
+      \strng{fullhash}{ed268c6ff074655858006ef4fb9139b6}
+      \strng{bibnamehash}{ed268c6ff074655858006ef4fb9139b6}
+      \strng{authorbibnamehash}{ed268c6ff074655858006ef4fb9139b6}
+      \strng{authornamehash}{ed268c6ff074655858006ef4fb9139b6}
+      \strng{authorfullhash}{ed268c6ff074655858006ef4fb9139b6}
+      \field{extraname}{1}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{"\url{https://www.uio.no/studier/emner/matnat/astro/AST2000/h22/undervisningsmateriell/lecture_notes/part2c.pdf}"}
+      \field{title}{AST2000 Lecture Notes - Part 2C General Relativity: Basic Principles}
+      \field{year}{2022}
+    \endentry
+    \entry{part9}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=ed268c6ff074655858006ef4fb9139b6}{%
+           family={Hansen},
+           familyi={H\bibinitperiod},
+           given={Frode\bibnamedelima K.},
+           giveni={F\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+      }
+      \strng{namehash}{ed268c6ff074655858006ef4fb9139b6}
+      \strng{fullhash}{ed268c6ff074655858006ef4fb9139b6}
+      \strng{bibnamehash}{ed268c6ff074655858006ef4fb9139b6}
+      \strng{authorbibnamehash}{ed268c6ff074655858006ef4fb9139b6}
+      \strng{authornamehash}{ed268c6ff074655858006ef4fb9139b6}
+      \strng{authorfullhash}{ed268c6ff074655858006ef4fb9139b6}
+      \field{extraname}{2}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{"\url{https://www.uio.no/studier/emner/matnat/astro/AST2000/h22/undervisningsmateriell/prosjektlop/prosjektdeler/part9.pdf}"}
+      \field{title}{AST 2000 - Part 9 General Relativity}
+      \field{year}{2022}
+    \endentry
+    \entry{lecture2d}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=ed268c6ff074655858006ef4fb9139b6}{%
+           family={Hansen},
+           familyi={H\bibinitperiod},
+           given={Frode\bibnamedelima K.},
+           giveni={F\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+      }
+      \strng{namehash}{ed268c6ff074655858006ef4fb9139b6}
+      \strng{fullhash}{ed268c6ff074655858006ef4fb9139b6}
+      \strng{bibnamehash}{ed268c6ff074655858006ef4fb9139b6}
+      \strng{authorbibnamehash}{ed268c6ff074655858006ef4fb9139b6}
+      \strng{authornamehash}{ed268c6ff074655858006ef4fb9139b6}
+      \strng{authorfullhash}{ed268c6ff074655858006ef4fb9139b6}
+      \field{extraname}{3}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{"\url{https://www.uio.no/studier/emner/matnat/astro/AST2000/h22/undervisningsmateriell/lecture_notes/part2d.pdf}"}
+      \field{title}{AST2000 Lecture Notes - Part 2D General Relativity: Orbits}
+      \field{year}{2022}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
